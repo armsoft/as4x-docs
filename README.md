@@ -12,3 +12,10 @@ Function IsItWorking()
 
 End Function
 ```
+
+```typescript
+async function isItWorking(): void {
+  //...
+}
+```
+
