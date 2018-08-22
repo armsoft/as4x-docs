@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title: "The Adventure of the Cardboard Box"
-author: "Arthur Conan Doyle"
-categories: literature
+title: "Конфигурационный файл (config.as)"
+author: "Vasilyan"
+categories: help
 ---
 
 <!-- ---
