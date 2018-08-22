@@ -6,6 +6,11 @@ permalink: /about/
 
 About page is stripped down
 
+
+[config](/_posts/Config_as_struct.md)
+
+[config](/_posts/Config_as_struct)
+
 <!--
 Demo site for [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
 
