@@ -1,6 +1,13 @@
 ﻿---
-layout: home
+layout: post
+title: "The Adventure of the Cardboard Box"
+author: "Arthur Conan Doyle"
+categories: literature
 ---
+
+<!-- ---
+layout: home
+--- -->
 
 ## Конфигурационный файл (config.as)
 
