@@ -1,6 +1,6 @@
 # Config settings
-title: Jekyll Tipue Search Demo
-baseurl: "/jekyll-tipue-search"
+title: Learn markdown with Search Demo
+baseurl: "/learnmarkdown"
 
 # Search settings
 tipue_search:
