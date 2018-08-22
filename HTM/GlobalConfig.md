@@ -1,5 +1,5 @@
 ﻿---
-layout: post
+layout: page
 title: "Глобальный конфигурационный файл"
 author: "sts"
 categories: help

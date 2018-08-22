@@ -12,9 +12,12 @@ tipue_search:
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-html-pipeline
 exclude:
   - Gemfile
   - Gemfile.lock

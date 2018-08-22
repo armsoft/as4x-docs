@@ -19,3 +19,9 @@ async function isItWorking(): void {
 }
 ```
 
+```ts
+async function isItWorking(): void {
+  //...
+}
+```
+
