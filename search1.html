@@ -1,0 +1,19 @@
+---
+title: Search1
+description: "Search 1 this site"
+layout: page
+permalink: /search1/
+---
+
+
+
+  <div>
+    <img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon">
+  </div>
+  <div>
+    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="required">
+  </div>
+  <button onclick="getindex();"></button>
+
+<div id="search_content"></div>
+
