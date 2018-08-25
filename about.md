@@ -6,12 +6,23 @@ permalink: /about/
 
 About page is stripped down
 
+[HTM/GlobalConfig](HTM/GlobalConfig)
 
-[config](/learnmarkdown/_posts/Config_as_struct.md)
+[/HTM/GlobalConfig](/HTM/GlobalConfig)
 
-[config](/learnmarkdown/_posts/Config_as_struct)
+[HTM/GlobalConfig.md](HTM/GlobalConfig.md)
 
-[config](/learnmarkdown/_posts/Config_as_struct.html)
+[/HTM/GlobalConfig.md](/HTM/GlobalConfig.md)
+
+[HTM/GlobalConfig.html](HTM/GlobalConfig.html)
+
+[/HTM/GlobalConfig.html](/HTM/GlobalConfig.html)
+
+[/learnmarkdown/HTM/GlobalConfig](/learnmarkdown/HTM/GlobalConfig)
+
+[/learnmarkdown/HTM/GlobalConfig.md](/learnmarkdown/HTM/GlobalConfig.md)
+
+[/learnmarkdown/HTM/GlobalConfig.html](/learnmarkdown/HTM/GlobalConfig.html)
 
 <!--
 Demo site for [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
