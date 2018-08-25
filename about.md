@@ -6,17 +6,17 @@ permalink: /about/
 
 About page is stripped down
 
-[HTM/GlobalConfig](HTM/GlobalConfig)
 
-[/HTM/GlobalConfig](/HTM/GlobalConfig)
+
+
 
 [HTM/GlobalConfig.md](HTM/GlobalConfig.md)
 
 [/HTM/GlobalConfig.md](/HTM/GlobalConfig.md)
 
-[HTM/GlobalConfig.html](HTM/GlobalConfig.html)
 
-[/HTM/GlobalConfig.html](/HTM/GlobalConfig.html)
+
+
 
 [/learnmarkdown/HTM/GlobalConfig](/learnmarkdown/HTM/GlobalConfig)
 
