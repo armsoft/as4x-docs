@@ -29,7 +29,6 @@ function getIndex() {
         }
     };
     xhr.send();
-    e.preventDefault();
 }
 
 // let search_form = document.getElementById("search_form");
