@@ -6,7 +6,7 @@ permalink: /search1/
 ---
 
 
-<form id="search_form">
+<form id="search_form" onsubmit="event.preventDefault(); getIndex();">
   <div>
     <img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon">
   </div>
