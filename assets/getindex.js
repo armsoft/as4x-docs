@@ -5,8 +5,8 @@ function getIndex() {
         if (event.target.status == 200) {
             let arr = xhr.responseXML.documentElement.getElementsByTagName("loc");
             console.log(arr);
-            for(let el of arr) {
-                console.log(el.innerHTML);
+            for(let i = 0; i < arr.length; i++) {
+                console.log(arr[i].innerHTML);
             }
         } else {
             
