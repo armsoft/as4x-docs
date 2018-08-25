@@ -7,9 +7,11 @@ permalink: /about/
 About page is stripped down
 
 
-[config](learnmarkdown/_posts/Config_as_struct.md)
+[config](/learnmarkdown/_posts/Config_as_struct.md)
 
-[config](learnmarkdown/_posts/Config_as_struct)
+[config](/learnmarkdown/_posts/Config_as_struct)
+
+[config](/learnmarkdown/_posts/Config_as_struct.html)
 
 <!--
 Demo site for [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
