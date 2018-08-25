@@ -12,9 +12,11 @@ function getIndex() {
                 //console.log(arr[i].lastChild.innerHTML);
 
                 let a = document.createElement("a");
-                a.href = arr[i].innerHTML;
+                a.href = "/learnmarkdown" + arr[i].innerHTML;
                 a.textContent = arr[i].innerHTML;
                 content.appendChild(a);
+                let br = document.createElement("br");
+                content.appendChild(br);
             }
         } else {
             
