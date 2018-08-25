@@ -4,6 +4,7 @@ function getIndex() {
     xhr.onload = (event) => {
         if (event.target.status == 200) {
             let arr = xhr.responseXML.documentElement.getElementsByTagName("loc");
+            console.log(arr);
             for(let el of arr) {
                 console.log(el.innerHTML);
             }
@@ -11,6 +12,6 @@ function getIndex() {
             
         }
     };
-    xhr.open();
+    xhr.send();
 }
 
