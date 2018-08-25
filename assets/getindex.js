@@ -29,12 +29,14 @@ function getIndex() {
         }
     };
     xhr.send();
+    e.preventDefault();
 }
 
 let search_form = document.getElementById("search_form");
 if (search_form) {
     search_form.onsubmit = (e) => {
         getIndex();
-        e.preventDefault();
+        //e.preventDefault();
+        return false;
     };
 }
