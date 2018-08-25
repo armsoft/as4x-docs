@@ -11,6 +11,6 @@ function getIndex() {
             
         }
     };
-    xhr.open()
+    xhr.open();
 }
 
