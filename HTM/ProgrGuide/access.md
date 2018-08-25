@@ -1,6 +1,6 @@
 ﻿---
 title: Дескриптор доступа
-description: "Дескриптор доступа"
+description: "Дескриптор доступа ACCESS"
 layout: page
 ---
 
