@@ -25,4 +25,29 @@
         <title>Lorem ipsum</title>
         <keywords>Lorem ipsum dolor sit amet consectetuer adipiscing elit Maecenas porttitor congue massa Fusce posuere magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna</keywords>
     </url>
+    <url>
+        <loc>/HTM/GlobalConfig</loc>
+        <title>Глобальный конфигурационный файл</title>
+        <keywords>Global Config.as Глобальный конфигурационный файл</keywords>
+    </url>
+    <url>
+        <loc>/HTM/ProgrGuide/access.htm</loc>
+        <title>Дескриптор доступа</title>
+        <keywords>Дескриптор доступа</keywords>
+    </url>
+    <url>
+        <loc>/about</loc>
+        <title>About</title>
+        <keywords>About</keywords>
+    </url>
+    <url>
+        <loc>/index</loc>
+        <title>Index</title>
+        <keywords>Index</keywords>
+    </url>
+    <url>
+        <loc>/HTM/Lorem</loc>
+        <title>Lorem ipsum</title>
+        <keywords>Lorem ipsum dolor sit amet consectetuer adipiscing elit Maecenas porttitor congue massa Fusce posuere magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna</keywords>
+    </url>
 </urlset>

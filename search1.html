@@ -6,7 +6,7 @@ permalink: /search1/
 ---
 
 
-
+<form id="search_form">
   <div>
     <img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon">
   </div>
@@ -14,6 +14,7 @@ permalink: /search1/
     <input type="text" name="q" id="search_input" pattern=".{3,}" title="At least 3 characters" required="required">
   </div>
   <button onclick="getIndex();">search</button>
+</form>
 
 <div id="search_content"></div>
 

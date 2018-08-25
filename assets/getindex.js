@@ -15,7 +15,7 @@ function getIndex() {
                 let loc = urltag.getElementsByTagName("loc")[0].innerHTML;
                 let title = urltag.getElementsByTagName("title")[0].innerHTML;
                 let keywords = urltag.getElementsByTagName("keywords")[0].innerHTML;
-                if (keywords.includes(search_input.value)) {
+                if (keywords.toUpperCase().includes(search_input.value.toUpperCase())) {
                     let a = document.createElement("a");
                     a.href = "/learnmarkdown" + loc;
                     a.textContent = title;
@@ -31,3 +31,10 @@ function getIndex() {
     xhr.send();
 }
 
+let search_form = document.getElementById("search_form");
+if (search_form) {
+    search_form.onsubmit = (e) => {
+        getIndex();
+        e.preventDefault();
+    };
+}
