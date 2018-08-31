@@ -1,8 +1,6 @@
 ﻿---
 title: Дескриптор доступа
 description: "Дескриптор доступа ACCESS"
-layout: page
-permalink: /HTM/ProgrGuide/access/
 ---
 
 
@@ -62,7 +60,7 @@ Access</strong> {<strong><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };<br />
 </font>
 
-&nbsp;<table cellPadding="5" cols="2" frame="below" rules="rows" class="style6">
+<table cellPadding="5" cols="2" frame="below" rules="rows" class="style6">
 <TBODY>
   <tr vAlign="top">
     <td class="style7">&nbsp;</td>
@@ -94,6 +92,42 @@ Access</strong> {<strong><br />
   </tr>
 </TBODY>
 </table>
+
+
+
+&nbsp;<table>
+<TBODY>
+  <tr vAlign="top">
+    <td class="style7">&nbsp;</td>
+    <td class="style5" style="width: 29%"><font face="Arial">Параметр</font></td>
+    <td class="style4" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  </tr>
+  <tr>
+    <td class="style4">
+	<img src="../../IMAGES/pubfield.gif" width="16" height="16" /></td>
+    <td class="style4" style="width: 29%"><em><font face="Arial">nAccessID</font></em></td>
+    <td width="71%" class="style4"><font face="Arial">численное выражение,
+    принимающее значения от 1 до 255, определяющее код
+    доступа к данному документу </font></td>
+  </tr>
+  <tr>
+    <td class="style4">
+	<img src="../../IMAGES/pubfield.gif" width="16" height="16" /></td>
+    <td class="style4" style="width: 29%"><em><font face="Arial">sAccCaption</font></em></td>
+    <td width="71%" class="style4"><font face="Arial">строковое выражение,
+    определяющее заголовок кода доступа</font></td>
+  </tr>
+  <tr>
+    <td class="style4">
+	<img src="../../IMAGES/pubfield.gif" width="16" height="16" /></td>
+    <td class="style4" style="width: 29%"><em><font face="Arial">sAccECaption</font></em></td>
+    <td width="71%" class="style4"><font face="Arial">строковое выражение,
+    определяющее заголовок кода доступа на
+    иностранном языке</font></td>
+  </tr>
+</TBODY>
+</table>
+
 
 <!-- </body>
 
