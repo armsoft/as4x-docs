@@ -161,9 +161,7 @@
 		строковое выражение, определяющее </span>
 		<span style="font-size:12.0pt;font-family:
   &quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">
-		<a href="types.HTM">
-		<span lang="RU" style="color:blue;mso-ansi-language:RU">внутренний тип 
-		данных колонки</span></a></span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+		[внутренний тип данных колонки](/HTM/ProgrGuide/types.md)</span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU">.</span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU"><o:p></o:p></span></p>
 		</td>
@@ -331,7 +329,7 @@
 		необязательное строковое выражение, определяющее </span>
 		<span style="font-size:
   12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">
-		<a href="/HTM/ProgrGuide/types.md">
+		<a href="types">
 		<span lang="RU" style="color:blue;mso-ansi-language:RU">внутренний тип 
 		данных колонки</span></a></span><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU"> <span lang="RU">при показе.</span></span><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
