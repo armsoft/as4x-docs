@@ -16,24 +16,24 @@
 данных</a>, полей ввода в <a href="Functions/Asustpar.htm">диалоговых окнах</a>:</font></p>
 
 <blockquote>
-  <p><font face="Arial"><a href="Types/Amacc.htm">AmAcc</a><br>
-  <a href="Types/Boolean.htm">Boolean</a><br>
-  <a href="Types/c().HTM">C ()</a><br>
-  <a href="Types/Ch().htm">Ch ()</a><br>
-  <a href="Types/Date.htm">Date</a><br>
-  <a href="Types/DateLong.htm">DateLong</a><br>
-  <a href="Types/Daterep.htm">DateRep</a><br><a href="Types/File.htm">File</a><br>
-  <a href="Types/Folder().htm">Folder ()</a><br>
-  <a href="Types/FULLTREE().HTM">FullTree ()</a><br>
-  <a href="Types/n().HTM">N ()</a><br>
-  <a href="Types/np().HTM">NP ()</a><br>
-  <a href="Types/NumPair().htm">NumPair ()</a><br>
-	<a href="Types/Path.htm">Path</a><br>
-  <a href="Types/Summa.htm">Summa</a><br>
-  <a href="Types/Summap.htm">SummaP</a><br>
-  <a href="Types/Time.htm">Time</a><br>
-  <a href="Types/TimeLong.htm">TimeLong</a><br>
-  <a href="Types/Tree().htm">Tree ()</a></font></p>
+  <p><font face="Arial"><a href="Types/Amacc.html">AmAcc</a><br>
+  <a href="Types/Boolean.html">Boolean</a><br>
+  <a href="Types/c().html">C ()</a><br>
+  <a href="Types/Ch().html">Ch ()</a><br>
+  <a href="Types/Date.html">Date</a><br>
+  <a href="Types/DateLong.html">DateLong</a><br>
+  <a href="Types/Daterep.html">DateRep</a><br><a href="Types/File.html">File</a><br>
+  <a href="Types/Folder().html">Folder ()</a><br>
+  <a href="Types/FULLTREE().html">FullTree ()</a><br>
+  <a href="Types/n().html">N ()</a><br>
+  <a href="Types/np().html">NP ()</a><br>
+  <a href="Types/NumPair().html">NumPair ()</a><br>
+	<a href="Types/Path.html">Path</a><br>
+  <a href="Types/Summa.html">Summa</a><br>
+  <a href="Types/Summap.html">SummaP</a><br>
+  <a href="Types/Time.html">Time</a><br>
+  <a href="Types/TimeLong.html">TimeLong</a><br>
+  <a href="Types/Tree().html">Tree ()</a></font></p>
 </blockquote>
 </body>
 </html>
