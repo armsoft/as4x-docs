@@ -10,7 +10,7 @@ description: "Дескриптор доступа ACCESS"
 ## Синтаксис
 
 ```
-**Access** {
+Access {
                 AccessID = nAccessID ;
                 Caption =sAccCaption;
                 ECaption =sAccECaption;
@@ -19,23 +19,19 @@ description: "Дескриптор доступа ACCESS"
 
 <table>
   <tr>
-    <th></th>
     <th>Параметр</th>
     <th>Описание</th>
   </tr>
   <tr>
-    <td>![Public Property](../../IMAGES/pubfield.gif)</td>
-    <td>*nAccessID*</td>
+    <td><i>nAccessID</i></td>
     <td>численное выражение, принимающее значения от 1 до 255, определяющее код доступа к данному документу</td>
   </tr>
   <tr>
-    <td>![Public Property](../../IMAGES/pubfield.gif)</td>
-    <td>*sAccCaption*</td>
+    <td><i>sAccCaption</i></td>
     <td>строковое выражение, определяющее заголовок кода доступа</td>
   </tr>
   <tr>
-    <td>![Public Property](../../IMAGES/pubfield.gif)</td>
-    <td>*sAccECaption*</td>
+    <td><i>sAccECaption</i></td>
     <td>строковое выражение, определяющее заголовок кода доступа на иностранном языке</td>
   </tr>
 </table>
@@ -46,3 +42,12 @@ description: "Дескриптор доступа ACCESS"
 |![Public Property](../../IMAGES/pubfield.gif)|*nAccessID*|численное выражение, принимающее значения от 1 до 255, определяющее код доступа к данному документу|
 |![Public Property](../../IMAGES/pubfield.gif)|*sAccCaption*|строковое выражение, определяющее заголовок кода доступа|
 |![Public Property](../../IMAGES/pubfield.gif)|*sAccECaption*|строковое выражение, определяющее заголовок кода доступа на иностранном языке|
+
+
+
+
+|Параметр|Описание|
+|--|--|
+|*nAccessID*|численное выражение, принимающее значения от 1 до 255, определяющее код доступа к данному документу|
+|*sAccCaption*|строковое выражение, определяющее заголовок кода доступа|
+|*sAccECaption*|строковое выражение, определяющее заголовок кода доступа на иностранном языке|
