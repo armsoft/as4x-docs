@@ -11,10 +11,10 @@ description: "Дескриптор доступа ACCESS"
 
 ``` as4x
 Access {
-                AccessID = nAccessID ;
-                Caption =sAccCaption;
-                ECaption =sAccECaption;
-                };
+    AccessID = nAccessID;
+    Caption = sAccCaption;
+    ECaption = sAccECaption;
+};
 ```
 
 |Параметр|Описание|
