@@ -65,3 +65,87 @@ Access {
     ECaption = sAccECaption;
 };
 ```
+
+``` js
+Common {
+    Description = sDescription;
+    Language = nLanguage;
+    Authentication = sAuthentication;
+    UseWindowsDefaultPrinter = nUseWindowsDefaultPrinter;
+
+    Config {
+        Name = sConfigName1;
+        Server = sServer1; 
+        Database = sDatabase1;
+        BaseFolder = sBaseFolder1;
+        BackupFolder = sBackupFolder1;
+        SS = sSourceConnected1;
+        Context = sContext1;
+        StorePrnSet = sStorePrinterSetting1;
+        ReadOnly = sReadonly1;
+    };
+};
+```
+
+``` typescript
+Common {
+    Description = sDescription;
+    Language = nLanguage;
+    Authentication = sAuthentication;
+    UseWindowsDefaultPrinter = nUseWindowsDefaultPrinter;
+
+    Config {
+        Name = sConfigName1;
+        Server = sServer1; 
+        Database = sDatabase1;
+        BaseFolder = sBaseFolder1;
+        BackupFolder = sBackupFolder1;
+        SS = sSourceConnected1;
+        Context = sContext1;
+        StorePrnSet = sStorePrinterSetting1;
+        ReadOnly = sReadonly1;
+    };
+};
+```
+
+``` csharp
+Common {
+    Description = sDescription;
+    Language = nLanguage;
+    Authentication = sAuthentication;
+    UseWindowsDefaultPrinter = nUseWindowsDefaultPrinter;
+
+    Config {
+        Name = sConfigName1;
+        Server = sServer1; 
+        Database = sDatabase1;
+        BaseFolder = sBaseFolder1;
+        BackupFolder = sBackupFolder1;
+        SS = sSourceConnected1;
+        Context = sContext1;
+        StorePrnSet = sStorePrinterSetting1;
+        ReadOnly = sReadonly1;
+    };
+};
+```
+
+``` c++
+Common {
+    Description = sDescription;
+    Language = nLanguage;
+    Authentication = sAuthentication;
+    UseWindowsDefaultPrinter = nUseWindowsDefaultPrinter;
+
+    Config {
+        Name = sConfigName1;
+        Server = sServer1; 
+        Database = sDatabase1;
+        BaseFolder = sBaseFolder1;
+        BackupFolder = sBackupFolder1;
+        SS = sSourceConnected1;
+        Context = sContext1;
+        StorePrnSet = sStorePrinterSetting1;
+        ReadOnly = sReadonly1;
+    };
+};
+```
