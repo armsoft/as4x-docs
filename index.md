@@ -33,3 +33,35 @@ async function isItWorking(): void {
   let other = text.toString();
 }
 ```
+
+``` as4x
+Access {
+    AccessID = nAccessID;
+    Caption = sAccCaption;
+    ECaption = sAccECaption;
+};
+```
+
+``` config
+Access {
+    AccessID = nAccessID;
+    Caption = sAccCaption;
+    ECaption = sAccECaption;
+};
+```
+
+``` script
+Access {
+    AccessID = nAccessID;
+    Caption = sAccCaption;
+    ECaption = sAccECaption;
+};
+```
+
+``` definition
+Access {
+    AccessID = nAccessID;
+    Caption = sAccCaption;
+    ECaption = sAccECaption;
+};
+```
