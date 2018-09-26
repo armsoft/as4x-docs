@@ -17,7 +17,7 @@
 
 <p><strong><font size="4" face="Arial">Свойство SetRekvsReadOnly</font></strong></p>
 
-<p><font face="Arial"><a href="../Asdoc.html">См. также</a>&nbsp; <a href="../../Examples/Е_SetRekvsReadOnly.html">Пример</a>&nbsp;&nbsp;<a href="../Asdoc.html">Применяется к</a></font></p>
+<p><font face="Arial"><a href="../Asdoc.html">См. также</a>&nbsp; <a href="../../Examples/E_SetRekvsReadOnly.html">Пример</a>&nbsp;&nbsp;<a href="../Asdoc.html">Применяется к</a></font></p>
 
 <p><font face="Arial">Возвращает или устанавливает статус режима 
 редактирования набора реквизитов документа.</font></p>
