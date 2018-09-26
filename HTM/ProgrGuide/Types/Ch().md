@@ -1,7 +1,5 @@
-﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
-<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=x-user-defined">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+﻿<html>
+<head>
 <title>CH()</title>
 </head>
 

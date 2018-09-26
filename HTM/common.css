@@ -1,0 +1,44 @@
+﻿body {
+    font-family: Arial;
+    padding-bottom: 20px;
+}
+
+code {
+    font-size: medium;
+    font-family: Consolas,monospace;
+}
+
+h2 {
+    font-size: large;
+}
+
+h4 {
+    padding-top: 1.4em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+th.member {
+    width: 25%;
+}
+
+td.param {
+    width: 25%;
+    font-style: italic;
+}
+
+blockquote {
+    font-family: 'Times New Roman';
+}

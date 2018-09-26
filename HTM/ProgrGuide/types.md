@@ -1,7 +1,5 @@
 ﻿<html>
-
-<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<head>
 <title>System Types</title>
 </head>
 
@@ -11,9 +9,9 @@
 <font face="Arial"><br>
 В системе имеются внутренние типы данных, предопределяющие хранимые виды данных, 
 с характерными областями допустимых значений. Внутренние типы используются в 
-системе для указания типов реквизитов <a href="Defs/doc.HTM">в документах</a>, 
-значений колонок и передаваемых параметров в <a href="Defs/Data.htm">источниках 
-данных</a>, полей ввода в <a href="Functions/Asustpar.htm">диалоговых окнах</a>:</font></p>
+системе для указания типов реквизитов <a href="Defs/doc.html">в документах</a>, 
+значений колонок и передаваемых параметров в <a href="Defs/Data.html">источниках 
+данных</a>, полей ввода в <a href="Functions/Asustpar.html">диалоговых окнах</a>:</font></p>
 
 <blockquote>
   <p><font face="Arial"><a href="Types/Amacc.html">AmAcc</a><br>

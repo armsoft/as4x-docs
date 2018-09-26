@@ -1,7 +1,5 @@
 ﻿<html>
-
-<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<head>
 <title>NP()</title>
     <style type="text/css">
         .style1

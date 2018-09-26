@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<title>CurrentTree\RegistrNode</title>
+</head>
+
+<body>
+
+<p><font size="3" face="Arial"><strong>Пример метода RegistrNode</strong></font></p>
+
+<p><font face="Arial"><font size="3">Ниже приводится </font>скриптовая 
+процедура Functions из <a href="../Defs/Tree.html">описания дерева-справочника.</a></font></p>
+
+<p><font face="Arial">Sub Functions() <br>
+&nbsp;&nbsp;&nbsp; set xTree=<a href="../Functions/Functions/InterfaceManagment/CurrentTree.html">CurrentTree</a><br>
+&nbsp;&nbsp; .....&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; xTree.<strong>RegistrNode</strong>
+&quot;node3&quot;,&quot;Операции&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrNode &quot;node31&quot;, &quot;Приход&quot;, &quot;node3&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrNode &quot;node32&quot;, &quot;Расход&quot;, &quot;node3&quot;<br>
+<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrNode &quot;node4&quot;, &quot;Просмотр и редактирование&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrNode &quot;node41&quot;, &quot;Изменение состояний&quot;, &quot;node4&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrNode &quot;node42&quot;, &quot;Просмотр операций&quot;, &quot;node4&quot;<br>
+<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrFunction &quot;Редактирование счетов&quot;, &quot;pAccEdit&quot;<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; xTree.<a href="../Functions/FrmEditTree/RegistrFunction.html">RegistrFunction
+</a>&quot;Приход МБП&quot;, &quot;pCrLnGuar&quot;, &quot;In&quot;, &quot;node31&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrFunction &quot;Приход МТЦ&quot;, &quot;pCrLnGDbt&quot;, &quot;In&quot;, 
+&quot;node31&quot;<br>
+&nbsp;&nbsp;&nbsp; xTree.RegistrFunction &quot;Расход с НДС&quot;, &quot;pCrLnCred&quot;, &quot;Out&quot;, 
+&quot;node32&quot;<br>
+&nbsp;&nbsp;&nbsp; .....<br>
+<br>
+End Sub</font></p>
+</body>
+</html>

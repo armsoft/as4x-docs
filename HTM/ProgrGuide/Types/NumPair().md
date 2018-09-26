@@ -1,7 +1,5 @@
 ﻿<html>
-
-<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<head>
 <title>NumPair()</title>
 </head>
 
@@ -17,8 +15,8 @@
 href="../Defs/doc.html">колонок грид-таблицы документа</a>
 она использоваться не может. Возможность ввода нулевых значений контролируется 
 через свойства <a
-href="../Functions/ASDOC/Control.htm#ZeroNumber1">ZeroNumber1</a>, <a
-href="../Functions/ASDOC/Control.htm#ZeroNumber2">ZeroNumber2</a>.</font></p>
+href="../Functions/ASDOC/Control.html#ZeroNumber1">ZeroNumber1</a>, <a
+href="../Functions/ASDOC/Control.html#ZeroNumber2">ZeroNumber2</a>.</font></p>
 
 <p class="label">&nbsp;</p>
 

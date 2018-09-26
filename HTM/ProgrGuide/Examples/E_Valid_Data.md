@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+<title>Valid Example for DataSource</title>
+</head>
+
+<body>
+
+<p><font size="3" face="Arial"><strong>Пример события Valid</strong></font></p>
+
+<p><font face="Arial">Ниже приведен пример обработчика события <strong>
+Valid</strong> из <a
+href="../Defs/Data.html">описания источника данных</a>. В нем для заполнения 
+источника проверяется условие в функции <strong>Valid</strong>. Система 
+автоматически не включает в источник данных те строки, для которых функция <strong>
+Valid</strong> возвращает ложь. Т.о. перед срабатыванием события <a href="../ScriptProcs/OnEachRow.html">
+OnEachRow</a>
+для каждой строки, срабатывает событие <strong>Valid.</strong>
+В примере, в источник данных не включаются те строки, для которых нет доступа 
+пользователю.<br>
+</font></p>
+
+<p><font face="Arial">SCRIPT {<br>
+&nbsp;&nbsp; Dim DbSum, CrSum, AMDDb, AMDCr, ParVal<br>
+<br>
+Function <a href="../ScriptProcs/Valid_Data.html">Valid</a>()<br>
+&nbsp;&nbsp; Valid = Util.<a href="../Functions/Functions/AccessControl/CheckAccess.html">CheckAccess</a>(DS(&quot;fISN&quot;),3)<br>
+End Function<br>
+<br>
+Sub <a href="../ScriptProcs/OnOpen.html">OnOpen</a>()<br>
+&nbsp;&nbsp; ParVal = DS.<a href="../Functions/ASDATA/Parameters.html">Parameters</a>(4) 
+&#39;taking date paramter<br>
+&nbsp;&nbsp; DbSum=CCur(0)<br>
+&nbsp;&nbsp; CrSum=DbSum<br>
+&nbsp;&nbsp; AMDDb=DbSum<br>
+&nbsp;&nbsp; AMDCr=DbSum<br>
+End Sub<br>
+<br>
+Sub <a href="../ScriptProcs/OnEachRow.html">OnEachRow</a>()<br>
+&nbsp;&nbsp;&nbsp; call 
+AccRem(DS(&quot;fISN&quot;),ParVal,DS(&quot;DBCR&quot;),DbSum,CrSum,AMDDb,AMDCr)<br>
+End Sub<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</font></p>
+</body>
+</html>

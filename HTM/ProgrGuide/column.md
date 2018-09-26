@@ -1,7 +1,5 @@
 ﻿<html>
-
-<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<head>
 <title>Data Definition</title>
 <style type="text/css">
 .style2 {
@@ -161,7 +159,9 @@
 		строковое выражение, определяющее </span>
 		<span style="font-size:12.0pt;font-family:
   &quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">
-		[внутренний тип данных колонки](/HTM/ProgrGuide/types.md)</span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+		<a href="types.html">
+		<span lang="RU" style="color:blue;mso-ansi-language:RU">внутренний тип 
+		данных колонки</span></a></span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU">.</span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU"><o:p></o:p></span></p>
 		</td>
@@ -233,7 +233,7 @@
 		доступность колонки без его дальнейшего описания в </span>
 		<span style="font-size:12.0pt;font-family:
   &quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">
-		<a href="Defs/View.htm">
+		<a href="Defs/View.html">
 		<span lang="RU" style="color:blue;mso-ansi-language:RU">видах просмотра</span></a></span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU">. Т.е. в виде просмотра 
 		колонка может не описываться, но если она объявлена перманентной, то 
@@ -243,7 +243,7 @@
 		использующих объект </span>
 		<span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
   mso-fareast-font-family:&quot;Times New Roman&quot;">
-		<a href="Functions/Frmpttel.htm">
+		<a href="Functions/Frmpttel.html">
 		<span lang="RU" style="color:blue;mso-ansi-language:RU">текущий вид 
 		просмотра</span></a></span><span lang="RU" style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU"> доступны только 
@@ -329,7 +329,7 @@
 		необязательное строковое выражение, определяющее </span>
 		<span style="font-size:
   12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">
-		<a href="types">
+		<a href="types.html">
 		<span lang="RU" style="color:blue;mso-ansi-language:RU">внутренний тип 
 		данных колонки</span></a></span><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
   &quot;Times New Roman&quot;;mso-ansi-language:RU"> <span lang="RU">при показе.</span></span><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:

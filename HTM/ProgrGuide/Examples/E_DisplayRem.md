@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<title>DisplayRem</title>
+</head>
+
+<body>
+
+<p><font face="Arial"><strong><font size="3">Пример события </font>
+DisplayRem</strong></font></p>
+
+<p><font face="Arial">Приведен пример <a
+href="../Defs/Accounting.html">описания учета</a> с обработчиком события <strong>
+DisplayRem.</strong><br>
+</font></p>
+
+<p><font face="Arial">ACCOUNTING { NAME = 01; CAPTION=&quot;Учет банковских 
+балансовых счетов&quot;;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/MainFolder.html">MainFolder</a> 
+= ACC;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/AccFolder.html">AccFolder</a> 
+= ACC;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/Cur.html">Currency</a> = 1;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/Remainder.html">Remainder</a> 
+= 1;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/Limit.html">Limit</a> = 1;<br>
+&nbsp;&nbsp;&nbsp; LinkedAccounting = 11;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/Description.html">
+Description</a> = &quot;Учет банковских балансовых счетов&quot;<br>
+&nbsp;&nbsp;&nbsp; <a href="../Functions/AsAccounting/RemHeader.html">RemHeader</a> 
+= &quot;Заглавие для остатков&quot;;<br>
+&nbsp;&nbsp;&nbsp; operation {Name = TRF ;Caption = Перевод;}; <br>
+&nbsp;&nbsp;&nbsp; operation {Name = MSC ;Caption = Разное;};<br>
+&nbsp;&nbsp;&nbsp; operation {Name = RVL ;Caption = #Revaluation;};<br>
+<br>
+SCRIPT {<br>
+Function DisplayRem(ByVal xISN , ByVal xAccRem, ByVal xLinkedRem, _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ByVal xAccRemNC, ByVal xLinkedRemNC)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; DisplayRem =<a href="../Functions/Functions/Conversion/VTOFS.html">VTOFS</a>(&quot;N(16,2)&quot;, 
+xAccRem) &amp; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VTOFS(&quot;N(16,2)&quot;, xLinkedRem) &amp; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VTOFS(&quot;N(16,2)&quot;, xAccRemNC) &amp; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VTOFS(&quot;N(16,2)&quot;, xLinkedRemNC)<br>
+End Function<br>
+};<br>
+};</font></p>
+</body>
+</html>
