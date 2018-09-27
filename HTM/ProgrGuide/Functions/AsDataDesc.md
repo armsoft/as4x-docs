@@ -200,4 +200,5 @@
     <td class="label" width="71%"><font face="Arial">Удаляет параметр из динамического 
         источника данных.</font></td>
   </tr>
-  
+</table>
+</html>
