@@ -1,6 +1,7 @@
-﻿<html>
-<head>
-<title>AsDataDesc</title>
+﻿---
+title: AsDataDesc
+layout: page
+---
 <style type="text/css">
     .style4
     {
@@ -28,7 +29,7 @@
         height: 18px;
     }
 </style>
-</head>
+
 
 <body>
 
@@ -201,4 +202,3 @@
         источника данных.</font></td>
   </tr>
 </table>
-</html>
