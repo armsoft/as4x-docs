@@ -31,7 +31,7 @@ layout: page
 </style>
 
 
-<body>
+
 
 <h1><font size="4" face="Arial">Объект AsDataDesc (Динамический источник данных)</font></h1>
 
