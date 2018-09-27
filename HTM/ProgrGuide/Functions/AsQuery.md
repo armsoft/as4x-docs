@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+    <title>AsQuery </title>
+    <link rel="stylesheet" href="../../common.css" />
+</head>
+<body>
+    <h2>Объект AsQuery</h2>
+    <p>
+        <a href="../objects.html">См. также</a>&nbsp;&nbsp;<a href="../Examples/E_AsQuery.html">Пример</a>
+    </p>
+    <br />
+    <p>Объект <b>AsQuery</b> предназначен для выполнения параметризированного запроса.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="member">Свойства</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="AsQuery/SQL.html">SQL</a></td>
+                <td>Возвращает или устанавливает текст SQL-запроса.</td>
+            </tr>
+            <tr>
+                <td><a href="AsQuery/Parameters.html">Parameters</a></td>
+                <td>Возвращает или устанавливает значение параметра для SQL-запроса.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>&nbsp;</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="member">Методы</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="AsQuery/ExecuteReader.html">ExecuteReader</a></td>
+                <td>Выполняет SQL-запрос и возвращает результат выполнения.</td>
+            </tr>
+            <tr>
+                <td><a href="AsQuery/ExecuteNonQuery.html">ExecuteNonQuery</a></td>
+                <td>Выполняет SQL-запрос.</td>
+            </tr>
+            <tr>
+                <td><a href="AsQuery/ExecuteScalar.html">ExecuteScalar</a></td>
+                <td>Выполняет SQL-запрос и возвращает первый/единственный элемент из результата выполнения.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
