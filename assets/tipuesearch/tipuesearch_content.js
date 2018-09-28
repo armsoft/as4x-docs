@@ -27,8 +27,18 @@ layout: null
     {%- endunless -%}
   {%- endunless -%}
 {%- endfor -%}
-{%- if site.tipue_search.include.pages == true -%}
-  {%- for page in site.html_pages -%}
+  /*
+    //site.tipue_search.include.pages
+  */
+ {%- if site.tipue_search.include.pages == true -%}
+  /*
+    //site.tipue_search.include.pages
+  */
+ {%- for page in site.html_pages -%}
+  /*
+    // {{ page.title | smartify | strip_html | normalize_whitespace | jsonify }}
+    // {{ page.url | smartify | strip_html | normalize_whitespace | jsonify }}
+  */
     {%- unless page.exclude_from_search == true or excluded_files contains page.path -%}
       {%- assign has_excluded_taxonomy = false -%}
       {%- for tag in page.tags -%}
@@ -47,7 +57,24 @@ layout: null
     {%- endunless -%}
   {%- endfor -%}
 {%- endif -%}
-{%- for collection in site.tipue_search.include.collections -%}
+  /*
+    //end site.tipue_search.include.pages
+  */
+
+  /*
+    //site.html_files
+  */
+ {%- for file in site.html_files -%}
+  /*
+    // {{ file.path | smartify | strip_html | normalize_whitespace | jsonify }}
+  */
+  {%- endfor -%}
+
+
+
+
+
+ {%- for collection in site.tipue_search.include.collections -%}
   {%- assign documents = site.documents | where:"collection",collection -%}
   {%- for document in documents -%}
     {%- unless document.exclude_from_search == true or excluded_files contains document.path -%}
