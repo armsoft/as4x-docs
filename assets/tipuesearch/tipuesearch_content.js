@@ -30,15 +30,15 @@ layout: null
   /*
     //site.tipue_search.include.pages
   */
- {%- if site.tipue_search.include.pages == true -%}
+{%- if site.tipue_search.include.pages == true -%}
   /*
     //site.tipue_search.include.pages
   */
- {%- for page in site.html_pages -%}
-  /*
-    // {{ page.title | smartify | strip_html | normalize_whitespace | jsonify }}
-    // {{ page.url | smartify | strip_html | normalize_whitespace | jsonify }}
-  */
+  {%- for page in site.html_pages -%}
+    /*
+      // {{ page.title | smartify | strip_html | normalize_whitespace | jsonify }}
+      // {{ page.url | smartify | strip_html | normalize_whitespace | jsonify }}
+    */
     {%- unless page.exclude_from_search == true or excluded_files contains page.path -%}
       {%- assign has_excluded_taxonomy = false -%}
       {%- for tag in page.tags -%}
@@ -64,13 +64,36 @@ layout: null
   /*
     //site.html_files
   */
- {%- for file in site.html_files -%}
+  {%- for file in site.html_files -%}
+  /*
+    // {{ file.path | smartify | strip_html | normalize_whitespace | jsonify }}
+  */
+
+  {%- endfor -%}
+
+
+  /*
+    //site.static_files
+  */
+  {%- for file in site.static_files -%}
   /*
     // {{ file.path | smartify | strip_html | normalize_whitespace | jsonify }}
   */
   {%- endfor -%}
 
 
+
+
+
+  /*
+    // site.documents
+  */
+  {%- for document in site.documents -%}
+  /*
+    // {{ document.title | smartify | strip_html | normalize_whitespace | jsonify }}
+    // {{ document.url | smartify | strip_html | normalize_whitespace | jsonify }}
+  */
+  {%- endfor -%}
 
 
 
@@ -95,6 +118,7 @@ layout: null
     {%- endunless -%}
   {%- endfor -%}
 {%- endfor -%}
+
 var tipuesearch = {"pages": [
 {%- for document in index -%}
   {%- assign tags = document.tags | uniq -%}
