@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>ExecuteQuery</title>
+    <link rel="stylesheet" href="../../../common.css" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 42px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Функция ExecuteQuery</h2>
+
+    <p>Выполняет SQL-запрос и возвращает результат выполнения запроса при заданном параметре.</p>
+
+    <h4>Синтаксис</h4>
+    <p>
+        <strong>Set</strong> <em>rs</em> = <strong>Util</strong>.<strong>ExecuteQuery</strong>(<em>sSQL</em>,
+            <em>returnRS</em>, [<em>RSType</em>], [<em>RSLockType</em>], 
+            [<em>RSOption</em>], [<em>QueryTimeout</em>])
+    </p>
+
+    <p>Синтаксис функции <strong>ExecuteQuery</strong> состоит из следующих частей:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Параметр</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="param">rs</td>
+                <td>
+                    переменная типа rdoResultset.
+                </td>
+            </tr>
+            <tr>
+                <td class="param">sSQL</td>
+                <td>строковое выражение, определяющее текст запроса.</td>
+            </tr>
+            <tr>
+                <td>returnRS</td>
+                <td>логическое выражение, определяющее признак возвращения результата запроса.</td>
+            </tr>
+            <tr>
+                <td class="param">RSType</td>
+                <td>
+                    необязательное числовое
+                    выражение, определяющее тип курсора возвращаемого результата. По умолчанию принимает значение <a href="../../Constants/const_opencursor_cursortype.html">ASOpenForwardOnly</a>.
+                </td>
+            </tr>
+            <tr>
+                <td class="param">RSLockType</td>
+                <td>
+                    необязательное числовое
+                    выражение, определяющее тип блокировки данных, используемых при выполнении
+                    запроса. По умолчанию принимает значение <a href="../../Constants/const_opencursor_locktype.html">ASConcurReadOnly</a>.
+                </td>
+            </tr>
+            <tr>
+                <td class="param">RSOption</td>
+                <td>
+                    необязательное числовое
+                    выражение, определяющее дополнительные параметры выполнения SQL-запроса. По
+                    умолчанию принимает значение <a href="../../Constants/const_executequery_options.html">ASExecDirect</a>.
+                </td>
+            </tr>
+            <tr>
+                <td class="param">QueryTimeout</td>
+                <td>
+                    необязательное числовое
+                    выражение, определяющее максимальное время выполнения запроса, по истечению
+                    которого выдается ошибка. Измеряется в секундах. По умолчанию принимает
+                    значение 30 секунд.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Примечание</h4>
+
+    <p> Применение данной функции уже устарела: <a href="../AsQuery.html">См. также</a></p>
+</body>
+</html>
