@@ -1,0 +1,37 @@
+﻿---
+layout: page
+title: "Диалоговое окно"
+---
+
+
+
+
+
+<p><strong><font size="3" face="Arial">Пример методов </font><font
+face="Arial">SetFocus, Show и свойств Cancel, Caption, 
+ClickDropDownEvent, Control, ExistControl, Name, Properties, ReadOnly, Value</font></strong></p>
+
+<p><font face="Arial">В примере вызывается функция LoadDialog, через 
+xDialog возвращается ссылка на обьект типа описательный диалог со всеми его 
+свойствами и методами.</font></p>
+
+<p><font face="Arial">Set xDialog = LoadDialog(&quot;DataName&quot;)<br>
+xDialog.<strong>Caption</strong> = &quot;Укажите дату&quot;<br>
+if xDialog.<strong>ExistControl(&quot;</strong>DialogName<strong>&quot;) </strong>then<br>
+&nbsp;&nbsp;&nbsp; xDialog.<strong>Control</strong>(&quot;DialogName&quot;).Text=xDialog.<strong>Name</strong><br>
+&nbsp;&nbsp;&nbsp; xDialog.<strong>ReadOnly</strong>(&quot;DialogName&quot;)=True<br>
+end if<br>
+xDialog.<strong>ReadOnly</strong>(&quot;BegDate&quot;)=False<br>
+xDialog.<strong>ReadOnly</strong>(&quot;EndDate&quot;)=False<br>
+xDialog.<strong>ClickDropDownEvent</strong>(&quot;BegDate&quot;)=True<br>
+xDialog.<strong>ClickDropDownEvent</strong>(&quot;EndDate&quot;)=False<br>
+xDialog.<strong>Show</strong><br>
+dBegDate = xDialog(&quot;BegDate&quot;)<br>
+dEndDate = xDialog.<strong>Value</strong>(&quot;EndDate&quot;)<br>
+Set objProperties=xDialog.<strong>Properties</strong><br>
+if xDialog.<strong>Cancel</strong> then<br>
+&nbsp;&nbsp; exit sub<br>
+end if&nbsp;&nbsp;&nbsp; <br>
+</font></p>
+
+

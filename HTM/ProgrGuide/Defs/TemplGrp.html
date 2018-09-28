@@ -1,0 +1,62 @@
+﻿---
+layout: page
+title: "Документ TemplGrp\TemplGrp"
+---
+    <link rel="stylesheet" href="../../../common.css" />
+    <style>
+        p, h1, pre {font-family:Arial;
+                   }
+    </style>
+
+
+
+    <h2>Документ группы шаблона TemplGrp</h2>
+    <p>
+           Документ группы шаблона печати <strong>TemplGrp</strong> описывается програмистом в скриптах в виде документа. Пользователь не может его ни добавлять, 
+       ни редактировать, ни удалять. Он задается в скриптах с помощью функции <a href="../Functions/Functions/DocumentsCirculation/CreateDoc.html">CreateDoc</a>("TemplGrp"), 
+       после чего задаются код группы, наименование и т.д. Документ <strong>TemplGrp</strong>, помимо главных реквизитов, имеет еще грид таблицу <strong>DataGrps</strong>, 
+       в котором хранятся группы данных, передаваемых документу. Документ <strong>TemplGrp</strong> задается следующим образом:
+    </p>
+    <pre><b><em>
+           Dim docA1N As AsDoc
+           docA1N("Code") = "A1N"
+           docA1N("Name") = #BalanceSheet
+           docA1N("EName") = #e_BalanceSheet
+           docA1N.Grid("DataGrps").AddRow
+           docA1N.Grid("DataGrps").Value(0, "Code") = "01"
+           docA1N.Grid("DataGrps").Value(0, "Name") = "5"
+           docA1N.Grid("DataGrps").Value(0, "EName") = "5"
+           docA1N.Store
+    </em></b></pre>
+    <p>
+           После задания групп, необходимо передать их в <a href="../Defs/TEMPLATE.html">описание шаблона TEMPLATE</a> следующим образом:
+    </p>
+    <pre><em>
+           NAME = BusCert;  
+           CAPTION = #BusTCertificate+"(doc)"; 
+           ECAPTION = #e_BusTCertificate+"(doc)"; 
+           TYPE = "0";
+           <b>Group = A1N;
+           DataGroups = "01"</b>
+    </em></pre>
+    <p>
+           Каждый шаблон может принадлежать только одной группе, и каждый шаблон может иметь много групп данных, которые будут перечисляться через 
+        запятые, например: <b><em>DataGroups = "01,05"</em></b>
+    </p>
+    <p>    Обший вид документа <b>TemplGrp</b> следующий:
+    <pre><b><em>
+           Name = TemplGrp;
+           Caption = "Տպելու ձևանմուշի խումբ";;
+           ECaption = "Template group";
+           Page { Caption = #General;       ECaption = #e_General;
+             Rekvizit {Name = Code;  Caption = #Code;  ECaption = #e_Code;  Type = "C(20)";  ATRIBUTS = "R"; };
+             Rekvizit {Name = Name;  Caption = #Name;  ECaption = #e_Name;  Type = "C(50)";  ATRIBUTS = "R"; };
+             Rekvizit {Name = EName; Caption = #EName; ECaption = #e_EName; Type = "C(50)";                  };
+             GRID {Name = DataGrps; Caption = "Տվյալների խմբեր"; ECaption = "Data groups";  Width = 9000; Height = 2000; 
+                   COLUMN {Name = Code;  Caption = #Code;  ECaption = #e_Code;  Type = "C(20)";  ATRIBUTS = "UR"; };
+                   COLUMN {Name = Name;  Caption = #Name;  ECaption = #e_Name;  Type = "C(50)";  ATRIBUTS = "R"; };       
+                   COLUMN {Name = EName; Caption = #EName; ECaption = #e_EName; Type = "C(50)";  };       
+                  };
+                };
+    </b>
+
