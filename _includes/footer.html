@@ -109,7 +109,19 @@ function findFirstSeparator(script) {
 function parseAssignment(script) {
     let iAssign = script.indexOf("=");
     if (iAssign >= 0) {
-        return "<b>" + script.substring(0, iAssign) + "</b>" + "=" + "<i>" + script.substring(iAssign + 1) + "</i>";
+        let key = script.substring(0, iAssign);
+        let value = script.substring(iAssign + 1);
+        let firstQuote = value.indexOf("\"");
+        let lastQuote = value.lastIndexOf("\"");
+        if (0 <= firstQuote && firstQuote < lastQuote) {
+            let s1 = value.substring(0, firstQuote);
+            let str = value.substring(firstQuote, lastQuote + 1);
+            let s2 = value.substring(lastQuote + 1);
+            return "<b>" + key + "</b>" + "=" + s1 + "<i style='color:#d14'>" + str + "</i>" + s2;
+        }
+        else {
+            return "<b>" + key + "</b>" + "=" + "<i>" + value + "</i>";
+        }
     }
     else {
         return script;
