@@ -42,7 +42,7 @@ Access {
 };
 ```
 
-``` config
+``` as4x
 Access {
     AccessID = nAccessID;
     Caption = sAccCaption;
@@ -50,7 +50,7 @@ Access {
 };
 ```
 
-``` script
+``` as4x
 Access {
     AccessID = nAccessID;
     Caption = sAccCaption;
@@ -58,7 +58,7 @@ Access {
 };
 ```
 
-``` definition
+``` as4x
 Access {
     AccessID = nAccessID;
     Caption = sAccCaption;
@@ -66,7 +66,7 @@ Access {
 };
 ```
 
-``` js
+``` as4x
 Common {
     Description = sDescription;
     Language = nLanguage;
@@ -87,7 +87,7 @@ Common {
 };
 ```
 
-``` typescript
+``` as4x
 Common {
     Description = sDescription;
     Language = nLanguage;
@@ -108,7 +108,7 @@ Common {
 };
 ```
 
-``` csharp
+``` as4x
 Common {
     Description = sDescription;
     Language = nLanguage;
@@ -129,7 +129,7 @@ Common {
 };
 ```
 
-``` c++
+``` as4x
 Common {
     Description = sDescription;
     Language = nLanguage;
