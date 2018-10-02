@@ -14,6 +14,10 @@ function getIndex() {
         div.appendChild(a);
         content.appendChild(div);
     }
+    let input = document.getElementById("tipue_search_input");
+    if (input.value != "") {
+        searchText(input);
+    }
 }
 
 window.addEventListener("load", (ev) => {
