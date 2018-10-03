@@ -18,11 +18,11 @@ About page is stripped down
 
 
 
-[/learnmarkdown/HTM/GlobalConfig](/learnmarkdown/HTM/GlobalConfig)
+[/as4x-docs/HTM/GlobalConfig](/as4x-docs/HTM/GlobalConfig)
 
-[/learnmarkdown/HTM/GlobalConfig.md](/learnmarkdown/HTM/GlobalConfig.md)
+[/as4x-docs/HTM/GlobalConfig.md](/as4x-docs/HTM/GlobalConfig.md)
 
-[/learnmarkdown/HTM/GlobalConfig.html](/learnmarkdown/HTM/GlobalConfig.html)
+[/as4x-docs/HTM/GlobalConfig.html](/as4x-docs/HTM/GlobalConfig.html)
 
 <!--
 Demo site for [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
