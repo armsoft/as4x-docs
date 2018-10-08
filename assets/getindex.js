@@ -2,6 +2,13 @@ function getIndex() {
     let content = document.getElementById("index_content");
     content.innerHTML = "";
     var pages = tipuesearch.pages;
+    pages.sort((a,b) => { 
+        if (a.title < b.title) 
+            return -1; 
+        if (a.title > b.title) 
+            return 1; 
+        return 0; 
+    });
 
     for (let i = 0; i < pages.length; i++) {
         let urltag = pages[i];
