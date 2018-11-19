@@ -34,7 +34,7 @@ async function isItWorking(): void {
   let other = text.toString();
   let val1: number = 123;
   let p: Point = new Point();
-  //comment here
+  //comment here 456
 }
 ```
 
