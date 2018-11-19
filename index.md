@@ -2,7 +2,7 @@
 layout: home
 ---
 
-here is some text in Index upp.
+Here is some text in Index app.
 
 
 # AS4X API Documentation
