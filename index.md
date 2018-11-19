@@ -12,6 +12,7 @@ function isItWorking() {
   let text = "some text";
   let other = text.toString();
   let val1 = 123;
+  let p = new Point();
   //comment here
 }
 ```
@@ -32,6 +33,7 @@ async function isItWorking(): void {
   let text: string = "some text";
   let other = text.toString();
   let val1: number = 123;
+  let p: Point = new Point();
   //comment here
 }
 ```
@@ -41,6 +43,7 @@ async function isItWorking(): void {
   let text: string = "some text";
   let other = text.toString();
   let val1: number = 123;
+  let p: Point = new Point();
   //comment here
 }
 ```
