@@ -12,6 +12,8 @@ function isItWorking() {
   let text = "some text";
   let other = text.toString();
   let val1 = 123;
+  let p = new Point();
+  //comment here
 }
 ```
 
@@ -21,12 +23,18 @@ Function IsItWorking()
     let val1 As Long
     Set fso = CreateObject("Scripting.FileSystemObject")
     val1 = 123
+    'comment here 123
+    REM comment here
 End Function
 ```
 
 ```typescript
 async function isItWorking(): void {
-  //...
+  let text: string = "some text";
+  let other = text.toString();
+  let val1: number = 123;
+  let p: Point = new Point();
+  //comment here
 }
 ```
 
@@ -35,8 +43,23 @@ async function isItWorking(): void {
   let text: string = "some text";
   let other = text.toString();
   let val1: number = 123;
+  let p: Point = new Point();
+  //comment here
 }
 ```
+
+```html
+<pre>
+<code class="abc">lalala
+lalala
+</code>
+</pre>
+<!-- commment here -->
+<div class="qwe">
+  <span style='font-family:Arial'>some text</span>
+</div>
+```
+
 
 ``` as4x
 Access {
