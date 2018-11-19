@@ -23,7 +23,7 @@ Function IsItWorking()
     let val1 As Long
     Set fso = CreateObject("Scripting.FileSystemObject")
     val1 = 123
-    'comment here
+    'comment here 123
     REM comment here
 End Function
 ```
