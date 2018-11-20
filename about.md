@@ -8,21 +8,23 @@ About page is stripped down
 
 
 
+[HTM/GlobalConfig](HTM/GlobalConfig)
+
+[HTM/GlobalConfig.md](HTM/GlobalConfig.md) աշխատում է
+[HTM/GlobalConfig.html](HTM/GlobalConfig.html)
+
+[/HTM/GlobalConfig.md](/HTM/GlobalConfig.md) աշխատում է
+[/HTM/GlobalConfig.html](/HTM/GlobalConfig.html)
 
 
-[HTM/GlobalConfig.md](HTM/GlobalConfig.md)
 
-[/HTM/GlobalConfig.md](/HTM/GlobalConfig.md)
+[/as4x-docs/HTM/GlobalConfig](/as4x-docs/HTM/GlobalConfig) աշխատում է
+
+[/as4x-docs/HTM/GlobalConfig.md](/as4x-docs/HTM/GlobalConfig.md) բեռնում է md ֆայլը
+
+[/as4x-docs/HTM/GlobalConfig.html](/as4x-docs/HTM/GlobalConfig.html) աշխատում է
 
 
-
-
-
-[/as4x-docs/HTM/GlobalConfig](/as4x-docs/HTM/GlobalConfig)
-
-[/as4x-docs/HTM/GlobalConfig.md](/as4x-docs/HTM/GlobalConfig.md)
-
-[/as4x-docs/HTM/GlobalConfig.html](/as4x-docs/HTM/GlobalConfig.html)
 
 <!--
 Demo site for [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
