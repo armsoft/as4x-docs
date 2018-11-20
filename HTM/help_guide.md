@@ -27,7 +27,7 @@ BORDER="0" NATURALSIZEFLAG="3" width="29" height="41">Օգնության
   <li><font FACE="Armenian Times"><a HREF="admin_guide.html">Ադմինիստրատորի
     ձեռնարկ</a> ՝ բերվում են ծրագրի ղեկավարման եւ
     սպասարկման ձեւերը:</font> </li>
-  <li><font FACE="Armenian Times"><a HREF="programmer_guide.html">Ծրագրավորողի
+  <li><font FACE="Armenian Times"><a HREF="../programmer_guide.html">Ծրագրավորողի
     ձեռնարկ</a> ՝ մանրամասնօրեն շարադրվում է
     սկրիպտային լեզուն եւ նրա շարահյուսությունը:</font> </li>
 </ul>
