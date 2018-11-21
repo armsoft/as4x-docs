@@ -1,5 +1,5 @@
 # Config settings
-title: AS4X API Documentation
+title: AS-4X API Documentation
 baseurl: "/as4x-docs"
 
 # Search settings
@@ -23,7 +23,5 @@ exclude:
   - Gemfile.lock
 
 header_pages:
-  - about.md
-  - index.md
   - search.html
   - apiIndex.html
