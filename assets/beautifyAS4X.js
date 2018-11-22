@@ -14,7 +14,7 @@ function beautifyAS4X(code) {
             case "{":
                 {
                     let s0 = script.substring(0, next.index);
-                    resultHTML += "<span class='nt'>" + s0 + "</span>" + next.char;
+                    resultHTML += "<span class='nt'>" + s0 + "</span>" + "<span class='p'>" + next.char + "</span>";
                     let s02 = script.substring(next.index + 1);
                     script = s02;
                 }
@@ -22,7 +22,7 @@ function beautifyAS4X(code) {
             case "}":
                 {
                     let s0 = script.substring(0, next.index);
-                    resultHTML += s0 + next.char;
+                    resultHTML += s0 + "<span class='p'>" + next.char + "</span>";
                     let s02 = script.substring(next.index + 1);
                     script = s02;
                 }
@@ -30,7 +30,7 @@ function beautifyAS4X(code) {
             case ";":
                 {
                     let s0 = script.substring(0, next.index);
-                    resultHTML += parseAssignment(s0) + next.char;
+                    resultHTML += parseAssignment(s0) + "<span class='p'>" + next.char + "</span>";
                     let s02 = script.substring(next.index + 1);
                     script = s02;
                 }
@@ -111,7 +111,7 @@ function parseAssignment(script) {
             const s1 = value.substring(0, firstQuote);
             const str = value.substring(firstQuote, lastQuote + 1);
             const s2 = value.substring(lastQuote + 1);
-            return "<span class='nt'>" + key + "</span>" + "<span class='p'>=</span>" + s1 + "<span class='s'>" + str + "</span>" + s2;
+            valueHtml = s1 + "<span class='s'>" + str + "</span>" + s2;
         }
         else if (!isNaN(+value)) {
             const r = /[+-]?([0-9]*[.])?[0-9]+/;
