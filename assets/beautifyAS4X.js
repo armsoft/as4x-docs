@@ -14,7 +14,7 @@ function beautifyAS4X(code) {
             case "{":
                 {
                     let s0 = script.substring(0, next.index);
-                    resultHTML += "<b>" + s0 + "</b>" + next.char;
+                    resultHTML += "<span class='nt'>" + s0 + "</span>" + next.char;
                     let s02 = script.substring(next.index + 1);
                     script = s02;
                 }
@@ -38,11 +38,11 @@ function beautifyAS4X(code) {
             case "'":
                 {
                     let s0 = script.substring(0, next.index);
-                    resultHTML += s0 + "<green style='color:green'>" + next.char + "</green>";
+                    resultHTML += s0 + "<span class='c'>" + next.char + "</span>";
                     script = script.substring(next.index + 1);
                     let iEndLine = script.indexOf("\n");
                     let s1 = script.substring(0, iEndLine + 1);
-                    resultHTML += "<green style='color:green'>" + s1 + "</green>";
+                    resultHTML += "<span class='c'>" + s1 + "</span>";
                     let s02 = script.substring(iEndLine + 1);
                     script = s02;
                 }
@@ -57,7 +57,7 @@ function beautifyAS4X(code) {
             //     break;
             default:
                 throw new Error("unprocessed char: " + next.char);
-                break;
+            //break;
         }
         prev = next;
         next = findFirstSeparator(script);
@@ -99,27 +99,60 @@ function findFirstSeparator(script) {
     return result;
 }
 function parseAssignment(script) {
-    let iAssign = script.indexOf("=");
+    const iAssign = script.indexOf("=");
     if (iAssign >= 0) {
-        let key = script.substring(0, iAssign);
-        let value = script.substring(iAssign + 1);
-        let firstQuote = value.indexOf("\"");
-        let lastQuote = value.lastIndexOf("\"");
+        const key = script.substring(0, iAssign);
+        const value = script.substring(iAssign + 1);
+        const keyHtml = "<span class='nt'>" + key + "</span><span class='p'>=</span>";
+        let valueHtml;
+        const firstQuote = value.indexOf("\"");
+        const lastQuote = value.lastIndexOf("\"");
         if (0 <= firstQuote && firstQuote < lastQuote) {
-            let s1 = value.substring(0, firstQuote);
-            let str = value.substring(firstQuote, lastQuote + 1);
-            let s2 = value.substring(lastQuote + 1);
-            return "<b>" + key + "</b>" + "=" + s1 + "<i style='color:#d14'>" + str + "</i>" + s2;
+            const s1 = value.substring(0, firstQuote);
+            const str = value.substring(firstQuote, lastQuote + 1);
+            const s2 = value.substring(lastQuote + 1);
+            return "<span class='nt'>" + key + "</span>" + "<span class='p'>=</span>" + s1 + "<span class='s'>" + str + "</span>" + s2;
+        }
+        else if (!isNaN(+value)) {
+            const r = /[+-]?([0-9]*[.])?[0-9]+/;
+            const numeric = r.exec(value)[0];
+            const i = value.indexOf(numeric);
+            const s1 = value.substring(0, i);
+            const s2 = value.substring(i + numeric.length);
+            if (numeric.indexOf(".") < 0) {
+                valueHtml = s1 + "<span class='mi'>" + numeric + "</span>" + s2;
+            }
+            else {
+                valueHtml = s1 + "<span class='mf'>" + numeric + "</span>" + s2;
+            }
         }
         else {
-            return "<b>" + key + "</b>" + "=" + "<i>" + value + "</i>";
+            valueHtml = value;
         }
+        return keyHtml + valueHtml;
     }
     else {
         return script;
     }
 }
-let codes = document.getElementsByClassName("language-as4x");
-Array.prototype.forEach.call(codes, (code) => {
-    beautifyAS4X(code);
-});
+function highlightAllAS4X() {
+    const codes = document.querySelectorAll("code.language-as4x");
+    for (let i = 0; i < codes.length; i++) {
+        const codeTag = codes[i];
+        const preTag = codeTag.parentElement;
+        if (preTag && preTag.tagName == "PRE") {
+            codeTag.classList.remove("language-as4x");
+            preTag.classList.add("highlight");
+            const div1 = document.createElement("div");
+            div1.classList.add("language-as4x");
+            div1.classList.add("highlighter-rouge");
+            const div2 = document.createElement("div");
+            div2.classList.add("highlight");
+            div1.appendChild(div2);
+            preTag.parentElement.insertBefore(div1, preTag);
+            div2.appendChild(preTag);
+            beautifyAS4X(codeTag);
+        }
+    }
+}
+highlightAllAS4X();
