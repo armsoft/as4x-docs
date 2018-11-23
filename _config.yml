@@ -23,5 +23,6 @@ exclude:
   - Gemfile.lock
 
 header_pages:
+  - content.md
   - search.html
   - apiIndex.html
