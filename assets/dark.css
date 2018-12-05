@@ -11,23 +11,40 @@ pre, code {
     background: #181818;
 }
 
-
 .site-title, .site-title:visited {
     color: #e3e3e3;
 }
 
-.site-nav {
-    background-color: #181818;
+.site-nav .page-link {
+    color: #e3e3e3;
 }
 
-    .site-nav .page-link {
-        color: #e3e3e3;
+table {
+    color: inherit;
+}
+
+    table th {
+        background-color: rgba(0,0,0,0.3);
     }
 
-@media screen and (max-width: 600px) {
-    .site-nav .menu-icon > svg {
-        fill: #e3e3e3;
+    table tr:nth-child(2n) {
+        background-color: rgba(0,0,0,0.2);
     }
+
+    table th, table td {
+        border-color: #585858;
+    }
+
+
+
+@media screen and (max-width: 600px) {
+    .site-nav {
+        background-color: #181818;
+    }
+
+        .site-nav .menu-icon > svg {
+            fill: #e3e3e3;
+        }
 }
 
 /* like docs.ms */
