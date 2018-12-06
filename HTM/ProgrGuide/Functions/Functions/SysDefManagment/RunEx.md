@@ -10,7 +10,7 @@ title: "Метод RunEx"
 
 ## Синтаксис
 
-```
+``` vb
 Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParArray()) As Variant
 ```
 
@@ -31,7 +31,7 @@ Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParA
   если типы этих переменных совпадают с типами процедуры или же имеют тип **Variant**.
  
 	Например:
-	```
+	``` vb
 	' пример 1
 	Dim param01 As Long
 	RunEx("modname", "methodname1", param01)  
@@ -40,7 +40,7 @@ Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParA
 		'''
 	End Sub
 	```
-	```
+	``` vb
 	' пример 2
 	Dim param01 As Long
 	RunEx("modname", "methodname2", param01)  
@@ -56,7 +56,7 @@ Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParA
 * при задании необязательных параметров предыдущие необязательные параметры должны быть заполнены. 
 
 	Например:
-	```
+	``` vb
 	' пример 1
 	RunEx("modname", "methodname", param1, , Param3) 
 
@@ -64,7 +64,7 @@ Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParA
 		'''
 	End Sub
 	```
-	```
+	``` vb
 	' пример 2
 	RunEx("modname", "methodname", param1) 
 
