@@ -127,6 +127,7 @@ title: Contents
     - [Событие Dialog_Deactivate](HTM/ProgrGuide/ScriptProcs/Dialog_Deactivate.html)
     - [Событие _Validate](HTM/ProgrGuide/ScriptProcs/Dialog_Validate.html)
   - [Событие InitSys](HTM/ProgrGuide/ScriptProcs/InitSys.html)
+  - [Пользовательские обработчики событий](HTM/ProgrGuide/ScriptProcs/UserDefinedHandlers.md)
 - [Объекты](HTM/ProgrGuide/objects.html)
   - [Объект документ](HTM/ProgrGuide/Functions/Asdoc.html)
     - [Свойство Attachments](HTM/ProgrGuide/Functions/ASDOC/Attachments.html)
