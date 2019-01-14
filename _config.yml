@@ -11,6 +11,13 @@ tipue_search:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Enable/Disable auto-generated ID's for headings
+  auto_ids: true
+
 theme: minima
 plugins:
   - jekyll-feed
