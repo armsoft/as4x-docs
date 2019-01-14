@@ -105,9 +105,9 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPostValidate, "IMemOrd", "NewMod.M
 ```
 
 
-## EventsArgs տիպեր
+## EventArgs տիպեր
 
-Ամեն մի մշակիչ ստանում է մեկ պարամետր EventsArgs*XXXXYYYY* տիպի, որի մեջ հասանելի են այդ իրադարձությանը վերաբերող տվյալները։
+Ամեն մի մշակիչ ստանում է մեկ պարամետր EventArgs*XXXXYYYY* տիպի, որի մեջ հասանելի են այդ իրադարձությանը վերաբերող տվյալները։
 
 Օրինակ՝ [Valid](Valid.html) իրադարձության մշակիչը ստանում է [EventArgsDocValid](#EventArgsDocValid-Class) տիպի օբյեկտ, որտեղ հասանելի են որպես հատկություն *փաստաթուղթը*, *առաջացնող դաշտը* և *հին արժեքը*։
 
