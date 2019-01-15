@@ -47,7 +47,7 @@ title: Contents
   - [Описание шаблона WORDTEMPLATE](HTM/ProgrGuide/Defs/WORDTEMPLATE.html)
   - [Описание шаблона EXCELTEMPLATE](HTM/ProgrGuide/Defs/EXCELTEMPLATE.html)
   - [Описание документа TemplGrp](HTM/ProgrGuide/Defs/TemplGrp.html)
-- [Системные события](HTM/ProgrGuide/scriptstproced.html)
+- [Системные события](HTM/ProgrGuide/scriptstproced.md)
   - [Системные события документа](HTM/ProgrGuide/ScriptProcs/DocEvents.html)
     - [Последовательность системных событий для документа](HTM/ProgrGuide/ScriptProcs/Events_Sequence.html)
     - [Событие Action](HTM/ProgrGuide/ScriptProcs/Action.html)
