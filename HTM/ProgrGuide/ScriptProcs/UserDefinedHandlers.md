@@ -1,6 +1,18 @@
 ---
 title: "Օգտագործողի կողմից ընդլայնվող մշակիչներ"
 author: "sts"
+sublinks:
+  - { title: "ScriptExtension.AddHandler մեթոդ", ref: scriptextensionaddhandler-մեթոդ }
+  - { title: "ExtensionEvents Enum", ref: extensionevents-enum }
+  - { title: "EventArgs տիպեր", ref: eventargs-տիպեր }
+  - { title: "EventArgsDocBeforeImport Class", ref: eventargsdocbeforeimport-class }
+  - { title: "EventArgsDocWhen Class", ref: eventargsdocwhen-class }
+  - { title: "EventArgsDocValid Class", ref: eventargsdocvalid-class }
+  - { title: "EventArgsDocValidate Class", ref: eventargsdocvalidate-class }
+  - { title: "EventArgsDocAction Class", ref: eventargsdocaction-class }
+  - { title: "EventArgsDocFolders Class", ref: eventargsdocfolders-class }
+  - { title: "EventArgsDocBeforeCommit Class", ref: eventargsdocbeforecommit-class }
+  - { title: "EventArgsDataFunctions Class", ref: eventargsdatafunctions-class }
 ---
 
 Տրված է հնարավորություն սահմանել լրացուցիչ մշակիչներ փաստաթղթում և տվյալների աղբյուրում առաջացող որոշ իրադարձությունների համար։

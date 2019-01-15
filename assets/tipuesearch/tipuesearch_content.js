@@ -90,6 +90,15 @@ var tipuesearch = {"pages": [
     "text": {{ document.content | strip_html | normalize_whitespace | jsonify }},
     "tags": {{ taxonomies | join: " " | normalize_whitespace | jsonify }},
     "url": {{ document.url | relative_url | jsonify }}
-  }{%- unless forloop.last -%},{%- endunless -%}
+  }
+  {%- for link in document.sublinks -%}
+  ,{
+    "title": {{ link.title | smartify | strip_html | normalize_whitespace | jsonify }},
+    "text": {{ document.content | strip_html | normalize_whitespace | jsonify }},
+    "tags": {{ taxonomies | join: " " | normalize_whitespace | jsonify }},
+    "url": {{ document.url | relative_url | jsonify }} + "#" + {{ link.ref | smartify | strip_html | normalize_whitespace | jsonify }}
+  }
+  {%- endfor -%}
+  {%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 ]};
