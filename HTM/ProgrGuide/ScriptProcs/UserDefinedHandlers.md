@@ -75,7 +75,7 @@ End Sub
 ## ScriptExtension.AddHandler մեթոդ
 
 Այս մեթոդի միջոցով ավելացվում են նոր մշակիչներ իրադարձությունների համար։ 
-Թույլատրելի իրադարձությունները սահմանված են [ExtensionEvents](#ExtensionEvents-Enum)-ի մեջ։
+Թույլատրելի իրադարձությունները սահմանված են [ExtensionEvents](#extensionevents-enum)-ի մեջ։
 
 ``` vb
 Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanceName As String, ByVal handlerName As String)
@@ -121,7 +121,7 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPostValidate, "IMemOrd", "NewMod.M
 
 Ամեն մի մշակիչ ստանում է մեկ պարամետր EventArgs*XXXXYYYY* տիպի, որի մեջ հասանելի են այդ իրադարձությանը վերաբերող տվյալները։
 
-Օրինակ՝ [Valid](Valid.html) իրադարձության մշակիչը ստանում է [EventArgsDocValid](#EventArgsDocValid-Class) տիպի օբյեկտ, որտեղ հասանելի են որպես հատկություն *փաստաթուղթը*, *առաջացնող դաշտը* և *հին արժեքը*։
+Օրինակ՝ [Valid](Valid.html) իրադարձության մշակիչը ստանում է [EventArgsDocValid](#eventargsdocvalid-class) տիպի օբյեկտ, որտեղ հասանելի են որպես հատկություն *փաստաթուղթը*, *առաջացնող դաշտը* և *հին արժեքը*։
 
 ### EventArgsDocBeforeImport Class
 
@@ -134,8 +134,8 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPostValidate, "IMemOrd", "NewMod.M
 |`Cancel`|Այս հատկությանը `True` արժեքի վերագրման դեպքում դադարեցվում է փաստաթղթի ներմուծումը իրադարձության ավարտից հետո։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreBeforeImport](#ExtensionEvents-Enum)
-* [DocPostBeforeImport](#ExtensionEvents-Enum)
+* [DocPreBeforeImport](#extensionevents-enum)
+* [DocPostBeforeImport](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -155,8 +155,8 @@ End Sub
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreWhen](#ExtensionEvents-Enum)
-* [DocPostWhen](#ExtensionEvents-Enum)
+* [DocPreWhen](#extensionevents-enum)
+* [DocPostWhen](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -178,8 +178,8 @@ End Sub
 |`OldValue`|Դաշտի հին արժեքը, մինչ իրադարձության առաջանալը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreValid](#ExtensionEvents-Enum)
-* [DocPostValid](#ExtensionEvents-Enum)
+* [DocPreValid](#extensionevents-enum)
+* [DocPostValid](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -199,8 +199,8 @@ End Sub
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreValid](#ExtensionEvents-Enum)
-* [DocPostValid](#ExtensionEvents-Enum)
+* [DocPreValid](#extensionevents-enum)
+* [DocPostValid](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -220,8 +220,8 @@ End Sub
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreAction](#ExtensionEvents-Enum)
-* [DocPostAction](#ExtensionEvents-Enum)
+* [DocPreAction](#extensionevents-enum)
+* [DocPostAction](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -250,8 +250,8 @@ End Sub
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreFolders](#ExtensionEvents-Enum)
-* [DocPostFolders](#ExtensionEvents-Enum)
+* [DocPreFolders](#extensionevents-enum)
+* [DocPostFolders](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -277,8 +277,8 @@ End Sub
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPreBeforeCommit](#ExtensionEvents-Enum)
-* [DocPostBeforeCommit](#ExtensionEvents-Enum)
+* [DocPreBeforeCommit](#extensionevents-enum)
+* [DocPostBeforeCommit](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
@@ -298,7 +298,7 @@ End Sub
 |`CurrentView`|Հղում [ընթացիկ դիտելու ձևի](../Functions/Frmpttel.html "CurrentView") վրա։|
 
 Օգտագործվում է հետևյալ իրադարձության համար
-* [DataPostFunctions](#ExtensionEvents-Enum)
+* [DataPostFunctions](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
