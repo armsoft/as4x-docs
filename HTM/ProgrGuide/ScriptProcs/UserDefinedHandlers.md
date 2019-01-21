@@ -84,7 +84,7 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 |Պարամետր|Նկարագրություն|
 |:--|:--|
 |`eventType`   | Այն իրադարձության տեսակը, որի համար ավելացվում է մշակիչը։|
-|`instanceName`| Այն փաստաթղթի կամ տվյալների աղբյուրի անունը, որի համար ավելացվում է մշակիչը։|
+|`instanceName`| Այն օբյեկտի (փաստաթուղթ, տվյալների աղբյուր) ներքին անունը, որի համար ավելացվում է մշակիչը։|
 |`handlerName` | Ավելացվող լրացուցիչ մշակիչի մոդուլի և մեթոդի անունը `.` նիշով բաժանված։ Վերը նշված օրինակում "NewMod.MyValidateHandler", որտեղ `NewMod`-ը մոդուլի անուն է, իսկ `MyValidateHandler`-ը մշակող մեթոդի անունը:|
 
 ## ExtensionEvents Enum
@@ -112,8 +112,8 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 Օրինակ՝
 ``` vb
 ScriptExtension.AddHandler(ExtensionEvents.DocPreValidate, "IMemOrd", "NewMod.MemOrdPreValidateHandler")
-
-ScriptExtension.AddHandler(ExtensionEvents.DocPostValidate, "IMemOrd", "NewMod.MemOrdPostValidateHandler")
+ScriptExtension.AddHandler(ExtensionEvents.DocPreValidate, "C1Univer", "NewMod.AgrCustomValidate")
+ScriptExtension.AddHandler(ExtensionEvents.DocPostWhen, "C1Univer", "NewMod.AgrCustomWhen")
 ```
 
 
