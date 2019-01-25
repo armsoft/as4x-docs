@@ -3,8 +3,6 @@ layout: page
 title: "AsRefresher"
 ---
 
-
-
 Էկրանը թարմացնող օբյեկտը ստեղծվում է հետևյալ ֆունկցիայով՝ [CreateRefresher](Functions/InterfaceManagment/CreateRefresher.html)։
 
 |Հատկություններ|Նկարագրություն|
@@ -13,11 +11,7 @@ title: "AsRefresher"
 | [Response](AsRefresher/Response.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսը ընդհատման ստեղնի սեղմման արձագանքելու հատկանիշը։ |
 | [SignalChar](AsRefresher/SignalChar.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսի ընդհատման ստեղնի կոդը։|
 
-
 |Մեթոդներ|Նկարագրութհուն|
 |--|--|
 | [Refresh](AsRefresher/Refresh.html) | Վերանկարում է ծրագրի պատուհանը։ |
 | [ShowStatus](AsRefresher/ShowStatus.html) | Վիճակագոտում ցույց է տալիս հաղորդագրություն։ |
-
-
-
