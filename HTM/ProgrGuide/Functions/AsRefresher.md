@@ -1,24 +1,23 @@
 ---
 layout: page
-title: "Обновитель экрана"
+title: "AsRefresher"
 ---
 
 
 
-Создание объекта обновитель экрана 
-обеспечивается через функцию [CreateRefresher](Functions/InterfaceManagment/CreateRefresher.html).
+Էկրանը թարմացնող օբյեկտը ստեղծվում է հետևյալ ֆունկցիայով՝ [CreateRefresher](Functions/InterfaceManagment/CreateRefresher.html)։
 
-|Свойства|Описание|
+|Հատկություններ|Նկարագրություն|
 |--|--|
-| [GotBreakSignal](AsRefresher/GotBreakSignal.html)  | Возвращает признак нажатия клавиши прерывания расчетного процесса.
-|[Response](AsRefresher/Response.html)  |  Возвращает или устанавливает признак реагирования на нажатие клавиши прерывания расчетного процесса.  |
-|[SignalChar](AsRefresher/SignalChar.html)|Возвращает или устанавливает код клавиши прерывания расчетного процесса.|
+| [GotBreakSignal](AsRefresher/GotBreakSignal.html) | Հաշվարկման ընթացքի ընդհատման  ստեղնի սեղմված լինելու հատկանիշը։ 
+| [Response](AsRefresher/Response.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսը ընդհատման ստեղնի սեղմման արձագանքելու հատկանիշը։ |
+| [SignalChar](AsRefresher/SignalChar.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսի ընդհատման ստեղնի կոդը։|
 
 
-|Методы|Описание|
+|Մեթոդներ|Նկարագրութհուն|
 |--|--|
-|[Refresh](AsRefresher/Refresh.html)|Перерисовывает окно приложения.|
-|[ShowStatus](AsRefresher/ShowStatus.html)|Выводит сообщение в статусную строку окна приложения.|
+| [Refresh](AsRefresher/Refresh.html) | Վերանկարում է ծրագրի պատուհանը։ |
+| [ShowStatus](AsRefresher/ShowStatus.html) | Վիճակագոտում ցույց է տալիս հաղորդագրություն։ |
 
 
 
