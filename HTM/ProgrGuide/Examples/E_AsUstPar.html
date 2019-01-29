@@ -7,16 +7,11 @@ title: "Диалоговое окно"
 
 
 
-<p><strong><font size="3" face="Arial">Пример методов </font><font
-face="Arial">AddControl, AddDublCntr, AddLine, AddMemoControl, Show и свойств 
-BoolValue, Cancel, Caption, LeftDouble, Value</font></strong></p>
+<p><strong>Пример методов AddControl, AddDublCntr, AddLine, AddMemoControl, Show и свойств BoolValue, Cancel, Caption, LeftDouble, Value</strong></p>
 
-<p><font face="Arial">В примере вызывается функция CreateDialog, через 
-xDialog возвращается ссылка на обьект типа диалог со всеми его свойствами и 
-методами. Далее добавляется реквизит BegDate, а рядом с ним вторичный реквизит 
-EndDate.</font></p>
+<p>В примере вызывается функция CreateDialog, через xDialog возвращается ссылка на обьект типа диалог со всеми его свойствами и методами. Далее добавляется реквизит BegDate, а рядом с ним вторичный реквизит EndDate.</p>
 
-<p><font face="Arial">Set xDialog = <a href="../Functions/Functions/InterfaceManagment/CreateDialog.html">
+<p>Set xDialog = <a href="../Functions/Functions/InterfaceManagment/CreateDialog.html">
 CreateDialog</a><br>
 xDialog.<strong>Caption</strong> = &quot;Укажите дату&quot;<br>
 Call xDialog.<strong>AddControl</strong>(&quot;BegDate&quot;, &quot;Начальная дата&quot;, &quot;Date&quot;)<br>
@@ -32,6 +27,6 @@ IsChange=<strong>BoolValue</strong>(&quot;EndDate&quot;) <br>
 if xDialog.<strong>Cancel</strong> then<br>
 &nbsp;&nbsp; exit sub<br>
 end if&nbsp;&nbsp;&nbsp; <br>
-</font></p>
+</p>
 
 

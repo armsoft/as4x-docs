@@ -7,89 +7,85 @@ title: "Таблица SYSLOG"
 
 
 
-<h1><font size="4" face="Arial">Таблица SYSLOG</font></h1>
+<h1>Таблица SYSLOG</h1>
 
-<p><font face="Arial">Таблицa регистрации истории событий в системе.<br>
-</font></p>
+<p>Таблицa регистрации истории событий в системе.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDATE</font></td>
-    <td width="20%"><font face="Arial">datetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">время произведенного действия</font></td>
+    <td>fDATE</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>время произведенного действия</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fOP</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код действия:<br>
+    <td>fOP</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>код действия:<br>
     &#39;1&#39; - вход в систему<br>
     &#39;2&#39; - выход из системы<br>
-    &#39;3&#39; - смена пароля</font></td>
+    &#39;3&#39; - смена пароля</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOMPNAME</font></td>
-    <td width="20%"><font face="Arial">varchar (32)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">имя компьютера, с которого 
-	производилось действие</font></td>
+    <td>fCOMPNAME</td>
+    <td>varchar (32)</td>
+    <td>NULL</td>
+    <td>имя компьютера, с которого производилось действие</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOMMENT<b> </b></font></td>
-    <td width="20%"><font face="Arial">varchar (150)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">комментарий к действию </font></td>
+    <td>fCOMMENT<b> </b></td>
+    <td>varchar (150)</td>
+    <td>NULL</td>
+    <td>комментарий к действию </td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iSYSLOG1 </font></td>
-    <td width="33%"><font face="Arial">CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fSUID</font></td>
+    <td>iSYSLOG1 </td>
+    <td>CLUSTERED</td>
+    <td>fSUID</td>
   </tr>
 	<tr>
-    <td width="33%"><font face="Arial">iSYSLOG2 </font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fDATE</font></td>
+    <td>iSYSLOG2 </td>
+    <td>&nbsp;</td>
+    <td>fDATE</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iSYSLOG3</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fSUID,fOP,fDATE</font></td>
+    <td>iSYSLOG3</td>
+    <td>&nbsp;</td>
+    <td>fSUID,fOP,fDATE</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b>
+<p><b>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

@@ -7,57 +7,53 @@ title: "Таблица ARCACC"
 
 
 
-<h1><font size="4" face="Arial">Таблица ARCACC</font></h1>
+<h1>Таблица ARCACC</h1>
 
-<p><font face="Arial">Таблица задает дату архивации учета.<br>
-</font></p>
+<p>Таблица задает дату архивации учета.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTYPE</font></td>
-    <td width="20%"><font face="Arial">char (2)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код типа учета</font></td>
+    <td>fTYPE</td>
+    <td>char (2)</td>
+    <td>NOT NULL</td>
+    <td>код типа учета</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата начиная с которой 
-	(влючительно) факты находятся в архиве</font></td>
+    <td>fDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>дата начиная с которой (влючительно) факты находятся в архиве</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%">iARCACC1</td>
-    <td width="33%"><font face="Arial">UNIQUE, CLUSTERED </font></td>
-    <td width="33%"><font face="Arial">fTYPE</font></td>
+    <td>iARCACC1</td>
+    <td>UNIQUE, CLUSTERED </td>
+    <td>fTYPE</td>
   </tr>
   </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

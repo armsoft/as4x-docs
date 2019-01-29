@@ -3,107 +3,91 @@ layout: page
 title: "AsDataDesc/AddCoLumn"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             height: 40px;
         }
     </style>
 
 
-<p><font size="4" face="Arial"><strong>Метод AddCoLumn<br>
+<p><strong>Метод AddCoLumn<br>
 <br>
-</strong></font><font face="Arial"><a href="../AsDataDesc.html">См. 
-также</a>&nbsp; <u>Пример</u>&nbsp; <a href="../AsDataDesc.html">Применяется 
-к</a></font></p>
+</strong><a href="../AsDataDesc.html">См. также</a>&nbsp; <u>Пример</u>&nbsp; <a href="../AsDataDesc.html">Применяется к</a></p>
 
-<p><font face="Arial">Добавляет новую колонку в динамический источник данных.</font></p>
+<p>Добавляет новую колонку в динамический источник данных.</p>
 
-<p><font face="Arial">Свойство для чтения. </font></p>
+<p>Свойство для чтения. </p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><em>object.</em><strong>AddCoLumn [</strong><em>sName, sCaption, 
-    sECaption, sType, vField, [bTotal], 
-    [bVisible], [bPermanent]</em><strong>]</strong></font></p>
+<p><em>object.</em><strong>AddCoLumn [</strong><em>sName, sCaption, sECaption, sType, vField, [bTotal], [bVisible], [bPermanent]</em><strong>]</strong></p>
 
-<p><font face="Arial">Синтаксис метода <strong>AddCoLumn</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода <strong>AddCoLumn</strong>
+состоит из следующих частей:</p>
 
     <table border="1" cellpadding="5" cols="2" frame="below" rules="rows">
         <tr valign="top">
-            <td class="label" width="29%">
-                <font face="Arial"><b>Параметр</b></font></td>
-            <td class="label" width="71%">
-                <font face="Arial"><strong>Описание</strong></font></td>
+            <td>
+                <b>Параметр</b></td>
+            <td>
+                <strong>Описание</strong></td>
         </tr>
         <tr>
-            <td width="29%" class="style1">
-                <em><font face="Arial">object</font></em></td>
-            <td width="71%" class="style1">
-                <font face="Arial">обязательное строковое выражение, являющееся ссылкой на 
-                экземпляр объекта типа динамический источник данных.</font></td>
+            <td>
+                <em>object</em></td>
+            <td>
+                обязательное строковое выражение, являющееся ссылкой на экземпляр объекта типа динамический источник данных.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <em><font face="Arial">sName</font></em></td>
-            <td width="71%">
-                <font face="Arial">обязательное строковое выражение, определяющее идентификатор 
-                добавляемой колонки.</font></td>
+            <td>
+                <em>sName</em></td>
+            <td>
+                обязательное строковое выражение, определяющее идентификатор добавляемой колонки.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>&nbsp;sCaption</em></font></td>
-            <td width="71%">
-                <font face="Arial">обязательное строковое выражение, определяющее наименование 
-                добавляемой колонки.</font></td>
+            <td>
+                <em>&nbsp;sCaption</em></td>
+            <td>
+                обязательное строковое выражение, определяющее наименование добавляемой колонки.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>sECaption</em></font></td>
-            <td width="71%">
-                <font face="Arial">обязательное строковое выражение, определяющее наименование 
-                добавляемой колонки на иностранном языке.</font></td>
+            <td>
+                <em>sECaption</em></td>
+            <td>
+                обязательное строковое выражение, определяющее наименование добавляемой колонки на иностранном языке.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>sType</em></font></td>
-            <td width="71%">
-                <font face="Arial">обязательное строковое выражение, определяющее <a href="../../types.html">внутренний тип</a> 
-                добавляемой колонки.</font></td>
+            <td>
+                <em>sType</em></td>
+            <td>
+                обязательное строковое выражение, определяющее <a href="../../types.html">внутренний тип</a> добавляемой колонки.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>vField</em></font></td>
-            <td width="71%">
-                <font face="Arial">обязательное выражение типа вариант, определяющее источник  
-                значения добавляемой колонки. Если значение vField строкового типа, то значение 
-                добавляемой колонки берется из sql запроса свойства <a href="../AsDataDesc/SQL_DDesc.html">SQL</a>, где vField есть 
-                соответствующее поле в sql запросе, а значение свойства <a href="../AsDataDesc/DataMode_DDesc.html">DataMode</a>
+            <td>
+                <em>vField</em></td>
+            <td>
+                обязательное выражение типа вариант, определяющее источник  значения добавляемой колонки. Если значение vField строкового типа, то значение добавляемой колонки берется из sql запроса свойства <a href="../AsDataDesc/SQL_DDesc.html">SQL</a>, где vField есть соответствующее поле в sql запросе, а значение свойства <a href="../AsDataDesc/DataMode_DDesc.html">DataMode</a>
                 устанавливается равным 0, если же значение vField числовое, то значение колонки берется из массива свойства
-                <a href="../AsDataDesc/Columns_DDesc.html">Columns</a>, где <em>vField- </em>есть соответствующий индекс
-                добавляемой колонки в массиве, а значение свойства <a href="../AsDataDesc/DataMode_DDesc.html">DataMode</a> устанавливается равным 1.
+                <a href="../AsDataDesc/Columns_DDesc.html">Columns</a>, где <em>vField- </em>есть соответствующий индекс добавляемой колонки в массиве, а значение свойства <a href="../AsDataDesc/DataMode_DDesc.html">DataMode</a> устанавливается равным 1.
 </tr></td>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>bTotal</em></font></td>
-            <td width="71%">
-                <font face="Arial">необязательное численное выражение, принимающее значения 1 или 0, определяющее 
-                наличие итоговой суммы для числовых колонок. По умолчанию равно 0. </td>
+            <td>
+                <em>bTotal</em></td>
+            <td>
+                необязательное численное выражение, принимающее значения 1 или 0, определяющее наличие итоговой суммы для числовых колонок. По умолчанию равно 0. </td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>bVisible</em></font></td>
-            <td width="71%">
-                <font face="Arial">&nbsp;необязательное логическое выражение, определяющее признак показа добавляемой колонки. По умолчанию 
-                принимает значение True.</font></td>
+            <td>
+                <em>bVisible</em></td>
+            <td>
+                &nbsp;необязательное логическое выражение, определяющее признак показа добавляемой колонки. По умолчанию принимает значение True.</td>
         </tr>
         <tr>
-            <td width="29%">
-                <font face="Arial"><em>bPermanent</em></font></td>
-            <td width="71%">
-                <font face="Arial">необязательное логическое выражение, определяющее перманентность добавляемой колонки. По умолчанию принимает значение True</td>
+            <td>
+                <em>bPermanent</em></td>
+            <td>
+                необязательное логическое выражение, определяющее перманентность добавляемой колонки. По умолчанию принимает значение True</td>
         </tr>
     </table>
     <p>

@@ -12,27 +12,16 @@ title: "Document Definition"
 
 
 
-<strong><font size="4" face="Arial">Описание документа<br>
-</font></strong><font face="Arial">Основой системы
-является документ с набором состояний и
-логикой существования. Документ может содержать
-реквизиты различных типов. В качестве реквизитов
-документа могут выступать <a href="../rekvizit.html">обычные
-поля ввода</a>, <a href="../grid.html">реквизиты типа грид-таблиц</a>,
-<a href="../image.html">реквизиты-изображения</a>, <a href="../memo.html">реквизиты
-типа мемо-полей</a>,<span lang="ru"> <a href="../line.html">реквизиты типа линий</a></span>,<a href="../button.html">
-<span lang="ru">реквизиты типа кнопок</span></a>. Реквизиты могут быть
-сгруппированы в <a href="../page.html">страничных вкладках</a>. В
-скриптовом разделе описания документа могут
-находится как <a href="../scriptstproced.html">обработчики
-системных событий</a>, так и пользовательские
-процедуры и функции.<br>
-<span lang="ru">В описании документа могут содержаться <a href="../access.html">дескрипторы доступа</a> и 
+<strong>Описание документа<br>
+</strong>Основой системы является документ с набором состояний и логикой существования. Документ может содержать реквизиты различных типов. В качестве реквизитов документа могут выступать <a href="../rekvizit.html">обычные поля ввода</a>, <a href="../grid.html">реквизиты типа грид-таблиц</a>,
+<a href="../image.html">реквизиты-изображения</a>, <a href="../memo.html">реквизиты типа мемо-полей</a>,<span> <a href="../line.html">реквизиты типа линий</a></span>,<a href="../button.html">
+<span>реквизиты типа кнопок</span></a>. Реквизиты могут быть сгруппированы в <a href="../page.html">страничных вкладках</a>. В скриптовом разделе описания документа могут находится как <a href="../scriptstproced.html">обработчики системных событий</a>, так и пользовательские процедуры и функции.<br>
+<span>В описании документа могут содержаться <a href="../access.html">дескрипторы доступа</a> и 
 <a href="../FolderInfo.html">папок документа</a>.<br>
 </span><b><br>
-Синтаксис</b></font>
+Синтаксис</b>
 
-<font face="Arial"><strong><br>
+<strong><br>
 <br>
 DOCUMENT</strong> {<strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name </strong>=<em> sDocName</em>;
@@ -49,18 +38,10 @@ DOCUMENT</strong> {<strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <strong>Attachments</strong>
 = nAttachments; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HI2Support</strong> 
-=
-nHI2Support;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HISSSupport</strong> 
-=
-nHISSSupport; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTSupport</strong> 
-=
-nMTSupport; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FASupport</strong> 
-=
-nFASupport; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HI2Support</strong> = nHI2Support;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HISSSupport</strong> = nHISSSupport; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTSupport</strong> = nMTSupport; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FASupport</strong> = nFASupport; <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WordTemplate</strong> = stmplNameWord;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExcelTemplate</strong> = stmplNameExcel;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Version</strong> = nVersion;<br>
@@ -69,275 +50,218 @@ nFASupport; <br>
 <strong>Accounting</strong> = nAccountingCode;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <strong>ContrSupport </strong>= bContrSupport;<br>
-<strong><span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>AccessFolder</strong> = 
-sAccessFolder;<br>
+<strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>AccessFolder</strong> = sAccessFolder;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em>
 <strong>STOREINTREE</strong><em> = nStoreInTree<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <strong>CopyA</strong></em><strong><em>sRepeatable</em></strong><em> = nCopyMode<br />
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    DISABLEATTACHMENTSIZECHECK</strong> = nDisableAttachsizeCheck</em><br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DISABLEATTACHMENTSIZECHECK</strong> = nDisableAttachsizeCheck</em><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span lang="en-us"><br>
+<span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><a href="../page.html">{Страничные вкладки<span lang="en-us"> };</span></a><strong><br>
-</strong>&nbsp;&nbsp;<span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><a href="../page.html">{Страничные вкладки<span> };</span></a><strong><br>
+</strong>&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>&nbsp;<span lang="en-us"><a href="../access.html">{Дескрипторы доступа};</a><br>
+</span>&nbsp;<span><a href="../access.html">{Дескрипторы доступа};</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span><a href="../FolderInfo.html">{</a><span lang="en-us"><a href="../FolderInfo.html">Дескрипторы папки документа};</a></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span><a href="../FolderInfo.html">{</a><span><a href="../FolderInfo.html">Дескрипторы папки документа};</a></span><br />
     <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="../FolderInfo.html">{</a><span lang="en-us"><a href="../PrintDataGroup.html">Группы печатной формы документа};</a></span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="../FolderInfo.html">{</a><span><a href="../PrintDataGroup.html">Группы печатной формы документа};</a></span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><br>
-<span lang="ru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-<span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><strong>Script</strong> {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subs and
-Functions</em></font>
-<font face="Arial"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subs and Functions</em>
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };<br>
-</font>
 
-<p><font face="Arial">Синтаксис описания документа
-состоит из следующих частей:</font></p>
+
+<p>Синтаксис описания документа состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" style="height: 31px; width: 4%;">&nbsp;</td>
-    <td class="label" width="29%" style="height: 31px"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%" style="height: 31px"><font face="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td style="height: 31px; width: 4%;">&nbsp;</td>
+    <td><b>Параметр</b></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sDocName</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее 
-	идентификатор документа</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sDocName</em></td>
+    <td>строковое выражение, определяющее идентификатор документа</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sDocCaption</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее 
-	заголовок документа</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sDocCaption</em></td>
+    <td>строковое выражение, определяющее заголовок документа</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sDocECaption</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее 
-	заголовок документа на иностранном языке</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sDocECaption</em></td>
+    <td>строковое выражение, определяющее заголовок документа на иностранном языке</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><font face="Arial"><em>nDocPrintWidth</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение, определяющее ширину 
-	печатной формы документа в символах.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nDocPrintWidth</em></td>
+    <td>числовое выражение, определяющее ширину печатной формы документа в символах.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><font face="Arial"><em>nDocPrintFormated</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение, принимающее значения 
-	1 или 0, определяющее признак форматирования текста в печатной форме(<a href="../Functions/AsRepViewer/UseFormatting.html">см. 
-	также</a>).</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nDocPrintFormated</em></td>
+    <td>числовое выражение, принимающее значения 1 или 0, определяющее признак форматирования текста в печатной форме(<a href="../Functions/AsRepViewer/UseFormatting.html">см. также</a>).</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><font face="Arial"><em>nDocDisableDraft</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение, принимающее значения 
-	1 или 0, определяющее признак создания документа без возможности создания 
-	черновика. </font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nDocDisableDraft</em></td>
+    <td>числовое выражение, принимающее значения 1 или 0, определяющее признак создания документа без возможности создания черновика. </td>
   </tr>
   <tr>
     <td style="width: 4%; height: 16px">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16">&nbsp;</td>
-    <td width="29%" style="height: 16px"><font face="Arial"><em>nDocDisableCopy</em></font></td>
-    <td width="71%" style="height: 16px"><font face="Arial">числовое выражение, принимающее значения 
-	1 или 0. При значении 1 отключается возможность создания копии для 
-	документов данного типа. Значение по умолчанию 0.</font></td>
+	<img src="../../../IMAGES/pubfield.gif">&nbsp;</td>
+    <td style="height: 16px"><em>nDocDisableCopy</em></td>
+    <td style="height: 16px">числовое выражение, принимающее значения 1 или 0. При значении 1 отключается возможность создания копии для документов данного типа. Значение по умолчанию 0.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">nPatternSupport</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак поддержки шаблонов проводок. Шаблоны типовых 
-	операций возможно описывать только над документами, для которых данное 
-	значение установлено 1.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nPatternSupport</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак поддержки шаблонов проводок. Шаблоны типовых операций возможно описывать только над документами, для которых данное значение установлено 1.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><font face="Arial"><em>nAttachments</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак прикрепления <a href="../Functions/AsAttachment.html">
-	файлового дополнения</a> к документу.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nAttachments</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак прикрепления <a href="../Functions/AsAttachment.html">
+	файлового дополнения</a> к документу.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">nHI2Support</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак отслеживания изменений в таблице HI2 при 
-	работе с данным документом. Это относится к удалению документа и проводок с 
-	очисткой их следов из HI2, а также проверке лимитов при сохранении проводок.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nHI2Support</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак отслеживания изменений в таблице HI2 при работе с данным документом. Это относится к удалению документа и проводок с очисткой их следов из HI2, а также проверке лимитов при сохранении проводок.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16" longdesc="../../../IMAGES/pubfield.gif"></td>
-    <td width="29%"><em><font face="Arial">nHISSSupport</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак отслеживания изменений в специальных таблицах 
-	срочных договоров при работе с данным документом.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif" longdesc="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nHISSSupport</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак отслеживания изменений в специальных таблицах срочных договоров при работе с данным документом.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">nMTSupport</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак отслеживания изменений в специальных таблицах 
-	материальных ценностей при работе с данным документом.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nMTSupport</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак отслеживания изменений в специальных таблицах материальных ценностей при работе с данным документом.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">nFASupport</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0, определяющее признак отслеживания изменений в специальных таблицах 
-	основных средств при работе с данным документом.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nFASupport</em></td>
+    <td>численное выражение, принимающее значения 1 или 0, определяющее признак отслеживания изменений в специальных таблицах основных средств при работе с данным документом.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">stmplNameWord</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее имя 
-	файла шаблона печатного вида документа в формате Word-а. Длина имени 
-	шаблонного файла не должна превышать 20 символов. <br>В связи с вводом 
-	механизма настриваемого пользователями шаблонов печати этот механизм <strong>
-	явлется устаревшим, </strong>настоятельно рекомендуется не использовать его.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>stmplNameWord</em></td>
+    <td>строковое выражение, определяющее имя файла шаблона печатного вида документа в формате Word-а. Длина имени шаблонного файла не должна превышать 20 символов. <br>В связи с вводом механизма настриваемого пользователями шаблонов печати этот механизм <strong>
+	явлется устаревшим, </strong>настоятельно рекомендуется не использовать его.</td>
   </tr>
 </TBODY>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">stmplNameExcel</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее имя 
-	файла шаблона печатного вида документа в формате Excel-а. Длина имени 
-	шаблонного файла не должна превышать 20 символов. Если имя файла равно
-	<strong>SYSTEMPLATE</strong>, то работает системная процедура выгрузки в&nbsp;&nbsp; 
-	в формате Excel-а.<br>В связи с вводом механизма настриваемого 
-	пользователями шаблонов печати этот механизм <strong>явлется устаревшим,
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>stmplNameExcel</em></td>
+    <td>строковое выражение, определяющее имя файла шаблона печатного вида документа в формате Excel-а. Длина имени шаблонного файла не должна превышать 20 символов. Если имя файла равно
+	<strong>SYSTEMPLATE</strong>, то работает системная процедура выгрузки в&nbsp;&nbsp; в формате Excel-а.<br>В связи с вводом механизма настриваемого пользователями шаблонов печати этот механизм <strong>явлется устаревшим,
 	</strong>настоятельно рекомендуется не использовать его кроме случая <strong>
-	SYSTEMPLATE</strong>.</font></td>
+	SYSTEMPLATE</strong>.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">nVersion</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение целого типа, 
-	определяющее номер версии описания документа.<span lang="ru"> 
-	Зарезервировано для дальнейшего использования.</span></font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nVersion</em></td>
+    <td>численное выражение целого типа, определяющее номер версии описания документа.<span> Зарезервировано для дальнейшего использования.</span></td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sIconName</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее 
-	идентификатор иконки одного из изображений, поддерживаемых системой.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sIconName</em></td>
+    <td>строковое выражение, определяющее идентификатор иконки одного из изображений, поддерживаемых системой.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
+    <td>
 
-<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nAccountingCode</em></font></td>
-    <td width="71%" class="style1"><font face="Arial">строковое выражение,<span lang="ru"> 
-	определяющее идентификатор учета, </span>которому<br>
-	принадлежит данный документ.</font></td>
+<em>nAccountingCode</em></td>
+    <td>строковое выражение,<span> определяющее идентификатор учета, </span>которому<br>
+	принадлежит данный документ.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sAccessFolder</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее 
-	идентификатор папки, содержащее заголовки доступов данного документа. При 
-	отсутствии данного параметра повторное подтверждение для документа 
-	невозможно.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sAccessFolder</em></td>
+    <td>строковое выражение, определяющее идентификатор папки, содержащее заголовки доступов данного документа. При отсутствии данного параметра повторное подтверждение для документа невозможно.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
+    <td>
 
-<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nContrSupport</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0 <span lang="en-us">и</span> определяющее&nbsp; 
-	признак регистрации фактов в таблице ContractHI</font></td>
+<em>nContrSupport</em></td>
+    <td>численное выражение, принимающее значения 1 или 0 <span>и</span> определяющее&nbsp; признак регистрации фактов в таблице ContractHI</td>
   </tr>
     <tr>
-    <td style="width: 4%">
+    <td>
 
-<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nStoreInTree</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0 <span lang="en-us">и</span> определяющее&nbsp;признак возможности записи 
-	в дереве</font></td>
+<em>nStoreInTree</em></td>
+    <td>численное выражение, принимающее значения 1 или 0 <span>и</span> определяющее&nbsp;признак возможности записи в дереве</td>
     </tr>
   <tr>
-    <td style="width: 4%">
+    <td>
 
-<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em> nCopyMode</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 
-	1 или 0 <span lang="en-us">и</span> определяющее&nbsp;режим визуального 
-	копирования документа. При значении 0 все реквизиты документа копируются. 
-	При значении 1 копируются только значения реквизитов котрые содержат атрибут 
-	N. Значение по умолчанию 0.</font></td>
+<em> nCopyMode</em></td>
+    <td>численное выражение, принимающее значения 1 или 0 <span>и</span> определяющее&nbsp;режим визуального копирования документа. При значении 0 все реквизиты документа копируются. При значении 1 копируются только значения реквизитов котрые содержат атрибут N. Значение по умолчанию 0.</td>
   </tr>
     <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><font face="Arial"><em>nDisableAttachsizeCheck</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение, принимающее значения 1 или 
-        0. При значении 1 отключается проверка максимального размера как отдельного&nbsp; <a href="../Functions/AsAttachment.html">
-	файлового дополнения</a> к документу(<strong><em>MAXSIZE</em></strong>), так и&nbsp; 
-        всех&nbsp; <a href="../Functions/AsAttachment.html">
-	файловых дополнений</a> вместе взятых(<strong><em>MAXTOTALSIZE</em></strong>). По умолчанию 
-        принимает значение 0.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>nDisableAttachsizeCheck</em></td>
+    <td>численное выражение, принимающее значения 1 или 0. При значении 1 отключается проверка максимального размера как отдельного&nbsp; <a href="../Functions/AsAttachment.html">
+	файлового дополнения</a> к документу(<strong><em>MAXSIZE</em></strong>), так и&nbsp; всех&nbsp; <a href="../Functions/AsAttachment.html">
+	файловых дополнений</a> вместе взятых(<strong><em>MAXTOTALSIZE</em></strong>). По умолчанию принимает значение 0.</td>
     </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubmethod.gif" width="16" height="11">&nbsp;</td>
-    <td width="29%"><font color="#000000" face="Arial"><i>Subs and Functions</i></font></td>
-    <td width="71%"><font face="Arial">скриптовый раздел описания, который может 
-	содержать как&nbsp; <a
-    href="../scriptstproced.html">обработчики системных событий</a>, так и 
-	пользовательские процедуры и функции.</font></td>
+    <td>
+	<img src="../../../IMAGES/pubmethod.gif" height="11">&nbsp;</td>
+    <td><i>Subs and Functions</i></td>
+    <td>скриптовый раздел описания, который может содержать как&nbsp; <a href="../scriptstproced.html">обработчики системных событий</a>, так и пользовательские процедуры и функции.</td>
   </tr>
 </table>
 
 
-<font face="Arial"><b><br>
-Примечание</b></font>
+<b><br>
+Примечание</b>
 
-<font face="Arial"><br>
 <br>
-В системе на описание
-документа наложено ограничение на размер файла
-описания в 80 kb.<br>
 <br>
-</font><a href="../Defs.html"><font face="Arial">См. также</font></a>
+В системе на описание документа наложено ограничение на размер файла описания в 80 kb.<br>
+<br>
+<a href="../Defs.html">См. также</a>
 

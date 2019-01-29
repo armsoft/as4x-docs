@@ -7,118 +7,110 @@ title: "Таблица ACCESSLOG"
 
 
 
-<h1><font size="4" face="Arial">Таблица ACCESSLOG</font></h1>
-<font FACE="Arial">
+<h1>Таблица ACCESSLOG</h1>
+
 
 <p>Таблица истории доступов. <br>
-</font></p>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font FACE="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Тип данных</strong></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Null</strong></font></td>
-    <td class="label" width="40%" height="18"><font FACE="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>
+	Тип данных</strong></td>
+    <td><strong>
+	Null</strong></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fOPDATE</font></td>
-    <td width="20%" height="3"><font FACE="Arial">smalldatetime</font></td>
-    <td width="20%" height="3"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="3"><font face="Arial">дата изменения 
-	доступа</font></td>
+    <td>fOPDATE</td>
+    <td height="3">smalldatetime</td>
+    <td height="3">NOT NULL</td>
+    <td height="3">дата изменения доступа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSTATE</font></td>
-    <td width="20%" height="3"><font face="Arial">tinyint</font></td>
-    <td width="20%" height="3"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="3"><font face="Arial">состояние изменения 
-	доступа:<br>
+    <td>fSTATE</td>
+    <td height="3">tinyint</td>
+    <td height="3">NOT NULL</td>
+    <td height="3">состояние изменения доступа:<br>
 	0, 125 - не обработанный<br>
 	1, 126 - подтвержденный<br>
-	2, 127 - отклоненный</font></td>
+	2, 127 - отклоненный</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUIDCHANGE</font></td>
-    <td width="20%" height="3"><font FACE="Arial">smallint</font></td>
-    <td width="20%" height="3"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="3"><font face="Arial">идентификатор 
-	пользователя изменивший доступ</font></td>
+    <td>fSUIDCHANGE</td>
+    <td height="3">smallint</td>
+    <td height="3">NOT NULL</td>
+    <td height="3">идентификатор пользователя изменивший доступ</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUIDPROCESS</font></td>
-    <td width="20%" height="2"><font FACE="Arial">smallint</font></td>
-    <td width="20%" height="2"><font FACE="Arial">NULL</font></td>
-    <td width="40%" height="2"><font face="Arial">идентификатор 
-	пользователя подтверждающий данное изменение</font></td>
+    <td>fSUIDPROCESS</td>
+    <td>smallint</td>
+    <td>NULL</td>
+    <td>идентификатор пользователя подтверждающий данное изменение</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDATEPROCESS</font></td>
-    <td width="20%" height="1"><font face="Arial">smalldatetime</font></td>
-    <td width="20%" height="1"><font FACE="Arial">NULL</font></td>
-    <td width="40%" height="1"><font face="Arial">дата подтверждения</font></td>
+    <td>fDATEPROCESS</td>
+    <td>smalldatetime</td>
+    <td>NULL</td>
+    <td>дата подтверждения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fID</font></td>
-    <td width="20%" height="3"><font face="Arial">int</font></td>
-    <td width="20%" height="3"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="3"><font face="Arial">идентификатор 
-	истории</font></td>
+    <td>fID</td>
+    <td height="3">int</td>
+    <td height="3">NOT NULL</td>
+    <td height="3">идентификатор истории</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%" height="3"><font FACE="Arial">smallint</font></td>
-    <td width="20%" height="3"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="3"><font face="Arial">идентификатор 
-	пользователя для которого меняются доступы</font></td>
+    <td>fSUID</td>
+    <td height="3">smallint</td>
+    <td height="3">NOT NULL</td>
+    <td height="3">идентификатор пользователя для которого меняются доступы</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fCHANGEID</font></td>
-    <td width="20%" height="18"><font FACE="Arial">int</font></td>
-    <td width="20%" height="18"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="18"><font face="Arial">идентификатор 
-	изменения, связывает с таблицой AccessLink</font></td>
+    <td>fCHANGEID</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>идентификатор изменения, связывает с таблицой AccessLink</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font FACE="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" height="18"><font FACE="Arial"><b>
-	Имя индекса</b></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Тип </strong></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>
+	Имя индекса</b></td>
+    <td><strong>
+	Тип </strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" height="2"><font FACE="Arial">iACCESSLOG1</font></td>
-    <td width="33%" height="2"><font FACE="Arial">CLUSTERED</font></td>
-    <td width="33%" height="2"><font FACE="Arial">fOPDATE</font></td>
+    <td>iACCESSLOG1</td>
+    <td>CLUSTERED</td>
+    <td>fOPDATE</td>
   </tr>
   <tr>
-    <td width="33%" height="1"><font FACE="Arial">iACCESSLOG2</font></td>
-    <td width="33%" height="1"></td>
-    <td width="33%" height="1"><font face="Arial">fID</font></td>
+    <td>iACCESSLOG2</td>
+    <td></td>
+    <td>fID</td>
   </tr>
   <tr>
-    <td width="33%" height="1"><font FACE="Arial">iACCESSLOG3</font></td>
-    <td width="33%" height="1"></td>
-    <td width="33%" height="1"><font FACE="Arial">fCHANGEID</font></td>
+    <td>iACCESSLOG3</td>
+    <td></td>
+    <td>fCHANGEID</td>
   </tr>
 </table>
 
-<p class="label"><font FACE="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font FACE="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

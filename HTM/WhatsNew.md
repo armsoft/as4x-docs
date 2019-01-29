@@ -5,331 +5,302 @@
 
 <body>
 
-<p><font size="+1" face="Arial">Что нового?</font></p>
-<p><i><font face="Arial" size="2"><span lang="en-us">8 Ноября</span> 
-2005 г - 26 октября 2006 г</font></i></p>
+<p>Что нового?</p>
+<p><i><span>8 Ноября</span> 2005 г - 26 октября 2006 г</i></p>
 <ol>
-  <li><font face="Arial">Добавлены для документа</font><ul>
-	<li><font face="Arial">в <a href="ProgrGuide/Defs/doc.html">
+  <li>Добавлены для документа<ul>
+	<li>в <a href="ProgrGuide/Defs/doc.html">
 	описании документа</a>
-	</font>
+	
 	<ul>
-		<li><font face="Arial">можно задавать ширину колонки 
-		грид-таблицы (свойство Width)</font></li>
-		<li><font face="Arial">при помощи атрибута V<b> </b>можно 
-		отключить проверку реквизита или значения колонки грид-таблицы</font></li>
-		<li><font face="Arial">при помощи атрибута <b>Z </b>Tab/Enter 
-		могут пропутить реквизит</font></li>
-		<li><font face="Arial">при помощи атрибута<strong> N</strong> 
-		значение колонки грид-таблицы в новой строке заполняется значением 
-		колонки последней строки</font></li>
-		<li><font face="Arial">при помощи атрибута <b>I</b> реквизит 
-		можно редактировать в режиме Overwrite вместо Insert (только для типа 
-		C(x))</font></li>
-		<li><font face="Arial">свойство DisableCopy отключает 
-		возможность создания копии документа</font></li>
-		<li><strong style="font-weight: 400"><font face="Arial">при 
-		помощи конструкции </font></strong><font face="Arial">
-		<strong style="font-weight: 400">FolderInfo</strong> можно описать в 
-		какой папке документ находится в каждом состоянии. Наличие
-		<strong style="font-weight: 400">FolderInfo позволяет системе показывать 
-		более читабельную историю документа.</strong></font></li>
+		<li>можно задавать ширину колонки грид-таблицы (свойство Width)</li>
+		<li>при помощи атрибута V<b> </b>можно отключить проверку реквизита или значения колонки грид-таблицы</li>
+		<li>при помощи атрибута <b>Z </b>Tab/Enter могут пропутить реквизит</li>
+		<li>при помощи атрибута<strong> N</strong> значение колонки грид-таблицы в новой строке заполняется значением колонки последней строки</li>
+		<li>при помощи атрибута <b>I</b> реквизит можно редактировать в режиме Overwrite вместо Insert (только для типа C(x))</li>
+		<li>свойство DisableCopy отключает возможность создания копии документа</li>
+		<li><strong style="font-weight: 400">при помощи конструкции </strong>
+		<strong style="font-weight: 400">FolderInfo</strong> можно описать в какой папке документ находится в каждом состоянии. Наличие
+		<strong style="font-weight: 400">FolderInfo позволяет системе показывать более читабельную историю документа.</strong></li>
 	</ul></li>
-	<li><font face="Arial">ñîáûòèå 
+	<li>ñîáûòèå 
 		<strong style="font-weight: 400">
-	<a href="ProgrGuide/ScriptProcs/BeforeCommit.html">BeforeCommit</a></strong></font></li>
-	<li><font face="Arial">íîâûé ïàðàìåòð â событии <a href="ProgrGuide/ScriptProcs/NestedTransaction.html">
-	NestedTransaction</a></font></li>
-	<li><font face="Arial">свойство
-		<a href="ProgrGuide/Functions/ASDOC/FormActivated.html">FormActivated</a></font></li>
-	<li><font face="Arial">свойство
-		<a href="ProgrGuide/Functions/ASDOC/CreateDialog.html">CreateDialog</a></font></li>
-	<li><font face="Arial">изменены параметры ñîáûòèя
-	<span lang="en-us"><a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a></span></font></li>
+	<a href="ProgrGuide/ScriptProcs/BeforeCommit.html">BeforeCommit</a></strong></li>
+	<li>íîâûé ïàðàìåòð â событии <a href="ProgrGuide/ScriptProcs/NestedTransaction.html">
+	NestedTransaction</a></li>
+	<li>свойство
+		<a href="ProgrGuide/Functions/ASDOC/FormActivated.html">FormActivated</a></li>
+	<li>свойство
+		<a href="ProgrGuide/Functions/ASDOC/CreateDialog.html">CreateDialog</a></li>
+	<li>изменены параметры ñîáûòèя
+	<span><a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a></span></li>
 	</ul>
 	<p>&nbsp;</li>
-	<li><font face="Arial">Добавлены для источника данных</font><ul>
-		<li><font face="Arial">в <a href="ProgrGuide/Defs/Data.html">
-		описании источника данных</a></font><ul>
-			<li><font face="Arial">для параметра можно задавать 
-			идентификатор (свойство Name) и значение в генераторе отчетов 
-			(свойство UserReportValue)</font></li>
-			<li><font face="Arial">для колонки можно задавать ширину 
-			(свойство Width) и количество строк в заголовке (свойство HeadLines)</font></li>
-			<li><font face="Arial">колонку соответствующую ISN 
-			документа теперь можно задавать при помощи свойства ISN</font></li>
-			<li><font face="Arial">можно блокировать вызов события
-			<a href="ProgrGuide/ScriptProcs/Valid_Data.html">Valid</a> источника 
-			данных (свойство DisableValidFunction)</font></li>
+	<li>Добавлены для источника данных<ul>
+		<li>в <a href="ProgrGuide/Defs/Data.html">
+		описании источника данных</a><ul>
+			<li>для параметра можно задавать идентификатор (свойство Name) и значение в генераторе отчетов (свойство UserReportValue)</li>
+			<li>для колонки можно задавать ширину (свойство Width) и количество строк в заголовке (свойство HeadLines)</li>
+			<li>колонку соответствующую ISN документа теперь можно задавать при помощи свойства ISN</li>
+			<li>можно блокировать вызов события
+			<a href="ProgrGuide/ScriptProcs/Valid_Data.html">Valid</a> источника данных (свойство DisableValidFunction)</li>
 		</ul></li>
-		<li><font face="Arial">ñîáûòèå 
+		<li>ñîáûòèå 
 		<strong style="font-weight: 400">
-		<a href="ProgrGuide/ScriptProcs/LoadUpdates.html">LoadUpdates</a></strong></font></li>
-		<li><font face="Arial">ñîáûòèå 
+		<a href="ProgrGuide/ScriptProcs/LoadUpdates.html">LoadUpdates</a></strong></li>
+		<li>ñîáûòèå 
 		<strong style="font-weight: 400">
 		<a href="ProgrGuide/ScriptProcs/ExternalConnection.html">
-		ExternalConnection</a></strong></font></li>
-		<li><font face="Arial">ìåòîäы 
+		ExternalConnection</a></strong></li>
+		<li>ìåòîäы 
 		<a href="ProgrGuide/Functions/ASDATA/OpenUpdateCursor.html">
 		OpenUpdateCursor</a> и
 		<a href="ProgrGuide/Functions/ASDATA/CloseUpdateCursor.html">
-		CloseUpdateCursor</a></font></li>
-		<li><font face="Arial">свойство
+		CloseUpdateCursor</a></li>
+		<li>свойство
 		<a href="ProgrGuide/Functions/ASDATA/DisableValidFunction.html">
-		DisableValidFunction</a></font></li>
-		<li><font face="Arial">свойство
+		DisableValidFunction</a></li>
+		<li>свойство
 		<a href="ProgrGuide/Functions/ASDATA/DefaultIndicate.html">
-		DefaultIndicate</a></font></li>
-		<li><font face="Arial">свойство
+		DefaultIndicate</a></li>
+		<li>свойство
 		<a href="ProgrGuide/Functions/ASDATA/CurrentIndicate.html">
-		CurrentIndicate</a></font><br>
+		CurrentIndicate</a><br>
 		<br>
 		&nbsp;</li>
 	</ul></li>
-	<li><font face="Arial">Добавлены для диалога</font><ul>
-		<li><font face="Arial">свойствo
-		<a href="ProgrGuide/Functions/AsUstPar/Properties.html">Properties</a></font></li>
-		<li><font face="Arial">изменены параметры метода
-		<a href="ProgrGuide/Functions/AsUstPar/AddLine.html">AddLine</a></font></li>
-		<li><font face="Arial">метод
+	<li>Добавлены для диалога<ul>
+		<li>свойствo
+		<a href="ProgrGuide/Functions/AsUstPar/Properties.html">Properties</a></li>
+		<li>изменены параметры метода
+		<a href="ProgrGuide/Functions/AsUstPar/AddLine.html">AddLine</a></li>
+		<li>метод
 		<a href="ProgrGuide/Functions/AsUstPar/AddControlAtRight.html">
-		AddControlAtRight</a></font></li>
-		<li><font face="Arial">метод
+		AddControlAtRight</a></li>
+		<li>метод
 		<a href="ProgrGuide/Functions/AsUstPar/AddControlAtRight.html">
-		AddViewControlAtRight</a></font></li>
-		<li><font face="Arial">при помощи атрибута <b>I</b> реквизит 
-		можно редактировать в режиме Overwrite вместо Insert (только для типа 
-		C(x))</font></li>
-		<li><font face="Arial">при помощи атрибута <b>S</b> текущее 
-		значение реквизита не запоминается в реестре.</font></li>
+		AddViewControlAtRight</a></li>
+		<li>при помощи атрибута <b>I</b> реквизит можно редактировать в режиме Overwrite вместо Insert (только для типа C(x))</li>
+		<li>при помощи атрибута <b>S</b> текущее значение реквизита не запоминается в реестре.</li>
 	</ul>
 	<p>&nbsp;</li>
-	<li><font face="Arial">Изменены для описателя доступа изменены 
-	параметры метода
-	<a href="ProgrGuide/Functions/AsAccessDesc/Store.html">Store</a>.</font></li>
-	<li><font face="Arial">Добавлены для структура документа свойства
+	<li>Изменены для описателя доступа изменены параметры метода
+	<a href="ProgrGuide/Functions/AsAccessDesc/Store.html">Store</a>.</li>
+	<li>Добавлены для структура документа свойства
 	<a href="ProgrGuide/Functions/ASDocStructure/EnglishCaption.html">
 	EnglishCaption</a> и
 	<a href="ProgrGuide/Functions/ASDocStructure/NativeCaption.html">
-	NativeCaption</a>.</font></li>
-	<li><font face="Arial">Добавлены для </font>
-	<font face="Arial">проводкu</font><font face="Arial" size="4">
-	</font><font face="Arial">свойства
+	NativeCaption</a>.</li>
+	<li>Добавлены для 
+	проводкu
+	свойства
 	<a href="ProgrGuide/Functions/ASFACT/Info.html">Info</a>,
 	<a href="ProgrGuide/Functions/ASFACT/Branch.html">Branch</a>,
-	<a href="ProgrGuide/Functions/ASFACT/Depart.html">Depart</a>.</font></li>
-	<li><font face="Arial">Добавлены для элемента папки</font><font face="Arial" size="4">
-	</font><font face="Arial">свойства
+	<a href="ProgrGuide/Functions/ASFACT/Depart.html">Depart</a>.</li>
+	<li>Добавлены для элемента папки
+	свойства
 	<a href="ProgrGuide/Functions/AsFoldElement/Branch.html">Branch</a>,
 	<a href="ProgrGuide/Functions/AsFoldElement/Depart.html">Depart</a>,
-	<a href="ProgrGuide/Functions/AsFoldElement/ACSType.html">ACSType</a>.</font></li>
-	<li><font face="Arial">Добавлен для грид-таблицы метод
-	<a href="ProgrGuide/Functions/ASDOC/AsGrid/Clear.html">Clear</a></font><font size="4" face="Arial"><strong>.</strong></font></li>
-	<li><font face="Arial">Добавлено для иерархического 
-	вспомогательнного списока свойство <a href="ProgrGuide/Functions/AsTreeModalBrowser/RootNode.html">
-	RootNode</a>.</font></li>
-	<li><font face="Arial">Добавлен новый параметр в функцию
-	<a href="ProgrGuide/Functions/Functions/ReindexDocs.html">ReindexDocs</a>.</font></li>
-	<li><font face="Arial">Добавлен новый параметр в функцию
+	<a href="ProgrGuide/Functions/AsFoldElement/ACSType.html">ACSType</a>.</li>
+	<li>Добавлен для грид-таблицы метод
+	<a href="ProgrGuide/Functions/ASDOC/AsGrid/Clear.html">Clear</a><strong>.</strong></li>
+	<li>Добавлено для иерархического вспомогательнного списока свойство <a href="ProgrGuide/Functions/AsTreeModalBrowser/RootNode.html">
+	RootNode</a>.</li>
+	<li>Добавлен новый параметр в функцию
+	<a href="ProgrGuide/Functions/Functions/ReindexDocs.html">ReindexDocs</a>.</li>
+	<li>Добавлен новый параметр в функцию
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/DeleteDoc.html">
-	DeleteDoc</a>.</font></li>
-	<li><font face="Arial">Добавлен новый параметр в функцию
+	DeleteDoc</a>.</li>
+	<li>Добавлен новый параметр в функцию
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/StateMovedSUID.html">
-	StateMovedSUID</a>.</font></li>
-	<li><font face="Arial">Добавлен новый параметр в функцию
+	StateMovedSUID</a>.</li>
+	<li>Добавлен новый параметр в функцию
 	<a href="ProgrGuide/Functions/Functions/Conversion/DateToSimv.html">
-	DateToSimv</a>.</font></li>
-	<li><font face="Arial">Добавленa функция
-	<a href="ProgrGuide/Functions/Functions/isDBReadOnly.html">isDBReadOnly</a>.</font></li>
-	<li><font face="Arial">Добавлен метод
+	DateToSimv</a>.</li>
+	<li>Добавленa функция
+	<a href="ProgrGuide/Functions/Functions/isDBReadOnly.html">isDBReadOnly</a>.</li>
+	<li>Добавлен метод
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/PrintWordPreviewDoc.html">
-	PrintWordPreviewDoc</a>.</font></li>
-	<li><font face="Arial">Добавлен метод
+	PrintWordPreviewDoc</a>.</li>
+	<li>Добавлен метод
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/PrintExcelPreviewDoc.html">
-	PrintExcelPreviewDoc</a>.</font></li>
-	<li><font face="Arial">Добавленa функция
-	<a href="ProgrGuide/Functions/Functions/Inlist.html">Inlist</a>.</font></li>
-	<li><font face="Arial">Добавленa функция
-	<a href="ProgrGuide/Functions/Functions/Between.html">Between</a>.</font></li>
-	<li><font face="Arial">Добавленa функция
+	PrintExcelPreviewDoc</a>.</li>
+	<li>Добавленa функция
+	<a href="ProgrGuide/Functions/Functions/Inlist.html">Inlist</a>.</li>
+	<li>Добавленa функция
+	<a href="ProgrGuide/Functions/Functions/Between.html">Between</a>.</li>
+	<li>Добавленa функция
 	<a href="ProgrGuide/Functions/Functions/ImportFromString.html">
-	ImportFromString</a><strong>.</strong></font></li>
-	<li><font face="Arial">Добавленa функция
+	ImportFromString</a><strong>.</strong></li>
+	<li>Добавленa функция
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/GetDocType.html">
-	GetDocType</a>.</font></li>
-	<li><font face="Arial">Добавленa функция
-	<a href="ProgrGuide/Functions/Functions/GetServerName.html">GetServerName</a></font><strong><font size="4" face="Arial">.</font></strong></li>
-	<li><font face="Arial">Добавленa функция
-	<a href="ProgrGuide/Functions/Functions/GetDatabaseName.html">GetDatabaseName</a>.</font></li>
-	<li><font face="Arial">Добавлен метод
+	GetDocType</a>.</li>
+	<li>Добавленa функция
+	<a href="ProgrGuide/Functions/Functions/GetServerName.html">GetServerName</a><strong>.</strong></li>
+	<li>Добавленa функция
+	<a href="ProgrGuide/Functions/Functions/GetDatabaseName.html">GetDatabaseName</a>.</li>
+	<li>Добавлен метод
 	<a href="ProgrGuide/Functions/Functions/ExecuteUserReport.html">
-	ExecuteUserReport</a></font><font size="4" face="Arial"><strong>.</strong></font></li>
+	ExecuteUserReport</a><strong>.</strong></li>
 </ol>
 <p>&nbsp;</p>
-<p><i><font face="Arial" size="2"> 1
-<span lang="en-us">Ìà</span>я 2005 г - <span lang="en-us">7 Ноября</span> 2005 г&nbsp; </font></i></p>
+<p><i> 1
+<span>Ìà</span>я 2005 г - <span>7 Ноября</span> 2005 г&nbsp; </i></p>
 <ol>
-  <li><font face="Arial">Добавлены для документа</font><ul>
-		<li><font face="Arial">íîâûé ïàðàìåòð â методе <a href="ProgrGuide/Functions/ASDOC/Show.html">
-		Show</a> </font></li>
-      <li><font face="Arial">ìåòîä 
-		<a href="ProgrGuide/Functions/ASDOC/ExistsSub.html">ExistsSub</a></font></li>
-		<li><font face="Arial">ñîáûòèå <span lang="en-us">
+  <li>Добавлены для документа<ul>
+		<li>íîâûé ïàðàìåòð â методе <a href="ProgrGuide/Functions/ASDOC/Show.html">
+		Show</a> </li>
+      <li>ìåòîä 
+		<a href="ProgrGuide/Functions/ASDOC/ExistsSub.html">ExistsSub</a></li>
+		<li>ñîáûòèå <span>
 		<a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a> и свойство 
-		<a href="ProgrGuide/Functions/ASDOC/IsHidden.html">IsHidden</a></span></font></li>
+		<a href="ProgrGuide/Functions/ASDOC/IsHidden.html">IsHidden</a></span></li>
     </ul>
   </li>
 </ol>
 <ol start="2">
-  <li><font face="Arial">Добавлены для вида просмотра</font><ul>
-		<li><font face="Arial">UpdateStyle 
+  <li>Добавлены для вида просмотра<ul>
+		<li>UpdateStyle 
 		<a href="ProgrGuide/Defs/View.html">в описании</a> и свойство 
-		<a href="ProgrGuide/Functions/ASVIEW/UpdateStyle.html">UpdateStyle</a></font></li>
-      <li><font face="Arial">свойства 
+		<a href="ProgrGuide/Functions/ASVIEW/UpdateStyle.html">UpdateStyle</a></li>
+      <li>свойства 
 		<a href="ProgrGuide/Functions/ASVIEW/AllowHistory.html">AllowHistory</a>, 
 		<a href="ProgrGuide/Functions/ASVIEW/AllowPrintPreview.html">
 		AllowPrintPreview</a>, 
 		<a href="ProgrGuide/Functions/ASVIEW/AllowViewDocChildren.html">
 		AllowViewDocChildren</a>, 
 		<a href="ProgrGuide/Functions/ASVIEW/AllowViewDocParents.html">
-		AllowViewDocParents</a></font></li>
-		<li><font face="Arial">AllowAddNew 
+		AllowViewDocParents</a></li>
+		<li>AllowAddNew 
 		<a href="ProgrGuide/Defs/View.html">в описании</a> и свойство 
-		<a href="ProgrGuide/Functions/ASVIEW/AllowAddNew.html">AllowAddNew</a> </font></li>
+		<a href="ProgrGuide/Functions/ASVIEW/AllowAddNew.html">AllowAddNew</a> </li>
     </ul>
   </li>
 </ol>
 <ol start="3">
-  <li><font face="Arial">Добавлены для источника данных событии 
+  <li>Добавлены для источника данных событии 
 	<a href="ProgrGuide/ScriptProcs/OnFunctionAdd.html">OnFunctionAdd</a>, 
 	<a href="ProgrGuide/ScriptProcs/OnFunctionEdit.html">OnFunctionEdit</a>, 
 	<a href="ProgrGuide/ScriptProcs/OnFunctionView.html">OnFunctionView</a>, 
 	<a href="ProgrGuide/ScriptProcs/OnFunctionDelete.html">OnFunctionDelete</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавлены для диалога</font><ul>
-		<li><font face="Arial">метод 
-		<a href="ProgrGuide/Functions/AsUstPar/AddPage.html">AddPage</a></font></li>
-		<li><font face="Arial">свойства 
+	&nbsp;</li>
+	<li>Добавлены для диалога<ul>
+		<li>метод 
+		<a href="ProgrGuide/Functions/AsUstPar/AddPage.html">AddPage</a></li>
+		<li>свойства 
 		<a href="ProgrGuide/Functions/AsUstPar/PageCaption.html">PageCaption</a>, 
-		<a href="ProgrGuide/Functions/AsUstPar/PageCount.html">PageCount</a></font></li>
-		<li><font face="Arial">новый параметр в методе 
-		<a href="ProgrGuide/Functions/AsUstPar/MaxLenCaption.html">MaxLenCaption</a></font></li>
-		<li><font face="Arial">метод
-		<a href="ProgrGuide/Functions/AsUstPar/ExistsControl.html">ExistsControl</a></font></li>
-		<li><font face="Arial">новый параметр в методе 
+		<a href="ProgrGuide/Functions/AsUstPar/PageCount.html">PageCount</a></li>
+		<li>новый параметр в методе 
+		<a href="ProgrGuide/Functions/AsUstPar/MaxLenCaption.html">MaxLenCaption</a></li>
+		<li>метод
+		<a href="ProgrGuide/Functions/AsUstPar/ExistsControl.html">ExistsControl</a></li>
+		<li>новый параметр в методе 
 		<a href="ProgrGuide/Functions/AsUstPar/AddDublCntrl.html">AddDublCntrl</a> <br>
-		&nbsp;</font></li>
+		&nbsp;</li>
 	</ul></li>
-  <li><font face="Arial">Добавлены для описательного диалога</font><ul>
-	<li><font face="Arial">свойство 
+  <li>Добавлены для описательного диалога<ul>
+	<li>свойство 
 	<a href="ProgrGuide/Functions/AsDialogEx/ChangeTypeControl.html">
-	ChangeTypeControl</a></font></li>
-	<li><font face="Arial">свойство 
+	ChangeTypeControl</a></li>
+	<li>свойство 
 	<a href="ProgrGuide/Functions/AsDialogEx/AddAdditionalRegKey.html">
-	AddAdditionalRegKey</a></font><br>
+	AddAdditionalRegKey</a><br>
 	&nbsp;</li>
 	</ul>
 	</li>
-	<li><font face="Arial">Свойство DisableDocFunctions для
+	<li>Свойство DisableDocFunctions для
 	<a href="ProgrGuide/Functions/ASVIEW/DisableDocFunctions.html">вида просмотра</a>,
 	<a href="ProgrGuide/Functions/ASTREE/DisableDocFunctions.html">дерева</a> и
 	<a href="ProgrGuide/Functions/AsRepViewer/DisableDocFunctions.html">отчета</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавлен новый параметр в методе
-	<a href="ProgrGuide/Functions/AsRepViewer/SaveToFile.html">SaveToFile</a> 
-	отчета.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавлены функции
+	&nbsp;</li>
+	<li>Добавлен новый параметр в методе
+	<a href="ProgrGuide/Functions/AsRepViewer/SaveToFile.html">SaveToFile</a> отчета.<br>
+	&nbsp;</li>
+	<li>Добавлены функции
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/DocGrandChildren.html">
 	DocGrandChildren</a> и
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/CutChildLink.html">
 	CutChildLink</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавлен новый параметр в функциях
+	&nbsp;</li>
+	<li>Добавлен новый параметр в функциях
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/DocChildren.html">
 	DocChildren</a>,
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/DocParents.html">
-	DocParents</a>.</font></li>
+	DocParents</a>.</li>
 </ol>
 <p>&nbsp;</p>
-<p><i><font face="Arial" size="2"> 11 Февраля 2004 г - 1
-<span lang="en-us">Ìà</span>я 2005 г&nbsp; </font></i></p>
+<p><i> 11 Февраля 2004 г - 1
+<span>Ìà</span>я 2005 г&nbsp; </i></p>
 <ol>
-  <li><font face="Arial">Добавлены для документа</font><ul>
-      <li><font face="Arial">системнûå событиÿ <span lang="en-us">
+  <li>Добавлены для документа<ul>
+      <li>системнûå событиÿ <span>
 		<a href="ProgrGuide/ScriptProcs/StoreGrid.html">StoreGrid</a>,
 		<a href="ProgrGuide/ScriptProcs/LoadGrid.html">LoadGrid</a>,
-		<a href="ProgrGuide/ScriptProcs/SetPrintWidth.html">SetPrintWidth</a></span></font></li>
-		<li><font face="Arial">íîâûé ïàðàìåòð â ñîáûòèè
-		<span lang="en-us"><a href="ProgrGuide/ScriptProcs/PostMessage.html">
-		PostMessage</a></span></font></li>
-      <li><font face="Arial">ìåòîä <span lang="en-us">
-		<a href="ProgrGuide/Functions/ASDOC/PrintToFile.html">PrintToFile</a></span></font></li>
-		<li><font face="Arial">ñîáûòèå <span lang="en-us">
+		<a href="ProgrGuide/ScriptProcs/SetPrintWidth.html">SetPrintWidth</a></span></li>
+		<li>íîâûé ïàðàìåòð â ñîáûòèè
+		<span><a href="ProgrGuide/ScriptProcs/PostMessage.html">
+		PostMessage</a></span></li>
+      <li>ìåòîä <span>
+		<a href="ProgrGuide/Functions/ASDOC/PrintToFile.html">PrintToFile</a></span></li>
+		<li>ñîáûòèå <span>
 		<a href="ProgrGuide/ScriptProcs/ClickDropDown.html">ClickDropDown</a>
-		</span>äëÿ òипà данных комментарий</font></li>
-		<li><span lang="en-us"><font face="Arial">ð</font></span><font face="Arial">àçäåëèòåëüíàÿ 
-		ëèíèÿ<span lang="en-us"> â <a href="ProgrGuide/Defs/doc.html">îïèñàíèè 
-		äîêóìåíòà</a></span></font></li>
+		</span>äëÿ òипà данных комментарий</li>
+		<li><span>ð</span>àçäåëèòåëüíàÿ ëèíèÿ<span> â <a href="ProgrGuide/Defs/doc.html">îïèñàíèè äîêóìåíòà</a></span></li>
     </ul>
   <p>&nbsp;</li>
-  <li><font face="Arial">Добавлены
-    </font>
+  <li>Добавлены
+    
       <ul>
-        <li><font face="Arial"> <span lang="en-us">ñâîéñòâî </span>
+        <li> <span>ñâîéñòâî </span>
 		<a href="ProgrGuide/Functions/ASVIEW/AllowExport.html">AllowExport</a>
-		<span lang="en-us">â îá</span>ъ<span lang="en-us">åêòе âèä ïðîñìîòðà&nbsp;&nbsp;&nbsp;
-		</span></font></li>
-		<li><font face="Arial">свойство
-        <span lang="en-us">
-		<a href="ProgrGuide/Functions/ASTREE/AllowExport.html">AllowExport</a></span> 
-		в объекте äåðåâî</font></li>
-        <li><font face="Arial">ïàðàìåòð â ìåòîäå <span lang="en-us">
+		<span>â îá</span>ъ<span>åêòе âèä ïðîñìîòðà&nbsp;&nbsp;&nbsp;
+		</span></li>
+		<li>свойство
+        <span>
+		<a href="ProgrGuide/Functions/ASTREE/AllowExport.html">AllowExport</a></span> в объекте äåðåâî</li>
+        <li>ïàðàìåòð â ìåòîäå <span>
 		<a href="ProgrGuide/Functions/Functions/InterfaceManagment/BrowseTree.html">
 		BrowseTree</a></span><br>
-		&nbsp;</font></li>
+		&nbsp;</li>
   </ul>
   </li>
-  <li><font face="Arial">Добавлены для <span lang="en-us">øàáëîíà 
-	ïå÷àòè</span></font><ul>
-      <li><font face="Arial"><span lang="en-us">ñâîéòâà </span>
+  <li>Добавлены для <span>øàáëîíà ïå÷àòè</span><ul>
+      <li><span>ñâîéòâà </span>
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowView.html">AllowView</a>,
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowHistory.html">AllowHistory</a>,
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowPrintPreview.html">
-		AllowPrintPreview</a></font></li>
-		<li><font face="Arial">íîâûé ïàðàìåòð â <span lang="en-us">
-		ìåòîäå </span><a href="ProgrGuide/Functions/AsDocPrint/P.html">P</a></font></li>
+		AllowPrintPreview</a></li>
+		<li>íîâûé ïàðàìåòð â <span>
+		ìåòîäå </span><a href="ProgrGuide/Functions/AsDocPrint/P.html">P</a></li>
     </ul>
   &nbsp;</li>
-  <li><font face="Arial">Добавленî ñâîéñòâî <span lang="en-us">
+  <li>Добавленî ñâîéñòâî <span>
 	<a href="ProgrGuide/Functions/ASVIEW/ExistsColumn.html">ExistsColumn</a>
-	</span>для âèäà ïðîñìîòðà<span lang="en-us">. <br>
-	&nbsp;</span></font></li>
-	<li><font face="Arial">Добавленî ñâîéñòâî
+	</span>для âèäà ïðîñìîòðà<span>. <br>
+	&nbsp;</span></li>
+	<li>Добавленî ñâîéñòâî
 	<a href="ProgrGuide/Functions/AsCallBackOnTimer/Properties.html">
-	<span lang="en-us">P</span>roperties</a><span lang="en-us"> </span>для 
-	îáúåêòà òèïà àãåíò öèêëèчеñêîãî âûçîâà ïðîöåäóð<span lang="en-us">. <br>
-	&nbsp;</span></font></li>
-	<li><font face="Arial">Добавлен ìåòîä <span lang="en-us">
+	<span>P</span>roperties</a><span> </span>для îáúåêòà òèïà àãåíò öèêëèчеñêîãî âûçîâà ïðîöåäóð<span>. <br>
+	&nbsp;</span></li>
+	<li>Добавлен ìåòîä <span>
 	<a href="ProgrGuide/Functions/AsRepViewer/SaveToFile.html">SaveToFile</a>
-	</span>для <span lang="en-us">îá</span>ъ<span lang="en-us">åêò</span>à îò÷åò<span lang="en-us">.<br>
-	&nbsp;</span></font></li>
-	<li><font face="Arial">Добавленû ìåòîäû <span lang="en-us">
+	</span>для <span>îá</span>ъ<span>åêò</span>à îò÷åò<span>.<br>
+	&nbsp;</span></li>
+	<li>Добавленû ìåòîäû <span>
 	<a href="ProgrGuide/Functions/AsUstPar/AddRadioButtons.html">AddRadioButtons</a>,
 	<a href="ProgrGuide/Functions/AsUstPar/AddDublRadioButtons.html">
-	AddDublRadioButtons</a> â îá</span>ъ<span lang="en-us">åêò</span> äèàëîã<span lang="en-us">.<br>
-	&nbsp;</span></font></li>
-	<li><font face="Arial"><span lang="en-us">Äîáàâëåíî </span>
-	Atributes<span lang="en-us"> â <a href="ProgrGuide/Defs/Dialog.html">îïèñàíèè 
-	îïèñàòåëüíîãî äèàëîãà</a></span>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial"> Добавлены <span lang="en-us">ñâîéñòâà
+	AddDublRadioButtons</a> â îá</span>ъ<span>åêò</span> äèàëîã<span>.<br>
+	&nbsp;</span></li>
+	<li><span>Äîáàâëåíî </span>
+	Atributes<span> â <a href="ProgrGuide/Defs/Dialog.html">îïèñàíèè îïèñàòåëüíîãî äèàëîãà</a></span>.<br>
+	&nbsp;</li>
+	<li> Добавлены <span>ñâîéñòâà
 	</span><a href="ProgrGuide/Functions/AsRepViewer/RowDescriptor.html">
-	RowDescriptor</a> <span lang="en-us">è </span>
+	RowDescriptor</a> <span>è </span>
 	<a href="ProgrGuide/Functions/AsRepViewer/RowISN.html">RowISN</a>
-	<span lang="en-us">â îá</span>ъ<span lang="en-us">åêòå îò÷åò.<br>
-	&nbsp;</span></font></li>
-  <li><font face="Arial"> Добавлены функции<span lang="en-us"> </span>
+	<span>â îá</span>ъ<span>åêòå îò÷åò.<br>
+	&nbsp;</span></li>
+  <li> Добавлены функции<span> </span>
 	<a href="ProgrGuide/Functions/Functions/AppLock.html">AppLock</a>,
 	<a href="ProgrGuide/Functions/Functions/ParameterManagment/ParamDesc.html">
 	ParamDesc</a>,
@@ -337,317 +308,300 @@
 	ExportDoc</a>, <a href="ProgrGuide/Functions/Functions/ImportFromDir.html">
 	ImportFromDir</a>,
 	<a href="ProgrGuide/Functions/Functions/AccManagement/ExistsFact.html">
-	ExistsFact</a><span lang="en-us">,
+	ExistsFact</a><span>,
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/GetDocPassedState.html">
 	GetDocPassedState</a></span>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавленû ôóíêöèè àðõèâàöèè
-	<span lang="en-us">
+	&nbsp;</li>
+	<li>Добавленû ôóíêöèè àðõèâàöèè
+	<span>
 	<a href="ProgrGuide/Functions/Functions/Archive/ArchiveDoc.html">ArchiveDoc</a>,
 	<a href="ProgrGuide/Functions/Functions/Archive/ArchiveObjectAccWithRem.html">
 	ArchiveObjectAccWithRem</a>,
 	<a href="ProgrGuide/Functions/Functions/Archive/GetArchiveDb.html">
 	GetArchiveDB</a>.<br>
-	&nbsp;</span></font></li>
-  <li><font face="Arial"> Добавлен новый параметр в функцию
+	&nbsp;</span></li>
+  <li> Добавлен новый параметр в функцию
 	<a href="ProgrGuide/Functions/Functions/AccManagement/LastOpDate2.html">
 	LastOpDate2</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial"> Добавлен новый параметр <span lang="en-us">
-	Cancel </span>в функции âûçîâà <a href="ProgrGuide/Defs/Job.html">çàäàíèÿ</a> 
-	ïðè òèïå 1.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial"> Добавлен<span lang="en-us"> </span>режим 
-	авторизации â <a href="Config_as_struct.html">êîíôèãóðàöèîííîì ôàéëå</a>.<br>
-	&nbsp;</font></li>
-  <li><font face="Arial"> Добавлен<span lang="en-us">à íîâàÿ êîëîíêà</span>(fDCD)<span lang="en-us"> 
-	â òàáëèöå </span><a href="ProgrGuide/Database/DocP.html">DocP</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавленû<span lang="en-us"> òàáëèöû 
-	àðõèâàöèè </span><a href="ProgrGuide/Database/DocLogARC.html">DOCLOGARC</a>,
+	&nbsp;</li>
+	<li> Добавлен новый параметр <span>
+	Cancel </span>в функции âûçîâà <a href="ProgrGuide/Defs/Job.html">çàäàíèÿ</a> ïðè òèïå 1.<br>
+	&nbsp;</li>
+	<li> Добавлен<span> </span>режим авторизации â <a href="Config_as_struct.html">êîíôèãóðàöèîííîì ôàéëå</a>.<br>
+	&nbsp;</li>
+  <li> Добавлен<span>à íîâàÿ êîëîíêà</span>(fDCD)<span> â òàáëèöå </span><a href="ProgrGuide/Database/DocP.html">DocP</a>.<br>
+	&nbsp;</li>
+	<li>Добавленû<span> òàáëèöû àðõèâàöèè </span><a href="ProgrGuide/Database/DocLogARC.html">DOCLOGARC</a>,
 	<a href="ProgrGuide/Database/DocsARC.html">DOCSARC</a>,
 	<a href="ProgrGuide/Database/DocsARCISN.html">DOCARCISN</a>,
 	<a href="ProgrGuide/Database/DocsAttachARC.html">DOCSATTACHARC</a>,
 	<a href="ProgrGuide/Database/DocsGARC.html">DOCSGARC</a>,
 	<a href="ProgrGuide/Database/DocsimARC.html">DOCSIMARC</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial"><span lang="en-us">Èçìåíåíà ñòðóêòóðà 
-	òàáëèöû </span><a href="ProgrGuide/Database/Params.html">Params</a>
-	<span lang="en-us">è äîáàâëåíà òàáëèöà </span>
+	&nbsp;</li>
+	<li><span>Èçìåíåíà ñòðóêòóðà òàáëèöû </span><a href="ProgrGuide/Database/Params.html">Params</a>
+	<span>è äîáàâëåíà òàáëèöà </span>
 	<a href="ProgrGuide/Database/User%20Params.html">UserParams</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial"><span lang="en-us">Èçìåíåíà ñòðóêòóðà 
-	òàáëèöû 
+	&nbsp;</li>
+	<li><span>Èçìåíåíà ñòðóêòóðà òàáëèöû 
 	<a href="ProgrGuide/Database/Users.html">Users</a>.</span><br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавленû<span lang="en-us"> òàáëèöû</span>
+	&nbsp;</li>
+	<li>Добавленû<span> òàáëèöû</span>
 	<a href="ProgrGuide/Database/ResNumbers.html">ResNumbers</a>,
 	<a href="ProgrGuide/Database/ChacheRemDate.html">CacheRemDate</a> и функция
 	<a href="ProgrGuide/Functions/Functions/ReserveNumber.html">ReserveNumber</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавленû<span lang="en-us"> òàáëèöû</span>
-	<span lang="en-us">äîñòóïîâ </span>
+	&nbsp;</li>
+	<li>Добавленû<span> òàáëèöû</span>
+	<span>äîñòóïîâ </span>
 	<a href="ProgrGuide/Database/AccessLink.html">AccessLink</a>,
 	<a href="ProgrGuide/Database/AccessISNList.html">AccessISNList</a>,
 	<a href="ProgrGuide/Database/AccessLog.html">AccessLog</a>.<br>
-	&nbsp;</font></li>
-	<li><font face="Arial">Добавлен тип реквизита PATH для диалога в 
-	методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">AddControl</a>.<br>
-	&nbsp;</font></li>
+	&nbsp;</li>
+	<li>Добавлен тип реквизита PATH для диалога в методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">AddControl</a>.<br>
+	&nbsp;</li>
 </ol>
 <p>&nbsp;</p>
-<p><i><font face="Arial" size="2"> 17 Июня 2002 г - 11 Февраля 2004 г</font></i></p>
+<p><i> 17 Июня 2002 г - 11 Февраля 2004 г</i></p>
 <ol>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial">объект
-      <a href="ProgrGuide/Functions/ASDocStructure.html">структура документа</a></font></li>
-      <li><font face="Arial">объект
-      <a href="ProgrGuide/Functions/ASDocStructureElement.html">элемент структуры 
-		документа</a></font></li>
-      <li><font face="Arial">свойство
-      <a href="ProgrGuide/Functions/ASDOC/Structure.html">Structure</a> в объекте 
-		документ<br>
-		&nbsp;</font></li>
-    </ul>
-  </li>
-  <li><font face="Arial"> Добавлен объект
-  <a href="ProgrGuide/Functions/AsTreeModalBrowser.html">иерархический 
-	вспомогательный список</a>.</font><br>
-	&nbsp;</li>
-  <li><font face="Arial">Добавлены для объекта диалог</font><ul>
-      <li><font face="Arial">системные события
-      <a href="ProgrGuide/ScriptProcs/UstPar_Activate.html">Activate</a>,
-      <a href="ProgrGuide/ScriptProcs/UstPar_ClickDropDown.html">ClickDropDown</a>,
-      <a href="ProgrGuide/ScriptProcs/UstPar_Validate.html">Validate</a>,
-      <a href="ProgrGuide/ScriptProcs/UstPar_ValueChanged.html">ValueChanged</a> </font></li>
-      <li><font face="Arial">свойствa
-      <a href="ProgrGuide/Functions/AsUstPar/EventModule.html">EventModule</a> и
-      <a href="ProgrGuide/Functions/AsUstPar/ReadOnly.html">ReadOnly</a></font><br>
+      <li>объект
+      <a href="ProgrGuide/Functions/ASDocStructure.html">структура документа</a></li>
+      <li>объект
+      <a href="ProgrGuide/Functions/ASDocStructureElement.html">элемент структуры документа</a></li>
+      <li>свойство
+      <a href="ProgrGuide/Functions/ASDOC/Structure.html">Structure</a> в объекте документ<br>
 		&nbsp;</li>
     </ul>
   </li>
-  <li><font face="Arial">Добавлены для документа</font><ul>
-      <li><font face="Arial">системное событие
-      <a href="ProgrGuide/ScriptProcs/BeforeExport.html">BeforeExport</a> </font></li>
-      <li><font face="Arial">свойство
-      <a href="ProgrGuide/Functions/ASDOC/StoredFacts.html">StoredFacts</a> <br>
-		&nbsp;</font></li>
+  <li> Добавлен объект
+  <a href="ProgrGuide/Functions/AsTreeModalBrowser.html">иерархический вспомогательный список</a>.<br>
+	&nbsp;</li>
+  <li>Добавлены для объекта диалог<ul>
+      <li>системные события
+      <a href="ProgrGuide/ScriptProcs/UstPar_Activate.html">Activate</a>,
+      <a href="ProgrGuide/ScriptProcs/UstPar_ClickDropDown.html">ClickDropDown</a>,
+      <a href="ProgrGuide/ScriptProcs/UstPar_Validate.html">Validate</a>,
+      <a href="ProgrGuide/ScriptProcs/UstPar_ValueChanged.html">ValueChanged</a> </li>
+      <li>свойствa
+      <a href="ProgrGuide/Functions/AsUstPar/EventModule.html">EventModule</a> и
+      <a href="ProgrGuide/Functions/AsUstPar/ReadOnly.html">ReadOnly</a><br>
+		&nbsp;</li>
     </ul>
   </li>
-  <li><font face="Arial">Добавлены</font><ul>
-    <li><font face="Arial">AltFont в
-    <a href="ProgrGuide/Defs/View.html">описании вида просмотра</a></font></li>
-    <li><font face="Arial">свойство
-    <a href="ProgrGuide/Functions/ASVIEW/AltFont.html">AltFont</a> в объекте вид 
-	просмотра</font></li>
-    <li><font face="Arial">новый атрибут &quot;F&quot; для реквизитов в <a href="ProgrGuide/Defs/doc.html">
-	описании документа</a>&nbsp;</font> <br>
+  <li>Добавлены для документа<ul>
+      <li>системное событие
+      <a href="ProgrGuide/ScriptProcs/BeforeExport.html">BeforeExport</a> </li>
+      <li>свойство
+      <a href="ProgrGuide/Functions/ASDOC/StoredFacts.html">StoredFacts</a> <br>
+		&nbsp;</li>
+    </ul>
+  </li>
+  <li>Добавлены<ul>
+    <li>AltFont в
+    <a href="ProgrGuide/Defs/View.html">описании вида просмотра</a></li>
+    <li>свойство
+    <a href="ProgrGuide/Functions/ASVIEW/AltFont.html">AltFont</a> в объекте вид просмотра</li>
+    <li>новый атрибут &quot;F&quot; для реквизитов в <a href="ProgrGuide/Defs/doc.html">
+	описании документа</a>&nbsp; <br>
 	&nbsp;</li>
   </ul>
   </li>
-  <li><font face="Arial">Добавлены</font><ul>
-    <li><font face="Arial">PrintFormated в <a href="ProgrGuide/Defs/doc.html">
-	описании документа</a>&nbsp;</font> </li>
-    <li><font face="Arial">свойство
-    <a href="ProgrGuide/Functions/AsRepViewer/UseFormatting.html">UseFormatting</a> 
-    в объекте отчет<br>
-	&nbsp;</font></li>
+  <li>Добавлены<ul>
+    <li>PrintFormated в <a href="ProgrGuide/Defs/doc.html">
+	описании документа</a>&nbsp; </li>
+    <li>свойство
+    <a href="ProgrGuide/Functions/AsRepViewer/UseFormatting.html">UseFormatting</a> в объекте отчет<br>
+	&nbsp;</li>
   </ul>
   </li>
-  <li><font face="Arial">Добавлены
-    </font>
+  <li>Добавлены
+    
       <ul>
-        <li><font face="Arial">ArrayBased в
-        <a href="ProgrGuide/Defs/Data.html">описании источника данных</a></font></li>
-        <li><font face="Arial">свойство
-        <a href="ProgrGuide/Functions/ASDATA/ArrayBased.html">ArrayBased</a> в 
-		объекте источник данных</font></li>
-        <li><font face="Arial">системное событие
+        <li>ArrayBased в
+        <a href="ProgrGuide/Defs/Data.html">описании источника данных</a></li>
+        <li>свойство
+        <a href="ProgrGuide/Functions/ASDATA/ArrayBased.html">ArrayBased</a> в объекте источник данных</li>
+        <li>системное событие
         <a href="ProgrGuide/ScriptProcs/Load.html">Load</a> для объекта<br>
-		&nbsp;</font></li>
+		&nbsp;</li>
   </ul>
   </li>
-  <li><font face="Arial"> Добавлены функции
+  <li> Добавлены функции
   <a href="ProgrGuide/Functions/Functions/GetFullNameOfTmpFile.html">
   GetFullNameOfTmpFile</a>,
   <a href="ProgrGuide/Functions/Functions/AccessControl/ExistsAccessDesc.html">
   ExistsAccessDesc</a>.<br>
-	&nbsp;</font></li>
-  <li><font face="Arial"> Добавлен параметр в функции
+	&nbsp;</li>
+  <li> Добавлен параметр в функции
   <a href="ProgrGuide/Functions/Functions/AccessControl/AccessDesc.html">
   AccessDesc</a> и в методе <a href="ProgrGuide/Functions/AsAccessDesc/Load.html">
   Load</a> объектa описатель доступа. <br>
-	&nbsp;</font></li>
-  <li><font face="Arial"> Добавлены значения для уровня проверки 
-	документа в методах <a href="ProgrGuide/Functions/ASDOC/Store.html">Store</a> 
-  и <a href="ProgrGuide/Functions/ASDOC/CheckAndStore.html">CheckAndStore.</a><br>
-	&nbsp;</font></li>
-  <li><font face="Arial">Добавлен новый параметр в фунции
+	&nbsp;</li>
+  <li> Добавлены значения для уровня проверки документа в методах <a href="ProgrGuide/Functions/ASDOC/Store.html">Store</a> и <a href="ProgrGuide/Functions/ASDOC/CheckAndStore.html">CheckAndStore.</a><br>
+	&nbsp;</li>
+  <li>Добавлен новый параметр в фунции
   <a href="ProgrGuide/Functions/Functions/AccManagement/LastOpDate.html">
   LastOpDate</a>.<br>
-	&nbsp;</font></li>
-  <li><font face="Arial">Изменены параметры функции
+	&nbsp;</li>
+  <li>Изменены параметры функции
   <a href="ProgrGuide/Functions/Functions/AccManagement/LoadHI2FactByObject.html">
   LoadHI2FactByObject</a>.<br>
-	&nbsp;</font></li>
-  <li><font face="Arial">Измененa структура таблицы
-  <a href="ProgrGuide/Database/Users.html">USERS</a>.</font></li>
+	&nbsp;</li>
+  <li>Измененa структура таблицы
+  <a href="ProgrGuide/Database/Users.html">USERS</a>.</li>
 </ol>
-<p><font face="Arial"><br>
-    </font></p>
-<p><i><font face="Arial" size="2"> 1 Апреля 2002 г - 17 Июня 2002 г</font></i></p>
+<p><br>
+    </p>
+<p><i> 1 Апреля 2002 г - 17 Июня 2002 г</i></p>
 <ol>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial">объект <a href="ProgrGuide/Functions/ASMBItem.html">
-		строка списка</a></font></li>
-      <li><font face="Arial">объект <a href="ProgrGuide/Functions/ASMBItemsCollection.html">
-		коллекция строк списка</a></font></li>
-      <li><font face="Arial">свойства <a href="ProgrGuide/Functions/AsModalBrowser/MultiSelect.html">
+      <li>объект <a href="ProgrGuide/Functions/ASMBItem.html">
+		строка списка</a></li>
+      <li>объект <a href="ProgrGuide/Functions/ASMBItemsCollection.html">
+		коллекция строк списка</a></li>
+      <li>свойства <a href="ProgrGuide/Functions/AsModalBrowser/MultiSelect.html">
 		MultiSelect</a>
         и <a href="ProgrGuide/Functions/AsModalBrowser/SelectedItems.html">
 		SelectedItems</a>
-        в объекте произвольный вспомогательный список</font></li>
-      <li><font face="Arial">метод <a href="ProgrGuide/Functions/AsUstPar/AddMultiSelectViewControl.html">
+        в объекте произвольный вспомогательный список</li>
+      <li>метод <a href="ProgrGuide/Functions/AsUstPar/AddMultiSelectViewControl.html">
 		AddMultiSelectViewControl</a>
         в объекте диалог
         <a href="ProgrGuide/Functions/Functions/GetWorkingDays.html"><br>
         </a> <a href="ProgrGuide/Defs/doc.html">
         <br>
-        </a></font></li>
+        </a></li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial"> идентификатор контекстной помощи в <a href="ProgrGuide/Defs/View.html">
+      <li> идентификатор контекстной помощи в <a href="ProgrGuide/Defs/View.html">
 		описании вида просмотра</a> &nbsp;
-    </font>
+    
       </li>
-      <li><font face="Arial">свойство <a href="ProgrGuide/Functions/ASVIEW/HelpContext.html">
+      <li>свойство <a href="ProgrGuide/Functions/ASVIEW/HelpContext.html">
 		HelpContext</a>
         в объекте вид просмотра<br>
     <br>
-    </font>
+    
       </li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены функции <a href="ProgrGuide/Functions/Functions/ShowImportWindow.html">
+  <li> Добавлены функции <a href="ProgrGuide/Functions/Functions/ShowImportWindow.html">
 	ShowImportWindow</a>,
     <a href="ProgrGuide/Functions/Functions/AccManagement/GetTurnHI2.html">
 	GetTurnHI2</a>.<br>
     <br>
-    </font>
+    
   </li>
-  <li><font face="Arial"> В <a href="ProgrGuide/Functions/AsRepViewer.html"> 
-	объекте отчет</a> добавлены методы <a href="ProgrGuide/Functions/AsRepViewer/RegistrFunction.html">
+  <li> В <a href="ProgrGuide/Functions/AsRepViewer.html"> объекте отчет</a> добавлены методы <a href="ProgrGuide/Functions/AsRepViewer/RegistrFunction.html">
 	RegistrFunction</a>,
     <a href="ProgrGuide/Functions/AsRepViewer/RegistrNode.html">RegistrNode</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлено системное событие <a href="ProgrGuide/ScriptProcs/BeforeImport.html">
+    </li>
+  <li>Добавлено системное событие <a href="ProgrGuide/ScriptProcs/BeforeImport.html">
 	BeforeImport</a>
     для документа.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлен новый атрибут &quot;U&quot; для реквизитов&nbsp;</font>
+    </li>
+  <li>Добавлен новый атрибут &quot;U&quot; для реквизитов&nbsp;
     <ul>
-      <li><font face="Arial">в <a href="ProgrGuide/Defs/doc.html">
-		описании документа</a></font></li>
-      <li><font face="Arial">в методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">
+      <li>в <a href="ProgrGuide/Defs/doc.html">
+		описании документа</a></li>
+      <li>в методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">
 		AddControl</a>
-        объекта диалог.</font></li>
+        объекта диалог.</li>
     </ul>
   </li>
 </ol>
 <p>&nbsp;</p>
-<p><i><font face="Arial" size="2"> 4 Февраля 2002 г - 1 Апреля 2002 г</font></i></p>
+<p><i> 4 Февраля 2002 г - 1 Апреля 2002 г</i></p>
 <ol>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial"> <a href="ProgrGuide/Functions/AsDayStatus.html">
-		объект статус дня</a></font></li>
-      <li><font face="Arial">функции <a href="ProgrGuide/Functions/Functions/DaysInMonth.html">
+      <li> <a href="ProgrGuide/Functions/AsDayStatus.html">
+		объект статус дня</a></li>
+      <li>функции <a href="ProgrGuide/Functions/Functions/DaysInMonth.html">
 		DaysInMonth</a>,
         <a href="ProgrGuide/Functions/Functions/GetWorkingDays.html">
 		GetWorkingDays<br>
         </a> <a href="ProgrGuide/Defs/doc.html">
         <br>
-        </a></font></li>
+        </a></li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены функции управления учетами <a href="ProgrGuide/Functions/Functions/AccManagement/LoadHI2FactByObject.html">
+  <li> Добавлены функции управления учетами <a href="ProgrGuide/Functions/Functions/AccManagement/LoadHI2FactByObject.html">
 	LoadHI2FactByObject</a>,
     <a href="ProgrGuide/Functions/Functions/AccManagement/LasHI2OpDate.html">
 	LastHI2OpDate</a>.<br>
     <br>
-    </font>
+    
   </li>
-  <li><font face="Arial"> Добавлена функция управления интерфейсом <a href="ProgrGuide/Functions/Functions/InterfaceManagment/ScreenSize.html">
+  <li> Добавлена функция управления интерфейсом <a href="ProgrGuide/Functions/Functions/InterfaceManagment/ScreenSize.html">
 	ScreenSize</a>.<br>
     <br>
-    </font>
+    
   </li>
-  <li><font face="Arial"> В объекте шаблон печати добавлено свойствo <a href="ProgrGuide/Functions/AsDocPrint/ErrorOnEmptyPrintPreview.html">
+  <li> В объекте шаблон печати добавлено свойствo <a href="ProgrGuide/Functions/AsDocPrint/ErrorOnEmptyPrintPreview.html">
 	ErrorOnEmptyPrintPreview</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial"> Добавлена <a href="ProgrGuide/Constants/const_doc_States.html">
+    </li>
+  <li> Добавлена <a href="ProgrGuide/Constants/const_doc_States.html">
 	константа состояния документа</a> <b>ASAccordingToNavTreeNew</b>.<br>
     <br>
-    </font></li>
+    </li>
 </ol>
-<p><i><font face="Arial" size="2"> 19 Ноября 2001 г - 4 Февраля 2002 г</font></i></p>
+<p><i> 19 Ноября 2001 г - 4 Февраля 2002 г</i></p>
 <ol>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial"><a href="ProgrGuide/Functions/AsAttachment.html">
-		объект файловое дополнение</a></font></li>
-      <li><font face="Arial"><a href="ProgrGuide/Functions/AsAttachmentCollection.html">
-		объект коллекция файловых дополнений</a></font></li>
-      <li><font face="Arial">таблица <a href="ProgrGuide/Database/DocsAttach.html">
-		DOCSATTACH</a></font></li>
-      <li><font face="Arial">свойства <a href="ProgrGuide/Functions/ASDOC/Attachments.html">
+      <li><a href="ProgrGuide/Functions/AsAttachment.html">
+		объект файловое дополнение</a></li>
+      <li><a href="ProgrGuide/Functions/AsAttachmentCollection.html">
+		объект коллекция файловых дополнений</a></li>
+      <li>таблица <a href="ProgrGuide/Database/DocsAttach.html">
+		DOCSATTACH</a></li>
+      <li>свойства <a href="ProgrGuide/Functions/ASDOC/Attachments.html">
 		Attachments</a>,
         <a href="ProgrGuide/Functions/ASDOC/ReadOnlyAttachments.html">
 		ReadOnlyAttachments</a>
-        в объекте документ</font></li>
-      <li><font face="Arial">признак прикрепления файловых дополнений 
-		в <a href="ProgrGuide/Defs/doc.html">описании документа<br>
+        в объекте документ</li>
+      <li>признак прикрепления файловых дополнений в <a href="ProgrGuide/Defs/doc.html">описании документа<br>
         <br>
-        </a></font></li>
+        </a></li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial"><a href="ProgrGuide/Functions/AsCallBackOnTimer.html">
-		объект агент циклического вызова процедур</a></font></li>
-      <li><font face="Arial">функция <a href="ProgrGuide/Functions/Functions/CreateCallBackOnTimer.html">
+      <li><a href="ProgrGuide/Functions/AsCallBackOnTimer.html">
+		объект агент циклического вызова процедур</a></li>
+      <li>функция <a href="ProgrGuide/Functions/Functions/CreateCallBackOnTimer.html">
 		CreateCallBackOnTimer</a>&nbsp;<br>
         <br>
-        </font></li>
+        </li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial">системное <a href="ProgrGuide/Defs/notification.html">
-		описание оповещения</a></font></li>
-      <li><font face="Arial">таблицы <a href="ProgrGuide/Database/Notifications.html">
+      <li>системное <a href="ProgrGuide/Defs/notification.html">
+		описание оповещения</a></li>
+      <li>таблицы <a href="ProgrGuide/Database/Notifications.html">
 		NOTIFICATIONS</a>,
-        <a href="ProgrGuide/Database/NtfReceivers.html">NTFRECEIVERS</a>&nbsp;</font></li>
-      <li><font face="Arial">функция <a href="ProgrGuide/Functions/Functions/SendNotification.html">
+        <a href="ProgrGuide/Database/NtfReceivers.html">NTFRECEIVERS</a>&nbsp;</li>
+      <li>функция <a href="ProgrGuide/Functions/Functions/SendNotification.html">
 		SendNotification</a>
         для отправки оповещения<br>
         <br>
-        </font></li>
+        </li>
     </ul>
   </li>
-  <li><font face="Arial"> Добавлены&nbsp;</font>
+  <li> Добавлены&nbsp;
     <ul>
-      <li><font face="Arial">таблицы <a href="ProgrGuide/Database/Hi2.html">
+      <li>таблицы <a href="ProgrGuide/Database/Hi2.html">
 		HI2</a>,
-        <a href="ProgrGuide/Database/Hirest2.html">HIREST2</a></font></li>
-      <li><font face="Arial">функции управления учетами <a href="ProgrGuide/Functions/Functions/AccManagement/CheckHI2Limit.html">
+        <a href="ProgrGuide/Database/Hirest2.html">HIREST2</a></li>
+      <li>функции управления учетами <a href="ProgrGuide/Functions/Functions/AccManagement/CheckHI2Limit.html">
 		CheckHI2Limit</a>,
         <a href="ProgrGuide/Functions/Functions/AccManagement/DeleteHI2Trans.html">
 		DeleteHI2Trans</a>,
@@ -660,86 +614,79 @@
         <a href="ProgrGuide/Functions/Functions/AccManagement/SetHI2Limit.html">
 		SetHI2Limit</a>,
         <a href="ProgrGuide/Functions/Functions/AccManagement/SetHI2Rem.html">
-		SetHI2Rem</a></font></li>
-      <li><font face="Arial">свойство <a href="ProgrGuide/Functions/ASFACT/GLAccISN.html">
+		SetHI2Rem</a></li>
+      <li>свойство <a href="ProgrGuide/Functions/ASFACT/GLAccISN.html">
 		GLAccISN</a>&nbsp; в объекте проводка<br>
         <br>
-        </font></li>
+        </li>
     </ul>
   </li>
-  <li><font face="Arial"> В объекте документ добавлен метод <a href="ProgrGuide/Functions/ASDOC/Flush.html">
+  <li> В объекте документ добавлен метод <a href="ProgrGuide/Functions/ASDOC/Flush.html">
 	Flush</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial"> Добавлен параметр в обработчики событий <a href="ProgrGuide/ScriptProcs/Magic.html">
+    </li>
+  <li> Добавлен параметр в обработчики событий <a href="ProgrGuide/ScriptProcs/Magic.html">
 	Magic</a>,
     <a href="ProgrGuide/ScriptProcs/Valid.html">Valid</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В <a href="ProgrGuide/Defs/doc.html">описании 
-	документа</a> добавлена ширина печатной формы документа в символах.<br>
+    </li>
+  <li>В <a href="ProgrGuide/Defs/doc.html">описании документа</a> добавлена ширина печатной формы документа в символах.<br>
     <br>
-    </font></li>
-  <li><font face="Arial"> В объекте источник данных добавлен метод <a href="ProgrGuide/Functions/ASDATA/ClearParameters.html">
+    </li>
+  <li> В объекте источник данных добавлен метод <a href="ProgrGuide/Functions/ASDATA/ClearParameters.html">
 	ClearParameters</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В методах <a href="ProgrGuide/Functions/ASDOC/CheckAndStore.html">
+    </li>
+  <li>В методах <a href="ProgrGuide/Functions/ASDOC/CheckAndStore.html">
 	CheckAndStore</a>,
-    <a href="ProgrGuide/Functions/ASDOC/Store.html">Store</a> объекта документ 
-	добавлен параметр.<br>
+    <a href="ProgrGuide/Functions/ASDOC/Store.html">Store</a> объекта документ добавлен параметр.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В <a href="ProgrGuide/Defs/Dialog.html">
+    </li>
+  <li>В <a href="ProgrGuide/Defs/Dialog.html">
 	описании описательного диалога</a> добавлена длина комментария.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлены <a href="ProgrGuide/Constants/const_error_codes.html">
+    </li>
+  <li>Добавлены <a href="ProgrGuide/Constants/const_error_codes.html">
 	константы кодов ошибок</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлена функция документооборота <a href="ProgrGuide/Functions/Functions/DocumentsCirculation/NavTreeNewDocMode.html">
+    </li>
+  <li>Добавлена функция документооборота <a href="ProgrGuide/Functions/Functions/DocumentsCirculation/NavTreeNewDocMode.html">
 	NavTreeNewDocMode</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В корне изменена группировка функций.</font>
+    </li>
+  <li>В корне изменена группировка функций.
     <p>&nbsp;</li>
 </ol>
-<p><font face="Arial">&nbsp; <font face="Arial" size="2"><i>
-26 сентября - 19 Ноября 2001 г</i></font></font></p>
+<p>&nbsp; <i>
+26 сентября - 19 Ноября 2001 г</i></p>
 <ol>
-  <li><font face="Arial">Увеличена длина внутренного представления 
-	документа (с 1024 до 4000 байт), в следствии чего поля fBody1, fBody2, 
-	fBody3 и fBody4 в таблице <a href="ProgrGuide/Database/Docs.html">DOCS</a>
+  <li>Увеличена длина внутренного представления документа (с 1024 до 4000 байт), в следствии чего поля fBody1, fBody2, fBody3 и fBody4 в таблице <a href="ProgrGuide/Database/Docs.html">DOCS</a>
 	объеденены в поле fBody.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Изменены параметры <a href="ProgrGuide/ScriptProcs/OnLimitFault.html">
-	обработчика события выхода за пределы лимитов</a>, что дает возможность в 
-	обработчике изменять лимты(например на основе договора о предоставлении 
-	овердрафта).<br>
+    </li>
+  <li>Изменены параметры <a href="ProgrGuide/ScriptProcs/OnLimitFault.html">
+	обработчика события выхода за пределы лимитов</a>, что дает возможность в обработчике изменять лимты(например на основе договора о предоставлении овердрафта).<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлен параметр в обработчик события <a href="ProgrGuide/ScriptProcs/Print.html">
+    </li>
+  <li>Добавлен параметр в обработчик события <a href="ProgrGuide/ScriptProcs/Print.html">
 	Print</a>, что позволяет задавать разные режимы печати документа.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В объекте дерево добавлены методы <a href="ProgrGuide/Functions/ASTREE/AddNode.html">
+    </li>
+  <li>В объекте дерево добавлены методы <a href="ProgrGuide/Functions/ASTREE/AddNode.html">
 	AddNode</a>,
 <a href="ProgrGuide/Functions/ASTREE/DeleteNode.html">DeleteNode</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлен <a href="ProgrGuide/Functions/AsErrorsFreeExecutor.html">
+    </li>
+  <li>Добавлен <a href="ProgrGuide/Functions/AsErrorsFreeExecutor.html">
 	объект исполнитель процедур</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">Добавлена функция <a href="ProgrGuide/Functions/Functions/GetServerDate.html">
+    </li>
+  <li>Добавлена функция <a href="ProgrGuide/Functions/Functions/GetServerDate.html">
 	GetServerDate</a>.<br>
     <br>
-    </font></li>
-  <li><font face="Arial">В <a href="ProgrGuide/Defs/doc.html#Grid">
-	описании документа для грид-таблиц</a> добавлена возможность предотвращения 
-	сохранения их содержания.</font></li>
+    </li>
+  <li>В <a href="ProgrGuide/Defs/doc.html#Grid">
+	описании документа для грид-таблиц</a> добавлена возможность предотвращения сохранения их содержания.</li>
 </ol>
 </body>
 </html>

@@ -7,93 +7,88 @@ title: "Таблица JOBSET"
 
 
 
-<h1><font size="4" face="Arial">Таблица JOBSET</font></h1>
+<h1>Таблица JOBSET</h1>
 
-<p><font face="Arial">Таблицa запущеных задний.<br>
-</font></p>
+<p>Таблицa запущеных задний.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fJSID</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">identity</font></td>
-    <td width="40%"><font face="Arial">идентификатор задания</font></td>
+    <td>fJSID</td>
+    <td>int</td>
+    <td>identity</td>
+    <td>идентификатор задания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSTARTDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">предполагемое врема запуска 
-	задания</font></td>
+    <td>fSTARTDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>предполагемое врема запуска задания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fBEGINDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">время начала выполнения задания</font></td>
+    <td>fBEGINDATE</td>
+    <td>smalldatetime</td>
+    <td>NULL</td>
+    <td>время начала выполнения задания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fENDDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">время конца выполнения задания</font></td>
+    <td>fENDDATE</td>
+    <td>smalldatetime</td>
+    <td>NULL</td>
+    <td>время конца выполнения задания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOMMENT</font></td>
-    <td width="20%"><font face="Arial">varchar(50)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">комментарий к заданию</font></td>
+    <td>fCOMMENT</td>
+    <td>varchar(50)</td>
+    <td>NOT NULL</td>
+    <td>комментарий к заданию</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fGROUP</font></td>
-    <td width="20%"><font face="Arial">char(8)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">шаблон задания</font></td>
+    <td>fGROUP</td>
+    <td>char(8)</td>
+    <td>NOT NULL</td>
+    <td>шаблон задания</td>
   </tr>
   <tr>
-    <td width="20%">fJOBDATE</td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">дата задания, это значение 
-	подставляется в параметры задания</font></td>
+    <td>fJOBDATE</td>
+    <td>smalldatetime</td>
+    <td>NULL</td>
+    <td>дата задания, это значение подставляется в параметры задания</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индексы</b></font></p>
+<p><b><br>
+Индексы</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iJOBSET1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fJSID</font></td>
+    <td>iJOBSET1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fJSID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iJOBSET2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fSTARTDATE</font></td>
+    <td>iJOBSET2</td>
+    <td>&nbsp;</td>
+    <td>fSTARTDATE</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

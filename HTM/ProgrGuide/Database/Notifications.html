@@ -7,103 +7,95 @@ title: "Таблица NOTIFICATIONS"
 
 
 
-<h1><font size="4" face="Arial">Таблица NOTIFICATIONS</font></h1>
+<h1>Таблица NOTIFICATIONS</h1>
 
-<p><font face="Arial">Таблицa хранения оповещений.<br>
-</font></p>
+<p>Таблицa хранения оповещений.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNID</font></td>
-    <td width="20%"><font face="Arial">uniqueidentifier</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор оповещения</font></td>
+    <td>fNID</td>
+    <td>uniqueidentifier</td>
+    <td>NOT NULL</td>
+    <td>идентификатор оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSENDER</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор 
-	пользователя-отправителя</font></td>
+    <td>fSENDER</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя-отправителя</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fBODY</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">текст оповещения</font></td>
+    <td>fBODY</td>
+    <td>varchar (255)</td>
+    <td>NOT NULL</td>
+    <td>текст оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCREATED</font></td>
-    <td width="20%"><font face="Arial">datetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата создания и отправки 
-	оповещения</font></td>
+    <td>fCREATED</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>дата создания и отправки оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fEXPIRE</font></td>
-    <td width="20%"><font face="Arial">datetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата уничтожения оповещения</font></td>
+    <td>fEXPIRE</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>дата уничтожения оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOLOR</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">цвет оповещения</font></td>
+    <td>fCOLOR</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>цвет оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN документа, который 
-	прикреплен к оповещению. По умолчанию принимает значение -1 (нет 
-	прикрепленных документов).&nbsp;</font></td>
+    <td>fISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN документа, который прикреплен к оповещению. По умолчанию принимает значение -1 (нет прикрепленных документов).&nbsp;</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fMODE</font></td>
-    <td width="20%"><font face="Arial">tinyint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">состояние документа, который 
-	прикреплен к оповещению&nbsp;</font></td>
+    <td>fMODE</td>
+    <td>tinyint</td>
+    <td>NOT NULL</td>
+    <td>состояние документа, который прикреплен к оповещению&nbsp;</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iNOTIFICATIONS1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fNID</font></td>
+    <td>iNOTIFICATIONS1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fNID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iNOTIFICATIONS2</font></td>
-    <td width="33%">NOT CLUSTERED</td>
-    <td width="33%"><font face="Arial">fEXPIRE</font></td>
+    <td>iNOTIFICATIONS2</td>
+    <td>NOT CLUSTERED</td>
+    <td>fEXPIRE</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><font face="Arial"><a href="database_scheme.html">См. 
-также</a></font></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

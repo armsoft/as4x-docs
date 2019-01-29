@@ -4,89 +4,74 @@ title: "BrowseTree"
 ---
 
 
-<p><strong><font size="4" face="Arial">Метод BrowseTree</font></strong></p>
+<p><strong>Метод BrowseTree</strong></p>
 
-<p class="label"><font face="Arial">Вызывает форму прокрутки деревьев 
-на экран.</font></p>
+<p>Вызывает форму прокрутки деревьев на экран.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>BrowseTree</strong>(<em>TreeIdOrObj</em>, 
-[<em>bAllowEdit</em>], [<em>bAllowView</em>], [<em>bAllowDelete</em>], [<em>bAllowAddNode</em>], 
-[<em>bAllowExport</em>])</font></p>
+<p><strong>BrowseTree</strong>(<em>TreeIdOrObj</em>, [<em>bAllowEdit</em>], [<em>bAllowView</em>], [<em>bAllowDelete</em>], [<em>bAllowAddNode</em>], [<em>bAllowExport</em>])</p>
 
-<p><font face="Arial">Синтаксис метода <strong>BrowseTree</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода <strong>BrowseTree</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><em><font face="Arial">TreeIdOrObj</font></em></td>
-    <td width="71%"><font face="Arial">выражение, определяющее
+  <tr>
+    <td><em>TreeIdOrObj</em></td>
+    <td>выражение, определяющее
       <a href="../../ASTREE/Treeid.html">идентификатор дерева</a> или же
-      <a href="../SysDefManagment/Tree.html">ссылку на объект дерево</a>.</font></td>
+      <a href="../SysDefManagment/Tree.html">ссылку на объект дерево</a>.</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%"><em><font face="Arial">bAllowEdit</font></em></td>
-    <td width="71%"><font face="Arial">необязательное логическое 
-	выражение, разрешающее корректировку документа в дереве. Если параметр 
-	опущен, то остается в силе соответствующее значение из
-      <a href="../../../Defs/Tree.html">описания дерева</a>.</font></td>
+    <td><em>bAllowEdit</em></td>
+    <td>необязательное логическое выражение, разрешающее корректировку документа в дереве. Если параметр опущен, то остается в силе соответствующее значение из
+      <a href="../../../Defs/Tree.html">описания дерева</a>.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">bAllowView</font></em></td>
-    <td width="71%"><font face="Arial">необязательное логическое 
-	выражение, разрешающее просмотр документа в дереве. Если параметр опущен, то 
-	остается в силе соответствующее значение из
-      <a href="../../../Defs/Tree.html">описания дерева</a>.</font></td>
+    <td><em>bAllowView</em></td>
+    <td>необязательное логическое выражение, разрешающее просмотр документа в дереве. Если параметр опущен, то остается в силе соответствующее значение из
+      <a href="../../../Defs/Tree.html">описания дерева</a>.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">bAllowDelete</font></em></td>
-    <td width="71%"><font face="Arial">необязательное логическое 
-	выражение, разрешающее удаление документа из дерева. Если параметр опущен, 
-	то остается в силе соответствующее значение из
-      <a href="../../../Defs/Tree.html">описания дерева</a>.</font></td>
+    <td><em>bAllowDelete</em></td>
+    <td>необязательное логическое выражение, разрешающее удаление документа из дерева. Если параметр опущен, то остается в силе соответствующее значение из
+      <a href="../../../Defs/Tree.html">описания дерева</a>.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">bAllowAddNode</font></em></td>
-    <td width="71%"><font face="Arial">необязательное логическое 
-	выражение, разрешающее добавление узла в дерево. Если параметр опущен, то 
-	остается в силе соответствующее значение из <a href="../../../Defs/Tree.html">
-	описания дерева</a>.</font></td>
+    <td><em>bAllowAddNode</em></td>
+    <td>необязательное логическое выражение, разрешающее добавление узла в дерево. Если параметр опущен, то остается в силе соответствующее значение из <a href="../../../Defs/Tree.html">
+	описания дерева</a>.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>bAllowExport</em></font></td>
-    <td width="71%"><font face="Arial">необязательное логическое 
-	выражение, разрешающее экспортирование узла дерева. Если параметр опущен, то 
-	остается в силе соответствующее значение из <a href="../../../Defs/Tree.html">
-	описания дерева</a>.</font></td>
+    <td><em>bAllowExport</em></td>
+    <td>необязательное логическое выражение, разрешающее экспортирование узла дерева. Если параметр опущен, то остается в силе соответствующее значение из <a href="../../../Defs/Tree.html">
+	описания дерева</a>.</td>
   </tr>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="../SysDefManagment/Tree.html"><font face="Arial">
-См. также</font></a></p>
+<p><a href="../SysDefManagment/Tree.html">
+См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<h1><font size="3" face="Arial"><strong>Пример метода BrowseTree</strong></font></h1>
+<h1><strong>Пример метода BrowseTree</strong></h1>
 
-<p><font face="Arial">В данном примере дерево вызывается по 
-идентификатору :<br>
+<p>В данном примере дерево вызывается по идентификатору :<br>
 call <strong>BrowseTree</strong>(&quot;OnePaymt&quot;)<br>
 <br>
-А в этом примере метод BrowseTree применяется к объектной переменной, 
-ссылающейся на дерево:<br>
+А в этом примере метод BrowseTree применяется к объектной переменной, ссылающейся на дерево:<br>
 set xTree = <a href="../SysDefManagment/Tree.html">Tree</a>(&quot;NBTURNV&quot;)<br>
 .....<br>
-call <strong>BrowseTree</strong>(xTree)</font></p>
+call <strong>BrowseTree</strong>(xTree)</p>

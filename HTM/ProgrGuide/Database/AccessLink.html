@@ -7,95 +7,89 @@ title: "Таблица ACCESSLINK"
 
 
 
-<h1><font size="4" face="Arial">Таблица ACCESSLINK</font></h1>
-<font FACE="Arial">
+<h1>Таблица ACCESSLINK</h1>
+
 
 <p>Таблица доступов к объектам. <br>
-</font></p>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font FACE="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Тип данных</strong></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Null</strong></font></td>
-    <td class="label" width="40%" height="18"><font FACE="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>
+	Тип данных</strong></td>
+    <td><strong>
+	Null</strong></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fLINK</font></td>
-    <td width="20%" height="9"><font FACE="Arial">int</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font face="Arial">Код линковки, 
-	который определяет группу объектов</font></td>
+    <td>fLINK</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>Код линковки, который определяет группу объектов</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fVALUE</font></td>
-    <td width="20%" height="9"><font FACE="Arial">tinyint</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font face="Arial">Значение доступа</font></td>
+    <td>fVALUE</td>
+    <td>tinyint</td>
+    <td>NOT NULL</td>
+    <td>Значение доступа</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fACCESSID</font></td>
-    <td width="20%" height="9"><font FACE="Arial">tinyint</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font FACE="Arial">Идентификатор кода 
-	доступа </font></td>
+    <td>fACCESSID</td>
+    <td>tinyint</td>
+    <td>NOT NULL</td>
+    <td>Идентификатор кода доступа </td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fCHANGEID</font></td>
-    <td width="20%" height="9"><font FACE="Arial">int</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font FACE="Arial">Идентификатор 
-	модификации для связи с таблицой AccessLog</font></td>
+    <td>fCHANGEID</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>Идентификатор модификации для связи с таблицой AccessLog</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fTYPE</font></td>
-    <td width="20%" height="9"><font FACE="Arial">int</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font face="Arial">Тип ISN, возможны 
-	следующие варианты 0 - ISN объекта, 1 - ISN OLAP объекта, 2 - OLAP табличный 
-	параметр. Значение по умолчанию 0.</font></td>
+    <td>fTYPE</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>Тип ISN, возможны следующие варианты 0 - ISN объекта, 1 - ISN OLAP объекта, 2 - OLAP табличный параметр. Значение по умолчанию 0.</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fBASEFOLD</font></td>
-    <td width="20%" height="9"><font face="Arial">varchar(20)</font></td>
-    <td width="20%" height="9"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="9"><font face="Arial">Идентификатор папки</font></td>
+    <td>fBASEFOLD</td>
+    <td>varchar(20)</td>
+    <td>NOT NULL</td>
+    <td>Идентификатор папки</td>
   </tr>
 </TBODY>
 </table>
-<p class="label"><font FACE="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" height="18"><font FACE="Arial"><b>
-	Имя индекса</b></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Тип </strong></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>
+	Имя индекса</b></td>
+    <td><strong>
+	Тип </strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" height="2">iACCESSLINK1</td>
-    <td width="33%" height="2"><font FACE="Arial">CLUSTERED</font></td>
-    <td width="33%" height="2"><font FACE="Arial">fLINK</font></td>
+    <td>iACCESSLINK1</td>
+    <td>CLUSTERED</td>
+    <td>fLINK</td>
   </tr>
   <tr>
-    <td width="33%" height="2">iACCESSLINK2</td>
-    <td width="33%" height="2"></td>
-    <td width="33%" height="2"><font FACE="Arial">fCHANGEID</font></td>
+    <td>iACCESSLINK2</td>
+    <td></td>
+    <td>fCHANGEID</td>
   </tr>
 </table>
 
-<p class="label"><font FACE="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font FACE="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 
