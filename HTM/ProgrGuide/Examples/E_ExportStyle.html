@@ -26,17 +26,17 @@ title: "AsRepViewer"
 CreateRepViewerr</a><br />
     <br />
     If Not xRep.<strong>HasDefinedStyle</strong> Then<br />
-    <span>&nbsp;&nbsp; &#39; export style for Caption</span><br />
+    &nbsp;&nbsp; &#39; export style for Caption<br />
     &nbsp;&nbsp;
     oStyle.<strong>AddPart</strong> 1, &quot;C(100)&quot;, , False, False<br />
     &nbsp;&nbsp;
     xRep.<strong>AddExportStyle</strong> <strong>&quot;CaptionStyle&quot;</strong>, oStyle<br />
-    <span>&nbsp;&nbsp; xRep.<strong>AddRow</strong> Space(25) &amp; &quot;Acc- account&#39;s section, , , <strong>&quot;CaptionStyle&quot;<br />
-    </strong></span>
+    &nbsp;&nbsp; xRep.<strong>AddRow</strong> Space(25) &amp; &quot;Acc- account&#39;s section, , , <strong>&quot;CaptionStyle&quot;<br />
+    </strong>
     <br />
-    <span>&nbsp;&nbsp; &#39; export style for footer<br />
+    &nbsp;&nbsp; &#39; export style for footer<br />
     &nbsp;&nbsp;
-    </span><span>Set oStyle = New SpreadsheetExportRowStyle<br />
+    Set oStyle = New SpreadsheetExportRowStyle<br />
     &nbsp;&nbsp;
     oStyle.<strong>AddPart</strong> 1, &quot;C(10)&quot;, , True, False, True, False<br />
     &nbsp;&nbsp;
@@ -50,10 +50,10 @@ CreateRepViewerr</a><br />
     <strong>&quot;FooterStyle&quot;</strong><br />
     <br />
     &nbsp;&nbsp; If sView.ExportStyle(<strong>&quot;RowStyle&quot;</strong>) Is Nothing Then&nbsp;&nbsp; 
-    </span><span>
+    
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39; export style for row<br />
-    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set oStyle = New SpreadsheetExportRowStyle</span></span><span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set oStyle = New SpreadsheetExportRowStyle<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     oStyle.<strong>AddPart</strong> 1, &quot;C(&quot; &amp; LeftAlign(&quot;Дата&quot;, 9)&amp; &quot;)&quot;, , False, True, True, True<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -63,7 +63,7 @@ CreateRepViewerr</a><br />
 &nbsp; </strong>&nbsp;End if<br />
     <br />
 &nbsp;&nbsp; xRep.CaptionSpreadsheetExportStyle = <strong>&quot;CaptionStyle&quot;<br />
-    </strong></span><br>
+    </strong><br>
     End iff<br />
     <br>
 xRep.<strong>Show</strong></p>

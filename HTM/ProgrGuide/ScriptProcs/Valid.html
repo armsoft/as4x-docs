@@ -11,14 +11,14 @@ title: "Системное событие документа Valid "
 <br>
 </strong><a href="../scriptstproced.html">См. также</a>&nbsp; <a href="../Examples/E_Valid.html">Пример</a>&nbsp; <a href="../Defs/doc.html">Применяется к</a></p>
 
-<p>Генерируется при попытке выхода из поля заполнения реквизита. Служит для проверки введенных значений реквизита на соответствие некоторому условию.<span> </span><br>
+<p>Генерируется при попытке выхода из поля заполнения реквизита. Служит для проверки введенных значений реквизита на соответствие некоторому условию. <br>
 Последовательность генерации системных событий для документа приведена здесь <a href="Events_Sequence.html"><img src="../../../IMAGES/More.gif" width="12" height="12" alt="More.gif (304 bytes)" border="0"></a>.</p>
 
 <p>&nbsp;</p>
 
 <p><b>Синтаксис</b></p>
 
-<p>Sub <strong>Valid </strong>(<i>ByVal Rekv,</i> [<em><span>Old</span>Value</em>])<br>
+<p>Sub <strong>Valid </strong>(<i>ByVal Rekv,</i> [<em>OldValue</em>])<br>
 &nbsp;&nbsp; <strong>Select Case</strong> <strong>Rekv</strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Case</strong> <em>Rekv1</em><br>
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; statements1</em><br>
@@ -46,15 +46,14 @@ End Sub</p>
     <td>строковое выражение, определяющее идентификатор реквизита в документе. </td>
   </tr>
   <tr>
-    <td><em><span>Old</span>Value</em></td>
+    <td><em>OldValue</em></td>
     <td>необязательное выражение, содержащее старое значение данного реквизита.</td>
   </tr>
 </table>
 
 <p><b>Примечания</b></p>
 
-<p>Идентификатор реквизита передается с верхнем регистре (<span>UCASE</span>)<span>. <br>
-</span>Если поле заполнения реквизита только для<span> </span>
-чтения (задан атрибут <span>R)</span>, то генерации события не происходит.</p>
+<p>Идентификатор реквизита передается с верхнем регистре (UCASE). <br>
+Если поле заполнения реквизита только для чтения (задан атрибут R), то генерации события не происходит.</p>
 
 

@@ -29,55 +29,51 @@ title: "PrintDataGroup"
 
 
 <p><strong>Пример использования PrintDataGroup в описании документа</strong></p>
-    <span>
+    
     <br />
-    &#39; Definition документа</span><p>
-        <span>Name = Products</span><br />
-        <span>Caption = &quot;Продукты&quot;</span><br />
-        <span>Ecaption = &quot;Products&quot;</span><br />
+    &#39; Definition документа<p>
+        Name = Products<br />
+        Caption = &quot;Продукты&quot;<br />
+        Ecaption = &quot;Products&quot;<br />
         <br />
-        <span>Page {Caption = &quot;Продукты&quot;; Ecaption =&quot;Products&quot;</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rekvizit {Name = Code;&nbsp;&nbsp; Caption = &quot;Код продукта&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ECaption = &quot;Products code&quot;; Type = Folder(Item, 12);};<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rekvizit {Name = Name;&nbsp; Caption = &quot;Название продукта&quot;;&nbsp; ECaption = &quot;Products name&quot;; Type = C(50);};</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</span></p>
+        Page {Caption = &quot;Продукты&quot;; Ecaption =&quot;Products&quot;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rekvizit {Name = Code;&nbsp;&nbsp; Caption = &quot;Код продукта&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ECaption = &quot;Products code&quot;; Type = Folder(Item, 12);};<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rekvizit {Name = Name;&nbsp; Caption = &quot;Название продукта&quot;;&nbsp; ECaption = &quot;Products name&quot;; Type = C(50);};<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</p>
     <p>
         <strong>PrintDataGroup </strong>
-        <span>{ Name = &quot;<strong>01</strong>&quot;; Caption = &quot;При печати вывести коды продуктов&quot; }; </span>
+        { Name = &quot;<strong>01</strong>&quot;; Caption = &quot;При печати вывести коды продуктов&quot; }; 
         <br />
         <strong>PrintDataGroup </strong>
-        <span>{ Name = &quot;<strong>02</strong>&quot;; Caption = &quot;При печати вывести названия продуктов&quot;; };</span></p>
+        { Name = &quot;<strong>02</strong>&quot;; Caption = &quot;При печати вывести названия продуктов&quot;; };</p>
     <p>
         <br />
-        <span>&#39; Script документа</span></p>
+        &#39; Script документа</p>
     <p>
-        <span>Public Function TemplateSubstitution(ByVal dctModeDict As Dictionary) As TemplateSubstitution
-        </span>
+        Public Function TemplateSubstitution(ByVal dctModeDict As Dictionary) As TemplateSubstitution 
         <br />
-        <span>Dim Result As TemplateSubstitution</span><span><br />
-        </span>
-        <span>Dim bPrint<span>Products</span>Code As Boolean
+        Dim Result As TemplateSubstitution<br />
+        Dim bPrintProductsCode As Boolean
         <br />
-        Dim bPrint<span>Products</span>Name As Boolean
+        Dim bPrintProductsName As Boolean
         <br />
         <br />
-&nbsp;&nbsp; <strong>bPrint</strong><span><strong>Products</strong></span><strong>Code</strong>&nbsp; = dctModeDict(&quot;<strong>01</strong>&quot;)
+&nbsp;&nbsp; <strong>bPrint</strong><strong>Products</strong><strong>Code</strong>&nbsp; = dctModeDict(&quot;<strong>01</strong>&quot;)
         <br />
-&nbsp;&nbsp; <strong>bPrint</strong><span><strong>Products</strong></span><strong>Name</strong> = dctModeDict(&quot;<strong>02</strong>&quot;)</span></p>
+&nbsp;&nbsp; <strong>bPrint</strong><strong>Products</strong><strong>Name</strong> = dctModeDict(&quot;<strong>02</strong>&quot;)</p>
     <p>
-        <span>&nbsp;&nbsp;&nbsp; With Result</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If <strong>
-        bPrint</strong><span><strong>Products</strong></span><strong>Code</strong>&nbsp; Then</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Add &quot;001&quot;, Doc(&quot;Code&quot;)</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ElseIf
-        </span><span><span><strong>bPrint</strong><span><strong>Products</strong></span><strong>Name</strong> Then</span></span><span><br />
-        </span><span><span>&nbsp;&nbsp;&nbsp;
-        </span>
-        </span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Add &quot;001&quot;, Doc(&quot;<span>Name</span>&quot;)<br />
+        &nbsp;&nbsp;&nbsp; With Result<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If <strong>
+        bPrint</strong><strong>Products</strong><strong>Code</strong>&nbsp; Then<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Add &quot;001&quot;, Doc(&quot;Code&quot;)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ElseIf
+        <strong>bPrint</strong><strong>Products</strong><strong>Name</strong> Then<br />
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Add &quot;001&quot;, Doc(&quot;Name&quot;)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br />
         &nbsp;&nbsp; End With<br />
-&nbsp;&nbsp; Set TemplateSubstitution = Result</span><span><br />
-        </span>
-        <span>End Function</span></p>
+&nbsp;&nbsp; Set TemplateSubstitution = Result<br />
+        End Function</p>
     <p>
         &nbsp;</p>
 

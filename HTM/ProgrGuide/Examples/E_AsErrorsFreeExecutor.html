@@ -12,18 +12,16 @@ title: "AsErrorsFreeExecutor"
 
 
 
-<p><strong>Пример методов <span>Run </span>и 
-<span>SetErrSubParams</span></strong></p>
+<p><strong>Пример методов Run и SetErrSubParams</strong></p>
 
 <p>В примере вызывается функция 
 <a href="../Functions/Functions/CreateErrorsFreeExecutor.html">
-CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<span><em>SubName</em>-</span>имя исполняемой процедуры,&nbsp; <em>Err</em><span><em>SubName</em></span>-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения<span> <em>SubName</em></span>). Устанавливается отчет
-<span>(</span><strong>RepViewer</strong><span>)</span> в котором сохраняются все сообщения об ошибках<span>. </span>Далее, в цикле выполняется процедура <span><em>SubName</em></span> при помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
-передаются параметры для процедуры <em>Err</em><span><em>SubName</em></span> при помощи метода <strong>SetErrSubParams</strong>.</p>
+CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<em>SubName</em>-имя исполняемой процедуры,&nbsp; <em>Err</em><em>SubName</em>-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения <em>SubName</em>). Устанавливается отчет (<strong>RepViewer</strong>) в котором сохраняются все сообщения об ошибках. Далее, в цикле выполняется процедура <em>SubName</em> при помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
+передаются параметры для процедуры <em>Err</em><em>SubName</em> при помощи метода <strong>SetErrSubParams</strong>.</p>
 
 <p>Set errFee =
 <a href="../Functions/Functions/CreateErrorsFreeExecutor.html">
-CreateErrorsFreeExecutor</a>(&quot;<span>ModuleName</span>&quot;, &quot;<span>SubName</span>&quot;, &quot;Err<span>SubName</span>&quot;)<br>
+CreateErrorsFreeExecutor</a>(&quot;ModuleName&quot;, &quot;SubName&quot;, &quot;ErrSubName&quot;)<br>
 Set errRep = <a href="../Functions/Functions/CreateRepViewer.html">
 CreateRepViewer</a><br>
 Set errFee.<strong>RepViewer</strong> = errRep<br>
@@ -35,17 +33,17 @@ Do While Not rs.EOF<br>
 &nbsp;&nbsp;&nbsp; errFee.<strong>SetErrSubParams </strong>(i, docAgr, errRep)<br>
 &nbsp;&nbsp;&nbsp; errFee.<strong>Run </strong>(docAgr)<br>
 <br>
-&nbsp;&nbsp;&nbsp; <span>rs</span>.MoveNext<br>
+&nbsp;&nbsp;&nbsp; rs.MoveNext<br>
 Loop <br>
-<span>rs.close</span><br>
+rs.close<br>
 </p>
-<p>Ниже приведены сигнатуры процедур <span><em>
-SubName</em></span> и <span><em>ErrSubName</em></span>.</p>
-<p><span><span>Public Sub</span> </span>
-<span><em>SubName</em></span> (<span>ByVal docAgr As AsDoc</span>)<span><span><br>
-Public Sub <em>ErrSubName</em></span> <span>(ByVal lErrNumber As Long, ByVal docAgr As AsDoc, ByVal errRep as AsRepViewer)</span></span></p>
-<p>Если параметры для процедуры <em>Err</em><em><span>SubName</span>
-</em>не переданы методом <strong>SetErrSubParams</strong>, то параметры передаются вызовом метода <span><strong>Run</strong></span>. То есть&nbsp; и <span><em>SubName</em></span> и&nbsp;
-<span><em>ErrSubName</em></span> должны иметь одну и туже сигнатуру<span>.</span></p>
+<p>Ниже приведены сигнатуры процедур <em>
+SubName</em> и <em>ErrSubName</em>.</p>
+<p>Public Sub 
+<em>SubName</em> (ByVal docAgr As AsDoc)<br>
+Public Sub <em>ErrSubName</em> (ByVal lErrNumber As Long, ByVal docAgr As AsDoc, ByVal errRep as AsRepViewer)</p>
+<p>Если параметры для процедуры <em>Err</em><em>SubName
+</em>не переданы методом <strong>SetErrSubParams</strong>, то параметры передаются вызовом метода <strong>Run</strong>. То есть&nbsp; и <em>SubName</em> и&nbsp;
+<em>ErrSubName</em> должны иметь одну и туже сигнатуру.</p>
 
 

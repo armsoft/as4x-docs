@@ -78,10 +78,9 @@ title: "Документ/RegistrFunction"
     документа</a>,&nbsp;либо в скриптовой части <a href="../../Defs/Module.html"> модуля</a>. Если описание функции находится в скриптовой части документа, то после его вызова срабатывает метод <a href="../FrmPttel/Update.html"> Update</a>&nbsp;по ISN-у документа, для которого она вызывается, в противном случае метод
     <a href="../FrmPttel/Update.html"> Update</a> не сработает.</p>
     <p>Рассмотрим следующие два примера:</p>
-    <p>&nbsp;1.
-        <span>
+    <p>&nbsp;1. 
         <br />
-        &#39; Скриптовая часть<em> Doc-а</em></span><br />
+        &#39; Скриптовая часть<em> Doc-а</em><br />
 &nbsp; Sub Functions<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc.RegistrFunction &quot;Operation&quot;, &quot;<strong>OperFunc</strong>&quot;<br />
 &nbsp;&nbsp; End Sub<br />
@@ -92,19 +91,18 @@ title: "Документ/RegistrFunction"
         <br />
         2.
         <br />
-        <span>&#39; &nbsp;Скриптовая часть<em> Doc-а</em></span><br />
-        <span>&nbsp; Sub Functions </span>
+        &#39; &nbsp;Скриптовая часть<em> Doc-а</em><br />
+        &nbsp; Sub Functions 
         <br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc.RegistrFunction &quot;Operation&quot;, &quot;<strong>Module.OperFunc</strong>&quot;</span><br />
-        <span>&nbsp; End Subոո</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc.RegistrFunction &quot;Operation&quot;, &quot;<strong>Module.OperFunc</strong>&quot;<br />
+        &nbsp; End Subոո<br />
 &nbsp;<br />
-        <span>&#39; Скриптовая часть <em>Modulе-я</em></span><br />
-        <span>&nbsp; Sub           <strong>OperFunc</strong>()</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc(&quot;Rekv&quot;) = &quot;AAA&quot;</span><br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc.Store</span><br />
-        <span>&nbsp; End Subb<br />
-        <br Здесь, после вызова В первом примере описание функции находится в скриптовой части дукумента, во втором примере находится в скриптовой части модуля. При первом примере после 
-        вызова функции сработает метод <a href="../FrmPttel/Update.html"> Update</a>, при втором примере не сработает.</span></p>
+        &#39; Скриптовая часть <em>Modulе-я</em><br />
+        &nbsp; Sub           <strong>OperFunc</strong>()<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc(&quot;Rekv&quot;) = &quot;AAA&quot;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doc.Store<br />
+        &nbsp; End Subb<br />
+        <br> Здесь, после вызова В первом примере описание функции находится в скриптовой части дукумента, во втором примере находится в скриптовой части модуля. При первом примере после вызова функции сработает метод <a href="../FrmPttel/Update.html"> Update</a>, при втором примере не сработает.</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>

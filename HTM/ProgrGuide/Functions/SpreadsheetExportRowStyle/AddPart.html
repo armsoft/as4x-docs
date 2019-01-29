@@ -40,7 +40,7 @@ title: "AddPart"
 
 <p><strong>Метод AddPart<br>
 <br>
-</strong><span class="auto-style1"><a href="../SpreadsheetExportRowStyle.html">См. также</a></span>&nbsp;
+</strong><a href="../SpreadsheetExportRowStyle.html">См. также</a>&nbsp;
 Пример&nbsp; <a href="../SpreadsheetExportRowStyle.html">Применяется к</a></p>
 
 <p>Задает описание стиля экспорта строки справки в Excel.</p>
@@ -100,20 +100,20 @@ title: "AddPart"
 </table>
     <p>
         <br />
-        <span><strong>Например<br />
+        <strong>Например<br />
         </strong>Пусть имеем отчет со следующими данными:<br />
         <br />
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><strong><span>Non-Current Assets - account: 11-12</span><br />
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>Non-Current Assets - account: 11-12<br />
         <br />
-        <span>Openning Balance At August&nbsp; 01, 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 168.11</span><br />
-        <span>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Acc.Debit&nbsp;&nbsp;&nbsp;&nbsp; Credit Document&nbsp;
-        </span>
+        Openning Balance At August&nbsp; 01, 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 168.11<br />
+        Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Acc.Debit&nbsp;&nbsp;&nbsp;&nbsp; Credit Document&nbsp;
+        
         <br />
-        <span>19/01/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A 901&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;
+        19/01/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A 901&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </strong>
         <br />
         <br />
-        <span>Рассмотрим каждую строку по отдельности. Возьмем (19/01/11<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Рассмотрим каждую строку по отдельности. Возьмем (19/01/11<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </strong>1131<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </strong>A 901) - данную строку. Допустим хотим, чтобы данная строка экспортировалось следующим образом: из даты(19/01/11 ) экспортировалось только его год жирным текстом, 1131- не жирным, а&nbsp;A 901 - без&nbsp;символа-разделителя между A и 901 и не жирным текстом.<br />
         Сначала объявим некоторую переменную <strong>sArr </strong>
@@ -124,45 +124,33 @@ title: "AddPart"
         A 901&quot;<br />
         </strong>
         <br />
-        Потом для каждой части данной строки задатим его описание с помощью метода  <strong>AddPart</strong> :</span><br />
+        Потом для каждой части данной строки задатим его описание с помощью метода  <strong>AddPart</strong> :<br />
         <br />
-        <span>Dim oStyle As SpreadsheetExportRowStyle</span><br />
-        <span><span>
-        <span>Dim xRep As AsRepViewer<br />
-        </span></span></span><br />
-        <span>
-        <span>Set oStyle = New SpreadsheetExportRowStylee<br />
-        </span></span><span><br />
-        <span>oStyle.AddPart 7, &quot;C(2)&quot;, , True, , , False&nbsp;
-        </span><span>&#39;</span><span><span><span>7 - это стартовая позиция строки - &quot;19/01/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        A 901&quot;,<strong> </strong>начиная с которого данные нашей строки будут экспортированы в Excel. Под 7-мым индексом находится символ &quot;1&quot;</span></span><br />
+        Dim oStyle As SpreadsheetExportRowStyle<br />
+        Dim xRep As AsRepViewer<br />
+        <br />
+        Set oStyle = New SpreadsheetExportRowStylee<br />
+        <br />
+        oStyle.AddPart 7, &quot;C(2)&quot;, , True, , , False&nbsp;
+        &#39;7 - это стартовая позиция строки - &quot;19/01/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        A 901&quot;,<strong> </strong>начиная с которого данные нашей строки будут экспортированы в Excel. Под 7-мым индексом находится символ &quot;1&quot;<br />
+        
+        <br />
+        oStyle.AddPart 7+2+8, &quot;C(4)&quot;, , False &#39;7+2+8(начальная позиция + длина 11 + расстояние от 7+2 до 1131, т.e. 1131 в строке sArr&nbsp; начинается с 17-ой позиции) 
         </span>
-        </span><span><br />
-        </span>
-        <span>oStyle.AddPart 7+2+8, &quot;C(4)&quot;, , False</span>
-        <span>
-        &#39;</span><span><span><span>7+2+8(начальная позиция + длина 11 + расстояние от 7+2 до 1131, т.e. 1131 в строке sArr&nbsp; начинается с 17-ой позиции) 
-        </span>
-        </span><span>
-        </span>
-        </span>
-        </span><span>
         &nbsp;<br />
-        </span><span><br />
-        <span>
-        <span>oStyle.AddPart 7+2+8+4+14, &quot;C(4)&quot;, , False, , True<br />
+        <br />
+        oStyle.AddPart 7+2+8+4+14, &quot;C(4)&quot;, , False, , True<br />
         <br />
         После того как описали стили экспорта, задатим имя стиля на основе уже имеющихся описаний с помощью метода <strong>AddExportStyle</strong>
-        </span></span></span><span><br />
-        <span>xRep.<a href="../AsRepViewer/AddExportStyle.html">AddExportStyle</a> &quot;<strong>RowStyle</strong>&quot;, oStyle</span></span><span><span>
+        <br />
+        xRep.<a href="../AsRepViewer/AddExportStyle.html">AddExportStyle</a> &quot;<strong>RowStyle</strong>&quot;, oStyle
         <br />
         <br />
-        </span><span>
-        С помощью метода <strong>AddRow</strong> присвоим заданный стиль к строке sArr, в которм находятся те данные, которые хотели экспортировать в Excel.</span><span><span>
-        </span></span><span><br />
-        </span>
-        </span><span><span>xRep.<a href="../AsRepViewer/AddRow.html">AddRow</a> sArr, , , &quot;<strong>RowStyle</strong></span>&quot;</span><span> </span><span><span>
+        С помощью метода <strong>AddRow</strong> присвоим заданный стиль к строке sArr, в которм находятся те данные, которые хотели экспортировать в Excel.
+        <br />
+        xRep.<a href="../AsRepViewer/AddRow.html">AddRow</a> sArr, , , &quot;<strong>RowStyle</strong>&quot; 
         <br />
         <br />
-        &nbsp;</span></span><span><span>Присвоение заданых стилей к строкам данных отчета можно осуществить еще с помощью таких методов, как <a href="../AsRepViewer/AddHeader.html">AddHeader</a> и <a href="../AsRepViewer/AddFooter.html">AddFooter</a>.</span></span><br />
+        &nbsp;Присвоение заданых стилей к строкам данных отчета можно осуществить еще с помощью таких методов, как <a href="../AsRepViewer/AddHeader.html">AddHeader</a> и <a href="../AsRepViewer/AddFooter.html">AddFooter</a>.<br />
     </p>
