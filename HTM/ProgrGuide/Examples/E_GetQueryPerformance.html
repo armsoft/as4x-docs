@@ -39,14 +39,14 @@ ticksPerSecond = <a href="../Functions/Functions/GetQueryPerformanceFrequency.ht
 &nbsp;&nbsp;&nbsp;
 ticksCount1 = <a href="../Functions/Functions/GetQueryPerformanceCounter.html">GetQueryPerformanceCounter</a>()<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>&nbsp;&nbsp; </span>
-        <span>&nbsp;<span>&#39;Часть программного кода, время реализации которого нужно вычислить в миллисекундах</span></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+        &nbsp;&#39;Часть программного кода, время реализации которого нужно вычислить в миллисекундах<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br />
 &nbsp;&nbsp;&nbsp; ticksCount2 = <a href="../Functions/Functions/GetQueryPerformanceCounter.html">GetQueryPerformanceCounter</a>()<br />
         <br />
-&nbsp;&nbsp;&nbsp; <span><span>&#39;Отнимаем от </span> <strong><em>
-        <span>ticksCount2</span></em></strong><span> - 
-        </span> <strong><em><span>ticksCount1</span></em></strong><span>, чтобы получить количество тиков часов работы той части програмнного кода, которое нас интересует,&nbsp;делим на <em> <strong>ticksPerSecond</strong></em> для получения времени в секундах и умножаем на 1000, чтобы получить время в миллисекундах. </span></span><br>
+&nbsp;&nbsp;&nbsp; &#39;Отнимаем от  <strong><em>
+        ticksCount2</em></strong> - 
+         <strong><em>ticksCount1</em></strong>, чтобы получить количество тиков часов работы той части програмнного кода, которое нас интересует,&nbsp;делим на <em> <strong>ticksPerSecond</strong></em> для получения времени в секундах и умножаем на 1000, чтобы получить время в миллисекундах. <br>
 &nbsp;&nbsp;&nbsp;
 TestQueryPerformanceCounter = (ticksCount2 - ticksCount1) * 1000 / ticksPerSecond<br>
 End Function<br>

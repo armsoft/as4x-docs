@@ -6,7 +6,7 @@
 <body>
 
 <p>Что нового?</p>
-<p><i><span>8 Ноября</span> 2005 г - 26 октября 2006 г</i></p>
+<p><i>8 Ноября 2005 г - 26 октября 2006 г</i></p>
 <ol>
   <li>Добавлены для документа<ul>
 	<li>в <a href="ProgrGuide/Defs/doc.html">
@@ -19,12 +19,12 @@
 		<li>при помощи атрибута<strong> N</strong> значение колонки грид-таблицы в новой строке заполняется значением колонки последней строки</li>
 		<li>при помощи атрибута <b>I</b> реквизит можно редактировать в режиме Overwrite вместо Insert (только для типа C(x))</li>
 		<li>свойство DisableCopy отключает возможность создания копии документа</li>
-		<li><strong style="font-weight: 400">при помощи конструкции </strong>
-		<strong style="font-weight: 400">FolderInfo</strong> можно описать в какой папке документ находится в каждом состоянии. Наличие
-		<strong style="font-weight: 400">FolderInfo позволяет системе показывать более читабельную историю документа.</strong></li>
+		<li><strong>при помощи конструкции </strong>
+		<strong>FolderInfo</strong> можно описать в какой папке документ находится в каждом состоянии. Наличие
+		<strong>FolderInfo позволяет системе показывать более читабельную историю документа.</strong></li>
 	</ul></li>
 	<li>ñîáûòèå 
-		<strong style="font-weight: 400">
+		<strong>
 	<a href="ProgrGuide/ScriptProcs/BeforeCommit.html">BeforeCommit</a></strong></li>
 	<li>íîâûé ïàðàìåòð â событии <a href="ProgrGuide/ScriptProcs/NestedTransaction.html">
 	NestedTransaction</a></li>
@@ -33,7 +33,7 @@
 	<li>свойство
 		<a href="ProgrGuide/Functions/ASDOC/CreateDialog.html">CreateDialog</a></li>
 	<li>изменены параметры ñîáûòèя
-	<span><a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a></span></li>
+	<a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a></li>
 	</ul>
 	<p>&nbsp;</li>
 	<li>Добавлены для источника данных<ul>
@@ -46,10 +46,10 @@
 			<a href="ProgrGuide/ScriptProcs/Valid_Data.html">Valid</a> источника данных (свойство DisableValidFunction)</li>
 		</ul></li>
 		<li>ñîáûòèå 
-		<strong style="font-weight: 400">
+		<strong>
 		<a href="ProgrGuide/ScriptProcs/LoadUpdates.html">LoadUpdates</a></strong></li>
 		<li>ñîáûòèå 
-		<strong style="font-weight: 400">
+		<strong>
 		<a href="ProgrGuide/ScriptProcs/ExternalConnection.html">
 		ExternalConnection</a></strong></li>
 		<li>ìåòîäы 
@@ -145,16 +145,16 @@
 </ol>
 <p>&nbsp;</p>
 <p><i> 1
-<span>Ìà</span>я 2005 г - <span>7 Ноября</span> 2005 г&nbsp; </i></p>
+Ìàя 2005 г - 7 Ноября 2005 г&nbsp; </i></p>
 <ol>
   <li>Добавлены для документа<ul>
 		<li>íîâûé ïàðàìåòð â методе <a href="ProgrGuide/Functions/ASDOC/Show.html">
 		Show</a> </li>
       <li>ìåòîä 
 		<a href="ProgrGuide/Functions/ASDOC/ExistsSub.html">ExistsSub</a></li>
-		<li>ñîáûòèå <span>
+		<li>ñîáûòèå 
 		<a href="ProgrGuide/ScriptProcs/IsHidden.html">IsHidden</a> и свойство 
-		<a href="ProgrGuide/Functions/ASDOC/IsHidden.html">IsHidden</a></span></li>
+		<a href="ProgrGuide/Functions/ASDOC/IsHidden.html">IsHidden</a></li>
     </ul>
   </li>
 </ol>
@@ -230,77 +230,77 @@
 </ol>
 <p>&nbsp;</p>
 <p><i> 11 Февраля 2004 г - 1
-<span>Ìà</span>я 2005 г&nbsp; </i></p>
+Ìàя 2005 г&nbsp; </i></p>
 <ol>
   <li>Добавлены для документа<ul>
-      <li>системнûå событиÿ <span>
+      <li>системнûå событиÿ 
 		<a href="ProgrGuide/ScriptProcs/StoreGrid.html">StoreGrid</a>,
 		<a href="ProgrGuide/ScriptProcs/LoadGrid.html">LoadGrid</a>,
-		<a href="ProgrGuide/ScriptProcs/SetPrintWidth.html">SetPrintWidth</a></span></li>
+		<a href="ProgrGuide/ScriptProcs/SetPrintWidth.html">SetPrintWidth</a></li>
 		<li>íîâûé ïàðàìåòð â ñîáûòèè
-		<span><a href="ProgrGuide/ScriptProcs/PostMessage.html">
-		PostMessage</a></span></li>
-      <li>ìåòîä <span>
-		<a href="ProgrGuide/Functions/ASDOC/PrintToFile.html">PrintToFile</a></span></li>
-		<li>ñîáûòèå <span>
+		<a href="ProgrGuide/ScriptProcs/PostMessage.html">
+		PostMessage</a></li>
+      <li>ìåòîä 
+		<a href="ProgrGuide/Functions/ASDOC/PrintToFile.html">PrintToFile</a></li>
+		<li>ñîáûòèå 
 		<a href="ProgrGuide/ScriptProcs/ClickDropDown.html">ClickDropDown</a>
-		</span>äëÿ òипà данных комментарий</li>
-		<li><span>ð</span>àçäåëèòåëüíàÿ ëèíèÿ<span> â <a href="ProgrGuide/Defs/doc.html">îïèñàíèè äîêóìåíòà</a></span></li>
+		äëÿ òипà данных комментарий</li>
+		<li>ðàçäåëèòåëüíàÿ ëèíèÿ â <a href="ProgrGuide/Defs/doc.html">îïèñàíèè äîêóìåíòà</a></li>
     </ul>
   <p>&nbsp;</li>
   <li>Добавлены
     
       <ul>
-        <li> <span>ñâîéñòâî </span>
+        <li> ñâîéñòâî 
 		<a href="ProgrGuide/Functions/ASVIEW/AllowExport.html">AllowExport</a>
-		<span>â îá</span>ъ<span>åêòе âèä ïðîñìîòðà&nbsp;&nbsp;&nbsp;
-		</span></li>
+		â îáъåêòе âèä ïðîñìîòðà&nbsp;&nbsp;&nbsp;
+		</li>
 		<li>свойство
-        <span>
-		<a href="ProgrGuide/Functions/ASTREE/AllowExport.html">AllowExport</a></span> в объекте äåðåâî</li>
-        <li>ïàðàìåòð â ìåòîäå <span>
+        
+		<a href="ProgrGuide/Functions/ASTREE/AllowExport.html">AllowExport</a> в объекте äåðåâî</li>
+        <li>ïàðàìåòð â ìåòîäå 
 		<a href="ProgrGuide/Functions/Functions/InterfaceManagment/BrowseTree.html">
-		BrowseTree</a></span><br>
+		BrowseTree</a><br>
 		&nbsp;</li>
   </ul>
   </li>
-  <li>Добавлены для <span>øàáëîíà ïå÷àòè</span><ul>
-      <li><span>ñâîéòâà </span>
+  <li>Добавлены для øàáëîíà ïå÷àòè<ul>
+      <li>ñâîéòâà 
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowView.html">AllowView</a>,
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowHistory.html">AllowHistory</a>,
 		<a href="ProgrGuide/Functions/AsDocPrint/AllowPrintPreview.html">
 		AllowPrintPreview</a></li>
-		<li>íîâûé ïàðàìåòð â <span>
-		ìåòîäå </span><a href="ProgrGuide/Functions/AsDocPrint/P.html">P</a></li>
+		<li>íîâûé ïàðàìåòð â 
+		ìåòîäå <a href="ProgrGuide/Functions/AsDocPrint/P.html">P</a></li>
     </ul>
   &nbsp;</li>
-  <li>Добавленî ñâîéñòâî <span>
+  <li>Добавленî ñâîéñòâî 
 	<a href="ProgrGuide/Functions/ASVIEW/ExistsColumn.html">ExistsColumn</a>
-	</span>для âèäà ïðîñìîòðà<span>. <br>
-	&nbsp;</span></li>
+	для âèäà ïðîñìîòðà. <br>
+	&nbsp;</li>
 	<li>Добавленî ñâîéñòâî
 	<a href="ProgrGuide/Functions/AsCallBackOnTimer/Properties.html">
-	<span>P</span>roperties</a><span> </span>для îáúåêòà òèïà àãåíò öèêëèчеñêîãî âûçîâà ïðîöåäóð<span>. <br>
-	&nbsp;</span></li>
-	<li>Добавлен ìåòîä <span>
+	Properties</a> для îáúåêòà òèïà àãåíò öèêëèчеñêîãî âûçîâà ïðîöåäóð. <br>
+	&nbsp;</li>
+	<li>Добавлен ìåòîä 
 	<a href="ProgrGuide/Functions/AsRepViewer/SaveToFile.html">SaveToFile</a>
-	</span>для <span>îá</span>ъ<span>åêò</span>à îò÷åò<span>.<br>
-	&nbsp;</span></li>
-	<li>Добавленû ìåòîäû <span>
+	для îáъåêòà îò÷åò.<br>
+	&nbsp;</li>
+	<li>Добавленû ìåòîäû 
 	<a href="ProgrGuide/Functions/AsUstPar/AddRadioButtons.html">AddRadioButtons</a>,
 	<a href="ProgrGuide/Functions/AsUstPar/AddDublRadioButtons.html">
-	AddDublRadioButtons</a> â îá</span>ъ<span>åêò</span> äèàëîã<span>.<br>
-	&nbsp;</span></li>
-	<li><span>Äîáàâëåíî </span>
-	Atributes<span> â <a href="ProgrGuide/Defs/Dialog.html">îïèñàíèè îïèñàòåëüíîãî äèàëîãà</a></span>.<br>
+	AddDublRadioButtons</a> â îáъåêò äèàëîã.<br>
 	&nbsp;</li>
-	<li> Добавлены <span>ñâîéñòâà
-	</span><a href="ProgrGuide/Functions/AsRepViewer/RowDescriptor.html">
-	RowDescriptor</a> <span>è </span>
+	<li>Äîáàâëåíî 
+	Atributes â <a href="ProgrGuide/Defs/Dialog.html">îïèñàíèè îïèñàòåëüíîãî äèàëîãà</a>.<br>
+	&nbsp;</li>
+	<li> Добавлены ñâîéñòâà
+	<a href="ProgrGuide/Functions/AsRepViewer/RowDescriptor.html">
+	RowDescriptor</a> è 
 	<a href="ProgrGuide/Functions/AsRepViewer/RowISN.html">RowISN</a>
-	<span>â îá</span>ъ<span>åêòå îò÷åò.<br>
-	&nbsp;</span></li>
-  <li> Добавлены функции<span> </span>
+	â îáъåêòå îò÷åò.<br>
+	&nbsp;</li>
+  <li> Добавлены функции 
 	<a href="ProgrGuide/Functions/Functions/AppLock.html">AppLock</a>,
 	<a href="ProgrGuide/Functions/Functions/ParameterManagment/ParamDesc.html">
 	ParamDesc</a>,
@@ -308,50 +308,50 @@
 	ExportDoc</a>, <a href="ProgrGuide/Functions/Functions/ImportFromDir.html">
 	ImportFromDir</a>,
 	<a href="ProgrGuide/Functions/Functions/AccManagement/ExistsFact.html">
-	ExistsFact</a><span>,
+	ExistsFact</a>,
 	<a href="ProgrGuide/Functions/Functions/DocumentsCirculation/GetDocPassedState.html">
-	GetDocPassedState</a></span>.<br>
+	GetDocPassedState</a>.<br>
 	&nbsp;</li>
 	<li>Добавленû ôóíêöèè àðõèâàöèè
-	<span>
+	
 	<a href="ProgrGuide/Functions/Functions/Archive/ArchiveDoc.html">ArchiveDoc</a>,
 	<a href="ProgrGuide/Functions/Functions/Archive/ArchiveObjectAccWithRem.html">
 	ArchiveObjectAccWithRem</a>,
 	<a href="ProgrGuide/Functions/Functions/Archive/GetArchiveDb.html">
 	GetArchiveDB</a>.<br>
-	&nbsp;</span></li>
+	&nbsp;</li>
   <li> Добавлен новый параметр в функцию
 	<a href="ProgrGuide/Functions/Functions/AccManagement/LastOpDate2.html">
 	LastOpDate2</a>.<br>
 	&nbsp;</li>
-	<li> Добавлен новый параметр <span>
-	Cancel </span>в функции âûçîâà <a href="ProgrGuide/Defs/Job.html">çàäàíèÿ</a> ïðè òèïå 1.<br>
+	<li> Добавлен новый параметр 
+	Cancel в функции âûçîâà <a href="ProgrGuide/Defs/Job.html">çàäàíèÿ</a> ïðè òèïå 1.<br>
 	&nbsp;</li>
-	<li> Добавлен<span> </span>режим авторизации â <a href="Config_as_struct.html">êîíôèãóðàöèîííîì ôàéëå</a>.<br>
+	<li> Добавлен режим авторизации â <a href="Config_as_struct.html">êîíôèãóðàöèîííîì ôàéëå</a>.<br>
 	&nbsp;</li>
-  <li> Добавлен<span>à íîâàÿ êîëîíêà</span>(fDCD)<span> â òàáëèöå </span><a href="ProgrGuide/Database/DocP.html">DocP</a>.<br>
+  <li> Добавленà íîâàÿ êîëîíêà(fDCD) â òàáëèöå <a href="ProgrGuide/Database/DocP.html">DocP</a>.<br>
 	&nbsp;</li>
-	<li>Добавленû<span> òàáëèöû àðõèâàöèè </span><a href="ProgrGuide/Database/DocLogARC.html">DOCLOGARC</a>,
+	<li>Добавленû òàáëèöû àðõèâàöèè <a href="ProgrGuide/Database/DocLogARC.html">DOCLOGARC</a>,
 	<a href="ProgrGuide/Database/DocsARC.html">DOCSARC</a>,
 	<a href="ProgrGuide/Database/DocsARCISN.html">DOCARCISN</a>,
 	<a href="ProgrGuide/Database/DocsAttachARC.html">DOCSATTACHARC</a>,
 	<a href="ProgrGuide/Database/DocsGARC.html">DOCSGARC</a>,
 	<a href="ProgrGuide/Database/DocsimARC.html">DOCSIMARC</a>.<br>
 	&nbsp;</li>
-	<li><span>Èçìåíåíà ñòðóêòóðà òàáëèöû </span><a href="ProgrGuide/Database/Params.html">Params</a>
-	<span>è äîáàâëåíà òàáëèöà </span>
+	<li>Èçìåíåíà ñòðóêòóðà òàáëèöû <a href="ProgrGuide/Database/Params.html">Params</a>
+	è äîáàâëåíà òàáëèöà 
 	<a href="ProgrGuide/Database/User%20Params.html">UserParams</a>.<br>
 	&nbsp;</li>
-	<li><span>Èçìåíåíà ñòðóêòóðà òàáëèöû 
-	<a href="ProgrGuide/Database/Users.html">Users</a>.</span><br>
+	<li>Èçìåíåíà ñòðóêòóðà òàáëèöû 
+	<a href="ProgrGuide/Database/Users.html">Users</a>.<br>
 	&nbsp;</li>
-	<li>Добавленû<span> òàáëèöû</span>
+	<li>Добавленû òàáëèöû
 	<a href="ProgrGuide/Database/ResNumbers.html">ResNumbers</a>,
 	<a href="ProgrGuide/Database/ChacheRemDate.html">CacheRemDate</a> и функция
 	<a href="ProgrGuide/Functions/Functions/ReserveNumber.html">ReserveNumber</a>.<br>
 	&nbsp;</li>
-	<li>Добавленû<span> òàáëèöû</span>
-	<span>äîñòóïîâ </span>
+	<li>Добавленû òàáëèöû
+	äîñòóïîâ 
 	<a href="ProgrGuide/Database/AccessLink.html">AccessLink</a>,
 	<a href="ProgrGuide/Database/AccessISNList.html">AccessISNList</a>,
 	<a href="ProgrGuide/Database/AccessLog.html">AccessLog</a>.<br>

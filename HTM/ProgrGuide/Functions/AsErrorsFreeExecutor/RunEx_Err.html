@@ -56,41 +56,41 @@ xParamsArray()</i></p>
     <p>
         Например<strong>:</strong></p>
     <p>
-        <span>1) Dim errFree As AsErrorsFreeExecutor<br />
+        1) Dim errFree As AsErrorsFreeExecutor<br />
 &nbsp;&nbsp;&nbsp; Dim param01 As <strong>Long<br />
         <br />
 &nbsp;&nbsp;&nbsp; </strong>Set errFree = CreateErrorsFreeExecutor(&quot;modname&quot;, &quot;methodname1&quot;)<br />
         &nbsp;&nbsp;&nbsp; errFree.RunEx( param01)
         <br />
-        </span>
+        
         <br />
-        <span>&nbsp;&nbsp;&nbsp; Sub methodname1(ByRef param01 As <strong>
-        Integer</strong>)</span><br />
-        <span>&nbsp;&nbsp;&nbsp; ...</span><br />
-        <span>&nbsp;&nbsp;&nbsp; End Sub</span></p>
+        &nbsp;&nbsp;&nbsp; Sub methodname1(ByRef param01 As <strong>
+        Integer</strong>)<br />
+        &nbsp;&nbsp;&nbsp; ...<br />
+        &nbsp;&nbsp;&nbsp; End Sub</p>
     <p>
-        <span>2) Dim errFree As AsErrorsFreeExecutor<br />
+        2) Dim errFree As AsErrorsFreeExecutor<br />
 &nbsp;&nbsp;&nbsp; Dim param01 As <strong>Long<br />
         </strong><br />
         <strong>&nbsp;&nbsp;&nbsp; </strong>Set errFree = CreateErrorsFreeExecutor(&quot;modname&quot;, &quot;methodname2&quot;)<br />
         &nbsp;&nbsp;&nbsp; errFree.RunEx( param01)
-        </span>
+        
         <br />
-        <span>&nbsp;&nbsp;&nbsp; 
-        </span>
+        &nbsp;&nbsp;&nbsp; 
+        
         <br />
-        <span>&nbsp;&nbsp;&nbsp; Sub methodname2(ByRef param01 As <strong>
-        Long</strong>)</span><br />
-        <span>&nbsp;&nbsp;&nbsp; ...</span><br />
-        <span>&nbsp;&nbsp;&nbsp; End Sub<br />
+        &nbsp;&nbsp;&nbsp; Sub methodname2(ByRef param01 As <strong>
+        Long</strong>)<br />
+        &nbsp;&nbsp;&nbsp; ...<br />
+        &nbsp;&nbsp;&nbsp; End Sub<br />
         <br />
         В первом примере значение параметра <strong>param01</strong> не будет возвращено, поскольку тип <strong>param01 -&gt; Long</strong>, а тип соответствующего параметра процедуры <strong>-&gt; Integer</strong>. Во-втором примере значение возвратится, т.к. типы у обоих парамтеров совпадают и равны&nbsp;
-        <strong>Long</strong></span></p>
+        <strong>Long</strong></p>
     </li>
   <li><p>при задании необязательных параметров предыдущие необязательные параметры должны быть заполнены.
       <br />
       <br />
-      Например:<span><br />
+      Например:<br />
       <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) Dim errFree As AsErrorsFreeExecutor<br />
       <br />
@@ -112,7 +112,7 @@ xParamsArray()</i></p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sub methodname(ByVal param1 As Long<strong>,&nbsp;Optional</strong> ByVal param2 As Long, <strong>Optional</strong> ByVal param3 As Long)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End Sub<br />
-      </span>
+      
       <br>В первом примере задание параметра param2 обязательно, поскольку после него задается&nbsp;еще параметр Param3, а во-втором примере - необязательно.</p>
   </li>
 </ul>

@@ -5,7 +5,7 @@
 
 <body BACKGROUND="../IMAGES/blue.jpg">
 
-<p><img SRC="../IMAGES/K2.gif" ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3" width="29" height="41">Օգնության բաղադրամասերը</p>
+<p><img SRC="../IMAGES/K2.gif" BORDER="0" NATURALSIZEFLAG="3" width="29" height="41">Օգնության բաղադրամասերը</p>
 
 <p>Մենք աշխատել ենք դյուրացնել օգնության օգտագործումը: Ձեզ հետաքրքող տեղեկության փնտրումը կարող եք սկսել ստորեւ բերված կապերից:</p>
 

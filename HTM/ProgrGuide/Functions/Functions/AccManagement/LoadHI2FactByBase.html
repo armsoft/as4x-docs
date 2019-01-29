@@ -66,12 +66,12 @@ title: "LoadHI2FactByObject"
 <br>
 </strong>Ниже приведен пример удаления проводок из HI2.</p>
 
-<p><span>Dim xCol As Collection </span>
+<p>Dim xCol As Collection 
     <br />
-    <span>Dim xFact As AsFact </span>
+    Dim xFact As AsFact 
     <br />
-    <span>Dim lngTrans As Long</span></p>
-    <p>Set <span><strong>xCol</strong> </span>=<strong>LoadHI2FactByBase</strong>(Doc.ISN)<br>
+    Dim lngTrans As Long</p>
+    <p>Set <strong>xCol</strong> =<strong>LoadHI2FactByBase</strong>(Doc.ISN)<br>
         If Not <strong>xCol</strong> Is Nothing Then<br>
 &nbsp; For Each <strong>xFact</strong> In <strong>xCol</strong><br>
 &nbsp;&nbsp;&nbsp; lngTrans = <strong>xFact</strong>.Trans
