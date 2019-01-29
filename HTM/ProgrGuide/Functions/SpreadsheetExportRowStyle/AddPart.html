@@ -127,10 +127,8 @@ title: "AddPart"
         Потом для каждой части данной строки задатим его описание с помощью метода  <strong>AddPart</strong> :<br />
         <br />
         Dim oStyle As SpreadsheetExportRowStyle<br />
-        
         Dim xRep As AsRepViewer<br />
         <br />
-        
         Set oStyle = New SpreadsheetExportRowStylee<br />
         <br />
         oStyle.AddPart 7, &quot;C(2)&quot;, , True, , , False&nbsp;
@@ -138,18 +136,10 @@ title: "AddPart"
         A 901&quot;,<strong> </strong>начиная с которого данные нашей строки будут экспортированы в Excel. Под 7-мым индексом находится символ &quot;1&quot;<br />
         
         <br />
-        
-        oStyle.AddPart 7+2+8, &quot;C(4)&quot;, , False
-        
-        &#39;7+2+8(начальная позиция + длина 11 + расстояние от 7+2 до 1131, т.e. 1131 в строке sArr&nbsp; начинается с 17-ой позиции) 
-        
-        
-        
-        
+        oStyle.AddPart 7+2+8, &quot;C(4)&quot;, , False &#39;7+2+8(начальная позиция + длина 11 + расстояние от 7+2 до 1131, т.e. 1131 в строке sArr&nbsp; начинается с 17-ой позиции) 
         </span>
         &nbsp;<br />
         <br />
-        
         oStyle.AddPart 7+2+8+4+14, &quot;C(4)&quot;, , False, , True<br />
         <br />
         После того как описали стили экспорта, задатим имя стиля на основе уже имеющихся описаний с помощью метода <strong>AddExportStyle</strong>
@@ -157,10 +147,8 @@ title: "AddPart"
         xRep.<a href="../AsRepViewer/AddExportStyle.html">AddExportStyle</a> &quot;<strong>RowStyle</strong>&quot;, oStyle
         <br />
         <br />
-        
         С помощью метода <strong>AddRow</strong> присвоим заданный стиль к строке sArr, в которм находятся те данные, которые хотели экспортировать в Excel.
         <br />
-        
         xRep.<a href="../AsRepViewer/AddRow.html">AddRow</a> sArr, , , &quot;<strong>RowStyle</strong>&quot; 
         <br />
         <br />

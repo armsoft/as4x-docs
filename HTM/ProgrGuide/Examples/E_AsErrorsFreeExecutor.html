@@ -12,13 +12,11 @@ title: "AsErrorsFreeExecutor"
 
 
 
-<p><strong>Пример методов Run и 
-SetErrSubParams</strong></p>
+<p><strong>Пример методов Run и SetErrSubParams</strong></p>
 
 <p>В примере вызывается функция 
 <a href="../Functions/Functions/CreateErrorsFreeExecutor.html">
-CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<em>SubName</em>-имя исполняемой процедуры,&nbsp; <em>Err</em><em>SubName</em>-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения <em>SubName</em>). Устанавливается отчет
-(<strong>RepViewer</strong>) в котором сохраняются все сообщения об ошибках. Далее, в цикле выполняется процедура <em>SubName</em> при помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
+CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<em>SubName</em>-имя исполняемой процедуры,&nbsp; <em>Err</em><em>SubName</em>-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения <em>SubName</em>). Устанавливается отчет (<strong>RepViewer</strong>) в котором сохраняются все сообщения об ошибках. Далее, в цикле выполняется процедура <em>SubName</em> при помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
 передаются параметры для процедуры <em>Err</em><em>SubName</em> при помощи метода <strong>SetErrSubParams</strong>.</p>
 
 <p>Set errFee =

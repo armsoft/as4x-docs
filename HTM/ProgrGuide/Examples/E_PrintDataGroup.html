@@ -50,11 +50,9 @@ title: "PrintDataGroup"
         <br />
         &#39; Script документа</p>
     <p>
-        Public Function TemplateSubstitution(ByVal dctModeDict As Dictionary) As TemplateSubstitution
-        
+        Public Function TemplateSubstitution(ByVal dctModeDict As Dictionary) As TemplateSubstitution 
         <br />
         Dim Result As TemplateSubstitution<br />
-        
         Dim bPrintProductsCode As Boolean
         <br />
         Dim bPrintProductsName As Boolean
@@ -71,12 +69,10 @@ title: "PrintDataGroup"
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ElseIf
         <strong>bPrint</strong><strong>Products</strong><strong>Name</strong> Then<br />
         &nbsp;&nbsp;&nbsp;
-        
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Add &quot;001&quot;, Doc(&quot;Name&quot;)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br />
         &nbsp;&nbsp; End With<br />
 &nbsp;&nbsp; Set TemplateSubstitution = Result<br />
-        
         End Function</p>
     <p>
         &nbsp;</p>
