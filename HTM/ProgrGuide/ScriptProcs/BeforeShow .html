@@ -15,77 +15,67 @@ title: "Системное событие BeforeShow"
 
 
 
-<p><strong><font size="4" face="Arial">Событие BeforeShow <br>
+<p><strong>Событие BeforeShow <br>
 <br>
-</font></strong><font face="Arial"><a href="../scriptstproced.html">См. 
-также</a>&nbsp; Пример&nbsp;
-<a href="../Functions/Astree.html">Применяется к</a></font></p>
+</strong><a href="../scriptstproced.html">См. также</a>&nbsp; Пример&nbsp;
+<a href="../Functions/Astree.html">Применяется к</a></p>
 
-<p class="label"><font face="Arial">Происходит перед открытием немодального&nbsp; 
-браузера дерева .</font></p>
+<p>Происходит перед открытием немодального&nbsp; браузера дерева .</p>
 
-<p class="label">&nbsp;</p>
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p>&nbsp;</p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial">Sub <strong><font size="4" face="Arial"><font size="3">
-BeforeShow</font></font></strong>(ByRef <em>AllowEdit</em> as Boolean,ByRef <em>
+<p>Sub <strong>
+BeforeShow</strong>(ByRef <em>AllowEdit</em> as Boolean,ByRef <em>
 AllowView</em> as Boolean,ByRef <em>AllowDelete</em> as Boolean,ByRef <em>
 AllowAddNode</em> as Boolean,ByRef <em>AllowExport</em> as Boolean, ByRef <em>
 AllowAddDocs</em> as Boolean)<br>
 <em>&nbsp;&nbsp; statements</em><br>
-End Sub</font></p>
+End Sub</p>
 
-<p><font face="Arial">Синтаксис события <strong><font size="4" face="Arial">BeforeShow
-</font></strong>состоит из следующих частей:</font></p>
+<p>Синтаксис события <strong>BeforeShow
+</strong>состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
     <tr>
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
     </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>AllowEdit</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на редактирования 
-	элемента дерева</span><font face="Arial">.</font></td>
+    <td><em>AllowEdit</em> </td>
+    <td><span class="auto-style1">Разрешение на редактирования элемента дерева</span>.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>AllowView</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на просмотр элемента 
-	дерева</span><font face="Arial">.</font></td>
+    <td><em>AllowView</em> </td>
+    <td><span class="auto-style1">Разрешение на просмотр элемента дерева</span>.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>AllowDelete</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на удаление элемента 
-	дерева</span><font face="Arial">.</font></td>
+    <td><em>AllowDelete</em> </td>
+    <td><span class="auto-style1">Разрешение на удаление элемента дерева</span>.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>AllowAddNode</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на добавления узла 
-	дерева</span><font face="Arial">.</font></td>
+    <td><em>AllowAddNode</em> </td>
+    <td><span class="auto-style1">Разрешение на добавления узла дерева</span>.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>AllowExport</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на экспорт дерева</span><font face="Arial">.</font></td>
+    <td><em>AllowExport</em> </td>
+    <td><span class="auto-style1">Разрешение на экспорт дерева</span>.</td>
     </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>AllowAddDocs</em> </font></td>
-    <td width="71%"><span class="auto-style1">Разрешение на добавление 
-	документов в дерево.</span></td>
+    <td><em>AllowAddDocs</em> </td>
+    <td><span class="auto-style1">Разрешение на добавление документов в дерево.</span></td>
   </tr>
 </table>
-<p><font face="Arial"><b>Примечание</b></font></p>
-<p><font face="Arial">Если событие <font size="3" face="Arial">
-BeforeShow </font>обрабатывает<font size="4" face="Arial">,<span class="auto-style2"><font size="3">то 
-значения свойств дерева
-<font face="Arial" size="3"><a
-    href="../Functions/ASTree/AllowAddNode.html">AllowAddNode</a></font>,
-<font face="Arial" size="3"><a
-    href="../Functions/ASTree/AllowDelete.html">AllowDelete</a>, <font face="Arial">
+<p><b>Примечание</b></p>
+<p>Если событие 
+BeforeShow обрабатывает,<span class="auto-style2">то значения свойств дерева
+<a href="../Functions/ASTree/AllowAddNode.html">AllowAddNode</a>,
+<a href="../Functions/ASTree/AllowDelete.html">AllowDelete</a>, 
 <a href="../Functions/ASTree/AllowEdit.html">
-	AllowEdit</a>, <font face="Arial" size="3">
+	AllowEdit</a>, 
 	<a href="../Functions/ASTREE/AllowExport.html">AllowExport</a>,
-<a href="../Functions/ASTREE/AllowView.html"><font face="Arial">
-	AllowView</font></a>&nbsp; игнорируются.</font></font></font></font></span></font></font></p>
+<a href="../Functions/ASTREE/AllowView.html">
+	AllowView</a>&nbsp; игнорируются.</span></p>
 
 

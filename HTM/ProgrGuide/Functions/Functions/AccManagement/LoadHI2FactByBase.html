@@ -3,89 +3,75 @@ layout: page
 title: "LoadHI2FactByObject"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             font-family: Arial;
         }
     </style>
 
 
-<h1><font size="4" face="Arial">Функция LoadHI2FactByBase<br>
-</font><a href="../../Asfact.html"><font size="3" face="Arial"><strong>
-свойства&nbsp;&nbsp; методы</strong></font></a></h1>
+<h1>Функция LoadHI2FactByBase<br>
+<a href="../../Asfact.html"><strong>
+свойства&nbsp;&nbsp; методы</strong></a></h1>
 
-<p><font face="Arial">Возвращает коллекцию проводок для указанного 
-    докумнета-основания из HI2.<br>
+<p>Возвращает коллекцию проводок для указанного докумнета-основания из HI2.<br>
 <br>
-При отсутствии проводок с заданными параметрами возвращается Nothing. Каждый 
-элемент возвращаемой коллекции является <a href="../../Asfact.html">ссылкой на 
-объект типа проводки.</a></font></p>
+При отсутствии проводок с заданными параметрами возвращается Nothing. Каждый элемент возвращаемой коллекции является <a href="../../Asfact.html">ссылкой на объект типа проводки.</a></p>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>set</strong> <em>sFacts</em><strong> = 
-    LoadHI2FactByBase(</strong><em>BaseISN</em><strong>, </strong><em>Accounting, </em>[<em>Op</em>]<em>, </em>[<em>GLAccISN</em>]<strong>)</strong></font></p>
+<p><strong>set</strong> <em>sFacts</em><strong> = LoadHI2FactByBase(</strong><em>BaseISN</em><strong>, </strong><em>Accounting, </em>[<em>Op</em>]<em>, </em>[<em>GLAccISN</em>]<strong>)</strong></p>
 
-<p><font face="Arial">Синтаксис функции <strong>LoadHI2FactByBase</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>LoadHI2FactByBase</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>BaseISN</em></font></td>
-    <td width="71%"><font face="Arial">обязательное численное выражение типа Long, 
-	определяющее ISN
+  <tr>
+    <td><em>BaseISN</em></td>
+    <td>обязательное численное выражение типа Long, определяющее ISN
         <a href="mk:@MSITStore:D:/MainWorkSpace/Help/Progr_guide/PROGR_GUIDE.chm::/progr_guide/htm/ProgrGuide/Functions/ASFACT/Base.html">
-        документа основания</a></font></td>
+        документа основания</a></td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>Accounting</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое выражение, 
-	определяющее <a href="../../ASFACT/TypeAcc.html">код учета</a></font></td>
+    <td><em>Accounting</em></td>
+    <td>необязательное строковое выражение, определяющее <a href="../../ASFACT/TypeAcc.html">код учета</a></td>
     </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>Op</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее список
-      <a href="../../ASFACT/Op.html">кодов операций</a>. Если список начинается со&nbsp; 
-	знаком &quot;+&quot;, то учитываются все коды операции, которые перечислены после 
-	него. При знаке &quot;-&quot; игнорируются те операции, коды которых перечислены в 
-	списке. Коды операции перечисляются друг за другом через пробел. Список 
-	также может содержать единственный элемент без знака.</font></td>
+    <td><em>Op</em></td>
+    <td>необязательное строковое выражение, определяющее список
+      <a href="../../ASFACT/Op.html">кодов операций</a>. Если список начинается со&nbsp; знаком &quot;+&quot;, то учитываются все коды операции, которые перечислены после него. При знаке &quot;-&quot; игнорируются те операции, коды которых перечислены в списке. Коды операции перечисляются друг за другом через пробел. Список также может содержать единственный элемент без знака.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>GLAccISN</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение типа Long, 
-	определяющее ISN аккумулирующего объекта. По умолчанию принимает значение -1.</font></td>
+    <td><em>GLAccISN</em></td>
+    <td>численное выражение типа Long, определяющее ISN аккумулирующего объекта. По умолчанию принимает значение -1.</td>
     </tr>
 </table>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="LoadFactByObject.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="LoadFactByObject.html">См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p><font face="Arial"><strong><font size="3">Пример функции <font size="4" face="Arial">
-    LoadHI2FactByBase</font></font><br>
+<p><strong>Пример функции 
+    LoadHI2FactByBase<br>
 <br>
-</strong>Ниже приведен пример удаления проводок из HI2.</font></p>
+</strong>Ниже приведен пример удаления проводок из HI2.</p>
 
-<p><span class="style1">Dim xCol As Collection </span>
-    <br class="style1" />
-    <span class="style1">Dim xFact As AsFact </span>
-    <br class="style1" />
-    <span class="style1">Dim lngTrans As Long</span></p>
-    <p><font face="Arial">Set <span class="style1"><strong>xCol</strong> </span>=<strong>LoadHI2FactByBase</strong>(Doc.ISN)<br>
+<p><span>Dim xCol As Collection </span>
+    <br />
+    <span>Dim xFact As AsFact </span>
+    <br />
+    <span>Dim lngTrans As Long</span></p>
+    <p>Set <span><strong>xCol</strong> </span>=<strong>LoadHI2FactByBase</strong>(Doc.ISN)<br>
         If Not <strong>xCol</strong> Is Nothing Then<br>
 &nbsp; For Each <strong>xFact</strong> In <strong>xCol</strong><br>
 &nbsp;&nbsp;&nbsp; lngTrans = <strong>xFact</strong>.Trans
@@ -93,6 +79,6 @@ title: "LoadHI2FactByObject"
 &nbsp;&nbsp;&nbsp; <strong>DeleteHI2Trans</strong> Doc.ISN, lngTrans<br>
 &nbsp;
 Next <strong>xFact<br />
-        </strong>End If</font></p>
+        </strong>End If</p>
 
 <p>&nbsp;</p>

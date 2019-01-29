@@ -7,146 +7,136 @@ title: "Таблица PARAMS"
 
 
 
-<h1><font size="4" face="Arial">Таблица PARAMS</font></h1>
+<h1>Таблица PARAMS</h1>
 
-<p><font face="Arial">Таблица параметров настроек и установок.<br>
-</font></p>
+<p>Таблица параметров настроек и установок.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание </strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание </strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fPARID</font></td>
-    <td width="20%"><font face="Arial">char (20)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор параметра
-    </font></td>
+    <td>fPARID</td>
+    <td>char (20)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор параметра
+    </td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTYPE</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">&#39;0&#39; - не имеет разреза по 
-	пользователям,&nbsp;</font>
-      &#39;<font face="Arial">1&#39; - разрез по пользователям</font></td>
+    <td>fTYPE</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>&#39;0&#39; - не имеет разреза по пользователям,&nbsp;
+      &#39;1&#39; - разрез по пользователям</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVTYPE</font></td>
-    <td width="20%"><font face="Arial">char (32)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">тип значения параметра</font></td>
+    <td>fVTYPE</td>
+    <td>char (32)</td>
+    <td>NOT NULL</td>
+    <td>тип значения параметра</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVALUE</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">значение параметра </font></td>
+    <td>fVALUE</td>
+    <td>varchar (255)</td>
+    <td>NOT NULL</td>
+    <td>значение параметра </td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDESC</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">описание параметра </font></td>
+    <td>fDESC</td>
+    <td>varchar (50)</td>
+    <td>NOT NULL</td>
+    <td>описание параметра </td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fPERM</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">признак загрузки параметра из 
-	ОЗУ или из таблицы</font></td>
+    <td>fPERM</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>признак загрузки параметра из ОЗУ или из таблицы</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fGROUP</font></td>
-    <td width="20%"><font face="Arial">varchar (20)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">группа параметра из 
-	одноуровневого бездокументного дерева-справочника PARGROUP</font></td>
+    <td>fGROUP</td>
+    <td>varchar (20)</td>
+    <td>NOT NULL</td>
+    <td>группа параметра из одноуровневого бездокументного дерева-справочника PARGROUP</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fUPACCESS</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">доступ на изменение параметра: <br>
+    <td>fUPACCESS</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>доступ на изменение параметра: <br>
     0 - меняет разработчик <br>
     1 - меняет администратор и разработчик<br>
     2 - меняет пользователь,<br>
-    администратор и разработчик</font></td>
+    администратор и разработчик</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fEDESC</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">описание параметра на 
-	иностранном языке</font></td>
+    <td>fEDESC</td>
+    <td>varchar (50)</td>
+    <td>NOT NULL</td>
+    <td>описание параметра на иностранном языке</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fMEMO</font></td>
-    <td width="20%"><font face="Arial">varchar (7000)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial"><span lang="ru">длинное </span>
-	описание<span lang="ru"> 
-	ïàðàìåòðà</span></font></td>
+    <td>fMEMO</td>
+    <td>varchar (7000)</td>
+    <td>NOT NULL</td>
+    <td><span>длинное </span>
+	описание<span> ïàðàìåòðà</span></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fKIND</font></td>
-    <td width="20%"><font face="Arial">char (10)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial"><span lang="ru">группа 
-	параметра</span></font></td>
+    <td>fKIND</td>
+    <td>char (10)</td>
+    <td>NOT NULL</td>
+    <td><span>группа параметра</span></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fID</font></td>
-    <td width="20%">IDENTITY</td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентичная колонка таблицы</font></td>
+    <td>fID</td>
+    <td>IDENTITY</td>
+    <td>NOT NULL</td>
+    <td>идентичная колонка таблицы</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCHANGEDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата последней модификации 
-	параметра</font></td>
+    <td>fCHANGEDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>дата последней модификации параметра</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iPARAMS</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fPARID</font></td>
+    <td>iPARAMS</td>
+    <td>UNIQUE,CLUSTERED</td>
+    <td>fPARID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iPARAMS2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fPERM, fPARID</font></td>
+    <td>iPARAMS2</td>
+    <td>&nbsp;</td>
+    <td>fPERM, fPARID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iPARAMS3</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fKIND </font></td>
+    <td>iPARAMS3</td>
+    <td>&nbsp;</td>
+    <td>fKIND </td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

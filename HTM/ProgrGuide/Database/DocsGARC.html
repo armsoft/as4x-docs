@@ -7,78 +7,71 @@ title: "Таблица DOCSGARC"
 
 
 
-<h1><font size="4" face="Arial">Таблица DOCSGARC</font></h1>
+<h1>Таблица DOCSGARC</h1>
 
-<p><font face="Arial">Архив таблицы <a href="DocsG.html">DOCSG</a>. 
-Таблица DOCSGARC в зависимости от настройки может находиться как в основной, так 
-и в архивной БД.<br>
-</font></p>
+<p>Архив таблицы <a href="DocsG.html">DOCSG</a>. Таблица DOCSGARC в зависимости от настройки может находиться как в основной, так и в архивной БД.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификационный номер 
-	документа</font></td>
+    <td>fISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>идентификационный номер документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fGRID</font></td>
-    <td width="20%"><font face="Arial">varchar (32)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор грид-таблицы</font></td>
+    <td>fGRID</td>
+    <td>varchar (32)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор грид-таблицы</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fROW</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">номер строчки в грид таблице</font></td>
+    <td>fROW</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>номер строчки в грид таблице</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOL</font></td>
-    <td width="20%"><font face="Arial">varchar (32)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор колонки в грид 
-	таблице</font></td>
+    <td>fCOL</td>
+    <td>varchar (32)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор колонки в грид таблице</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVALUE</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">значение ячейки грид-таблицы</font></td>
+    <td>fVALUE</td>
+    <td>varchar (255)</td>
+    <td>NOT NULL</td>
+    <td>значение ячейки грид-таблицы</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCSGARC1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fISN, fGRID, fCOL, fROW</font></td>
+    <td>iDOCSGARC1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fISN, fGRID, fCOL, fROW</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

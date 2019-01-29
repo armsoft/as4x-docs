@@ -7,92 +7,81 @@ title: "Таблица USERSET"
 
 
 
-<h1><font size="4" face="Arial">Таблица USERSET</font></h1>
+<h1>Таблица USERSET</h1>
 
-<p><font face="Arial">Таблицa хранения пользователе-зависимых видов 
-просмотра.<br>
-</font></p>
+<p>Таблицa хранения пользователе-зависимых видов просмотра.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSYSTYPE</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">Тип системного описания. Пока 
-	реализован случай fSYSTYPE=2.</font></td>
+    <td>fSYSTYPE</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>Тип системного описания. Пока реализован случай fSYSTYPE=2.</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNAME</font></td>
-    <td width="20%"><font face="Arial">char (20)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор базового вида 
-	просмотра</font></td>
+    <td>fNAME</td>
+    <td>char (20)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор базового вида просмотра</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">внутрисистемный идентификатор 
-	пользователя, для которого сохраняются установки</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>внутрисистемный идентификатор пользователя, для которого сохраняются установки</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCAPTION</font></td>
-    <td width="20%"><font face="Arial">char (32)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">заголовок сохраненного вида 
-	просмотра</font></td>
+    <td>fCAPTION</td>
+    <td>char (32)</td>
+    <td>NOT NULL</td>
+    <td>заголовок сохраненного вида просмотра</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDS</font></td>
-    <td width="20%"><font face="Arial">char (20)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор источника данных 
-	для указанного вида просмотра</font></td>
+    <td>fDS</td>
+    <td>char (20)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор источника данных для указанного вида просмотра</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDESCR</font></td>
-    <td width="20%"><font face="Arial">text</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">сохраненные установки 
-	параметров&nbsp; фильтрации и проекции для данного вида просмотра</font></td>
+    <td>fDESCR</td>
+    <td>text</td>
+    <td>NOT NULL</td>
+    <td>сохраненные установки параметров&nbsp; фильтрации и проекции для данного вида просмотра</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iUSERSET1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fSYSTYPE, fNAME, fSUID, 
-	fCAPTION</font></td>
+    <td>iUSERSET1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fSYSTYPE, fNAME, fSUID, fCAPTION</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iUSERSET2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fDS</font></td>
+    <td>iUSERSET2</td>
+    <td>&nbsp;</td>
+    <td>fDS</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

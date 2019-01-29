@@ -4,66 +4,54 @@ title: "LastHI2FactDate"
 ---
 
 
-<p><strong><font size="4" face="Arial">Функция LastHI2FactDate</font></strong></p>
+<p><strong>Функция LastHI2FactDate</strong></p>
 
-<p><font face="Arial">Возвращает дату последней проводки c объектом 
-HI2, произведенной в указанных учетах по заданному коду операции до данной даты 
-включительно.</font></p>
+<p>Возвращает дату последней проводки c объектом HI2, произведенной в указанных учетах по заданному коду операции до данной даты включительно.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>LastHI2FactDate (</strong><em>AccCode, 
-nISN,&nbsp; nGLISN, </em>[<em>UpToDate</em>]<strong>,
-</strong>[<em>Op</em>]<strong>)</strong></font></p>
+<p><strong>LastHI2FactDate (</strong><em>AccCode, nISN,&nbsp; nGLISN, </em>[<em>UpToDate</em>]<strong>,
+</strong>[<em>Op</em>]<strong>)</strong></p>
 
-<p><font face="Arial">Синтаксис функции <strong>LastHI2FactDate</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>LastHI2FactDate</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%"><font face="Arial"><em>AccCode</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее <a href="../../../Defs/Accounting.html">код учета</a>
-    либо массив значений с несколькими кодами учетов, содержащий несколько кодов 
-	учета.</font></td>
+    <td><em>AccCode</em></td>
+    <td>строковое выражение, определяющее <a href="../../../Defs/Accounting.html">код учета</a>
+    либо массив значений с несколькими кодами учетов, содержащий несколько кодов учета.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">nISN</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение типа Long, 
-	определяющее ISN объекта учета, для которого приводится дата</font></td>
+    <td><em>nISN</em></td>
+    <td>численное выражение типа Long, определяющее ISN объекта учета, для которого приводится дата</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>nGLISN</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение Long, 
-	определяющее ISN аккумулирующего объекта</font></td>
+    <td><em>nGLISN</em></td>
+    <td>числовое выражение Long, определяющее ISN аккумулирующего объекта</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>UpToDate</em></font></td>
-    <td width="71%"><font face="Arial">необязательное выражение типа 
-	даты, указывающее дату до которой включительно производится поиск. Если 
-	параметр опущен, то возвращается дата самой последней проводки в данном 
-	учете.</font></td>
+    <td><em>UpToDate</em></td>
+    <td>необязательное выражение типа даты, указывающее дату до которой включительно производится поиск. Если параметр опущен, то возвращается дата самой последней проводки в данном учете.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">Op</font></em></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее <a href="../../../Defs/Accounting.html">код операции</a>, 
-	по которому проводится поиск.</font></td>
+    <td><em>Op</em></td>
+    <td>необязательное строковое выражение, определяющее <a href="../../../Defs/Accounting.html">код операции</a>, по которому проводится поиск.</td>
   </tr>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="LastOpDate.html"><font face="Arial">См. также</font></a><font face="Arial"><br>
-</font></p>
+<p><a href="LastOpDate.html">См. также</a><br>
+</p>
 

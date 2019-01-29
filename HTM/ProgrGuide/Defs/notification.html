@@ -7,86 +7,68 @@ title: "Notification Definition"
 
 
 
-<p><strong><font size="4" face="Arial">Описание оповещения</font></strong></p>
+<p><strong>Описание оповещения</strong></p>
 
-<p class="label"><font face="Arial">Описывается оповещение. Оповещение 
-используется для отправки сообщения одним юзером другим. Можно отправить также <a href="doc.html">
-документ</a>.</font></p>
+<p>Описывается оповещение. Оповещение используется для отправки сообщения одним юзером другим. Можно отправить также <a href="doc.html">
+документ</a>.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>NOTIFICATION</strong>{<strong>Name</strong>=<em>sNotificationName</em>;&nbsp;
+<p><strong>NOTIFICATION</strong>{<strong>Name</strong>=<em>sNotificationName</em>;&nbsp;
 <strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Caption</strong>=<em>sNotificationCaption</em>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caption</strong>=<em>sNotificationCaption</em>;<br>
 <strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Color </strong>=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Color </strong>=
 <em>nNotificationColor</em>;<br>
 <strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-TTL </strong>=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TTL </strong>=
 <em>nNotificationTTL</em>;<br>
 <strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-AWP </strong>=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AWP </strong>=
 <em>sNotificationAWP</em>;<br>
 <strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-TypeAWP </strong>=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TypeAWP </strong>=
 <em>sNotificationTypeAWP</em>;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };<br>
-</font></p>
+</p>
 
-<p><font face="Arial">Синтаксис описания документа состоит из 
-следующих частей:</font></p>
+<p>Синтаксис описания документа состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>sNotificationName</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее идентификатор оповощения.</font></td>
+    <td><em>sNotificationName</em></td>
+    <td>строковое выражение, определяющее идентификатор оповощения.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>sNotificationCaption</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее заголовок оповещения.</font></td>
+    <td><em>sNotificationCaption</em></td>
+    <td>строковое выражение, определяющее заголовок оповещения.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>nNotificationColor</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение, 
-	определяющее цвет оповещения.</font></td>
+    <td><em>nNotificationColor</em></td>
+    <td>числовое выражение, определяющее цвет оповещения.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>nNotificationTTL</em></font></td>
-    <td width="71%"><font face="Arial">числовое выражение, 
-	определяющее время жизни сообщения в минутах. По умолчанию, сообщение 
-	действительно в течении 15 минут.</font></td>
+    <td><em>nNotificationTTL</em></td>
+    <td>числовое выражение, определяющее время жизни сообщения в минутах. По умолчанию, сообщение действительно в течении 15 минут.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>sNotificationAWP</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее список наименований АРМ-ов, которым посылается оповещение. В 
-	списке можно перечеслять любое количество АРМ-ов через запятую. Например - 
-	&quot;ADMIN, Account, Chairman&quot;.</font></td>
+    <td><em>sNotificationAWP</em></td>
+    <td>строковое выражение, определяющее список наименований АРМ-ов, которым посылается оповещение. В списке можно перечеслять любое количество АРМ-ов через запятую. Например - &quot;ADMIN, Account, Chairman&quot;.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>sNotificationTypeAWP</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее список типов АРМ-ов получателей сообщения. В списке можно 
-	перечеслять любое количество типов АРМ-ов через запятую. Например - 
-	&quot;+TYPE3,+TYPE5,+TYPE6&quot;.</font></td>
+    <td><em>sNotificationTypeAWP</em></td>
+    <td>строковое выражение, определяющее список типов АРМ-ов получателей сообщения. В списке можно перечеслять любое количество типов АРМ-ов через запятую. Например - &quot;+TYPE3,+TYPE5,+TYPE6&quot;.</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><a href="../Defs.html"><font face="Arial">См. также</font></a></p>
+<p><a href="../Defs.html">См. также</a></p>
 
 

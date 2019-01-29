@@ -7,28 +7,19 @@ title: "AsView"
 
 
 
-<p><strong><font face="Arial" size="3">Пример методов </font><font
-face="Arial">AddColumn, AddDoc, ClearAllDocs, RemoveColumn, SetOrder, 
-SetTotal и свойств AllowAccess, AllowDelete, AllowEdit, AllowSecondEntry, 
-AllowView, AllowVisa, Caption, Condition, Parameters, DataSource, SQLSort</font></strong></p>
+<p><strong>Пример методов AddColumn, AddDoc, ClearAllDocs, RemoveColumn, SetOrder, SetTotal и свойств AllowAccess, AllowDelete, AllowEdit, AllowSecondEntry, AllowView, AllowVisa, Caption, Condition, Parameters, DataSource, SQLSort</strong></p>
 
-<p><font face="Arial">В примере вызывается функция View, через 
-переменную xView возвращается ссылка на обьект вида просмотра NBACCT3 со всеми 
-его свойствами и методами. В вид просмотра добавляется колонка fSRem, являющаяся 
-второй сортированной колонкой в представлении и имеющей итоговую сумму внизу 
-колонки.</font></p>
+<p>В примере вызывается функция View, через переменную xView возвращается ссылка на обьект вида просмотра NBACCT3 со всеми его свойствами и методами. В вид просмотра добавляется колонка fSRem, являющаяся второй сортированной колонкой в представлении и имеющей итоговую сумму внизу колонки.</p>
 
-<p><font face="Arial">set xView = <a href="../Functions/Functions/SysDefManagment/View.html">
+<p>set xView = <a href="../Functions/Functions/SysDefManagment/View.html">
 View</a>(&quot;NBACCT3&quot;)<br>
 xView.<strong>Parameters</strong>(1)<strong> =</strong> &quot;%&quot;<br>
 xView.<strong>Parameters</strong>(2)<strong> =</strong> &quot;ACC&quot;<br>
 <br>
 xView.<strong>AddDoc </strong>&quot;NBPUT&quot;<br>
 xView.<strong>Caption</strong> = &quot;Выписки счетов&quot; &amp; _<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-VTOFS(&quot;DATE&quot;, xDialog(&quot;NBSTARTDATE&quot;)) &amp; &quot; - &quot; &amp; _<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-VTOFS(&quot;DATE&quot;, xDialog(&quot;NBENDDATE&quot;))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VTOFS(&quot;DATE&quot;, xDialog(&quot;NBSTARTDATE&quot;)) &amp; &quot; - &quot; &amp; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VTOFS(&quot;DATE&quot;, xDialog(&quot;NBENDDATE&quot;))<br>
 nAllowAccess=xView.<strong>AllowAccess</strong><br>
 nAllowDelete=xView.<strong>AllowDelete</strong><br>
 nAllowEdit=xView.<strong>AllowEdit</strong><br>
@@ -40,12 +31,11 @@ sSource=xView.<strong>DataSource</strong><br>
 If Not xDialog(&quot;NBAccClose&quot;) then<br>
 &nbsp;&nbsp;&nbsp; xView.<strong>AddColumn</strong> &quot;fSRem&quot;, 2, 1<br>
 &nbsp;&nbsp;&nbsp; xView.<strong>SQLSort = True</strong><br>
-&nbsp;&nbsp;&nbsp; xView.<strong>Condition</strong> = &quot;( STARTREM &lt;&gt; 0 or TURNIN 
-&lt;&gt; 0 )&quot;<br>
+&nbsp;&nbsp;&nbsp; xView.<strong>Condition</strong> = &quot;( STARTREM &lt;&gt; 0 or TURNIN &lt;&gt; 0 )&quot;<br>
 &nbsp;&nbsp;&nbsp; xView.<strong>ClearAllDocs</strong><br>
 &nbsp;&nbsp;&nbsp; xView.<strong>RemoveColumn</strong> &quot;fDATZAK&quot;<br>
 End If<br>
 xView.<strong>SetOrder</strong> &quot;fKEY&quot;, 1<br>
-xView.<strong>SetTotal</strong> &quot;fSUM&quot;, 1</font></p>
+xView.<strong>SetTotal</strong> &quot;fSUM&quot;, 1</p>
 
 

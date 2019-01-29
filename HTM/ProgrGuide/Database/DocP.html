@@ -7,76 +7,70 @@ title: "Таблица DOCP"
 
 
 
-<h1><font size="4" face="Arial">Таблица DOCP</font></h1>
+<h1>Таблица DOCP</h1>
 
-<p><font face="Arial">Таблицa хранения отношений типа потомок-предок 
-для документов.<br>
-</font></p>
+<p>Таблицa хранения отношений типа потомок-предок для документов.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификационный номер 
-	документа</font></td>
+    <td>fISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>идентификационный номер документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNAME</font></td>
-    <td width="20%"><font face="Arial">char(8)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">тип документа</font></td>
+    <td>fNAME</td>
+    <td>char(8)</td>
+    <td>NOT NULL</td>
+    <td>тип документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fPARENTISN</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификационный номер 
-	документа родителя</font></td>
+    <td>fPARENTISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>идентификационный номер документа родителя</td>
   </tr>
 	<tr>
-    <td width="20%"><font face="Arial">fDCD</font></td>
-    <td width="20%"><font face="Arial">datetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата создания документа</font></td>
+    <td>fDCD</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>дата создания документа</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCP1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fISN, fPARENTISN</font></td>
+    <td>iDOCP1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fISN, fPARENTISN</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCP2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fPARENTISN, fISN</font></td>
+    <td>iDOCP2</td>
+    <td>&nbsp;</td>
+    <td>fPARENTISN, fISN</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><font face="Arial"><a href="database_scheme.html">См. 
-также</a></font></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

@@ -7,69 +7,65 @@ title: "Таблица NTFRECEIVERS"
 
 
 
-<h1><font size="4" face="Arial">Таблица NTFRECEIVERS</font></h1>
+<h1>Таблица NTFRECEIVERS</h1>
 
-<p><font face="Arial">Таблицa хранения получателей оповещений.<br>
-</font></p>
+<p>Таблицa хранения получателей оповещений.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fRECEIVER</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор получателя</font></td>
+    <td>fRECEIVER</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор получателя</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNID</font></td>
-    <td width="20%"><font face="Arial">uniqueidentifier</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор оповещения</font></td>
+    <td>fNID</td>
+    <td>uniqueidentifier</td>
+    <td>NOT NULL</td>
+    <td>идентификатор оповещения</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSTATE</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">состояние оповещения. При 2 - 
-	получатель прочитал сообщение, при 1 - получатель еще не прочитал сообшение</font></td>
+    <td>fSTATE</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>состояние оповещения. При 2 - получатель прочитал сообщение, при 1 - получатель еще не прочитал сообшение</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iNTFRECEIVERS1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fRECEIVER, fNID</font></td>
+    <td>iNTFRECEIVERS1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fRECEIVER, fNID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iNTFRECEIVERS2</font></td>
-    <td width="33%">NOT CLUSTERED</td>
-    <td width="33%"><font face="Arial">fNID, fRECEIVER</font></td>
+    <td>iNTFRECEIVERS2</td>
+    <td>NOT CLUSTERED</td>
+    <td>fNID, fRECEIVER</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><font face="Arial"><a href="database_scheme.html">См. 
-также</a></font></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

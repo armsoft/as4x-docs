@@ -3,129 +3,115 @@ layout: page
 title: "GetDataTypeGroup"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             width: 609px;
         }
-        .style5
-        {
+        .style5 {
             width: 86%;
         }
-        .style7
-        {
+        .style7 {
             width: 78%;
             font-family: Arial;
         }
-        .style9
-        {
+        .style9 {
             font-weight: normal;
         }
-        .style10
-        {
+        .style10 {
             width: 78%;
         }
     </style>
 
 
-<p><font size="4" face="Arial"><strong>Функция GetDataTypeGroup</strong></font></p>
+<p><strong>Функция GetDataTypeGroup</strong></p>
 
-<p class="label"><font face="Arial">Возвращает группу заданного типа
-    данных.</font></p>
+<p>Возвращает группу заданного типа данных.</p>
 
 
-<p><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>GetDataTypeGroup (</strong><em>sDataType</em><strong>)</strong></font></p>
+<p><strong>GetDataTypeGroup (</strong><em>sDataType</em><strong>)</strong></p>
 
-<p><font face="Arial">Синтаксис функции <strong>GetDataTypeGroup </strong>состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>GetDataTypeGroup </strong>состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>sDataType</em></font></td>
-    <td width="71%"><font face="Arial">обязательное строковое выражение, оределяющее 
-        внутенный тип 
-        данных.</font></td>
+  <tr>
+    <td><em>sDataType</em></td>
+    <td>обязательное строковое выражение, оределяющее внутенный тип данных.</td>
   </tr>
   </table>
 
     <p>
         &nbsp;</p>
-    <p class="label">
-        <font face="Arial"><b>Примечание</b></font></p>
-    <p class="label">
-        &nbsp;&nbsp;&nbsp; <font face="Arial">Например, если sDataType равно &quot;<strong>NP</strong>&quot; 
-        , &quot;<strong>N</strong>&quot;, &quot;<strong>SUMMA</strong>&quot;&nbsp; или &quot;<strong>SUMMAP</strong>&quot;, 
-        то возвращаемое значение будет равно &quot;<strong>Numeric</strong>&quot;, поскольку 
-        заданные типы данных принадлежат группе &quot;<strong>Numeric</strong>&quot;. При sDataType 
-        равное &quot;<strong>BOOLEAN</strong>&quot;, возвращаемое значение будет &quot;<strong>Logical</strong>&quot; 
-        и т.д.</font></p>
-    <p class="label">
+    <p>
+        <b>Примечание</b></p>
+    <p>
+        &nbsp;&nbsp;&nbsp; Например, если sDataType равно &quot;<strong>NP</strong>&quot; , &quot;<strong>N</strong>&quot;, &quot;<strong>SUMMA</strong>&quot;&nbsp; или &quot;<strong>SUMMAP</strong>&quot;, то возвращаемое значение будет равно &quot;<strong>Numeric</strong>&quot;, поскольку заданные типы данных принадлежат группе &quot;<strong>Numeric</strong>&quot;. При sDataType равное &quot;<strong>BOOLEAN</strong>&quot;, возвращаемое значение будет &quot;<strong>Logical</strong>&quot; и т.д.</p>
+    <p>
         &nbsp;</p>
-    <p class="label">
-        <strong>&nbsp;</strong><font face="Arial"><strong>Группы</strong> <strong>
-        внутренных типов
-        данных</strong></font></p>
-    <p class="label">
-        <table border="1" class="style1">
+    <p>
+        <strong>&nbsp;</strong><strong>Группы</strong> <strong>
+        внутренных типов данных</strong></p>
+    <p>
+        <table border="1">
             <tr>
-                <td class="style10">
-                    <font face="Arial" size="3"><b>Тип данных</b></font></td>
-                <td class="style5">
-                    <font face="Arial" size="3"><b>Группа</b></font></td>
+                <td>
+                    <b>Тип данных</b></td>
+                <td>
+                    <b>Группа</b></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;NP&quot;, &quot;N&quot;, &quot;SUMMA&quot;, &quot;SUMMAP&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">Numeric</strong></font></td>
+                <td>
+                    &quot;NP&quot;, &quot;N&quot;, &quot;SUMMA&quot;, &quot;SUMMAP&quot;</td>
+                <td>
+                    <strong>Numeric</strong></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;NUMPAIR&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">NumericPair</strong></font></td>
+                <td>
+                    &quot;NUMPAIR&quot;</td>
+                <td>
+                    <strong>NumericPair</strong></td>
             </tr>
             <tr>
-                <td class="style7">
-                    <font face="Arial">&quot;C&quot;, &quot;CH&quot;, &quot;FOLDER&quot;, &quot;FULLTREE&quot;, &quot;TREE&quot;, &quot;AMACC&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">Charset</strong></font></td>
+                <td>
+                    &quot;C&quot;, &quot;CH&quot;, &quot;FOLDER&quot;, &quot;FULLTREE&quot;, &quot;TREE&quot;, &quot;AMACC&quot;</td>
+                <td>
+                    <strong>Charset</strong></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;BOOLEAN&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">Logical</strong></font></td>
+                <td>
+                    &quot;BOOLEAN&quot;</td>
+                <td>
+                    <strong>Logical</strong></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;DATE&quot;, &quot;DATELONG&quot;, &quot;DATEREP&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">DateType</strong></font></td>
+                <td>
+                    &quot;DATE&quot;, &quot;DATELONG&quot;, &quot;DATEREP&quot;</td>
+                <td>
+                    <strong>DateType</strong></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;TIME&quot;, &quot;TIMELONG&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">TimeType</strong></font></td>
+                <td>
+                    &quot;TIME&quot;, &quot;TIMELONG&quot;</td>
+                <td>
+                    <strong>TimeType</strong></td>
             </tr>
             <tr>
-                <td class="style10">
-                    <font face="Arial">&quot;PATH&quot;, &quot;FILE&quot;</font></td>
-                <td class="style5">
-                    <font face="Arial"><strong class="style9">PathType</strong></font></td>
+                <td>
+                    &quot;PATH&quot;, &quot;FILE&quot;</td>
+                <td>
+                    <strong>PathType</strong></td>
             </tr>
         </table>
     </p>
-    <p class="label">
+    <p>
         &nbsp;</p>
-    <p class="label">
-        <font face="Arial"><a href="../../functions.html">См. также</a></font></p>
+    <p>
+        <a href="../../functions.html">См. также</a></p>
     <p>
         &nbsp;</p>
 

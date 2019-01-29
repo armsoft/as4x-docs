@@ -7,84 +7,78 @@ title: "Таблица ACCESS"
 
 
 
-<h1><font size="4" face="Arial">Таблица ACCESS</font></h1>
-<font FACE="Arial">
+<h1>Таблица ACCESS</h1>
+
 
 <p>Таблица доступов к объектам. <br>
-</font></p>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font FACE="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Тип данных</strong></font></td>
-    <td class="label" width="20%" height="18"><font FACE="Arial"><strong>
-	Null</strong></font></td>
-    <td class="label" width="40%" height="18"><font FACE="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>
+	Тип данных</strong></td>
+    <td><strong>
+	Null</strong></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fISN</font></td>
-    <td width="20%" height="18"><font FACE="Arial">int</font></td>
-    <td width="20%" height="18"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="18"><font FACE="Arial">ISN объекта, для 
-	которого определяется доступ</font></td>
+    <td>fISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN объекта, для которого определяется доступ</td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fACCESSID</font></td>
-    <td width="20%" height="18"><font FACE="Arial">tinyint</font></td>
-    <td width="20%" height="18"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="18"><font FACE="Arial">Идентификатор кода 
-	доступа </font></td>
+    <td>fACCESSID</td>
+    <td>tinyint</td>
+    <td>NOT NULL</td>
+    <td>Идентификатор кода доступа </td>
   </tr>
   <tr>
-    <td width="20%"><font FACE="Arial">fVALUE</font></td>
-    <td width="20%" height="18"><font FACE="Arial">binary(255)</font></td>
-    <td width="20%" height="18"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="18"><font FACE="Arial">Дескриптор 
-	доступов, где позиция, совпадающая с внутрисистемным номером пользователя, 
-	определяет доступ конкретного пользователя</font></td>
+    <td>fVALUE</td>
+    <td>binary(255)</td>
+    <td>NOT NULL</td>
+    <td>Дескриптор доступов, где позиция, совпадающая с внутрисистемным номером пользователя, определяет доступ конкретного пользователя</td>
   </tr>
   <tr>
-    <td width="20%">fDOCTYPE </td>
-    <td width="20%" height="18">char(8)</td>
-    <td width="20%" height="18"><font FACE="Arial">NOT NULL</font></td>
-    <td width="40%" height="18"><font face="Arial">Тип документа, 
-	может быть не указан</font></td>
+    <td>fDOCTYPE </td>
+    <td>char(8)</td>
+    <td>NOT NULL</td>
+    <td>Тип документа, может быть не указан</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font FACE="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" height="18"><font FACE="Arial"><b>
-	Имя индекса</b></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Тип </strong></font></td>
-    <td class="label" width="33%" height="18"><font FACE="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>
+	Имя индекса</b></td>
+    <td><strong>
+	Тип </strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" height="4"><font FACE="Arial">iACCESS1</font></td>
-    <td width="33%" height="4"><font FACE="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%" height="4">fDOCTYPE, fISN, fACCESSID</td>
+    <td>iACCESS1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fDOCTYPE, fISN, fACCESSID</td>
   </tr>
   <tr>
-    <td width="33%" height="4"><font FACE="Arial">iACCESS2</font></td>
-    <td width="33%" height="4"><font FACE="Arial">UNIQUE</font></td>
-    <td width="33%" height="4"><font FACE="Arial">fISN, fACCESSID</font></td>
+    <td>iACCESS2</td>
+    <td>UNIQUE</td>
+    <td>fISN, fACCESSID</td>
   </tr>
 </table>
 
-<p class="label"><font FACE="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font FACE="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

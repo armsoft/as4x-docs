@@ -4,84 +4,68 @@ title: "Диалог/AddDublCntrl"
 ---
 
 
-<p><strong><font size="4" face="Arial">Метод AddDublCntrl<br>
+<p><strong>Метод AddDublCntrl<br>
 <br>
-</font></strong><font face="Arial"><a href="../Asustpar.html">См. также</a>&nbsp;
+</strong><a href="../Asustpar.html">См. также</a>&nbsp;
 <a href="../../Examples/E_AsUstPar.html">Пример</a>&nbsp; <a href="../Asustpar.html">
-Применяется к</a></font></p>
+Применяется к</a></p>
 
-<p><font face="Arial">Добавляет вторичный реквизит ввода в 
-пользовательский диалог. Причем данный реквизит на форме располагается не к низу 
-от текущего реквизита, а рядом с ним, наследуя от него тип и имея общий с ним 
-заголовок.</font></p>
+<p>Добавляет вторичный реквизит ввода в пользовательский диалог. Причем данный реквизит на форме располагается не к низу от текущего реквизита, а рядом с ним, наследуя от него тип и имея общий с ним заголовок.</p>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>call</strong> <em>object</em>.<strong>AddDublCntrl(</strong><em>DublRekvName, 
-RekvName,  </em>[<em>AttribRekv</em>]<em>,  </em>[<em>ValueRekv</em>]<strong>, </strong>
-[<em>iSaveValue</em>]<strong>, </strong>[<em>sCaption</em>]<strong> )</strong></font></p>
+<p><strong>call</strong> <em>object</em>.<strong>AddDublCntrl(</strong><em>DublRekvName, RekvName,  </em>[<em>AttribRekv</em>]<em>,  </em>[<em>ValueRekv</em>]<strong>, </strong>
+[<em>iSaveValue</em>]<strong>, </strong>[<em>sCaption</em>]<strong> )</strong></p>
 
-<p><font face="Arial">Синтаксис метода <strong>AddDublCntrl</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода <strong>AddDublCntrl</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows" height="330">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%" height="18"><font face="Arial"><b>
-	Параметр</b></font></td>
-    <td class="label" width="71%" height="18"><font face="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>
+	Параметр</b></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%" height="36"><em><font face="Arial">object</font></em></td>
-    <td width="71%" height="36"><font face="Arial">строковое 
-	выражение, определяющее переменную, ссылающуюся на экземпляр объекта 
-	пользовательского диалога.</font></td>
+    <td><em>object</em></td>
+    <td>строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта пользовательского диалога.</td>
   </tr>
   <tr>
-    <td width="29%" height="36"><em><font face="Arial">DublRekvName</font></em></td>
-    <td width="71%" height="36"><font face="Arial">строковое 
-	выражение, определяющее идентификатор вторичного реквизита в диалоге</font></td>
+    <td><em>DublRekvName</em></td>
+    <td>строковое выражение, определяющее идентификатор вторичного реквизита в диалоге</td>
   </tr>
   <tr>
-    <td width="29%" height="36"><font face="Arial"><em>RekvName</em></font></td>
-    <td width="71%" height="36"><font face="Arial">строковое 
-	выражение, определяющее идентификатор реквизита в диалоге, рядом с которым 
-	будет расположен данный реквизит</font></td>
+    <td><em>RekvName</em></td>
+    <td>строковое выражение, определяющее идентификатор реквизита в диалоге, рядом с которым будет расположен данный реквизит</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%" height="36"><em><font face="Arial">AttribRekv</font></em></td>
-    <td width="71%" height="36"><font face="Arial">необязательное 
-	строковое выражение, определяющее <a href="Attribute.html">атрибуты</a>
-    реквизита (их может быть несколько).</font></td>
+    <td><em>AttribRekv</em></td>
+    <td>необязательное строковое выражение, определяющее <a href="Attribute.html">атрибуты</a>
+    реквизита (их может быть несколько).</td>
   </tr>
   <tr>
-    <td width="29%" height="34"><em><font face="Arial">ValueRekv</font></em></td>
-    <td width="71%" height="34"><font face="Arial">необязательное 
-	выражение типа Variant, определяющее первоначальное значение реквизита.</font></td>
+    <td height="34"><em>ValueRekv</em></td>
+    <td height="34">необязательное выражение типа Variant, определяющее первоначальное значение реквизита.</td>
   </tr>
   <tr>
-    <td width="29%" height="18"><em><font face="Arial">iSaveValue</font></em></td>
-    <td width="71%" height="18"><font face="Arial">необязательное 
-	численное выражение, определяющее признак запоминания значений реквизита. 
-	При 1 - текущее значение реквизита запоминается в реестре, а при значении 0 
-	- нет. По умолчанию принимает значение 1.</font></td>
+    <td><em>iSaveValue</em></td>
+    <td>необязательное численное выражение, определяющее признак запоминания значений реквизита. При 1 - текущее значение реквизита запоминается в реестре, а при значении 0 - нет. По умолчанию принимает значение 1.</td>
   </tr>
 <tr>
-    <td width="29%"><font face="Arial"><em>sCaption</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее заголовок реквизита в диалоге.</font></td>
+    <td><em>sCaption</em></td>
+    <td>необязательное строковое выражение, определяющее заголовок реквизита в диалоге.</td>
   </tr>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><font face="Arial">Свой тип вторичный реквизит 
-наследует от реквизита, указанного в <em>RekvName.</em></font></p>
+<p>Свой тип вторичный реквизит наследует от реквизита, указанного в <em>RekvName.</em></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>

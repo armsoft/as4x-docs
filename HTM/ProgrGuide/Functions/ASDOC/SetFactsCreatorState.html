@@ -4,60 +4,46 @@ title: "Документ/SetFactsCreatorState"
 ---
 
 
-<p><font size="4" face="Arial"><strong>Свойство SetFactsCreatorState<br>
+<p><strong>Свойство SetFactsCreatorState<br>
 <br>
-</strong></font><font face="Arial"><a href="../Functions/DocumentsCirculation/StateMovedSUID.html">
-См. также</a>&nbsp; <u>Пример</u>&nbsp; <a href="../Asdoc.html">Применяется к</a></font></p>
+</strong><a href="../Functions/DocumentsCirculation/StateMovedSUID.html">
+См. также</a>&nbsp; <u>Пример</u>&nbsp; <a href="../Asdoc.html">Применяется к</a></p>
 
-<p class="label"><font face="Arial">Задает состояние определяющее 
-идентификатор пользователя-автора проводок документа. Функция возвращает True, 
-если в системном журнале регистрации событий найдено указанное состояние. 
-Пользователь, переведший документ в указанное состояние, становится автором 
-регистрируемых проводок. Если строки с указанным состоянием в журнале не 
-найдено, то функция возвращает False и автор будущих проводок не меняется. <br>
-Таким образом данная функция скрытым образом неявно задает автора будущих 
-проводок, который определяется из журнала по состоянию. </font></p>
+<p>Задает состояние определяющее идентификатор пользователя-автора проводок документа. Функция возвращает True, если в системном журнале регистрации событий найдено указанное состояние. Пользователь, переведший документ в указанное состояние, становится автором регистрируемых проводок. Если строки с указанным состоянием в журнале не найдено, то функция возвращает False и автор будущих проводок не меняется. <br>
+Таким образом данная функция скрытым образом неявно задает автора будущих проводок, который определяется из журнала по состоянию. </p>
 
-<p class="label"><font face="Arial">Свойство для чтения.</font></p>
+<p>Свойство для чтения.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><b><font face="Arial">Синтаксис</font></b></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><em>object</em><strong>.SetFactsCreatorState</strong> 
-(<em>nValue</em>)</font></p>
+<p><em>object</em><strong>.SetFactsCreatorState</strong> (<em>nValue</em>)</p>
 
-<p><font face="Arial">Синтаксис свойства <strong>SetFactsCreatorState</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис свойства <strong>SetFactsCreatorState</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">object</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, являющееся 
-	ссылкой на экземпляр документа</font></td>
+    <td><em>object</em></td>
+    <td>строковое выражение, являющееся ссылкой на экземпляр документа</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>nValue</em></font></td>
-    <td width="71%"><font face="Arial">численное выражение целого 
-	типа, определяющее номер состояния документа, по которому будет определяться 
-	автор проводок. Идентификатор автора проводок определяется из таблицы <a href="../../Database/DocLog.html">
+    <td><em>nValue</em></td>
+    <td>численное выражение целого типа, определяющее номер состояния документа, по которому будет определяться автор проводок. Идентификатор автора проводок определяется из таблицы <a href="../../Database/DocLog.html">
 	DOCLOG</a>
-    по коду пользователя переведшего документ в это состояние. Идентификатор 
-	автора проводок фиксируется в таблице <a href="../../Database/Hi.html">HI</a> 
-	в поле fSUID. </font></td>
+    по коду пользователя переведшего документ в это состояние. Идентификатор автора проводок фиксируется в таблице <a href="../../Database/Hi.html">HI</a> в поле fSUID. </td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><font face="Arial">Свойство нужно запрашивать в 
-обработчике системного события <a
-href="../../ScriptProcs/Action.html">Action</a> перед сохранением проводок. </font></p>
+<p>Свойство нужно запрашивать в обработчике системного события <a href="../../ScriptProcs/Action.html">Action</a> перед сохранением проводок. </p>

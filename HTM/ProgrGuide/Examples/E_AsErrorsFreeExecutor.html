@@ -12,27 +12,18 @@ title: "AsErrorsFreeExecutor"
 
 
 
-<p><strong><font size="3" face="Arial">Пример </font><font
-face="Arial">методов <span lang="en-us">Run </span>и </font>
-<font size="3" face="Arial"><span lang="en-us">SetErrSubParams</span></font></strong></p>
+<p><strong>Пример методов <span>Run </span>и 
+<span>SetErrSubParams</span></strong></p>
 
-<p><font face="Arial">В примере вызывается функция 
+<p>В примере вызывается функция 
 <a href="../Functions/Functions/CreateErrorsFreeExecutor.html">
-CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<span lang="en-us"><em>SubName</em>-</span>имя 
-исполняемой процедуры,&nbsp; <em>Err</em><span lang="en-us"><em>SubName</em></span>-имя 
-процедуры, которая вызывается только при возникновении ошибки во время 
-исполнения<span lang="en-us"> <em>SubName</em></span>). Устанавливается отчет
-<span lang="en-us">(</span><strong>RepViewer</strong><span lang="en-us">)</span> 
-в котором сохраняются все сообщения об ошибках<span lang="en-us">. </span>Далее, 
-в цикле выполняется процедура <span lang="en-us"><em>SubName</em></span> при 
-помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
-передаются параметры для процедуры <em>Err</em><span lang="en-us"><em>SubName</em></span> 
-при помощи метода <strong>SetErrSubParams</strong>.</font></p>
+CreateErrorsFreeExecutor</a>, задаются имена скриптовых процедур (<span><em>SubName</em>-</span>имя исполняемой процедуры,&nbsp; <em>Err</em><span><em>SubName</em></span>-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения<span> <em>SubName</em></span>). Устанавливается отчет
+<span>(</span><strong>RepViewer</strong><span>)</span> в котором сохраняются все сообщения об ошибках<span>. </span>Далее, в цикле выполняется процедура <span><em>SubName</em></span> при помощи метода <strong>Run.</strong> Перед вызовом метода <strong>Run </strong>
+передаются параметры для процедуры <em>Err</em><span><em>SubName</em></span> при помощи метода <strong>SetErrSubParams</strong>.</p>
 
-<p><font face="Arial">Set errFee =
+<p>Set errFee =
 <a href="../Functions/Functions/CreateErrorsFreeExecutor.html">
-CreateErrorsFreeExecutor</a>(&quot;<span lang="en-us">ModuleName</span>&quot;, &quot;<span lang="en-us">SubName</span>&quot;, 
-&quot;Err<span lang="en-us">SubName</span>&quot;)<br>
+CreateErrorsFreeExecutor</a>(&quot;<span>ModuleName</span>&quot;, &quot;<span>SubName</span>&quot;, &quot;Err<span>SubName</span>&quot;)<br>
 Set errRep = <a href="../Functions/Functions/CreateRepViewer.html">
 CreateRepViewer</a><br>
 Set errFee.<strong>RepViewer</strong> = errRep<br>
@@ -44,21 +35,17 @@ Do While Not rs.EOF<br>
 &nbsp;&nbsp;&nbsp; errFee.<strong>SetErrSubParams </strong>(i, docAgr, errRep)<br>
 &nbsp;&nbsp;&nbsp; errFee.<strong>Run </strong>(docAgr)<br>
 <br>
-&nbsp;&nbsp;&nbsp; <span lang="en-us">rs</span>.MoveNext<br>
+&nbsp;&nbsp;&nbsp; <span>rs</span>.MoveNext<br>
 Loop <br>
-<span lang="en-us">rs.close</span><br>
-</font></p>
-<p><font face="Arial">Ниже приведены сигнатуры процедур <span lang="en-us"><em>
-SubName</em></span> и <span lang="en-us"><em>ErrSubName</em></span>.</font></p>
-<p><span class="style1"><span lang="en-us">Public Sub</span> </span><font face="Arial">
-<span lang="en-us"><em>SubName</em></span> (<span lang="en-us">ByVal docAgr As 
-AsDoc</span>)</font><span class="style1"><span lang="en-us"><br>
-Public Sub <em>ErrSubName</em></span> <span lang="en-us">(ByVal lErrNumber As 
-Long, ByVal docAgr As AsDoc, ByVal errRep as AsRepViewer)</span></span></p>
-<p class="style1">Если параметры для процедуры <font face="Arial"><em>Err</em><em><span lang="en-us">SubName</span>
-</em></font>не переданы методом <font face="Arial"><strong>SetErrSubParams</strong>, 
-то параметры передаются вызовом метода <span lang="en-us"><strong>Run</strong></span>. 
-То есть&nbsp; и <span lang="en-us"><em>SubName</em></span> и&nbsp;
-<span lang="en-us"><em>ErrSubName</em></span> должны иметь одну и туже сигнатуру<span lang="en-us">.</span></font></p>
+<span>rs.close</span><br>
+</p>
+<p>Ниже приведены сигнатуры процедур <span><em>
+SubName</em></span> и <span><em>ErrSubName</em></span>.</p>
+<p><span><span>Public Sub</span> </span>
+<span><em>SubName</em></span> (<span>ByVal docAgr As AsDoc</span>)<span><span><br>
+Public Sub <em>ErrSubName</em></span> <span>(ByVal lErrNumber As Long, ByVal docAgr As AsDoc, ByVal errRep as AsRepViewer)</span></span></p>
+<p>Если параметры для процедуры <em>Err</em><em><span>SubName</span>
+</em>не переданы методом <strong>SetErrSubParams</strong>, то параметры передаются вызовом метода <span><strong>Run</strong></span>. То есть&nbsp; и <span><em>SubName</em></span> и&nbsp;
+<span><em>ErrSubName</em></span> должны иметь одну и туже сигнатуру<span>.</span></p>
 
 

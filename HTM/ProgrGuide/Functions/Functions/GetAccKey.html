@@ -4,59 +4,52 @@ title: "GetAccKey"
 ---
 
 
-<p><strong><font size="4" face="Arial">Функция GetAccKey</font></strong></p>
+<p><strong>Функция GetAccKey</strong></p>
 
-<p class="label"><font face="Arial">Возвращает контрольный ключ для 
-банковского счета.<br>
+<p>Возвращает контрольный ключ для банковского счета.<br>
 <br>
-Возвращаемое значение строковое.</font></p>
+Возвращаемое значение строковое.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>GetAccKey</strong>(<em>cBank</em>,<em> 
-SmallCod</em>)</font></p>
+<p><strong>GetAccKey</strong>(<em>cBank</em>,<em> SmallCod</em>)</p>
 
-<p><font face="Arial">Синтаксис функции <b>GetAccKey</b>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <b>GetAccKey</b>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
-  </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>cBank</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее код банка, где находится банковский счет</font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>SmallCod</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее банковский счет</font></td>
+    <td><em>cBank</em></td>
+    <td>строковое выражение, определяющее код банка, где находится банковский счет</td>
+  </tr>
+  <tr>
+    <td><em>SmallCod</em></td>
+    <td>строковое выражение, определяющее банковский счет</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><br>
+<p><br>
 </p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="../../functions.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="../../functions.html">См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<h1><font size="3" face="Arial"><strong>Пример свойства GetAccKey</strong></font></h1>
+<h1><strong>Пример свойства GetAccKey</strong></h1>
 
-<p><font face="Arial"><font size="3">Реквизиту CODE </font>
-присваивается значение контрольного ключа для текущего набранного банковского 
-счета в банке Param(&quot;CODBANK&quot;).<br>
-</font></p>
+<p>Реквизиту CODE 
+присваивается значение контрольного ключа для текущего набранного банковского счета в банке Param(&quot;CODBANK&quot;).<br>
+</p>
 
-<p><font face="Arial"><a href="../ASDOC/Rekv.html">doc(&quot;CODE&quot;)</a>=GetAccKey(<a href="ParameterManagment/Param.html">Param</a>(&quot;CODBANK&quot;), 
-doc(&quot;CODE&quot;))&nbsp;&nbsp;&nbsp; <br>
-</font></p>
+<p><a href="../ASDOC/Rekv.html">doc(&quot;CODE&quot;)</a>=GetAccKey(<a href="ParameterManagment/Param.html">Param</a>(&quot;CODBANK&quot;), doc(&quot;CODE&quot;))&nbsp;&nbsp;&nbsp; <br>
+</p>

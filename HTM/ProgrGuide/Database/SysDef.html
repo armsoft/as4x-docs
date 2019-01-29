@@ -7,280 +7,261 @@ title: "Таблица SYSDEF"
 
 
 
-<h1><font size="4" face="Arial">Таблица SYSDEF</font></h1>
+<h1>Таблица SYSDEF</h1>
 
-<p><font face="Arial">Таблицa системных описаний. <br>
-</font></p>
+<p>Таблицa системных описаний. <br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><b>
-	Поле</b></font></td>
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><strong>
-	Тип данных</strong></font></td>
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><strong>
-	Null</strong></font></td>
-    <td class="label" align="left" width="40%"><font face="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>
+	Поле</b></td>
+    <td><strong>
+	Тип данных</strong></td>
+    <td><strong>
+	Null</strong></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fSYSTYPE</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">smallInt</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">Тип системного 
-	описания </font></td>
+    <td>fSYSTYPE</td>
+    <td>smallInt</td>
+    <td>NOT NULL</td>
+    <td>Тип системного описания </td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fNAME</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">char(20)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">Идентификатор 
-	описания</font></td>
+    <td>fNAME</td>
+    <td>char(20)</td>
+    <td>NOT NULL</td>
+    <td>Идентификатор описания</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fCAPTION</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">varchar(50)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">наименование 
-	описания</font></td>
+    <td>fCAPTION</td>
+    <td>varchar(50)</td>
+    <td>NOT NULL</td>
+    <td>наименование описания</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fTYPE</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">char(1)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">тип данных 
-	(используется только<br>
-    fSYSTYPE=4 и fSYSTYPE=5)</font></td>
+    <td>fTYPE</td>
+    <td>char(1)</td>
+    <td>NOT NULL</td>
+    <td>тип данных (используется только<br>
+    fSYSTYPE=4 и fSYSTYPE=5)</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fDESCR</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">Text</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">описание в 
-	текстовом формате,<br>
+    <td>fDESCR</td>
+    <td>Text</td>
+    <td>NOT NULL</td>
+    <td>описание в текстовом формате,<br>
     причем каждый обьект имеет<br>
     собственный язык описания, т.е.<br>
     свойственные только ему служебные<br>
-    слова</font></td>
+    слова</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fIMAGE</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">Image</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NULL</font></td>
-    <td width="40%" align="left"><font face="Arial">шаблон документа 
-	Word</font></td>
+    <td>fIMAGE</td>
+    <td>Image</td>
+    <td>NULL</td>
+    <td>шаблон документа Word</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fDATE</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">DateTime</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NULL</font></td>
-    <td width="40%" align="left"><font face="Arial">дата изменения 
-	описания</font></td>
+    <td>fDATE</td>
+    <td>DateTime</td>
+    <td>NULL</td>
+    <td>дата изменения описания</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fVERSION</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">int</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td width="40%" align="left"><font face="Arial">версия системного 
-	описания. По умолчанию 0.</font></td>
+    <td>fVERSION</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>версия системного описания. По умолчанию 0.</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fECAPTION</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">varchar(50)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">наименование 
-	описания на иностранном языке</font></td>
+    <td>fECAPTION</td>
+    <td>varchar(50)</td>
+    <td>NULL</td>
+    <td>наименование описания на иностранном языке</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fROWID</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">int</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL, 
-	IDENTITY</font></td>
-    <td align="left" width="40%"><font face="Arial">колонка 
-	идентичности</font></td>
+    <td>fROWID</td>
+    <td>int</td>
+    <td>NOT NULL, IDENTITY</td>
+    <td>колонка идентичности</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fPRIORITY</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">int</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">колонка приоритета</font></td>
+    <td>fPRIORITY</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>колонка приоритета</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fCOMPNAME</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">varchar(32)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">имя компютера с которого было импортировано описание</font></td>
+    <td>fCOMPNAME</td>
+    <td>varchar(32)</td>
+    <td>NOT NULL</td>
+    <td>имя компютера с которого было импортировано описание</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Установки</b></font></p>
+<p><b><br>
+Установки</b></p>
 
-<p><font face="Arial">Установки для fSYSTYPE и fNAME следующие: </font></p>
+<p>Установки для fSYSTYPE и fNAME следующие: </p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><strong><font face="Arial">Значение 
-	fSYSTYPE</font></strong></td>
-    <td class="label" width="20%"><strong><font face="Arial">
-	Максимально-допустимая длина fNAME</font></strong></td>
-    <td class="label" width="60%"><font face="Arial"><strong>Описание</strong></font></td>
-  </tr>
-  <tr vAlign="top">
-    <td width="20%"><font face="Arial">0</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/doc.html"><font face="Arial">
-	описание документа</font></a></td>
+  <tr>
+    <td><strong>Значение fSYSTYPE</strong></td>
+    <td><strong>
+	Максимально-допустимая длина fNAME</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">1</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/Data.html"><font face="Arial">
-	описание источника данных</font></a></td>
+    <td>0</td>
+    <td>8</td>
+    <td><a href="../Defs/doc.html">
+	описание документа</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">2</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/View.html"><font face="Arial">
-	описание вида просмотра</font></a></td>
+    <td>1</td>
+    <td>8</td>
+    <td><a href="../Defs/Data.html">
+	описание источника данных</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">3</font></td>
-    <td width="20%"><font face="Arial">2</font></td>
-    <td width="60%"><a href="../Defs/Accounting.html"><font face="Arial">
-	описание учета</font></a></td>
+    <td>2</td>
+    <td>8</td>
+    <td><a href="../Defs/View.html">
+	описание вида просмотра</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">4</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/Tree.html"><font face="Arial">
-	описание деревьев-справочников</font></a></td>
+    <td>3</td>
+    <td>2</td>
+    <td><a href="../Defs/Accounting.html">
+	описание учета</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">5</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><font face="Arial">описание деревьев-навигаторов</font></td>
+    <td>4</td>
+    <td>8</td>
+    <td><a href="../Defs/Tree.html">
+	описание деревьев-справочников</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">6</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/report.html"><font face="Arial">
-	описание отчетов, справок</font></a></td>
+    <td>5</td>
+    <td>8</td>
+    <td>описание деревьев-навигаторов</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">7</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><a href="../Defs/Module.html"><font face="Arial">
-	описание процедурных модулей</font></a></td>
+    <td>6</td>
+    <td>8</td>
+    <td><a href="../Defs/report.html">
+	описание отчетов, справок</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="20%"><font face="Arial">20</font></td>
-    <td width="60%"><font face="Arial">шаблон печати в формате Word</font></td>
+    <td>7</td>
+    <td>8</td>
+    <td><a href="../Defs/Module.html">
+	описание процедурных модулей</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">9</font></td>
-    <td width="20%"><font face="Arial">20</font></td>
-    <td width="60%"><font face="Arial"><a href="../Defs/PrintStyle.html">
-	описание стиля печати</a></font></td>
+    <td>8</td>
+    <td>20</td>
+    <td>шаблон печати в формате Word</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">10</font></td>
-    <td width="20%"><font face="Arial">16</font></td>
-    <td width="60%"><font face="Arial"><a href="../Defs/Dialog.html">
-	описание диалога</a></font></td>
+    <td>9</td>
+    <td>20</td>
+    <td><a href="../Defs/PrintStyle.html">
+	описание стиля печати</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">11</font></td>
-    <td width="20%"><font face="Arial">20</font></td>
-    <td width="60%"><font face="Arial">описание шаблона проводок</font></td>
+    <td>10</td>
+    <td>16</td>
+    <td><a href="../Defs/Dialog.html">
+	описание диалога</a></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">12</font></td>
-    <td width="20%"><font face="Arial">20</font></td>
-    <td width="60%"><font face="Arial">шаблон печати в формате Excel</font></td>
+    <td>11</td>
+    <td>20</td>
+    <td>описание шаблона проводок</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">13</font></td>
-    <td width="20%"><font face="Arial">20</font></td>
-    <td width="60%"><font face="Arial">описание визуального отчета</font></td>
+    <td>12</td>
+    <td>20</td>
+    <td>шаблон печати в формате Excel</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">15</font></td>
-    <td width="20%"><font face="Arial">8</font></td>
-    <td width="60%"><font face="Arial">описание элемента задания</font></td>
+    <td>13</td>
+    <td>20</td>
+    <td>описание визуального отчета</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>8</td>
+    <td>описание элемента задания</td>
   </tr>
 </table>
 
-<p><font face="Arial"><br>
-Установки для fTYPE имеют следующие значения, в зависимости от значения 
-fSYSTYPE:</font></p>
+<p><br>
+Установки для fTYPE имеют следующие значения, в зависимости от значения fSYSTYPE:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="25%"><font face="Arial"><strong>Значение 
-	fSYSTYPE</strong></font></td>
-    <td class="label" width="25%"><font face="Arial"><strong>Значение 
-	fTYPE</strong></font></td>
-    <td class="label" width="50%"><font face="Arial"><strong>Описание</strong></font></td>
-  </tr>
-  <tr vAlign="top">
-    <td width="25%"><font face="Arial">4</font></td>
-    <td width="25%"><font face="Arial">1</font></td>
-    <td width="50%"><font face="Arial">одноуровневый справочник</font></td>
+  <tr>
+    <td><strong>Значение fSYSTYPE</strong></td>
+    <td><strong>Значение fTYPE</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="25%"><font face="Arial">4</font></td>
-    <td width="25%"><font face="Arial">2</font></td>
-    <td width="50%"><font face="Arial">многоуровневый справочник</font></td>
+    <td>4</td>
+    <td>1</td>
+    <td>одноуровневый справочник</td>
   </tr>
   <tr>
-    <td width="25%"><font face="Arial">5</font></td>
-    <td width="25%"><font face="Arial">0</font></td>
-    <td width="50%"><font face="Arial">навигаторское дерево АРМ-а</font></td>
+    <td>4</td>
+    <td>2</td>
+    <td>многоуровневый справочник</td>
   </tr>
   <tr>
-    <td width="25%"><font face="Arial">5</font></td>
-    <td width="25%"><font face="Arial">1</font></td>
-    <td width="50%"><font face="Arial">вспомогательное навигаторское 
-	дерево</font></td>
+    <td>5</td>
+    <td>0</td>
+    <td>навигаторское дерево АРМ-а</td>
   </tr>
   <tr>
-    <td width="25%"><font face="Arial">5</font></td>
-    <td width="25%"><font face="Arial">2</font></td>
-    <td width="50%"><font face="Arial">пользовательское навигаторское 
-	дерево</font></td>
+    <td>5</td>
+    <td>1</td>
+    <td>вспомогательное навигаторское дерево</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>2</td>
+    <td>пользовательское навигаторское дерево</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" align="left" nowrap><font face="Arial"><b>
-	Имя индекса</b></font></td>
-    <td class="label" width="33%" align="left" nowrap><font face="Arial"><strong>
-	Тип</strong></font></td>
-    <td class="label" align="left" width="33%"><font face="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>
+	Имя индекса</b></td>
+    <td><strong>
+	Тип</strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" align="left" nowrap><font face="Arial">iSYSDEF</font></td>
-    <td width="33%" align="left" nowrap><font face="Arial">UNIQUE, 
-	CLUSTERED</font></td>
-    <td align="left" width="33%"><font face="Arial">fSYSTYPE, fNAME</font></td>
+    <td>iSYSDEF</td>
+    <td>UNIQUE, CLUSTERED</td>
+    <td>fSYSTYPE, fNAME</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

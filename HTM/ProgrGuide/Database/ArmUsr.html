@@ -7,73 +7,67 @@ title: "Таблица ARMUSR"
 
 
 
-<h1><font size="4" face="Arial">Таблица ARMUSR</font></h1>
+<h1>Таблица ARMUSR</h1>
 
-<p><font face="Arial">Таблицa определения доступа пользователей к 
-рабочим местам.<br>
-</font></p>
+<p>Таблицa определения доступа пользователей к рабочим местам.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTREEID</font></td>
-    <td width="20%"><font face="Arial">char (8)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор дерева навигатора 
-	типа &quot;АРМ&quot;</font></td>
+    <td>fTREEID</td>
+    <td>char (8)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор дерева навигатора типа &quot;АРМ&quot;</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDEFAULT</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">&#39;1&#39; - данный АРМ является 
-	доступным по умолчанию,<br>
-    &#39;2&#39; - данный АРМ доступен как дополнительный</font></td>
+    <td>fDEFAULT</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>&#39;1&#39; - данный АРМ является доступным по умолчанию,<br>
+    &#39;2&#39; - данный АРМ доступен как дополнительный</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iARMUSR1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fSUID, fTREEID</font></td>
+    <td>iARMUSR1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fSUID, fTREEID</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iARMUSR2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fTREEID, fSUID</font></td>
+    <td>iARMUSR2</td>
+    <td>&nbsp;</td>
+    <td>fTREEID, fSUID</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-</b></font></p>
+<p><b><br>
+</b></p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

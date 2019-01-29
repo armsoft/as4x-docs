@@ -7,126 +7,121 @@ title: "Таблица FOLDERS"
 
 
 
-<h1><font size="4" face="Arial">Таблица FOLDERS</font></h1>
+<h1>Таблица FOLDERS</h1>
 
-<p><font face="Arial">Таблицa папок.<br>
-</font></p>
+<p>Таблицa папок.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fFOLDERID</font></td>
-    <td width="20%"><font face="Arial">varchar (20)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор папки</font></td>
+    <td>fFOLDERID</td>
+    <td>varchar (20)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор папки</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNAME</font></td>
-    <td width="20%"><font face="Arial">char (8)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">имя документа основания</font></td>
+    <td>fNAME</td>
+    <td>char (8)</td>
+    <td>NOT NULL</td>
+    <td>имя документа основания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fKEY</font></td>
-    <td width="20%"><font face="Arial">varchar (24)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">ключ определяющий порядок 
-	документов в папке</font></td>
+    <td>fKEY</td>
+    <td>varchar (24)</td>
+    <td>NULL</td>
+    <td>ключ определяющий порядок документов в папке</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">внутрисистемный 
-	идентификационный код (ISN)&nbsp; документа</font></td>
+    <td>fISN</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>внутрисистемный идентификационный код (ISN)&nbsp; документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSTATUS</font></td>
-    <td width="20%"><font face="Arial">tinyint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">статус элемента папки</font></td>
+    <td>fSTATUS</td>
+    <td>tinyint</td>
+    <td>NOT NULL</td>
+    <td>статус элемента папки</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOM</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">комментарий</font></td>
+    <td>fCOM</td>
+    <td>varchar (50)</td>
+    <td>NULL</td>
+    <td>комментарий</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSPEC</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">специальная строка</font></td>
+    <td>fSPEC</td>
+    <td>varchar (255)</td>
+    <td>NULL</td>
+    <td>специальная строка</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fECOM</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">комментарий в иностранном языке</font></td>
+    <td>fECOM</td>
+    <td>varchar (50)</td>
+    <td>NULL</td>
+    <td>комментарий в иностранном языке</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDCDATE</font></td>
-    <td width="20%"><font face="Arial">datetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата создания документа</font></td>
+    <td>fDCDATE</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>дата создания документа</td>
   </tr>
 	<tr>
-    <td width="20%">fDCBRANCH </td>
-    <td width="20%"><font face="Arial">char (3)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код филиала</font></td>
+    <td>fDCBRANCH </td>
+    <td>char (3)</td>
+    <td>NOT NULL</td>
+    <td>код филиала</td>
   </tr>
 	<tr>
-    <td width="20%">fDCDEPART </td>
-    <td width="20%"><font face="Arial">char (3)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код отдела</font></td>
+    <td>fDCDEPART </td>
+    <td>char (3)</td>
+    <td>NOT NULL</td>
+    <td>код отдела</td>
   </tr>
   <tr>
-    <td width="20%">fDCACSTYPE </td>
-    <td width="20%"><font face="Arial">char (2)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код типа доступа</font></td>
+    <td>fDCACSTYPE </td>
+    <td>char (2)</td>
+    <td>NOT NULL</td>
+    <td>код типа доступа</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" nowrap><font face="Arial"><b>Имя 
-	индекса</b></font></td>
-    <td class="label" width="33%" nowrap><font face="Arial"><strong>
-	Тип </strong></font></td>
-    <td class="label" width="33%" nowrap><font face="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>
+	Тип </strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" nowrap><font face="Arial">iFOLDERS1</font></td>
-    <td width="33%" nowrap><font face="Arial">UNIQUE, CLUSTERED</font></td>
-    <td width="33%" nowrap><font face="Arial">fFOLDERID, fKEY</font></td>
+    <td>iFOLDERS1</td>
+    <td>UNIQUE, CLUSTERED</td>
+    <td>fFOLDERID, fKEY</td>
   </tr>
   <tr>
-    <td width="33%" nowrap><font face="Arial">iFOLDERS2</font></td>
-    <td width="33%" nowrap>&nbsp;</td>
-    <td width="33%" nowrap><font face="Arial">fISN</font></td>
+    <td>iFOLDERS2</td>
+    <td>&nbsp;</td>
+    <td>fISN</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 
