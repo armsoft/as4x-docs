@@ -3,61 +3,54 @@ layout: page
 title: "AddPivotData"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             font-family: Arial;
         }
-        .style3
-        {
+        .style3 {
             height: 30px;
         }
     </style>
 
 
-<p><strong><font size="4" face="Arial">Метод AddPivotData<br>
+<p><strong>Метод AddPivotData<br>
 <br>
-</font></strong><font face="Arial"><a href="../PivotInfo.html">См. также</a>&nbsp;
+</strong><a href="../PivotInfo.html">См. также</a>&nbsp;
 Пример</a>&nbsp; <a href="../PivotInfo.html">
-Применяется к</a></font></p>
+Применяется к</a></p>
 
-<p><font face="Arial">Добавляет транспонированные данные в Excel.</font></p>
+<p>Добавляет транспонированные данные в Excel.</p>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>call</strong> <em>object</em>.<strong>AddPivotData(</strong><em>columnName, </em>
-    [<em>caption</em>], [<em>function</em>])</font></p>
+<p><strong>call</strong> <em>object</em>.<strong>AddPivotData(</strong><em>columnName, </em>
+    [<em>caption</em>], [<em>function</em>])</p>
 
-<p><font face="Arial">Синтаксис метода <strong>AddPivotRow</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода <strong>AddPivotRow</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">object</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее переменную, ссылающуюся на экземпляр объекта типа PivotInfo.</font></td>
+    <td><em>object</em></td>
+    <td>строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта типа PivotInfo.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>columnName</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее идентификатор колонки, значения которого нужно транспонировать.</font></td>
+    <td><em>columnName</em></td>
+    <td>строковое выражение, определяющее идентификатор колонки, значения которого нужно транспонировать.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>caption</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее наименование транспонированного значения в Excel.</font></td>
+    <td><em>caption</em></td>
+    <td>строковое выражение, определяющее наименование транспонированного значения в Excel.</td>
     </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>function</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее функцию, 
-        применяаемое на транспонированные значения. По умолчанию принимает значение 
-        -4157.</font></td>
+    <td><em>function</em></td>
+    <td>строковое выражение, определяющее функцию, применяаемое на транспонированные значения. По умолчанию принимает значение -4157.</td>
     </tr>
 </TBODY>
   </table>
@@ -65,71 +58,61 @@ title: "AddPivotData"
     <p>
         &nbsp;</p>
     <p>
-        <span class="style1"><strong>Установки для параметра <em>f</em></strong></span><font face="Arial"><strong><em>unction</em></strong></font></p>
+        <strong>Установки для параметра <em>f</em></strong><strong><em>unction</em></strong></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Значение </b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Значение </b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%">-4106</td>
-    <td width="71%"><font face="Arial">Вычисляет среднее значение транспонированных 
-        данных.</font></td>
+    <td>-4106</td>
+    <td>Вычисляет среднее значение транспонированных данных.</td>
   </tr>
   <tr>
-    <td width="29%" class="style3">-4112</td>
-    <td width="71%" class="style3"><font face="Arial">Подсчитывает количество числовых 
-        ячеек транспонированных данных.</font></td>
+    <td>-4112</td>
+    <td>Подсчитывает количество числовых ячеек транспонированных данных.</td>
   </tr>
     <tr>
-    <td width="29%">-4113</td>
-    <td width="71%"><font face="Arial">Подсчитывает количество непустых ячеек 
-        транспонированных данных.</font></td>
+    <td>-4113</td>
+    <td>Подсчитывает количество непустых ячеек транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%" class="style3">-4136</td>
-    <td width="71%" class="style3"><font face="Arial">Находит максимальное значение 
-        среди транспонированных данных.</font></td>
+    <td>-4136</td>
+    <td>Находит максимальное значение среди транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%" class="style3">-4139</td>
-    <td width="71%" class="style3"><font face="Arial">Находит минимальное значение среди 
-        транспонированных данных.</font></td>
+    <td>-4139</td>
+    <td>Находит минимальное значение среди транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%">-4149</td>
-    <td width="71%"><font face="Arial">Перемножает значения, удовлетворяющих условию.</font></td>
+    <td>-4149</td>
+    <td>Перемножает значения, удовлетворяющих условию.</td>
     </tr>
     <tr>
-    <td width="29%">-4155</td>
-    <td width="71%"><font face="Arial">Оценивает стандартное отклонение по выборке из 
-        транспонированных данных.</font></td>
+    <td>-4155</td>
+    <td>Оценивает стандартное отклонение по выборке из транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%" class="style3">-4156</td>
-    <td width="71%" ><font face="Arial">Вычисляет стандартное отклонение по генеральной 
-        совокупности из транспонированных данных.</font></td>
+    <td>-4156</td>
+    <td >Вычисляет стандартное отклонение по генеральной совокупности из транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%">-4157</td>
-    <td width="71%"><font face="Arial">Суммирует числа транспонированных данных, 
-        удовлетворяющих условию.</font></td>
+    <td>-4157</td>
+    <td>Суммирует числа транспонированных данных, удовлетворяющих условию.</td>
     </tr>
     <tr>
-    <td width="29%" class="style3">-4164</td>
-    <td width="71%" class="style3"><font face="Arial">Оценивает дисперсию по выборке из 
-        транспонированных данных.</font></td>
+    <td>-4164</td>
+    <td>Оценивает дисперсию по выборке из транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%">-4165</td>
-    <td width="71%"><font face="Arial">Вычисляет дисперсию по генеральной совокупности 
-        из транспонированных данных.</font></td>
+    <td>-4165</td>
+    <td>Вычисляет дисперсию по генеральной совокупности из транспонированных данных.</td>
     </tr>
     <tr>
-    <td width="29%">...</td>
-    <td width="71%">&nbsp;</td>
+    <td>...</td>
+    <td>&nbsp;</td>
     </tr>
 </TBODY>
   </table>

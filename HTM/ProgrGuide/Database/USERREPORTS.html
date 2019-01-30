@@ -7,99 +7,90 @@ title: "Таблица USERREPORTS "
 
 
 
-<h1><font size="4" face="Arial">Таблица USERREPORTS</font></h1>
+<h1>Таблица USERREPORTS</h1>
 
-<p><font face="Arial">Таблицa пользовательских отчетов. <br>
-</font></p>
+<p>Таблицa пользовательских отчетов. <br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><b>
-	Поле</b></font></td>
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><strong>
-	Тип данных</strong></font></td>
-    <td class="label" width="20%" align="left" nowrap><font face="Arial"><strong>
-	Null</strong></font></td>
-    <td class="label" align="left" width="40%"><font face="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td><b>
+	Поле</b></td>
+    <td><strong>
+	Тип данных</strong></td>
+    <td><strong>
+	Null</strong></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fNAME</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">char(20)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">идентификатор 
-	пользовательского отчета</font></td>
+    <td>fNAME</td>
+    <td>char(20)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользовательского отчета</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fCAPTION</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">varchar(50)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">наименование&nbsp; 
-	пользовательского отчета</font></td>
+    <td>fCAPTION</td>
+    <td>varchar(50)</td>
+    <td>NOT NULL</td>
+    <td>наименование&nbsp; пользовательского отчета</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fECAPTION</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">varchar(50)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">наименование&nbsp; 
-	пользовательского отчета на иностранном языке</font></td>
+    <td>fECAPTION</td>
+    <td>varchar(50)</td>
+    <td>NULL</td>
+    <td>наименование&nbsp; пользовательского отчета на иностранном языке</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fDATA</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">char(20)</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">имя базового 
-	источника данных</font></td>
+    <td>fDATA</td>
+    <td>char(20)</td>
+    <td>NOT NULL</td>
+    <td>имя базового источника данных</td>
   </tr>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fDESCR</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">Text</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL</font></td>
-    <td align="left" width="40%"><font face="Arial">описание в 
-	текстовом формате</font></td>
+    <td>fDESCR</td>
+    <td>Text</td>
+    <td>NOT NULL</td>
+    <td>описание в текстовом формате</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="20%" align="left" nowrap><font face="Arial">fROWID</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">int</font></td>
-    <td width="20%" align="left" nowrap><font face="Arial">NOT NULL, 
-	IDENTITY</font></td>
-    <td align="left" width="40%"><font face="Arial">колонка 
-	идентичности</font></td>
+    <td>fROWID</td>
+    <td>int</td>
+    <td>NOT NULL, IDENTITY</td>
+    <td>колонка идентичности</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Индекс</b></font></p>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%" align="left" nowrap><font face="Arial"><b>
-	Имя индекса</b></font></td>
-    <td class="label" width="33%" align="left" nowrap><font face="Arial"><strong>
-	Тип</strong></font></td>
-    <td class="label" align="left" width="33%"><font face="Arial"><strong>
-	Имя столбцов</strong></font></td>
+  <tr>
+    <td><b>
+	Имя индекса</b></td>
+    <td><strong>
+	Тип</strong></td>
+    <td><strong>
+	Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%" align="left" nowrap>iUSERREPORTS1 </td>
-    <td width="33%" align="left" nowrap><font face="Arial">UNIQUE, 
-	CLUSTERED</font></td>
-    <td align="left" width="33%"><font face="Arial">&nbsp;fNAME</font></td>
+    <td>iUSERREPORTS1 </td>
+    <td>UNIQUE, CLUSTERED</td>
+    <td>&nbsp;fNAME</td>
   </tr>
   <tr>
-    <td width="33%" align="left" nowrap>iUSERREPORTS2</td>
-    <td width="33%" align="left" nowrap><font face="Arial">UNIQUE</font></td>
-    <td align="left" width="33%"><font face="Arial">&nbsp;fROWID</font></td>
+    <td>iUSERREPORTS2</td>
+    <td>UNIQUE</td>
+    <td>&nbsp;fROWID</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

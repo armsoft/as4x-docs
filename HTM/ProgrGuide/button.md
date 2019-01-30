@@ -12,7 +12,7 @@ Button {
     ECaption = sLineECaption;
     ButtonCaption = sButtonCaption;
     EButtonCaption = sButtonCaption;
-    ShowCaption = nShowCaption
+    ShowCaption = nShowCaption;
     Width = nButtonWidth;
     Picture = sImage;
     Distance = nDistance;

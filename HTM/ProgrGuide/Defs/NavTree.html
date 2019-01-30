@@ -3,13 +3,11 @@ layout: page
 title: "Описание дерева навигации"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             width: 4%;
             height: 47px;
         }
-        .style2
-        {
+        .style2 {
             height: 47px;
         }
     </style>
@@ -18,12 +16,12 @@ title: "Описание дерева навигации"
 
 
 
-<strong><font size="4" face="Arial">Описание дерева навигации<br />
-</font></strong><font face="Arial"><span lang="ru"><br>
-</span><b><br>
-Синтаксис</b></font>
+<strong>Описание дерева навигации<br />
+</strong><br>
+<b><br>
+Синтаксис</b>
 
-<font face="Arial"><strong>
+<strong>
     <br />
     <br>
     NAVTREE&nbsp; {<br>
@@ -37,93 +35,77 @@ title: "Описание дерева навигации"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <strong>Attributs</strong>
 = nAttributs ; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    System</strong> 
-=
-nSystem;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System</strong> = nSystem;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span lang="en-us"><br>
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><a href="../NavTreeNode.html">{Узлы <span lang="en-us"> дерева навигации };</span></a><br />
-    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    };<br>
-</strong>&nbsp;&nbsp;<span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></font>
+<a href="../NavTreeNode.html">{Узлы  дерева навигации };</a><br />
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };<br>
+</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<p><font face="Arial">Синтаксис описания дерева навигации
-состоит из следующих частей:</font></p>
+
+<p>Синтаксис описания дерева навигации состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" style="height: 31px; width: 4%;">&nbsp;</td>
-    <td class="label" width="29%" style="height: 31px"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%" style="height: 31px"><font face="Arial"><strong>
-	Описание</strong></font></td>
+  <tr>
+    <td>&nbsp;</td>
+    <td><b>Параметр</b></td>
+    <td><strong>
+	Описание</strong></td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sNavTreeName</font></em></td>
-    <td width="71%"><font face="Arial">обязательное строковое выражение, определяющее 
-	идентификатор дерева навигации</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sNavTreeName</em></td>
+    <td>обязательное строковое выражение, определяющее идентификатор дерева навигации</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%"><em><font face="Arial">sNavTreeCaption</font></em></td>
-    <td width="71%"><font face="Arial">обязательное строковое выражение, определяющее 
-	заголовок дерева навигации</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sNavTreeCaption</em></td>
+    <td>обязательное строковое выражение, определяющее заголовок дерева навигации</td>
   </tr>
   <tr>
-    <td class="style1">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%" class="style2"><em><font face="Arial">sNavTreeECaption</font></em></td>
-    <td width="71%" class="style2"><font face="Arial">необязательное строковое выражение, определяющее 
-	заголовок дерева навигации на иностранном языке</font></td>
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td><em>sNavTreeECaption</em></td>
+    <td>необязательное строковое выражение, определяющее заголовок дерева навигации на иностранном языке</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nNavTreeType</em></font></td>
-    <td width="71%"><font face="Arial">обязательное числовое выражение, определяющее тип 
-        дерева навигации. Может принимать значения 0, 1 или 2. Значение = 0 определяет 
-        само дерево навигации, значении = 1 определяет узел вспомогательного дерева, 
-        а значение = 2 определяет узел пользовательского дерева </font></td>
+<em>nNavTreeType</em></td>
+    <td>обязательное числовое выражение, определяющее тип дерева навигации. Может принимать значения 0, 1 или 2. Значение = 0 определяет само дерево навигации, значении = 1 определяет узел вспомогательного дерева, а значение = 2 определяет узел пользовательского дерева </td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nAttributs</em></font></td>
-    <td width="71%"><font face="Arial">необязательное бинарное выражение, определяющее 
-        метки дерева навигатора, доступные&nbsp; из дизайнера. Максимальная длина равно = 
-        7. Если его значение начинается с единицы, то данное дерево-навигации будет 
-        невидимым, поскольку на первом месте стоит метка невидения. Допустимые значения 
-        можно увидеть <a href="../../../IMAGES/Tag.PNG"><span lang="en-us">здесь</span></a>.</font></td>
+<em>nAttributs</em></td>
+    <td>необязательное бинарное выражение, определяющее метки дерева навигатора, доступные&nbsp; из дизайнера. Максимальная длина равно = 7. Если его значение начинается с единицы, то данное дерево-навигации будет невидимым, поскольку на первом месте стоит метка невидения. Допустимые значения можно увидеть <a href="../../../IMAGES/Tag.PNG">здесь</a>.</td>
   </tr>
   <tr>
-    <td style="width: 4%">
-	<img src="../../../IMAGES/pubfield.gif" width="16" height="16"></td>
-    <td width="29%">
+    <td>
+	<img src="../../../IMAGES/pubfield.gif"></td>
+    <td>
 
-<font face="Arial"><em>nSystem</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое выражение, определяющее 
-        разрешимость редактирования со сторорны юзера при помощи дизайнера. При <em>System =
-        </em>&quot;1&quot;<em>&nbsp; </em>редактирование не разрешается. </font></td>
+<em>nSystem</em></td>
+    <td>необязательное строковое выражение, определяющее разрешимость редактирования со сторорны юзера при помощи дизайнера. При <em>System =
+        </em>&quot;1&quot;<em>&nbsp; </em>редактирование не разрешается. </td>
   </tr>
 </TBODY>
   </table>
 
 
-<font face="Arial"><b><br>
-Примечание</b></font>
+<b><br>
+Примечание</b>
 
-<font face="Arial"><br>
+<br>
     <br>
 <br>
-</font><a href="../Defs.html"><font face="Arial">См. также</font></a>
+<a href="../Defs.html">См. также</a>
 

@@ -7,111 +7,94 @@ title: "Таблица DOCSARC"
 
 
 
-<h1><font size="4" face="Arial">Таблица DOCSARC</font></h1>
+<h1>Таблица DOCSARC</h1>
 
-<p><font face="Arial">Архив таблицы <a href="Docs.html">DOCS</a>. 
-Таблица DOCSARC в зависимости от настройки может находиться как в основной, так 
-и в архивной БД.</font></p>
+<p>Архив таблицы <a href="Docs.html">DOCS</a>. Таблица DOCSARC в зависимости от настройки может находиться как в основной, так и в архивной БД.</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int </font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор документа</font></td>
+    <td>fISN</td>
+    <td>int </td>
+    <td>NOT NULL</td>
+    <td>идентификатор документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNAME</font></td>
-    <td width="20%"><font face="Arial">char (8)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор типа документа</font></td>
+    <td>fNAME</td>
+    <td>char (8)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор типа документа</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSTATE</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">состояние документа. При 
-	создании документа он находится в состоянии 0, а после его сохранения 
-	переходит в состояние 1. Дальнейшие наращивания состояния документа 
-	происходят согласно поведению документа. Ядро системы влияет на текущее 
-	состояние документа в следующих случаях: при визировании документа его 
-	состояние автоматически увеличивается на 1, а при отказе визирования - 
-	увеличивается на 2. Изменение <a
-    href="Folders.html">статуса</a> завизированного документа <a
-    href="Folders.html">в папке</a> производится из скрипта.</font></td>
+    <td>fSTATE</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>состояние документа. При создании документа он находится в состоянии 0, а после его сохранения переходит в состояние 1. Дальнейшие наращивания состояния документа происходят согласно поведению документа. Ядро системы влияет на текущее состояние документа в следующих случаях: при визировании документа его состояние автоматически увеличивается на 1, а при отказе визирования - увеличивается на 2. Изменение <a href="Folders.html">статуса</a> завизированного документа <a href="Folders.html">в папке</a> производится из скрипта.</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fNEXTTRANS</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">номер очередной транзакции для 
-	данного документа.</font></td>
+    <td>fNEXTTRANS</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>номер очередной транзакции для данного документа.</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTS</font></td>
-    <td width="20%"><font face="Arial">timestamp</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">отметка времени последнего 
-	изменения, применяется для оптимистической блокировки</font></td>
+    <td>fTS</td>
+    <td>timestamp</td>
+    <td>NOT NULL</td>
+    <td>отметка времени последнего изменения, применяется для оптимистической блокировки</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fBODY</font></td>
-    <td width="20%"><font face="Arial">varchar (4000)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">тело документа, где хранятся 
-	значения реквизитов</font></td>
+    <td>fBODY</td>
+    <td>varchar (4000)</td>
+    <td>NOT NULL</td>
+    <td>тело документа, где хранятся значения реквизитов</td>
   </tr>
   <tr>
-    <td width="20%">fCREATIONDATE</td>
-    <td width="20%">datetime</td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата создания документа</font></td>
+    <td>fCREATIONDATE</td>
+    <td>datetime</td>
+    <td>NOT NULL</td>
+    <td>дата создания документа</td>
   </tr>
   <tr>
-    <td width="20%">fCREATORSUID</td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя, 
-	создавшего документ</font></td>
+    <td>fCREATORSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя, создавшего документ</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCSARC1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fISN</font></td>
+    <td>iDOCSARC1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fISN</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCSARC2</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fNAME</font></td>
+    <td>iDOCSARC2</td>
+    <td>&nbsp;</td>
+    <td>fNAME</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><font face="Arial"><a href="database_scheme.html">См. 
-также</a></font></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

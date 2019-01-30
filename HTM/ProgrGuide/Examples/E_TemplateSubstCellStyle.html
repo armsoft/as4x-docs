@@ -3,8 +3,7 @@ layout: page
 title: "E_DataSourceIndicator"
 ---
     <style type="text/css">
-        .style1
-        {
+        .style1 {
             font-weight: normal;
         }
         </style>
@@ -13,22 +12,19 @@ title: "E_DataSourceIndicator"
 
 
 
-<p><strong><font size="3" face="Arial">Пример</font><font
-face="Arial"> работы свойств <span class="style1">
+<p><strong>Пример работы свойств 
     <a href="../Functions/TemplateSubstCellStyle/BackColor.html">
-    BackColor</a></span>, <span class="style1">
+    BackColor</a>, 
     <a href="../Functions/TemplateSubstCellStyle/Bold.html">
-    Bold</a></span>, <span class="style1">
+    Bold</a>, 
     <a href="../Functions/TemplateSubstCellStyle/Color.html">
-    Color</a></span>, <span class="style1">
+    Color</a>, 
     <a href="../Functions/TemplateSubstCellStyle/Italic.html">
-    Italic</a></span> и <span class="style1">
+    Italic</a> и 
     <a href="../Functions/TemplateSubstCellStyle/Underline.html">
-    Underline</a></span> для 
-    объекта типа <span class="style1"> <a href="../Functions/TemplateSubstCellStyle.html">TemplateSubstCellStyle</a></span>.</font></strong></p>
+    Underline</a> для объекта типа  <a href="../Functions/TemplateSubstCellStyle.html">TemplateSubstCellStyle</a>.</strong></p>
 
-    <font face="Arial">
-
+    
     <p> 
     <br />
     Dim tempSub As TemplateSubstitution<br />
@@ -37,15 +33,13 @@ face="Arial"> работы свойств <span class="style1">
     <br />
     Dim rs As rdoResultset
     <br />
-    Dim style As TemplateSubstCellStyle</font></p>
-     <p><font face="Arial">sSql = "select d.fISN, d.fNAME" & vbCrLf _ <br />
+    Dim style As TemplateSubstCellStyle</p>
+     <p>sSql = "select d.fISN, d.fNAME" & vbCrLf _ <br />
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            & "from DOCS d" & vbCrLf 
-     <br /> 
-     Set rs = Util.ExecuteQuery(sSql, True, ASOpenForwardOnly) </font></p>
-    <p><font face="Arial">Set tempSub = New TemplateSubstitution <br />
-                                                                                             
-	tempSub.AddGrid "T1"<br />
+     <br /> Set rs = Util.ExecuteQuery(sSql, True, ASOpenForwardOnly) </p>
+    <p>Set tempSub = New TemplateSubstitution <br />
+                                                                                             tempSub.AddGrid "T1"<br />
 	With tempSub.Grid("T1")<br />
 		&nbsp;&nbsp;&nbsp;
 		.AddColumn "1", &quot;ISN документа&quot;, &quot;NP(10,0)&quot;<br />
@@ -87,11 +81,11 @@ face="Arial"> работы свойств <span class="style1">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i+= 1 <br />
 		&nbsp;&nbsp;&nbsp;
 		Wend <br />
-	End With </font></p><br />
+	End With </p><br />
 
-    <p><font face="Arial">
+    <p>
         <br>
         <br>
-</font></p>
+</p>
 
 

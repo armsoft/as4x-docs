@@ -7,100 +7,91 @@ title: "Таблица DOCSATTACHARCARC"
 
 
 
-<h1><font size="4" face="Arial">Таблица DOCSATTACHARC</font></h1>
+<h1>Таблица DOCSATTACHARC</h1>
 
-<p><font face="Arial">Архив таблицы <a href="DocsAttach.html">
-DOCSATTACH</a>. Таблица DOCSATTACHARC в зависимости от настройки может 
-находиться как в основной, так и в архивной БД.<br>
-</font></p>
+<p>Архив таблицы <a href="DocsAttach.html">
+DOCSATTACH</a>. Таблица DOCSATTACHARC в зависимости от настройки может находиться как в основной, так и в архивной БД.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fISN</font></td>
-    <td width="20%"><font face="Arial">int </font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор документа, к 
-	которому прикреплен данный файл</font></td>
+    <td>fISN</td>
+    <td>int </td>
+    <td>NOT NULL</td>
+    <td>идентификатор документа, к которому прикреплен данный файл</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fFILE</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">наименование файла</font></td>
+    <td>fFILE</td>
+    <td>varchar (50)</td>
+    <td>NOT NULL</td>
+    <td>наименование файла</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVERSION</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">номер очередной версии файла</font></td>
+    <td>fVERSION</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>номер очередной версии файла</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOMMENT</font></td>
-    <td width="20%"><font face="Arial">varchar (50)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">комментарий к действию над 
-	файлом</font></td>
+    <td>fCOMMENT</td>
+    <td>varchar (50)</td>
+    <td>NOT NULL</td>
+    <td>комментарий к действию над файлом</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя, 
-	совершивший&nbsp; последнее действие над файлом</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя, совершивший&nbsp; последнее действие над файлом</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата последней модификации 
-	файла</font></td>
+    <td>fDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>дата последней модификации файла</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCOMPNAME</font></td>
-    <td width="20%"><font face="Arial">varchar (32)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">имя компьютера, с которого 
-	производилось действие</font></td>
+    <td>fCOMPNAME</td>
+    <td>varchar (32)</td>
+    <td>NOT NULL</td>
+    <td>имя компьютера, с которого производилось действие</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVALUE</font></td>
-    <td width="20%"><font face="Arial">image</font></td>
-    <td width="20%"><font face="Arial">NULL</font></td>
-    <td width="40%"><font face="Arial">образ файла</font></td>
+    <td>fVALUE</td>
+    <td>image</td>
+    <td>NULL</td>
+    <td>образ файла</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iDOCSATTACHARC1</font></td>
-    <td width="33%"><font face="Arial">UNIQUE,&nbsp; CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fISN, fFILE</font></td>
+    <td>iDOCSATTACHARC1</td>
+    <td>UNIQUE,&nbsp; CLUSTERED</td>
+    <td>fISN, fFILE</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
+<p><b><br>
 <br>
-Примечание</b></font></p>
+Примечание</b></p>
 
-<p class="label"><font face="Arial"><a href="database_scheme.html">См. 
-также</a></font></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

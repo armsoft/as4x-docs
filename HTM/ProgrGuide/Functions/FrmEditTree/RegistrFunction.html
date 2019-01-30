@@ -4,89 +4,67 @@ title: "Текущее дерево/RegistrFunction"
 ---
 
 
-<p><strong><font size="4" face="Arial">Метод RegistrFunction<br>
+<p><strong>Метод RegistrFunction<br>
 <a href="RegistrNode.html"><br>
-</font></strong><font face="Arial">См. также</a>&nbsp; <a
-href="../../Examples/E_FrmEditTree_RegistrFunction.html">Пример</a>&nbsp; <a
-href="../FrmEditTree.html">Применяется к</a></font></p>
+</strong>См. также</a>&nbsp; <a href="../../Examples/E_FrmEditTree_RegistrFunction.html">Пример</a>&nbsp; <a href="../FrmEditTree.html">Применяется к</a></p>
 
-<p><font face="Arial">Добавляет в контекстное меню вызов 
-пользовательской функции.</font></p>
+<p>Добавляет в контекстное меню вызов пользовательской функции.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><em>object</em><strong>.RegistrFunction</strong>(<em>Caption,
+<p><em>object</em><strong>.RegistrFunction</strong>(<em>Caption,
 </em>[<em>RunSub</em>]<em>, </em>[<em>AccessCode</em>]<em>, </em>[<em>ParentId</em>]<em>,
 </em>[<em>ECaption</em>]<em>,
-</em>[<em>FuncParam</em>])</font></p>
+</em>[<em>FuncParam</em>])</p>
 
-<p><font face="Arial">Синтаксис метода <strong>RegistrFunction</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода <strong>RegistrFunction</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>object</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, являющееся 
-	ссылкой на форму прокрутки деревьев-справочников</font></td>
+    <td><em>object</em></td>
+    <td>строковое выражение, являющееся ссылкой на форму прокрутки деревьев-справочников</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>Caption</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее заголовок строки добавляемой в контекстное меню. Значение &quot;-&quot; 
-	данного выражения означает добавление в меню, разделительной линии.</font></td>
+    <td><em>Caption</em></td>
+    <td>строковое выражение, определяющее заголовок строки добавляемой в контекстное меню. Значение &quot;-&quot; данного выражения означает добавление в меню, разделительной линии.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>RunSub</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее имя процедуры, вызываемой при выборе данной строчки 
-	в контекстном меню. Если данный параметр не задан, то в контекстное меню 
-	добавляется разделитель.</font></td>
+    <td><em>RunSub</em></td>
+    <td>необязательное строковое выражение, определяющее имя процедуры, вызываемой при выборе данной строчки в контекстном меню. Если данный параметр не задан, то в контекстное меню добавляется разделитель.</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%"><font face="Arial"><em>AccessCode</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее идентификаторы рабочих мест на которых срабатывает 
-	данный вызов. При перечислении нескольких идентификаторов АРМ-ов они 
-	отделяются друг от друга символами &quot;;&quot;. Для пользователя, имеющего доступ 
-	хотя бы к одному из перечисленных АРМ-ов, данная функция будет доступна из 
-	всех АРМ-ов (даже не перечисленных!), где данное дерево существует.</font></td>
+    <td><em>AccessCode</em></td>
+    <td>необязательное строковое выражение, определяющее идентификаторы рабочих мест на которых срабатывает данный вызов. При перечислении нескольких идентификаторов АРМ-ов они отделяются друг от друга символами &quot;;&quot;. Для пользователя, имеющего доступ хотя бы к одному из перечисленных АРМ-ов, данная функция будет доступна из всех АРМ-ов (даже не перечисленных!), где данное дерево существует.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>ParentId</em></font></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее ссылку <a
-    href="RegistrNode.html">на идентификатор вышестоящего подменю</a> контекстных 
-	вызовов.</font></td>
+    <td><em>ParentId</em></td>
+    <td>необязательное строковое выражение, определяющее ссылку <a href="RegistrNode.html">на идентификатор вышестоящего подменю</a> контекстных вызовов.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>ЕCaption</em></font></td>
-    <td width="79%"><font face="Arial">необязательное строковое 
-	выражение, определяющее запись добавляемой в контекстное меню строки на 
-	иностранном языке. По умолчанию значение равно <em>Caption.</em></font></td>
+    <td><em>ЕCaption</em></td>
+    <td>необязательное строковое выражение, определяющее запись добавляемой в контекстное меню строки на иностранном языке. По умолчанию значение равно <em>Caption.</em></td>
     </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>FuncParam</em></font></td>
-    <td width="79%"><font face="Arial">необязательное выражение типа 
-        Variant, определяющее параметр для процедуры заданной параметром <em>RunSub.</em></font></td>
+    <td><em>FuncParam</em></td>
+    <td>необязательное выражение типа Variant, определяющее параметр для процедуры заданной параметром <em>RunSub.</em></td>
   </tr>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><font face="Arial">Данный метод должен быть вызван в 
-обработчике системного события
-<a href="../../ScriptProcs/FunctionsTree.html">Functions</a>. Процедура, 
-срабатывающая при вызове должна быть описана в скриптовой части <a href="../../Defs/Tree.html">
-описания дерева</a>, где используется данный метод.</font></p>
+<p>Данный метод должен быть вызван в обработчике системного события
+<a href="../../ScriptProcs/FunctionsTree.html">Functions</a>. Процедура, срабатывающая при вызове должна быть описана в скриптовой части <a href="../../Defs/Tree.html">
+описания дерева</a>, где используется данный метод.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>

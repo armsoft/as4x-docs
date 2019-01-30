@@ -7,15 +7,11 @@ title: "Диалоговое окно"
 
 
 
-<p><strong><font size="3" face="Arial">Пример методов </font><font
-face="Arial">SetFocus, Show и свойств Cancel, Caption, 
-ClickDropDownEvent, Control, ExistControl, Name, Properties, ReadOnly, Value</font></strong></p>
+<p><strong>Пример методов SetFocus, Show и свойств Cancel, Caption, ClickDropDownEvent, Control, ExistControl, Name, Properties, ReadOnly, Value</strong></p>
 
-<p><font face="Arial">В примере вызывается функция LoadDialog, через 
-xDialog возвращается ссылка на обьект типа описательный диалог со всеми его 
-свойствами и методами.</font></p>
+<p>В примере вызывается функция LoadDialog, через xDialog возвращается ссылка на обьект типа описательный диалог со всеми его свойствами и методами.</p>
 
-<p><font face="Arial">Set xDialog = LoadDialog(&quot;DataName&quot;)<br>
+<p>Set xDialog = LoadDialog(&quot;DataName&quot;)<br>
 xDialog.<strong>Caption</strong> = &quot;Укажите дату&quot;<br>
 if xDialog.<strong>ExistControl(&quot;</strong>DialogName<strong>&quot;) </strong>then<br>
 &nbsp;&nbsp;&nbsp; xDialog.<strong>Control</strong>(&quot;DialogName&quot;).Text=xDialog.<strong>Name</strong><br>
@@ -32,6 +28,6 @@ Set objProperties=xDialog.<strong>Properties</strong><br>
 if xDialog.<strong>Cancel</strong> then<br>
 &nbsp;&nbsp; exit sub<br>
 end if&nbsp;&nbsp;&nbsp; <br>
-</font></p>
+</p>
 
 

@@ -7,152 +7,141 @@ title: "Таблица HI2"
 
 
 
-<h1><font size="4" face="Arial">Таблица HI2</font></h1>
+<h1>Таблица HI2</h1>
 
-<p><font face="Arial">Таблица истории учетов и аккумулирующих 
-объектов.<br>
-</font></p>
+<p>Таблица истории учетов и аккумулирующих объектов.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата операции</font></td>
+    <td>fDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>дата операции</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTYPE</font></td>
-    <td width="20%"><font face="Arial">char (2)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код типа учета</font></td>
+    <td>fTYPE</td>
+    <td>char (2)</td>
+    <td>NOT NULL</td>
+    <td>код типа учета</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fOBJECT</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN объекта над которым ведется 
-	данный учет</font></td>
+    <td>fOBJECT</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN объекта над которым ведется данный учет</td>
   </tr>
   <tr>
-    <td width="20%">fGLACC</td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN аккумулирующего объекта</font></td>
+    <td>fGLACC</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN аккумулирующего объекта</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUM</font></td>
-    <td width="20%"><font face="Arial">money</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">сумма в НДЕ</font></td>
+    <td>fSUM</td>
+    <td>money</td>
+    <td>NOT NULL</td>
+    <td>сумма в НДЕ</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCUR</font></td>
-    <td width="20%"><font face="Arial">char (3)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код валюты</font></td>
+    <td>fCUR</td>
+    <td>char (3)</td>
+    <td>NOT NULL</td>
+    <td>код валюты</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCURSUM</font></td>
-    <td width="20%"><font face="Arial">money</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">сумма в валюте</font></td>
+    <td>fCURSUM</td>
+    <td>money</td>
+    <td>NOT NULL</td>
+    <td>сумма в валюте</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fOP</font></td>
-    <td width="20%"><font face="Arial">char (3)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">код операции из данного учета</font></td>
+    <td>fOP</td>
+    <td>char (3)</td>
+    <td>NOT NULL</td>
+    <td>код операции из данного учета</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fBASE</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN документа основания</font></td>
+    <td>fBASE</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN документа основания</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fDBCR</font></td>
-    <td width="20%"><font face="Arial">char (1)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дебет или кредит?</font></td>
+    <td>fDBCR</td>
+    <td>char (1)</td>
+    <td>NOT NULL</td>
+    <td>дебет или кредит?</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fADB</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN дебетового синтетического 
-	счета</font></td>
+    <td>fADB</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN дебетового синтетического счета</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fACR</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">ISN кредитового синтетического 
-	счета</font></td>
+    <td>fACR</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>ISN кредитового синтетического счета</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSPEC</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">специальная строка, для чего 
-	угодно</font></td>
+    <td>fSPEC</td>
+    <td>varchar (255)</td>
+    <td>NOT NULL</td>
+    <td>специальная строка, для чего угодно</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя, 
-	породившего данную строку</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя, породившего данную строку</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fTRANS</font></td>
-    <td width="20%"><font face="Arial">int</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">номер транзакции, в которую 
-	входит данная проводка</font></td>
+    <td>fTRANS</td>
+    <td>int</td>
+    <td>NOT NULL</td>
+    <td>номер транзакции, в которую входит данная проводка</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iHI21</font></td>
-    <td width="33%"><font face="Arial">CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fTYPE, fOBJECT, </font>fGLACC,<font face="Arial">
-      fDATE</font></td>
+    <td>iHI21</td>
+    <td>CLUSTERED</td>
+    <td>fTYPE, fOBJECT, fGLACC, fDATE</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iHI22</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fBASE, fTRANS</font></td>
+    <td>iHI22</td>
+    <td>&nbsp;</td>
+    <td>fBASE, fTRANS</td>
   </tr>
   <tr>
-    <td width="33%"><font face="Arial">iHI23</font></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%"><font face="Arial">fTYPE, fDATE</font></td>
+    <td>iHI23</td>
+    <td>&nbsp;</td>
+    <td>fTYPE, fDATE</td>
   </tr>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

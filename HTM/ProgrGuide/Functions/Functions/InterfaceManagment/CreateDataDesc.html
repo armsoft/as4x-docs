@@ -4,58 +4,52 @@ title: "CreateDataDesc"
 ---
 
 
-<h1><font size="4" face="Arial">Функция CreateDataDesc<br>
-</font><a href="../../AsDataDesc.html">
-    <font face="Arial" size="3">
+<h1>Функция CreateDataDesc<br>
+<a href="../../AsDataDesc.html">
+    
         <strong>
             свойства&nbsp;&nbsp; методы
         </strong>
-    </font>
+    
 </a></h1>
 
-<p><font face="Arial">Создает объект типа динамический источник данных. Данная 
-    функция служит для создания динамических данных, значения которых не сохраняются в базе данных.</font></p>
+<p>Создает объект типа динамический источник данных. Данная функция служит для создания динамических данных, значения которых не сохраняются в базе данных.</p>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>set</strong> <em>sDynDataDesc</em><strong> 
-= CreateDataDesc</strong></font></p>
+<p><strong>set</strong> <em>sDynDataDesc</em><strong> = CreateDataDesc</strong></p>
 
-<p><font face="Arial">Синтаксис функции <strong>CreateDataDesc</strong></b>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>CreateDataDesc</strong></b>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><em><font face="Arial">sDynDataName</font></em></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее переменную, ссылающуюся на экземпляр объекта динамического источника данных.</font></td>
+  <tr>
+    <td><em>sDynDataName</em></td>
+    <td>строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта динамического источника данных.</td>
   </tr>
 </table>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="../../../constructors.html"><font face="Arial">
-См. также</font></a></p>
+<p><a href="../../../constructors.html">
+См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p><strong><font face="Arial" size="3">Пример функции </font><font
-face="Arial">Create</font><font face="Arial" size="3">Dialog</font></strong></p>
+<p><strong>Пример функции CreateDialog</strong></p>
 
-<p><font face="Arial">В примере вызывается функция CreateDataDesc, через 
-sDynDataDesc возвращается ссылка на обьект типа динамический источник данных со всеми его свойствами и 
-методами. </font></p>
+<p>В примере вызывается функция CreateDataDesc, через sDynDataDesc возвращается ссылка на обьект типа динамический источник данных со всеми его свойствами и методами. </p>
 
-<p><font face="Arial"><br>
+<p><br>
 Dim sDynDataDesc as AsDataDesc<br>
 Dim xView As AsView<br>
 Set sDynDataDesc = <strong>CreateDataDesc</strong><br>
@@ -66,4 +60,4 @@ sDynDataDesc.<a href="../../AsDataDesc/AddColumn_DDesc.html">AddColumn</a>(&quot
 sDynDataDesc.<a href="../../AsDataDesc/SQL_DDesc.html">SQL</a> = &quot;Select fCODE from Table&quot;<br>
 Set xView  = <strong>CreateDynamicView(sDynDataDesc)</strong><br>
 Browse(xView)<br>
-</font></p>
+</p>

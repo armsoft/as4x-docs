@@ -7,33 +7,24 @@ title: "OnOpen"
 
 
 
-<p><font face="Arial"><strong><font size="3">Пример события </font>
-OnOpen</strong></font></p>
+<p><strong>Пример события OnOpen</strong></p>
 
-<p><font face="Arial">Ниже приведен фрагмент из <a
-href="../Defs/Data.html">описания источника данных</a> с примером обработчика 
-события <strong>OnOpen</strong>, в которой глобальным скриптовым переменным 
-StartD и EndD присваиваются значения параметров источника данных. Переменные 
-один раз получив значения, используются многократно в событии <a
-href="../ScriptProcs/OnEachRow.html">OnEachRow</a>.</font></p>
+<p>Ниже приведен фрагмент из <a href="../Defs/Data.html">описания источника данных</a> с примером обработчика события <strong>OnOpen</strong>, в которой глобальным скриптовым переменным StartD и EndD присваиваются значения параметров источника данных. Переменные один раз получив значения, используются многократно в событии <a href="../ScriptProcs/OnEachRow.html">OnEachRow</a>.</p>
 
-<p><font face="Arial">SCRIPT {<br>
+<p>SCRIPT {<br>
 Dim StartD, EndD<br>
 .......<br>
 Sub OnOpen()<br>
-&nbsp;&nbsp;&nbsp; StartD = DS.<a href="../Functions/ASDATA/Parameters.html">Parameters</a>(4) 
-&#39;taking date parameter<br>
+&nbsp;&nbsp;&nbsp; StartD = DS.<a href="../Functions/ASDATA/Parameters.html">Parameters</a>(4) &#39;taking date parameter<br>
 &nbsp;&nbsp;&nbsp; EndD = DS.Parameters(5)<br>
 End Sub<br>
 ........<br>
 Sub OnEachRow() <br>
 &nbsp;&nbsp;&nbsp;&nbsp; call <a href="../Functions/Functions/AccManagement/GetTurnFull.html">
 GetTurnFull</a>(&quot;02&quot;, DS(&quot;fISN&quot;), StartD, EndD, _ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DbTurn, DbTurnAMD, 
-CrTurn, CrTurnAMD, _<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Remd, RemdAMD,StartRemd, 
-StartRemdAMD)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DbTurn, DbTurnAMD, CrTurn, CrTurnAMD, _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Remd, RemdAMD,StartRemd, StartRemdAMD)<br>
 End Sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-};</font></p>
+};</p>
 
 

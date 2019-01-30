@@ -4,70 +4,57 @@ title: "Param"
 ---
 
 
-<p><strong><font size="4" face="Arial">Свойство Param</font></strong></p>
+<p><strong>Свойство Param</strong></p>
 
-<p><font face="Arial">Возвращает или устанавливает значение указанного 
-параметра.</font></p>
+<p>Возвращает или устанавливает значение указанного параметра.</p>
 
-<p><font face="Arial">Возвращаемое значение - типа Variant. Свойство 
-для чтения и записи.</font></p>
+<p>Возвращаемое значение - типа Variant. Свойство для чтения и записи.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>Param</strong>(<em>sParId</em>)[=<em>sValue</em>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</font></p>
+<p><strong>Param</strong>(<em>sParId</em>)[=<em>sValue</em>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-<p><font face="Arial">Синтаксис свойства <b>Param</b>
-состоит из следующих частей:</font></p>
+<p>Синтаксис свойства <b>Param</b>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
-  </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>sParId</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее код параметра из таблицы <a href="../../../Database/Params.html">
-	PARAMS</a>.</font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>sValue</em></font></td>
-    <td width="71%"><font face="Arial">подставляемое значение 
-	параметра, строковое выражение типа Variant </font></td>
+    <td><em>sParId</em></td>
+    <td>строковое выражение, определяющее код параметра из таблицы <a href="../../../Database/Params.html">
+	PARAMS</a>.</td>
+  </tr>
+  <tr>
+    <td><em>sValue</em></td>
+    <td>подставляемое значение параметра, строковое выражение типа Variant </td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><b><font face="Arial">Примечание &nbsp;</font></b></p>
+<p><b>Примечание &nbsp;</b></p>
 
-<p class="label"><font face="Arial">Если параметр является перманентно 
-загруженным в память, то он приводится из памяти, в противном случае из таблицы. 
-Пользователе-зависимые параметры приводятся со значением для текущего 
-пользователя. При попытке присвоения&nbsp;&nbsp; значения не существующему 
-параметру, будет выведено сообщение об ошибке. Если подставляемое значение 
-параметра не соответствует определению его типа, то будет сгенерирована ошибка. 
-При присвоении нового значения перманентно загруженному параметру, его значение 
-изменяется только в памяти, но не в базе (см. <a href="SetParam.html">SetParam</a>).</font></p>
+<p>Если параметр является перманентно загруженным в память, то он приводится из памяти, в противном случае из таблицы. Пользователе-зависимые параметры приводятся со значением для текущего пользователя. При попытке присвоения&nbsp;&nbsp; значения не существующему параметру, будет выведено сообщение об ошибке. Если подставляемое значение параметра не соответствует определению его типа, то будет сгенерирована ошибка. При присвоении нового значения перманентно загруженному параметру, его значение изменяется только в памяти, но не в базе (см. <a href="SetParam.html">SetParam</a>).</p>
 
-<p class="label"><a href="../../../Database/Params.html"><font face="Arial">
-См. также</font></a></p>
+<p><a href="../../../Database/Params.html">
+См. также</a></p>
 
 <p>&nbsp;</p>
 
-<h1><font size="3" face="Arial"><strong>Пример свойства Param</strong></font></h1>
+<h1><strong>Пример свойства Param</strong></h1>
 
-<p><font face="Arial">Выводится значение параметра SYSISN и 
-присваивается переменной ISNValue типа Variant.</font></p>
+<p>Выводится значение параметра SYSISN и присваивается переменной ISNValue типа Variant.</p>
 
-<p><font face="Arial">ISNValue=Param(&quot;SYSISN&quot;)</font></p>
+<p>ISNValue=Param(&quot;SYSISN&quot;)</p>
 
-<p><font face="Arial">Изменяется значение параметра CliCod 
-целочисленного типа.</font></p>
+<p>Изменяется значение параметра CliCod целочисленного типа.</p>
 
-<p><font face="Arial">Param(&quot;CliCod&quot;)=256</font></p>
+<p>Param(&quot;CliCod&quot;)=256</p>

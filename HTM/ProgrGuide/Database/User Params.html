@@ -7,71 +7,66 @@ title: "Таблица USERPARAMS"
 
 
 
-<h1><font size="4" face="Arial">Таблица <span lang="ru">USER</span>PARAMS</font></h1>
+<h1>Таблица USERPARAMS</h1>
 
-<p><font face="Arial">Таблица тех параметров, которые имеþт разрез по 
-пользователям.<br>
-</font></p>
+<p>Таблица тех параметров, которые имеþт разрез по пользователям.<br>
+</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="20%"><font face="Arial"><b>Поле</b></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Тип 
-	данных</strong></font></td>
-    <td class="label" width="20%"><font face="Arial"><strong>Null</strong></font></td>
-    <td class="label" width="40%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Поле</b></td>
+    <td><strong>Тип данных</strong></td>
+    <td><strong>Null</strong></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fPARID</font></td>
-    <td width="20%"><font face="Arial">char (12)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор параметра
-    </font></td>
+    <td>fPARID</td>
+    <td>char (12)</td>
+    <td>NOT NULL</td>
+    <td>идентификатор параметра
+    </td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fSUID</font></td>
-    <td width="20%"><font face="Arial">smallint</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">идентификатор пользователя</font></td>
+    <td>fSUID</td>
+    <td>smallint</td>
+    <td>NOT NULL</td>
+    <td>идентификатор пользователя</td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fVALUE</font></td>
-    <td width="20%"><font face="Arial">varchar (255)</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">значение параметра </font></td>
+    <td>fVALUE</td>
+    <td>varchar (255)</td>
+    <td>NOT NULL</td>
+    <td>значение параметра </td>
   </tr>
   <tr>
-    <td width="20%"><font face="Arial">fCHANGEDATE</font></td>
-    <td width="20%"><font face="Arial">smalldatetime</font></td>
-    <td width="20%"><font face="Arial">NOT NULL</font></td>
-    <td width="40%"><font face="Arial">дата последней модификации 
-	параметра</font></td>
+    <td>fCHANGEDATE</td>
+    <td>smalldatetime</td>
+    <td>NOT NULL</td>
+    <td>дата последней модификации параметра</td>
   </tr>
 </TBODY>
 </table>
 
-<p class="label"><font face="Arial"><b><br>
-Индекс</b></font></p>
+<p><b><br>
+Индекс</b></p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
-  <tr vAlign="top">
-    <td class="label" width="33%"><font face="Arial"><b>Имя индекса</b></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Тип </strong></font></td>
-    <td class="label" width="33%"><font face="Arial"><strong>Имя 
-	столбцов</strong></font></td>
+  <tr>
+    <td><b>Имя индекса</b></td>
+    <td><strong>Тип </strong></td>
+    <td><strong>Имя столбцов</strong></td>
   </tr>
   <tr>
-    <td width="33%">i_USERPARAMS</td>
-    <td width="33%"><font face="Arial">UNIQUE,CLUSTERED</font></td>
-    <td width="33%"><font face="Arial">fPARID, fSUID</font></td>
+    <td>i_USERPARAMS</td>
+    <td>UNIQUE,CLUSTERED</td>
+    <td>fPARID, fSUID</td>
   </tr>
   </table>
 
-<p class="label"><font face="Arial"><b><br>
-Примечание</b></font></p>
+<p><b><br>
+Примечание</b></p>
 
-<p class="label"><a href="database_scheme.html"><font face="Arial">См. 
-также</font></a></p>
+<p><a href="database_scheme.html">См. также</a></p>
 
 

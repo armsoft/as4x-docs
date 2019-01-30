@@ -4,78 +4,65 @@ title: "Диалог/AddMemoControl"
 ---
 
 
-<p><strong><font size="4" face="Arial">Метод AddMemoControl<br>
+<p><strong>Метод AddMemoControl<br>
 <br>
-</font></strong><font face="Arial"><a href="../Asustpar.html">См. также</a>&nbsp;
+</strong><a href="../Asustpar.html">См. также</a>&nbsp;
 <a href="../../Examples/E_AsUstPar.html">Пример</a>&nbsp; <a href="../Asustpar.html">
-Применяется к</a></font></p>
+Применяется к</a></p>
 
-<p><font face="Arial">Добавляет мемо-поле в пользовательский 
-диалог.</font></p>
+<p>Добавляет мемо-поле в пользовательский диалог.</p>
     <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксисс</b></font></p>
+<p><b>Синтаксисс</b></p>
 
-<p><font face="Arial"><strong>call</strong> <em>object</em>.<strongAddMemoControl(</strong><em>memoName, 
-    memoCaption, memoWidth, memoHeight, [memoECaption], [memoValue], [memoAtribut], [saveValue]</em>
-)</font></p>
+<p><strong>call</strong> <em>object</em>.<strongAddMemoControl(</strong><em>memoName, memoCaption, memoWidth, memoHeight, [memoECaption], [memoValue], [memoAtribut], [saveValue]</em>
+)</p>
 
-<p><font face="Arial">Синтаксис метода  <strong>AddMemoControl</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис метода  <strong>AddMemoControl</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">object</font></em></td>
-    <td width="71%"><font face="Arial"строковое выражение, 
-	определяющее переменную, ссылающуюся на экземпляр объекта пользовательского 
-	диалога.</font></td>
+    <td><em>object</em></td>
+    <td>строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта пользовательского диалога.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>memoName</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее идентификатор мемо-поля в диалоге.</font></td>
+    <td><em>memoName</em></td>
+    <td>строковое выражение, определяющее идентификатор мемо-поля в диалоге.</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>memoCaptionn</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, 
-	определяющее заголовок мемо-поля в диалоге.</font></td>
+    <td><em>memoCaptionn</em></td>
+    <td>строковое выражение, определяющее заголовок мемо-поля в диалоге.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">memoWidthh</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, определяющее ширину мемо-поля в пикселях. </font></td>
+    <td><em>memoWidthh</em></td>
+    <td>численное выражение, определяющее ширину мемо-поля в пикселях. </td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%"><em><font face="Arial">memoHeight</font></em></td>
-    <td width="71%"><font face="Arial">численное выражение, определяющее высоту мемо-поля 
-        в пикселях. </td>
+    <td><em>memoHeight</em></td>
+    <td>численное выражение, определяющее высоту мемо-поля в пикселях. </td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">memoECaptionn</font></em></td>
-    <td width="71%"><font face="Arial">необязательное строковое выражение, определяющее 
-        заголовок мемо-поля на иностранном языке.</font></td>
+    <td><em>memoECaptionn</em></td>
+    <td>необязательное строковое выражение, определяющее заголовок мемо-поля на иностранном языке.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">memoValue</font></em></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее исходное значение мемо-поля.</font></td>
+    <td><em>memoValue</em></td>
+    <td>необязательное строковое выражение, определяющее исходное значение мемо-поля.</td>
   </tr>
   <tr>
-    <td width="29%"><em><font face="Arial">memoAtributt</font></em></td>
-    <td width="71%"><font face="Arial">необязательное строковое 
-	выражение, определяющее   <a href="Attribute.html">атрибуты</a мемо-поля.</td>
+    <td><em>memoAtributt</em></td>
+    <td>необязательное строковое выражение, определяющее   <a href="Attribute.html">атрибуты</a мемо-поля.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><emsaveValuee</em></font></td>
-    <td width="71%"><font face="Arial">необязательное численное 
-	выражение, определяющее признак запоминания значений мемо-поля. При 1 - 
-	текущее значение запоминается в реестре, а при значении 0 - нет. 
-	По умолчанию принимает значение 1.</td>
+    <td><emsaveValuee</em></td>
+    <td>необязательное численное выражение, определяющее признак запоминания значений мемо-поля. При 1 - текущее значение запоминается в реестре, а при значении 0 - нет. По умолчанию принимает значение 1.</td>
     </tr>
     </table>
 

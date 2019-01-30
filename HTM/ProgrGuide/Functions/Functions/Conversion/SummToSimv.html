@@ -4,88 +4,71 @@ title: "SummToSimv"
 ---
 
 
-<p><strong><font size="4" face="Arial">Функция SummToSimv</font></strong></p>
+<p><strong>Функция SummToSimv</strong></p>
 
-<p><font face="Arial">Расчитывает и возвращает сумму прописью, в виде 
-одномерного массива с элементами заданной ширины.</font></p>
+<p>Расчитывает и возвращает сумму прописью, в виде одномерного массива с элементами заданной ширины.</p>
 
-<p><font face="Arial">Возвращает строку.</font></p>
+<p>Возвращает строку.</p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>SummToSimv</strong>(<em>curSumm</em> [<em>,intDlina</em>] 
-[<em>,strBigCur</em>] [<em>,strSmallCur</em>] [<em>,intLanguage</em>] [<em>,bUpperCase</em>])<br>
-</font></p>
+<p><strong>SummToSimv</strong>(<em>curSumm</em> [<em>,intDlina</em>] [<em>,strBigCur</em>] [<em>,strSmallCur</em>] [<em>,intLanguage</em>] [<em>,bUpperCase</em>])<br>
+</p>
 
-<p><font face="Arial">Синтаксис функции <strong>SummToSimv</strong>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>SummToSimv</strong>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
-  </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>curSumm</em></font></td>
-    <td width="71%"><font face="Arial">выражение типа Variant, 
-	расчитываемая сумма</font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>intDlina</em></font></td>
-    <td width="71%"><font face="Arial">необязательный параметр типа 
-	Variant, максимальная длина строк возвращаемого массива. Если не задан, то 
-	принимается значение по умолчанию 60. </font></td>
+    <td><em>curSumm</em></td>
+    <td>выражение типа Variant, расчитываемая сумма</td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>strBigCur</em></font></td>
-    <td width="71%"><font face="Arial">необязательный параметр типа 
-	Variant, символьное значение денежной единицы (руб.). Если не задан, то 
-	принимается значение по умолчанию &quot;Dram&quot;. </font></td>
+    <td><em>intDlina</em></td>
+    <td>необязательный параметр типа Variant, максимальная длина строк возвращаемого массива. Если не задан, то принимается значение по умолчанию 60. </td>
   </tr>
   <tr>
-    <td width="29%"><font face="Arial"><em>strSmallCur</em></font></td>
-    <td width="71%"><font face="Arial">необязательный параметр типа 
-	Variant, символьное значение разменной денежной единицы (коп.). Если не 
-	задан, то принимается значение по умолчанию &quot;Luma&quot;.</font></td>
+    <td><em>strBigCur</em></td>
+    <td>необязательный параметр типа Variant, символьное значение денежной единицы (руб.). Если не задан, то принимается значение по умолчанию &quot;Dram&quot;. </td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"><em>intLanguage</em></font></td>
-    <td width="71%"><font face="Arial">необязательный параметр типа 
-	Variant, вариант языка, пока есть русский, армянский. Если не задан, то 
-	принимается значение по умолчанию 1 - армянский.</font></td>
+  <tr>
+    <td><em>strSmallCur</em></td>
+    <td>необязательный параметр типа Variant, символьное значение разменной денежной единицы (коп.). Если не задан, то принимается значение по умолчанию &quot;Luma&quot;.</td>
+  </tr>
+  <tr>
+    <td><em>intLanguage</em></td>
+    <td>необязательный параметр типа Variant, вариант языка, пока есть русский, армянский. Если не задан, то принимается значение по умолчанию 1 - армянский.</td>
   </tr>
 </TBODY>
   <tr>
-    <td width="29%"><font face="Arial"><em>bUpperCase</em></font></td>
-    <td width="71%"><font face="Arial">необязательный параметр 
-	логического типа, определяющий признак возврата начальной буквы первого 
-	слова в верхнем регистре. Если не задан, то принимается значение по 
-	умолчанию True - начальная буква первого слова выводится в верхнем регистре. </font></td>
+    <td><em>bUpperCase</em></td>
+    <td>необязательный параметр логического типа, определяющий признак возврата начальной буквы первого слова в верхнем регистре. Если не задан, то принимается значение по умолчанию True - начальная буква первого слова выводится в верхнем регистре. </td>
   </tr>
 </table>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><font face="Arial">Эту функцию удобно использовать в 
-первичных печатных документах.</font></p>
+<p>Эту функцию удобно использовать в первичных печатных документах.</p>
 
-<p class="label"><a href="DateToSimv.html"><font face="Arial">См. также</font></a></p>
+<p><a href="DateToSimv.html">См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<h1><font size="3" face="Arial"><strong>Пример функции SummToSimv</strong></font></h1>
+<h1><strong>Пример функции SummToSimv</strong></h1>
 
-<p><font face="Arial"><font size="3">Переменной </font>strprop 
-присваивается сумма прописью соответствующая числу intItog в виде массива.</font></p>
+<p>Переменной strprop присваивается сумма прописью соответствующая числу intItog в виде массива.</p>
 
-<p><font face="Arial">intItog = 25423</font></p>
+<p>intItog = 25423</p>
 
-<p><font face="Arial">strprop = SummToSimv(intItog, 60, &quot;Руб.&quot;, 
-&quot;Коп.&quot;, 1)</font></p>
+<p>strprop = SummToSimv(intItog, 60, &quot;Руб.&quot;, &quot;Коп.&quot;, 1)</p>
 
 <p>&nbsp;</p>

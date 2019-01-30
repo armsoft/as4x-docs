@@ -4,50 +4,45 @@ title: "CreateDynamicData"
 ---
 
 
-<h1><font size="4" face="Arial">Функция CreateDynamicData</font></h1>
+<h1>Функция CreateDynamicData</h1>
 
-<p><font face="Arial">Возвращает ссылку на программно созданный объект AsData. 
-    Объект создается по-динамическому описанию xDataDesc.</font></p>
+<p>Возвращает ссылку на программно созданный объект AsData. Объект создается по-динамическому описанию xDataDesc.</p>
 
-<p class="label"><font face="Arial"><b>Синтаксис</b></font></p>
+<p><b>Синтаксис</b></p>
 
-<p><font face="Arial"><strong>set</strong> <em>sData</em><strong> 
-= CreateDynamicData(</strong><em>DataDesc</em><strong>)</strong></font></p>
+<p><strong>set</strong> <em>sData</em><strong> = CreateDynamicData(</strong><em>DataDesc</em><strong>)</strong></p>
 
-<p><font face="Arial">Синтаксис функции <strong>CreateDynamicData</strong></b>
-состоит из следующих частей:</font></p>
+<p>Синтаксис функции <strong>CreateDynamicData</strong></b>
+состоит из следующих частей:</p>
 
 <table border="1" cellPadding="5" cols="2" frame="below" rules="rows">
 <TBODY>
-  <tr vAlign="top">
-    <td class="label" width="29%"><font face="Arial"><b>Параметр</b></font></td>
-    <td class="label" width="71%"><font face="Arial"><strong>Описание</strong></font></td>
+  <tr>
+    <td><b>Параметр</b></td>
+    <td><strong>Описание</strong></td>
   </tr>
-  <tr vAlign="top">
-    <td width="29%"><font face="Arial"> <em>sData</em><strong> </strong></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, являющееся ссылкой на&nbsp; 
-        экземпляр объекта источникa данных.</font></td>
+  <tr>
+    <td> <em>sData</em><strong> </strong></td>
+    <td>строковое выражение, являющееся ссылкой на&nbsp; экземпляр объекта источникa данных.</td>
   </tr>
     <tr>
-    <td width="29%"><font face="Arial"><em>DataDesc</em></font></td>
-    <td width="71%"><font face="Arial">строковое выражение, определяющее переменную, 
-        ссылающуюся на экземпляр объекта динамического источника данных</font></td>
+    <td><em>DataDesc</em></td>
+    <td>строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта динамического источника данных</td>
     </tr>
 </table>
 
 <p>&nbsp;</p>
 
-<p class="label"><font face="Arial"><b>Примечание</b></font></p>
+<p><b>Примечание</b></p>
 
-<p class="label"><a href="../../constructors.html"><font face="Arial">
-См. также</font></a></p>
+<p><a href="../../constructors.html">
+См. также</a></p>
 
-<p class="label">&nbsp;</p>
+<p>&nbsp;</p>
 
-<p><strong><font face="Arial" size="3">Пример функции <font size="4" face="Arial">
-    CreateDynamicData</font></font></strong></p>
+<p><strong>Пример функции CreateDynamicData</strong></p>
 
-<p><font face="Arial">
+<p>
     <br />
     Dim sData As AsData<br>
 Dim sDataDesc as AsDataDesc<br />
@@ -61,4 +56,4 @@ sDataDesc.<a href="../AsDataDesc/SQL_DDesc.html">SQL</a> = &quot;Select fCODE fr
 Set sData = <strong>CreateDynamicData</strong>
 <strong>(sDataDesc )<br />
     </strong><br>
-</font></p>
+</p>
