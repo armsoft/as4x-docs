@@ -7,11 +7,11 @@ title: "AsRefresher"
 
 |Հատկություններ|Նկարագրություն|
 |--|--|
-| [GotBreakSignal](AsRefresher/GotBreakSignal.html) | Հաշվարկման ընթացքի ընդհատման  ստեղնի սեղմված լինելու հատկանիշը։ 
-| [Response](AsRefresher/Response.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսը ընդհատման ստեղնի սեղմման արձագանքելու հատկանիշը։ |
-| [SignalChar](AsRefresher/SignalChar.html) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսի ընդհատման ստեղնի կոդը։|
+| [GotBreakSignal](AsRefresher/GotBreakSignal.md) | Հաշվարկման ընթացքի ընդհատման  ստեղնի սեղմված լինելու հատկանիշը։ |
+| [Response](AsRefresher/Response.md) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսը ընդհատման ստեղնի սեղմման արձագանքելու հատկանիշը։ |
+| [SignalChar](AsRefresher/SignalChar.md) | Վերադարձնում  կամ նշանակում է հաշվարկման պրոցեսի ընդհատման ստեղնի կոդը։|
 
 |Մեթոդներ|Նկարագրութհուն|
 |--|--|
-| [Refresh](AsRefresher/Refresh.html) | Վերանկարում է ծրագրի պատուհանը։ |
-| [ShowStatus](AsRefresher/ShowStatus.html) | Վիճակագոտում ցույց է տալիս հաղորդագրություն։ |
+| [Refresh](AsRefresher/Refresh.md) | Վերանկարում է ծրագրի պատուհանը։ |
+| [ShowStatus](AsRefresher/ShowStatus.md) | Վիճակագոտում ցույց է տալիս հաղորդագրություն։ |
