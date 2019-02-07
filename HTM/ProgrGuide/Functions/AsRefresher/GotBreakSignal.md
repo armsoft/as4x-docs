@@ -6,7 +6,7 @@ title: "AsRefresher/GotBreakSignal"
 
 # GotBreakSignal հատկություն
 
-[См. также](../Functions/InterfaceManagment/CreateRefresher.html) Օրինակ [Применяется к](../AsRefresher.md)</p>
+[См. также](../Functions/InterfaceManagment/CreateRefresher.html) Օրինակ [Применяется к](../AsRefresher.md)
 
 Հաշվարկման ընթացքի ընդհատման  ստեղնի սեղմված լինելու հատկանիշը:
 
