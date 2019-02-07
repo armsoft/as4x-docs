@@ -7,7 +7,7 @@ title: "Tree"
 
 |Հատկություններ|Նկարագրություն|
 |--|--|
-|[AllowAddNode](ASTree/AllowAddNode.ht) | Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։|
+|[AllowAddNode](ASTree/AllowAddNode.md) | Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։|
 |[AllowDelete](ASTree/AllowDelete.html) | Վերադարձնում է ծառից հանգույց ջնջելու թույլատվությունը։|
 |[AllowEdit](ASTree/AllowEdit.html) | Ծառի մեջ վերադարձնում է հանգույցի ճշգրտման թույլատվությունը։|
 |[AllowExport](ASTREE/AllowExport.html) | Վերադարձնում է ծառից հանգույց արտահանելու թույլատվությունը։|
