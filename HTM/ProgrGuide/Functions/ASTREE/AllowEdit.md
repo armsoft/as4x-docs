@@ -1,20 +1,20 @@
 ---
 layout: page
-title: "AsTree/AllowAddNode"
+title: "AsTree/AllowEdit"
 ---
 
-# AllowAddNode հատկություն 
+# AllowEdit հատկություն
 
 [См. также](../Astree.html) [Օրինակ](../../Examples/E_AsTree.html) [Применяется к](../Astree.md)
 
-Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։
+Ծառի մեջ վերադարձնում է հանգույցի խմբագրելու թույլատվությունը։ 
 
-Կարդալու հատկություն: 
+Կարդալու հատկություն:
 
 ## Շարահյուսություն
 
 ``` vb
-object.AllowAddNode
+object.AllowEdit 
 ```
 
 Բաղադրիչներն են՝
@@ -23,6 +23,7 @@ object.AllowAddNode
 | Պարամետր | Նկարագրություն |
 |--|--|
 | object | Ծառի օբյեկտի հղում։ |
+
 
 ## Տվյալի տիպ
 
