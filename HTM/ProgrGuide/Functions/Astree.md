@@ -9,7 +9,7 @@ title: "Tree"
 |--|--|
 |[AllowAddNode](ASTree/AllowAddNode.md) | Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։|
 |[AllowDelete](ASTree/AllowDelete.html) | Վերադարձնում է ծառից հանգույց ջնջելու թույլատվությունը։|
-|[AllowEdit](ASTree/AllowEdit.html) | Ծառի մեջ վերադարձնում է հանգույցի ճշգրտման թույլատվությունը։|
+|[AllowEdit](ASTree/AllowEdit.html) | Ծառի մեջ վերադարձնում է հանգույցի խմբագրելու թույլատվությունը։|
 |[AllowExport](ASTREE/AllowExport.html) | Վերադարձնում է ծառից հանգույց արտահանելու թույլատվությունը։|
 |[AllowSelectNonDoc](ASTREE/AllowSelectNonDoc.html) | Վերադարձնում է ոչ փաստաթղթային հանգույցների ընտրության թույլատվությունը ծառ-տեղեկատուից։|
 |[AllowView](ASTREE/AllowView.html) | Վերադարձնում է ծառի հանգույցը դիտելու թույլատվությունը: |
