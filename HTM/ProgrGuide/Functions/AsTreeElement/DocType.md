@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsTree Element/DocType"
+title: "AsTreeElement/DocType"
 ---
 # DocType հատկություն
 
