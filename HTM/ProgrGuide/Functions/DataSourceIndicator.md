@@ -15,4 +15,4 @@ title: "DataSourceIndicator"
 |Մեթոդներ|Նկարագրություն|
 |--|--|
 |[Init](DataSourceIndicator/Init.html)| Կանչում է սկրիպտային ֆունկցիան նախաարժեվորման ժամանակ։ |
-|[Run](DataSourceIndicator/Run.html)| Սկսում է փոխանցվող տվյալների հաշվարկը։ |
+|[Run](DataSourceIndicator/Run.html)| Սկսում է փոխանցվող տվյալների աղբյուրի հաշվարկը։ |
