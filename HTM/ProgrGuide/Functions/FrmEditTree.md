@@ -18,7 +18,7 @@ title: "CurrentTree"
 | [Caption](FrmEditTree/Caption.html) | Վերադարձնում է ընթացիկ ծառի գլխագիրը։ |
 | [CurrentNode](FrmEditTree/CurrentNode.html) | Վերադարձնում է ընթացիկ հանգույցի տվյալները հատուկ  բազմության տեսքով։ |
 | [Node](FrmEditTree/Node.html) | Վերադարձնում է պահանջվող հանգույցը  հատուկ բազմության  տեսքով։ |
-| [NodesCount](FrmEditTree/NodesCount.html) | Ընթացիկ ծառում վերադարձնում է հանգույցնեի քանակը։ |
+| [NodesCount](FrmEditTree/NodesCount.html) | Ընթացիկ ծառում վերադարձնում է հանգույցների քանակը։ |
   
 | Մեթոդներ | Նկարագրություն |
 |--|--|
@@ -26,4 +26,4 @@ title: "CurrentTree"
 | [RefreshItem](FrmEditTree/RefreshItem.html) | Սկսելով նշված հանգույց, բազայից թարմացնում է ծառի ճյուղերը։ |
 | [RegistrFunction](FrmEditTree/RegistrFunction.html) | Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ |
 | [RegistrNode](FrmEditTree/RegistrNode.html) | Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։ |
-| [SelectItem](FrmEditTree/SelectItem.html) | Ծառի մեջ որոշում է ընտրված հանգույցը։ |
+| [SelectItem](FrmEditTree/SelectItem.html) |Ընթացիկ ծառի մեջ ընտրում է հանգույց։ |
