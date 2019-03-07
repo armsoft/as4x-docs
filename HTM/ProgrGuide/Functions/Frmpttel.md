@@ -37,7 +37,7 @@ tags: CurrentView
   
 | Մեթոդներ | Նկարագրություն |
 |--|--|
-| [ExistsColumn](FrmPttel/ExistsColumn.md) | Ստուգում է սյան առկայությունը ընթացիկ թղթապանակում ։ |
+| [ExistsColumn](FrmPttel/ExistsColumn.md) | Ստուգում է արդյոք սյունը երևում է ընթացիկ թղթապանակում։ |
 | [Go](FrmPttel/Go.md) | Տեղափոխում է նշորդը տրված բանալիով տողի վրա։ |
 | [HistoryItem](FrmPttel/HistoryItem.md) |  Բացում է ընթացիկ փաստաթղթի պատմության թղթապանակը։ |
 | [MoveFirst](FrmPttel/MoveFirst.md) | Նշորդը տեղափոխում է առաջին տողի վրա։ |
