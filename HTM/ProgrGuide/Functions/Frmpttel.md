@@ -1,68 +1,58 @@
 ---
 layout: page
-title: "Объект текущий вид просмотра"
+title: "CurrentView օբյեկտ "
 tags: CurrentView
 ---
-  <link rel="stylesheet" href="../../common.css" />
-    <style type="text/css">
-        .style1 {
-            height: 29px;
-        }
-    </style>
+# Դիտելու ձևի ընթացիկ օբյեկտ 
 
 
-
-
-  <h2>Объект текущий вид просмотра</h2>
-
-  <p>
-    Доступ к элементам текущей папки обеспечивается через функцию [CurrentView](Functions/InterfaceManagment/CurrentView.html).
-  </p>
+ընթացիկ թղթապանակի տարրերի հասանելի են դառնում [CurrentView](Functions/InterfaceManagment/CurrentView.html) ֆունկցիայի միջոցով։ 
+  
 
   
-| Свойства | Описание |
+| Հատկություններ | Նկարագրություն |
 |--|--|
-| [AllowAccess](ASVIEW/AllowAccess.html) | Возвращает или устанавливает разрешение на установку доступов к документам из текущего вида просмотра. |
-| [AllowDelete](AsView/AllowDelete.html) | Возвращает или устанавливает разрешение на удаление документа из текущего вида просмотра. |
-| [AllowEdit](AsView/AllowEdit.html) | Возвращает или устанавливает разрешение на корректировку документа из текущего вида просмотра. |
-| [AllowSecondEntry](ASVIEW/AllowSecondEntry.html) | Возвращает или устанавливает разрешение на вторичный ввод документа из текущего вида просмотра. |
-| [AllowView](ASVIEW/AllowView.html) | Возвращает или устанавливает разрешение на просмотр документа из текущего вида просмотра. |
-| [AllowVisa](ASVIEW/AllowVisa.html) | Возвращает или устанавливает разрешение на визирование документа из текущего вида просмотра. |
-| [BOF](FrmPttel/BOF.html) | Проверяет выполнение условия &quot;начало файла&quot; для текущей папки. |
-| [BookMark](FrmPttel/BookMark.html) | Возвращает уникальный ключ для текущей строки папки. |
-| [Caption](FrmPttel/Caption.html) | Возвращает заголовок текущего вида просмотра. |
-| [EOF](FrmPttel/EOF.html) | Проверяет выполнение условия &quot;конец файла&quot; для текущей папки. |
-| [NotGuarantedValue](FrmPttel/NotGuarantedValue.html) | Возвращает значение указанной колонки текущей строки в текущей папке. |
-| [Parameters](FrmPttel/Parameters.html) | Возвращает значения параметров, использованных при вызове текущей папки. |
-| [RowCount](FrmPttel/RowCount.html) | Возвращает количество строк в текущей папке. |
-| [Selected](FrmPttel/Selected.html) | Возвращает или устанавливает признак отмеченности текущей строки в папке. |
-| [SelectedCount](FrmPttel/SelectedCount.html) | Возвращает количество отмеченных строк в текущей папке. |
-| [Updated](FrmPttel/Updated.html) | Возвращает или устанавливает разрешение на обновление текущей папки. |
-| [Value](FrmPttel/Value.html) | Возвращает значение указанной <em>перманентной</em> колонки текущей строки в текущей папке. |
-| [ViewCode](FrmPttel/ViewCode.html) | Возвращает идентификатор базового вида просмотра для текущей папки. |
+| [AllowAccess](ASVIEW/AllowAccess.md) | Վերադարձնում կամ նշանակում է ընթացիկ  դիտելու ձևից փաստաթղթերի իրավասությունների նշանակելու հնարավորությունը։ |
+| [AllowDelete](AsView/AllowDelete.md) | Վերադարձնում կամ նշանակում է փաստաթուղթ հեռացնելու թույլտվությունը։ |
+| [AllowEdit](AsView/AllowEdit.md) | Վերադարձնում կամ նշանակում է փաստաթղթի խմբագրման թույլտվությունը։ |
+| [AllowSecondEntry](ASVIEW/AllowSecondEntry.md) | Վերադարձնում կամ նշանակում է փաստաթղթի կրկնակի մուտքագրման թույլտվությունը։ |
+| [AllowView](ASVIEW/AllowView.md) | Վերադարձնում կամ նշանակում է փաստաթուղթ դիտելու թույլտվություն։  |
+| [AllowVisa](ASVIEW/AllowVisa.md) | Վերադարձնում կամ նշանակում է փաստաթղթի վավերացման թույլտվություն։  |
+| [BOF](FrmPttel/BOF.md) | Ստուգում է ընթացիկ թղթապանակի նշորդի տողերի սկզբում գտնվելու պայմանը։ |
+| [BookMark](FrmPttel/BookMark.md) | Վերադարձնում է թղթապանակի ընթացիկ տողի  բանալին։  |
+| [Caption](FrmPttel/Caption.md) | Վերադարձնում է ընացիկ դիտելու ձևի գլխագիրը։ |
+| [EOF](FrmPttel/EOF.md) | Ստուգում է ընթացիկ թղթապանակի նշորդի տողերի վերջում գտնվելու պայմանը։ |
+| [NotGuarantedValue](FrmPttel/NotGuarantedValue.md) | Ընթացիկ թղթապանակում վերադարձնում է ընթացիկ տողի նշված վանդակի արժեքը, ներառյալ ոչ հավերժական սյուներից։ |
+| [Parameters](FrmPttel/Parameters.md) | Ընթացիկ թղթապանակի կանչի ժամանակ օգտագործված պարամետրերը։ |
+| [RowCount](FrmPttel/RowCount.md) | Վերադարձնում է տողերի քանակը ընթացիկ թղթապանակում։  |
+| [Selected](FrmPttel/Selected.md) | Վերադարձնում կամ նշանակում է նշորդի ցույց տված տողի ընտրված լինելը։ |
+| [SelectedCount](FrmPttel/SelectedCount.md) |Վերադարձնում է ընտրված տողերի քանակը։ |
+| [Updated](FrmPttel/Updated.md) | Վերադարձնում կամ նշանակում է ընթացիկ թղթապանակի թարմացված լինելը։ |
+| [Value](FrmPttel/Value.md) | Ընթացիկ թղթապանակում վերադարձնում է ընթացիկ տողի նշված վանդակի արժեքը, միայն հավերժական սյուների համար։ |
+| [ViewCode](FrmPttel/ViewCode.md) | Վերադարձնում է հիմքային դիտելու ձևի ներքին անունը կամ խմբի անունը։ |
 
 
-  <p>&nbsp;</p>
+
 
   
-| Методы | Описание |
+| Մեթոդներ | Նկարագրություն |
 |--|--|
-| [ExistsColumn](FrmPttel/ExistsColumn.html) | Возвращает наличие колонки в текущем виде просмотра. |
-| [Go](FrmPttel/Go.html) | Переводит указатель записи на строку с указанным значением ключа. |
-| [HistoryItem](FrmPttel/HistoryItem.html) | Показывает папку истории документа текущей строки. |
-| [MoveFirst](FrmPttel/MoveFirst.html) | Устанавливает указатель записи на первую строчку в текущей папке. |
-| [MoveFirstSelected](FrmPttel/MoveFirstSelected.html) | Устанавливает указатель записи на первую отмеченную строчку в текущей папке. |
-| [MoveLast](FrmPttel/MoveLast.html) | Устанавливает указатель записи на последнюю строчку в текущей папке. |
-| [MoveLastSelected](FrmPttel/MoveLastSelected.html) | Устанавливает указатель записи на последнюю отмеченную строчку в текущей папке. |
-| [MoveNext](FrmPttel/MoveNext.html) | Перемещает указатель записи на следующую строчку в текущей папке. |
-| [MoveNextSelected](FrmPttel/MoveNextSelected.html) | Перемещает указатель записи на следующую отмеченную строчку в текущей папке. |
-| [MovePrevious](FrmPttel/MovePrevious.html) | Перемещает указатель записи на предыдущую строчку в текущей папке. |
-| [MovePreviousSelected](FrmPttel/MovePreviousSelected.html) | Перемещает указатель записи на предыдущую отмеченную строчку в текущей папке. |
-| [RefreshItem](FrmPttel/RefreshItem.html) | Обновляет текущий вид просмотра. |
-| [RegistrFunction](FrmPttel/RegistrFunction.html) | Добавляет в контекстное меню вызов пользовательской функции. |
-| [RegistrDefaultFunction](FrmPttel/RegistrDefaultFunction.html) | Устанавливает функцию по умолчанию для контекстного меню. |
-| [RegistrNode](FrmPttel/RegistrNode.html) | Добавляет узел в дерево вызовов пользовательских функций. |
-| [Update](FrmPttel/Update.html) | Обновляет указанную строчку в текущей папке. |
+| [ExistsColumn](FrmPttel/ExistsColumn.md) | Ստուգում է սյան առկայությունը ընթացիկ թղթապանակում ։ |
+| [Go](FrmPttel/Go.md) | Տեղափոխում է նշորդը տրված բանալիով տողի վրա։ |
+| [HistoryItem](FrmPttel/HistoryItem.md) |  Բացում է ընթացիկ փաստաթղթի պատմության թղթապանակը։ |
+| [MoveFirst](FrmPttel/MoveFirst.md) | Նշորդը տեղափոխում է առաջին տողի վրա։ |
+| [MoveFirstSelected](FrmPttel/MoveFirstSelected.md) | Նշորդը տեղափոխում է առաջին ընտրված տողի վրա։  |
+| [MoveLast](FrmPttel/MoveLast.md) | Նշորդը տեղափոխում է վերջին տողի վրա։ |
+| [MoveLastSelected](FrmPttel/MoveLastSelected.md) |  Նշորդը տեղափոխում է վերջին ընտրված տողի վրա։ |
+| [MoveNext](FrmPttel/MoveNext.md) | Նշորրդը տեղափոխում է հաջորդ տող։  |
+| [MoveNextSelected](FrmPttel/MoveNextSelected.md) |Նշորրդը տեղափոխում է հաջորդ  ընտրված տող։ |
+| [MovePrevious](FrmPttel/MovePrevious.md) | Նշորդը տեղափոխում է նախորդ տող։ |
+| [MovePreviousSelected](FrmPttel/MovePreviousSelected.md) | Նշորդը տեղափոխում է նախորդ ընտրված տող։ |
+| [RefreshItem](FrmPttel/RefreshItem.md) | Ամբողջական թարմացնում է ընթացիկ դիտելու ձևը։ |
+| [RegistrFunction](FrmPttel/RegistrFunction.md) | Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ |
+| [RegistrDefaultFunction](FrmPttel/RegistrDefaultFunction.md) | Կենտեկստ մենյուի գործողությունների մեջ նշանակում է լռությամբ աշխատողը։|
+| [RegistrNode](FrmPttel/RegistrNode.md) | Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։ |
+| [Update](FrmPttel/Update.md) | Թարմացնում է նշված տողը։  |
 
 
 
