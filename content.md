@@ -178,7 +178,6 @@ title: Contents
     - [Свойство Structure](HTM/ProgrGuide/Functions/ASDOC/Structure.html)
     - [Свойство VisualFormAvailable](HTM/ProgrGuide/Functions/ASDOC/VisualFormAvailable.html)
     - [Метод Archived](HTM/ProgrGuide/Functions/ASDOC/Archived.html)
-    - [Метод ChangeISN](HTM/ProgrGuide/Functions/ASDOC/ChangeISN.html)
     - [Метод CheckAndStore](HTM/ProgrGuide/Functions/ASDOC/CheckAndStore.html)
     - [Метод CloseForm](HTM/ProgrGuide/Functions/ASDOC/Doc_CloseForm.html)
     - [Метод Confirm](HTM/ProgrGuide/Functions/ASDOC/Confirm.html)
