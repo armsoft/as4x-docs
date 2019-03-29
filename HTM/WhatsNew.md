@@ -103,7 +103,7 @@
 	<a href="ProgrGuide/Functions/AsFoldElement/Depart.html">Depart</a>,
 	<a href="ProgrGuide/Functions/AsFoldElement/ACSType.html">ACSType</a>.</li>
 	<li>Добавлен для грид-таблицы метод
-	<a href="ProgrGuide/Functions/ASDOC/AsGrid/Clear.html">Clear</a><strong>.</strong></li>
+	<a href="ProgrGuide/Functions/AsGrid/Clear.html">Clear</a><strong>.</strong></li>
 	<li>Добавлено для иерархического вспомогательнного списока свойство <a href="ProgrGuide/Functions/AsTreeModalBrowser/RootNode.html">
 	RootNode</a>.</li>
 	<li>Добавлен новый параметр в функцию
