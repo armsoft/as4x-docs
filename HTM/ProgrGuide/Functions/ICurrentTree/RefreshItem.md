@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "FrmEditTree/RefreshItem"
+title: "ICurrentTree/RefreshItem"
 ---
 # RefreshItem մեթոդ
 
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
  
 
 Սկսելով նշված հանգույց, բազայից թարմացնում է ծառի ճյուղերը։

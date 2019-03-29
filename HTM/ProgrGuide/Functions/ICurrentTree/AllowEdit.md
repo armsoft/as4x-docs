@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "FrmEditTree/AllowEdit"
+title: "ICurrentTree/AllowEdit"
 ---
   
 # AllowEdit հատկություն
  
-[См. также](../FrmEditTree.html) Օրինակ [Применяется к](../FrmEditTree.html)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
   
 Վերադարձնում է ընթացիկ ծառում փաստաթղթի խմբագրման թույլտվություն։
  

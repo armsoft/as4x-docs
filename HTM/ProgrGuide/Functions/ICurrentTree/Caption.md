@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "FrmEditTree/Caption"
+title: "ICurrentTree/Caption"
 ---
 # Caption հատկություն
 
-[См. также](../FrmEditTree.md) օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) օրինակ [Применяется к](../ICurrentTree.md)
  
 
 Վերադարձնում է ընթացիկ ծառի գլխագիրը։

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "FrmEditTree/AllowView"
+title: "ICurrentTree/AllowView"
 ---
 
 # AllowView հատկություն
 
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
  
 
 Վերադարձնում է ընթացիկ ծառում փաստաթուղթ դիտլու հնարավորություն։

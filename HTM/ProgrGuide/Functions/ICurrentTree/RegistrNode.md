@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "FrmEditTree/RegistrNode"
+title: "ICurrentTree/RegistrNode"
 ---
 
 
 # RegistrNode մեթոդ
 
-[См. также](../FrmEditTree.md) [Օրինակ](../../Examples/E_FrmEditTree_RegistrNode.html) [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) [Օրինակ](../../Examples/E_ICurrentTree_RegistrNode.html) [Применяется к](../ICurrentTree.md)
 
 Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։ Մեծ քանակությամբ գործողությունների առկայության դեպքում հարմար է խմբավորել դրանք ենթամենյուների մեջ։ 
 

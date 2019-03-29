@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "FrmEditTree/AllowDelete"
+title: "ICurrentTree/AllowDelete"
 ---
  
 # AllowDelete հատկություն
 
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
  
 
 Վերադարձնում է ընթացիկ ծառից փաստաթուղթ հեռացնելու թույլտվություն։

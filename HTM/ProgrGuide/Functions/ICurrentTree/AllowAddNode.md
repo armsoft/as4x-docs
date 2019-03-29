@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "FrmEditTree/AllowAddNode"
+title: "ICurrentTree/AllowAddNode"
 ---
   
 # AllowAddNode հատկություն
   
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
 
 Վերադարձնում է ընթացիկ ծառում հանգույցի ավելացման թույլտվություն։
 

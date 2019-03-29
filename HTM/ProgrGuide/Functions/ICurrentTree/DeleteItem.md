@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "FrmEditTree/DeleteItem"
+title: "ICurrentTree/DeleteItem"
 ---
 
 
 # DeleteItem մեթոդ
 
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
 
 Ծառից հեռացնում է ընթացիկ տերևը։ Եթե այն փաստաթղթային է, ապա փաստաթուղթը նույպես կհեռացվի։
 

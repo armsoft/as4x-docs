@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "FrmEditTree/RegistrFunction"
+title: "ICurrentTree/RegistrFunction"
 ---
 
 
 # RegistrFunction մեթոդ
-[См. также](RegistrNode.md) [Օրինակ](../../Examples/E_FrmEditTree_RegistrFunction.html) [Применяется к](../FrmEditTree.md)
+[См. также](RegistrNode.md) [Օրինակ](../../Examples/E_ICurrentTree_RegistrFunction.html) [Применяется к](../ICurrentTree.md)
 
 Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։
 

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "FrmEditTree/NodesCount"
+title: "ICurrentTree/NodesCount"
 ---
 
 
 # NodesCount հատկություն
 
-[См. также](../FrmEditTree.md) Օրինակ [Применяется к](../FrmEditTree.md)
+[См. также](../ICurrentTree.md) Օրինակ [Применяется к](../ICurrentTree.md)
 
 Ընթացիկ ծառում վերադարձնում է հանգույցների քանակը։
 
