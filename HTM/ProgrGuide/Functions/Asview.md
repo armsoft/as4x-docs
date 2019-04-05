@@ -28,7 +28,7 @@ title: "AsView"
 |[ColumnCaption](ASVIEW/ColumnCaption.md) |Վերադարձնում կամ նշանակում է դիտելու ձևի սյանի անվանումը։ |
 |[Condition](ASVIEW/Condition.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում  անփոփոխ ֆիլտրաման պայմանը։ |
 |[DataSource](ASVIEW/DataSource.md) | Վերադարձնում է դիտելու ձևի տվյալների աղբյուրը։ |
-|[DisableDocFunctions](ASVIEW/DisableDocFunctions.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի սեփական ֆունկցիաների հասանելիությունը։ |
+|[DisableDocFunctions](ASVIEW/DisableDocFunctions.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի սեփական գործողությունների հասանելիությունը։ |
 |[DocBased](ASVIEW/DocBased.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում փաստաթղթեր ունենալը։ |
 |[ECaption](ASVIEW/ECaption.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի գլխագիրը օտար լեզվով։ |
 |[ExistsColumn](ASVIEW/ExistsColumn.md) | Դիտելու ձևում ստուգում է սյունակի գոյությունը։ |
