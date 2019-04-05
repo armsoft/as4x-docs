@@ -15,7 +15,7 @@ title: "Tree"
 |[AllowView](ASTREE/AllowView.md) | Վերադարձնում է ծառի հանգույցը դիտելու թույլատվությունը: |
 |[Caption](ASTree/Caption.md) | Վերադարձնում կամ նշանակում է ծառ-տեղեկատուի գլխագիրը։|
 |[CodeLen](ASTree/CodeLen.md) |Վերադարձնում կամ նշանակում է ծառի կոդի երկարությունը։|
-|[DisableDocFunctions](ASTREE/DisableDocFunctions.md) |Վերադարձնում կամ նշանակում է ծառի մեջ փաստաթղթի կոնտեքստ-մենյուի ֆունկցիաների հասանելիությունը։|
+|[DisableDocFunctions](ASTREE/DisableDocFunctions.md) |Վերադարձնում կամ նշանակում է ծառի մեջ փաստաթղթի կոնտեքստ-մենյուի գործողությունների հասանելիությունը։|
 |[ECaption](ASTREE/ECaption.md) | Վերադարձնում կամ նշանակում է ծառ-տեղեկատուի գլխագրը օտար լեզվով։|
 |[TreeId](ASTree/TreeId.md) | Վերադարձնում է ծառի ներքին անունը։|
 |[TreeTypeInteger](ASTree/TreeTypeInteger.md) | Վերադարձնում կամ նշանակում է ծառի տեսակը։|

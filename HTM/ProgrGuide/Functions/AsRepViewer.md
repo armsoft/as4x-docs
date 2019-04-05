@@ -1,63 +1,58 @@
 ---
 layout: page
-title: "AsRepViewer"
+title: "AsRepViewer օբյեկտ"
 ---
 
-Համակարգում տեղեկատուի տեսքով  հաշվետվություն ստեղծվում է հետևյալ ֆունկցիայի միջոցով՝ [CreateRepViewer](Functions/CreateRepViewer.html)։
+Համակարգում տեղեկատուի տեսքով  հաշվետվություն ցույց տալու օբյեկտ։  Ստեղծվում է հետևյալ ֆունկցիայի միջոցով՝ [CreateRepViewer](Functions/CreateRepViewer.html)։
 
 |Հատկություններ|Նկարագրություն|
 |--|--|
 |[AllowHistory](AsRepViewer/AllowHistory.md)|Վերադարձնում կամ նշանակում է փաստաթղթի պատմությունը դիտելու թույլտվությունը։|
 |[AllowPrintPreview](AsRepViewer/AllowPrintPreview.md)|Վերադարձնում կամ նշանակում է  փաստաթղթի տպելու ձևի դիտման թույլտվություն։|
 |[AllowView](AsRepViewer/AllowView.md)|Վերադարձնում կամ նշանակում է փաստաթղթի դիտելու թույլտվություն։|
-|[AllowViewDocChildren](AsRepViewer/AllowViewDocChildren.md)|Վերադարձնում կամ նշանակում է դիտելու ձևից ենթափաստաթղթերի դիտման թույլտվությունը։|
-|[AllowViewDocParents](AsRepViewer/AllowViewDocParents.md)|Վերադարձնում կամ նշանակում է դիտելու ձևից ծնող փաստաթղթերի դիտման թույլտվություն։Возвращает или устанавливает разрешение на просмотр родительских документов из отчета.|
-|[Caption](AsRepViewer/Caption.md)|Վերադարձնում կամ նշանակում է դիտելու ձևի գլխագիրը։|
-|[CaptionSpreadsheetExportStyle](AsRepViewer/CaptionSpreadsheetExportStyle.md)|Վերադարձնում կամ նշանակում է Excel- ում  գլխագրի տողի արտահանման ոճը:|
-|[ECaption](AsRepViewer/Caption.md)|Վերադարձնում կամ նշանակում է դիտելու ձևի գլխագիրը օտար լեզվով։|
-|[DisableDocFunctions](AsRepViewer/DisableDocFunctions.md)|Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի սեփական ֆունկցիաների հասանելիությունը։|
-|[DocBased](AsRepViewer/DocBased.md)|Վերադարձնում կամ նշանակում է դիտելու ձևում փաստաթղթեր ունենալը։|
-|[ExportType](AsRepViewer/ExportType.md)|Возвращает или устанавливает тип кодировки файла для экспортируемой справки.|
-|[FootCount](AsRepViewer/FootCount.md)|Возвращает количество строк итогов (сносок) отчета.|
-|[Footer](AsRepViewer/Footer.md)|Возвращает строку итогов (сносок) по индексу.|
-|[FragCount](AsRepViewer/FragCount.md)|Возвращает количество фрагментов в справке.|
-|[FragLength](AsRepViewer/FragLength.md)|Возвращает длину заданного фрагмента справки.|
-|[GetRows](AsRepViewer/GetRows.md)|Возвращает массив строк из справки, начиная с указанной строки с указанным количеством.|
-|[HasDefinedStyle](AsRepViewer/HasDefinedStyle.md)|Возвращает признак задания стиля экспорта строк справки в Excel.|
-|[HeadCount](AsRepViewer/HeadCount.md)|Возвращает количество строк заголовков отчета.|
-|[Header](AsRepViewer/Header.md)|Возвращает указанную строку заголовка отчета.|
-|[InitialWidthInChars](AsRepViewer/InitialWidthInChars.md)|Возвращает или станавливает ширину окна в символах при начальном показе.|
-|[MaxLength](AsRepViewer/MaxLength.md)|Возвращает сумму длин всех фрагментов справки.|
-|[PrintStyle](AsRepViewer/PrintStyle.md)|Возвращает или устанавливает стиль печати для отчета.|
-|[ReportId](AsRepViewer/ReportId.md)|Возвращает идентификатор отчета.|
-|[RowCount](AsRepViewer/RowCount.md)|Возвращает количество строк в справке.|
-|[RowDescriptor](AsRepViewer/RowDescriptor.md)|Возвращает описатель данной строки.|
-|[RowISN](AsRepViewer/RowISN.md)|Возвращает внутрисистемный уникальный идентификатор ISN для данной строки.|
-|[UnMoveFragment](AsRepViewer/UnMoveFragment.md)|Возвращает или устанавливает наличие неподвижного фрагмента.|
-|[UnMoveHeadCount](AsRepViewer/UnMoveHeadCount.md)|Возвращает или устанавливает количество неперемещаемых заголовков.|
-|[UseFormatting](AsRepViewer/UseFormatting.md)|Возвращает или устанавливает признак использования форматирования текста в отчете.|
+|[AllowViewDocChildren](AsRepViewer/AllowViewDocChildren.md)|Վերադարձնում կամ նշանակում է ենթափաստաթղթերի դիտման թույլտվությունը։|
+|[AllowViewDocParents](AsRepViewer/AllowViewDocParents.md)|Վերադարձնում կամ նշանակում է ծնող փաստաթղթերի դիտման թույլտվություն։ |
+|[Caption](AsRepViewer/Caption.md)|Վերադարձնում կամ նշանակում է տեղեկատու-հաշվետվության պատուհանի գլխագիրը։|
+|[CaptionSpreadsheetExportStyle](AsRepViewer/CaptionSpreadsheetExportStyle.md)| Վերադարձնում կամ նշանակում է դեպի Excel արտահանման պատուհանի գլխագրի ոճի անունը:|
+|[ECaption](AsRepViewer/Caption.md)|Վերադարձնում կամ նշանակում է տեղեկատու-հաշվետվության պատուհանի գլխագիրը օտար լեզվով։|
+|[DisableDocFunctions](AsRepViewer/DisableDocFunctions.md)|Վերադարձնում կամ նշանակում է փաստաթղթի կոնտեքստ-մենյուի գործողությունների հասանելիությունը։ |
+|[DocBased](AsRepViewer/DocBased.md)|Վերադարձնում կամ նշանակում է տեղեկատու-հաշվետվության մեջ փաստաթղթերի առկայությունը։ |
+|[ExportType](AsRepViewer/ExportType.md)| Վերադարձնում կամ նշանակում է ֆայլի կոդավորման լռությամբ տիպը  հաշվետվության ֆայլում պահպանելու ժամանակ |
+|[FootCount](AsRepViewer/FootCount.md)| Վերադարձնում է հաշվետվության տողատակի տողերի քանակը։ |
+|[Footer](AsRepViewer/Footer.md)|Վերադարձնում է հաշվետվության  տողատակի տողը ըստ ինդեքի։ |
+|[FragCount](AsRepViewer/FragCount.md)| Վերադարձնում է տեղեկատու-հաշվետվության հատվածների քանակը։ |
+|[FragLength](AsRepViewer/FragLength.md)| Վերադարձնում է հաշվետվության  ընտրված հատվածի լայնությունը։ |
+|[HasDefinedStyle](AsRepViewer/HasDefinedStyle.md)| Վերադարձնում է հաշվետվության  դեպի Excel արտահանման ոճի առկայությունը: |
+|[HeadCount](AsRepViewer/HeadCount.md)| Վերադարձնում է հաշվետվության գլխագիր տողերի քանակը։|
+|[Header](AsRepViewer/Header.md)| Վերադարձնում է հաշվետվության գլխագրի տողը ըստ ինդեքի։|
+|[InitialWidthInChars](AsRepViewer/InitialWidthInChars.md)| Վերադարձնում կամ նշանակում է ցուցադրվող պատուհանի նախնական լայնությունը (նիշերի քանակով)։ |
+|[MaxLength](AsRepViewer/MaxLength.md)| Վերադարձնում է հաշվետվության բոլոր հատվածների լայնության գումարը։ |
+|[PrintStyle](AsRepViewer/PrintStyle.md)| Վերադարձնում կամ նշանակում է հաշվետվության տպելու ոճը։ |
+|[ReportId](AsRepViewer/ReportId.md)| Վերադարձնում է հաշվետվության ներքին նույնականացման համարը։ |
+|[RowCount](AsRepViewer/RowCount.md)|Վերադարձնում է տողերի քանակը հաշվետվության մեջ։ |
+|[RowDescriptor](AsRepViewer/RowDescriptor.md)| Վերադարձնում է տողի նկարագրությունը։ |
+|[RowISN](AsRepViewer/RowISN.md)| Վերադարձնում է ընտրված տողի փաստաթղթի ներքին նույնականացման համար։ |
+|[UnMoveFragment](AsRepViewer/UnMoveFragment.md)| Վերադարձնում կամ նշանակում է չշարժվող հատվածի առկայությունը։ |
+|[UnMoveHeadCount](AsRepViewer/UnMoveHeadCount.md)| Վերադարձնում կամ նշանակում է չտեղափոխվող գլխագրերի քանակը, եթե առկա է [անշարժ հատված](UnMoveFragment.md)։ |
+|[UseFormatting](AsRepViewer/UseFormatting.md)|Վերադարձնում կամ նշանակում է հաշվետվության մեջ տեքստի ձևաչափեր օգտագործելու հայտանիշը։|
 
 
 
-
-
-
-
-
-|Методы|Описание|
+| Մեթոդներ | Նկարագրություն |
 |--|--|
-|[AddExportStyle](AsRepViewer/AddExportStyle.md)|Добавляет имя стиля экспорта данных строки в Excel.|
-|[AddFooter](AsRepViewer/AddFooter.md)|Добавляет в справке новую строку итогов.|
-|[AddFragment](AsRepViewer/AddFragment.md)|Добавляет в справке новый фрагмент заданной ширины.|
-|[AddHeader](AsRepViewer/AddHeader.md)|Добавляет в данной справке новую строку неподвижного заголовка.|
-|[AddRow](AsRepViewer/AddRow.md)|Добавляет в данной справке новую строку.|
-|[Break](AsRepViewer/Break.md)|В текущей строке справки вставляет символ прогона страницы.|
-|[LoadFrom](AsRepViewer/LoadFrom.md)|Загружает описание и из тела отчета создает обьект отчет.|
-|[RegistrFunction](AsRepViewer/RegistrFunction.md)|Добавляет в контекстное меню вызов пользовательской функции.|
-|[RegistrNode](AsRepViewer/RegistrNode.md)|Добавляет группировочный узел в подменю вызовов пользовательских функций.|
-|[SaveAs](AsRepViewer/SaveAs.md)|Запоминает описание и тело отчета в файл.|
-|[SaveToFile](AsRepViewer/SaveToFile.md)|Сохраняет отчет в файле.|
-|[Show](AsRepViewer/Show.md)|Выводит подготовленную справку на экран.|
+|[AddExportStyle](AsRepViewer/AddExportStyle.md)| Ավելացնում է  դեպի Excel արտահանման տողի ոճ:|
+|[AddFooter](AsRepViewer/AddFooter.md)| Ավելացնում է տեղեկատու-հաշվետվության մեջ նոր տողատակի տող։ |
+|[AddFragment](AsRepViewer/AddFragment.md)| Ավելացնում է տեղեկատու-հաշվետվության մեջ ընտրված լայնությամբ նոր հատված։ |
+|[AddHeader](AsRepViewer/AddHeader.md)| Ընտրված հաշվետվության մեջ ավելացնում է գլխագրի նոր տող։ |
+|[AddRow](AsRepViewer/AddRow.md)|  Ընտրված հաշվետվության մեջ ավելացնում է նոր տող։ |
+|[Break](AsRepViewer/Break.md)|Հաշվետվության մեջ տեղադրում է էջընդհատ (page break): |
+|[GetRows](AsRepViewer/GetRows.md)| Վերադարձնոմ է նշված տողերի մասիվը հաշվետվությունից։   |
+|[LoadFrom](AsRepViewer/LoadFrom.md)| Նախօրոք պահպանված հաշվետվության ֆայլի հիման վրա վերականգնում է հաշվետվությունը։ |
+|[RegistrFunction](AsRepViewer/RegistrFunction.md)|Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ |
+|[RegistrNode](AsRepViewer/RegistrNode.md)| Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։|
+|[SaveAs](AsRepViewer/SaveAs.md)| Պահպանում է հաշվետվության նկարագրությունը և մարմինը ֆայլի մեջ։ |
+|[SaveToFile](AsRepViewer/SaveToFile.md)| Պահպանում է հաշվետվության տեքսը ֆայլի մեջ։ |
+|[Show](AsRepViewer/Show.md)| Հաշվետվությունը ցույց է տալիս է էկրանին։ |
 
 
 

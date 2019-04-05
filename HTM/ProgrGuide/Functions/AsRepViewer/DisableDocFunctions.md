@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "ASView/DisableDocFunctions"
+title: "AsRepViwer/DisableDocFunctions"
 ---
 
 
 # DisableDocFunctions հատկություն
+ 
+[См. также](../AsRepViewer.md) Օրինակ [Применяется к](../AsRepViewer.md) 
 
-[См. также](../Asview.md) [Օրինակ](../../Examples/E_AsView.html) [Применяется к](../Asview.md)
-
-Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի սեփական գործողությունների հասանելիությունը։ 
+Վերադարձնում կամ նշանակում է փաստաթղթի կոնտեքստ-մենյուի գործողությունների հասանելիությունը։ 
 
 ## Շարահյուսություն
 
@@ -16,16 +16,17 @@ title: "ASView/DisableDocFunctions"
 object.DisableDocFunctions [=bValue] 
 ```
 
-Բաղադրիչներն են՝
+
+Բաղադրիչներն են՝ 
+
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| object | Դիտելու ձևի հղում։ |
-| bValue | Արգելող արժեք։ |
+| object | Հաշվետվության հղում։  |
+| bValue | Նոր արժեք։ |
 
 
 ## Արժեքներ
-
 
 | Արժեք | Նկարագրություն |
 |--|--|

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsTree/DisableDocFunctions"
+title: "AsTree/TreeTypeInteger"
 ---
 
 
