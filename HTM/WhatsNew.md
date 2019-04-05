@@ -71,14 +71,14 @@
 	</ul></li>
 	<li>Добавлены для диалога<ul>
 		<li>свойствo
-		<a href="ProgrGuide/Functions/AsUstPar/Properties.html">Properties</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/Properties.html">Properties</a></li>
 		<li>изменены параметры метода
-		<a href="ProgrGuide/Functions/AsUstPar/AddLine.html">AddLine</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/AddLine.html">AddLine</a></li>
 		<li>метод
-		<a href="ProgrGuide/Functions/AsUstPar/AddControlAtRight.html">
+		<a href="ProgrGuide/Functions/AsDialog/AddControlAtRight.html">
 		AddControlAtRight</a></li>
 		<li>метод
-		<a href="ProgrGuide/Functions/AsUstPar/AddControlAtRight.html">
+		<a href="ProgrGuide/Functions/AsDialog/AddControlAtRight.html">
 		AddViewControlAtRight</a></li>
 		<li>при помощи атрибута <b>I</b> реквизит можно редактировать в режиме Overwrite вместо Insert (только для типа C(x))</li>
 		<li>при помощи атрибута <b>S</b> текущее значение реквизита не запоминается в реестре.</li>
@@ -186,16 +186,16 @@
 	&nbsp;</li>
 	<li>Добавлены для диалога<ul>
 		<li>метод 
-		<a href="ProgrGuide/Functions/AsUstPar/AddPage.html">AddPage</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/AddPage.html">AddPage</a></li>
 		<li>свойства 
-		<a href="ProgrGuide/Functions/AsUstPar/PageCaption.html">PageCaption</a>, 
-		<a href="ProgrGuide/Functions/AsUstPar/PageCount.html">PageCount</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/PageCaption.html">PageCaption</a>, 
+		<a href="ProgrGuide/Functions/AsDialog/PageCount.html">PageCount</a></li>
 		<li>новый параметр в методе 
-		<a href="ProgrGuide/Functions/AsUstPar/MaxLenCaption.html">MaxLenCaption</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/MaxLenCaption.html">MaxLenCaption</a></li>
 		<li>метод
-		<a href="ProgrGuide/Functions/AsUstPar/ExistsControl.html">ExistsControl</a></li>
+		<a href="ProgrGuide/Functions/AsDialog/ExistsControl.html">ExistsControl</a></li>
 		<li>новый параметр в методе 
-		<a href="ProgrGuide/Functions/AsUstPar/AddDublCntrl.html">AddDublCntrl</a> <br>
+		<a href="ProgrGuide/Functions/AsDialog/AddDublCntrl.html">AddDublCntrl</a> <br>
 		&nbsp;</li>
 	</ul></li>
   <li>Добавлены для описательного диалога<ul>
@@ -287,8 +287,8 @@
 	для îáъåêòà îò÷åò.<br>
 	&nbsp;</li>
 	<li>Добавленû ìåòîäû 
-	<a href="ProgrGuide/Functions/AsUstPar/AddRadioButtons.html">AddRadioButtons</a>,
-	<a href="ProgrGuide/Functions/AsUstPar/AddDublRadioButtons.html">
+	<a href="ProgrGuide/Functions/AsDialog/AddRadioButtons.html">AddRadioButtons</a>,
+	<a href="ProgrGuide/Functions/AsDialog/AddDublRadioButtons.html">
 	AddDublRadioButtons</a> â îáъåêò äèàëîã.<br>
 	&nbsp;</li>
 	<li>Äîáàâëåíî 
@@ -356,7 +356,7 @@
 	<a href="ProgrGuide/Database/AccessISNList.html">AccessISNList</a>,
 	<a href="ProgrGuide/Database/AccessLog.html">AccessLog</a>.<br>
 	&nbsp;</li>
-	<li>Добавлен тип реквизита PATH для диалога в методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">AddControl</a>.<br>
+	<li>Добавлен тип реквизита PATH для диалога в методе <a href="ProgrGuide/Functions/AsDialog/AddControl.html">AddControl</a>.<br>
 	&nbsp;</li>
 </ol>
 <p>&nbsp;</p>
@@ -383,8 +383,8 @@
       <a href="ProgrGuide/ScriptProcs/UstPar_Validate.html">Validate</a>,
       <a href="ProgrGuide/ScriptProcs/UstPar_ValueChanged.html">ValueChanged</a> </li>
       <li>свойствa
-      <a href="ProgrGuide/Functions/AsUstPar/EventModule.html">EventModule</a> и
-      <a href="ProgrGuide/Functions/AsUstPar/ReadOnly.html">ReadOnly</a><br>
+      <a href="ProgrGuide/Functions/AsDialog/EventModule.html">EventModule</a> и
+      <a href="ProgrGuide/Functions/AsDialog/ReadOnly.html">ReadOnly</a><br>
 		&nbsp;</li>
     </ul>
   </li>
@@ -465,7 +465,7 @@
         и <a href="ProgrGuide/Functions/AsModalBrowser/SelectedItems.html">
 		SelectedItems</a>
         в объекте произвольный вспомогательный список</li>
-      <li>метод <a href="ProgrGuide/Functions/AsUstPar/AddMultiSelectViewControl.html">
+      <li>метод <a href="ProgrGuide/Functions/AsDialog/AddMultiSelectViewControl.html">
 		AddMultiSelectViewControl</a>
         в объекте диалог
         <a href="ProgrGuide/Functions/Functions/GetWorkingDays.html"><br>
@@ -509,7 +509,7 @@
     <ul>
       <li>в <a href="ProgrGuide/Defs/doc.html">
 		описании документа</a></li>
-      <li>в методе <a href="ProgrGuide/Functions/AsUstPar/AddControl.html">
+      <li>в методе <a href="ProgrGuide/Functions/AsDialog/AddControl.html">
 		AddControl</a>
         объекта диалог.</li>
     </ul>
