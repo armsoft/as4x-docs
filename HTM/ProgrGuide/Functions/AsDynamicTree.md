@@ -12,7 +12,7 @@ title: "AsDynamicTree օբյեկտ"
 | Հատկություններ | Նկարագրություն|
 |--|--|
 | [Caption](AsDynamicTree/Caption_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառի գլխագիրը։  |
-| [CaptionCode](AsDynamicTree/CaptionCode_D.md) | Վերադարձնում ընտրված հանգույցի անվանումը։ Վերադարձնում կամ նշանակում է ցույց տրվող ենթածառի արմատային հանգույցի անվանումը։  |
+| [CaptionCode](AsDynamicTree/CaptionCode_D.md) | Վերադարձնում է ընտրված հանգույցի անվանումը։  |
 | [Code](AsDynamicTree/Code_D.md) | Վերադարձնում կամ նշանակում է ընտրված հանգույցի կոդը։ |
 | [ECaption](AsDynamicTree/ECaption_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառի գլխագիրը օտար լեզվով։  |
 | [FullTree](AsDynamicTree/FullTree_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառից ցանկացած հանգույց ընտրելու հայտանիշը։ |
