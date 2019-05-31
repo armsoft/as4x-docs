@@ -8,17 +8,16 @@ title: "AsSqlCommand/ExecuteNonQuery"
 
 Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
-Վերադարձնում է փաստաթղթին կցված ֆայլերի հավաքածուն։
-
-Կարդալու հատկություն։
+Կատարում է հարցում և վերադարձնում հարցման առաջին տողի առաջին սյան արժեքը։
+Եթե հարցումն արժեք չի վերադարձրել, վերադարձրած օբյեկտի `HasValue` հատկությունը ունի `false` արժեք, իսկ `Value`-ն null:
+`Value`-ն օգտագործելուց առաջ ճիշտ է ստուգել `HasValue`-ն:
 
 ## Շարահյուսություն
 
 ``` vb
-object.Attachments
+Function ExecuteScalar(sqlType As SqlDataType, [lenOrDecimal As Long], [precision As Long]) As AsNullable
 ```
-
 
 ## Տվյալի տիպ
 
-Ֆայլային հավելումների հավաքածու՝ ASAttachmentCollection։
+[AsNullable](../AsNullable.md)

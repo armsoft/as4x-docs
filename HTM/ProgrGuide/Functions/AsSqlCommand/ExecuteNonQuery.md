@@ -9,13 +9,14 @@ title: "AsSqlCommand/ExecuteNonQuery"
 Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Կատարում է արդյունք չվերադարձնող հարցում։ Հարցումը կարող է ունենալ Output պարամետրեր:
+Վերադարձնում է batch-ի 1ին հարցման տողերի քանակը:
 
 ## Շարահյուսություն
 
 ``` vb
-object.Attachments
+Function ExecuteNonQuery() As Long
 ```
 
 ## Տվյալի տիպ
 
-Ֆայլային հավելումների հավաքածու՝ ASAttachmentCollection։
+Long
