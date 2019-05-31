@@ -11,7 +11,7 @@ title: "AsSqlCommand/QueryTimeout"
 ## Շարահյուսություն
 
 ``` vb
-object.CommandText
+Property QueryTimeout As Long
 ```
 
 Բաղադրիչներն են՝
