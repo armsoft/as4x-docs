@@ -4,18 +4,16 @@ title: "AsSqlCommand/Parameters"
 ---
 # Archived մեթոդ 
 
-[Տես նաև](../AsSqlParameter.md) Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+[Տես նաև](../AsSqlParameter.md) [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Վերադարձնում է հարցման պարամետրերի հավաքածուն։
 
 ## Շարահյուսություն
 
 ``` vb
-object.Parameters
+Property Get Parameters As AsSqlParameterCollection
 ```
 
-Բաղադրիչներն են՝
-    
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | AsSqlCommand օբյեկտի հղում։|
+## Տվյալի տիպ
+
+[AsSqlParameterCollection](../AsSqlParameterCollection.md)

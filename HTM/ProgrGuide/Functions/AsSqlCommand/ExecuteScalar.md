@@ -6,7 +6,7 @@ title: "AsSqlCommand/ExecuteNonQuery"
 
 # ExecuteScalar մեթոդ 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Վերադարձնում է փաստաթղթին կցված ֆայլերի հավաքածուն։
 
@@ -17,13 +17,6 @@ title: "AsSqlCommand/ExecuteNonQuery"
 ``` vb
 object.Attachments
 ```
-
-Բաղադրիչներն են՝ 
-
-
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | Փաստաթուղթ օբյեկտի հղում։ |
 
 
 ## Տվյալի տիպ

@@ -4,21 +4,15 @@ title: "AsSqlCommand/CommandType"
 ---
 # CommandType հատկություն 
 
-[Տես նաև](../../Constants/CommandType.md) Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+[Տես նաև](../../Constants/CommandType.md) [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Վերադարձնում կամ նշանակում է հարցման տեսակը։
 
 ## Շարահյուսություն
 
 ``` vb
-object.CommandType
+Property CommandType As CommandType
 ```
-
-Բաղադրիչներն են՝
-    
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | AsSqlCommand օբյեկտի հղում։|
 
 ## Տվյալի տիպ
 
