@@ -11,15 +11,8 @@ title: "AsNullable/Value"
 ## Շարահյուսություն
 
 ``` vb
-object.Value
+Property Value As Variant
 ```
-
-Բաղադրիչներն են՝
-    
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | AsNullable օբյեկտի հղում։|
-
 ## Տվյալի տիպ
 
 Variant
