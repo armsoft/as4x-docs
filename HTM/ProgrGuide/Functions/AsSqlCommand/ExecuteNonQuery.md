@@ -6,26 +6,17 @@ title: "AsSqlCommand/ExecuteNonQuery"
 
 # ExecuteNonQuery մեթոդ 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
-Վերադարձնում է փաստաթղթին կցված ֆայլերի հավաքածուն։
-
-Կարդալու հատկություն։
+Կատարում է արդյունք չվերադարձնող հարցում։ Հարցումը կարող է ունենալ Output պարամետրեր:
+Վերադարձնում է batch-ի 1ին հարցման տողերի քանակը:
 
 ## Շարահյուսություն
 
 ``` vb
-object.Attachments
+Function ExecuteNonQuery() As Long
 ```
-
-Բաղադրիչներն են՝ 
-
-
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | Փաստաթուղթ օբյեկտի հղում։ |
-
 
 ## Տվյալի տիպ
 
-Ֆայլային հավելումների հավաքածու՝ ASAttachmentCollection։
+Long

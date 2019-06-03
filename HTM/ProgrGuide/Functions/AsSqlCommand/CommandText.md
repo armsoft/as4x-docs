@@ -4,7 +4,7 @@ title: "AsSqlCommand/CommandText"
 ---
 # CommandText հատկություն 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Վերադարձնում կամ նշանակում է հարցման տեքստը։
 

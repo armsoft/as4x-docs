@@ -4,19 +4,15 @@ title: "AsSqlCommand/QueryTimeout"
 ---
 # QueryTimeout հատկություն 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
-Ստեուգում է փաստաթղթի արխիվացված լինելը։
+Վերադարձնում կամ նշանակում է հարցման TimeOute-ը վայրկյաններով։
 
 ## Շարահյուսություն
 
 ``` vb
 Property QueryTimeout As Long
 ```
+## Տվյալի տիպ
 
-Բաղադրիչներն են՝
-    
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | AsSqlCommand օբյեկտի հղում։|
-
+Long

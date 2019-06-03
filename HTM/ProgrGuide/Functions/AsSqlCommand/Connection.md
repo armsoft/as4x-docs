@@ -4,21 +4,15 @@ title: "AsSqlCommand/Connection"
 ---
 # Connection հատկություն 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
-Ստեուգում է փաստաթղթի արխիվացված լինելը։
+Վերադարձնում կամ նշանակում է միացման օբյեկտը, որն օգտագործվելու է հարցումն ուղարկելու համար։
 
 ## Շարահյուսություն
 
 ``` vb
-object.CommandText
+Property Connection As AsConnection
 ```
-
-Բաղադրիչներն են՝
-    
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | AsSqlCommand օբյեկտի հղում։|
 
 ## Տվյալի տիպ
 
