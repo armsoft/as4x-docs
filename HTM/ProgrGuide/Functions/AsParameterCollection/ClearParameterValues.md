@@ -1,6 +1,6 @@
 ﻿---
 layout: page
-title: "AsParametersCollection/Clear"
+title: "AsSqlParametersCollection/Clear"
 ---
 
 
@@ -22,4 +22,4 @@ object.ClearParameterValues
 
 | Պարամետր  | Նկարագրություն |
 |--|--|
-| object | [AsParametersCollection](../AsParametrsCollection.md) օբյեկտի վրա հղում։ |
+| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) օբյեկտի վրա հղում։ |

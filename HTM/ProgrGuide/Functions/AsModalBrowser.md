@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsParametersCollection օբյեկտ"
+title: "AsSqlParametersCollection օբյեկտ"
 ---
 
 

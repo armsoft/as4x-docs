@@ -1,12 +1,12 @@
 ﻿---
 layout: page
-title: "AsParametersCollection/Item"
+title: "AsSqlParametersCollection/Item"
 ---
 
 
 # Item հատկություն
 
-[См. также](../AsParametersCollection.md) Օրինակ [Применяется к](../AsParametersCollection.md)
+[См. также](../AsSqlParametersCollection.md) Օրինակ [Применяется к](../AsSqlParametersCollection.md)
 
 Հավաքածուից բանալիով վերադարձնում է տարրը։
 
@@ -22,7 +22,7 @@ object.Item (vName)
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
-| object | [AsParametersCollection](../AsParametrsCollection.md) օբյեկտի վրա հղում։ |
+| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) օբյեկտի վրա հղում։ |
 | vName | Պարամետրի անունը կամ ինդեքսը։  |
 
 

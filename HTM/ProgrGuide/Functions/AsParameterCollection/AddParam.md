@@ -1,12 +1,12 @@
 ﻿---
 layout: page
-title: "AsParametersCollection/Add"
+title: "AsSqlParametersCollection/Add"
 ---
 
 
 # AddParam մեթոդ
 
-[См. также](../AsParametersCollection.md) Օրինակ [Применяется к](../AsParametersCollection.md) 
+[См. также](../AsSqlParametersCollection.md) Օրինակ [Применяется к](../AsSqlParametersCollection.md) 
 
 Հավաքածուի մեջ ավելացնում է տարր։
 
@@ -21,5 +21,5 @@ object.AddParam (oParam)
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
-| object | [AsParametersCollection](../AsParametrsCollection.md) հավաքածուի վրա հղում։ |
+| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) հավաքածուի վրա հղում։ |
 | oParam | Ավելացվող պարամետր [AsParameter](../AsParameter.md)։  |
