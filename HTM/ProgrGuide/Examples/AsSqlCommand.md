@@ -46,10 +46,40 @@ Private Sub Prepare_oGetLastRemCommand()
 End Sub
 
 ```
+## ExecuteNonQuery օրինակ. անվանական պարամետրերվ հարցում
+
+``` vb
+    Dim updateDescrCommand As AsSqlCommand
+    Set updateDescrCommand = rdoConSys.CreateSqlCommand()
+    With updateDescrCommand
+        .CommandType = NamedText
+        .CommandText = "Update DOCSIM Set fVALUE = @VALUE Where fISN = @ISN and fIMAGE = @IMAGE"
+
+        .Parameters.Add "@VALUE", Sql_VarBinaryMax, Value, vbParamDirInput
+        .Parameters.Add "@ISN", Sql_Int, ISN, vbParamDirInput
+        .Parameters.Add "@IMAGE", Sql_Varchar, Image, vbParamDirInput
+    
+        .ExecuteNonQuery
+    End With
+
+```
+
 ## ExecuteNonQuery օրինակ. անանուն պարամետրերվ հարցում
 
 ``` vb
-object.Attachments
+    Dim updateDescrCommand As AsSqlCommand
+    Set updateDescrCommand = rdoConSys.CreateSqlCommand()
+    With updateDescrCommand
+        .CommandType = Text
+        .CommandText = "Update DOCSIM Set fVALUE = ? Where fISN = ? and fIMAGE = ?"
+
+        .Parameters.Add "@VALUE", Sql_VarBinaryMax, Value, vbParamDirInput
+        .Parameters.Add "@ISN", Sql_Int, ISN, vbParamDirInput
+        .Parameters.Add "@IMAGE", Sql_Varchar, Image, vbParamDirInput
+    
+        .ExecuteNonQuery
+    End With
+
 ```
 
 ## ExecuteScalar օրինակ

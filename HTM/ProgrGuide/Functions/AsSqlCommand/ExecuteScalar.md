@@ -12,6 +12,8 @@ title: "AsSqlCommand/ExecuteNonQuery"
 Եթե հարցումն արժեք չի վերադարձրել, վերադարձրած օբյեկտի `HasValue` հատկությունը ունի `false` արժեք, իսկ `Value`-ն null:
 `Value`-ն օգտագործելուց առաջ ճիշտ է ստուգել `HasValue`-ն:
 
+Այլ մանրամասներ [AsSqlCommand](../AsSqlCommand.md)-ի Նկատառումներ մասում:
+
 ## Շարահյուսություն
 
 ``` vb
