@@ -2,7 +2,7 @@
 layout: page
 title: "AsSqlCommand/Parameters"
 ---
-# Archived մեթոդ 
+# Parameters մեթոդ 
 
 [Տես նաև](../AsSqlParameter.md) [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 

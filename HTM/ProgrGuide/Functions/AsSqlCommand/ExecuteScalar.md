@@ -17,8 +17,15 @@ title: "AsSqlCommand/ExecuteNonQuery"
 ## Շարահյուսություն
 
 ``` vb
-Function ExecuteScalar(sqlType As SqlDataType, [lenOrDecimal As Long], [precision As Long]) As AsNullable
+Function ExecuteScalar(sqlType As SqlDataType, [maxLength As Long], [precision As Long]) As AsNullable
 ```
+Բաղադրիչներն են՝
+
+| Պարամետր | Նկարագրություն |
+|--|--|
+| sqlType   | Վերադարձվելիք արժեքի Sql տիպը ։ |
+| maxLength | Վերադարձվելիք արժեքի մաքսիմալ երկարությունը։Լռելյայն արժեքը -1 է։ Պարտադիր է օգտագործել, երբ պարամետրի տիպը տողային կամ բինար է:|
+| precision | Չի օգտագործվում։ |
 
 ## Տվյալի տիպ
 
