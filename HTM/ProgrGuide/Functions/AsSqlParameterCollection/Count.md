@@ -6,14 +6,14 @@ title: "AsParameterCollection/Count"
 
 # Count հատկություն
 
-[См. также](../AsParameterCollection.md)  [Применяется к](../AsModalBrowser.md) 
+[Տես նաև](../AsParameterCollection.md)  [Կիրառվում է](../AsModalBrowser.md) 
 
 Վերադարձնում է պարամետրերի քանակը հավաքածույում։
 
 ## Շարահյուսություն
 
 ``` vb
-object.Count = [nCountValue]
+object.Count as Long = [nCountValue] as Long
 ```
 
 Բաղադրիչներն են՝

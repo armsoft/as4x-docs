@@ -6,14 +6,14 @@ title: "AsSqlParametersCollection/Add"
 
 # Add մեթոդ
 
-[См. также](../AsSqlParametersCollection.md) Օրինակ [Применяется к](../AsSqlParametersCollection.md) 
+[Տես նաև](../AsSqlParametersCollection.md) [Օրինակ](../../Examples/AsSqlParametersCollection.md) [Կիրառվում է](../AsSqlParametersCollection.md) 
 
 Ստեղծում է և կցում հավաքածուին նոր տարր։
 
 ## Շարահյուսություն
 
 ``` vb
-object.Add (sParamName, oType, [vValue], [newVal], [lenOrDecimal])
+object.Add (sParamName as String, oType As SQLType, [vValue as Variant], [newVal as AsSqlParameterDirection], [lenOrDecimal as Long]) as AsSqlParameter
 ```
 
 Բաղադրիչներն են՝
@@ -21,6 +21,7 @@ object.Add (sParamName, oType, [vValue], [newVal], [lenOrDecimal])
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
+| object | [AsSqlParameterCollection](../AsSqlParametersCollection.md) տիպի օբյեկտ |
 | sParamName | Պարամետրի անունը տողաին տիպի։ |
 | oType | Ստեղծվող պարամետրի տիպը։  |
 | vValue | Variant տիպի ոչ պարտադիր պարամետր: |
