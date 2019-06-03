@@ -13,16 +13,8 @@ title: "AsParameterCollection/Count"
 ## Շարահյուսություն
 
 ``` vb
-object.Count as Long = [nCountValue] as Long
+Property Get Count as Long 
 ```
-
-Բաղադրիչներն են՝
-
-| Պարամետր | Նկարագրություն |
-|--|--|
-| object | բուն [AsParameterCollection](../AsParameterCollection.md) տիպի հավաքածույի վրա հղում։ |
-| nCountValue | Էլեմենտների քանակ։  |
-
 
 ## Տվյալի տիպ
 

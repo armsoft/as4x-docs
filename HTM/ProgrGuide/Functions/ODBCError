@@ -1,13 +1,13 @@
 ﻿---
 layout: page
-title: "AsSqlCommand օբյեկտ"
+title: "ODBCError օբյեկտ"
 ---
 
-# AsSqlCommand օբյեկտ 
+# ODBCError օբյեկտ 
 
 Հանդիսանում է SQL հարցումներ ուղարկելու միջոց:
 
-Օբյեկտը կարելի է ստանալ հետևյալ ֆունկցիայի միջոցով՝ [AsRdoConnection](Functions/AsRdoConnection.html)-ի [CreateSqlCommand](Functions/AsRdoConnection/CreateSqlCommand.html):
+ [AsRdoConnection](Functions/AsRdoConnection.html)-ի [CreateSqlCommand](Functions/AsRdoConnection/CreateSqlCommand.html):
 
 | Հատկություններ | Նկարագրություն |
 |--|--|

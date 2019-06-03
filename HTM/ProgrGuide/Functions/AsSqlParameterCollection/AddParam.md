@@ -13,7 +13,7 @@ title: "AsSqlParametersCollection/Add"
 ## Շարահյուսություն
 
 ``` vb
-Sub object.AddParam (oParam as AsSqlParameter)
+Sub AddParam (oParam as AsSqlParameter)
 ```
 
 Բաղադրիչներն են՝
@@ -21,5 +21,4 @@ Sub object.AddParam (oParam as AsSqlParameter)
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
-| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) հավաքածուի վրա հղում։ |
 | oParam | Ավելացվող պարամետր [AsParameter](../AsParameter.md)։  |

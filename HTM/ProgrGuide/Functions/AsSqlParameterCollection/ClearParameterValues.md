@@ -13,13 +13,5 @@ title: "AsSqlParametersCollection/Clear"
 ## Շարահյուսություն
 
 ``` vb
-Sub object.ClearParameterValues
+Sub ClearParameterValues
 ```
-
-
-Բաղադրիչներն են՝
-
-
-| Պարամետր  | Նկարագրություն |
-|--|--|
-| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) օբյեկտի վրա հղում։ |

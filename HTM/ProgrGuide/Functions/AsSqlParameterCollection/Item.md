@@ -10,19 +10,17 @@ title: "AsSqlParametersCollection/Item"
 
 Հավաքածուից բանալիով վերադարձնում է տարրը։
 
-Կարդալու և գրելու հատկություն։
 
 ## Շարահյուսություն
 
 ``` vb
-object.Item (vName as Variant) as AsSqlParameter
+Property Item (vName as Variant) as AsSqlParameter
 ```
 Բաղադրիչներն են՝
 
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
-| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) օբյեկտի վրա հղում։ |
 | vName | Պարամետրի անունը կամ ինդեքսը։  |
 
 
