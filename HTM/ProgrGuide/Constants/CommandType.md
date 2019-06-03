@@ -4,7 +4,7 @@ title: "CommandType"
 ---
 # CommandType հաստատունների տիպ 
 
-Տես նաև Օրինակ [Կիրառվում է](../AsSqlCommand.md)
+Տես նաև Օրինակ [Կիրառվում է](../Functions/AsSqlCommand.md)
 
  Նկարագրում է AsSqlCommand հարցման տեսակը:
 
