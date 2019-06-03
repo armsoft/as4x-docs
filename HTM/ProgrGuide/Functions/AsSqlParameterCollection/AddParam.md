@@ -6,14 +6,14 @@ title: "AsSqlParametersCollection/Add"
 
 # AddParam մեթոդ
 
-[См. также](../AsSqlParametersCollection.md) Օրինակ [Применяется к](../AsSqlParametersCollection.md) 
+[Տես Նաև](../AsSqlParametersCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParametersCollection.md) 
 
 Հավաքածուի մեջ ավելացնում է տարր։
 
 ## Շարահյուսություն
 
 ``` vb
-object.AddParam (oParam)
+Sub object.AddParam (oParam as AsSqlParameter)
 ```
 
 Բաղադրիչներն են՝
