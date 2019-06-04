@@ -6,23 +6,21 @@ title: "AsSqlParametersCollection/Item"
 
 # Item հատկություն
 
-[См. также](../AsSqlParametersCollection.md) Օրինակ [Применяется к](../AsSqlParametersCollection.md)
+[Տես նաև](../AsSqlParametersCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParametersCollection.md)
 
 Հավաքածուից բանալիով վերադարձնում է տարրը։
 
-Կարդալու և գրելու հատկություն։
 
 ## Շարահյուսություն
 
 ``` vb
-object.Item (vName)
+Property Item (vName as Variant) as AsSqlParameter
 ```
 Բաղադրիչներն են՝
 
 
 | Պարամետր | Նկարագրոթյոն |
 |--|--|
-| object | [AsSqlParametersCollection](../AsSqlParametersCollection.md) օբյեկտի վրա հղում։ |
 | vName | Պարամետրի անունը կամ ինդեքսը։  |
 
 

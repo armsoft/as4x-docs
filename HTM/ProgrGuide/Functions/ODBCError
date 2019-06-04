@@ -1,13 +1,13 @@
----
+﻿---
 layout: page
-title: "AsSqlCommand օբյեկտ"
+title: "ODBCError օբյեկտ"
 ---
 
-# AsSqlCommand օբյեկտ 
+# ODBCError օբյեկտ 
 
 Հանդիսանում է SQL հարցումներ ուղարկելու միջոց:
 
-Օբյեկտը կարելի է ստանալ հետևյալ ֆունկցիայի միջոցով՝ [AsRdoConnection](Functions/AsRdoConnection.html)-ի [CreateSqlCommand](Functions/AsRdoConnection/CreateSqlCommand.html):
+ [AsRdoConnection](Functions/AsRdoConnection.html)-ի [CreateSqlCommand](Functions/AsRdoConnection/CreateSqlCommand.html):
 
 | Հատկություններ | Նկարագրություն |
 |--|--|
@@ -24,8 +24,8 @@ title: "AsSqlCommand օբյեկտ"
 
 ## Նկատառումներ
 * Բոլոր անվանական պարամետերով հարցումներում` 
-  * պարամետրերը պետք է ունենան @ նախածանց(prefix) և՛ պարամետրի նկարագրությունում, և՛ հարցման տեքստում:
-  * **բոլոր** պարամետրերը պետք է ունենան ոչ դատարկ անուններ:
+  * պարամետրերը պետք է ունենան @ նախածանց(prefix) և՛ պարամետրի նկարագրությունում և՛ հարցման տեքստում:
+  * *բոլոր* պարամետրերը պետք է ունենան ոչ դատարկ անուններ:
   * պարամետրերի հերթականությունը ցուցակում էական չէ:
 
 * Անանուն պարամետերով հարցումներում` 
