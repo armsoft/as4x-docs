@@ -8,7 +8,7 @@ title: "AsSqlParametersCollection/Clear"
 
 [Տես նաև](../AsSqlParametersCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParametersCollection.md) 
 
-Ջնջում է [AsSqlParametersCollection](../AsSqlParametersCollection.md) հավաքածուում գտնվող բոլոր  [AsParameter](/AsParameter.md) տիպի էլեմենտները։
+Ջնջում է [AsSqlParametersCollection](../AsSqlParametersCollection.md) հավաքածուում գտնվող բոլոր  [AsParameter](../AsParameter.md) տիպի էլեմենտները։
 
 ## Շարահյուսություն
 

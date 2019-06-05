@@ -6,9 +6,9 @@ title: "AsParameterCollection/Count"
 
 # Count հատկություն
 
-[Տես նաև](../AsParameterCollection.md)  [Կիրառվում է](../AsModalBrowser.md) 
+[Տես նաև](../AsParameterCollection.md)  [Կիրառվում է](../AsParameterCollection.md) 
 
-Վերադարձնում է պարամետրերի քանակը հավաքածույում։
+Վերադարձնում է պարամետրերի քանակը հավաքածուում։
 
 ## Շարահյուսություն
 
