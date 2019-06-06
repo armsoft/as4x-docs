@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsSqlCommand/ExecuteNonQuery"
+title: "AsSqlCommand/ExecuteScalar"
 ---
 
 
