@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsSqlParametersCollection/Clear"
+title: "AsSqlParametersCollection/ClearParameterValues"
 ---
 
 

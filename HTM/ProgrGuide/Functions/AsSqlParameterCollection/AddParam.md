@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsSqlParametersCollection/Add"
+title: "AsSqlParametersCollection/AddParam"
 ---
 
 
