@@ -5,7 +5,7 @@ title: "AsSqlCommand examples"
 
 # AsSqlCommand դասի օրինակներ
 
-Բոլոր օրինակներում rdoConSys-ը [AsRdoConnection](../AsRdoConnection.md) տիպի օբյեկտ է:
+Բոլոր օրինակներում rdoConSys-ը [AsRdoConnection](../Functions/AsRdoConnection.md) տիպի օբյեկտ է:
 
 ## ExecuteNonQuery օրինակ. Result Set չվերադարձնող Stored procedure-ի կանչ:
 
@@ -23,8 +23,6 @@ Friend Sub GetLastRem(ByVal Acc As String, ByVal ISN As Long, _
     With oGetLastRemCommand
         .Parameters("@TYPE").Value = Acc
         .Parameters("@OBJECT").Value = ISN
-        .Parameters("@REM").Value = rdParamOutput
-        .Parameters("@CURREM").Value = rdParamOutput
         .ExecuteNonQuery
         xRemNC = .Parameters("@REM").Value
         xRem = .Parameters("@CURREM").Value
