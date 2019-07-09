@@ -50,7 +50,7 @@ tags: CurrentView
 | [MovePreviousSelected](ICurrentView/MovePreviousSelected.md) | Նշորդը տեղափոխում է նախորդ ընտրված տող։ |
 | [RefreshItem](ICurrentView/RefreshItem.md) | Ամբողջական թարմացնում է ընթացիկ դիտելու ձևը։ |
 | [RegistrFunction](ICurrentView/RegistrFunction.md) | Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ |
-| [RegistrDefaultFunction](ICurrentView/RegistrDefaultFunction.md) | Կենտեկստ մենյուի գործողությունների մեջ նշանակում է լռությամբ աշխատողը։|
+| [RegistrDefaultFunction](ICurrentView/RegistrDefaultFunction.md) | Նշանակում է կոնտեկստ մենյուի մեջ լռությամբ աշխատող գործողությունը։ |
 | [RegistrNode](ICurrentView/RegistrNode.md) | Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։ |
 | [Update](ICurrentView/Update.md) | Թարմացնում է նշված տողը։  |
 
