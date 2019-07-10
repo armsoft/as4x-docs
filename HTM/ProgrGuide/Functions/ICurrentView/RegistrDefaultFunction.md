@@ -8,7 +8,7 @@ title: "ICurrentView/RegistrDefaultFunction"
 
 [См. также](../ICurrentView.md) [Օրինակ](../../Examples/E_ICurrentView_RegistrDefaultFunction.html) [Применяется к](../ICurrentView.md)
 
-Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ 
+Նշանակում է կոնտեկստ մենյուի մեջ լռությամբ աշխատող գործողությունը։ 
 
 ## Շարահյուսություն
 
