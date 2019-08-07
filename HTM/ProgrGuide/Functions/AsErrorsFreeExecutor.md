@@ -18,7 +18,7 @@ AsErrorsFreeExecutor օբյեկտը ստեղծվում է [CreateErrorsFreeExecu
 | Հատկություններ | Նկարագրություն |
 |--|--|
 | [ErrorsCount](AsErrorsFreeExecutor/ErrorsCount.md) | Վերադարձնում է առաջացած սխալների քանակը։ |
-| [OnErrorRollBack](AsErrorsFreeExecutor/OnErrorRollBack.md) | (Արգելված) Վերադարձնում կամ նշանակում է սխալի առաջացման ժամանակ տրանզակցիայի հետ խաղացման հայտանիշը։ |  
+| [OnErrorRollBack](AsErrorsFreeExecutor/OnErrorRollBack.md) | (Արգելված) Վերադարձնում կամ նշանակում է սխալի առաջացման ժամանակ տրանզակցիայի հետ խաղացման հայտանիշը։ |
 | [Properties](AsErrorsFreeExecutor/Properties.md) | Վերադարձնում է սկրիպտ գրողի կողմից մշակվող հատկությունները։ |
 | [RepViewer](AsErrorsFreeExecutor/RepViewer.md) | Վերադարձնում կամ նշանակում է հաշվետվություն օբյեկտը, որի մեջ պահպանվում են սխալների հաղորդագրությունները։ |
 
