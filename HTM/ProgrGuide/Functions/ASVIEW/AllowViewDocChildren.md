@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowViewDocChildren"
+title: "AsView/AllowViewDocChildren"
 ---
 
 

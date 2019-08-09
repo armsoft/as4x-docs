@@ -33,7 +33,7 @@ title: "AsRepViewer օբյեկտ"
 |[RowDescriptor](AsRepViewer/RowDescriptor.md)| Վերադարձնում է տողի նկարագրությունը։ |
 |[RowISN](AsRepViewer/RowISN.md)| Վերադարձնում է ընտրված տողի փաստաթղթի ներքին նույնականացման համար։ |
 |[UnMoveFragment](AsRepViewer/UnMoveFragment.md)| Վերադարձնում կամ նշանակում է չշարժվող հատվածի առկայությունը։ |
-|[UnMoveHeadCount](AsRepViewer/UnMoveHeadCount.md)| Վերադարձնում կամ նշանակում է չտեղափոխվող գլխագրերի քանակը, եթե առկա է [անշարժ հատված](UnMoveFragment.md)։ |
+|[UnMoveHeadCount](AsRepViewer/UnMoveHeadCount.md)| Վերադարձնում կամ նշանակում է չտեղափոխվող գլխագրերի քանակը, եթե առկա է [անշարժ հատված](AsRepViewer/UnMoveFragment.md)։ |
 |[UseFormatting](AsRepViewer/UseFormatting.md)|Վերադարձնում կամ նշանակում է հաշվետվության մեջ տեքստի ձևաչափեր օգտագործելու հայտանիշը։|
 
 

@@ -6,7 +6,7 @@ title: "AsDialog/ECaption"
 
 # ECaption հատկություն
 
-[См. также](Caption.md) [Օրինակ](../../Examples/E_AsDialog.md) [Применяется к](../AsDialog.md)
+[См. также](Caption.md) [Օրինակ](../../Examples/E_AsDialog.html) [Применяется к](../AsDialog.md)
 
 Վերադարձնում կամ նշանակում է երկխոսության պատուհանի գլխագիրը օտար լեզվով։
 

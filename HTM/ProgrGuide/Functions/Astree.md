@@ -7,18 +7,18 @@ title: "Tree"
 
 |Հատկություններ|Նկարագրություն|
 |--|--|
-|[AllowAddNode](ASTree/AllowAddNode.md) | Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։|
-|[AllowDelete](ASTree/AllowDelete.md) | Վերադարձնում է ծառից հանգույց ջնջելու թույլատվությունը։|
-|[AllowEdit](ASTree/AllowEdit.md) | Ծառի մեջ վերադարձնում է հանգույցի խմբագրելու թույլատվությունը։|
+|[AllowAddNode](ASTREE/AllowAddNode.md) | Վերադարձնում է ծառի մեջ հանգույց ավելացնելու թույլատվությունը։|
+|[AllowDelete](ASTREE/AllowDelete.md) | Վերադարձնում է ծառից հանգույց ջնջելու թույլատվությունը։|
+|[AllowEdit](ASTREE/AllowEdit.md) | Ծառի մեջ վերադարձնում է հանգույցի խմբագրելու թույլատվությունը։|
 |[AllowExport](ASTREE/AllowExport.md) | Վերադարձնում է ծառից հանգույց արտահանելու թույլատվությունը։|
 |[AllowSelectNonDoc](ASTREE/AllowSelectNonDoc.md) | Վերադարձնում է ոչ փաստաթղթային հանգույցների ընտրության թույլատվությունը ծառ-տեղեկատուից։|
 |[AllowView](ASTREE/AllowView.md) | Վերադարձնում է ծառի հանգույցը դիտելու թույլատվությունը: |
-|[Caption](ASTree/Caption.md) | Վերադարձնում կամ նշանակում է ծառ-տեղեկատուի գլխագիրը։|
-|[CodeLen](ASTree/CodeLen.md) |Վերադարձնում կամ նշանակում է ծառի կոդի երկարությունը։|
+|[Caption](ASTREE/Caption.md) | Վերադարձնում կամ նշանակում է ծառ-տեղեկատուի գլխագիրը։|
+|[CodeLen](ASTREE/CodeLen.md) |Վերադարձնում կամ նշանակում է ծառի կոդի երկարությունը։|
 |[DisableDocFunctions](ASTREE/DisableDocFunctions.md) |Վերադարձնում կամ նշանակում է ծառի մեջ փաստաթղթի կոնտեքստ-մենյուի գործողությունների հասանելիությունը։|
 |[ECaption](ASTREE/ECaption.md) | Վերադարձնում կամ նշանակում է ծառ-տեղեկատուի գլխագրը օտար լեզվով։|
-|[TreeId](ASTree/TreeId.md) | Վերադարձնում է ծառի ներքին անունը։|
-|[TreeTypeInteger](ASTree/TreeTypeInteger.md) | Վերադարձնում կամ նշանակում է ծառի տեսակը։|
+|[TreeId](ASTREE/TreeId.md) | Վերադարձնում է ծառի ներքին անունը։|
+|[TreeTypeInteger](ASTREE/TreeTypeInteger.md) | Վերադարձնում կամ նշանակում է ծառի տեսակը։|
 | [UpperCase](ASTREE/Uppercase.md) | Վերադարձնում կամ նշանակում է ծառի հանգույցների կոդը բոլորը մեծատառով պահելու հատկությունը։|
 
 |Մեթոդներ|Նկարագրություն|

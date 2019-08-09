@@ -7,7 +7,7 @@ title: "AsDoc/HiParDelete"
 
 [См. также](../Functions/ParameterManagment/DelHiPar.html) Օրինակ [Применяется к](../Asdoc.md)
 
-[HIPAR](../Database/HiPar.html) աղյուսակից ջնջում է այս փաստաթղթի նախկինում գրանցած պարամետրերի արժեքները։
+[HIPAR](../../Database/HiPar.html) աղյուսակից ջնջում է այս փաստաթղթի նախկինում գրանցած պարամետրերի արժեքները։
 
 ## Շարահյուսություն
 

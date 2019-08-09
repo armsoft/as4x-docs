@@ -10,7 +10,7 @@ title: "AsDoc/SetGridColsClickDropDownEvent"
 [См. также](../Asdoc.md) Օրինակ [Применяется к](../Asdoc.md)
 
 
-Նշանակում է [ClickDropDownGrid](../ScriptProcs/ClickDropDownGrid.html) իրադարձությունը առաջացնելու հայտանիշը տրված աղյուսակի սյունակների բազմության համար։
+Նշանակում է [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձությունը առաջացնելու հայտանիշը տրված աղյուսակի սյունակների բազմության համար։
 
 
 ## Շարահյուսություն

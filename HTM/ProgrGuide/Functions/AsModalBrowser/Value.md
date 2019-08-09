@@ -8,7 +8,7 @@ title: "AsModalBrowser/Value"
 
 [См. также](../AsModalBrowser.md) Օրինակ [Применяется к](../AsModalBrowser.md)
 
-Վերադարձնում է ընտրված տողի [LookUpColumn](AsModalBrowser/LookUpColumn.md) սյան արժեքը: 
+Վերադարձնում է ընտրված տողի [LookUpColumn](LookUpColumn.md) սյան արժեքը: 
 
 Արժեքը հասանելի է, եթե ցուցադրիչում նշվել է տող ([isSelected](isSelected.html)=True)։
 

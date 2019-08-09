@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AddDoc"
+title: "AsView/AddDoc"
 ---
 
 
@@ -8,7 +8,7 @@ title: "ASView/AddDoc"
 
 [См. также](../Asview.md) Օրինակ [Применяется к](../Asview.md)
 
-Դիտելու ձևի  առկա ֆիլտրման պայմանին՝ [Condition](ASVIEW/Condition.html), ավելացնում է նոր պայման։
+Դիտելու ձևի  առկա ֆիլտրման պայմանին՝ [Condition](Condition.md), ավելացնում է նոր պայման։
 
 
 ## Շարահյուսություն

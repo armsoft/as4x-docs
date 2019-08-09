@@ -7,7 +7,7 @@ title: "AsDialog/CreateBrowseParametersInfo"
 
 [См. также](../ASVIEW/BrowseParametersInfo.md) Օրինակ Применяется к](../AsDialog.md)
 
-Ստեղծում է [AsBrowserParametersInfo](AsBrowserParametersInfo.html) տիպի օբյեկտ, որի մեջ պահպանվում են երկխոսության պատուհանի դաշտերի արժեքները դիտելու ձևին փոխանցման համար։
+Ստեղծում է [AsBrowserParametersInfo](../AsBrowserParametersInfo.html) տիպի օբյեկտ, որի մեջ պահպանվում են երկխոսության պատուհանի դաշտերի արժեքները դիտելու ձևին փոխանցման համար։
 
 ## Շարահյուսություն
 

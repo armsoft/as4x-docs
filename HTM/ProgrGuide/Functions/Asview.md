@@ -12,8 +12,8 @@ title: "AsView"
 |--|--|
 |[AllowAccess](ASVIEW/AllowAccess.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում փաստաթղթերի իրավասությունների նշանակելու թույլտվությունը։|
 |[AllowAddNew](ASVIEW/AllowAddNew.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում նոր փաստաթուղթ ավելացնելու թույլատվություն։|
-|[AllowDelete](AsView/AllowDelete.md) |Վերադարձնում կամ նշանակում է դիտելու ձևից փաստատթուղթ ջնջելու թույլատվություն։|
-|[AllowEdit](AsView/AllowEdit.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի խմբագրման թույլատվություն։|
+|[AllowDelete](ASVIEW/AllowDelete.md) |Վերադարձնում կամ նշանակում է դիտելու ձևից փաստատթուղթ ջնջելու թույլատվություն։|
+|[AllowEdit](ASVIEW/AllowEdit.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի խմբագրման թույլատվություն։|
 |[AllowExport](ASVIEW/AllowExport.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի արտահանման թույլատվություն։|
 |[AllowHistory](ASVIEW/AllowHistory.md) |Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի պատմության դիտելու թույլատվություն։|
 |[AllowPrintPreview](ASVIEW/AllowPrintPreview.md) |Վերադարձնում կամ նշանակում է դիտելու ձևից  փաստաթղթի տպելու ձևի դիտման թույլտվություն։ |
@@ -23,8 +23,8 @@ title: "AsView"
 |[AllowViewDocParents](ASVIEW/AllowViewDocParents.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից ծնող փաստաթղթերի դիտման թույլտվություն։ |
 |[AllowVisa](ASVIEW/AllowVisa.md) | Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի վավերացման գործողությունը։ |
 |[AltFont](ASVIEW/AltFont.md) |Վերադարձնում կամ նշանակում է սյան համար  այլընտրանքային (ռուսերեն) տառատեսակի օգտագործում։ |
-|[BrowseParametersInfo](ASVIEW/BrowseParametersInfo) | Վերադարձնում կամ նշանակում է [AsBrowserParametersInfo](AsBrowserParametersInfo.md) օբյեկտը, որը իր մեջ պարունակում է դիտելու ձևի երկխոսության պատուհանի ֆիլտրի պարամետրերը։|
-|[Caption](AsView/Caption.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի գլխագիրը։ |
+|[BrowseParametersInfo](ASVIEW/BrowseParametersInfo) | Վերադարձնում կամ նշանակում է [AsBrowserParametersInfo](AsBrowserParametersInfo.html) օբյեկտը, որը իր մեջ պարունակում է դիտելու ձևի երկխոսության պատուհանի ֆիլտրի պարամետրերը։|
+|[Caption](ASVIEW/Caption.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի գլխագիրը։ |
 |[ColumnCaption](ASVIEW/ColumnCaption.md) |Վերադարձնում կամ նշանակում է դիտելու ձևի սյանի անվանումը։ |
 |[Condition](ASVIEW/Condition.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում  անփոփոխ ֆիլտրաման պայմանը։ |
 |[DataSource](ASVIEW/DataSource.md) | Վերադարձնում է դիտելու ձևի տվյալների աղբյուրը։ |
@@ -34,8 +34,8 @@ title: "AsView"
 |[ExistsColumn](ASVIEW/ExistsColumn.md) | Դիտելու ձևում ստուգում է սյունակի գոյությունը։ |
 |[Group](ASVIEW/Group.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի խումբը։ |
 |[HelpContext](ASVIEW/HelpContext.md) | Վերադարձնում կամ նշանակում է համատեքստի օգնության նույնականացման համարը։ |
-|[Name](AsView/Name.md) | Վերադարձնում է դիտելու ձևի ներքին անունը։|
-|[Parameters](SVIEW/Parameters.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի պարամետրերը։|
+|[Name](ASVIEW/Name.md) | Վերադարձնում է դիտելու ձևի ներքին անունը։|
+|[Parameters](ASVIEW/Parameters.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի պարամետրերը։|
 |[ShowOnBottom](ASVIEW/ShowOnBottom.md) | Վերադարձնում կամ նշանակում է դիտելու ձևի միանալուց վերջին տողի ընտրված լինելը։ |
 |[SQLSort](ASVIEW/SQLSort.md) | Վերադարձնում կամ նշանակում է սյուների տեսակավորման աղբյուրը։ |
 |[UnMoveColumnCount](ASVIEW/UnMoveColumnCount.md) | Վերադարձնում կամ նշանակում է դիտելու ձևում  անշարժ սյուների քանակը։ |

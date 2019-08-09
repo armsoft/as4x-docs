@@ -21,7 +21,7 @@ AsData-ի նախնական պարամետրերը լրացնելուց հետո 
 | [DColCount](ASDATA/DColCount.md) | Վերադարձնում է սյունակների քանակը տվյալների աղբյուրի մեջ։ |
 | [DefaultIndicate](ASDATA/DefaultIndicate.md) | Վերադարձնում է տվյալների աղբյուրի կատարման ընթացքի նկարագրության մեջ սահմանված [ցուցադրման ձևը](../Constants/const_opencursor_Indicate.html)։ |
 | [DisableValidFunction](ASDATA/DisableValidFunction.md) | Անջատում է [Valid](../ScriptProcs/Valid_Data.html) իրադարձությունը։ |
-| [DParCount](AsData/DParCount.md) | Վերադարձնում է տվյալների աղբյուրի պարամետրի քանակը։ |
+| [DParCount](ASDATA/DParCount.md) | Վերադարձնում է տվյալների աղբյուրի պարամետրի քանակը։ |
 | [ECaption](ASDATA/ECaption.md) | Վերադարձնում է տվյալների աղբյուրի անվանումը օտար լեզվով։ |
 | [EOF](ASDATA/EOF.md) | Ցույց է տալիս տվյալների վերջին հասած լինելը (նշորդով կարդալու ժամանակ)։ |
 | [IndicateCaption](ASDATA/IndicateCaption.md) | Վերադարձնում կամ նշանակում է ընթացագոտու պատուհանի գլխագիրը։  |

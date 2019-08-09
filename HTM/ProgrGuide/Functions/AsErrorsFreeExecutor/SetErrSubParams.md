@@ -6,7 +6,7 @@ title: "AsErrorsFreeExecutor/SetErrSubParams"
 
 # SetErrSubParams մեթոդ
  
-[См. также](../Functions/CreateErrorsFreeExecutor.md)
+[См. также](../Functions/CreateErrorsFreeExecutor.html)
 [Օրինակ](../../Examples/E_AsErrorsFreeExecutor.html)[&nbsp;](../../Examples/E_AsErrorsFreeExecutor.html) [Применяется к](../AsErrorsFreeExecutor.md)
 
 Տրվում են պարամետրեր, սխալի մասին հավելյալ հաղորդագրություն դուրս բերող ֆունկցիային փոխանցման համար։ Եթե պարամետրերը տրված չեն, ապա ֆունկցիային փոխանցվում են `Run` մեթոդի պարամետրերը։
