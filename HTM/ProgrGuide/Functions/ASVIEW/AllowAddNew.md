@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowAddNew"
+title: "AsView/AllowAddNew"
 ---
 
 

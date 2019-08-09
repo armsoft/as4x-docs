@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowHistory"
+title: "AsView/AllowHistory"
 ---
 
 

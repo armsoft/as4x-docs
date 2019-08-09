@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "ASView/BrowseParametersInfo"
+title: "AsView/BrowseParametersInfo"
 ---
 # BrowseParametersInfo հատկություն
 
 
 [См. также](../AsDialog/CreateBrowseParametersInfo.html) Օրինակ [Применяется к](../Asview.md)
 
-Վերադարձնում կամ նշանակում է [AsBrowserParametersInfo](AsBrowserParametersInfo.html) օբյեկտը, որը իր մեջ պարունակում է դիտելու ձևի երկխոսության պատուհանի ֆիլտրի պարամետրերը։
+Վերադարձնում կամ նշանակում է [AsBrowserParametersInfo](../AsBrowserParametersInfo.html) օբյեկտը, որը իր մեջ պարունակում է դիտելու ձևի երկխոսության պատուհանի ֆիլտրի պարամետրերը։
 
 ## Շարահյուսություն
 

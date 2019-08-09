@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/Browse"
+title: "AsView/Browse"
 ---
 
 

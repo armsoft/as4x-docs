@@ -7,7 +7,7 @@ title: "AsDoc/SetRekvsClickDropDownEvent"
 
 [См. также](SetGridColsClickDropDownEvent.html) [օրինակ](../../Examples/E_SetRekvsClickDropDownEvent.html) [Применяется к](../Asdoc.md)
 
-Նշանակում է  [ClickDropDown](../ScriptProcs/ClickDropDown.html) իրադարձությունը առաջացնելու հայտանիշը տրված դաշտերի բազմության համար
+Նշանակում է  [ClickDropDown](../../ScriptProcs/ClickDropDown.html) իրադարձությունը առաջացնելու հայտանիշը տրված դաշտերի բազմության համար
 
 ## Շարահյուսություն
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/DisableDocFunctions"
+title: "AsView/DisableDocFunctions"
 ---
 
 

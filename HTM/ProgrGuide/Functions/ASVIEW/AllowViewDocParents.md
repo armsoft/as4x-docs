@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowViewDocParents"
+title: "AsView/AllowViewDocParents"
 ---
 
 

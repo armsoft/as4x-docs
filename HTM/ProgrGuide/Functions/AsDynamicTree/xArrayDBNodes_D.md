@@ -8,7 +8,7 @@ title: "AsDynamicTree/xArrayDBNodes"
 
 [См. также](../AsDynamicTree.md) Օրինակ [Применяется к](../AsDynamicTree.md)
 
-Վերադարձնում է [XArrayDB](Functions/CreateXArrayDB.html) տիպի հղումը դինամիկ ծառի հանգույցների մասիվի վրա։
+Վերադարձնում է [XArrayDB](../Functions/CreateXArrayDB.html) տիպի հղումը դինամիկ ծառի հանգույցների մասիվի վրա։
 
 ## Շարահյուսություն
 

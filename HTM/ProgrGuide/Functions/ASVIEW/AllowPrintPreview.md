@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "ASView/AllowPrintPreview"
+title: "AsView/AllowPrintPreview"
 ---
 
 
 # AllowPrintPreview հատկություն
 
-[См. также](../Asview.mdl) [Օրինակ](../../Examples/E_AsView.html) [Применяется к](../Asview.md)
+[См. также](../Asview.md) [Օրինակ](../../Examples/E_AsView.html) [Применяется к](../Asview.md)
 
 Վերադարձնում կամ նշանակում է դիտելու ձևից փաստաթղթի տպելու ձևի դիտման թույլտվություն։
 

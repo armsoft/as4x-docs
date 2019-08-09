@@ -54,5 +54,5 @@ title: "AsDialog"
 |[AddViewControl](AsDialog/AddViewControl.md) | Երկխոսության պատուհանում ավելացնում է դիտելու ձև տիպի դաշտ։|
 |[AddViewControlAtRight](AsDialog/AddViewControlAtRight.md) | Երկխոսության պատուհանում նշված դաշտի աջից ավելացնում է նոր դիտելու ձև տիպի  դաշտ։|
 |[CloseForm](AsDialog/CloseForm.md) | Փակում է երկխոսության պատուհանը։|
-|[CreateBrowseParametersInfo](AsDialog/CreateBrowseParametersInfo.md) | Ստեղծում է [AsBrowserParametersInfo](AsBrowserParametersInfo.md) տիպի օբյեկտ, որի մեջ պահպանվում են երկխոսության պատուհանի դաշտերի արժեքները։|
+|[CreateBrowseParametersInfo](AsDialog/CreateBrowseParametersInfo.md) | Ստեղծում է [AsBrowserParametersInfo](AsBrowserParametersInfo.html) տիպի օբյեկտ, որի մեջ պահպանվում են երկխոսության պատուհանի դաշտերի արժեքները։|
 |[Show](AsDialog/Show.md) |Ակտիվացնում է երկխոսության պատուհանը։|

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowView"
+title: "AsView/AllowView"
 ---
 
 # AllowView հատկություն

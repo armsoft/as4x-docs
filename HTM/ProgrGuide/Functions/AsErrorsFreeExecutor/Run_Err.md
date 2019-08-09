@@ -6,7 +6,7 @@ title: "AsErrorsFreeExecutor/Run"
 
 # Run մեթոդ
 
-[См. также](../Functions/CreateErrorsFreeExecutor.md) [Օրինակ](../../Examples/E_AsErrorsFreeExecutor.html) [Применяется к](../AsErrorsFreeExecutor.md)
+[См. также](../Functions/CreateErrorsFreeExecutor.html) [Օրինակ](../../Examples/E_AsErrorsFreeExecutor.html) [Применяется к](../AsErrorsFreeExecutor.md)
 
 Կանչում է սկրիպտային ֆունկցիան։ 
 

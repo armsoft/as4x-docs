@@ -6,7 +6,7 @@ title: "AsGrid/GridControl"
 
 # GridControl հատկություն
 
-[См. также](../Control.md) Օրինակ [Применяется к](../AsGrid.md) 
+[См. также](../ASDOC/Control.md) Օրինակ [Применяется к](../AsGrid.md) 
 
 Վերադարձնում է աղյուսակի քոնթրոլը (TrueDBGrid տիպի)։
 

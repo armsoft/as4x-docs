@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ASView/AllowEdit"
+title: "AsView/AllowEdit"
 ---
 
 

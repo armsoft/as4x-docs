@@ -3,7 +3,7 @@ layout: page
 title: "AsGrid օբյեկտ"
 ---
 
-См также: [Grid](../ASDOC/Grid.md)
+См также: [Grid](ASDOC/Grid.md)
 
 # Փաստաթղթի աղյուսակ օբյեկտ 
 

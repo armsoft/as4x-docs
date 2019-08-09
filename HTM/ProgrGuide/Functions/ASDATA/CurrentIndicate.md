@@ -8,7 +8,7 @@ title: "AsData/CurrentIndicate"
 
 [См. также](../Asdata.md) Օրինակ [Применяется к](../Asdata.md)
 
-Վերադարձնում է հաշվարկվող տվյալների աղբյուրի կատարման ընթացքի [ցուցադրման ձևը](../Constants/const_opencursor_Indicate.html)։ 
+Վերադարձնում է հաշվարկվող տվյալների աղբյուրի կատարման ընթացքի [ցուցադրման ձևը](../../Constants/const_opencursor_Indicate.html)։ 
 
 ## Շարահյուսություն
 

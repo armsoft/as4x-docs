@@ -6,9 +6,9 @@ title: "AsDoc/ClickDropDownEvent"
 
 # ClickDropDownEvent հատկություն
 
-[См. также](../../ScriptProcs/ClickDropDown.html) Օրինակ [Применяется к](../Asdoc.md)
+[См. также](../../ScriptProcs/ClickDropDown.md) Օրինակ [Применяется к](../Asdoc.md)
 
-Վերադարձնում կամ նշանակում է  [ClickDropDown](../ScriptProcs/ClickDropDown.md) կամ [ClickDropDownGrid](../ScriptProcs/ClickDropDownGrid.md) իրադարձությունները առաջացնելու հայտանիշը տրված դաշտի կամ աղյուսակի սյունակի համար։
+Վերադարձնում կամ նշանակում է  [ClickDropDown](../../ScriptProcs/ClickDropDown.md) կամ [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձությունները առաջացնելու հայտանիշը տրված դաշտի կամ աղյուսակի սյունակի համար։
 
 ## Շարահյուսություն
 
