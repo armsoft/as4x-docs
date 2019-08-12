@@ -295,7 +295,7 @@ End Sub
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
-|`CurrentView`|Հղում [ընթացիկ դիտելու ձևի](../Functions/ICurrentView.md "ICurrentView") վրա։|
+|`CurrentView`|Հղում [ընթացիկ դիտելու ձևի](../Functions/ICurrentView.md) վրա։|
 
 Օգտագործվում է հետևյալ իրադարձության համար
 * [DataPostFunctions](#extensionevents-enum)
