@@ -5,7 +5,7 @@ title: "AsDocStructure/Element"
 
 # Element հատկություն
 
-[См. также](../ASDocStructureElement.md) Օրինակ [Применяется к](../ASDocStructure.md)
+[См. также](../AsDocStructureElement.md) Օրինակ [Применяется к](../ASDocStructure.md)
 
 Վերադարձնում է փաստաթղթի կառուցվածքի առաջին մակարդակի տարր (դաշտ, աղյուսակ)։
 

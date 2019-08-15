@@ -6,7 +6,7 @@ title: "AsDocStructure/Redraw"
 
 # Redraw մեթոդ
 
-[См. также](../ASDocStructureElement.md) Օրինակ [Применяется к](../ASDocStructure.md) 
+[См. также](../AsDocStructureElement.md) Օրինակ [Применяется к](../ASDocStructure.md) 
 
 Վերանկարում է փաստաթղթի տարրի (դաշտի, աղյուսակի...) անվանումը։
 
