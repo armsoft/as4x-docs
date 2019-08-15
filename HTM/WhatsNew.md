@@ -367,7 +367,7 @@
       <li>объект
       <a href="ProgrGuide/Functions/ASDocStructure.html">структура документа</a></li>
       <li>объект
-      <a href="ProgrGuide/Functions/ASDocStructureElement.html">элемент структуры документа</a></li>
+      <a href="ProgrGuide/Functions/AsDocStructureElement.html">элемент структуры документа</a></li>
       <li>свойство
       <a href="ProgrGuide/Functions/ASDOC/Structure.html">Structure</a> в объекте документ<br>
 		&nbsp;</li>
