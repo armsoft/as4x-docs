@@ -4,10 +4,7 @@ title: "CreateFolderElement"
 ---
 
 ## CreateFolderElement  մեթոդ
-[свойства методы](../../AsFoldElement.html)
-
-Ստեղծում է նոր թղթապանակի տարր հետագայում զբաղեցնելու(օգտագործելու) և հիշելու համար:
-
+Ստեղծում է նոր [թղթապանակի տարր](../../AsFoldElement.md) օբյեկտ:
 
 ## Շարահյուսություն`
 
@@ -20,7 +17,7 @@ Set sNewFolderEl = CreateFolderElement(FolderId)
     
 | Պարամետր | Նկարագրություն | Տիպ |
 |--|--|--|
-|sNewFolderEl|Փոփոխական,որը հղվում է նոր թղթապանակի տարրի վրա:| AsFolderElement |
+|sNewFolderEl|Փոփոխական,որը հղվում է նոր թղթապանակ տարրի վրա:| AsFolderElement |
 |FolderId    |Տողային արտահայտություն,որը կլինի ստեղծված թղթապանակի ներքին անունը: Պարտադիր պարամետր:| String |
 
 
@@ -29,8 +26,8 @@ Set sNewFolderEl = CreateFolderElement(FolderId)
 
 [См. также](../../../constructors.html)
 
-##   CreateFolderElement մեթոդի օրինակ`
-Օրինակում կանչվում է CreateFolderElement մեթոդը,  xFoldEl-ը հանդիսանում է նոր թղթապանակի տարրը, իր դաշտերով և մեթոդներով, ընդորում xFoldEl.FolderID  =  "NBACC":
+## Օրինակ
+Օրինակում ստեղծում է նոր տարր `"NBACC"` թղթապանակում:
 
 ```vb
 Set xFoldEl = CreateFolderElement("NBACC")
