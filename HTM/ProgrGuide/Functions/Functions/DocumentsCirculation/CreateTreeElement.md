@@ -20,7 +20,7 @@ Set sNewTreeEl = CreateTreeElement (TreeId)
 | Պարամետր | Նկարագրություն |
 |--|--|
 | sNewTreeEl | Նոր ստեղծված ծառի տարրի հղում |
-| TreeId | ծառի ներքին անունը, որի տարր ցանկանում ենք ստեղծել |
+| TreeId | Ծառի ներքին անունը, որի տարր ցանկանում ենք ստեղծել |
 
 
 ## Նկատառումներ
@@ -31,7 +31,7 @@ Set sNewTreeEl = CreateTreeElement (TreeId)
 
 Օրինակի մեջ կանչվում է CreateTreeElement ֆունկցիան, 
 xTreeEl-ը հղում է նոր ստեղծված ծառի տարրի վրա, 
-որը պահպանելու համար պետք է կանչել StoreInTree մեթոդը 
+որը պահպանելու համար պետք է կանչել [StoreInTree](../../ASDOC/StoreInTree.md) մեթոդը 
 
 
 ``` vb
