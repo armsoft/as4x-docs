@@ -1,54 +1,57 @@
----
-layout: page
-title: "CreateFolderElement"
----
-    <link rel="stylesheet" href="../../../../common.css" />
-    <h2>Функция CreateFolderElement</h2>
-    <p><a href="../../AsFoldElement.html"><strong>свойства&nbsp;&nbsp;методы</strong></a></p>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>layout: page
+title: &quot;CreateFolderElement&quot;</title>
+</head>
+<body>
 
-    <p>Создает новый экземпляр элемента папки для дальнейшего заполнения и запоминания.</p>
-
-    <h4>Синтаксис</h4>
-
-    <p>
-        <strong>Set</strong> <em>sNewFolderEl</em> = <strong>CreateFolderElement</strong>(<em>FolderId</em>)
-    </p>
-
-    <p>Синтаксис функции <strong>CreateFolderElement</strong> состоит из следующих частей:</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Параметр</th>
-                <th>Описание</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="param">sNewFolderEl</td>
-                <td>переменная, ссылающаяся на новый экземпляр элемента папки</td>
-            </tr>
-            <tr>
-                <td class="param"><em>FolderId</em></td>
-                <td>строковое выражение, определяющее идентификатор папки, для которой создается элемент</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h4>Примечание</h4>
-
-    <p><a href="../../../constructors.html">См. также</a></p>
-
-    <h4>Пример функции CreateFolderElement</h4>
-
-    <p>
-        В примере вызывается функция CreateFolderElement, xFoldEl ссылается на вновь созданный объект-проводку со всеми его свойствами и методами. 
-    </p>
-
-    <pre><code>Set xFoldEl = <strong>CreateFolderElement</strong>(&quot;NBACC&quot;)
-xFoldEl.<a href="../../AsFoldElement/Com.html">Com</a> = Doc(&quot;Name&quot;)
-xFoldEl.<a href="../../AsFoldElement/ECom.html">Ecom</a> = Doc(&quot;EName&quot;)
-xFoldEl.<a href="../../AsFoldElement/Spec.html">Spec</a> = Doc(&quot;NOMDOK&quot;) &amp; Doc.Formatted(&quot;MTCCOUNT&quot;) &amp; Doc(&quot;COMENT&quot;) 
-xFoldEl.<a href="../../AsFoldElement/Status.html">Status</a> = &quot;E&quot;
-Doc.<a href="../../ASDOC/StoreInFolder.html">StoreInFolder</a> xFoldEl
+    <hr />
+<h2 id="layout-page-title-createfolderelement">layout: page
+title: &quot;CreateFolderElement&quot;</h2>
+<h2 id="createfolderelement">CreateFolderElement  մեթոդ</h2>
+<pre><code> [свойства методы](../../AsFoldElement.html)
+Ստեղծում է նոր թղթապանակի տարր հետագայում զբաղեցնելու(օգտագործելու) և հիշելու համար:
 </code></pre>
+<h2 id="section">Շարահյուսություն`</h2>
+<p>Set sNewFolderEl = CreateFolderElement(FolderId)</p>
+<p>Բաղադրիչներն են`</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Պարամետր</th>
+<th>Նկարագրություն</th>
+<th>Տիպ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sNewFolderEl</td>
+<td>Փոփոխական,որը հղվում է նոր թղթապանակի տարրի վրա:</td>
+<td>AsFolderElement</td>
+<td></td>
+</tr>
+<tr>
+<td>FolderId</td>
+<td>Տողային արտահայտություն,որը կլինի ստեղծված թղթապանակի ներքին անունը: Պարտադիր պարամետր:</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-1">Նկատառումեր`</h2>
+<pre><code>[См. также](../../../constructors.html)
+</code></pre>
+<h2 id="createfolderelement-1">CreateFolderElement մեթոդի օրինակ`</h2>
+<p>Օրինակում կանչվում է CreateFolderElement մեթոդը,  xFoldEl-ը հանդիսանում է նոր թղթապանակի տարրը, իր դաշտերով և մեթոդներով, ընդորում xFoldEl.FolderID  =  &quot;NBACC&quot;:</p>
+<p>Set xFoldEl = CreateFolderElement(&quot;NBACC&quot;)
+xFoldEl.Com = Doc(&quot;Name&quot;)
+xFoldEl.Ecom = Doc(&quot;EName&quot;)
+xFoldEl.Spec = Doc(&quot;NOMDOK&quot;) &amp; Doc.Formatted(&quot;MTCCOUNT&quot;) &amp; Doc(&quot;COMENT&quot;)
+xFoldEl.Status = &quot;E&quot;
+Doc.StoreInFolder xFoldEl</p>
+
+
+</body>
+</html>
