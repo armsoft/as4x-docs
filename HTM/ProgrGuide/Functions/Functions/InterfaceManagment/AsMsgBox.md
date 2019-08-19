@@ -38,7 +38,7 @@ VbMsgBoxResult
 | Հաստատուն | Արժեք | Նկարագրություն |
 |--|--|--|
 | vbOKOnly | 0 | Ցուցադրում է միայն **OK** կոճակը։ |
-| vbOKCancel | 1 | Ցուցադրում է **OK** և **Cancel<** կոճակները։ |
+| vbOKCancel | 1 | Ցուցադրում է **OK** և **Cancel** կոճակները։ |
 | vbAbortRetryIgnore | 2 | Ցուցադրում է **Abort**, **Retry** և **Ignore** կոճակները։ |
 | vbYesNoCancel | 3 | Ցուցադրում է **Yes**, **No** և **Cancel** կոճակները։ |
 | vbYesNo | 4 | Ցուցադրում է **Yes** և **No** կոճակները։ |
