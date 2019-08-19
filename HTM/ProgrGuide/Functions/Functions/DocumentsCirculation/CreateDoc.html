@@ -2,62 +2,41 @@
 layout: page
 title: "CreateDoc"
 ---
-    <link rel="stylesheet" href="../../../../common.css" />
 
-    <h2>Функция CreateDoc</h2>
-    <p><a href="../../Asdoc.html"><strong>свойства&nbsp;&nbsp;методы</strong></a></p>
+# CreateDoc ֆունկցիան
+[Ֆունկցիայի հատկություններ](../../Asdoc.md)
 
-    <p>Создает новый экземпляр документа указанного типа.</p>
+Նշված տիպի նոր փաստաթղտի ստեղծում։
+   
 
-    <h4>Синтаксис</h4>
+## Շարահյուսություն
 
-    <p>
-        <strong>Set</strong> <em>sNewDoc</em> = <strong>CreateDoc</strong>(<em>sDocType</em>, [<em>nParentISN</em>])
-    </p>
+Set sNewDoc = CreateDoc(sDocType, [nParentISN]) 
 
-    <p>Синтаксис функции <strong>CreateDoc</strong> состоит из следующих частей:</p>
+Շարահյուսությունը CreateDoc ֆունկցիայի կազմված է հետևյալ մասերից՝
+    
+| Պարամետր | Նկարագրություն |
+|--|--|
+| sNewDoc | Փաստաթուղթ տիպի փոփոխական |
+| sDocType | Փաստաթղտի տիպը որոշող տողային արտահայտություն |
+| nParentISN | Ոչ պարտադիր թվային արտահայտություն Long տիպի, որը որոշում է ծնող փաստաթղտին ISN-ով, լռությամբ արժեքը -1 |
 
-    <table>
-        <thead>
-            <tr>
-                <th>Параметр</th>
-                <th>Описание</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="param">sNewDoc</td>
-                <td>переменная, ссылающаяся на новый экземпляр документа </td>
-            </tr>
-            <tr>
-                <td class="param">sDocType</td>
-                <td>строковое выражение, определяющее тип создаваемого документа</td>
-            </tr>
-            <tr>
-                <td class="param">nParentISN</td>
-                <td>необязательное численное выражение типа Long, определяющее ISN родительского документа. По умолчанию равно -1.
-                </td>
-            </tr>
-        </tbody>
-    </table>
 
-    <h4>Примечание</h4>
+## Նկատառումներ
 
-    <p><a href="../../../constructors.html">См. также</a></p>
+[См. также](../../../constructors.html)
 
-    <h4>Пример функции CreateDoc</h4>
+## CreateDoc ֆունկցիայի օրինակներ
 
-    <p>
-        В примере вызывается функция CreateDoc, xDoc ссылается на обьект типа документ со всеми его свойствами и методами. <br/>
-Создается новый экземпляр документа типа HTN92.
-    </p>
+Օրինակում կանչվում է CreateDoc ֆունկցիան, xDoc-ը հղվում է փաստաթուղտ տիպի օբյեկտի վրա, փաստաթղտի բոլոր ֆունկցիաներով և մեթոդներով։
+ Ստեղծվում է HTN92 տիպի փաստաթղտի նոր օրինակ։
 
-    <pre><code>Set mDoc = LoadDoc(CurrentView.Value(&quot;fISN&quot;))
-Set xDoc = <strong>CreateDoc</strong>(&quot;HTN92&quot;, mDoc.ISN)
-xDoc(&quot;CATEGORY&quot;) = xMsgType
-xDoc(&quot;BMDOCNUM&quot;) = nDoc.ISN
-xDoc(&quot;REFERENC&quot;) = mDoc(&quot;BMDOCNUM&quot;)
-xDoc(&quot;DATE&quot;) = mDoc(&quot;BMIODATE&quot;)
-xDoc(&quot;TYPE&quot;) = xMsgType
-xDoc.<a href="../../ASDOC/State.html">State</a> = 0
-xDoc.<a href="../../ASDOC/Show.html">Show</a></code></pre>
+Set mDoc = LoadDoc(CurrentView.Value("fISN"))
+Set xDoc = CreateDoc("HTN92", mDoc.ISN)
+xDoc("CATEGORY") = xMsgType
+xDoc("BMDOCNUM") = nDoc.ISN
+xDoc("REFERENC") = mDoc("BMDOCNUM")
+xDoc("DATE") = mDoc("BMIODATE")
+xDoc("TYPE") = xMsgType
+xDoc.[State](../../ASDOC/State.md) = 0
+xDoc.[Show](../../ASDOC/Show.md)
