@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "AsSqlParametersCollection/Clear"
+title: "AsSqlParameterCollection/Clear"
 ---
 
 
 # Clear մեթոդ
 
-[Տես նաև](../AsSqlParametersCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParametersCollection.md) 
+[Տես նաև](../AsSqlParameterCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParameterCollection.md) 
 
-Ջնջում է [AsSqlParametersCollection](../AsSqlParametersCollection.md) հավաքածուում գտնվող բոլոր  [AsParameter](../AsParameter.md) տիպի էլեմենտները։
+Ջնջում է [AsSqlParameterCollection](../AsSqlParameterCollection.md) հավաքածուում գտնվող բոլոր  [AsParameter](../AsParameter.md) տիպի էլեմենտները։
 
 ## Շարահյուսություն
 

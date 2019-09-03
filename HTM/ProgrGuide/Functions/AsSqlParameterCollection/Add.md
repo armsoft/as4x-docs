@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "AsSqlParametersCollection/Add"
+title: "AsSqlParameterCollection/Add"
 ---
 
 
 # Add մեթոդ
 
-[Տես նաև](../AsSqlParametersCollection.md) [Օրինակ](../../Examples/AsSqlParametersCollection.md) [Կիրառվում է](../AsSqlParametersCollection.md) 
+[Տես նաև](../AsSqlParameterCollection.md) [Օրինակ](../../Examples/AsSqlParameterCollection.md) [Կիրառվում է](../AsSqlParameterCollection.md) 
 
 Ստեղծում է և կցում հավաքածուին նոր տարր։
 

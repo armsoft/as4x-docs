@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "AsSqlParametersCollection/Item"
+title: "AsSqlParameterCollection/Item"
 ---
 
 
 # Item հատկություն
 
-[Տես նաև](../AsSqlParametersCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParametersCollection.md)
+[Տես նաև](../AsSqlParameterCollection.md) [Օրինակ]() [Կիրառվում է](../AsSqlParameterCollection.md)
 
 Հավաքածուից բանալիով վերադարձնում է տարրը։
 
