@@ -21,7 +21,7 @@ title: "AsDynamicTree օբյեկտ"
 | [MultiSelectMode](AsDynamicTree/MultiSelectMode_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառից մի քանի հանգույց ընտրելու հնարավորությունը։ |
 [SelectRootsOnly](AsDynamicTree/SelectRootsOnly_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառից միայն առաջին մակարդակի  հանգույցների  ընտրության հնարավորությունը։ |
 | [Top](AsDynamicTree/Top_D.md) | Վերադարձնում կամ նշանակում է դինամիկ ծառի  վերին եզրի հեռավորությունը ծրագրի պատուհանի վերին եզրից։ |
-| [TreeId](AsDynamicTree/TreeId_D.md) | Նշանակում է դինամիկ ծառի ներքին անունը։ |
+| [TreeId](AsDynamicTree/TreeId_D.md) | վերադարձնում կամ նշանակում է դինամիկ ծառի ներքին անունը։ |
 | [xArrayDBNodes](AsDynamicTree/xArrayDBNodes_D.md) | Վերադարձնում է ծառի հանգույցների մասիվը [XArrayDB](Functions/CreateXArrayDB.html) օբյեկտի մեջ։|
 
 
