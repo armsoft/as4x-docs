@@ -38,16 +38,29 @@ window.addEventListener("load", (ev) => {
     });
 });
 
+/*
+ * Փնտրում է տեքստը api index էջում, և չհամապատասխանող հղուները դարձնում է անտեսանելի։
+ *
+ * Անտեսանելի է դարձնում նաև այն դեպքերը, երբ տեքտը գտել է տիպի անվան մեջ, այլ ոչ թե հատկության անվան մեջ։
+ * Օրինակ՝ input == "Doc", ապա "AsDoc/Caption"-ը կդառնա անտեսանելի։
+ */
 function searchText(input) {
     let content = document.getElementById("index_content");
     let searchText = input.value.toLowerCase();
     console.log(searchText);
-    let aArr = content.getElementsByTagName("a");
-    for (let i = 0; i < aArr.length; i++) {
-        if (aArr[i].textContent.toLowerCase().indexOf(searchText) >= 0) {
-            aArr[i].parentElement.style.display = "";
+    let anchorArr = content.getElementsByTagName("a");
+    for (let i = 0; i < anchorArr.length; i++) {
+        let anchorText = anchorArr[i].textContent.toLowerCase();
+        let foundIndex = anchorText.lastIndexOf(searchText);
+        if (foundIndex >= 0) {
+            let slashIndex = anchorText.indexOf("/"); //տիպի հատկությունից տարանջատման նիշ
+            if (foundIndex > slashIndex) {
+                anchorArr[i].parentElement.style.display = "";
+            } else {
+                anchorArr[i].parentElement.style.display = "none";
+            }
         } else {
-            aArr[i].parentElement.style.display = "none";
+            anchorArr[i].parentElement.style.display = "none";
         }
     }
 }
