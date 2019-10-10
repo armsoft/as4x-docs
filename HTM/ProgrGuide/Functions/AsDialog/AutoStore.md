@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsDialog/AddControl"
+title: "AsDialog/AutoStore"
 ---
 
 
