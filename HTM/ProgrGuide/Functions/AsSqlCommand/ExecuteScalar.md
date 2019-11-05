@@ -22,3 +22,4 @@ Function ExecuteScalar() As AsNullable
 ## Տվյալի տիպ
 
 [AsNullable](../AsNullable.md)
+
