@@ -45,7 +45,7 @@ title: "AsRepViewer օբյեկտ"
 |[AddFragment](AsRepViewer/AddFragment.md)| Ավելացնում է տեղեկատու-հաշվետվության մեջ ընտրված լայնությամբ նոր հատված։ |
 |[AddHeader](AsRepViewer/AddHeader.md)| Ընտրված հաշվետվության մեջ ավելացնում է գլխագրի նոր տող։ |
 |[AddRow](AsRepViewer/AddRow.md)|  Ընտրված հաշվետվության մեջ ավելացնում է նոր տող։ |
-|[Break](AsRepViewer/Break.md)|Հաշվետվության մեջ տեղադրում է էջընդհատ (page break): |
+|[Break](AsRepViewer/Break.md)|Հաշվետվության մեջ նշում է կետ, որը հարմար է Էջի ընդհատման համար։ Այսպիսի կետերի միջև ընկած հատվածը համակարգը փորձում է տպել մեկ էջի մեջ։ |
 |[GetRows](AsRepViewer/GetRows.md)| Վերադարձնոմ է նշված տողերի մասիվը հաշվետվությունից։   |
 |[LoadFrom](AsRepViewer/LoadFrom.md)| Նախօրոք պահպանված հաշվետվության ֆայլի հիման վրա վերականգնում է հաշվետվությունը։ |
 |[RegistrFunction](AsRepViewer/RegistrFunction.md)|Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։ |
