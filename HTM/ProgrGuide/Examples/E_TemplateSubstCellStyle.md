@@ -1,52 +1,46 @@
 ---
 layout: page
-title: "Օրինակ/DataSourceIndicator"
+title: "Օրինակ/TemplateSubstCellStyle"
 ---
-# Օրինակում ցույց է տրված [BackColor](../Functions/TemplateSubstCellStyle/BackColor.html), [Bold](../Functions/TemplateSubstCellStyle/Bold.html),[Color](../Functions/TemplateSubstCellStyle/Color.html), [Italic](../Functions/TemplateSubstCellStyle/Italic.html) և [Underline](../Functions/TemplateSubstCellStyle/Underline.html) հատկությունների օգտագործումը [TemplateSubstCellStyle](../Functions/TemplateSubstCellStyle.html) տիպի օբյեկտի համար։
 
-
-Пример работы свойств [BackColor](../Functions/TemplateSubstCellStyle/BackColor.html), 
-[Bold](../Functions/TemplateSubstCellStyle/Bold.html), 
-[Color](../Functions/TemplateSubstCellStyle/Color.html), 
-[Italic](../Functions/TemplateSubstCellStyle/Italic.html) и 
-[Underline](../Functions/TemplateSubstCellStyle/Underline.html) для объекта типа  [TemplateSubstCellStyle](../Functions/TemplateSubstCellStyle.html).
-
+Օրինակում ցույց է տրված [TemplateSubstCellStyle](../Functions/TemplateSubstCellStyle.html) տիպի օգտագործումը։
     
 ``` vb
+Public Function TemplateSubstitution(ByVal modes As Dictionary) As TemplateSubstitution
 Dim tempSub As TemplateSubstitution
-Dim i As Integer
-Dim sSql As String 
-Dim rs As rdoResultset 
+Dim i As Long
 Dim style As TemplateSubstCellStyle
+Dim operGrid As AsGrid
 
-sSql = "select d.fISN, d.fNAME" & vbCrLf _ 
-        & "from DOCS d" & vbCrLf 
-Set rs = Util.ExecuteQuery(sSql, True, ASOpenForwardOnly)
+    Set tempSub = New TemplateSubstitution
+    Set operGrid = Doc.Grid("OPERS")
+    Set style = New TemplateSubstCellStyle
+    With style
+        .BackColor = "#00FF00"
+        .Color = "#FF0000"
+        .Bold = 1
+        .Italic = 0
+        .Underline = 1
+    End With
 
-Set tempSub = New TemplateSubstitution 
-tempSub.AddGrid "T1"
-With tempSub.Grid("T1")
-    .AddColumn "1", "ISN документа", "NP(10,0)"
-    .AddColumn "2", "Наименование документа", "NP(10,0)"
-    .UseStyles = True 
+    tempSub.AddGrid "T1"
+    With tempSub.Grid("T1")
+        .AddColumn "1", "Անվանում", "C(50)"
+        .AddColumn "2", "Գումար", "SUMMA"
+        .AddColumn "3", "Դբ/Կր", "C(1)"
+        .UseStyles = True
 
-    Set style = New TemplateSubstCellStyle 
-    With style 
-        .BackColor = "#00FF00" 
-        .Color = "#FF0000" 
-        .Bold = 1 
-        .Italic = 0 
-        .Underline = 1 
-    End With 
+        For i = 0 To operGrid.RowCount - 1
+            .AddRow 
+            .Value(i, "1") = operGrid(i, "NAME")
+            .Value(i, "2") = operGrid(i, "SUMMA")
+            .Value(i, "3") = operGrid(i, "DBCR")
+            If operGrid(i, "DBCR") = "D" Then
+                .SetRowStyle CLng(i), style
+            End If
+        Next i
+    End With
 
-    i = 0 
-    While Not rs.EOF 
-        .AddRow 
-        .Value(i, "1") = CStr(rs("fISN")) 
-        .Value(i, "2") = CStr(rs("fNAME")) 
-        .SetRowStyle CLng(i), style 
-        rs.MoveNext 
-        i+= 1 
-    Wend 
-End With
+   Set TemplateSubstitution = tempSub
+End Function
 ```

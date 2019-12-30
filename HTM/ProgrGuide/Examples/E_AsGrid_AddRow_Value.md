@@ -1,20 +1,21 @@
 ---
 layout: page
-title: "Օրինակ/Grid AddRow Value Example"
+title: "Օրինակ/AsGrid,AddRow,Value"
 ---
 
-# Օրինակում ցույց է տրված AddRow մեթոդի և  Value հատկության օգտագործումը
+Օրինակում ցույց է տրված AddRow մեթոդի և Value հատկության օգտագործումը:
 
-Ստորև օրինակում բերված է փաստաթղթի աղյուսակի մեջ ավելացվող տողի և սյունակների արժեքների նշանակումը։
-Ниже приведен пример добавления строчки в грид-таблицу документа и присваивания его колонкам значений.</p>
+Օրինակում փաստաթղթի աղյուսակի մեջ ավելացնում է տողեր և լրացնում մասիվից արժեքներ։
 
 ``` vb
-Set tGrd=xDoc.Grid("TRACTS") 
-.....
-for ind=0 to cnt
+Set tGrd = xDoc.Grid("TRACTS")
+Set xArrTrn = GetSampleXArr()
+cnt = xArrTrn.UpperBound(1)
+'
+For i = 0 to cnt
    tGRD.Addrow
-   tGRD.Value(ind,"DOCNUM")=vtrndoc(ind)
-   tGRD.Value(ind,"DATE")=vtrdate(ind)
-   tGRD.Value(ind,"SUMMA")=vtrsum(ind)
-Next 
+   tGRD.Value(i, "DOCNUM") = xArrTrn(i, 0)
+   tGRD.Value(i, "DATE") = xArrTrn(i, 1)
+   tGRD.Value(i, "SUMMA") = xArrTrn(i, 2)
+Next
 ```

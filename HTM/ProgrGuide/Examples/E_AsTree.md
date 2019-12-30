@@ -4,26 +4,28 @@ title: "Օրինակ/AsTree"
 ---
 
 
-# Օրինակում ցույց է տրված  AddDoc, ClearAllDocs, Show մեթոդների և свойств AllowAddNode, AllowDelete, AllowEdit, AllowView, AllowSelectNonDoc, Caption, TreeId, Codelen, TreeTypeInteger հատկությունների օգտագործումը։
+Օրինակում ցույց է տրված ինչպես կարող են օգտագործվել DeleteNode և AddNode մեթոդները։
 
-Օրինակի մեջ կանչվում է Tree ֆունկցիան, mTree-ի միջոցով հղումը իր բոլոր հատկություններով և մեթոդներով վերադառնում է NBACCT3 ծառ օբյեկտի վրա։ Ծառի մեջ ավելանում է NBPUT տիպի փաստաթուղթ ստեղծելու հնարավորություն։ 
-В примере вызывается функция Tree, через переменную mTree возвращается ссылка на обьект дерево - NBACCT3 со всеми его свойствами и методами. В дереве добавляется возможность создания документа типа NBPUT.
+
+Օրինակի մեջ մշակած է փաստաթղթի `Folders` իրադարձություն, որի մեջ ջնջվում են ֆիլտրված ծառի տարրերը, ապա ավելացվում են այդ ծառում այն տարրերը որ նշված են կարգավորման աղյուսակում։
 
 ``` vb
-set mTree = Tree("NBACCT3")
-mTree.Caption = "Выписки счетов" & _
-                        VTOFS("DATE", xDialog("NBSTARTDATE")) & " - " & _
-                        VTOFS("DATE", xDialog("NBENDDATE"))
-mTree.AddDoc "NBPUT"
-nAllowAddNode=mTree.AllowAddNode
-nAllowDelete=mTree.AllowDelete
-nAllowEdit=mTree.AllowEdit
-nAllowEdit=mTree.AllowView
-nAllowSelect=mTree.AllowSelectNonDoc
-mTree.ClearAllDocs
-mTree.Show
-mTree.Codelen
-mTree.TreeTypeInteger
-....
-sTreeId=mTree.TreeId
+Sub Folders()
+Dim oldNodes As Dictionary, xKey As Variant
+Dim xTreeEl As AsTreeElement, xTree As AsTree
+
+    Set xTree = Tree("FilterTr")
+
+    Set oldNodes = Kernel.TreeElements("FilterTr")
+    For Each xKey In AtmIndArr
+        xTree.DeleteNode(oldNodes(xKey).Key)
+    Next
+
+    With Doc.Grid("FILTEREDNODES")
+        For i = 0 To .RowCount - 1
+            Set xTreeEl = TreeElProp("AllTree", .Value(i, "TREECODE"))
+            xTree.AddNode(xTreeEl.Key, xTreeEl.Com, "", xTreeEl.ECom)
+        Next i
+    End With
+End Sub
 ```

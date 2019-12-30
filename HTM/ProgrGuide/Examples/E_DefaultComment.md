@@ -4,14 +4,14 @@ title: "Օրինակ/DefaultComment"
 ---
 
 
-# Օրինակում ցույց է տրված DefaultComment իրադարձության օգտագործումը
+Օրինակում ցույց է տրված DefaultComment իրադարձության օգտագործումը:
 
-[Փաստաթղթի նկարագրության մեջից](../Defs/doc.html) բերված է DefaultComment իրադարձության մշակիչի օրինակը, որի մեջ որպես հնարավոր մեկնաբանություն նշանակված են doc("Cod") & " " & doc("Name") դաշտերի արժեքները։
 
-Из [описания документа](../Defs/doc.html) приведен пример обработчика события DefaultComment, в котором в качестве возможного комментария присваиваются значения реквизитов doc("Cod") &amp; &quot; &quot; &amp; doc("Name")
+
+Օրինակում ցույց է տրված [Փաստաթղթի նկարագրության մեջից](../Defs/doc.html) մեջ գրվող `DefaultComment` իրադարձության մշակիչ:
 
 ``` vb
 Function DefaultComment()
-        DefaultComment = doc("Cod") & " " & doc("Name")
+    DefaultComment = Doc("Cod") & " " & Doc("Name")
 End Function
 ```

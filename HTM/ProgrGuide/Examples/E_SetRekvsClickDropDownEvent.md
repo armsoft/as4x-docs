@@ -3,19 +3,19 @@ layout: page
 title: "Օրինակ/SetRekvsClickDropDownEvent"
 ---
 
-# Օրինակում ցույց է տրված SetRekvsClickDropDownEvent հատկության օգտագործումը
+Օրինակում ցույց է տրված SetRekvsClickDropDownEvent` հատկության օգտագործումը։
 
-Բերված/Սահմանված են  օրինակներ, որոնք հաստատում են [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձության գեներացիայի նախանշանը/նշանակումը `Docnum`, `PartCode` և `Comment`դաշտերի համար, որոնք և սահմանվում են ստորակետներով, բացակներով և ցանկացած ուրիշ նշանով։
-
-Օրինակ՝
-
-приведены примеры устанавливания признака генерации системного события [ClickDropDown](../../ScriptProcs/ClickDropDown.html) для реквизитов `Docnum`, `PartCode` и `Comment`, которые задаются через запятые, пробелы или любой другой символ. Например:
-
+Ցույց է տրված, թե ինչպես կարելի է միացնել մի քանի դաշտերի վրա [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձության մշակումը մեկ հրամանով։  
+Մշակումը միացվում է `DocNum`, `PartCode` և `Comment`-ի դաշտերի համար։
 
 ``` vb
-Doc.SetRekvsClickDropDownEvent("Docnum,PartCode,Comment",  True,  ",")  ,
+Doc.SetRekvsClickDropDownEvent("DocNum PartCode Comment")
+'նույնը կլինի նաև այսպես
+'Doc.SetRekvsClickDropDownEvent("DocNum,PartCode,Comment", , ",") 
+'Doc.SetRekvsClickDropDownEvent("DocNum%PartCode%Comment", , "%")
 
-Doc.SetRekvsClickDropDownEvent("Docnum PartCode Comment",  True,  " ")   կամ
-
-Doc.SetRekvsClickDropDownEvent("Docnum%PartCode%Comment",  True,  "%") 
+'երկար գրելաձևն էր
+'Doc.ClickDropDown("DocNum") = True
+'Doc.ClickDropDown("PartCode") = True
+'Doc.ClickDropDown("Comment") = True
 ```

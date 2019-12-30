@@ -3,14 +3,11 @@ layout: page
 title: "Օրինակ/AsQuery"
 ---
 
+Օրինակներ բերված է [AsQuery](../Functions/AsQuery.html)-ի օգտագործումներ։
 
-# Օրինակում բերված է  AsQuery-ի օգտագործումը
+* Օրինակ 1  
+Ցույց է տրված [ExecuteNonQuery](../Functions/AsQuery/ExecuteNonQuery.html) մեթոդի օգտագործումը, երբ SQL հարցումը ոչինչ չի վերադարձնում:
 
-[Применяется к](../Functions/AsQuery.html)
-    
-
-Օրինակի մեջ ցույց է տրված ExecuteNonQuery մեթոդի օգտագործումը, SQL հարցման առանց վերադարձվող արժեքի կատարման համար:
-В примере показано использование метода ExecuteNonQuery для выполнения SQL-запроса без возвращаемого значения.
 ```vb
 With New AsQuery
     .SQL = "insert into RESNUMBERS (fISN, fTYPE, fNUMBER) " _
@@ -22,11 +19,12 @@ With New AsQuery
     .ExecuteNonQuery()
 End With
 ```
-Օրինակի մեջ ցույց է տրված ExecuteNonQuery մեթոդի օգտագործումը, SQL հարցման և միակ արժեքի վերադարձի կատարման համար:
-В примере показано использование метода ExecuteScalar для выполнения SQL-запроса и возвращения единственного значения.
+
+* Օրինակ 2  
+Ցույց է տրված [ExecuteScalar](../Functions/AsQuery/ExecuteScalar.html) մեթոդի օգտագործումը, երբ SQL հարցումը վերադարձնում է միակ արժեք:
 
 ``` vb
-Dim usedIsn As Long
+Dim usedIsn As Variant
 With New AsQuery
     .SQL = "select fISN " _
          & "from RESNUMBERS " _
@@ -35,10 +33,14 @@ With New AsQuery
     .Parameters("NUMBER") = "V-123456"
 
     usedIsn = .ExecuteScalar()
+    If IsEmpty(usedIsn) Then
+        usedIsn = 0
+    End If
 End With
 ```
-Օրինակի մեջ ցույց է տրված ExecuteNonQuery մեթոդի օգտագործումը, SQL հարցման և մեկից ավել արժեքի վերադարձի կատարման համար:
-В примере показано использование метода ExecuteReader для выполнения SQL-запроса и возвращения более одного значения.
+
+* Օրինակ 3  
+Ցույց է տրված [ExecuteReader](../Functions/AsQuery/ExecuteReader.html) մեթոդի օգտագործումը, երբ SQL հարցումը վերարդաձնում է տողերի բազմություն (rdoResultset):
 
 ```vb
 Dim rs As rdoResultset

@@ -3,35 +3,45 @@ layout: page
 title: "Օրինակ/AsErrorsFreeExecutor"
 ---
 
-# Օրինակում ցույց է տրված Run և SetErrSubParams մեթոդների օգտագործումը
+Օրինակում ցույց է տրված Run և SetErrSubParams մեթոդների օգտագործումը:
 
-Օրինակի մեջ կանչվում է [CreateErrorsFreeExecutor](../Functions/Functions/CreateErrorsFreeExecutor.html) ֆունկցիան, սկրիպտային գործընթացներին տրվում են անվանումներ (SubName -կատարվող գործընթացի անվանում, ErrSubName -գործընթացի անվանում, որը կանչվում է SubName-ի կատարման ժամանակ)։ Նշանակվում է հաշվետվություն (RepViewer), որի մեջ պահվում են սխալների մասին հաղորդագրությունները։ Այնուհետև Run մեթոդի օգնությամբ սահմանվում է SubName գործընթացը։ Run մեթոդը կանչելուց առաջ, SetErrSubParams մեթոդի օգնությամբ, պարամետրեր են  փոխանցվում SubName գործընթացի համար։
-В примере вызывается функция [CreateErrorsFreeExecutor](../Functions/Functions/CreateErrorsFreeExecutor.html), задаются имена скриптовых процедур (SubName-имя исполняемой процедуры,&nbsp; ErrSubName-имя процедуры, которая вызывается только при возникновении ошибки во время исполнения SubName). Устанавливается отчет (RepViewer) в котором сохраняются все сообщения об ошибках. Далее, в цикле выполняется процедура SubName при помощи метода Run. Перед вызовом метода Run передаются параметры для процедуры SubName при помощи метода SetErrSubParams.
+Օրինակի մեջ [CreateErrorsFreeExecutor](../Functions/Functions/CreateErrorsFreeExecutor.html) ֆունկցիայով ստեղծում է [AsErrorsFreeExecutor](../Functions/AsErrorsFreeExecutor.md)-ի օբյեկտ, որի հիմնական կանչվող ֆունկցիան լինելու է `SubCanRaiseError`-ը, իսկ սխալների մշակողը `SubErrorHandler`-ը։ 
+Նշանակվում է հաշվետվություն (RepViewer), որի մեջ պահվում են սխալների մասին հաղորդագրությունները։
+Տողերը մշակվում են հերթականությամբ, ամեն տողի համար կանչելով [Run](../Functions/AsErrorsFreeExecutor/Run_Err.md) մեթոդը։ 
+Մինչև մշակում ամեն տողի համար կանչած է [SetErrSubParams](../Functions/AsErrorsFreeExecutor/SetErrSubParams.md) մեթոդը, որը նախասահմանում է պարամետրերը, որոնք սխալի առաջացման դեպքում կփոխանցվեն սխալի մշակիչ մեթոդին։
 
 
 ``` vb
-Set errFee = CreateErrorsFreeExecutor("ModuleName", "SubName", "ErrSubName")
-Set errRep = CreateRepViewer
-Set errFee.RepViewer = errRep
-....
-Set rs = Util.ExecuteQuery(sSql, True, ASOpenKeyset, , , 6000)
-Do While Not rs.EOF
-    i += 1
-    ....
-    errFee.SetErrSubParams (i, docAgr, errRep)
-    errFee.Run (docAgr)
+' MODULE {NAME=MyModule
 
-    rs.MoveNext
-Loop 
-rs.close
+Public Sub Sample()
+Dim errFee As AsErrorsFreeExecutor, sSql As String, rs As rdoResultset
+    '
+    Set errFee = CreateErrorsFreeExecutor("MyModule", "SubCanRaiseError", "SubErrorHandler")
+    Set errFee.RepViewer = CreateRepViewer()
+    errFee.RepViewer.AddFragment 120
+
+    sSql = "select fISN from ..."
+    Set rs = Util.ExecuteQuery(sSql, True)
+    Do While Not rs.EOF
+        errFee.SetErrSubParams(rs("fISN"), errFee.RepViewer)
+        errFee.Run(rs("fISN"))
+        rs.MoveNext
+    Loop
+    rs.close
+
+    If errFee.RepViewer.RowCount > 0 Then
+        errFee.RepViewer.Show()
+    End If
+End Sub
+
+' կատարում է orderISN-ի մշակում, և կարող է առաջացնել սխալ
+Public Sub SubCanRaiseError(ByVal orderISN As Long)
+    '
+End Sub
+
+'   Սխալի առաջացման դեպքում հաշվետվության մեջ գրվում է սխալի համարը և մշակվող ISN-ը
+Public Sub SubErrorHandler(ByVal orderISN As Long, ByVal errRep As AsRepViewer)
+    errRep.AddRow(CStr(CurrentErrorsFreeExecutor().ErrorsCount) & ". " & CStr(orderISN))
+End Sub
 ```
-Ստորև բերված են SubName և ErrSubName գործընթացների օրինակները։
-Ниже приведены сигнатуры процедур SubName и ErrSubName.
-
-``` vb
-Public Sub SubName (ByVal docAgr As AsDoc)
-Public Sub ErrSubName (ByVal lErrNumber As Long, ByVal docAgr As AsDoc, ByVal errRep as AsRepViewer)
-```
-Если параметры для процедуры ErrSubName не переданы методом SetErrSubParams, то параметры передаются вызовом метода Run. То есть и SubName и ErrSubName должны иметь одну и туже сигнатуру.
-
-

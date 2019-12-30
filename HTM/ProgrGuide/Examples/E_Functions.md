@@ -3,28 +3,42 @@ layout: page
 title: "Օրինակ/Functions"
 ---
 
-# Օրինակում ցույց է տրված Functions իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [փաստաթղթի նկարագրության](../Defs/doc.html) `Functions` իրադարձության օգտագործումը:
 
-Ստորև բերված է փաստաթղթի Function իրադարձության մշակիչի օրինակ, որտեղ սահմանվում են փաստաթղթի համատեքստի մենյուից հասանելի գործողություները։
-Из [описания документа](../Defs/doc.html) приведен пример обработчика события Functions, в котором формируется дерево операций для проведения с документом.
+[Փաստաթղթի նկարագրության մեջ](../Defs/doc.html) գրված Function իրադարձության մշակիչի մեջ սահմանվում են փաստաթղթի համատեքստի մենյուից հասանելի գործողություները։
 
 ``` vb
-Sub Functions() 
-   .....    
-    Doc.RegistrNode "node3","Операции"
-    Doc.RegistrNode "node31", "Приход", "node3"
-    Doc.RegistrNode "node32", "Расход", "node3"
+Public Sub Functions() 
+    Doc.RegistrFunction "Գործողությունների դիտում", "pShowOpers", , , "Show Operations"
 
-    Doc.RegistrNode "node4", "Просмотр и редактирование"
-    Doc.RegistrNode "node41", "Изменение состояний", "node4"
-    Doc.RegistrNode "node42", "Просмотр операций", "node4"
+    Doc.RegistrNode "node3","Գործողություններ", , "Operations"
+    If Param("INOUTACCESS") Then
+        Doc.RegistrNode "node31", "Մուտք/ելք", "node3", "In/Out"
+        Doc.RegistrFunction "Տրամադրում", "pCreateDisbursement", , "node31", "Disbursement"
+        Doc.RegistrFunction "Պարտքերի մարում", "pCreatePayment", , "Debt Payment"
+    End If
+    If Param("INOUTACCESS") Then
+        Doc.RegistrNode "node32", "Դուրս գրում", "node3", "Write-Off"
+        Doc.RegistrFunction "Դուրս գրում", "pCreateWriteOff", , "node32", "Write-Off"
+        Doc.RegistrFunction "Դուրս գրվածի վերականգնում", "pCreateWriteOffBack", , "node32", "Reconstruction of Written-Off"
+        Doc.RegistrFunction "Զիջում", "pCreateWaiver", , "node32", "Waiver"
+    End If
+End Sub
 
-    Doc.RegistrFunction "Редактирование счетов", "pAccEdit"
-    
-    Doc.RegistrFunction "Приход МБП", "pCrLnGuar", "In", "node31"
-    Doc.RegistrFunction "Приход МТЦ", "pCrLnGDbt", "In", "node31"
-    Doc.RegistrFunction "Расход с НДС", "pCrLnCred", "Out", "node32"
-    .....
+Public Sub pCreateDisbursement()
+    '''
+End Sub
+Public Sub pCreatePayment()
+    '''
+End Sub
+Public Sub pCreateWriteOff()
+    '''
+End Sub
 
+Public Sub pCreateWriteOffBack()
+    '''
+End Sub
+Public Sub pCreateWaiver()
+    '''
 End Sub
 ```

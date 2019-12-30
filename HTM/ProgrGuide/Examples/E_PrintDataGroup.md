@@ -3,32 +3,32 @@ layout: page
 title: "Օրինակ/PrintDataGroup"
 ---
 
-# Օրինակում ցույց է տրված փաստաթղթի նկարագրության մեջ PrintDataGroup-ի օգտագործումը
+Օրինակում ցույց է տրված փաստաթղթի նկարագրության մեջ PrintDataGroup-ի օգտագործումը։
+
+``` as4x
+NAME = Product;
+CAPTION = "Ապրանք";
+ECAPTION = "Product";
+
+PAGE { CAPTION = "Ընդհանուր"; ECAPTION ="General"
+    REKVIZIT {NAME = Code; CAPTION = "Ապրանքի կոդ";      ECAPTION = "Products Code"; TYPE = "Folder(Item, 12)"; };
+    REKVIZIT {NAME = Name; CAPTION = "Ապրանքի Անվանում"; ECAPTION = "Products Name"; TYPE = "C(50)"; };
+};
+
+PRINTDATAGROUP { NAME = "01"; CAPTION = "Տպման ժամանակ արտացոլել կոդը"; }; 
+PRINTDATAGROUP { NAME = "02"; CAPTION = "Տպման ժամանակ արտացոլել անվանումը"; };
+```
+
+Փաստաթղթի տպվող տեսքի հաշվարկման իրադարձության մշակիչը՝
 
 ``` vb
-' Definition документа
-Name = Products
-Caption = "Продукты"
-Ecaption = "Products"
-
-Page {Caption = "Продукты"; Ecaption ="Products"
-            Rekvizit {Name = Code;   Caption = "Код продукта";             ECaption = "Products code"; Type = Folder(Item, 12);};
-            Rekvizit {Name = Name;  Caption = "Название продукта";  ECaption = "Products name"; Type = C(50);};
-         };
-
-PrintDataGroup { Name = "01"; Caption = "При печати вывести коды продуктов" }; 
-PrintDataGroup { Name = "02"; Caption = "При печати вывести названия продуктов"; };
-
-
-' Script документа
-
-Public Function TemplateSubstitution(ByVal dctModeDict As Dictionary) As TemplateSubstitution 
-Dim Result As TemplateSubstitution
+Public Function TemplateSubstitution(ByVal modes As Dictionary) As TemplateSubstitution 
+Dim Result As New TemplateSubstitution
 Dim bPrintProductsCode As Boolean 
 Dim bPrintProductsName As Boolean 
 
-   bPrintProductsCode  = dctModeDict("01") 
-   bPrintProductsName = dctModeDict("02")
+   bPrintProductsCode = modes("01") 
+   bPrintProductsName = modes("02")
 
     With Result
         If bPrintProductsCode  Then

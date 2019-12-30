@@ -6,7 +6,7 @@ title: "ICurrentView/RegistrNode"
 
 # RegistrNode մեթոդ
 
-[См. также](../ICurrentView.md) [Օրինակ](../../Examples/E_ICurrentView_RegistrNode.html) [Применяется к](../ICurrentView.md)
+[См. также](../ICurrentView.md) [Օրինակ](../../Examples/E_DataFunctions.html) [Применяется к](../ICurrentView.md)
 
 Կոնտեկստ մենյուի մեջ ավելացնում է ենթամենյուի ծնող հանգույց։ Մեծ քանակությամբ գործողությունների առկայության դեպքում հարմար է խմբավորել դրանք ենթամենյուների մեջ։  
 

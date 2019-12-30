@@ -6,7 +6,7 @@ title: "ICurrentView/RegistrFunction"
 
 # RegistrFunction մեթոդ
 
-[См. также](../ICurrentView.md) [Օրինակ](../../Examples/E_ICurrentView_RegistrFunction.html) [Применяется к](../ICurrentView.md)
+[См. также](../ICurrentView.md) [Օրինակ](../../Examples/E_DataFunctions.html) [Применяется к](../ICurrentView.md)
 
 Կոնտեկստ մենյուի մեջ ավելացնում է նոր գործողություն։
 

@@ -3,26 +3,32 @@ layout: page
 title: "Օրինակ/SQL"
 ---
 
-# Օրինակում ցույց է տրված SQL իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [տվյալների աղբյուրի](../Defs/Data.html) `SQL` իրադարձության օգտագործումը:
 
-Ստորև բերված է [տվյալների աղբյուրի նկարագրության](../Defs/Data.html) հատված, `SQL`իրադարձության մշակիչի օրինակով։
-
-Կախված տվյալների աղբյուր փոխանցված պարամետրերի քանակից SQL հարցումը բարդանում է։
-Ниже приведен фрагмент из [описания источника данных](../Defs/Data.html) с примером обработчика события `SQL`. В зависимости от количества переданных параметров в источник данных SQL запрос усложняется.
-
+Մշակիչի մեջ ձևավորում է SQL հարցում, և փոխանցված պարամետրերից կախված այդ հարցումը բարդանում է։
 
 ``` vb
-Sub SQL(ByRef sSQL, ByRef sUpdate)
+Sub SQL(ByRef sSQL As String, ByRef sUpdate As String)
+    sSQL = "select fKEY as fKEY, fISN, fCOM, fECOM, fFOLDERID, fSPEC " & vbCrLf _
+        & "from FOLDERS " & vbCrLf _
+        & "where fFOLDERID = 'NBACC' " & vbCrLf
+    If Trim(DS.Parameters("AccKey")) <> "" Then
+        sSQL &= "    and fKEY like ?AccKey " & vbCrLf
+    End If
+    If Trim(DS.Parameters("Type")) <> "" Then
+        sSQL &= "    and substring(fSPEC,1,3) = ?Type " & vbCrLf
+    End If
+    If Trim(DS.Parameters("User")) <> "" Then
+        sSQL &= "    and substring(fSPEC,168,#LenUSER) = ?User " & vbCrLf
+    End If
+	If Not IsNull(DS.Parameters("OpenDateFrom")) Then
+		sSQL &= "    and substring(fSPEC,10,8) >= ?OpenDateFrom " & vbCrLf
+	End If
+	If Not IsNull(DS.Parameters("OpenDateTo")) Then
+		sSQL &= "    and substring(fSPEC,10,8) <= ?OpenDateTo " & vbCrLf
+	End If
 
-   sSQL = " select fKEY as fKEY, fISN,fCOM,fECOM,fFOLDERID,fSPEC   " & _
-              " from FOLDERS where fFOLDERID = 'NBACC' "
-   IF trim(DS.Parameters(1)) <> "" Then 
-       sSQL = sSQL & " And SUBSTRING(fSPEC,2*#LenSumma,100) like ?1 " 
-   End IF    
-   IF trim(DS.Parameters(2)) <> "" Then sSQL = sSQL & " And fKEY like ?2 "
-   IF trim(DS.Parameters(3)) <> "" Then sSQL = sSQL & " And SUBSTRING(fSPEC,1,3) = ?3 "
-   IF trim(DS.Parameters(7)) <> "" Then sSQL = sSQL & " And SUBSTRING(fSPEC,168,#LenUSER) = ?7 "
-   sUpdate = sSQL & " And fISN = ?8 "
-   sSQL = sSQL & " ORDER by ?6" 
+    sUpdate = sSQL & "    and fISN = ?ISNColumn " & vbCrLf
+    sSQL &= "order by fKEY "
 End Sub 
 ```

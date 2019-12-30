@@ -3,18 +3,19 @@ layout: page
 title: "Օրինակ/SetRekvsReadOnly"
 ---
 
-# Օրինակում ցույց է տրված SetRekvsReadOnly հատկության օգտագործումը
+Օրինակում ցույց է տրված `SetRekvsReadOnly` հատկության օգտագործումը:
 
-Բերված/Սահմանված են `Docnum`, `PartCode` և `Comment` դաշտերի խմբագրելիության օրինակներ, որոնք և սահմանվում են ստորակետներով, բացակներով և ցանկացած ուրիշ նշանով։
-
-Օրինակ՝
-приведены примеры устанавливания статуса режима редактирования для реквизитов `Docnum`, `PartCode` и `Comment`, которые задаются через запятые, пробелы или любой другой символ. Например:
-
+Ցույց է տրված, թե ինչպես կարելի է մի քանի դաշտեր դարձնել չխմբագրվող մեկ հրամանով:
+Չխմբագրվող դառձվում են `DocNum`, `PartCode` և `Comment`-ի դաշտերը։
 
 ``` vb
-Doc.SetRekvsReadOnly("Docnum,PartCode,Comment",  True,  ",")  ,
+Doc.SetRekvsReadOnly("DocNum PartCode Comment")
+'նույնը կլինի նաև այսպես
+'Doc.SetRekvsReadOnly("DocNum,PartCode,Comment", , ",")
+'Doc.SetRekvsReadOnly("DocNum%PartCode%Comment", , "%") 
 
-Doc.SetRekvsReadOnly("Docnum PartCode Comment",  True,  " ")   կամ
-
-Doc.SetRekvsReadOnly("Docnum%PartCode%Comment",  True,  "%") 
+'երկար գրելաձևն էր
+'Doc.ReadOnly("DocNum") = True
+'Doc.ReadOnly("PartCode") = True
+'Doc.ReadOnly("Comment") = True
 ```

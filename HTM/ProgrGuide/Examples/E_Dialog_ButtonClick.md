@@ -3,20 +3,18 @@ layout: page
 title: "Օրինակ/Dialog_ButtonClick"
 ---
 
-# Օրինակում ցույց է տրված  ButtonClick իրադարձության օգտագործումը
+Օրինակում ցույց է տրված  ButtonClick իրադարձության օգտագործումը:
 
-
-Ստորև բերված է [փաստաթղթի նկարագրության մեջ](../Defs/Dialog.html) [ButtonClick](../ScriptProcs/Dialog_ButtonClick.html) իրադարձության մշակիչի օրինակը։ 
-Ниже приведен пример обработчика события [ButtonClick](../ScriptProcs/Dialog_ButtonClick.html) в [описании диалога](../Defs/Dialog.html).
+Ստորև բերված է [դիալոգի նկարագրության մեջ](../Defs/Dialog.html) [ButtonClick](../ScriptProcs/Dialog_ButtonClick.html) իրադարձության մշակիչի օրինակը։ 
 
 ``` vb
 Public Sub ButtonClick(ByVal objDialog As AsDialog, ByVal sBtnName As String, _
-                   ByVal sngBtnTop As Single, ByVal sngBtnLeft As Single, ByRef Reakcia )
+    ByVal sngBtnTop As Single, ByVal sngBtnLeft As Single, ByRef Reakcia )
 
     If objDialog.Name = "DlgName" Then 
         Select Case sBtnName
         Case "BName"
-         objDialog("bColN") = 1
+            objDialog("bColN") = 1
         End Select
     End If
 End Sub

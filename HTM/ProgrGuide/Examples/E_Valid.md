@@ -3,29 +3,24 @@ layout: page
 title: "Օրինակ/Valid"
 ---
 
-# Օրինակում ցույց է տրված Valid իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [փաստաթղթի նկարագրության](../Defs/doc.html) `Valid` իրադարձության օգտագործումը:
 
-Ստորև բերված է [տվյալների աղբյուրի](../Defs/Data.html) `Valid` իրադարձության օրինակ, որտեղ կախված դաշտի ներքին համարից, կատարվում են մուտքագրված արժեքների տարբեր ստուգումներ։
-Ниже приведен пример обработчика события `Valid` из [описания документа](../Defs/doc.html), где в зависимости от идентификатора реквизита производятся различные проверки введенных значений.
+Oրինակում ստուգվում է `CODE` դաշտի երկարությունը լրացվելուց։ Եվ `CLICOD` դաշտի փոփոխման դեպքում լրացնում է `NAME` դաշտը։
 
 ``` vb
-Sub Valid(ByVal Rekv)
-     Select Case Rekv 
-     Case "CODE" 
-         If len(Trim(Doc("CODE")))<6 Then
-            err.Raise gintUserErrors , "Счет", _
-           "Длина кода лицевого счета меньше 6-и"
-         Else
-            If Doc.State=0 Then    
-               Doc("CODE")=GetAccKey(Param("CODBANK"),Doc("CODE"))
-               Doc.Refresh("CODE")     
-            End If     
-         End If 
-     Case "CLICOD" 
-         If trim(Doc("NAME"))="" Then
-            Doc("NAME")= Doc.Control("CLICOD").Comment
-            Doc.Refresh("NAME")
-         End If 
-     End Select     
+Public Sub Valid(ByVal Rekv As String, ByVal Oldvalue As Variant)
+    Select Case Rekv
+    Case "CODE"
+        If Len(Trim(Doc("CODE"))) < 6 Then
+            RaiseError "Սխալ", "Կոդի երկարությունը չի կարող փոքր լինել 6-ից:", "Error", "Code length can nt be less then 6."
+        End If
+    Case "CLICOD"
+        If Doc("CLICOD") <> Oldvalue Then
+            If Trim(Doc("NAME")) = "" Then
+                Doc("NAME") = Doc.Control("CLICOD").Comment
+                Doc.Refresh("NAME")
+            End If
+        End If
+    End Select
 End Sub
 ```

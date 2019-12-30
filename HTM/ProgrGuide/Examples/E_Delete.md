@@ -3,16 +3,15 @@ layout: page
 title: "Օրինակ/Delete"
 ---
 
-# Օրինակում ցույց է տրված Delete իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [փաստաթղթի նկարագրության](../Defs/doc.html) `Delete` իրադարձության օգտագործումը:
 
-[Փաստաթղթի նկարագրության մեջից](../Defs/doc.html) բերված է Delete իրադարձության մշակիչի օրինակը, որի մեջ կատարվում են նշված փաստաթուղթը ջնջելու փորձեր։
-Из [описания документа](../Defs/doc.html) приведен пример обработчика события Delete, в котором производятся проверки на допустимость удаления выбранного документа.
+[Փաստաթղթի նկարագրության մեջ](../Defs/doc.html) գրված Delete իրադարձության մշակիչում ստուգած է փաստաթուղթը ջնջելու իրավասությունը։
 
 ``` vb
-Sub Delete()
-  If ExistsFolder("Contr." & trim(Doc("CODE"))) Then 
-   Err.Raise gintUserErrors , "Удаление недопустимо", _
-     "По данному договору имеется счет-фактура"
-   End If
+Public Sub Delete()
+    If Not Paran("DELETEACCESS") Then 
+        RaiseError("Սխալ", Param("UserName") & " օգտագործողին փաստաթղթի ջնջելու իրավասություն տրված չէ։", _
+            "Error", "Access to delete the document is not grant to user " & Param("UserName") & ".")
+    End If
 End Sub 
 ```

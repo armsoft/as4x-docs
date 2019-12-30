@@ -3,16 +3,16 @@ layout: page
 title: "Օրինակ/RegistrDefaultFunction"
 ---
 
-# Օրինակում ցույց է տրված RegistrDefaultFunction մեթոդի օգտագործումը
-
-Ստորև բերված է վյալների պահոցի Functions իրադարձության մշակիչի օրինակ։ 
-
-Օրինակում կանչում  "RegistrDefaultFunction" մեթոդը, որը և կոնտեքստ մենյույի մեջ նշանակում է AddDoc ֆունկցիան, որպես լռության Ֆունկցիա։
-Ниже приводится обработчик системного события Functions из описания источника данных, где использован метод RegistrDefaultFunction, который усатанавливает в контекстное меню функцию AddDoc как функцию по умолчанию. 
+Օրինակում ցույց է տրված տվյալների աղբյուրի RegistrDefaultFunction մեթոդի օգտագործումը:
+Համատեքստի մենյուի գործողությունների ցուցակում «Ավելացնել փաստաթուղթ» գործողությունը սահմանվում է լռությամբ աշխատող։
 
 ``` vb
 Sub Functions() 
-   CurrentView.RegistrFunction "Добавить документ", "AddDoc", , , "Add doc"
-   CurrentView.RegistrDefaultFunction("AddDoc")
+    CurrentView.RegistrFunction "Ավելացնել փաստաթուղթ", "AddDoc", , , "Add Document"
+    CurrentView.RegistrDefaultFunction("AddDoc")
+End Sub
+
+Sub AddDoc()
+   '
 End Sub
 ```

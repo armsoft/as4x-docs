@@ -1,31 +1,23 @@
 ---
 layout: page
-title: "Օրինակ/ICurrentTree/RegistrNode Example"
+title: "Օրինակ/ICurrentTree,RegistrNode"
 ---
 
-# Օրինակում ցույց է տրված RegistrNode մեթոդի օգտագործումը
-
-[Ծառ-տեղեկատուի նկարագրության մեջից](../Defs/Tree.html) բերվում է Functions-ի սկրիպտային գործընթացը։
-Ниже приводится скриптовая процедура Functions из [описания дерева-справочника.](../Defs/Tree.html)
+Ստորև բերված է ծառ-տեղեկատույի [Functions](../ScriptProcs/FunctionsTree.html) իրադարձության մշակիչի օրինակ։ 
+Օրինակում ստեղծում է երկու գործողություն համատեքստի մենյույում, որոնք խմբավորված են մեկ ծնող հանգույցի տակ։
 
 ``` vb
 Sub Functions() 
-    set xTree=CurrentTree
-   .....    
-    xTree.RegistrNode "node3","Операции"
-    xTree.RegistrNode "node31", "Приход", "node3"
-    xTree.RegistrNode "node32", "Расход", "node3"
+    CurrentTree.RegistrNode "ParentNode", "Գործողություններ", , "Operations"
+    CurrentTree.RegistrFunction "Նոր այց", "CreateVisit", , "ParentNode", "New Visit"
+    CurrentTree.RegistrFunction "Նոր զանգ", "CreateCall", , "ParentNode", "New Call"
+End Sub
 
-    xTree.RegistrNode "node4", "Просмотр и редактирование"
-    xTree.RegistrNode "node41", "Изменение состояний", "node4"
-    xTree.RegistrNode "node42", "Просмотр операций", "node4"
+Public Sub CreateVisit()
+    '
+End Sub
 
-    xTree.RegistrFunction "Редактирование счетов", "pAccEdit"
-    
-    xTree.RegistrFunction "Приход МБП", "pCrLnGuar", "In", "node31"
-    xTree.RegistrFunction "Приход МТЦ", "pCrLnGDbt", "In", "node31"
-    xTree.RegistrFunction "Расход с НДС", "pCrLnCred", "Out", "node32"
-    .....
-
+Public Sub CreateCall()
+    '
 End Sub
 ```

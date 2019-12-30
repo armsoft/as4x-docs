@@ -3,34 +3,23 @@ layout: page
 title: "Օրինակ/Valid Example for DataSource"
 ---
 
-# Օրինակում ցույց է տրված Valid իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [տվյալների աղբյուրի](../Defs/Data.html) `Valid` իրադարձության օգտագործումը:
 
-Ստորև բերված է [տվյալների աղբյուրի](../Defs/Data.html) `Valid` իրադարձության օրինակ։ Որտեղ ավելացում կատարելու համար ֆունկցիայի մեջ ստուգվում է  `Valid` պայմանը։
-
-Համակարգը ավտոմատ կերպով  տվյալների աղբյուրի մեջ չի ներառում այն տողերը,որոնց համար `Valid` ֆունկցիայի սխալ է վերադարձնում։ Այսինքն [OnEachRow](../ScriptProcs/OnEachRow.html) իրադարձության աշխատանքից առաջ աշխատում է `Valid` իրադարձությունը։ 
-
-Օրինակում, տվյալների աղբյուրի մեջ ներառված չեն այն տողերը, որոնց համար օգտագործողը հասանելիություն չունի։
-
-Ниже приведен пример обработчика события `Valid` из [описания источника данных](../Defs/Data.html). В нем для заполнения источника проверяется условие в функции `Valid`. Система автоматически не включает в источник данных те строки, для которых функция `Valid` возвращает ложь. Т.о. перед срабатыванием события [OnEachRow](../ScriptProcs/OnEachRow.html) для каждой строки, срабатывает событие `Valid`.
-В примере, в источник данных не включаются те строки, для которых нет доступа пользователю.
+Տվյալների աղբյուրի հաշվարկի ժամանակ ամեն տողի համար նախ աշխատացվում է `Valid` իրադարձության մշակիչը, որում կատարվում է ստուգում և որոշվում է այդ տողը ցույց տալ, թե ոչ։ Տվյալ դեպքում ստուգվում է իրավասությունը։
 
 ``` vb 
-SCRIPT {
-   Dim DbSum, CrSum, AMDDb, AMDCr, ParVal
-
+'SCRIPT {
+Dim mDbSum, mCrSum, mAMDDb, mAMDCr, mParVal
+'
+'Sub SQL(ByRef sSQL As String, ByRef sUpdate As String)
+'    '''
+'End Sub
+'
 Function Valid()
    Valid = Util.CheckAccess(DS("fISN"),3)
 End Function
 
-Sub OnOpen()
-   ParVal = DS.Parameters(4) 'taking date paramter
-   DbSum=CCur(0)
-   CrSum=DbSum
-   AMDDb=DbSum
-   AMDCr=DbSum
-End Sub
-
 Sub OnEachRow()
-    call AccRem(DS("fISN"),ParVal,DS("DBCR"),DbSum,CrSum,AMDDb,AMDCr)
+    AccRem(DS("fISN"), DS.Parameters("Date"), DS("DBCR"), mDbSum, mCrSum, mAMDDb, mAMDCr)
 End Sub
 ```

@@ -1,21 +1,20 @@
 ---
 layout: page
-title: "Օրինակ/SAsGrid"
+title: "Օրինակ/AsGrid"
 ---
 
-# Օրինակում ցույց է տրված Name, Readonly, RowCount հատկությունների և Refresh, RemoveRow մեթոդների օգտագործումը
+Օրինակում ցույց է տրված Name, ReadOnly, RowCount հատկությունների և Refresh, RemoveRow մեթոդների օգտագործումը:
 
-Օրինակի մեջ xGrid-ը հղվում է փաստաթղթի "RESP" աղյուսակի վրա։
-В примере переменная xGrid ссылается на грид-таблицу &quot;RESP&quot; в документе.
+Օրինակի մեջ փաստաթղթի "RESP" աղյուսակի տողերը հեռացնում է և աղյուսակը դարձնում չխմբագրվող։
 
-՝՝՝ vb
-Set xGrid = doc.Grid("RESP")
-....
-If xGrid.Readonly <> xFix and xGrid.Name="RESP" then
+``` vb
+Set xGrid = Doc.Grid("RESP")
+'
+If Not xGrid.ReadOnly then
     Do while xGrid.RowCount > 0
        xGrid.RemoveRow(0)
     Loop
-    xGrid.Readonly = xFix
+    xGrid.ReadOnly = True
     xGrid.Refresh
-End if
+End If
 ```

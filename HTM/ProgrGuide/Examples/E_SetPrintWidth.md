@@ -1,15 +1,9 @@
 ---
 layout: page
-title: "Օրինակ/DefaultComment"
+title: "Օրինակ/SetPrintWidth"
 ---
 
-# Օրինակում ցույց է տրված SetPrintWidth իրադարձության  օգտագործումը
-
-
-
-Ստորև բերված է [փաստաթղթի նկարագրության](../Defs/Data.html)`OnEachRow` իրադարձության մշակիչի օրինակ։
-
-Из [описания документа](../Defs/doc.html) приведен пример обработчика события `SetPrintWidth`
+Օրինակում ցույց է տրված [փաստաթղթի նկարագրության](../Defs/doc.html) `SetPrintWidth` իրադարձության մշակիչի օրինակ։
 
 ``` vb
 Function SetPrintWidth()

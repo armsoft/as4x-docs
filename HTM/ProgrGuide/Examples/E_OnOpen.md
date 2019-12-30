@@ -3,26 +3,36 @@ layout: page
 title: "Օրինակ/OnOpen"
 ---
 
-# Օրինակում ցույց է տրված OnOpen իրադարձության օգտագործումը
+Օրինակում ցույց է տրված [տվյալների աղբյուրի](../Defs/Data.html) `OnOpen` իրադարձության օգտագործումը:
 
-
-Ստորև բերված է [տվյալների պահոցի](../Defs/Data.html) `OnOpen` իրադարձության օրնակը։
-Օրինակում  StartD-ը և EndD-ը նշանակվում են տվյալների պահոցի պարամետրերի արժեքներով։  
-Փոփոխականները ստանալով արժեքը մեկ անգամ, բազմակի անգամներ օգտագործվում են [OnEachRow](../ScriptProcs/OnEachRow.html) իրադարձության մեջ։
-Ниже приведен фрагмент из [описания источника данных](../Defs/Data.html) с примером обработчика события <strong>OnOpen</strong>, в которой глобальным скриптовым переменным StartD и EndD присваиваются значения параметров источника данных. Переменные один раз получив значения, используются многократно в событии [OnEachRow](../ScriptProcs/OnEachRow.html).
+`OnOpen` իրադարձության մշակիչի մեջ ստանում է `mStartD` և `mEndD` գլոբալ փոփոխականների արժեքները պարամետրերից։  
+Փոփոխականների արժեքները ստանցվում են մեկ անգամ, բայց հետո օգտագործվում են ամեն տողի [OnEachRow](../ScriptProcs/OnEachRow.html) իրադարձության մշակիչում։
 
 ``` vb
-SCRIPT {
-Dim StartD, EndD
-.......
+Dim mStartD As Date, mEndD As Date
+Dim mDbTurn As Variant, mDbTurnAMD As Variant, mCrTurn As Variant, mCrTurnAMD As Variant
+Dim mRemd As Variant, mRemdAMD As Variant, mStartRemd As Variant, mStartRemdAMD As Variant
+'
+'Sub SQL(ByRef sSQL As String, ByRef sUpdate As String)
+'    '''
+'End Sub
+'
 Sub OnOpen()
-    StartD = DS.Parameters(4) 'taking date parameter
-    EndD = DS.Parameters(5)
+    If IsNull(DS.Parameters("StartDate")) Then
+        mStartD = Param("STARTDATE")
+    Else
+        mStartD = DS.Parameters("StartDate") 'taking date parameter
+    End If
+    If IsNull(DS.Parameters("EndDate")) Then
+        mEndD = Param("ENDDATE")
+    Else
+        mEndD = DS.Parameters("EndDate")
+    End If
 End Sub
-........
+'
 Sub OnEachRow() 
-     call GetTurnFull("02", DS("fISN"), StartD, EndD, _ 
-          DbTurn, DbTurnAMD, CrTurn, CrTurnAMD, _
-          Remd, RemdAMD,StartRemd, StartRemdAMD)
+    GetTurnFull("02", DS("fISN"), mStartD, mEndD, _ 
+        mDbTurn, mDbTurnAMD, mCrTurn, mCrTurnAMD, _
+        mRemd, mRemdAMD, mStartRemd, mStartRemdAMD)
 End Sub   
 ```

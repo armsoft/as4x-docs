@@ -3,18 +3,20 @@ layout: page
 title: "Օրինակ/SetGridColsClickDropDownEvent"
 ---
 
-# Օրինակում ցույց է տրված SetGridColsClickDropDownEvent հատկության օգտագործումը
+Օրինակում ցույց է տրված փաստաթղի `SetGridColsClickDropDownEvent` հատկության օգտագործումը:
 
-Բերված/Սահմանված են  օրինակներ, որոնք հաստատում են [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձության գեներացիայի նախանշանը/նշանակումը `Docnum`, `PartCode` սյունայակների և `Comment`-ի  `GridBase` աղյուսակի համար, որոնք և սահմանվում են ստորակետներով, բացակներով և ցանկացած ուրիշ նշանով։
+Ցույց է տրված, թե ինչպես կարելի է միացնել նույն աղյուսակի մի քանի սյունակի վրա [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) իրադարձության մշակումը մեկ հրամանով։  
+Մշակումը միացվում է `GridBase` աղյուսակի `DocNum`, `PartCode` և `Comment`-ի սյունայակների համար։
 
-Օրինակ՝
-
-приведены примеры устанавливания признака генерации системного события [ClickDropDownGrid](../../ScriptProcs/ClickDropDownGrid.html) для столбцов `Docnum`, `PartCode` и `Comment&nbsp` для грид-таблицы `GridBase`, которые задаются через запятые, пробелы или любой другой символ. Например:
 
 ``` vb
-Doc.SetGridColsClickDropDownEvent("GridBase", "Docnum,PartCode,Comment",  True,  ",")  ,
+Doc.SetGridColsClickDropDownEvent("GridBase", "DocNum PartCode Comment")
+'նույնը կլինի նաև այսպես
+'Doc.SetGridColsClickDropDownEvent("GridBase", "DocNum,PartCode,Comment", , ",")
+'Doc.SetGridColsClickDropDownEvent("GridBase", "DocNum&PartCode&Comment", , "&") 
 
-Doc.SetGridColsClickDropDownEvent("GridBase" "Docnum,PartCode,Comment",  True,  " ")   կամ
-
-Doc.SetGridColsClickDropDownEvent("GridBase", "Docnum&PartCode&Comment",  True,  "&"). 
+'երկար գրելաձևն էր
+'Doc.ClickDropDown("GridBase", "DocNum") = True
+'Doc.ClickDropDown("GridBase", "PartCode") = True
+'Doc.ClickDropDown("GridBase", "Comment") = True
 ```

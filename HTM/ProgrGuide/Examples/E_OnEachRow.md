@@ -3,8 +3,6 @@ layout: page
 title: "Օրինակ/OnEachRow"
 ---
 
-# Օրինակում ցույց է տրված OnEachRow իրադարձության օգտագործումը
-
 Ստորև բերված է [տվյալների աղբյուրի](../Defs/Data.html) `OnEachRow` իրադարձության օրինակ։
 
 Օրինակում `OnEachRow`-ի մշակիչի մեջ հաշվարկվում է `mKasSim` գլոբալ փոփոխականի արժեքը, որը `KASSIMV` սյան արժեքի հաշվարկի ժամանակ վերադարձվում է։
@@ -12,8 +10,8 @@ title: "Օրինակ/OnEachRow"
 Տվյալների աղբյուրի նկարագրության մեջ սյունակի նկարագրությունը կլինի հետևյալը՝
 
 ``` as4x
-COLUMN { NAME = KASSIMV; CAPTION=#Simbol; TYPE=C(#LenKasSimv);
-    SOURCE=1; FIELD=GetSymbol; DESCRIPTION=#KasSimv; }; 
+COLUMN { NAME = KASSIMV; CAPTION="Դրամարկղի նիշ"; TYPE=C(3);
+    SOURCE=1; FIELD=GetSymbol; DESCRIPTION="Cashbox Label"; }; 
 ```
 
 Իսկ սկրիպտային մասում գրվում է՝
@@ -31,7 +29,7 @@ Dim kasDoc As AsDoc
     If kasDoc.ExistsRekv("KASSIMV") Then
         mKasSim = kasDoc("KASSIMV")
     Else
-        mKasSim = "?"
+        mKasSim = ""
     End If
 End Sub
 ```
