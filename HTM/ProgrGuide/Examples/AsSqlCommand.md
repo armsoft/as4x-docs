@@ -97,7 +97,7 @@ Public Function GetDefinitionCaption(ByVal sElementName As String, _
         .CommandText = "Select sd.fCAPTION FROM dbo.SYSDEF sd WHERE sd.fSYSTYPE = ? AND sd.fNAME = ?"
         .Parameters.Add "@SYSTYPE", Sql_SmallInt, sElementType
         .Parameters.Add "@NAME", Sql_Varchar, sElementName
-        Set oNullableCaption = .ExecuteScalar(Sql_Varchar, SQL_LEN_SYSDEF_fCAPTION)
+        Set oNullableCaption = .ExecuteScalar()
         If oNullableCaption.HasValue Then
             GetDefinitionCaption = oNullableCaption.Value
         Else
@@ -107,3 +107,34 @@ Public Function GetDefinitionCaption(ByVal sElementName As String, _
 End Function
 ```
 
+
+## OpenResultSet օրինակ
+
+``` vb
+Private Sub SQLCommandOpenResultSet()
+    
+    Dim i As Long
+    Dim k As Log
+    Dim rs As AsSqlResultset
+    Set sqlcmd = New AsSqlCommand
+    Set sqlcmd.Connection = oOdbcConnection
+    Dim colValue() As Variant
+    ReDim colValue(10)
+    
+    sqlcmd.CommandType = NamedText
+    sqlcmd.CommandText = "Select Top 10 * from FOLDERS where fISN <> @ISN"
+    sqlcmd.Parameters.Add "@ISN", Sql_Int, 515447059, vbParamDirInput)
+   
+    Set rs = sqlcmd.OpenResultSet()
+    
+    While Not rs.EOF
+        For i = 0 To rs.Columns.Count - 1
+            colValue(k) = rs(i)    'կամ rs.Columns.Item(i).Value
+            k = k+1
+        Next
+        rs.MoveNext
+    Wend
+    rs.Close
+ 
+End Sub
+```
