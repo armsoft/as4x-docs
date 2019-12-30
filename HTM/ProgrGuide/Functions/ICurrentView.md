@@ -3,11 +3,10 @@ layout: page
 title: "ICurrentView օբյեկտ "
 tags: CurrentView
 ---
+
 # Դիտելու ձևի ընթացիկ օբյեկտ 
 
-
-ընթացիկ թղթապանակի տարրերի հասանելի են դառնում [CurrentView](Functions/InterfaceManagment/CurrentView.html) ֆունկցիայի միջոցով։ 
-  
+Ընթացիկ թղթապանակի տարրերի հասանելի են դառնում [CurrentView](Functions/InterfaceManagment/CurrentView.html) ֆունկցիայի միջոցով։ 
 
   
 | Հատկություններ | Նկարագրություն |
