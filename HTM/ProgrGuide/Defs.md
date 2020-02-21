@@ -21,6 +21,6 @@ AS-4X-ում հնարավոր է նկարագրել հետևյալ տիպերի 
 * [Ուղղորդիչ ծառի նկարագրություն](Defs/NavTree.md) 
 * [Ձևանմուշի նկարագրություն](Defs/TEMPLATE.md) 
 * [TemplGrp տպելու ձևանմուշի խմբի փաստաթղթի նկարագրություն](Defs/TemplGrp.html) 
-* [(Հնացած) Հաշվետվության նկարագրություն](Defs/report.html)
+* [Հաշվետվության նկարագրություն](Defs/report.html)
 * [(Հնացած) WORDTEMPLATE ձևանմուշի նկարագրություն](Defs/WORDTEMPLATE.html) 
 * [(Հնացած) EXCELTEMPLATE ձևանմուշի նկարագրություն](Defs/EXCELTEMPLATE.html) 
