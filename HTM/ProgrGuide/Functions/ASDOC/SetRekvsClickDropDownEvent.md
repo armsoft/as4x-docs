@@ -28,5 +28,5 @@ object.SetRekvsClickDropDownEvent(sRekvNames, [bValue], [sDelimeter])
 
 ## Նկատառումներ
 
-Մեթոդը կիրառելի է միայն դաշտերի համար, որոնց ներքին տիպն է [Tree()](../../Types/Tree().html), [FullTree()](../../Types/FULLTREE().html), [Folder()](../../Types/Folder().html) կամ [CH()](../../Types/Ch().html)։ 
+Մեթոդը կիրառելի է միայն դաշտերի համար, որոնց ներքին տիպն է [Tree()](../../Types/Tree.html), [FullTree()](../../Types/FULLTREE.html), [Folder()](../../Types/Folder.html) կամ [CH()](../../Types/Ch.html)։ 
 

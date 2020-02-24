@@ -39,7 +39,7 @@ object.AddMultiFilterControl (sNameControl, sCaptionControl, sЕCaptionControl, 
 | sNameControl |Դաշտի ներքին անուն։ |
 | sCaptionControl | Դաշտի անվանում։|
 | sЕCaptionControl | Դաշտի անվանումը օտար լեզվով: |
-| TreeMultiFilter  |  [Tree()](../../Types/Tree().html) կամ [FullTree()](../../Types/FULLTREE().html) ծառի տեսակ, որի բացակայության դեպքում ծատ-տեղեկատու դաշտ ավելացնելը անհետանում է։ |
+| TreeMultiFilter  |  [Tree()](../../Types/Tree.html) կամ [FullTree()](../../Types/FULLTREE.html) ծառի տեսակ, որի բացակայության դեպքում ծատ-տեղեկատու դաշտ ավելացնելը անհետանում է։ |
 | sViewCode | Դիտելու ձևի ներքին անուն, արժեքի ընտրման համար։ |
 | sColCodeName | Դիտելու ձևի սյունակի ներքին անուն։ Որի արժեքը կգրվի դաշտում ցուցակից ընտրելուց հետո։ |
 | Params() | Դիտելու ձևին փոխարինող պարամետրերի մասիվ։ |
