@@ -34,4 +34,4 @@ object.SetGridColsClickDropDownEvent(sGridName, sColumnNames,[bValue],[sDelimete
 ## Նկատառումներ
 
 
-Մեթոդը կիրառելի է միայն աղյուսակի սյունակների համար, որոնց ներքին տիպն է [Tree()](../../Types/Tree().html), [FullTree()](../../Types/FULLTREE().html), [Folder()](../../Types/Folder().html) կամ [CH()](../../Types/Ch().html)։ 
+Մեթոդը կիրառելի է միայն աղյուսակի սյունակների համար, որոնց ներքին տիպն է [Tree()](../../Types/Tree.html), [FullTree()](../../Types/FULLTREE.html), [Folder()](../../Types/Folder.html) կամ [CH()](../../Types/Ch.html)։ 

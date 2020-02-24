@@ -28,4 +28,4 @@ object.ClickDropDownEvent (sControlName, [sColumnName])[=bValue]
 
 
 ## Նկատառումներ
-Հատկությունը կիրառելի է փաստաթղթի դաշտերի և աղյուսակի սյունակների համար։ Ներքին տիպը պետք է լինի [Tree()](../../Types/Tree().html), [FullTree()](../../Types/FULLTREE().html) կամ [Folder()](../../Types/Folder().html) կամ [CH()](../../Types/Ch().html)։
+Հատկությունը կիրառելի է փաստաթղթի դաշտերի և աղյուսակի սյունակների համար։ Ներքին տիպը պետք է լինի [Tree()](../../Types/Tree.html), [FullTree()](../../Types/FULLTREE.html) կամ [Folder()](../../Types/Folder.html) կամ [CH()](../../Types/Ch.html)։

@@ -27,7 +27,7 @@ object.AddDublCntrl(DublRekvName, RekvName, [AttribRekv],[ValueRekv], [iSaveValu
 | ValueRekv | Դաշտի նախնական արժեքը։ |
 | iSaveValue | Դաշտի արժեքի հիշելու հատկանիշ։ 1 արժեքի դեպքում դաշտի արժեքը հիշվում է կատարելուց հետո, 0-ի դեպքում՝ ոչ։ Լռությամբ արժեքը 1։|
 | sCaption | Դաշտի անվանումը, եթե հարկավոր է ռանձին աուն երևա։  |
-| iCommentLen | [Folder()](../../Types/Folder().html), [Tree()](../../Types/Tree().html) և [FullTree()](../../Types/FULLTREE().html) տիպերի  մեկնաբանությունների երկարությունը։  |
+| iCommentLen | [Folder()](../../Types/Folder.html), [Tree()](../../Types/Tree.html) և [FullTree()](../../Types/FULLTREE.html) տիպերի  մեկնաբանությունների երկարությունը։  |
 | sECaption | Դաշտի անվանումը օտար լոզվով, եթե հարկավոր է առանձին աուն երևա։  |
 
 

@@ -28,6 +28,6 @@ call object.AddControl(RekvName, CaptionRekv, TypeRekv, [AttribRekv], [<ValueRek
 | ValueRekv | Դաշտի նախնական արծեքը։ |
 | ECaptionRekv |Դաշտի օտար լեզվով անվանումը։ |
 | iSaveValue |Դաշտի արժեքի հիշելու հատկանիշ։ 1 արժեքի դեպքում դաշտի արժեքը հիշվում է կատարելուց հետո, 0-ի դեպքում՝ ոչ։ Լռությամբ արժեքը 1։ |
-| iCommentlen | [Folder()](../../Types/Folder().html), [Tree()](../../Types/Tree().html) և [FullTree()](../../Types/FULLTREE().html) տիպերի  մեկնաբանությունների երկարությունը։ Լռությամբ արժեքը 32։ |
+| iCommentlen | [Folder()](../../Types/Folder.html), [Tree()](../../Types/Tree.html) և [FullTree()](../../Types/FULLTREE.html) տիպերի  մեկնաբանությունների երկարությունը։ Լռությամբ արժեքը 32։ |
 
 
