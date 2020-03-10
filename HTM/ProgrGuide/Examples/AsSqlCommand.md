@@ -89,7 +89,7 @@ Public Function GetDefinitionCaption(ByVal sElementName As String, _
                                      ByVal sElementType As String) As String
 
     Dim oGetDefinitionCaptionCommand As AsSqlCommand
-    Dim oNullableCaption As AsNullable
+    Dim vScalarValue as Variant
 
     Set oGetDefinitionCaptionCommand = rdoConSys.CreateSqlCommand()
     With oGetDefinitionCaptionCommand
@@ -97,11 +97,11 @@ Public Function GetDefinitionCaption(ByVal sElementName As String, _
         .CommandText = "Select sd.fCAPTION FROM dbo.SYSDEF sd WHERE sd.fSYSTYPE = ? AND sd.fNAME = ?"
         .Parameters.Add "@SYSTYPE", Sql_SmallInt, sElementType
         .Parameters.Add "@NAME", Sql_Varchar, sElementName
-        Set oNullableCaption = .ExecuteScalar()
-        If oNullableCaption.HasValue Then
-            GetDefinitionCaption = oNullableCaption.Value
-        Else
+        vScalarValue = .ExecuteScalar()
+        If IsEmpty(vScalarValue) Then
             GetDefinitionCaption = ""
+        Else
+            GetDefinitionCaption = vScalarValue
         End If
     End With
 End Function
