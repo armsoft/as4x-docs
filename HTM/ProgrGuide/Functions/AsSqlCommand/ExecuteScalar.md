@@ -9,16 +9,14 @@ title: "AsSqlCommand/ExecuteScalar"
 Տես նաև [Օրինակ](../../Examples/AsSqlCommand.md) [Կիրառվում է](../AsSqlCommand.md)
 
 Կատարում է հարցում և վերադարձնում հարցման առաջին տողի առաջին սյան արժեքը։
-Եթե հարցումն արժեք չի վերադարձրել, վերադարձրած օբյեկտի `HasValue` հատկությունը ունի `false` արժեք, իսկ `Value`-ն null:
-`Value`-ն օգտագործելուց առաջ ճիշտ է ստուգել `HasValue`-ն:
-
+Եթե հարցումն արժեք չի վերադարձրել, ապա վերադարձնում է `Empty` արժեք:
 Այլ մանրամասներ [AsSqlCommand](../AsSqlCommand.md)-ի Նկատառումներ մասում:
 
 ## Շարահյուսություն
 
 ``` vb
-Function ExecuteScalar() As AsNullable
+Function ExecuteScalar() As Variant
 ```
 ## Տվյալի տիպ
 
-[AsNullable](../AsNullable.md)
+Variant

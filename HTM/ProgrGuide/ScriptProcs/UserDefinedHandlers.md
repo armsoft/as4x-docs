@@ -13,6 +13,29 @@ sublinks:
   - { title: "EventArgsDocFolders Class", ref: eventargsdocfolders-class }
   - { title: "EventArgsDocBeforeCommit Class", ref: eventargsdocbeforecommit-class }
   - { title: "EventArgsDataFunctions Class", ref: eventargsdatafunctions-class }
+  - { title: "EventArgsDocAfterCreate Class", ref: eventargsdocaftercreate-class }
+  - { title: "EventArgsDocAfterLoad Class", ref: eventargsdocafterload-class }
+  - { title: "EventArgsDocAfterProcess Class", ref: eventargsdocafterprocess-class }
+  - { title: "EventsArgsDocBeforeCopy Class", ref: eventargsdocbeforecopy-class }
+  - { title: "EventArgsDocBeforeExport Class", ref: eventargsdocbeforeexport-class}
+  - { title: "EventArgsDocClickDropDown Class", ref: eventargsdocclickdropdown-class }
+  - { title: "EventArgsDocClickDropDownGrid Class", ref: eventargsdocclickdropdowngrid-class }
+  - { title: "EventArgsDocDelete Class", ref: eventargsdocdelete-class }
+  - { title: "EventArgsDocOnUIDelete Class", ref: eventargsdoconuidelete-class }
+  - { title: "EventArgsDocFunctions Class", ref: eventargsdocfunctions-class }
+  - { title: "EventArgsDocGridCellValid Class", ref: eventsargsdocgridcellvalid-class }
+  - { title: "EventArgsDocGridRowValid Class", ref: eventargsdocgridrowvalid-class }
+  - { title: "EventArgsDocGridValid Class", ref: eventargsdocgridvalid-class }
+  - { title: "EventArgsDocIsHidden Class", ref: eventargsdocishidden-class }
+  - { title: "EventArgsDocLoadGrid Class", ref: eventargsdocloadgrid-class }
+  - { title: "EventArgsDocMagic Class", ref: eventargsdocmagic-class }
+  - { title: "EventArgsDocPrint Class", ref: eventargsdocprint-class }
+  - { title: "EventArgsDocStoreGrid Class", ref: eventargsdocstoregrid-class }
+  - { title: "EventArgsDocTemplateSubs Class", ref: eventargsdoctemplatesubst-class }
+  - { title: "EventArgsDialogActivate Class", ref: eventargsdialogactivate-class }
+  - { title: "EventArgsDialogClickDropDown Class", ref: eventargsdialogclickdropdown-class }
+  - { title: "EventArgsDialogValidate Class", ref: eventargsdialogvalidate-class }
+  - { title: "EventArgsDialogValueChanged Class", ref: eventargsdialogvaluechanged-class }
 ---
 
 Տրված է հնարավորություն սահմանել լրացուցիչ մշակիչներ փաստաթղթում և տվյալների աղբյուրում առաջացող որոշ իրադարձությունների համար։
@@ -25,9 +48,34 @@ sublinks:
 * Action
 * Folders
 * BeforeCommit
+* AfterCreate
+* AfterLoad
+* AfterProcess
+* BeforeCopy
+* BeforeExport
+* ClickDropDown
+* ClickDropDownGrid
+* Delete
+* OnUIDelete
+* Functions
+* GridCellValid
+* GridRowValid
+* GridValid
+* IsHidden
+* LoadGrid
+* Magic
+* Print
+* StoreGrid
+* TemplateSubstitution
 
 Տվյալների աղբյուրի համար հասանելի է
 * Functions
+
+Դիալոգի համար հասանելի է
+* Avtivate
+* ClickDropDown
+* Validate
+* ValueChanged
 
 Մշակիչները հնարավոր է սահմանել հիմնական մշակիչին նախորդող(Pre) աշխատող կամ հաջորդող(Post) աշխատող տարբերակով։
 
@@ -108,6 +156,37 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 |`DocPostFolders`     | Doc-ի Folders-ից հետո աշխատելու համար:|
 |`DocPreBeforeCommit` | Doc-ի BeforeCommit-ից առաջ աշխատելու համար:|
 |`DocPostBeforeCommit`| Doc-ի BeforeCommit-ից հետո աշխատելու համար:|
+|`DocPreAfterCreate`  | Doc-ի AfterCreate-ից առաջ աշխատելու համար։|
+|`DocPostAfterCreate` | Doc-ի AfterCreate-ից հետո աշխատելու համար։|
+|`DocPreAfterLoad`    | Doc-ի AfterLoad-ից առաջ աշխատելու համար։|
+|`DocPostAfterԼoad`   | Doc-ի AfterLoad-ից հետո աշխատելու համար։|
+|`DocPostAfterProcess`| Doc-ի AfterProcess-ից հետո աշխատելու համար։|
+|`DocPreBeforeCopy`   | Doc-ի BeforeCopy-ից առաջ աշխատելու համար։|
+|`DocPostBeforeCopy`  | Doc-ի BeforeCopy-ից հետո աշխատելու համար։|
+|`DocPostBeforeExport`| Doc-ի BeforeExport-ից հետո աշխատելու համար։|
+|`DocPreClickDropDown`| Doc-ի ClickDropDown-ից առաջ աշխատելու համար։|
+|`DocPreClickDropDownGrid`| Doc-ի ClickDropDownGrid-ից առաջ աշխատելու համար։|
+|`DocPreDelete`         | Doc-ի Delete-ից առաջ աշխատելու համար։|
+|`DocPostDelete`        | Doc-ի Delete-ից հետո աշխատեու համար։|
+|`DocPreOnUIDelete`    | Doc-ի OnUIDelete-ից առաջ աշխատելու համար։|
+|`DocPostFunctions`    | Doc-ի Functions-ից հետո աշխատելու համար։|
+|`DocPreGridCellValid` | Doc-ի GridCellValid-ից առաջ աշխատելու համար։|
+|`DocPostGridCellValid`| Doc-ի GridCellValid-ից հետո աշխատելու համար։|
+|`DocPreGridRowValid`  | Doc-ի GridRowValid-ից առաջ աշխատելուհամար։|
+|`DocPostGridRowValid` | Doc-ի GridRowValid-ից հետո աշխատելու համար։|
+|`DocPreGridValid`     | Doc-ի GridValid-ից առաջ աշխատելու համար։|
+|`DocPostGridValid`    | Doc-ի GridValid-ից հետո աշխատելու համար։|
+|`DocPostIsHidden`     | Doc-ի IsHidden-ից հետո աշխատելու համար։|
+|`DocPostLoadGrid`     | Doc-ի LoadGrid-ից հետո աշխատելու համար։|
+|`DocPreMagic`         | Doc-ի Magic-ից առաջ աշխատելու համար։|
+|`DocPrePrint`         | Doc-ի Print-ից առաջ աշխատելու համար։|
+|`DocPostStoreGrid`   | Doc-ի StoreGrid-ից հետո աշխատելու համար։|
+|`DocPostTemplateSubstitution`| Doc-ի TemplateSubstitution-ից հետո աշխատելու համար։|
+|`DialogPostActivate`| Dialog-ի Activate-ից հետո աշխատելու համար։|
+|`DialogPreClickDropDown`| Dialog-ի ClickDropDown-ից առաջ աշխատելու համար։|
+|`DilaogPreValidate` | Dialog-ի Validate-ից առաջ աշխատելու համար։|
+|`DilaogPostValidate` | Dialog-ի Validate-ից հետո աշխատելու համար։| 
+|`DialogPreValueChanged`| Dialog-ի ValueChanged-ից առաջ աշխատելու համար։|
 
 Օրինակ՝
 ``` vb
@@ -131,7 +210,7 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPostWhen, "C1Univer", "NewMod.AgrC
 |:--|:--|
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
 |`RawData`|Ներմուծվող ֆայլում առկա բոլոր դաշտերի անուն-արժեք զույգերի բազմությունը։ Արժեքները պահվում են նախնական տողային ձևով, ինչպես որ գրված է ներմուծման ֆայլում։ Հասանելի են նաև `$` նիշով սկսվող հատուկ ներմուծվող դաշտերը։|
-|`Cancel`|Այս հատկությանը `True` արժեքի վերագրման դեպքում կդադարեցվի փաստաթղթի ներմուծումը մշակիչի ավարտից հետո։|
+|`CancelDocStore`|Այս հատկությանը `True` արժեքի վերագրման դեպքում կդադարեցվի փաստաթղթի ներմուծումը մշակիչի ավարտից հետո։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
 * [DocPreBeforeImport](#extensionevents-enum)
@@ -141,7 +220,7 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPostWhen, "C1Univer", "NewMod.AgrC
 ``` vb
 Public Sub MyDocPostBeforeImportHandler(ByVal args As EventArgsDocBeforeImport)
     If Trim(args.Doc("AIM")) = "" Then
-        args.Cancel = True
+        args.CancelDocStore = True
     End If
 End Sub
 ```
@@ -174,7 +253,7 @@ End Sub
 |Հատկություն|Նկարագրություն|
 |:--|:--|
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
-|`Rekv`|Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
+|`Name`|Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
 |`OldValue`|Դաշտի հին արժեքը, մինչ իրադարձության առաջանալը։|
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
@@ -184,7 +263,7 @@ End Sub
 Մշակիչի օրինակ՝
 ``` vb
 Public Sub MyDocPreValidHandler(ByVal args As EventArgsDocValid)
-    If args.Rekv = "CLICODE" AndAlso Trim(args.Doc("CLICODE")) = "" Then
+    If args.Name = "CLICODE" AndAlso Trim(args.Doc("CLICODE")) = "" Then
         RaiseError "Սխալ", "Հաճախորդի լրացումը պարտադիր է։", "Error", "Filling client field is required."
     End If
 End Sub
@@ -289,6 +368,243 @@ Public Sub MyDocPostBeforeCommitHandler(ByVal args As EventArgsDocBeforeCommit)
 End Sub
 ```
 
+### EventArgsDocAfterCreate Class
+
+Պարունակում է տվյալներ փաստաթղթի [AfterCreate](AfterCreate.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreAfterCreate](#extensionevents-enum)
+* [DocPostAfterCreate](#extensionevents-enum)
+
+### EventArgsDocAfterLoad Class
+
+Պարունակում է տվյալներ փաստաթղթի [AfterLoad](AfterLoad.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreAfterLoad](#extensionevents-enum)
+* [DocPostAfterLoad](#extensionevents-enum)
+
+### EventArgsDocAfterProcess Class
+
+Պարունակում է տվյալներ փաստաթղթի [AfterProcess](AfterProcess.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostAfterProcess](#extensionevents-enum)
+
+### EventArgsDocBeforeCopy Class
+
+Պարունակում է տվյալներ փաստաթղթի [BeforeCopy](BeforeCopy.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Args`|[CopyDoc](../Functions/Functions/DocumentsCirculation/CopyDoc.html) ֆունկցիային փոխանցվող ազատ օգտագործման պարամետր։|
+|`OriginalDoc`| Այն փաստաթուղթ, որից պատճենվում է փաստաթուղթը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreBeforeCopy](#extensionevents-enum)
+* [DocPostBeforeCopy](#extensionevents-enum)
+
+### EventArgsDocBeforeExport Class
+
+Պարունակում է տվյալներ փաստաթղթի [BeforeExport](BeforeExport.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostBeforeExport](#extensionevents-enum)
+
+### EventArgsDocClickDropDown Class
+
+Պարունակում է տվյալներ փաստաթղթի [ClickDropDown](ClickDropDown.md) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Name`| Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
+|`Top`|Մոդալ պատուհան ցուցադրման վերին դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`Left`|Մոդալ պատուհան ցուցադրման ձախ դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`ControlValue`|Դաշտի ընթացիկ արժեքը։|
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreClickDropDown](#extensionevents-enum)
+
+### EventArgsDocClickDropDownGrid Class
+
+Պարունակում է տվյալներ փաստաթղթի [ClickdropDownGrid](ClickDropDownGrid.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Grid`|Իրադարձությունը առաջացնող փաստաթղթի աղյուսակը:|
+|`Top`|Մոդալ պատուհան ցուցադրման վերին դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`Left`|Ցուցակի և փաստաթղթի ձախ եզրերի միջև հեռավորությունը։|
+|`ControlValue`|Աղյուսակի ընթացիկ վանդակի արժեքը։|
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreClickDropDownGrid](#extensionevents-enum)
+
+### EventArgsDocDelete Class
+
+Պարունակում է տվյալներ փաստաթղթի [Delete](Delete.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreDelete](#extensionevents-enum)
+* [DocPostDelete](#extensionevents-enum)
+
+### EventArgsDocOnUIDelete Class
+
+Պարունակում է տվյալներ փաստաթղթի [OnUIDelete](OnUIDelete.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`AllowDelete`|Այս հատկությանը `True` արժեքի վերագրման դեպքում փաստաթղթի համակարգային Delete իրադարձությունը թույլատրվում է։|
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreOnUIDelete](#extensionevents-enum)
+
+### EventArgsDocFunctions Class
+
+Պարունակում է տվյալներ փաստաթղթի [Functions](FunctionsDoc.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Context`|[Փաստաթղթի Functions իրադարձության համատեքստը](../Constants/const_doc_context.md)։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostFunctions](#extensionevents-enum)
+
+### EventArgsDocGridCellValid Class
+
+Պարունակում է տվյալներ փաստաթղթի [GridCellValid](GridCellValid.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Grid`|Իրադարձությունը առաջացնող փաստաթղթի աղյուսակը:|
+|`OldValue`|Դաշտի հին արժեքը, մինչ իրադարձության առաջանալը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreGridCellValid](#extensionevents-enum)
+* [DocPostGridCellValid](#extensionevents-enum)
+
+### EventArgsDocGridRowValid Class
+
+Պարունակում է տվյալներ փաստաթղթի [GridRowValid](GridRowValid.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Grid`|Իրադարձությունը առաջացնող փաստաթղթի աղյուսակը:|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreGridRowValid](#extensionevents-enum)
+* [DocPostGridRowValid](#extensionevents-enum)
+
+### EventArgsDocIsHidden Class
+
+Պարունակում է տվյալներ փաստաթղթի [IsHidden](IsHidden.md) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`HiddenControls`| Թաքցվող քոնթրոլների ցուցակը (Dictionary)։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostIsHidden](#extensionevents-enum)
+
+### EventArgsDocLoadGrid Class
+
+Պարունակում է տվյալներ փաստաթղթի [LoadGrid](LoadGrid.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Name`|Աղյուսակի անունը, որի համար աշխատել է իրադարձությունը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostLoadGrid](#extensionevents-enum)
+
+### EventArgsDocMagic Class
+
+Պարունակում է տվյալներ փաստաթղթի [Magic](Magic.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Name`|Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
+|`Top`|Մոդալ պատուհան ցուցադրման վերին դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`Left`|Մոդալ պատուհան ցուցադրման ձախ դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`ControlValue`|Դաշտի ընթացիկ արժեքը։|
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPreMagic](#extensionevents-enum)
+
+### EventArgsDocPrint Class
+
+Պարունակում է տվյալներ փաստաթղթի [Print](Print.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Args`| [PrintPreviewDoc](../Functions/Functions/InterfaceManagment/PrintPreviewDoc.html) ֆունկցիային փոխանցվող ազատ օգտագործման պարամետր։ |
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPrePrint](#extensionevents-enum)
+
+### EventArgsDocStoreGrid Class
+
+Պարունակում է տվյալներ փաստաթղթի [StoreGrid](StoreGrid.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`Name`|Աղյուսակի անունը, որի համար աշխատել է իրադարձությունը։|
+|`Stored`|Այս հատկությանը `False` արժեքի վերագրման դեպքում համակարգը ինքն է պահում աղյուսակը, հակառակ դեպքում մշակիչը իր վրա է վերցնում աղյուսակը պահելը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostStoreGrid](#extensionevents-enum)
+
+### EventArgsDocTemplateSubst Class
+
+Պարունակում է տվյալներ փաստաթղթի [TemplateSubstitution](TemplateSubstitution.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
+|`DataGroups`| Հաշվարկվող ձևանմուշի սահմանված փաստաթղթի համար միացված տպվող տվյալների խմբերի ([PrintDataGroup](../PrintDataGroup.md)) բազմությունը։ Dictionary-ի մեջ բանալին տվյալների խմբերի կոդն է, իսկ արժեքը Boolean։|
+|`Params`| Ձևանմուշի լրացման պարամետրերը, որոնք հաշվարկվել են [TemplateSubstitutionParameters](TemplateSubstitutionParameters.html) իրադարձության մշակման ժամանակ։|
+|`Result`|Վերադարձնում է [TemplateSubstitution](../Functions/TemplateSubstitution.html) տիպի օբյեկտ։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DocPostTemplateSubstitution](#extensionevents-enum)
+
 ### EventArgsDataFunctions Class
 
 Պարունակում է տվյալներ տվյալների աղբյուրի [Functions](FunctionsData.html) իրադարձության մշակիչին փոխանցելու համար։
@@ -306,3 +622,59 @@ Public Sub MyDataPostFunctionsHandler(ByVal args As EventArgsDataFunctions)
     args.CurrentView.RegistrFunction "Ուղարկել նամակ", "NewMod.SendMail"
 End Sub
 ```
+### EventArgsDialogActivate Class
+
+Պարունակում է տվյալներ դիալոգի [Activate](UstPar_Activate.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Dialog`|Իրադարձությունը առաջացնող դիալոգը։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DialogPostActivate](#extensionevents-enum)
+
+### EventArgsDialogClickDropDown Class
+
+Պարունակում է տվյալներ դիալոգի [ClockDropDown](UstPar_ClickDropDown.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Dialog`|Իրադարձությունը առաջացնող դիալոգը։|
+|`Name`|Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
+|`Top`|Մոդալ պատուհան ցուցադրման վերին դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`Left`|Մոդալ պատուհան ցուցադրման ձախ դիրքը (հաշված է ընթացիկ դաշտի դիրքից)։|
+|`ControlValue`|Դաշտի ընթացիկ արժեքը։|
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DialogPreClickDropDown](#extensionevents-enum)
+
+### EventArgsDialogValidate Class
+
+Պարունակում է տվյալներ դիալոգի [Validate](UstPar_Validate.html) իրադարձության մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Dialog`|Իրադարձությունը առաջացնող դիալոգը։|
+|`InvalidControl`|Այն դաշտի անունը, որի համար տվյալների ստուգումը ձախողվել է։|
+|`Cancel`|Այս հատկությանը `True` արժեքի դեպքում ֆոկուսը դրվում է `InvalidControl` դաշտի վրա։ |
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DialogPreValidate](#extensionevents-enum)
+* [DialogPostValidate](#extensionevents-enum)
+
+### EventArgsDialogValueChanged Class
+
+Պարունակում է տվյալներ դիալոգի [ValueChanged](UstPar_ValueChanged.html) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Dialog`|Իրադարձությունը առաջացնող դիալոգը։|
+|`Name`|Այն դաշտի անունը, որի համար աշխատել է իրադարձությունը։|
+|`OldValue`|Դաշտի հին արժեքը, մինչ իրադարձության առաջանալը։|
+|`Cancel`|Այս հատկությանը `True` արժեքի դեպքում ֆոկուսը մնում է `Name` դաշտի վրա, `False` արժեքի դեպքում՝ `Name`-ին հաջորդող դաշտի վրա։ |
+|`CancelInternalHandler`|Այս հատկությանը `True` արժեքի վերագրման դեպքում համակարգային իրադարձության մշակիչը չի իրականացվի։|
+
+Օգտագործվում է հետևյալ իրադարձությունների համար
+* [DialogPreValueChanged](#extensionevents-enum)
