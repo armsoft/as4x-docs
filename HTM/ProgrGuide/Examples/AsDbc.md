@@ -5,7 +5,7 @@ title: "AsDbc examples"
 
 # AsDbc դասի օրինակներ
 
-Բոլոր օրինակներում dbc-ն [AsDbc](../Functions/AsDbc.md) տիպի օբյեկտ է:
+Բոլոր օրինակներում dbc-ն AsDbc տիպի օբյեկտ է:
 
 ## ExecuteNonQuery օրինակ
 
@@ -47,7 +47,7 @@ End Function
 Public Function GetDocState(ByVal Isn As Long) As Integer
     Dim vScalarValue As Variant
 
-    vScalarValue = dbc.ExecuteScalar("SELECT fSTATE FROM DOCS WHERE fISN=" & Isn)
+    vScalarValue = dbc.ExecuteScalar("SELECT fSTATE FROM DOCS WHERE fISN=" & CStr(Isn))
     If IsEmpty(vScalarValue) Then
         GetDocState = -1
     Else
@@ -65,32 +65,31 @@ Public Sub CleanDelDoc(ByVal ConvertedToStringStartDate As String, _
     Dim sSql    As String
 
     sSql = " select fISN from FOLDERS " _
-       & " where fFOLDERID BETWEEN '" & StartDate & "' AND '" & EndDate & "'"
+       & " where fFOLDERID BETWEEN '" & ConvertedToStringStartDate & "' AND '" & ConvertedToStringEndDate & "'"
    
     Set dataTable = dbc.OpenDataTable(sSql)
     Do While Not dataTable.EOF
         SQL = " EXEC asp_DelDoc " & CStr(dataTable(0)) & ",2"
-        rdoConSys.ExecuteNonQuery sSql
+        dbc.ExecuteNonQuery(sSql)
         dataTable.MoveNext
     Loop
-    Set dataTable = Nothing
 End Sub
 ```
 
 ## GetConnectionFromConnectionType օրինակ
 
 ``` vb
-Public Function ExecuteNonQuery(ByVal sQueryText As String, _ 
+Public Function GetSingleValue (ByVal sQueryText As String, _ 
                                 Optional ByVal lConnectionType As ConnectionType = Connection_Main) As Long
     Dim sqlCommand As AsSqlCommand
-    Dim oActiveConnection As AsRdoConnection
+    Dim oConnection As AsRdoConnection
 
-    Set oActiveConnection = GetConnectionFromConnectionType(lConnectionType)
-    Set sqlCommand = oActiveConnection.CreateSqlCommand()      
+    Set oConnection = dbc.GetConnectionFromConnectionType(lConnectionType)
+    Set sqlCommand = oConnection.CreateSqlCommand()      
     With sqlCommand
         .CommandText = sQueryText
         .CommandType = Text
-        ExecuteNonQuery = .ExecueNonQuery
+        GetSingleValue  = .ExecueNonQuery
     End With
 End Function
 ```

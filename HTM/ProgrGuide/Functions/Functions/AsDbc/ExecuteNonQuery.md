@@ -1,14 +1,12 @@
 ﻿---
 layout: page
-title: "AsDbc/ExecuteNonQuery"
+title: "dbc.ExecuteNonQuery"
 ---
 
 
-# AsDbc/ExecuteNonQuery 
+# dbc.ExecuteNonQuery 
 
-## ExecuteNonQuery մեթոդ
-
-Տես նաև [Օրինակ](../../Examples/AsDbc.md) [Կիրառվում է](../AsDbc.md)
+Տես նաև [Օրինակ](../../../Examples/AsDbc.md)
 
 Կատարում է արդյունք չվերադարձնող հարցում։
 Սովորաբար օգտագործվում է UPDATE, INSERT, DELETE տիպի հարցումներ կատարելիս։
@@ -24,8 +22,8 @@ Function ExecuteNonQuery(ByVal sQueryText As String, _
 |Պարամետր | Նկարագրություն |
 |--|--|
 | sQueryText | Հարցման տեքստը։ |
-| lQueryTimeOut | Հարցման TimeOute-ը վայրկյաններով։ Լռությամբ -1 է։ |
-| lConnectionType | [Միացման տիպը](../../Constants/ConnectionType.md)։ Լռությամբ Connection_Main է։|
+| lQueryTimeOut | Հարցման կատարման առավելագույն ժամանակը վայրկյաններով։ Լռությամբ -1՝ ըստ օգտագործողի դրույթների։ |
+| lConnectionType | [Միացման տիպը](../../../Constants/ConnectionType.md)։ Լռությամբ Connection_Main է։|
 
 ## Մեթոդի տիպ
 

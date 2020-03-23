@@ -10,7 +10,7 @@ title: "ConnectionType"
 
 | Հաստատուն | Արժեք | Նկարագրություն |
 |--|--|--|
-| Connection_Main | 1 | Միացումը կատարվում է գլխավոր connection-ով՝ rdoConSys-ով։ |
-| Connection_DS | 2 | Միացումը կատարվում է տվյաների աղբյուրի connection-ով՝ rdoConDS-ով: |
-| Connection_Olap | 3 | Միացումը կատարվում է Olap-ի connection-ով՝ OLAPProvider.GetOLAPConnection-ով։ |
+| Connection_Main | 1 | OLTP տվյալների պահոցի գլխավոր միացում։ |
+| Connection_DS | 2 | Տվյալների աղբյուրների հարցման կատարման միացում դեպի OLTP տվյալների պահոց։ |
+| Connection_Olap | 3 | OLAP տվյալների պահոցի միացում։ |
 
