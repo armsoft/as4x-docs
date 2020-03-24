@@ -17,6 +17,9 @@ Function ExecuteScalar(ByVal sQueryText As String, _
                        Optional ByVal lQueryTimeOut As Long = -1, _
                        Optional ByVal lConnectionType As ConnectionType = Connection_Main) As Variant
 ```
+
+Բաղադրիչներն են՝
+
 |Պարամետր | Նկարագրություն |
 |--|--|
 | sQueryText | Հարցման տեքստը։ |

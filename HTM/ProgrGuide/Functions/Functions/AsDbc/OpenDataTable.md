@@ -19,6 +19,9 @@ Function OpenDataTable(ByVal sQueryText As String, _
                        Optional ByVal lConnectionType As ConnectionType = Connection_Main, _
                        Optional ByVal lCursorType As ResultsetTypeConstants = rdOpenForwardOnly) As AsDataTable
 ```
+
+Բաղադրիչներն են՝
+
 |Պարամետր | Նկարագրություն |
 |--|--|
 | QueryText | Հարցման տեքստը։|
@@ -31,4 +34,4 @@ Function OpenDataTable(ByVal sQueryText As String, _
 AsDataTable
 
 ## Նկատառումներ
- Եթե հարցումը վերադարձնում է "max" տիպի սյուներ, ապա այդ սյուների անունները պետք է գրվեն վերադարձվող սյուների վերջում և `lCursorType`-ի արժեքը դնել rdOpenKeyset (սա անհրաժեշտ է հին RDO ռեժիմով աշխատելու համար)։
+Եթե հարցումը վերադարձնում է "max" տիպի սյուներ, ապա այդ սյուների անունները պետք է գրվեն վերադարձվող սյուների վերջում և `lCursorType`-ի արժեքը դնել rdOpenKeyset (սա անհրաժեշտ է հին RDO ռեժիմով աշխատելու համար)։
