@@ -14,6 +14,9 @@ title: "dbc.GetConnectionFromConnectionType"
 ``` vb
 Function GetConnectionFromConnectionType(ByVal lConnectionType As ConnectionType) As AsRdoConnection
 ```
+
+Բաղադրիչներն են՝
+
 |Պարամետր | Նկարագրություն |
 |--|--|
 | lConnectionType | [Միացման տիպը](../../../Constants/ConnectionType.md): |

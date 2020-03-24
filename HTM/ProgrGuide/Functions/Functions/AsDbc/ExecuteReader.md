@@ -18,6 +18,9 @@ Function ExecuteReader(ByVal sQueryText As String, _
                        Optional ByVal lConnectionType As ConnectionType = Connection_Main, _
                        Optional ByVal lCursorType As ResultsetTypeConstants = rdOpenForwardOnly) As AsSqlResultset
 ```
+
+Բաղադրիչներն են՝
+
 |Պարամետր | Նկարագրություն |
 |--|--|
 | sQueryText | Հարցման տեքստը։ |
@@ -30,4 +33,4 @@ Function ExecuteReader(ByVal sQueryText As String, _
 AsSqlResultset
 
 ## Նկատառումներ
- Եթե հարցումը վերադարձնում է "max" տիպի սյուներ, ապա այդ սյուների անունները պետք է գրվեն վերադարձվող սյուների վերջում և `lCursorType`-ի արժեքը դնել rdOpenKeyset (սա անհրաժեշտ է հին RDO ռեժիմով աշխատելու համար)։
+Եթե հարցումը վերադարձնում է "max" տիպի սյուներ, ապա այդ սյուների անունները պետք է գրվեն վերադարձվող սյուների վերջում և `lCursorType`-ի արժեքը դնել rdOpenKeyset (սա անհրաժեշտ է հին RDO ռեժիմով աշխատելու համար)։
