@@ -13,7 +13,7 @@ title: "AsDataTable/FillFromRdoResultset"
 ## Շարահյուսություն
 
 ``` vb
-Sub FillFromRdoResultset(ByVal rs As rdoResultset, [ByVal maxRowCount As Long = -1])
+Sub FillFromRdoResultset(ByVal rdoRs As rdoResultset, [ByVal maxRowCount As Long = -1])
 ```
 
 Բաղադրիչներն են՝
@@ -21,8 +21,7 @@ Sub FillFromRdoResultset(ByVal rs As rdoResultset, [ByVal maxRowCount As Long = 
 
 | Պարամետր  | Նկարագրություն |
 |--|--|
-| maxRowCount | Մաքսիմալ տողերի քանակ, որոնք պետք է բեռնվեն: Default արժեքը ` -1,որի դեպքում կբեռնվեն rs-ի բոլոր տողերը: |
-| rdoRs  | Այն տվյալները, որոնք պետք է տեղափոխվի DataTable: |
-
+| rdoRs  | Այն տվյալները, որոնք պետք է բեռնել DataTable: |
+| maxRowCount | Մաքսիմալ տողերի քանակը, որը պետք է բեռնվի: Default արժեքը ` -1,որի դեպքում կբեռնվեն rdoRs-ի բոլոր տողերը: |
 
 
