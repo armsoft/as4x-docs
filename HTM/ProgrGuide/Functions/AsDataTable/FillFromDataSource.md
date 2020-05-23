@@ -13,7 +13,7 @@ title: "AsDataTable/FillFromDataSource"
 ## Շարահյուսություն
 
 ``` vb
-Sub FillFromDataSource(ByVal Data As AsData, [columnsNames], [ByVal maxRowCount As Long = -1])
+Sub FillFromDataSource(ByVal Data As AsData, [columnNames], [ByVal maxRowCount As Long = -1])
 ```
 
 Բաղադրիչներն են՝
@@ -21,8 +21,7 @@ Sub FillFromDataSource(ByVal Data As AsData, [columnsNames], [ByVal maxRowCount 
 
 | Պարամետր  | Նկարագրություն |
 |--|--|
-| maxRowCount | Մաքսիմալ տողերի քանակ, որոնք պետք է բեռնվեն: Default արժեքը ` -1,որի դեպքում կբեռնվեն rs-ի բոլոր տողերը: |
-| Data  | Այն տվյալները, որոնք պետք է տեղափոխվի DataTable: |
-| columnsNames  | Սյան անուններ, որոնք պետք է ստանալ: |
-
+| Data  | Այն տվյալները, որոնք պետք է բեռնել DataTable. |
+| columnNames  | Սյուների անունների զանգված, որոնց տվյալները պետք է բեռնել DataTable։ Ոչինչ չփոխանցելու դեպքում կբեռնվեն տվյալների աղբյուրի բոլոր սյուների տվյալները։ |
+| maxRowCount | Առավելագույն բեռնվող տողերի քանակը: Default արժեքը ` -1, որի դեպքում կբեռնվեն տվյալների աղբյուրի բոլոր տողերը: |
 
