@@ -22,4 +22,4 @@ Sub FillFromAsSqlResultset(ByVal rs As AsSqlResultset, [ByVal maxRowCount As Lon
 | Պարամետր  | Նկարագրություն |
 |--|--|
 | rs  | Այն տվյալները, որոնք պետք է բեռնել DataTable: |
-| maxRowCount  | Մաքսիմալ տողերի քանակ, որոնք պետք է բեռնվեն: Default արժեքը ` -1,որի դեպքում կբեռնվեն rs-ի բոլոր տողերը: |
+| maxRowCount  | Առավելագույն բեռնվող տողերի քանակը: Default արժեքը ` -1, որի դեպքում կբեռնվեն rs-ի բոլոր տողերը: |

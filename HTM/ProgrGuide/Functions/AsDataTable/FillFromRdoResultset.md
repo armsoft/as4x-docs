@@ -22,6 +22,6 @@ Sub FillFromRdoResultset(ByVal rdoRs As rdoResultset, [ByVal maxRowCount As Long
 | Պարամետր  | Նկարագրություն |
 |--|--|
 | rdoRs  | Այն տվյալները, որոնք պետք է բեռնել DataTable: |
-| maxRowCount | Մաքսիմալ տողերի քանակը, որը պետք է բեռնվի: Default արժեքը ` -1,որի դեպքում կբեռնվեն rdoRs-ի բոլոր տողերը: |
+| maxRowCount | Առավելագույն բեռնվող տողերի քանակը: Default արժեքը ` -1, որի դեպքում կբեռնվեն rdoRs-ի բոլոր տողերը: |
 
 
