@@ -1,26 +1,32 @@
 ---
 layout: page
-title: "Системное событие документа IsHidden"
+title: "IsHidden  համակարգային իրադարձություն"
 ---
 
-[См. также](../scriptstproced.md) Пример [Применяется к](../Defs/doc.html)
+# IsHidden  համակարգային իրադարձություն
+
+[Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
+
+Գեներացվում է մինև When իրադարձության գեներացումը։ Աշխատանքի ժամանակ ծառայում է որոշ դաշտերը թաքցնելու համար։ Փաստաթղթի համար համակարգային իրադարձությունների գեներացման հաջորդականությունը բերված է այստեղ՝[![More.gif (304 bytes)](../../../IMAGES/MORE.GIF)](Events_Sequence.html)։
 
 Генерируется перед генерацией событии When, запоняет Dictionary скрытых реквизитов. Служит для скрытия некоторых реквизитов во время выполнения. Последовательность генерации системных событий для документа приведена здесь [![More.gif (304 bytes)](../../../IMAGES/MORE.GIF)](Events_Sequence.html)
 
 
-## Синтаксис
+## Շարահյուսություն
 
 ``` vb
 Sub IsHidden(ByVal Dict as Scripting.Dictionary)
 ```
 
-Синтаксис события **IsHidden** состоит из следующих частей:
+Բաղադրիչներն են՝
 
-|Параметр|Описание|
+|Պարամետր |Նկարագրություն |
 |--|--|
-|`Dict`|объект типа Scripting.Dictionary|
+|`Dict`|Scripting.Dictionary տիպի օբյեկտ։ объект типа Scripting.Dictionary|
 
-## Пример
+## Օրինակ
+
+
 Добавим несколько обьектов в список невидимости. В приведенных примерах обьекты становятся невидимыми.
 
 
@@ -37,7 +43,7 @@ Sub IsHidden(ByVal HiddenControls As Dictionary)
     HiddenControls.Add "GRID1.FILIALCOL", "GRID1.FILIALCOL1" 'Колонка невидима
 End Sub
 ```
-
+Թաքցնում է փաստաթղթի էջը , որը անվանումը ստանում է հետևյալ ձևաչափով՝ ``"PAGE {NAME="PAGENAME"; CAPTION=#Name; ECAPTION=#e_Name;         ...          };``
 Скрытие страницы документа, где имя задается в следующем формате - ``"PAGE {NAME="PAGENAME"; CAPTION=#Name; ECAPTION=#e_Name;         ...          };``
 
 ``` vb
