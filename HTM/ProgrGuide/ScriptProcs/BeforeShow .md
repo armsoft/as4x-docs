@@ -9,11 +9,11 @@ title: "BeforeShow իրադարձություն"
 
 BeforeShow իրադարձությունը առաջանում է ծառի ցուցադրելուց առաջ (ոչ մոդալ)։
 
-Եթե BeforeShow իրադարձությունը մշակվում է, ապա ծառի նկարագրության մեջ գրված [AllowAddNode](../Functions/ASTREE/AllowAddNode.html),
-[AllowDelete](../Functions/ASTREE/AllowDelete.html), 
-[AllowEdit](../Functions/ASTREE/AllowEdit.html), 
-[AllowExport](../Functions/ASTREE/AllowExport.html),
-[AllowView](../Functions/ASTREE/AllowView.html) հատկությունների արժեքները անտեսվում են։
+Եթե BeforeShow իրադարձությունը մշակվում է, ապա ծառի նկարագրության մեջ գրված [AllowAddNode](../Functions/ASTREE/AllowAddNode.md),
+[AllowDelete](../Functions/ASTREE/AllowDelete.md), 
+[AllowEdit](../Functions/ASTREE/AllowEdit.md), 
+[AllowExport](../Functions/ASTREE/AllowExport.md),
+[AllowView](../Functions/ASTREE/AllowView.md) հատկությունների արժեքները անտեսվում են։
 
 ## Շարահյուսություն
 

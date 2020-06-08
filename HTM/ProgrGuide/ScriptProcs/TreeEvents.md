@@ -5,11 +5,11 @@ title: "Tree իրադարձություններ"
 
 # Ծառի համակարգային իրադարձություններ
 
-Ծառի իրադարձությունների մշակիչները պետք է գտնմվեն [Ծառ-տեղեկատուի նկարագրության](../Defs/Tree.md) սկրիպտային բաժնում։
+Ծառի իրադարձությունների մշակիչները պետք է գտնվեն [Ծառ-տեղեկատուի նկարագրության](../Defs/Tree.md) սկրիպտային բաժնում։
 
-* [BeforeShow](BeforeShow%20.html)
-* [Functions](FunctionsTree.html)	
-* [OnFunctionAdd](OnFunctionAdd_Tree.html)
-* [OnFunctionDelete](OnFunctionDelete_Tree.html)
-* [OnFunctionEdit](OnFunctionEdit_Tree.html)
-* [OnFunctionView](OnFunctionView_Tree.html)
+* [BeforeShow](BeforeShow.md)
+* [Functions](FunctionsTree.md)	
+* [OnFunctionAdd](OnFunctionAdd_Tree.md)
+* [OnFunctionDelete](OnFunctionDelete_Tree.md)
+* [OnFunctionEdit](OnFunctionEdit_Tree.md)
+* [OnFunctionView](OnFunctionView_Tree.md)

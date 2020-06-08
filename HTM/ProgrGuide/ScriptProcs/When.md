@@ -5,7 +5,7 @@ title: "When իրադարձություն"
 
 # When փաստաթղթի համակարգային իրադարձություն
 
-[Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_When.md) [Կիրառվում է](../Defs/doc.html)
+[Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_When.md) [Կիրառվում է](../Defs/doc.md)
 
 
 Առաջանում է փաստաթուղթը էկրանին ցույց տալուց առաջ։ 

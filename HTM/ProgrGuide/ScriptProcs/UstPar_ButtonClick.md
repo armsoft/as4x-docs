@@ -5,7 +5,7 @@ title: "ButtonClick իրադարձություն"
 
 # ButtonClick երկխոսության պատուհանի համակարգային իրադարձություն
 
-[Տես նաև](../DialogEvents.html)  [Օրինակ](../Examples/E_Dialog_ButtonClick.md) [Կիրառվում է](../Functions/Dialog.md)
+[Տես նաև](../DialogEvents.md)  [Օրինակ](../Examples/E_Dialog_ButtonClick.md) [Կիրառվում է](../Functions/Dialog.md)
 
 Առաջանում է երկխոսության պատուհանի վրա [ավելացված](../Functions/AsDialog/AddButton.md) կոճակ սեղմելուց։
 

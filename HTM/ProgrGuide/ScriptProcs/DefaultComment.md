@@ -5,7 +5,7 @@ title: "DefaultComment իրադարձություն"
 
 # DefaultComment համակարգային իրադարձություն
 
-[Տես նաև](../scriptstproced.html) [Օրինակ](../Examples/E_DefaultComment.md) [Կիրառվում է](../Defs/doc.md)
+[Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_DefaultComment.md) [Կիրառվում է](../Defs/doc.md)
 
 Իրադարձությունը առաջանում է փաստաթղթի [թղթապանակի տարր](../Functions/AsFoldElement.md) ստեղծելուց մեկնաբանություն լրացնելու համար ։
 

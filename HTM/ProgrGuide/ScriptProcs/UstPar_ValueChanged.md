@@ -5,7 +5,7 @@ title: "ValueChanged իրադարձություն"
 
 # ValueChanged երկխոսության պատուհանի համակարգային իրադարձություն
 
-[Տես նաև](../scriptstproced.html) Օրինակ [Կիրառվում է](../Functions/AsDialog.html)
+[Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Functions/AsDialog.md)
 
 Առաջանում է երկխոսության պատուհանի փոփոխված դաշտից դուրս գալու ժամանակ։ 
 

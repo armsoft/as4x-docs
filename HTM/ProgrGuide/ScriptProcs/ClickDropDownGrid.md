@@ -5,7 +5,7 @@ title: "ClickDropDownGrid իրադարձություն"
 
 # ClickDropDownGrid փաստաթղթի համակարգային իրադարձություն
 
-[Տես նաև](../scriptstproced.html) Օրինակ [Կիրառվում է](../Defs/doc.html)
+[Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
 ClickDropDownGrid իրադարձությունը առաջանում է փաստաթղթի աղյուսակի հետևյալ տիպի սյունակների ցուցակի բացման ժամանակ՝ [Tree()](../Types/Tree.md), [FullTree()](../Types/FULLTREE.md), [Folder()](../Types/Folder.md)։
 

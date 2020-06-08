@@ -8,7 +8,7 @@ title: "TemplateSubstitution իրադարձություն"
 [Տես նաև](TemplateSubstitutionParameters.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
 Առաջանում է փաստաթղթի տպելու ձևի ձևանմուշը լրացնելու ժամանակ։ 
-Մշակիչը պետք է վերադարձնի ձևանմուշի տեղադրման արժեքներ օբյեկտ ([TemplateSubstitution օբյեկտը](../Functions/TemplateSubstitution.html))։ 
+Մշակիչը պետք է վերադարձնի ձևանմուշի տեղադրման արժեքներ օբյեկտ ([TemplateSubstitution օբյեկտը](../Functions/TemplateSubstitution.md))։ 
 
 ## Շարահյուսություն
 
