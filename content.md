@@ -102,7 +102,7 @@ title: Contents
     - [Событие Valid](HTM/ProgrGuide/ScriptProcs/Valid_Data.html)
   - [Системные события дерева](HTM/ProgrGuide/ScriptProcs/TreeEvents.html)
     - [Событие Functions](HTM/ProgrGuide/ScriptProcs/FunctionsTree.html)
-    - [Событие BeforeShow ](HTM/ProgrGuide/ScriptProcs/BeforeShow%20.html)
+    - [Событие BeforeShow ](HTM/ProgrGuide/ScriptProcs/BeforeShow.html)
     - [Событие OnFunctionAdd](HTM/ProgrGuide/ScriptProcs/OnFunctionAdd_Tree.html)
     - [Событие OnFunctionDelete](HTM/ProgrGuide/ScriptProcs/OnFunctionDelete_Tree.html)
     - [Событие OnFunctionEdit](HTM/ProgrGuide/ScriptProcs/OnFunctionEdit_Tree.html)
