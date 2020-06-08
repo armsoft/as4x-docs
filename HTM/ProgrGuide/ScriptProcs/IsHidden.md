@@ -1,53 +1,43 @@
 ---
 layout: page
-title: "IsHidden  համակարգային իրադարձություն"
+title: "IsHidden իրադարձություն"
 ---
 
-# IsHidden  համակարգային իրադարձություն
+# IsHidden փաստաթղթի համակարգային իրադարձություն
 
-[Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
+[Տես նաև](../scriptstproced.md) [Օրինակ](#Օրինակ) [Կիրառվում է](../Defs/doc.md)
 
-Գեներացվում է մինև When իրադարձության գեներացումը։ Աշխատանքի ժամանակ ծառայում է որոշ դաշտերը թաքցնելու համար։ Փաստաթղթի համար համակարգային իրադարձությունների գեներացման հաջորդականությունը բերված է այստեղ՝[![More.gif (304 bytes)](../../../IMAGES/MORE.GIF)](Events_Sequence.html)։
-
-Генерируется перед генерацией событии When, запоняет Dictionary скрытых реквизитов. Служит для скрытия некоторых реквизитов во время выполнения. Последовательность генерации системных событий для документа приведена здесь [![More.gif (304 bytes)](../../../IMAGES/MORE.GIF)](Events_Sequence.html)
-
+Առաջանում է փաստաթղթի ցույց տալուց առաջ մինչև [When](When.md) իրադարձությանը։ 
+Աշխատանքի ժամանակ ծառայում է որոշ դաշտերը անտեսանելի դարձնելու համար։ 
 
 ## Շարահյուսություն
 
 ``` vb
-Sub IsHidden(ByVal Dict as Scripting.Dictionary)
+Public Sub IsHidden(ByVal HiddenControls as Dictionary)
+    ' statements
+End Sub
 ```
 
 Բաղադրիչներն են՝
 
 |Պարամետր |Նկարագրություն |
 |--|--|
-|`Dict`|Scripting.Dictionary տիպի օբյեկտ։ объект типа Scripting.Dictionary|
+|`HiddenControls`| Թաքցվող դաշտերի բազմություն։ |
 
 ## Օրինակ
 
-
-Добавим несколько обьектов в список невидимости. В приведенных примерах обьекты становятся невидимыми.
-
-
-Скрытие реквизита, где имя реквизита FILIAL:
 ``` vb
-Sub IsHidden(ByVal HiddenControls As Dictionary)
-    HiddenControls.Add "FILIAL", "FILIAL" 'Реквизит невидим
-End Sub
-```
+Public Sub IsHidden(ByVal HiddenControls As Dictionary)
+    ' FILIAL դաշտը դարձնում է անտեսանելի
+    HiddenControls.Add "FILIAL", "FILIAL"
 
-Скрытие колонкой Grid таблицы, где имя грид таблицы GRID1, а колонки FILIALCOL:
-``` vb
-Sub IsHidden(ByVal HiddenControls As Dictionary)
-    HiddenControls.Add "GRID1.FILIALCOL", "GRID1.FILIALCOL1" 'Колонка невидима
-End Sub
-```
-Թաքցնում է փաստաթղթի էջը , որը անվանումը ստանում է հետևյալ ձևաչափով՝ ``"PAGE {NAME="PAGENAME"; CAPTION=#Name; ECAPTION=#e_Name;         ...          };``
-Скрытие страницы документа, где имя задается в следующем формате - ``"PAGE {NAME="PAGENAME"; CAPTION=#Name; ECAPTION=#e_Name;         ...          };``
+    'GRID1 աղյուսակի FILIALCOL սյունակը դարձնում է անտեսանելի
+    HiddenControls.Add "GRID1.FILIALCOL", "GRID1.FILIALCOL1"
 
-``` vb
-Sub IsHidden(ByVal HiddenControls As Dictionary)
-    HiddenControls.Add "PAGENAME", "PAGENAME" 'Страница невидима
+    'GRID3 աղյուսակը ամբողջությամբ դարձնում է անտեսանելի
+    HiddenControls.Add "GRID3", "GRID3"
+
+    'PAGENAME էջ ամբողջությամբ դարձնում է անտեսանելի
+    HiddenControls.Add "PAGENAME", "PAGENAME"
 End Sub
 ```

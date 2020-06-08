@@ -1,31 +1,24 @@
 ---
 layout: page
-title: "OnDelete համակարգային իրադարձություն"
+title: "OnDelete իրադարձություն"
 ---
 
-# OnDelete համակարգային իրադարձություն
-
+# OnDelete հաշվառման համակարգային իրադարձություն
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/Accounting.md)
 
-
-Գեներքացվում է [HiDelete](../Functions/ASDOC/HiDelete.html) մեթոդով հաշվառումները ջնջելիս կամ [DeleteDoc](../Functions/Functions/DocumentsCirculation/DeleteDoc.html) ֆունկցիայի հաշվառումների փաստաթուղթը ջնջելիս։ 
-
-Генерируется при удалении проводок методом [HiDelete](../Functions/ASDOC/HiDelete.html)
-или при удалении документа основания проводок функцией [DeleteDoc](../Functions/Functions/DocumentsCirculation/DeleteDoc.html). 
-
-
+Առաջանում է [HiDelete](../Functions/ASDOC/HiDelete.md) մեթոդով հաշվառումները ջնջելիս կամ փաստաթուղթը [DeleteDoc](../Functions/Functions/DocumentsCirculation/DeleteDoc.html) ֆունկցիայով իր հաշվառումների հետ ջնջելիս։ 
 
 ## Շարահյուսություն
 
-```as4x
-Sub OnDelete(xFact)
+``` vb
+Public Sub OnDelete(ByVal xFact As AsFact)
    statements
 End Sub
 ```
+
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| xFact | Հաշվառում տիպի օբյեկտի հղում։ строковое выражение, определяющее ссылку на объект типа проводки. |
-
+| xFact | Ջնջվող հաշվառման օբյեկտի հղում։ |

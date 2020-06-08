@@ -1,25 +1,18 @@
 ---
 layout: page
-title: "OnFunctionDelete համակարգային իրադարձություն"
+title: "OnFunctionDelete իրադարձություն"
 ---
 
-# OnFunctionDelete համակարգային իրադարձություն
+# OnFunctionDelete ծառի համակարգային իրադարձություն
 
-[Տես նաև](TreeEvents.html) Օրինակ [Կիրառվում է](../Defs/Tree.md)
+[Տես նաև](TreeEvents.md) Օրինակ [Կիրառվում է](../Defs/Tree.md)
 
-
-Աշխատում է այն դեպքում եթե ջնջելու կոճակը սեղմելիս [AllowDelete](../Functions/ASTREE/AllowDelete.html) իրադարձությունը =1-ի։ Եթե [AllowDelete](../Functions/ASTREE/AllowDelete.html)=0, իսկ ծառի սկրիպտային բաժնում մշակված է ծառը ջնջելու ֆունկցիան և `OnFunctionDelete` իրադարձությունը, ապա ջնջելու կոճակը սեղմելիս կաշխատի միայն տվյալ իրադարձությունը։
-
-Происходит при нажатии кнопки удаления из панели инструментов в случае, если свойство 
-[AllowDelete](../Functions/ASTREE/AllowDelete.html)=1. Если [AllowDelete](../Functions/ASTREE/AllowDelete.html)=0, а в скриптовой части дерева обработана функция удаления дерева и событие <strong>
-OnFunctionDelete</strong>, то при нажатии кнопки удаления срабатывает только данное событие. 
-
+Իրադարձությունը առաջանում է ծառում համտքեստի մենյուի «Ջնջել» կոճակը սեղմելու ժամանակ։ 
 
 ## Շարահյուսություն
 
-```as4x
-Sub OnFunctionDelete()
-   statements
+``` vb
+Public Sub OnFunctionDelete()
+    ' statements
 End Sub
 ```
-

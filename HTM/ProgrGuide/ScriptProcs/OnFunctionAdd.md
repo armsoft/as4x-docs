@@ -1,23 +1,18 @@
 ---
 layout: page
-title: "OnFunctionAdd համակարգային իրադարձություն"
+title: "OnFunctionAdd իրադարձություն"
 ---
 
-# OnFunctionAdd համակարգային իրադարձություն
+# OnFunctionAdd տվյալների աղբյուրի համակարգային իրադարձություն
 
+[Տես նաև](OnFunctionDelete.html) Օրինակ [Կիրառում է](../Defs/Data.md)
 
-[Տես նաև](OnFunctionDelete.html) Օրինակ [Կիրառում է](../Defs/Data.html)
-
-
-Իրադարձությունը առաջանում է «Ավելացնել» կոճակը սեղմելու ժամանակ։ 
-Происходит при нажатии кнопки добавления из панели инструментов. 
-
+Իրադարձությունը առաջանում է տվյալների աղբյուրում համտքեստի մենյուի «Ավելացնել» կոճակը սեղմելու ժամանակ։ 
 
 ## Շարահյուսություն
 
-```as4x
-Sub OnFunctionAdd()
-   statements
+``` vb
+Public Sub OnFunctionAdd()
+    ' statements
 End Sub
 ```
-

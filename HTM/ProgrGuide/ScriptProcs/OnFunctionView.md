@@ -1,21 +1,18 @@
 ---
 layout: page
-title: "OnFunctionView համակարգային իրադարձություն"
+title: "OnFunctionView իրադարձություն"
 ---
 
-# OnFunctionView համակարգային իրադարձություն
+# OnFunctionView տվյալների աղբյուրի համակարգային իրադարձություն
 
+[Տես նաև](OnFunctionAdd.md) Օրինակ [Կիրառվում է](../Defs/Data.md)
 
-[Տես նաև](OnFunctionAdd.md) Օրինակ [Կիրառվում է](../Defs/Data.html)
-
-Իրադարձությունը առաջանում է «Դիտել» գործողության ժամանակ։ 
-Происходит при нажатии кнопки просмотра из панели инструментов. 
-
+Իրադարձությունը առաջանում է տվյալների աղբյուրում համտքեստի մենյուի «Դիտել» կոճակը սեղմելու ժամանակ։ 
 
 ## Շարահյուսություն
 
-```as4x
-Sub OnFunctionView()
-   statements
+``` vb
+Public Sub OnFunctionView()
+    ' statements
 End Sub
 ```

@@ -1,21 +1,20 @@
 ---
 layout: page
-title: "AfterCreate համակարգային իրադարձություն/Event AfterCreate"
+title: "AfterCreate իրադարձություն"
 ---
 
-# AfterCreate համակարգային իրադարձություն
+# AfterCreate փաստաթղթի համակարգային իրադարձություն
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
-AfterCreate Իրադարձությունը աշխատում է [CreateDoc](../Functions/Functions/DocumentsCirculation/CreateDoc.html) կամ CreateDocFromString ֆունկցիաների միջոցով փաստաթուղթը ստեղծելուց հետո։ Փաստաթղթի ներմուծման ժամանակ իրադարձությունը չի աշխատում։
-Событие происходит сразу после создания документа функциями 
-[CreateDoc](../Functions/Functions/DocumentsCirculation/CreateDoc.html) или CreateDocFromString. При импорте документа событие не происходит.
+AfterCreate Իրադարձությունը առաջանում է փաստաթուղթը ստեղծելուց ([CreateDoc](../Functions/Functions/DocumentsCirculation/CreateDoc.md), [CreateDocFromString](../Functions/Functions/DocumentsCirculation/CreateDocFromString.html))։ 
 
+Փաստաթղթի ներմուծման ժամանակ իրադարձությունը չի աշխատում։
 
-## շարահյուսություն
+## Շարահյուսություն
 
-``` as4x
-Sub AfterCreate()  
-   statements
+``` vb
+Public Sub AfterCreate()  
+    ' statements
 End Sub
 ```

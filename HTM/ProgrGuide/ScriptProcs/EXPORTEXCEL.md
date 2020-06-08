@@ -1,21 +1,18 @@
 ---
 layout: page
-title: "ExportExcel համակարգային իրադարձություն"
+title: "ExportExcel իրադարձություն"
 ---
 
-# ExportExcel համակարգային իրադարձություն
+# ExportExcel տվյալների աղբյուրի համակարգային իրադարձություն
 
+[Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Functions/Asdata.md)
 
-[Տես նաև](../scriptstproced.md) Օրինակ
-[Կիրառվում է](../Functions/Asdata.md)
-
-Աշխատում է տվյալները Excel-ի մեջ արտահանելու ժամանակ։
-Происходит при экспорте данных в Excel. 
+Առաջանում է տվյալները Excel-ի մեջ արտահանելու ժամանակ։
 
 ## Շարահյուսություն
 
-```as4x
-Sub ExportExcel
-      statements
+``` vb
+Public Sub ExportExcel()
+    ' statements
 End Sub
 ```

@@ -1,34 +1,27 @@
 ---
 layout: page
-title: "TemplateSubstitution համակարգային իրադարձություն"
+title: "TemplateSubstitution իրադարձություն"
 ---
 
-# TemplateSubstitution համակարգային իրադարձություն
-
+# TemplateSubstitution փաստըաթղթի համակարգային իրադարձություն
 
 [Տես նաև](TemplateSubstitutionParameters.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
-
-Աշխատում է փաստաթղթի տպելու ձևի ձևանմուշը լրացնելու ժամանակ։ Որպես արդյունք է համարվում [TemplateSubstitution օբյեկտը](../Functions/TemplateSubstitution.html)։
-
-Происходит при заполнении шаблона печатной формы документа. Результатом выполнения является
-[подстановка в шаблон печати](../Functions/TemplateSubstitution.html). 
-
+Առաջանում է փաստաթղթի տպելու ձևի ձևանմուշը լրացնելու ժամանակ։ 
+Մշակիչը պետք է վերադարձնի ձևանմուշի տեղադրման արժեքներ օբյեկտ ([TemplateSubstitution օբյեկտը](../Functions/TemplateSubstitution.html))։ 
 
 ## Շարահյուսություն
 
-```as4x
-Function TemplateSubstitution(ModeDictionary [,ParamsDictionary]) as TemplateSubstitution
-   statements
+``` vb
+Public Function TemplateSubstitution(ByVal Modes As Dictionary, _
+                                    ByVal Params As Dictionary) As TemplateSubstitution
+    ' statements
 End Function
 ```
 
+Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| ModeDictionary | Ձևաթղթի լրացման ռեժիմ։ Այն նշանակվում է ադմինիստրատորի կողմից, ձևաթղթի կարգավորման ժամանակ։ объект типа Dictionary, определяющий режим заполнения шаблона. Режим заполнения шаблона устанавливается администратом при настройке шаблона. |
-| ParamsDictionary | Շաբլոնը լրացնելու պարամետրեր, որոնք տրվում են [TemplateSubstitutionParameters](TemplateSubstitutionParameters.md) իրադարձության միջոցով։ необязательное объект типа Dictionary, определяющий параметры заполнения шаблона. Параметры заполнения шаблон задается с помощью события 	[TemplateSubstitutionParameters](TemplateSubstitutionParameters.html). |
-
-
-
-
+| Modes | Ձևանմուշի լրացման ռեժիմ։ Այն նշանակվում է ադմինիստրատորի կողմից, ձևանմուշի կարգավորման ժամանակ։ |
+| Params | Ձևանմուշը լրացնելու պարամետրեր, որոնք տրվում են [TemplateSubstitutionParameters](TemplateSubstitutionParameters.md) իրադարձության միջոցով։ |

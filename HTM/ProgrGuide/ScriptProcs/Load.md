@@ -1,51 +1,46 @@
 ---
 layout: page
-title: "Load համակարգային իրադարձություն"
+title: "Load իրադարձություն"
 ---
 
-# Load  համակարգային իրադարձություն
+# Load տվյալների աղբյուրի համակարգային իրադարձություն
 
-[Տես նաև](../Functions/Functions/CreateXArrayDB.html) Օրինակ [Կիրառվում է](../Functions/Asdata.md)
+[Տես նաև](../Functions/Functions/CreateXArrayDB.html) [Օրինակ](#Օրինակ) [Կիրառվում է](../Functions/Asdata.md)
 
-Գեներացվում է, եթե ArrayBased հատկության արժեքը հավասար է մեկի։ Տվյալների աղբյուրի օբյեկտը լրացնելու համար փոխանցում է տվյալների միջուկը ։ Իրադարձությունը պետք է վերադարձնի XArrayDB տիպի օբյեկտը. որի սյուների քանակը հավասար է տվյալների աղբյուրի սյուների քանակին??, իսկ տողերը համապատասխանում/համընկնում են տվյալների աղբյուրի տողերի հետ։
-Генерируется если значение свойства ArrayBased равно единице. Служит для передачи ядру данных для заполнения объекта источник данных. Событие должно возвратить объект типа XArrayDB количество колонок равно количеству колонок в источнике данных, а строки соответствуют строкам в источнике данных.
+Առաջանում է մասիվի հիման վրա աշխատող տվյալների աղբյուրի հաշվարկի ժամանակ։ 
+Մշակիչի մեջ հարկավոր է հաշվարկել երկչափ մասիվը միջուկին վերադարձնելու համար։ 
 
+Իրադարձությունը պետք է վերադարձնի XArrayDB տիպի օբյեկտը։
 
 ## Շարահյուսություն
 
-```as4x
-Function Load As XArrayDB
-
+``` vb
+Public Function Load() As XArrayDB
+    ' statements
 End Function
 ```
 
-## Նկատառումներ
+## Օրինակ
 
 XArrayDB տիպի օբյեկտը ստեղծելու համար անհրաժեշտ է կանչել [CreateXArrayDB](../Functions/Functions/CreateXArrayDB.html) ֆունկցիան։
 
-Объект типа XArrayDB необходимо создать при помощи вызова функции [CreateXArrayDB](../Functions/Functions/CreateXArrayDB.html).
-
-<blockquote>
-
-Public Function Load As XArrayDB<br>
-&nbsp; Dim xArr As XArrayDB<br>
-&nbsp; Set xArr = CreateXArrayDB<br>
-&nbsp; xArr.ReDim 0, 0, 0, 1<br>
-&nbsp; xArr.DeleteRows 0<br>
-<br>
-&nbsp; xArr.AppendRows<br>
-&nbsp; xArr(0,0)=&quot;01&quot;<br>
-&nbsp; xArr(0,1)=&quot;Caption 01&quot;<br>
-<br>
-&nbsp; xArr.AppendRows<br>
-&nbsp; xArr(1,0)=&quot;02&quot;<br>
-&nbsp; xArr(1,1)=&quot;Caption 02&quot;<br>
-<br>
-&nbsp; xArr.AppendRows<br>
-&nbsp; xArr(2,0)=&quot;03&quot;<br>
-&nbsp; xArr(2,1)=&quot;Caption 03&quot;<br>
-<br>
-&nbsp; Set Load=xArr<br>
+``` vb
+Public Function Load As XArrayDB
+    Dim xArr As XArrayDB
+    Set xArr = CreateXArrayDB(0,2)
+  
+    xArr.AppendRows
+    xArr(0,0)="01"
+    xArr(0,1)="Caption 01"
+  
+    xArr.AppendRows
+    xArr(1,0)="02"
+    xArr(1,1)="Caption 02"
+  
+    xArr.AppendRows
+    xArr(2,0)="03"
+    xArr(2,1)="Caption 03"
+  
+    Set Load = xArr
 End Function
-
-</blockquote>
+```

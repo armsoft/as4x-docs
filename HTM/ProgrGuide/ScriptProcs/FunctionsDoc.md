@@ -1,30 +1,26 @@
 ---
 layout: page
-title: "FunctionsDoc համակարգային իրադարձություն"
+title: "Functions իրադարձություն"
 ---
 
-# FunctionsDoc համակարգային իրադարձություն 
+# Functions փաստաթղթի համակարգային իրադարձություն 
 
 [Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_Functions.md) [Կիրառվում է](../Functions/Asdoc.md)
 
-Աշխատում է փաստաթղթի կոնտեքստ մենյույի ձևավորման ժամանակ։ Տվյալ իրադարձության մշակիչի մեջ գրանցվում են կոնտեքստ մենյույից կանչված ֆունկցիաները։
-
-Происходит при формировании контекстного меню документа. В обработчике данного события регистрируются функции, вызываемые из контекстного меню.
+Առաջանում է փաստաթղթի համատեքստի մենյույի ձևավորման ժամանակ։ 
+Տվյալ իրադարձության մշակիչի մեջ գրանցվում են մենյույից կանչվող ֆունկցիաները կանչելով [RegistrFunction](../Functions/ASDOC/RegistrFunction.md)
+և [RegistrNode](../Functions/ASDOC/RegistrNode.md) մեթոդները։
 
 ## Շարահյուսություն
 
-```as4s
-Sub Functions(Optional ByVal iEvPlaceFrom)
-   statements
+``` vb
+Public Sub Functions(ByVal context As Long)
+    ' statements
 End Sub
 ```
-Որտեղ `iEvPlaceFrom`-ը կարող է ընդունել [փաստաթղթի Functions իրադարձության համատեքստի հաստատուններ](../Constants/const_doc_context.md) արժեքներից մեկը։
 
-где `iEvPlaceFrom` может принимать одно из значений [констант контекста события Functions документа](../Constants/const_doc_context.html)
+Բաղադրիչներն են՝
 
-
-## Նկատառումներ
-
-[RegistrFunction](../Functions/ASDOC/RegistrFunction.md) և [RegistrNode](../Functions/ASDOC/RegistrNode.md) մեթոդները պետք է օգտագործվեն միայն `Functions` իրադարձության մշակիչի մեջ։
-
-Методы [RegistrFunction](../Functions/ASDOC/RegistrFunction.html) и [RegistrNode](../Functions/ASDOC/RegistrNode.html) должны быть использованы только в обработчике события Functions.
+|Պարամետր|Նկարագրություն|
+|--|--|
+| context | [փաստաթղթի Functions իրադարձության համատեքստի հաստատուններ](../Constants/const_doc_context.md)։ |

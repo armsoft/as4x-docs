@@ -1,47 +1,40 @@
 ---
 layout: page
-title: "BeforeShow համակարգային իրադարձություն /Системное событие BeforeShow"
+title: "BeforeShow իրադարձություն"
 ---
 
-# BeforeShow համակարգային իրադարձություն 
+# BeforeShow ծառի համակարգային իրադարձություն 
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Functions/Astree.md)
 
+BeforeShow իրադարձությունը առաջանում է ծառի ցուցադրելուց առաջ (ոչ մոդալ)։
 
-BeforeShow իրադարձությունը աշխատումէ ծառի ոչ մոդալ ցուցադրիչի բացումից առաջ։
-Происходит перед открытием немодального браузера дерева .
+Եթե BeforeShow իրադարձությունը մշակվում է, ապա ծառի նկարագրության մեջ գրված [AllowAddNode](../Functions/ASTREE/AllowAddNode.html),
+[AllowDelete](../Functions/ASTREE/AllowDelete.html), 
+[AllowEdit](../Functions/ASTREE/AllowEdit.html), 
+[AllowExport](../Functions/ASTREE/AllowExport.html),
+[AllowView](../Functions/ASTREE/AllowView.html) հատկությունների արժեքները անտեսվում են։
 
 ## Շարահյուսություն
 
-``` as4x
-Sub BeforeShow(ByRef AllowEdit as Boolean,ByRef AllowView as Boolean,ByRef AllowDelete as Boolean,ByRef AllowAddNode as Boolean,ByRef AllowExport as Boolean, ByRef AllowAddDocs as Boolean)
-   statements
+Բաղադրիչներն են՝
+
+``` vb
+Public Sub BeforeShow(ByRef AllowEdit as Boolean, _
+					  ByRef AllowView as Boolean, _
+					  ByRef AllowDelete as Boolean, _
+					  ByRef AllowAddNode as Boolean, _
+					  ByRef AllowExport as Boolean, _
+					  ByRef AllowAddDocs as Boolean)
+    ' statements
 End Sub
 ```
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| AllowEdit | Ծառի տարրի կարգավորման թույլտվություն։ Разрешение на редактирования элемента дерева. |
-| AllowView | Ծառի տարի դիտելու թույլտվություն։ Разрешение на просмотр элемента дерева. |
-| AllowDelete | Ծառի տարի ջնջելու թույլտվություն։ Разрешение на удаление элемента дерева. |
-| AllowAddNode | Ծառի հանգույց ավելացնելու թույլտվություն։ Разрешение на добавления узла дерева. |
-| AllowExport | Разрешение на экспорт дерева. |
-| AllowAddDocs | Разрешение на добавление документов в дерево. |
-
-## Նկատառումներ
-
-Եթե BeforeShow իրադարձությունը աշխատում է, ապա ծառի հատկությունների [AllowAddNode](../Functions/ASTREE/AllowAddNode.html),
-[AllowDelete](../Functions/ASTREE/AllowDelete.html), 
-[AllowEdit](../Functions/ASTREE/AllowEdit.html), 
-	[AllowExport](../Functions/ASTREE/AllowExport.html),
-[AllowView](../Functions/ASTREE/AllowView.html) արժեքները անտեսվում են։
-
-Если событие BeforeShow обрабатывает,то значения свойств дерева
-[AllowAddNode](../Functions/ASTREE/AllowAddNode.html),
-[AllowDelete](../Functions/ASTREE/AllowDelete.html), 
-[AllowEdit](../Functions/ASTREE/AllowEdit.html), 
-	[AllowExport](../Functions/ASTREE/AllowExport.html),
-[AllowView](../Functions/ASTREE/AllowView.html) игнорируются.
-
-
+| AllowEdit | Ծառի տարրի խմբագրման թույլտվություն։ |
+| AllowView | Ծառի տարրի դիտելու թույլտվություն։ |
+| AllowDelete | Ծառի տարրի ջնջելու թույլտվություն։ |
+| AllowAddNode | Ծառում նոր հանգույց ավելացնելու թույլտվություն։ |
+| AllowExport | Ծառի կամ տարրի արտահանման թույլտվություն։ |
+| AllowAddDocs | Ծառում փաստաթղթեր ավելացնելու թույլտվություն։ |

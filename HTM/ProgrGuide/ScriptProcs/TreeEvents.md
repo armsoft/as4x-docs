@@ -1,17 +1,15 @@
 ---
 layout: page
-title: "Ծառի/Tree համակարգային իրադարձություններ"
+title: "Tree իրադարձություններ"
 ---
 
 # Ծառի համակարգային իրադարձություններ
 
-Փաստաթղթի իրադարձությունների մշակիչները գտնվում են [Ծառ-տեղեկատուի նկարագրության](../Defs/Tree.md) սկրիպտային բաժնում։
-
-Обработчики событий документа находятся в скриптовом разделе [дерева](../Defs/Tree.md).
+Ծառի իրադարձությունների մշակիչները պետք է գտնմվեն [Ծառ-տեղեկատուի նկարագրության](../Defs/Tree.md) սկրիպտային բաժնում։
 
 * [BeforeShow](BeforeShow%20.html)
 * [Functions](FunctionsTree.html)	
-* [OnFunctionAdd](OnFunctionAdd_Tree.html)<br>
-* [OnFunctionDelete](OnFunctionDelete_Tree.html)<br>
-* [OnFunctionEdit](OnFunctionEdit_Tree.html)<br>
+* [OnFunctionAdd](OnFunctionAdd_Tree.html)
+* [OnFunctionDelete](OnFunctionDelete_Tree.html)
+* [OnFunctionEdit](OnFunctionEdit_Tree.html)
 * [OnFunctionView](OnFunctionView_Tree.html)

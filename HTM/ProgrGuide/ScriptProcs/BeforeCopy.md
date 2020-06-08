@@ -1,21 +1,20 @@
 ---
 layout: page
-title: "BeforeCopy համակարգային իրադարձություն/Системное событие BeforeCopy"
+title: "BeforeCopy իրադարձություն"
 ---
 
-# BeforeCopy համակարգային իրադարձություն
+# BeforeCopy փաստաթղթի համակարգային իրադարձություն
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում ](../Defs/doc.md)
 
-BeforeCopy իրադարձությունը աշխատում է փաստաթուղթը պատճենելուց հետո։
-Происходит после копирования документа.
-
+BeforeCopy իրադարձությունը առաջանում է փաստաթուղթը պատճենելուց հետո։
 
 ## Շարահյուսություն
 
-``` as4x
-Sub BeforeCopy([ByVal BeforeCopyParam As Variant])
-     statements
+``` vb
+Public Sub BeforeCopy(ByVal BeforeCopyParam As Variant, _
+                      ByVal originalDoc As AsDoc)
+    ' statements
 End Sub
 ```
 
@@ -23,10 +22,5 @@ End Sub
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| BeforeCopyParam | Variant տիպի արտահայտություն,որը կարող է փոխանցվել [CopyDoc](../Functions/Functions/DocumentsCirculation/CopyDoc.html) ֆունկցիան կանչելու համար։ Եթե փաստաթղթի պատճենումը կատարվում է ակնառու, ապա BeforeCopyParam =0։ необязательное выражение типа Variant, может быть передано посреством вызова функции [CopyDoc](../Functions/Functions/DocumentsCirculation/CopyDoc.html). Если копирование документа произведено визуально, то BeforeCopyParam =0. |
-
-
-
-
-
-
+| BeforeCopyParam | Ազատ օգտագործման արգումենտ, որը փոխանցվում է [CopyDoc](../Functions/Functions/DocumentsCirculation/CopyDoc.html) ֆունկցիան կանչելուց։ Եթե փաստաթղթի պատճենումը կատարվում է ինտերֆեյսից, ապա BeforeCopyParam-ի արժեքը լինում է `0`։  |
+| originalDoc | Այն փաստաթղթի հղումը որից կատարվում է պատճենումը։ |

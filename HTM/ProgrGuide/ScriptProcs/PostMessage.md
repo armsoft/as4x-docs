@@ -1,23 +1,23 @@
 ---
 layout: page
-title: "PostMessage համակարգային իրադարձություն"
+title: "PostMessage իրադարձություն"
 ---
 
-# PostMessage համակարգային իրադարձություն
-
+# PostMessage փաստաթղթի համակարգային իրադարձություն
 
 [См. также](../scriptstproced.md) Օրինակ [Применяется к](../Defs/doc.md)
 
+Իրադարձությունը առաջանում է մի փաստաթղթից մյուն ծրագրային հաղորդագրություն ([SendMessage](../Functions/ASDOC/SendMessage.md)) ուղարկելուց ստացող փաստաթղթի մեջ։
 
-Իրադարձությունը առաջանում է ստացող փաստաթղթի մեջ, երբ ուղարկող փաստաթուղթը կանչում է [SendMessage](../Functions/ASDOC/SendMessage.md) մեթոդը։
-
-
+Ստացող փաստաթուղթը կրկին գրանցվում ([Store](../Functions/ASDOC/Store.md)) է համակարգում իրադարձության մշակումից հետո ըստ վերադարձվող `iCheckLevel`՝ [փաստաթղթի ստուգման մակարդակի](../Functions/ASDOC/DocCheckLevel.md)։
 
 ## Շարահյուսություն
 
-```as4x
-Sub PostMessage (tmpDoc, sMessage, [xCheckLevel])
-   statements
+``` vb
+Public Sub PostMessage(ByVal senderDoc As AsDoc, _
+                       ByVal sMessage As String, _
+                       ByRef iCheckLevel As Long)
+    ' statements
 End Sub
 ```
 
@@ -25,11 +25,6 @@ End Sub
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| tmpDoc | Ուղարկող փաստաթղթի հաղորդագրության հղում։ переменная, ссылающаяся на документ-источник сообщения. |
-| sMessage | Ստացող փաստաթղթի հաղորդագրության տեքստ։ строковое выражение, определяющее текст полученного сообщения |
-| xCheckLevel | Մինչև փաստաթղթի պահպանելը կատարվում է պարտադիր ստուգում (տես նաև՝ [CheckAndStore](../Functions/ASDOC/CheckAndStore.md))։ ссылочная переменная, возвращающая необходимый уровень проверки документа перед сохранением(см. 	[CheckAndStore](../Functions/ASDOC/CheckAndStore.md)). |
-
-
-
-
-
+| senderDoc | Ուղարկող փաստաթղթի օբյեկտի հղում։ |
+| sMessage | Ստացված հաղորդագրության տեքստ։ |
+| iCheckLevel | Փաստաթղթի գրանցման [ստուգման մակարդակ](../Functions/ASDOC/DocCheckLevel.md): |

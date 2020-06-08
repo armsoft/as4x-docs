@@ -1,22 +1,23 @@
 ---
 layout: page
-title: "DefaultComment համակարգային իրադարձություն Системное событие&nbsp DefaultComment"
+title: "DefaultComment իրադարձություն"
 ---
 
 # DefaultComment համակարգային իրադարձություն
 
 [Տես նաև](../scriptstproced.html) [Օրինակ](../Examples/E_DefaultComment.md) [Կիրառվում է](../Defs/doc.md)
 
-Աշխատում է օգտագործողի անձնական կամ սևագիր թղթապանակի մեջ փաստաթուղթը պատճենելիս (Ctrl+C և Ctrl+V ստեղների օգնությամբ)։ Դաշտերի անհրաժեշտ արժեքների մեկնաբանության դաշտի մեջ  ապահովում է ..։ [Թղթապանակում փաստաթղթի պահպանման ժամանակ](../Functions/ASDOC/StoreInFolder.md) եթե [COM](../Functions/AsFoldElement/Com.md) հատկությունը տրված չի, ապա լռությամբ ստանում է DefaultComment արժեքը։ Իսկ եթե տրված չի ո՛չ [COM](../Functions/AsFoldElement/Com.md) հատկությունը, ո՛չ DefaultComment արժեքը, ապա [COM](../Functions/AsFoldElement/Com.md) թղթապանակի մեկնաբանության մեջ [փաստաթղթի նկարագրությունից](../Defs/doc.html) գրանցվում է Caption գլխագիր/անվանում։
-Происходит при копировании документа в личную папку пользователя (с помощью клавиш Ctrl+C, Ctrl+V) или черновую папку. Обеспечивает запись в поле комментария необходимых значений реквизитов. При [сохранении документа в папках](../Functions/ASDOC/StoreInFolder.md), если не задано свойство [COM](../Functions/AsFoldElement/Com.html), то по умолчанию вместо свойства [COM](../Functions/AsFoldElement/Com.html)
-записывается значение DefaultComment. А если при [сохранении документа в папках](../Functions/ASDOC/StoreInFolder.html) не заданы ни свойство [COM](../Functions/AsFoldElement/Com.html) ни DefaultComment, тогда в комментарий [COM](../Functions/AsFoldElement/Com.html) папки записывается заголовок Caption из [описания документа](../Defs/doc.html). 
+Իրադարձությունը առաջանում է փաստաթղթի [թղթապանակի տարր](../Functions/AsFoldElement.md) ստեղծելուց մեկնաբանություն լրացնելու համար ։
 
+Երե [ստեղծվում է](../Functions/ASDOC/StoreInFolder.md) [թղթապանակի տարր](../Functions/AsFoldElement.md), որում լրացվում չէ [COM](../Functions/AsFoldElement/Com.md) հատկությունը, ապա, DefaultComment իրադարձության մշակված լինելու դեպքում, լրացվում է ըստ դրա։ Եթե մշակված չէ, ապա լրացվում է ըստ [փաստաթղթի նկարագրության](../Defs/doc.md) մեջ գրված անվանման։
 
+Իրադարձությունը առաջանում է նաև օգտագործողի անձնական կամ սևագիր թղթապանակի մեջ փաստաթուղթը պատճենելիս (Ctrl+C և Ctrl+V ստեղների օգնությամբ)։ 
+Իրադարձության մշակիչը պետք է վերդարձնի այն մեկնաբանությունը, որ պետք է երևա անձնական թղթապանակում։
 
-<b>Синтаксис</b>
+## Շարահյուսություն
 
-Function <strong>DefaultComment</strong>()<br>
-<em>&nbsp;&nbsp;&nbsp;&nbsp; statements</em><br>
+``` vb
+Public Function DefaultComment() As String
+    ' statements
 End Function
-
-
+```

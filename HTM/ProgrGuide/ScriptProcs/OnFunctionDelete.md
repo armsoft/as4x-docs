@@ -1,21 +1,18 @@
 ---
 layout: page
-title: "OnFunctionDelete համակարգային իրադարձություն"
+title: "OnFunctionDelete իրադարձություն"
 ---
 
-## OnFunctionDelete համակարգային իրադարձություն
+# OnFunctionDelete տվյալների աղբյուրի համակարգային իրադարձություն
 
-[Տես նաև](OnFunctionEdit.html) Օրինակ [Կիրառվում է](../Defs/Data.html)
+[Տես նաև](OnFunctionEdit.md) Օրինակ [Կիրառվում է](../Defs/Data.md)
 
-
-Իրադարձությունը առաջանում է «Ջնջել» գործողության ժամանակ։ 
-Происходит при нажатии кнопки удаления из панели инструментов. 
-
+Իրադարձությունը առաջանում է տվյալների աղբյուրում համտքեստի մենյուի «Ջնջել» կոճակը սեղմելու ժամանակ։ 
 
 ## Շարահյուսություն
 
-```as4x
-Sub OnFunctionDelete()
-   statements
+``` vb
+Public Sub OnFunctionDelete()
+    ' statements
 End Sub
 ```

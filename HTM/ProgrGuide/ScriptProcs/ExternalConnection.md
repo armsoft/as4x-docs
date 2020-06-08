@@ -1,30 +1,30 @@
 ---
 layout: page
-title: "ExternalConnection համակարգային իրադարձություն"
+title: "ExternalConnection իրադարձություն"
 ---
 
-# ExternalConnection համակարգային իրադարձություն
+# ExternalConnection տվյալների աղբյուրի համակարգային իրադարձություն
 
-Տես նաև [Օրինակ](#Example) [Կիրառվում է](../Functions/Asdata.md)
+Տես նաև [Օրինակ](#Օրինակ) [Կիրառվում է](../Functions/Asdata.md)
 
-
-Միջուկին է փոխանցում RDO միացումը, որը տարբերվում է հիմնականից։ Կիրառվում է երբ տվյալների աղբյուրը չի լրացվում հիմնական տվյալների բազայից/պահոցից։
-Служит для передачи ядру RDO соединения, отличного от основного. Применяется когда источник данных заполняется не из основной базы данных.
+Իրադարձության մշակիչում հարկավոր է վերադարձնել այլ տվյալների պահոցի միացումը։ 
+Նախատեսված է OLAP տվյալների պահոցի հետ աշխատանքի համար։
 
 ## Շարահյուսություն
 
-``` as4s
-Function ExternalConnection As Object
-
+``` vb
+Function ExternalConnection() As Object
+    ' statements
 End Function
 ```
 
 
 ## Օրինակ
 
-Public Function <b>ExternalConnection</b> As Object<br>
-&nbsp;&nbsp; Set ExternalConnection = OLAPProvider.GetOLAPConnection<br>
+``` vb
+Public Function ExternalConnection() As Object
+    Set ExternalConnection = OLAPProvider.GetOLAPConnection()
 End Function
-
+```
 
 

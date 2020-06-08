@@ -1,14 +1,11 @@
 ---
 layout: page
-title: "Փաստաթղթի համակարգային իրադարձություն/Системные события документа"
+title: "Doc իրադարձություններ"
 ---
 
 # Փաստաթղթի համակարգային իրադարձություն
 
-Փաստաթղթի իրադարձությունների մշակիչները գտնվում են [փաստաթղթի նկարագրության](../Defs/doc.md) սկրիպտային բաժնում։ 
-
-Обработчики событий документа находятся в скриптовом разделе [описания документа](../Defs/doc.html).
-
+Իրադարձությունների մշակիչները պետք է գտնվեն [փաստաթղթի նկարագրության](../Defs/doc.md) սկրիպտային բաժնում։ 
 
 * [Action](Action.html)
 * [AfterCreate](AfterCreate.html)
@@ -30,13 +27,11 @@ title: "Փաստաթղթի համակարգային իրադարձություն
 * [IsHidden](IsHidden.html)
 * [LoadGrid](LoadGrid.html)
 * [Magic](Magic.html)
-* [NestedTransaction](NestedTransaction.html)<br />
-* [OnScannerRead](OnScannerRead.html)<br />
+* [NestedTransaction](NestedTransaction.html)
+* [OnScannerRead](OnScannerRead.html)
 * [OnUIDelete](OnUIDelete.html)
 * [PostMessage](PostMessage.html)
 * [Print](Print.html)
-* [PrintExcel](PrintExcel.html)
-* [PrintWord](PrintWord.html)
 * [SetPrintWidth](SetPrintWidth.html)
 * [StoreGrid](StoreGrid.html) 
 * [TemplateSubstitution](TemplateSubstitution.html)
@@ -45,6 +40,4 @@ title: "Փաստաթղթի համակարգային իրադարձություն
 * [Validate](Validate.html)
 * [When](When.html)
 
-Համակարգային իրադարձությունների գեներացման հաջորդականությունը բերված է այստեղ՝ [<img src="../../../IMAGES/MORE.GIF" width="12" height="12" alt="More.gif (304 bytes)" border="0">](Events_Sequence.html)։
-
-Последовательность генерации системных событий приведена здесь [<img src="../../../IMAGES/MORE.GIF" width="12" height="12" alt="More.gif (304 bytes)" border="0">](Events_Sequence.html). 
+Համակարգային իրադարձությունների առաջացման հաջորդականությունը բերված է [այստեղ](Events_Sequence.md)։
