@@ -19,8 +19,8 @@ ClickDropDown իրադարձությունը առաջանում է հետևյա�
 
 ``` vb
 Public Sub ClickDropDown(ByVal Rekv As String, _
-                         ByVal Top As Stingle, _
-                         ByVal Left As Stingle, _
+                         ByVal Top As Single, _
+                         ByVal Left As Single, _
                          ByVal lookupValue As Variant)
     ' statements
 End Sub
