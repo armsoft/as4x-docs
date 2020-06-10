@@ -5,7 +5,7 @@ title: "Օրինակ/Dialog_ButtonClick"
 
 Օրինակում ցույց է տրված  ButtonClick իրադարձության օգտագործումը:
 
-Ստորև բերված է [դիալոգի նկարագրության մեջ](../Defs/Dialog.html) [ButtonClick](../ScriptProcs/Dialog_ButtonClick.html) իրադարձության մշակիչի օրինակը։ 
+Ստորև բերված է [դիալոգի նկարագրության մեջ](../Defs/Dialog.html) [ButtonClick](../ScriptProcs/UstPar_ButtonClick.md) իրադարձության մշակիչի օրինակը։ 
 
 ``` vb
 Public Sub ButtonClick(ByVal objDialog As AsDialog, ByVal sBtnName As String, _
