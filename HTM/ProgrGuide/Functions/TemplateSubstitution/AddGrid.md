@@ -7,14 +7,13 @@ title: "TemplateSubstitution/AddGrid"
 
 [Տես նաև](../TemplateSubstitution.md) Օրինակ [Կիրառվում է](../TemplateSubstitution.md)
 
+Բազմության մեջ ավելացնում է [տեղադրվող աղյուսակ](../TemplateSubstitutionGrid.md)։ 
 
-Ավելացնում է [աղյուսակային տեղադրման արժեք](TemplateSubstitutionGrid.md)
-Добавляет [табличную подстановк](../TemplateSubstitutionGrid.html)у.
-
+Աղյուսակը հարկավոր է ստանալ [Grid](Grid.md) հատկությամբ և դրա մեջ ավելացնել սյուներ և տողեր։
 
 ## Շարահյուսություն
 
-```as4x
+``` vb
 object.AddGrid(Name)
 ```
 
@@ -22,5 +21,4 @@ object.AddGrid(Name)
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| Name | Աղյուսակային տեղադրման արժեքի անվանում։ строковое выражение, определяющее имя табличной подстановки |
-
+| Name | Տեղադրվող աղյուսակի անուն։ |

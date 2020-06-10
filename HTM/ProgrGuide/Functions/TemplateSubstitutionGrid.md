@@ -3,33 +3,28 @@ layout: page
 title: "TemplateSubstitutionGrid օբյեկտ"
 ---
 
-# TemplateSubstitutionGrid օբյեկտ
+# Ձևանմուշի մեջ տեղադրվող աղյուսակի օբյեկտ
 
+TemplateSubstitutionGrid օբյեկտը նախատեսված է տպելու ձևանմուշի մեջ տեղադրվող աղյուսակային  արժեքի պահելու համար։
 
-TemplateSubstitutionGrid օբյեկտը նախատեսված է տպելու ձևանմուշի մեջ աղյուսակային տեղադրկման արժեքները նկարագրելու համար։
-Объект TemplateSubstitutionGrid предназначен для описания табличных подстановок в шаблоны печати.
-
+Ձևանմուշի մեջ կարող են օգտագործվել աղյուսակի բոլոր սյունակները, կամ միայն մի մասը։
 
 | Հատկություններ | Նկարագրություն |
 |--|--|
-| [FormatedValue](TemplateSubstitution/FormatedValue.md) | Վերադարձնում է աղյուսակային տեղադրման արժեքի տարրի սիմվոլիկ արժեքը։ <p>Возвращает символьное значение элемента табличной подстановки.</p> |
-| [Name](TemplateSubstitution/Name.md) | Վերադարձնում է աղյուսակային տեղադրման արժեքի ներքին անունը։  Возвращает идентификатор табличной подстановки. |
-| [RowCount](TemplateSubstitution/RowCount.md) | Վերադարձնում է աղյուսակային տեղադրման արժեքի տողերի քանակը։ <p>Возвращает количество сторок в табличной подстановке.</p> |
-| [Style](TemplateSubstitution/Style.md) | Վերադարձնում կամ նշանակում է `xlsx` տիպի տպելու ձևանմուշի աղյուսակի վանդակի ձևաչափը։ <p>Возвращает или устанавливает формат для ячеек таблицы шаблона печати типа <strong>.xlsx</strong>.</p> |
-| [UseStyles](TemplateSubstitution/UseStyles.md) | <p>Возвращает признак использования описанных форматов для ячеек таблицы шаблона печати типа <strong>.xlsx</strong>.</p> |
-| [Value](TemplateSubstitution/Value.md) | Վերադարձնում կամ նշանակում է աղյուսակային տեղադրման տարրի արժեքը։ Возвращает или устанавливает значение элемента табличной подстановки. |
-
+| [FormatedValue](TemplateSubstitutionGrid/FormatedValue.md) | Վերադարձնում է տեղադրվող աղյուսակի վանդակի ձևաչափված արժեքը։ |
+| [Name](TemplateSubstitutionGrid/Name.md) | Վերադարձնում է տեղադրվող աղյուսակի ներքին անունը։ |
+| [RowCount](TemplateSubstitutionGrid/RowCount.md) | Վերադարձնում է տեղադրվող աղյուսակի տողերի քանակը։ |
+| [Style](TemplateSubstitutionGrid/Style.md) | Վերադարձնում կամ նշանակում է վանդակի ձևաչափը (միայն `xlsx` տիպի ձևանմուշներում օգտագործելու համար)։ |
+| [UseStyles](TemplateSubstitutionGrid/UseStyles.md) | Վանդակների ձևաչափման հայտանիշ (միայն `xlsx` տիպի ձևանմուշներում օգտագործելու համար)։ |
+| [Value](TemplateSubstitutionGrid/Value.md) | Տեղադրվող աղյուսակի վանդակի արժեքը։ |
 
 
 | Մեթոդներ | Նկարագրություն |
 |--|--|
-| [AddColumn](TemplateSubstitution/AddColumn.md) | Աղյուսակային տեղադրման արժեքի մեջ ավելացնում է սյունակ։ Добавляет колонку в&nbsp; табличную подстановку. |
-| [AddColumnsFromDocumentGrid](TemplateSubstitution/AddColumnsFromDocumentGrid.md) | Փաստաթղթի աղյուսակից ավելացնում է սյունակի աղյուսակային տեղադրման արժեքի մեջ։ Добавляет в табличную подстановку колонки из грид-таблицы документа. |
-| [AddRow](TemplateSubstitution/AddRow.md) | Աղյուսակայնի տեղադրման արժեքի մեջ ավելացնում է տող։ <p>Добавляет строку в табличную подстановку.</p> |
-| [CopyFrom](TemplateSubstitution/CopyFrom.md) | Պատճենում է աղյուսակայանի տեղադրկման արժեքը։ <p>Копирует табличную подстановку.</p> |
-| [FillValuesFromDocumentGrid](TemplateSubstitution/FillValuesFromDocumentGrid.md) | Փաստաթղթի աղյուսակից ավելացնում է աղյուսակային տեղադրման արժեքի մեջ։ <p>Заполняет табличную подстановку из грид-таблицы документа.</p> |
-| [SetColumnStyle](TemplateSubstitution/SetColumnStyle.md) | Սահմանում է `xlsx` տիպի տպելու ձևանմուշի աղյուսակների վանդակների ձևաչափերը։ <p>Задает форматы ячеек столбца таблицы шаблона печати типа <strong>.xlsx</strong>.</p> |
-| [SetRowStyle](TemplateSubstitution/SetRowStyle.md) | Սահմանում է `xlsx` տիպի տպելու ձևանմուշի տողերի վանդակների ձևաչափերը։<p>Задает форматы ячеек строки таблицы шаблона печати типа <strong>.xlsx</strong>.</p> |
-
-
-
+| [AddColumn](TemplateSubstitutionGrid/AddColumn.md) | Տեղադրվող աղյուսակի մեջ ավելացնում է սյունակ։ |
+| [AddColumnsFromDocumentGrid](TemplateSubstitutionGrid/AddColumnsFromDocumentGrid.md) | Տեղադրվող աղյուսակի մեջ ավելացնում է փաստաթղթի աղյուսակի բոլոր սյունակները։ |
+| [AddRow](TemplateSubstitutionGrid/AddRow.md) | Տեղադրվող աղյուսակի մեջ ավելացնում է տող։ |
+| [CopyFrom](TemplateSubstitutionGrid/CopyFrom.md) | Պատճենում է այլ տեղադրվող աղյուսակի պարունակությունը ընթացիկ տեղադրվող աղյուսակի մեջ։ |
+| [FillValuesFromDocumentGrid](TemplateSubstitutionGrid/FillValuesFromDocumentGrid.md) | Փաստաթղթի աղյուսակի պարունակությունը լրացնում է տեղադրվող աղյուսակի մեջ։ |
+| [SetColumnStyle](TemplateSubstitutionGrid/SetColumnStyle.md) | Նշանակում է սյունակի վանդակների ձևաչափերը (միայն `xlsx` տիպի ձևանմուշներում օգտագործելու համար)։ |
+| [SetRowStyle](TemplateSubstitutionGrid/SetRowStyle.md) | Նշանակում է տողի վանդակների ձևաչափերը (միայն `xlsx` տիպի ձևանմուշներում օգտագործելու համար)։ |

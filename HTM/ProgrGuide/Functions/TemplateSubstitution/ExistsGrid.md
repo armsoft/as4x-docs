@@ -1,27 +1,22 @@
 ---
 layout: page
-title: "TemplateSubstitution/ExistsGrid "
+title: "TemplateSubstitution/ExistsGrid"
 ---
 
 # ExistsGrid մեթոդ
 
 [Տես նաև](../TemplateSubstitution.md) Օրինակ [Применяется к](../TemplateSubstitution.md)
 
-Ստուգում է աղյուսակային  տեղադրման արժեքի առկայությունը:
-Поверяет существование табличной подстановки.
-
-
+Ստուգում է տեղադրվող աղյուսակի առկայությունը։ 
 
 ## Շարահյուսություն
 
-```as4x
-object.ExistsGrid (Name)
+``` vb
+object.ExistsGrid(Name) As Boolean
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| Name | Աղյուսակային տեղադրման արժեքի անվանում։ строковое выражение, определяющее имя табличной подстановки |
-
+| Name | Տեղադրվող աղյուսակի անուն։ |

@@ -7,20 +7,16 @@ title: "TemplateSubstitution/AddImage"
 
 [Տես նաև](../TemplateSubstitution.md) Օրինակ [Կիրառվում է](../TemplateSubstitution.md)
 
-
-Ավելացնում է [պատկերի տեղադրման արժեք](TemplateSubstitutionImage.html)։
-Добаляет [подстановку изображения](../TemplateSubstitutionImage.html).
-
-
+Բազմության մեջ ավելացնում է [տեղադրվող նկար](../TemplateSubstitutionImage.md)։
 
 ## Շարահյուսություն
 
-```as4x
+``` vb
 object.AddImage(Name)
 ```
+
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| Name | Պատկեր տեղադրման արժեքի անվանում։ строковое выражение, определяющее имя подтановки изображения. |
-
+| Name | Տեղադրվող նկարի անուն։ |

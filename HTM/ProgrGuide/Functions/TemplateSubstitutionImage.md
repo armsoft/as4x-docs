@@ -3,25 +3,20 @@ layout: page
 title: "TemplateSubstitutionImage օբյեկտ"
 ---
 
-# TemplateSubstitutionImage օբյեկտ
+# Ձևանմուշի մեջ տեղադրվող նկարի օբյեկտ
 
-
-TemplateSubstitutionImage օբյեկտը նախատեսված է տպելու ձևի մեջ պատկեր տեղադրման արժեքները նկարագրելու համար։
-
-Объект TemplateSubstitutionImage предназначен для описания подстановок изображений в шаблоны печати.
-
+TemplateSubstitutionImage օբյեկտը տպելու ձևանմուշի լրացման նկար արժեք է։ 
+Օբյեկտի հատկությունների հիման վրա ձևանմուշի ֆայլի մեջ տեղադրվում է նկար։
 
 | Հատկություն | Նկարագրություն |
 |--|--|
-| [DeleteFile](TemplateSubstitution/DeleteFile.md) | Վերադարձնում կամ նշանակում է պատկեր ֆայլը ջնջելու նշանը տեղադրման արժեքից հետո։<p>Возвращает или устанавливает признак удаления файла изображения после подстановки.</p> |
-| [FileName](TemplateSubstitution/FileName.md) | Վերադարձնում կամ նշանակում է պատկեր տեղադրման արժեք պարունակող ֆայլի ճանապարհը։ <p>Возвращает или устанавливает путь файлу содержащему подставляемое изображение.</p> |
-| [Height](TemplateSubstitution/Height.md) | Վերադարձնում կամ նշանակում է պատկեր տեղադրման արժեքի բարձրությունը միլիմետրերով։ Возвращает или устанавливает высоту подставляемого изображения в миллиметрах. |
-| [Name](TemplateSubstitution/NameImage.md) |Վերադարձնում է պատկեր տեղադրման արժեքի ներքին անունը։ <p>Возвращает идентификатор подстановки изображения.</p> |
-| [Width](TemplateSubstitution/Width.md) | Վերադարձնում կամ նշանակում է պատկեր տեղադրման արժեքի լայնությունը միլիմետրերով։ <p>Возвращает или устанавливает ширину подставляемого изображения в миллиметрах.</p> |
-
-
+| [DeleteFile](TemplateSubstitutionImage/DeleteFile.md) | Ձևանմուշում նկարիի տեղադրելուց հետո ֆայլային համակարգից ֆայլի ջնջման հայտանիշ։ |
+| [FileName](TemplateSubstitutionImage/FileName.md) | Նկարի ճանապարհը ֆայլային համակարգում։ |
+| [Height](TemplateSubstitutionImage/Height.md) | Նկարի բարձրությունը միլիմետրերով։ |
+| [Name](TemplateSubstitutionImage/Name.md) | Տեղադրվող նկարի ներքին անունը։ |
+| [Width](TemplateSubstitutionImage/Width.md) | Նկարի լայնությունը միլիմետրերով։ |
 
 | Մեթոդներ | Նկարագրություն |
 |--|--|
-| [UseAttacmentFromDoc](TemplateSubstitution/UseAttacmentFromDoc.md) | Ստեղծում է պատկեր տեղադրման արժեքը փաստաթղթի Attacment-ի հիման վրա։<p>Формирует подстановку изображения на основе Attacment-а документа.</p> |
-| [UsePictureFromDoc](TemplateSubstitution/UsePictureFromDoc.md) | Ստեղծում է պատկեր տեղադրման արժեքը փաստաթղթի պատկերի հիման վրա։ <p>Формирует подстановку изображения на основе изображения из документа.</p> |
+| [UseAttacmentFromDoc](TemplateSubstitutionImage/UseAttacmentFromDoc.md) | Ձևավորում է տեղադրվող նկարը փաստաթղթին կցված ֆայլի հիման վրա։ |
+| [UsePictureFromDoc](TemplateSubstitutionImage/UsePictureFromDoc.md) | Ձևավորում է տեղադրվող նկարը փաստաթղթի միջի նկար-դաշտի հիման վրա։ |
