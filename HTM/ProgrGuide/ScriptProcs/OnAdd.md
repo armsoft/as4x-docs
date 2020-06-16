@@ -7,7 +7,7 @@ title: "OnAdd իրադարձություն"
 
 [Տես նաև](../scriptstproced.htmdml) Օրինակ [Կիրառվում է](../Defs/Accounting.md)
 
-Առաջանում է [StoreFact](../Functions/ASDOC/StoreFact.md) մեթոդով հաշվառումները գրանցելիս։
+OnAdd իրադարձությունը առաջանում է [StoreFact](../Functions/ASDOC/StoreFact.md) մեթոդով հաշվառումները գրանցելիս։
 
 ##  Շարահյուսություն
 

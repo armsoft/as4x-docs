@@ -7,7 +7,7 @@ title: "OnDelete իրադարձություն"
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/Accounting.md)
 
-Առաջանում է [HiDelete](../Functions/ASDOC/HiDelete.md) մեթոդով հաշվառումները ջնջելիս կամ փաստաթուղթը [DeleteDoc](../Functions/Functions/DocumentsCirculation/DeleteDoc.html) ֆունկցիայով իր հաշվառումների հետ ջնջելիս։ 
+OnDelete իրադարձությունը առաջանում է [HiDelete](../Functions/ASDOC/HiDelete.md) մեթոդով հաշվառումները ջնջելիս կամ փաստաթուղթը [DeleteDoc](../Functions/Functions/DocumentsCirculation/DeleteDoc.html) ֆունկցիայով իր հաշվառումների հետ ջնջելիս։ 
 
 ## Շարահյուսություն
 

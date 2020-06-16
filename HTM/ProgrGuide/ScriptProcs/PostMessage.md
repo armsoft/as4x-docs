@@ -7,7 +7,7 @@ title: "PostMessage իրադարձություն"
 
 [См. также](../scriptstproced.md) Օրինակ [Применяется к](../Defs/doc.md)
 
-Իրադարձությունը առաջանում է մի փաստաթղթից մյուն ծրագրային հաղորդագրություն ([SendMessage](../Functions/ASDOC/SendMessage.md)) ուղարկելուց ստացող փաստաթղթի մեջ։
+PostMessage իրադարձությունը առաջանում է մի փաստաթղթից մյուն ծրագրային հաղորդագրություն ([SendMessage](../Functions/ASDOC/SendMessage.md)) ուղարկելուց ստացող փաստաթղթի մեջ։
 
 Ստացող փաստաթուղթը կրկին գրանցվում ([Store](../Functions/ASDOC/Store.md)) է համակարգում իրադարձության մշակումից հետո ըստ վերադարձվող `iCheckLevel`՝ [փաստաթղթի ստուգման մակարդակի](../Functions/ASDOC/DocCheckLevel.md)։
 

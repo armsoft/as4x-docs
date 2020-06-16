@@ -7,7 +7,7 @@ title: "OnEachRow իրադարձություն"
 
 [См. также](../scriptstproced.md) [Օրինակ](../Examples/E_OnEachRow.md) [Կիրառվում է](../Defs/Data.md)
 
-Առաջանում է տվյալների աղբյուրի յուրաքանչյուր տողի ձևավորման սկզբում։ 
+OnEachRow իրադարձությունը առաջանում է տվյալների աղբյուրի յուրաքանչյուր տողի ձևավորման սկզբում։ 
 
 Առաջանում է տվյալների աղբյուրը [OpenCursor](../Functions/ASDATA/OpenCursor.md) մեթոդի միջոցով բացելուց հետո տողերի վրայով [MoveFirst](../Functions/ASDATA/MoveFirst.md), [MoveNext](../Functions/ASDATA/MoveNext.md), [MoveLast](../Functions/ASDATA/MoveLast.md) մեթոդներով տեղաշարժելիս, ինչպես նաև թղթապանակի դիտելու ձևը [Update](../Functions/ICurrentView/Update.md) մեթոդով թարմացնելիս։
 
