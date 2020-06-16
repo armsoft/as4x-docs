@@ -7,7 +7,7 @@ title: "Functions իրադարձություն"
 
 [Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_Functions.md) [Կիրառվում է](../Functions/Asdoc.md)
 
-Առաջանում է փաստաթղթի համատեքստի մենյույի ձևավորման ժամանակ։ 
+Functions իրադարձությունը առաջանում է փաստաթղթի համատեքստի մենյույի ձևավորման ժամանակ։ 
 Տվյալ իրադարձության մշակիչի մեջ գրանցվում են մենյույից կանչվող ֆունկցիաները կանչելով [RegistrFunction](../Functions/ASDOC/RegistrFunction.md)
 և [RegistrNode](../Functions/ASDOC/RegistrNode.md) մեթոդները։
 

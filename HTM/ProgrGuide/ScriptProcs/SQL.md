@@ -7,7 +7,7 @@ title: "SQL իրադարձություն"
 
 [Տես նաև](../scriptstproced.md) [Օրինակ](../Examples/E_SQL.md) [Կիրառվում է](../Defs/Data.md)
 
-Առաջանում է տվյալների աղբյուրի բացվելու ժամանակ, [OpenCursor](../Functions/ASDATA/OpenCursor.md) և [Update](../Functions/ICurrentView/Update.md) մեթոդները կանչելուց հետո։
+SQL իրադարձությունը առաջանում է տվյալների աղբյուրի բացվելու ժամանակ, [OpenCursor](../Functions/ASDATA/OpenCursor.md) և [Update](../Functions/ICurrentView/Update.md) մեթոդները կանչելուց հետո։
 
 Նախատեսված է տվյալների աղբյուրի տողերի ստացման SQL հարցումը դինամիկորեն ձևավորելու համար, կախված փոխանցված պարամետրերից։ 
 

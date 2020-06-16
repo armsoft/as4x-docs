@@ -7,7 +7,7 @@ title: "NestedTransaction իրադարձություն"
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
-Առաջանում է [NestedTransactions](../Functions/ASDOC/NestedTransactions.md) մեթոդը կիրառելիս։ 
+NestedTransaction իրադարձությունը առաջանում է [NestedTransactions](../Functions/ASDOC/NestedTransactions.md) մեթոդը կիրառելիս։ 
 
 Հաշվառտումների ստեղծումը հարկավոր է կատարել հենց այս իրադարձության մշակման ժամանակ կանչելով [CreateFact](../Functions/Functions/AccManagement/CreateFact.html) և [StoreFact](../Functions/ASDOC/StoreFact.md) ֆունկցիաները։ 
 
