@@ -1,30 +1,22 @@
 ---
 layout: page
-title: "ConvertUnicodeToANSI"
+title: "ConvertUnicodeToANSI ֆունկցիա"
 ---
 
 # ConvertUnicodeToANSI ֆունկցիա
 
-Տրված տողը UNICODE-ից փոփոխում է ANSI-ի։
-
-Վերադարձվող արժեքը տող տիպի է։
-
-Преобразовывает заданную строку из UNICODE&nbsp; в&nbsp; ANSI. 
-
-Тип возвращаемого значения строка.
+Ձևափոխում է UNICODE տողը ANSI-ի։ Աշխատում է թե՛ հայերենի, թե՛ ռուսերենի համար։
 
 ## Շարահյուսություն
 
-```vb
-ConvertUnicodeToANSI (unicSource)
+``` vb
+Public Function ConvertUnicodeToANSI(ByVal unicSource As String) As String
 ```
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| unicSource | Տողային արտահայտություն, որը պետք է փոխարկել։ Տվյալ արտահայտությունը կարող է լինել անգլերեն, ռուսերեն կամ հայերեն։ строковое выражение, которую нужно конвертировать. Данное выражение может быть&nbsp; на английском, на русском или на&nbsp; армянском. |
-
+| unicSource | Մուտքային տողը։ |
 
 ## Նկատառումներ
 
