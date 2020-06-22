@@ -1,31 +1,23 @@
 ---
 layout: page
-title: "ConvertRussianANSIToUnicode"
+title: "ConvertRussianANSIToUnicode ֆունկցիա"
 ---
 
 # ConvertRussianANSIToUnicode ֆունկցիա
 
-Փոփոխում է տրված տողը ռուսերեն UNICODE-ից ANSI-ի։
-
-Վերադարձվող արժեքը տող տիպի է։
-
-Преобразовывает заданную строку на русском языке из ANSI в UNICODE . 
-
-Тип возвращаемого значения строка.
-
+Ձևափոխում է ռուսերեն ANSI տողը UNICODE-ի։
 
 ## Շարահյուսություն
 
-```vb
-ConvertRussianANSIToUnicode(ruSource)
+``` vb
+Public Function ConvertRussianANSIToUnicode(ByVal ruSource As String) As String
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրության |
 |--|--|
-| ruSource | Տողային արտահայտություն, որը պետք է փոխարկել։ строковое выражение, которую нужно конвертировать. |
-
+| ruSource | Մուտքային տողը։ |
 
 ## Նկատառումներ
 
