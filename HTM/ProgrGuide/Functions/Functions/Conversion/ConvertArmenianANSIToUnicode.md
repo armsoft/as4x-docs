@@ -1,33 +1,23 @@
 ---
 layout: page
-title: "ConvertArmenianANSIToUnicode"
+title: "ConvertArmenianANSIToUnicode ֆունկցիա"
 ---
 
 # ConvertArmenianANSIToUnicode ֆունկցիա
 
-Փոփոխում է տրված տողը հայերեն UNICODE-ից ANSI-ի։ 
-
-Վերադարձվող արժեքը տող տիպի է։
-
-Преобразовывает заданную строку на aрмянском языке из  ANSI в UNICODE . 
-
-Тип возвращаемого значения строка.
-
+Ձևափոխում է հայերեն ANSI տողը UNICODE-ի։ 
 
 ## Շարահյուսություն
 
-```vb
-ConvertArmenianANSIToUnicode(armSource)
+``` vb
+Public Function ConvertArmenianANSIToUnicode(ByVal armSource As String) As String
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| armSource | Տողային արտահայտություն, որը պետք է փոխարկել։ строковое выражение, которую нужно конвертировать. |
-
-
+| armSource | Մուտքային տողը։ |
 
 ## Նկատառումներ
 
