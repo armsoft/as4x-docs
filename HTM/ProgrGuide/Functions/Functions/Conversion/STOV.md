@@ -13,7 +13,6 @@ title: "STOV ֆունկցիա"
 
 ``` vb
 Public Function STOV(ByVal strType As String, ByVal sValue As String) As Variant
-STOV (strType, sValue)
 ```
 
 Բաղադրիչներն են՝
