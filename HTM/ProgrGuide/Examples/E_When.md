@@ -9,7 +9,7 @@ title: "Օրինակ/When"
 
 ``` vb
 Sub When()
-    Doc.Сontrol("CODE").Format = String(#LenNBAcc,"9")
+    Doc.Control("CODE").Format = String(#LenNBAcc,"9")
     If Doc.State = 0 Then
         If IsNull(Doc("DATOTK")) Then
             Doc("DATOTK") = Param("WkDate")
