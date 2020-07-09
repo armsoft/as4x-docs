@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsMsgBox"
+title: "AsMsgBox ֆունկցիա"
 ---
 
 

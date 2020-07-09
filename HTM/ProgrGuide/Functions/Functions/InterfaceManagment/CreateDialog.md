@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CreateDialog"
+title: "CreateDialog Ֆունկցիա"
 ---
 
 

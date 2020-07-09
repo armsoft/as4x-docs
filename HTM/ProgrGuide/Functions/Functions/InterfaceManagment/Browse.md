@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Browse"
+title: "Browse ֆունկցիա"
 ---
 
 # Browse Ֆունկցիա
