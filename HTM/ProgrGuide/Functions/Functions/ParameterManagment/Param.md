@@ -26,7 +26,7 @@ Public Property Param(ByVal sParId As String) As Variant
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sParId | Պարամետրի կոդը [PARAMS](../../../Database/Params.html) աղյուսակից։ |
+| sParId | Պարամետրի ներքին անունը։ |
 
 ## Օրինակ
 
