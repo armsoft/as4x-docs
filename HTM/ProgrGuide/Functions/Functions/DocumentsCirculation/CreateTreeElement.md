@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CreateTreeElement"
+title: "CreateTreeElement Ֆունկցիա"
 ---
 
 # CreateTreeElement Ֆունկցիա

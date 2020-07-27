@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CreateFolderElement"
+title: "CreateFolderElement ֆունկցիա"
 ---
 
 # CreateFolderElement ֆունկցիա

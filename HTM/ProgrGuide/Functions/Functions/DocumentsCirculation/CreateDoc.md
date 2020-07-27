@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CreateDoc"
+title: "CreateDoc ֆունկցիա"
 ---
 
 # CreateDoc ֆունկցիա
