@@ -5,25 +5,23 @@ title: "LoadDialog ֆունկցիա"
 
 # LoadDialog ֆունկցիա
 
+> ՈՒՇԱԴՐՈՒԹՅՈՒՆ. ֆունկցիան հեռացված է համակարգից։
+
 [Հատկություններ մեթոդներ](../../AsDialogEx.html)
 
-[Նախօրոք նկարագրված երկխոսության պատուհանը](../../../Defs/Dialog.md) ներբեռնում է իր իսկ նույնականացուցիչով։
-
-Загружает заранее [описанный диалог](../../../Defs/Dialog.html) по его идентификатору.
-
+Ստեղծում է [նախօրոք նկարագրված երկխոսության պատուհանի](../../../Defs/Dialog.html) օբյեկտը ըստ ներքին անվան։
 
 ## Շարահյուսություն
 
 ```vb
-set sDialogEx = LoadDialog (sDialogName)
+Function LoadDialog(ByVal sDialogName As String) As AsDialogEx
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sDialogEx | Նկարագրված երկխոսության պատուհան օբյեկտի օրինակի հղում, որի միջոցով կարելի է ստանալ օբյեկտի հատկությունների և մեթոդների հասանելիությունը։  строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта типа описательный диалог. Через нее можно получить доступ к свойствам и методам объекта. |
-| sDialogName | Երկխոսության պատուհանի ներքին անուն։ строковое выражение, определяющее идентификатор диалога. |
+| sDialogName | Երկխոսության պատուհանի ներքին անուն։ |
 
 ## Նկատառումներ
 
@@ -33,12 +31,8 @@ set sDialogEx = LoadDialog (sDialogName)
 
 Օրինակի մեջ կանչում ենք LoadDialog ֆունկցիան։ mDialog-ը հղվում է նկարագրված երկխոսության պատուհան օբյեկտի վրա իր բոլոր հատկություններով և մեթոդներով։
 
-Dim mDialog As AsDialogEx<br>
-Set mDialog = <strong>LoadDialog</strong>(&quot;DialogExDataName&quot;)<br>
-mDialog.[Show](../../AsDialogEx/Show.html)
-
-В примере вызывается функция LoadDialog. Переменная mDialog ссылается на обьект типа описательный диалог со всеми его свойствами и методами.
-
-Dim mDialog As AsDialogEx<br>
-Set mDialog = <strong>LoadDialog</strong>(&quot;DialogExDataName&quot;)<br>
-mDialog.[Show](../../AsDialogEx/Show.html)
+``` vb
+Dim mDialog As AsDialogEx
+Set mDialog = LoadDialog("DialogExDataName")
+mDialog.Show
+```
