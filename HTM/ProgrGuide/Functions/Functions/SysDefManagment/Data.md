@@ -1,20 +1,18 @@
 ---
 layout: page
-title: "Data"
+title: "Data ֆունկցիա"
 ---
 
-
 # Data ֆունկցիա
+
 [свойства методы](../../Asdata.md)
 
-Ֆունկցիան ստեղծում է տվյալների աղբյուր տիպի օբյեկտ։
-
-
+Ֆունկցիան ստեղծում է տվյալների աղբյուր տիպի օբյեկտ ըստ նկարագրության անվան։
 
 ## Շարահյուսություն
 
 ``` vb
-Set xDS = Data(DataName)
+Public Function Data(ByVal DataName As String) As AsData
 ```
 
 Բաղադրիչներն են ՝
@@ -22,10 +20,7 @@ Set xDS = Data(DataName)
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| xDS | Փոփոխական, որը հղվում է տվյալների աղբյուր տիպի օբյեկտի վրա։|
-| DataName | Տողային արտահայտություն, որը հանդիսանում է տվյալների աղբյուրի ներքին անունը։ |
-
-
+| DataName | Տվյալների աղբյուրի ներքին անունը։ |
 
 ## Օրինակ
 
@@ -39,14 +34,13 @@ xDS.Parameters(2) = "%/%"
 xDS.Parameters(3) = "%"
 
 xDS.OpenCursor
+totalSum = 0
 Do While Not xDS.EOF
     totalSum += xDS("fREM")
     xDS.MoveNext
 Loop 
 xDS.CloseCursor
 ```
-
-
 
 ## Նկատառումներ
 
