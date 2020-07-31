@@ -14,7 +14,12 @@ title: "AsMsgBox ֆունկցիա"
 ## Շարահյուսություն
 
 ``` vb
-AsMsgBox (Prompt, [Buttons], [Title], [SecondsToShow], [EnglishPrompt], [EnglishTitle])
+Function AsMsgBox(ByVal Prompt As String, _
+         Optional ByVal Buttons = vbOKOnly, _
+         Optional ByVal Title, _
+         Optional ByVal SecondsToShow = -1, _
+         Optional ByVal EnglishPrompt As String, _
+         Optional ByVal EnglishTitle As String) As VbMsgBoxResult
 ```
 
 Բաղադրիչներն են՝
