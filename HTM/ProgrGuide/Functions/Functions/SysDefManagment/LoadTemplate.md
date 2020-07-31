@@ -5,46 +5,59 @@ title: "LoadTemplate ֆունկցիա"
 
 # LoadTemplate ֆունկցիա
 
-Փաստաթղթի ձևանմուշը բեռնում է Word-ի կամ Excel-ի մեջ։ Ձևանմուշը պետք է լինի նախօրոք նկարագրված և բեռնված համակարգի մեջ։ 
-Загружает шаблонную форму документа Word или Excel. Шаблонная форма должна быть предварительно описана и введена в систему.
+Բացում է Word կամ Excel ձևանմուշի ֆայլը համապատասխան ծրագրի մեջ, ապա բեռնված ֆայլի օբյեկտի հղումը վերադարձնում։  
+Ֆունկցիան վերադարձնում է կա՛մ `Word.Document`, կա՛մ `Excel.Workbook` տիպի օբյեկտ։
 
+Ձևանմուշը պետք է լինի նախօրոք նկարագրված համակարգի մեջ։ 
 
 ## Շարահյուսություն
 
-```vb
-set sTemplate = LoadTemplate (sTmpltID, sTmpltType)
+``` vb
+Function LoadTemplate(ByVal TemplateName As String, ByVal TemplateType As String, _
+             Optional ByVal PathToExport As String = "", _
+             Optional ByVal bSetExtension As Boolean = False, _
+             Optional ByRef bUnicode As Boolean) As Object
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sTemplate | Word կամ Excel տիպի փաստաթղթի օրնակի հղում,որի միջոցով կարելի է ստանալ օբյեկտի հատկությունների և մեթոդների հասանելիությունը։ строковое выражение, определяющее переменную, ссылающуюся на экземпляр документа типа Word или Excel. Через него можно получить доступ к свойствам и методам объекта. |
-| sTmpltID | Փաստաթղթի ձևանմուշի ներքին համար։ строковое выражение, определяющее идентификатор шаблона документа. |
-| sTmpltType | երբեռնվող փաստաթղթի ձևանմուշի տիպը։ численное выражение целого типа, определяющее тип шаблонной формы загружаемого документа. |
-
-
-
+| TemplateName | Ձևանմուշի կոդ։  |
+| TemplateType | Ձևանմուշի տիպը։ |
+| PathToExport | Ֆայլի պահպանման ճանապարհ։ Չփոխանցելու դեպքում ֆայլը պահպանվելու է ժամանակավոր ֆայլերի թղթապանակում։ |
+| bSetExtension | Նշանակում է ֆայլի ընդլայնումը ըստ ձևանմուշի տիպի։ Չփոխանցելու դեպքում ժամանակավոր ֆայլի ընդլայնումը լինում է `.tmp`։ |
+| bUnicode | Վերադարձնում է ձևանմուշի Unicode-ով լրացվելու հայտանիշը։ |
 
 ## Կարգաբերումներ
 
-| Արժեք | Նկարագրություն |
-|--|--|
-| 0 | Ներբեռնվում է Word փաստաթուղթը։ загружается документ Word |
-| другое | Ներբեռնվում է Excel փաստաթուղթը։ загружается документ Excel |
+Աշխատում են միայն հետևյալ ձևանմուշի տիպերը
 
+* `0` - MS Word (*.doc)
+* `1` - MS Excel (*.xls)
+* `3` - MS Excel-ի Open XML (*.xlsm)
+* `8` - MS Excel-ի Open XML (*.xlsx)
 
 ## Նկատառումներ
 
 [Տես նաև](../../../constructors.html)
 
-
 ## Օրինակ
 
-```vb
-Set xWordDoc = LoadTemplate("Invoice", 0)
-...
-xWordDoc.Bookmarks(BookMarkType & CodForm(i)).Select
-xWordDoc.Application.Selection.Typetext Text:= sValue
+``` vb
+Set xExcelDoc = LoadTemplate("SomeXlsTemplate", "1")
+
+xExcelDoc.Activate
+Set xAppExcel = xExcelDoc.Application
+With xAppExcel
+    .Visible = True
+    .WindowState = -4137  'xlMaximized
+    .ActiveWindow.WindowState = -4137  'xlMaximized
+End With
+
+With xExcelDoc.ActiveSheet
+    .Cells(6, "A") = 100
+    .Cells(12, "G") = 200
+    .Cells(14, "G") = Param("WkDate")
+End With
 ```
