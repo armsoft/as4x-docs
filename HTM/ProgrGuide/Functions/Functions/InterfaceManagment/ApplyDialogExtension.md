@@ -5,17 +5,21 @@ title: "ApplyDialogExtension ֆունկցիա"
     
 # ApplyDialogExtension ֆունկցիա
 
+Երկխոսության պատուհանի մեջ ավելացնում է ընդլայնումները։
 
-Նկարագրական երկխոսության պատուհանի մեջ ավելացնում է օգտագործողի դաշտ։
-Добавляет пользовательское поле в описательный диалог.
-
-
+Ընդլայնումներն են՝
+* «Դիտելու ձև» - երկխոսության պատուհանից հետո ցուցադրվող դիտելու ձևի ընտրության դաշտ,
+* «Լրացնել» - Ցուցադրման եղանակ՝ թղթապանակի մեջ, Excel, Excel Pivot,
+* Երկխոսության պատուհանի ընդլայնված դաշտեր։
 
 ## Շարահյուսություն
 
-
-```vb
-ApplyDialogExtension(xDlg, groupsView, defaultViewName, [viewNameFilter], [disableExcelExport])
+``` vb
+Sub ApplyDialogExtension(ByVal xDlg As AsDialog, _
+                         ByVal groupsView As String, _
+                         ByVal defaultViewName As String, _
+                Optional ByVal viewNameFilter As String = "", _
+                Optional ByVal disableExcelExport As Boolean = False)
 ```
 
 Բաղադրիչներն են՝
@@ -23,66 +27,47 @@ ApplyDialogExtension(xDlg, groupsView, defaultViewName, [viewNameFilter], [disab
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| xDlg | Նկարագրական երկխոսության պատուհան  տիպի օբյեկտի օրինակի հղում։ строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта типа описательный диалог. |
-| groupsView | Սահմանում է դիտելու ձևի խումբը կամ խմբերի ցանկը։ строковое выражение, определяющее группу или список групп вида просмотра. |
-| defaultViewName | Սահմանում է դիտելու ձևը լռությամբ, սկրիպտի մեջ տեղադրելու համար։ Եթե դիտելու ձևը տրված չի երկխոսության պատուհանի մեջ, ապա սկրիպտի մեջ սահմանվում է համակարգային դիտելու ձևը։  строковое выражение, определяющее вид просмотра по умолчанию для постановки в скрипт. Если вид просмотра не задан в расширении диалога, то в скрипт поставляется системный вид просмотра. |
-| viewNameFilter | Թույլ է տալիս երկխոսության պատուհանի ընդլայնման մեջ տեսնել միայն այն դիտելու ձևերը, որոնք պատկանում են նույն `groupsView` խմբին և սկսվում են `viewNameFilter` արժեքով։ необязательное логическое выражение, позволяющее видеть в расширении диалога только<b> </b>те виды просмотра, определенные на одной и той же группе <i>groupsView</i>, которые начинаются со значения <i>viewNameFilter</i>. </div> |
-| disableExcelExport | Լռությամբ ստանում է `False` արժեք։ Որի դեպքում նկարագրական երկխոսության պատուհանի մեջ ավելանում է  [Tree](../../../Types/Tree.html) (FillTo) տիպի լրացուցիչ դաշտ, որը թույլ է տալիս ընտրել տվյալները լրացնելու տարբերակը։ необязательное логическое выражение. По умолчанию принимает значение <i>False</i>, при котором в описательном диалоге появляется дополнительный реквизит типа [Tree](../../../Types/Tree.html) (FillTo), позволяющий выбрать способ заполнения данных. |
+| xDlg | Երկխոսության պատուհանի օբյեկտի հղում։ |
+| groupsView | Դիտելու ձևի խումբը կամ ստորակետով տարանջատված խմբերի ցանկը։ |
+| defaultViewName | Առաջարկվող դիտելու ձևը պատուհանում ցույց տալու համար։ Եթե դիտելու ձևը տրված չի երկխոսության պատուհանի մեջ, ապա կօգտագործվի է համակարգային դիտելու ձև։ |
+| viewNameFilter | Դիտելու ձի անվան ֆիլտր։ |
+| disableExcelExport | `True` արժեքի դեպքում ցույց չի տալիս «Լրացնել» դաշտը։ |
 
+## Կարգավորումներ
 
-`FillTo` ծառը ունի հետևյալ արժեքները։
-
-Дерево <b>FillTo</b> имеет следующие значения:
-
+«Լրացնել» ծառը ունի հետևյալ արժեքները։
 
 | Արժեք | Նկարագրություն |
 |--|--|
-| `0` | Հայցվող տվյալները լրացվում են թղթապանակի մեջ։ Запрашиваемые данные заполняются внутри папки. |
-| `1` | Հայցվող տվյալները լրացվում են MS Excel-ի մեջ։ Запрашиваемые данные заполняются в MS Excel. |
-| `2` |  Հայցվող տվյալները լրացվում են MS Excel pivot-ի մեջ։ Запрашиваемые данные заполняются в<b> </b>MS Excel pivot. |
+| `0` | Հայցվող տվյալները լրացվում են թղթապանակի մեջ։ |
+| `1` | Հայցվող տվյալները լրացվում են MS Excel-ի մեջ։ |
+| `2` | Հայցվող տվյալները լրացվում են MS Excel-ի մեջ կիրառելով PivotTable-ի գործիքները։  |
 
 ## Օրինակ
 
+Եթե `GroupView` խմբում առկա են `View10`, `View11`, `View21`, `View22`, ապա դիտելու ձևերի ցուցակում կերևան `View10` լռությամբ արժեքը, և ֆիլտրով որոշվող `View21`, `View22` արժեքները։
 
-Пример использования <strong>ApplyDialogExtension</strong>. Пусть на группе <strong>GroupView</strong> определены <strong>View1</strong>,
-<strong>View2</strong>, <strong>GroupV1 </strong>и<strong> GroupV2</strong> виды просмотра.
-
-```vb
+``` vb
 Dim xDialog As AsDialog
-
 Set xDialog = CreateDialog("ViewDialog")
-
 With xDialog
+    .Caption = "Group View"
+    .ECaption = "Group View"
+    .EventModule = "ViewMod"
+    .AddControl "StartDate", #Period, "DATE", , , #e_Period, 0
+    .AddDublCntrl "EndDate", "StartDate", , , 0
+    .LeftDouble = 1500 End With
+    ApplyDialogExtension xDialog, "GroupView", "View10", "View2%"
 
-        .Caption = "Group View"
-
-        .ECaption = "Group View"
-
-        .EventModule = "ViewMod"
-
-        .AddControl "StartDate", #Period, "DATE", , , #e_Period, 0
-
-        .AddDublCntrl "EndDate", "StartDate", , , 0
-
-        .LeftDouble = 1500 End With
-
-ApplyDialogExtension xDialog, "GroupView", "View1",  "GroupV%"
-
-xDialog.Show
-
-If xDialog.Cancel Then
-
-       Exit Sub
-
+    .Show
+    If .Cancel Then
+        Exit Sub
+    End If
 End If
-
-
 ```
+
+Տես նաև դիտելու ձևի ցույց տալու [3-րդ օրինակը](../../../Examples/E_AsView.md)։
+
+## նկատառումներ
    
-
-Այդ դեպքում երկխոսության պատուհանի ընդլայնման մեջ լռության դեպքում կլինի `View1` արժեք, իսկ ցանկում հասանելի կլինեն `View1`,  `GroupV1` և `GroupV2`, այսինքն լռությամբ կլինի `defaultViewName` պարամետրի արժեքը, իսկ ցանկում տեսանելի/հասանելի կլինեն defaultViewName և բոլոր այն դիտելու ձևերը, որոնք սկսվում են `viewNameFilter` արժեքից։
-
-Тогда в расширении диалога по умолчанию будет значение &quot;<strong>View1</strong>&quot;, а в списке будут доступны &quot;<strong>View1</strong>&quot;,&nbsp; <strong>GroupV1</strong> и <strong>GroupV2</strong>, т.е по умолчанию будет значение параметра <strong>defaultViewName,</strong> а в списке будут видны <strong>defaultViewName</strong> и все те виды просмотра,&nbsp; которые начинаются со значенния <strong>viewNameFilter</strong>
-
-
 [Տես նաև](../../../functions.html)
