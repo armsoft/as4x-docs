@@ -7,39 +7,28 @@ title: "CreatePivotInfo ֆունկցիա"
 
 [Հատկություններ և մեթոդներ](../../PivotInfo.html)
 
-Ստեղծում է տվյալները տեղափոխող/փոխադրող տիպի օբյեկտ։
-Создает объект типа транспонирование данных.
+Ստեղծում է տվյալները փոխակերպման օբյեկտ։
 
 ## Շարահյուսություն
 
-```vb
-set oPivotInfo = CreatePivotInfo
+``` vb
+Function CreatePivotInfo() As PivotInfo
 ```
-
-Բաղադրիչներն են՝
-        
-| Պարամետր | Նկարագրություն |
-|--|--|
-| oPivotInfo | Տվյալները տեղափոխող/փոխադրող տիպի օբյեկտի օրինակի հղում։ строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта типа транспонирование данных. |
-
 
 ## Նկատառումներ
 
 [Տես նաև](../../../constructors.html)
 
-
 ## Օրինակ
 
-Օրինակի մեջ կանչվում է CreatePivotInfo ֆունկցիան, PivotInfo-ի միջոցով վերադառնում է տվյալները տեղափոխող/փոխադրող տիպի օբյեկտի հղումը իր բոլոր հատկություններով և մեթոդներով։ Որտեղ viewColumn1, viewColumn2 և viewColumn3 համարվում են `VIEW1` դիտելու ձևի աղյուսակներ, որոնք արտահանելիս տեղափոխվում են Excel։
+Օրինակի մեջ ստեղծում է տվյալների փոխակերպման օբյեկտը և կիրառում դիտելու ձևը փոխակերպված ցույց տալու համար։
 
-В примере вызывается функция CreatePivotInfo, через PivotInfo возвращается ссылка на обьект типа транспонирование данных со всеми его свойствами и методами, где viewColumn1, viewColumn2 и viewColumn3&nbsp; являются колонками вида просмотра &quot;VIEW1&quot;, которые подвергаются транспонированию при экспорте в Excel. 
-
-```vb
+``` vb
 Dim oPivotInfo As PivotInf
 Dim viewBusExp As AsView
 
 Set viewBusExp = View("VIEW1")
-Set oPivotInfo = CreatePivotInfo
+Set oPivotInfo = CreatePivotInfo()
 
 oPivotInfo.AddPivotColumn "viewColumn1"
 oPivotInfo.AddPivotRow "viewColumn2"
