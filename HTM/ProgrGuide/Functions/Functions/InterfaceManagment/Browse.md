@@ -7,12 +7,10 @@ title: "Browse ֆունկցիա"
 
 Էկրանին ցույց է տալիս դիտելու ձևը։
 
-
-
 ## Շարահյուսություն
 
 ``` vb
-Browse(ViewCodeOrObj, [paramsValues1], ..., [sparamsValuesN])
+Sub Browse(ByVal ViewCodeorObj As Variant, ParamArray Params())
 ```
 
 Բաղադրիչներն են`
@@ -20,8 +18,8 @@ Browse(ViewCodeOrObj, [paramsValues1], ..., [sparamsValuesN])
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| ViewCodeorObj | Դիտելու ձևի [ներքին անուն](../../ASVIEW/Name.md) կամ [դիտելու ձև տիպի օբյեկտ](../SysDefManagment/View.html): |
-| paramsValuesi | Դիտման ձևի [i-րդ պարամետրի](../../ASVIEW/Parameters.md) արժեք: |
+| ViewCodeorObj | Դիտելու ձևի [ներքին անուն](../../ASVIEW/Name.md) կամ [դիտելու ձև տիպի օբյեկտ](../SysDefManagment/View.md): |
+| Params | Դիտման ձևի պարամետրերի մասիվ: |
 
 ## Օրինակներ
 
@@ -41,4 +39,4 @@ Call Browse(xView, xBal, "%/" & Mask, xCUR, xDialog("SDate"), xDialog("EDate"), 
 ```
 
 ## Նկատառումներ
-[См. также](../SysDefManagment/View.html)
+[См. также](../SysDefManagment/View.md)
