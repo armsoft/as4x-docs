@@ -10,22 +10,21 @@ title: "CreateFolderElement ֆունկցիա"
 ## Շարահյուսություն
 
 ``` vb
-Set sNewFolderEl = CreateFolderElement(FolderId)
+Function CreateFolderElement(ByVal FolderID As String) As AsFoldElement
 ```
 
 Բաղադրիչներն են՝
 
-| Պարամետր | Նկարագրություն | Տիպ |
-|--|--|--|
-|sNewFolderEl|Փոփոխական,որը հղվում է նոր թղթապանակի տարրի վրա:| AsFolderElement |
-|FolderId |Տողային արտահայտություն, որը կլինի ստեղծված թղթապանակի ներքին անունը: | String |
+| Պարամետր | Նկարագրություն | 
+|--|--|
+| FolderId | Թղթապանակի ներքին անունը: | 
 
 ## Նկատառումեր
 
 [См. также](../../../constructors.html)
 
 ## Օրինակ
-Օրինակում ստեղծում է նոր տարր `"NBACC"` թղթապանակում:
+Օրինակում ստեղծում է նոր տարր `NBACC` թղթապանակում:
 
 ``` vb
 Set xFoldEl = CreateFolderElement("NBACC")
@@ -36,6 +35,3 @@ xFoldEl.Spec = Doc.Formatted("MTCCOUNT") & Doc("COMENT")
 xFoldEl.Status = "E"
 Doc.StoreInFolder xFoldEl
 ```
-
-
-
