@@ -13,14 +13,15 @@ title: "CopyDoc ֆունկցիա"
 ## Շարահյուսություն
 
 ``` vb
-Set oDoc = CopyDoc(nISN, [ByVal BeforeCopyParam As Variant], [ByVal Mode As Integer])
+Function CopyDoc(ByVal nISN As long, _
+        Optional ByVal BeforeCopyParam As Variant, _
+        Optional ByVal Mode As Integer) As AsDoc
 ```
 
 Բաղադրիչներն են՝
     
 | Պարամետր | Նկարագրություն |
 |--|--|
-| oDoc | Պատճենված փաստաթղթի հղում։ |
 | nISN | Պատճենման ենթակա փաստաթղթի ներքին նույնականացման համար։ |
 | BeforeCopyParam | Տվյալ պարամետրի արժեքը փոխանցվում է փաստաթղթի [BeforeCopy](../../../ScriptProcs/BeforeCopy.html) իրադարձությանը։ |
 | Mode | Սահմանում է փաստաթղթի պատճենման ռեժիմը։ <br/> `0` - պատճենվում են բոլոր դաշտերի արժեքները։ <br/> `1` - պատճենման ռեժիմը համապատասխանում է վիզուալ պատճենմանը, որը և կախված է փաստաթղթի նկարագրության մեջի [CopyAsRepeatable](../../../Defs/doc.md) արժեքից։ <br/> `2` - պատճենվում են միայն այն դաշտերը, որոնք պարունակում են `N` հայտանիշը։ <br/> Լռությամբ արժեքը 0: |
