@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ParentISN ֆունկցիա"
+title: "DocParentIsn ֆունկցիա"
 ---
 
 ## DocParentIsn ֆունկցիա
