@@ -80,6 +80,7 @@ title: "AsDoc օբյեկտ"
 | [HiParDelete](ASDOC/HiParDelete.md) | [HIPAR](../Database/HiPar.html) աղյուսակից ջնջում է այս փաստաթղթի նախկինում գրանցած պարամետրերի արժեքները։ |
 | [LockControls](ASDOC/LockControls.md) | Փաստաթղթի բոլոր դաշտերը դարձնում է ոչ խմբագրելի։ |
 | [NestedTransactions](ASDOC/NestedTransactions.md) | Փաստաթղթի կատարման ընթացքում սկսում է N հատ տրանզակցիաների հաջորդաբար կատարում մասիվով տրված էլեմենտների համար։ |
+| [PageCaption](ASDOC/PageCaption.md) | Վերադարձնում է փաստաթղթի էջի անվանումը, որը ֆիքսված է փաստաթղթի նկարագրության մեջ։ |
 | [Parents](ASDOC/Parents.md) | Վերադարձնում է  ծնող փաստաթղթերի  ներքին նույնականացման համարների հավաքածուն։ |
 | [PrintToFile](ASDOC/PrintToFile.md) | Պահում է փաստաթղթի տպված ձևը ֆայլում։ |
 | [ReFolder](ASDOC/ReFolder.md) |Իրականացնում է փաստաթղթի վերաինդեկսավորումը թղթապանակներում: |
