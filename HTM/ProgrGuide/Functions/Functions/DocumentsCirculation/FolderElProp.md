@@ -34,5 +34,5 @@ Function FolderElProp(ByVal FolderID As String, _
 ``` vb
 Set xFold = FolderElProp("NBACC", Doc("NBACC"))
 accountName = xFold.Com
-AccountCur = Mid(xFold.Spec, 1, 3)
+accountCur = Mid(xFold.Spec, 1, 3)
 ```
