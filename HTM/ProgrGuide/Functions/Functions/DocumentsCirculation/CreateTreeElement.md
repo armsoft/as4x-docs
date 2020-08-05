@@ -1,26 +1,23 @@
 ---
 layout: page
-title: "CreateTreeElement"
+title: "CreateTreeElement Ֆունկցիա"
 ---
 
 # CreateTreeElement Ֆունկցիա
 
-[**Հատկություններ Մեթոդներ**](../../AsTreeElement.md)
-
-Ստեղծում է նոր ծառի տարր։
+Ստեղծում է նոր [ծառի տարր](../../AsTreeElement.md) օբյեկտ։
 
 ## Շարահյուսություն
 
 ``` vb
-Set sNewTreeEl = CreateTreeElement (TreeId)
+Function CreateTreeElement(ByVal TreeId As String) As AsTreeElement
 ```
 
 Բաղադրիչներն են՝
     
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sNewTreeEl | Նոր ստեղծված ծառի տարրի հղում |
-| TreeId | Ծառի ներքին անունը, որի տարր ցանկանում ենք ստեղծել |
+| TreeId | Ծառի ներքին անունը, որի տարր ցանկանում ենք ստեղծել։ |
 
 
 ## Նկատառումներ
@@ -29,10 +26,7 @@ Set sNewTreeEl = CreateTreeElement (TreeId)
 
 ## Օրինակ
 
-Օրինակի մեջ կանչվում է CreateTreeElement ֆունկցիան, 
-xTreeEl-ը հղում է նոր ստեղծված ծառի տարրի վրա, 
-որը պահպանելու համար պետք է կանչել [StoreInTree](../../ASDOC/StoreInTree.md) մեթոդը 
-
+Օրինակի մեջ կանչվում է CreateTreeElement ֆունկցիան, xTreeEl-ը հղում է նոր ստեղծված ծառի տարրի վրա, որը պահպանելու համար պետք է կանչել [StoreInTree](../../ASDOC/StoreInTree.md) մեթոդը։
 
 ``` vb
 Set xTreeEl = CreateTreeElement("NbalAcc")

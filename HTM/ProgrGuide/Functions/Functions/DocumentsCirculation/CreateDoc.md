@@ -1,26 +1,28 @@
 ---
 layout: page
-title: "CreateDoc"
+title: "CreateDoc ֆունկցիա"
 ---
 
 # CreateDoc ֆունկցիա
 [Ֆունկցիաներ, հատկություններ](../../Asdoc.md)
 
-Նշված տիպի նոր փաստաթղթի ստեղծում։
+Ստեղծում է Նշված տիպի նոր փաստաթղթի օբյեկտ։
 
 ## Շարահյուսություն
 
 ``` vb
-Set sNewDoc = CreateDoc(sDocType, [nParentISN]) 
+Function CreateDoc(ByVal sDocType As String, _
+          Optional ByVal nParentISN As Variant = -1, _
+          Optional ByVal IncrementISN As Boolean = True) As AsDoc
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sNewDoc | Ստեղծված փաստաթղթի հղում։ |
 | sDocType | [Փաստաթղթի ներքին անուն](../../../Defs/doc.md)։ |
-| nParentISN | Ոչ պարտադիր թվային արտահայտություն Long տիպի, որը որոշում է ծնող փաստաթղթին ISN-ով, լռությամբ արժեքը -1։ |
+| nParentISN | Ստեղծվող փաստաթղթի ծնող փաստաթղթի ISN։ Տրված չլինելու դեպքում փաստաթուղթը ստեղծվում է առանց ծնողի։ |
+| IncrementISN | ՀՆԱՑԱԾ։ Պետք չէ օգտագործել։ |
 
 ## Նկատառումներ
 

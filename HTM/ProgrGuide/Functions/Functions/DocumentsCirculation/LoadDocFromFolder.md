@@ -13,16 +13,16 @@ title: "LoadDocFromFolder ֆունկցիա"
 ## Շարահյուսություն
 
 ``` vb
-Set sDoc = LoadDocFromFolder(FolderId, Key)
+Function LoadDocFromFolder(ByVal FolderId As String, _
+                           ByVal Key As String) As AsDoc
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sDoc | Բեռնված փաստաթղթի հղում։ |
 | FolderId | Թղթապանակի ներքին անուն։ |
-| Key | Թղթապանակի տարրի բանալին։ |
+| Key | Թղթապանակի մեջ տարրի բանալին։ |
 
 ## Նկատառումներ
 

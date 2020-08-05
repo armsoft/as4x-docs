@@ -6,27 +6,33 @@ title: "DeleteDoc ֆունկցիա"
 # DeleteDoc ֆունկցիա
 
 Ջնջում է փաստաթուղթը համակարգից։  
-Ջնջվող փաստաթղթերի համար առաջանում է [Delete](../../../ScriptProcs/Delete.html) իրադարձությունը, ապա փաստաթղթի վիճակը դառնում է 999, որից հետո այդ փաստաթուղթը հայտնվում է ջնջված փաստաթղթերի թղթապանակում։
+Ջնջվող փաստաթղթերի համար առաջանում է [Delete](../../../ScriptProcs/Delete.md) իրադարձությունը, ապա փաստաթղթի վիճակը դառնում է 999, որից հետո այդ փաստաթուղթը հայտնվում է ջնջված փաստաթղթերի թղթապանակում։
+Ջնջման ժամանակ հեռացվում են նաև այդ փաստաթղթի բոլոր թղթապանակները, ծառի տարրերը և իր համար գրանցված հաշվառումները։
 
 Եթե փաստաթուղթը ունի ենթափաստաթղթեր, ապա ջնջումը թույլատրելի չի լինի։
 
-Ջնջման ժամանակ հեռացվում են նաև այդ փաստաթղթի բոլոր թղթապանակները, ծառի տարրերը և իր համար գրանցված հաշվառումները։
-
 Ջնջումը տեղի է ունենում տրանզակցիայի մեջ։
+
+Ֆունկցիան վերադարձնում է `True` եթե ջնջումը հաջողվում է, `False` չհաջողվելու դեպքում։
 
 ## Շարահյուսություն
 
 ``` vb
-Function DeleteDoc(ISNorDoc, AllowUserInterface, [FullDelete], [Comment], [CallDelete], [InheritedDelete]) As Boolean
+Function DeleteDoc(ByVal IsnOrDoc As Variant, _
+                   ByVal AllowUserInterface As Boolean, _
+          Optional ByVal FullDelete As Boolean = False, _
+          Optional ByVal Comment As String = "", _
+          Optional ByVal CallDelete As Boolean = True, _
+          Optional ByVal InheritedDelete As Boolean = False) As Boolean
 ```
     
 | Պարամետր | Նկարագրություն |
 |--|--|
-| ISNorDoc | Ջնջվող փաստաթղթի ներքին նույնականացման համարը, կամ փաստաթղթի հղումը։ |
-| AllowUserInterface | `True` արժեքը ցույց է տալիս, որ ջնջումը կատարվում է ինտերֆեսյից, այդ դեպքում, եթե առկա է, աշխատացնում է [OnUIDelete](../../../ScriptProcs/OnUIDelete.html) իրադարձությունը, ապա ցույց է տրվում ջնջման մեկնաբանություն պահանջող երկխոսության պատուհանը։ |
-| FullDelete | Փաստաթղթի վերջնական ջնջման հայտանիշ։ վերջնական ջնջման ժամանակ փաստաթուղթը ջնջվում է բոլոր միջուկային աղյուսակներից աղյուսակներից՝ [DOCP](../../../Database/DocP.html), [FOLDERS](../../../Database/Folders.html), [TREES](../../../Database/Trees.html), [HIPAR](../../../Database/HiPar.html), [HIREST](../../../Database/Hirest.html), [HIREST2](../../../Database/Hirest2.html), [ACCESS](../../../Database/Access.html), [HI](../../../Database/Hi.html) և [HI2](../../../Database/Hi2.html)։ Ոչ վերջնական ջնջման ժամանակ փաստաթուղթը մնում է [DOCS](../../../Database/Docs.html), [DOCLOG](../../../Database/DocLog.html), [DOCSG](../../../Database/DocsG.html), [DOCSIM](../../../Database/Docsim.html) աղյուսակների մեջ և վիճակը լինում է 999: Լռությամբ արժեքը `False`։ |
+| IsnOrDoc | Ջնջվող փաստաթղթի ներքին նույնականացման համարը, կամ փաստաթղթի հղումը։ |
+| AllowUserInterface | `True` արժեքը ցույց է տալիս, որ ջնջումը կատարվում է ինտերֆեսյից, այդ դեպքում, եթե առկա է, աշխատացնում է [OnUIDelete](../../../ScriptProcs/OnUIDelete.md) իրադարձությունը, ապա ցույց է տրվում ջնջման մեկնաբանություն պահանջող երկխոսության պատուհանը։ |
+| FullDelete | Փաստաթղթի վերջնական ջնջման հայտանիշ։ Վերջնական ջնջման ժամանակ փաստաթուղթը ջնջվում է բոլոր միջուկային աղյուսակներից աղյուսակներից՝ [DOCP](../../../Database/DocP.html), [FOLDERS](../../../Database/Folders.html), [TREES](../../../Database/Trees.html), [HIPAR](../../../Database/HiPar.html), [HIREST](../../../Database/Hirest.html), [HIREST2](../../../Database/Hirest2.html), [ACCESS](../../../Database/Access.html), [HI](../../../Database/Hi.html) և [HI2](../../../Database/Hi2.html)։ Ոչ վերջնական ջնջման ժամանակ փաստաթուղթը մնում է [DOCS](../../../Database/Docs.html), [DOCLOG](../../../Database/DocLog.html), [DOCSG](../../../Database/DocsG.html), [DOCSIM](../../../Database/Docsim.html) աղյուսակների մեջ և վիճակը լինում է 999: Լռությամբ արժեքը `False`։ |
 | Comment | Փաստաթղթի ջնջման մեկնաբանություն, որը գրանցվում է փաստաթղթի պատմության մեջ։ |
-| CallDelete | Փաստաթղթի [Delete](../../../ScriptProcs/Delete.html) իրադարձությունը կանչելու հայտանիշ։ Լռությամբ արժեքը `True`։ |
+| CallDelete | Փաստաթղթի [Delete](../../../ScriptProcs/Delete.md) իրադարձությունը կանչելու հայտանիշ։ Լռությամբ արժեքը `True`։ |
 | InheritedDelete | `True` արժեքի դեպքում փաստաթղթի պատմության մեջ գրվում է, որ փաստաթուղթը ջնջվել է այլ փաստաթղթի ջնջման ընթացքում։ Տվյալների պահոցում ջնջման կոդը լինում է `H`։ |
 
 ## Նկատառումներ
