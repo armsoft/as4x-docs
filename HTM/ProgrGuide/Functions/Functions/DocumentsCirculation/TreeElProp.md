@@ -5,46 +5,34 @@ title: "TreeElProp ֆունկցիա"
 
 ## TreeElProp ֆունկցիա
 
-[Հատկություններ և մեթոդներ](../../AsTreeElement.html) 
 
-Հղումը վերադարձնում է ծառի տարր տիպի օբյեկտի վրա ըստ ծառի անվանման և բանալու։ Ֆունկցիան օգտագորժում են ծառի տարրի հատկությունների արժեքներ ստանալու համար։ Եթե օբյեկտը առկա չի, ապա ֆունկցիան վերադարձնում է Nothing։
 
-Возвращает ссылку на существующий объект типа элемент дерева по имени дерева и ключу. Функция используется для получения значений свойств элемента дерева. Если объект не существует, тогда функция возвращает значение Nothing.
+վերադարձնում է [ծառի տարր տիպի օբյեկտ](../../AsTreeElement.md) ըստ ծառի անվան և հանգույցի կոդի։ 
 
+Եթե օբյեկտը առկա չի, ապա ֆունկցիան վերադարձնում է Nothing։
 
 ## Շարահյուսություն
 
-```vb
-set xTreeEl = TreeElProp(TreeId, Code)
+``` vb
+Function TreeElProp(ByVal TreeId As String, ByVal Code As String) As AsTreeElement
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| xTreeEl | [Ծառի տարր տիպի օբյեկտի](../../AsTreeElement.md) հղում։ переменная, ссылающаяся на [объект типа элемент дерева](../../AsTreeElement.html) |
-| TreeId | [Ծառի ներքին համար](../../../Database/Trees.html): строковое выражение, определяющее [идентификатор дерева](../../../Database/Trees.html) |
-| Code | [Ծառի տարրի բանալին](../../../Database/Trees.html)։ строковое выражение, определяющее [ключ элемента дерева](../../../Database/Trees.html) |
-
+| TreeId | Ծառի անուն: |
+| Code | Ծառի տարրի բանալին։ |
 
 ## Նկատառումներ
 
 [Տես նաև](../../../constructors.html)
 
-
 ## Օրինակ 
 
-xTree-ն հղվում է առկա ծառի տարր օբյեկտի վրա։ 
+Գտնում է բանկի ծառի տարրը, ապա ըստ դրա բեռնում է փաստաթուղթը և կարդում դաշտի արժեք։
 
-
-```vb
-Set xTree=TreeElProp("Banks", Param("CODBANK"))
-xCorrAcc=LoadDoc( xTree.ISN )("SCHET")
+``` vb
+Set xTree = TreeElProp("Banks", Param("CODBANK"))
+xCorrAcc = LoadDoc(xTree.ISN)("SCHET")
 ```
-Переменная xTree ссылается на существующий объект элемент дерева.
-
-Set xTree=<strong>TreeElProp</strong>(&quot;Banks&quot;,
-[Param](../ParameterManagment/Param.html)(&quot;CODBANK&quot;))<br>
-xCorrAcc=[LoadDoc](LoadDoc.html)( xTree.[ISN](../../AsTreeElement/ISN.html)
-)(&quot;SCHET&quot;)<br>
-
