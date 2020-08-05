@@ -1,27 +1,22 @@
 ---
 layout: page
-title: "PrintExcelPreviewDoc մեթոդ"
+title: "PrintExcelPreviewDoc ֆունկցիա"
 ---
 
+## PrintExcelPreviewDoc ֆունկցիա
 
-## PrintExcelPreviewDoc մեթոդ
+Փաստաթղթի համար լրացնում է excel ձևանմուշ և էկրանինց է ցույց տալիս։
 
-MS Excel-ի մեջ ստեղծում է փաստաթղթի ձևաչափը։ 
-Создает форму документа в программе MS Excel.
-
+Եթե փաստաթուղթը ունի մեկից ավելի excel ձևանմուշ, ապա բացվում է ձևանմուշի ընտրման պատուհան։
 
 ## Շարահյուսություն
 
-```vb
- PrintExcelPreviewDoc DocOrISN
+``` vb
+Sub PrintExcelPreviewDoc(ByVal DocOrISN As Variant)
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| DocOrISN | Սահմանում է կամ փաստաթղթի ISN-ը կամ օրինակը։ выражение типа варианты, определяющее: либо внутрисистемный идентификационный код ISN документа, либо же экземпляр документа.. |
-
-
-
+| DocOrISN | Փաստաթղթի ISN-ը կամ փաստաթղթի օբյեկտ։ |
