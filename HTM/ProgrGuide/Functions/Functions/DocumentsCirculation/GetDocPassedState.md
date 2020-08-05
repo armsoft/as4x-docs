@@ -5,18 +5,15 @@ title: "GetDocPassedState ֆունկցիա"
 
 ## GetDocPassedState ֆունկցիա
 
-Log-ից վերադարձնում է նշված փաստաթղթի առաջին կամ վերջին վիճակը։
-Վերադարձնում է Integer տիպի թվային արժեքը։ Եթե տարրը չի գտնվել, ապա վերադառնում է -1։ 
-
-Возвращает последнее или первое состояние указанного документа из Log-а.
-
-Возвращает численное значение типа Integer. Если элемент не найден, то возвращается -1.
-
+Ստուգում է և վերադարձնում է փաստաթղթի վերջին կամ առաջին նշանակված վիճակը տրված վիճակների ցուցակից։
 
 ## Շարահյուսություն
 
-```vb
-GetDocPassedState(nISN, [LastState], [InStates], [States])
+``` vb
+Function GetDocPassedState(ByVal nISN As Long, _
+                  Optional ByVal LastState = True, _
+                  Optional ByVal InStates As Boolean = True, _
+                  Optional ByVal States As Variant) As Integer
 ```
 
 Բաղադրիչներն են՝
@@ -24,16 +21,25 @@ GetDocPassedState(nISN, [LastState], [InStates], [States])
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| nISN | Փաստաթղթի ներքին նույնականացման համար։ численное выражение типа Long, определяющее внутрисистемный идентификационный код (ISN) документа. |
-| LastState | Եթե LastState = True, ապա վերադառնում է վերջին վիճակը, հակառակ դեպքում՝ առաջինը։ необязательное логическое выражение. Если LastState = True, то возвращается последнее состояние, в противном случае - первое состояние. |
-| InStates | необязательное логическое выражение, определяющее признак принадлежности искомого состояния к списку указанного в States. Если InStates = True, то состояние должно быть одной из перечисленных в States, в противном случае - любое. |
-| States | Սահմանումէ վիճակը կամ մասիվը մի քանի վիճակներով։ необязательное выражение типа Variant, определяющее состояние или массив с несколькими состояниями. |
+| nISN | Փաստաթղթի ներքին նույնականացման համար։ |
+| LastState | `True` արժեքի դեպքում վերադառնում է վերջին վիճակը, հակառակ դեպքում՝ առաջինը։ |
+| InStates | `True` արժեքի դեպքում փնտրվում է վիճակ, որը վիճակների ցուցակի միջից է։ Հակառակ դեպքում՝ ցուցակի միջից չէ։ |
+| States | Սահմանում է վիճակը կամ վիճակների մասիվ, կամ վիճակները որոշող SQL հարցում։ |
 
+## Օրինակ
 
+``` vb
+state = GetDocPassedState(Doc.ISN, , , 8)
+state = GetDocPassedState(Doc.ISN, True, True, Array(2,5,8))
+
+If Between(iAgrDocState, 100, 200) AndAlso GetDocPassedState(lAgrISN, True, False, iAgrDocState) > 100 Then
+    '''
+End If
+
+state = GetDocPassedState(Doc.Isn, True, False, _
+                          Array("Select fSTATE From DOCLOG WHERE fISN = " & CStr(Doc.Isn) & " and NOT fSTATE Between 100 and 200"))
+```
 
 ## Նկատառումներ
 
 [Տես նաև](../../../functions.html)
-
-
-
