@@ -5,35 +5,38 @@ title: "NavTreeNewDocMode ֆունկցիա"
 
 ## NavTreeNewDocMode ֆունկցիա
 
-Ուղղորդիչ ծառից վերադաչձնում է փաստաթղթի ստեղծման ռեժիմը։ 
-Возвращает режим создания документа с дерева навигации.
+Վերադարձնում է փաստաթղթի ստեղծման ռեժիմը ուղղորդիչ ծառից։ Վերադարձվող արժեքը կարելի է օգտագործել նոր փաստաթղթի ցույց տալու համար։
 
 ## Շարահյուսություն
 
-```vb
-dCreateMode = Util.NavTreeNewDocMode(sDocType)
+``` vb
+Function Util.NavTreeNewDocMode(ByVal sDocType As String) As Integer
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| dCreateMode | Ամբողջ տիպ։ переменная типа целое |
-| sDocType | Սահմանում է փաստաթղթի տիպը։ строковое выражение, определяющее тип документа |
-
+| sDocType | փաստաթղթի տիպը։ |
 
 ## Կարգաբերումներ
 
-Установки для <em>dCreateMode </em>следующие:
-
+Վերադարձվող արժեքները՝
 
 | Արժեք | Նկարագրոթյուն |
 |--|--|
-| -1 | Փաստաթղթի տվյալ տիպը չի ստեղծվում ուղղորդիչ ծառից։ данный тип документа не создается с дерева навигации |
-| 0 | данный тип документа создается с дерева навигации в режиме [ASRepeatableNewMode](../../../Constants/const_doc_States.md) |
-| 1 | Փաստաթղթի տվյալ տիպը ստեղծվում է ուղղորդիչ ծառից [ASNewMode](../../../Constants/const_doc_States.html) ռեժիմում։ данный тип документа создается с дерева навигации в режиме [ASNewMode](../../../Constants/const_doc_States.html) |
-
+| -1 | Փաստաթղթի տվյալ տիպը չի ստեղծվում ուղղորդիչ ծառից։ |
+| 0 | [ASRepeatableNewMode](../../../Constants/const_doc_States.md) |
+| 1 | [ASNewMode](../../../Constants/const_doc_States.md) |
 
 ## Նկատառումներ
 
 [Տես նաև](../../../functions.html)
+
+## Օրինակ
+
+``` vb
+Set xDoc = CreateDoc("Order")
+xDoc("PARENT") = parent("CODE")
+xDoc.Show Util.NavTreeNewDocMode("Order")
+```
