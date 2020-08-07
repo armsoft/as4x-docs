@@ -40,7 +40,7 @@ End Sub
 
 
 ''' Կանչեր այլ տեղից
-Dim param01 As Long
+Dim param01 As Integer
 Dim param02 As Long
 RunEx("MyModule", "SomeMethod1", param01)  ' param01 փոփոխականի արժեքը չի փոխվի քանիզի տիպերը տարբերվում են
 RunEx("MyModule", "SomeMethod1", param02)  ' param02 փոփոխականի արժեքը կդառնա 10, քանզի տիպերը նույնն են
