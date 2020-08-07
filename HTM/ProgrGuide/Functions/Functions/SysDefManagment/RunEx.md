@@ -31,6 +31,7 @@ Function RunEx(ByVal ModName As String, ByVal SubName As String, ParamArray ParA
 Տվյալ ֆունկցիան կիրառելիս սահմանվում են հետևյալ սահմանափակումները՝
 
 * թույլատրվում է փոխանցել `ByRef` պարամետրեր, եթե փոխանցվող փոփոխականի տիպը նույնն է, ինչ որ ֆունկցիայի պարամետրի տիպը կամ փոփոխականի տիպը Variant է։
+
 ``` vb
 ' MyModule մարմնում առկա ֆունկցիա
 Sub SomeMethod1(ByRef param01 As Long)
@@ -46,6 +47,7 @@ RunEx("MyModule", "SomeMethod1", param02)  ' param02 փոփոխականի արժ
 ```
 
 * Թույլատրվում է չփոխանցել ֆունկցիայի վերջից ոչ պարտադիր(`Optional`) պարամետրերը։
+
 ``` vb
 ' MyModule մարմնում առկա ֆունկցիա
 Sub SomeMethod1(ByVal param1 As Long, Optional ByVal param2 As Long, Optional ByVal param3 As Long)
