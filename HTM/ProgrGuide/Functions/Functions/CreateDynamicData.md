@@ -26,7 +26,7 @@ Function CreateDynamicData(ByVal DataDesc As AsDataDesc) As AsData
 ## Օրինակ
 
 ``` vb
-Dim sData As AsData Dim sDataDesc as AsDataDesc
+Dim sData As AsData, sDataDesc as AsDataDesc
 
 Set sDataDesc = CreateDataDesc()
 sDataDesc.Caption = "DynDescCaption"
