@@ -5,7 +5,7 @@ title: "AppLock ֆունկցիա"
 
 [msdn sp_getapplock]: https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-getapplock-transact-sql
 
-## AppLock ֆունկցիա
+# AppLock ֆունկցիա
 
 Ստեղծում է SQL արգելափակում (lock) տրված անունով ռոսուրսի վրա։  
 Եթե արգելափակումը չի ստացվում ստեղծել, ապա առաջանում է սխալ։ 
