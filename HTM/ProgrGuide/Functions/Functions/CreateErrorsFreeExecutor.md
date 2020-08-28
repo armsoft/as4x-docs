@@ -3,30 +3,27 @@ layout: page
 title: "CreateErrorsFreeExecutor ֆունկցիա"
 ---
 
-## CreateErrorsFreeExecutor ֆունկցիա
+# CreateErrorsFreeExecutor ֆունկցիա
 
-
-[Հատկություններ և մեթոդներ](../AsErrorsFreeExecutor.md)
-
-Ստեղծում է AsErrorsFreeExecutor դասի նոր օրինակ, սկրիպտային պրոցեդուրայի կատարման ռեժիմում, երբ առաջացած սխալները չեն փոխանցվում մշակիչին, այլ պահպանվում են հաշվետվության մեջ։ 
-Создает новый экземпляр класса AsErrorsFreeExecutor, для исполнения скриптовой процедуры в режиме, когда возникавшие ошибки не передаются обработчику, а сохраняются в отчете.
+Ստեղծում է [AsErrorsFreeExecutor](../AsErrorsFreeExecutor.md) տիպի օբյեկտ։
 
 ## Շարահյուսություն
 
-```vb
-set sNewErrorsFreeExecutor = CreateErrorsFreeExecutor (sModName, sSubName, [sErrorReportingSubName As String], [bReturnsObject])
+``` vb
+Function CreateErrorsFreeExecutor(ByVal sModName As String, _
+                                  ByVal sSubName As String, _
+                         Optional ByVal sErrorReportingSubName As String, _
+                         Optional ByVal bReturnsObject As Boolean = False) As AsErrorsFreeExecutor
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sNewErrorsFreeExecutor | Պրոցեդուրան կաարողի նոր օրինակի հղում։ переменная, ссылающаяся на новый экземпляр исполнителя процедур. |
-| sModName| строковое выражение, определяющее имя модуля. |
-| sSubName| Պրոցեդուրայի անվանում։ строковое выражение, определяющее имя процедуры. |
-| sErrorReportingSubName | Սխալների մասին լրացուցիչ հաղորդագրությունների պրոցեդուրայի անվանում։   необязательное строковое выражение, определяющее имя процедуры вывода дополнительных сообщений об ошибках. |
-| bReturnsObject| Սահմանում է [Run](../AsErrorsFreeExecutor/Run_Err.html) և [RunEx](../AsErrorsFreeExecutor/RunEx_Err.html) մեթոդների վերադարձող արժեքների տիպերը։ True արժեքի դեպքում, տվյալ մեթոդների վերադարձող արժեքները կլինեն հղումներ օբյեկտի օրինակի վրա, հակառակ դեպքում՝ չեն լինի։ Լռությամբ արժեքը False։ необязательное логическое выражение, определяющее тип возвращаемых значений методов [Run](../AsErrorsFreeExecutor/Run_Err.html) и [RunEx](../AsErrorsFreeExecutor/RunEx_Err.html). Если значение данного параметра будет равно True, то возвращаемые значения этих методов будут ссылками на экземпляр объекта, в противном случае - не будут. По умолчанию принимает значение False. |
-
+| sModName | Ֆունկցիան պարունակող մոդուլի անունը։ |
+| sSubName | Ֆունկցիայի անունը, որը աշխատացվելու է։ |
+| sErrorReportingSubName | Սխալի առաջացման դեպքում աշխատող ֆունկցիան, որում գրանցվում են լրացուցիչ հաղորդագրություններ։ |
+| bReturnsObject | Հարկավոր է տալ `True` արժեք, եթե `sSubName` տրված ֆունկցիան վերադրաձնում է որևէ օբյեկտ։ |
 
 ## Նկատառումներ
 
