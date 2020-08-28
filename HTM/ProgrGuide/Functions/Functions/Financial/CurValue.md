@@ -12,7 +12,7 @@ title: "CurValue ֆունկցիա"
 
 ## Շարահյուսություն
 
-```as4x
+``` vb
 Function CurValue(ByVal codCurrency As String, _
                   ByVal curDate As Date, _
          Optional ByVal maxCreationDate As Variant) As String
