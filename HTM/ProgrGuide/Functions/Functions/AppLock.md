@@ -1,18 +1,28 @@
 ---
 layout: page
-title: "AppLock մեթոդ"
+title: "AppLock ֆունկցիա"
 ---
 
-## AppLock մեթոդ
+[msdn sp_getapplock]: https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-getapplock-transact-sql
 
-Արգելափակում է ռոսուրսը/միջոցը կիրառման(հավելվածի) մակարդակում։ Եթե արգելափակումը չի ստացվում, գեներացվում է սխալ։
-Блокирует ресурс на уровне приложения. Если блокировка не удалась, генерируется ошибка.
+## AppLock ֆունկցիա
 
+Ստեղծում է SQL Արգելափակում (lock) տրված անունով ռոսուրսի վրա ծրագրի մակարդակում։  
+Եթե արգելափակումը չի ստացվում ստեղծել, ապա առաջանում է սխալ։ 
+
+Նախատեսված է զուգահեռ նույն ռեսուրսի հետ աշխատանքը սահմանափակելու համար։
+
+Արգելափակման համար օգտագործվում է [sp_getapplock][msdn sp_getapplock] պրոցեդուրան։
 
 ## Շարահյուսություն
 
-```vb
-AppLock (sResourceName, sErrorMsg)
+``` vb
+Public Sub AppLock(ByVal Resource As String, _
+          Optional ByVal ErrorMsq As String, _
+          Optional ByVal Mode As String = "Exclusive", _
+          Optional ByVal Owner As String = "Transaction", _
+          Optional ByVal Timeout As Long = 0, _
+          Optional ByVal DbPrincipal As String = "public")
 ```
 
 Բաղադրիչներն են՝
@@ -20,9 +30,12 @@ AppLock (sResourceName, sErrorMsg)
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sResourceName | Ռեսուրսի/միջոցի ներքին անուն։ строковое выражение, определяющее идентификатор ресурса. |
-| sErrorMsg | Չստացված արգելափակման ժամանակ սահմանում է սխալի տեքստը։ Եթե պարամետրի արժեքը դատարկ տող է, ապա գեներացվում է ստանդարտ սխալ։ строковое выражение, определяющее текст ошибки на случай неудавшийся блокировки. Если значением параметра является пустая строка, тогда генерируерся стандартная ошибка. |
-
+| Resource | Ռեսուրսի ներքին անուն՝ [տե՛ս @Resource][msdn sp_getapplock]։ |
+| ErrorMsq | Արգելափակման տեղադրում չստացվելու դեպքում առաջացող սխալի տեքստը։ Եթե պարամետրի արժեքը դատարկ տող է, ապա առաջանում է ստանդարտ տեքստով սխալ։ |
+| Mode | Արգելափակման տեղադրման եղանակ՝ [տե՛ս @LockMode][msdn sp_getapplock]։ |
+| Owner | Արգելափակման տեղադրման սեփականատեր՝ [տե՛ս @LockOwner][msdn sp_getapplock]։ |
+| Timeout | Արգելափակման տեղադրման փոձի առավելագույն ժամանակ՝ [տե՛ս @LockTimeout][msdn sp_getapplock]։ |
+| DbPrincipal | Տվյալների պահոցում իրավասություն ունեցող կողմ՝ [տե՛ս @DbPrincipal][msdn sp_getapplock]։ |
 
 ## Նկատառումներ
 
