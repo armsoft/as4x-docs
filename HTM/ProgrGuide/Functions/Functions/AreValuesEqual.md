@@ -3,7 +3,7 @@ layout: page
 title: "AreValuesEqual ֆունկցիա"
 ---
     
-## AreValuesEqual ֆունկցիա
+# AreValuesEqual ֆունկցիա
 
 Ստուգում է արժեքների հավասարությունը։
 
