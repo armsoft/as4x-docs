@@ -3,32 +3,35 @@ layout: page
 title: "ExecuteQuery ֆունկցիա"
 ---
 
-## ExecuteQuery ֆունկցիա
+# ExecuteQuery ֆունկցիա
 
-Կատարում է SQL հարցում և վերադարձնում հարցման կատարման արդյունքը նշված պարամետրի ժամանակ։ 
+> ՀՆԱՑԱԾ։ Հարկավոր է օգտագործել հարցման աշխատացման նոր գործիքները։ Տե՛ս [AsQuery](../AsQuery.md) կամ [dbc.ExecuteNonQuery](AsDbc/ExecuteNonQuery.md), [dbc.ExecuteReader](AsDbc/ExecuteReader.md), [dbc.ExecuteScalar](AsDbc/ExecuteScalar.md), [dbc.OpenDataTable](AsDbc/OpenDataTable.md)։
 
-Выполняет SQL-запрос и возвращает результат выполнения запроса при заданном параметре.
+Կատարում է SQL հարցում և վերադարձնում հարցման կատարման արդյունքը։ 
 
 ## Շարահյուսություն
 
 ```vb
-Set rs = Util.ExecuteQuery(sSQL, returnRS, [RSType], [RSLockType], [RSOption], [QueryTimeout])
+Function Util.ExecuteQuery(ByVal sSQL As String, _
+                           ByVal returnRS As Boolean, _
+                  Optional ByVal RSType As Integer = rdOpenForwardOnly, _
+                  Optional ByVal RSLockType As Integer = rdConcurReadOnly, _
+                  Optional ByVal RSOption As Integer = rdExecDirect, _
+                  Optional ByVal QueryTimeout As Variant) As RdoResultset
 ```
 
 Բաղադրիչներն են՝ 
     
 | Պարամետր | Նկարագրություն |
 |--|--|
-| rs | rdoResultset տիպ։ переменная типа rdoResultset. |
-| sSQL | Սահմանում է հարցման տեքստը։ строковое выражение, определяющее текст запроса. |
-| returnRS | հարցման արդյունքի վերադարձի նշան։ логическое выражение, определяющее признак возвращения результата запроса. |
-| RSType | Վերադարձող արդյունքի նշորդի տիպը։ Լռությամբ ստանում է [ASOpenForwardOnly](../../Constants/const_opencursor_cursortype.md) արժեքը։ необязательное числовое выражение, определяющее тип курсора возвращаемого результата. По умолчанию принимает значение [ASOpenForwardOnly](../../Constants/const_opencursor_cursortype.md). |
-| RSLockType | Տվյալների արգելափակման տիպը, որը կիրառվում է հարցման կատարման ընթացքում։ Լռությամբ ստանում է [ASConcurReadOnly](../../Constants/const_opencursor_locktype.md) արժեքը։ необязательное числовое выражение, определяющее тип блокировки данных, используемых при выполнении запроса. По умолчанию принимает значение [ASConcurReadOnly](../../Constants/const_opencursor_locktype.md). |
-| RSOption | SQL հարցման կատարման լրացուցիչ պարամետրեր։ Լռությամբ ստանում է [ASExecDirect](../../Constants/const_executequery_options.md) արժեքը։ необязательное числовое выражение, определяющее дополнительные параметры выполнения SQL-запроса. По умолчанию принимает значение [ASExecDirect](../../Constants/const_executequery_options.md). |
-| QueryTimeout | Սահմանում է հարցման կատարման առավելագույն ժամանակահատվածը, որի լրանալուց առաջանում է սխալ։ Չափվում է վայրկյաններով։ Լռությամբ արժեքը 30 վայրկյան է։  необязательное числовое выражение, определяющее максимальное время выполнения запроса, по истечению которого выдается ошибка. Измеряется в секундах. По умолчанию принимает значение 30 секунд. |
-
+| sSQL | Հարցման տեքստը։ |
+| returnRS | Հարցման արդյունքի վերադարձի նշան։ եթե հարցումը վերադարձնում է աղյուսակային տվյալներ, ապա տրվում է `True`, հակառակ դեպքում՝ `False`։ |
+| RSType | Վերադարձող արդյունքի նշորդի տիպը։ Լռությամբ ստանում է [ASOpenForwardOnly](../../Constants/const_opencursor_cursortype.md) արժեքը։ |
+| RSLockType | Տվյալների արգելափակման տիպը, որը կիրառվում է հարցման կատարման ընթացքում։ Լռությամբ ստանում է [ASConcurReadOnly](../../Constants/const_opencursor_locktype.md) արժեքը։  |
+| RSOption | Հարցման կատարման լրացուցիչ պարամետրեր։ Լռությամբ ստանում է [ASExecDirect](../../Constants/const_executequery_options.md) արժեքը։  |
+| QueryTimeout | Սահմանում է հարցման կատարման առավելագույն ժամանակահատվածը, որի լրանալուց առաջանում է սխալ։ Չափվում է վայրկյաններով։ Լռությամբ գործում է `QUERYTIMEOUT` պարամետրի արժեքը։ |
 
 ## Նկատառումներ
 
-Տվյալ ֆունկցիայի օգտագործումը արդեն հնեցված է։ [Տես նաև](../AsQuery.html)
-Применение данной функции уже устарела: [См. также](../AsQuery.html)
+[Տես նաև](../AsQuery.md)
+
