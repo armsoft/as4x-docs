@@ -3,31 +3,25 @@ layout: page
 title: "GetTemplateGroupInfo ֆունկցիա"
 ---
 
-## GetTemplateGroupInfo ֆունկցիա
+# GetTemplateGroupInfo ֆունկցիա
 
-Վերադարձնում է ձևաչափի և տվյալների խումբերը, որոնք փոխանցվում են ձևաչափին։
-
-Վերադարձվող արժեքը `Dictionary` տիպի է։
-Возврашает группу шаблона и группу данных, передаваемых шаблону.
-
-
-Возврашаемое значение типа <em>Dictionary</em>.
-
+Վերադարձնում է տպվող ձևանմուշի տվյալների խմբերը, որոնք օգտագործվում են լրացման ժամանակ։
 
 ## Շարահյուսություն
 
-```vb
-GetTemplateGroupInfo (TemplateName, TemplateType, [ByRef TemplateGroup])
+``` vb
+Function GetTemplateGroupInfo(ByVal TemplateName As String, _
+                              ByVal TemplateType As String, _
+                     Optional ByRef TemplateGroup As String) As Dictionary
 ```
 
 Բաղադրիչներն են՝
-
     
 | Պարամետր | Նկարագրություն |
 |--|--|
-|TemplateName | TEMPLATE ձևանմուշի անվանում։ Обязательное строковое выражение, определяющее имя шаблона TEMPLATE |
-|TemplateType | Ձևանմուշի [տիպը](../../TemplateTypes.html)։ Обязательное численное выражение, определяющее [тип](../../TemplateTypes.html) шаблона |
-|TemplateGroup | Սահմանում է ձևանմուշի խումբը։ Необязательная ссылочная переменная строкового типа, определяющая группу шаблона |
+| TemplateName | Տպվող ձևանմուշի կոդ։ |
+| TemplateType | Տպվող ձևանմուշի [տիպը](../../TemplateTypes.html)։ |
+| TemplateGroup | Վերադարձնում է ձևանմուշի խումբը։ |
 
 ## Նկատառումներ
 
