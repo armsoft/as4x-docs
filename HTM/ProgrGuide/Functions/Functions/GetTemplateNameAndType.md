@@ -3,41 +3,42 @@ layout: page
 title: "GetTemplateNameAndType ֆունկցիա"
 ---
     
-## GetTemplateNameAndType ֆունկցիա
+# GetTemplateNameAndType ֆունկցիա
 
-Ձևաչափի տողից վերադարձնում է ձևանմուշի անվանումը և տիպը։ 
+Տպվող ձևանմուշի միավորված կոդ և տիպը բաժանում է և վերադարձնում։
 
-Վերադարձվող արժեքը տրամաբանական։ 
-Возвращает имя и тип шаблона из строки формата. 
-
-Возвращаемый тип значения логическое.
-
-    
+Վերադարձնում է `True`, եթե բաժանումը հնարավոր է։
 
 ## Շարահյուսություն
 
-```vb
-GetTemplateNameAndType(templateNameWithType, [templateName],  [templateType],  [backSlash])
+``` vb
+Function GetTemplateNameAndType(ByVal templateNameWithType As String, _
+                       Optional ByRef templateName As String, _
+                       Optional ByRef templateType As String, _
+                       Optional ByVal backSlash As Boolean = True) As Boolean
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| templateNameWithType | Սահմանում է ձևաչափի տողը։ обязательное строковое выражение, определяющее строку формата. |
-| templateName | Վերադարձվող ձևանմուշի անվանումը։ необязательное строковое выражение, определяющее имя возвращаемого шаблона. |
-| templateType | Սահմանում է վերադարձվող ձևանմուշի տիպը։ необязательное строковое выражение, определяющее тип возвращаемого шаблона. |
-| backSlash | `templateNameWithType` ձևաչափի տողի  մեջ սահմանում է ձևանմուշի անվանման և տիպի միջև բաժանարար։ необязательное логическое выражение, определяющее разделитель между именем шаблона и его типом в строке формата <em> templateNameWithType". По умолчанию принимает значение True. |
+| templateNameWithType | Տպվող ձևանմուշի միավորված կոդ և տիպը։ |
+| templateName | Վերադարձվող ձևանմուշի կոդը։ |
+| templateType | Վերադարձվող ձևանմուշի կոդը։ |
+| backSlash | `True` արժեքի դեպքում բաժանումը կատարվում է ըստ `"\"` նիշի, իսկ `False` արժեքի դեպքում ըստ `"/"` նիշի։ |
 
+``` vb
+Dim templateName As String, templateType As String
+
+GetTemplateNameAndType("MemOrd\2", templateName, templateType)
+' templateName -> "MemOrd"
+' templateType -> "2"
+
+GetTemplateNameAndType("MemOrd/2", templateName, templateType, False)
+' templateName -> "MemOrd"
+' templateType -> "2"
+```
 
 ## Նկառատումներ
 
-`templateNameWithType` ձևաչափի տողը ունի հետևյալ տեսքը ՝= [Ձևանմուշի անվանում+բաժանարար('&#39; կամ '/')+Ձևանմուշի տիպ], որտեղ բաժանարարը ('&#39; կամ '/') սահմանվում է համաձայն backSlash պարամետրի։ Եթե backSlash = True, ապա բաժանարարը = '&#39;, հակառակ դեպքում՝ = '/'.։
-
-
-Строка формата <em>templateNameWithType </em>имеет следующий вид = [ИмяШаблона+Разделитель(&#39;\&#39; или &#39;/&#39;)+ТипШаблона], где разделитель (&#39;\&#39; или &#39;/&#39;) определяется согласно параметру backSlash: Елси backSlash = True, то разделитель = &#39;\&#39;, в противном случае разделитель = &#39;/&#39;.
-
-
 [Տես նաև](../../functions.html)
-
