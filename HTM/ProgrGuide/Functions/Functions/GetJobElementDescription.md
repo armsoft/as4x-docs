@@ -3,29 +3,21 @@ layout: page
 title: "GetJobElementDescription ֆունկցիա"
 ---
     
-## GetJobElementDescription ֆունկցիա
+# GetJobElementDescription ֆունկցիա
 
-Վերադարձնում է առաջադրանքի կարճ նկարագրությունը։
-
-Վերադարձվող արժեքը տողային է։
-
-Возвращает краткое описание задания.<br>
-<br>
-Возвращаемое значение строковое.
-
+Վերադարձնում է առաջադրանքի տարրի մանրամասն նկարագրությունը։
 
 ## Շարահյուսություն
 
-```vb
-GetJobElementDescription(sJobElementName)
+``` vb
+Function GetJobElementDescription(ByVal sJobElementName As String) As String
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sJobElementName  | Առաջադրանքի ներքին անուն։ строковое выражение, определяющее идентификатор задания |
-
+| sJobElementName  | Առաջադրանքի տարրի ներքին անունը։ |
 
 ## Նկատառումներ
 
