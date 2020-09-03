@@ -3,34 +3,23 @@ layout: page
 title: "GetTemplateExtension ֆունկցիա"
 ---
     
-## GetTemplateExtension ֆունկցիա
+# GetTemplateExtension ֆունկցիա
 
+Վերադարձնում է ընդլայնումը ֆայլի ընդլայնումը ըստ [ձևանմուշի տիպի](../../TemplateTypes.html)։
 
-Վերադարձնում է ընդլայնումը ըստ տիպի։
-
-Վերադարձվող ատժեքը տող է։ 
-Возвращает расширение по типу.
-
-Возвращаемое значение строка.
-
-    
 ## Շարահյուսություն
 
-```vb
-GetTemplateExtension(sTemplateType)
+``` vb
+Function GetTemplateExtension(ByVal sTemplateType As String) As String
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sTemplateType | Ձևանմուշի տիպ։ обязательное строковое выражение, определяющее тип шаблона. |
+| sTemplateType | Ձևանմուշի տիպը։ |
 
-
-
-## Կարգաբերումներ
-
+## Արժեքներ
 
 | Ձևանմուշի տիպ | Ընդլայնում ըստ տիպի |
 |--|--|
@@ -41,13 +30,13 @@ GetTemplateExtension(sTemplateType)
 | "4" | ".pdf" |
 | "5" | ".odt" |
 | "6" | ".ods" |
+| "7" | ".htm" |
 | "8" | ".xlsx" |
 | "9" | ".txt" |
-
-
+| "A" | ".htm" |
+| "B" | ".htm" |
 
 ## Նկատառումներ
-
 
 [Տես նաև](../../functions.html)
 
