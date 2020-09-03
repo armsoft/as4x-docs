@@ -3,26 +3,26 @@ layout: page
 title: "ExportAgrToExcel մեթոդ"
 ---
 
-## ExportAgrToExcel մեթոդ
+# ExportAgrToExcel մեթոդ
+
+Այս մեթոդը տրված դիտելու ձևը արտահանում է Excel-ի մեջ, առանց դիտելու ձևը էկրանին ցույց տալու։ 
 
 
-Այս մեթոդը տրված դիտելու ձևը արտահանում է Excel-ի մեջ։ 
-Данный метод экспортирует заданный вид просмотра в Excel.
 
 ## Շարահյուսություն
 
-```vb
-ExportAgrToExcel (viewObject)
+``` vb
+Sub ExportAgrToExcel(ByVal viewObject As AsView)
 ```
-Բաղադրիչներն են՝
 
+Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| viewObject | Դիտելու ձևի օրինակի հղում։ обязательное выражение, являющееся ссылкой на экземпляр объекта вида просмотра |
-
+| viewObject | Դիտելու ձևի օբյեկտ։ |
 
 ## Նկատառումներ
 
-[Տես նաև](../../functions.html)
+Տե՛ս [ApplyDialogExtension](InterfaceManagment/ApplyDialogExtension.md)
 
+[Տես նաև](../../functions.html)
