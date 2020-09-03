@@ -20,12 +20,9 @@ Sub Util.ImportFromDir(ByVal sFolderName As String, _
               Optional ByVal sDocList As String, _
               Optional ByVal sTreeList As String, _
               Optional ByVal sParamList As String)
-
-Util.ImportFromDir sFolderName, sMoveToFolderName, sErrDocsFolder, sLogFileName, [sFileMask], [nErrCount],  [nFileCount],[sDocList], [sTreeList], [sParamList]
 ```
 
 Բաղադրիչներն են՝
-
 
 | Պարամետր | Նկարագրություն |
 |--|--|
