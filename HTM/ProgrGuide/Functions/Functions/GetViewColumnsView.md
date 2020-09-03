@@ -18,7 +18,7 @@ Function GetViewColumnsView(ByVal viewName As String, ByVal excludeColumns As St
 | Պարամետր | Նկարագրություն |
 |--|--|
 | viewName | Դիտելու ձևի ներքին անունը։ |
-| excludeColumns | Բացառված սյունակների ցուցակը ստորակետով տարանջատված։ |
+| excludeColumns | Բացառվող սյունակների ցուցակը ստորակետով տարանջատված։ |
 
 ## Նկատառումներ
 
