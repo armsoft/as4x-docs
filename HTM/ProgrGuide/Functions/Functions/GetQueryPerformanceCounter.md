@@ -3,20 +3,20 @@ layout: page
 title: "GetQueryPerformanceCounter ֆունկցիա"
 ---
 
-## GetQueryPerformanceCounter ֆունկցիա
-
-
-[Տես նաև](../../functions.html)
-[Օրինակ](../../Examples/E_GetQueryPerformance.md) [Կիրառվում է](../../functions.html)
-
+# GetQueryPerformanceCounter ֆունկցիա
 
 Վերադարձնում է ժամացույցի զարկերի քանակը համակարգի աշխատանքը սկսելու պահից։ 
 
-Возвращает количество тиков часов с момента запуска системы.
-
+Նախատեսված է մեծ ճշտությամբ չափումների համար։
 
 ## Շարահյուսություն
 
-```vb
-Возвращает количество тиков часов с момента запуска системы.
+``` vb
+Function GetQueryPerformanceCounter() As Currency
 ```
+
+## Նկատառումներ
+
+[Օրինակ](../../Examples/E_GetQueryPerformance.md)
+
+Տես նաև [GetQueryPerformanceFrequency](GetQueryPerformanceFrequency.md)
