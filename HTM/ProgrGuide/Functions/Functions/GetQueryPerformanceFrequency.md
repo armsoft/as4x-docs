@@ -3,17 +3,20 @@ layout: page
 title: "GetQueryPerformanceFrequency ֆունկցիա"
 ---
 
-## GetQueryPerformanceFrequency ֆունկցիա
+# GetQueryPerformanceFrequency ֆունկցիա
 
-[Տես նաև](../../functions.html)
-[Օրինակ](../../Examples/E_GetQueryPerformance.md) [Կիրառվում է](../../functions.html)
+Վերադարձնում է ժամացույցի զարկերի քանակը վայրկյանում։
 
-
-Վերադարձնում է ժամացույցի զարկերի քանակը վայրկյաններով։
-Возвращает число тиков часов в секунду. 
+Նախատեսված է մեծ ճշտությամբ չափումների համար։
 
 ## Շարահյուսություն
 
-```vb
-GetQueryPerformanceFrequency
+``` vb
+Function GetQueryPerformanceFrequency() As Currency
 ```
+
+## Նկատառումներ
+
+[Օրինակ](../../Examples/E_GetQueryPerformance.md)
+
+Տես նաև [GetQueryPerformanceCounter](GetQueryPerformanceCounter.md)
