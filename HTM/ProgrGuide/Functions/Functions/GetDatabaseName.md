@@ -3,14 +3,12 @@ layout: page
 title: "GetDatabaseName ֆունկցիա"
 ---
 
-## GetDatabaseName ֆունկցիա
+# GetDatabaseName ֆունկցիա
 
 Վերադարձնում է տվյալների պահոցի անվանումը։
-Возвращает имя базы данных.
-
 
 ## Շարահյուսություն
 
-```vb
-Util.GetDatabaseName
+``` vb
+Function Util.GetDatabaseName() As String
 ```
