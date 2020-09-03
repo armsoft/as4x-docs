@@ -1,18 +1,23 @@
 ---
 layout: page
-title: "GetFullNameOfTempFile ֆունկցիա"
+title: "GetFullNameOfTmpFile ֆունկցիա"
 ---
 
+# GetFullNameOfTmpFile ֆունկցիա
 
-## GetFullNameOfTempFile ֆունկցիա
+Ձևավորում է եզակի ֆայլի անուն ժամանակավոր ֆայլերի թղթապանակում և վերադարձնում ամբողջական ճանապարհը։
 
-Վերադարձնում է տող, որը գործող համակարգի ժամանակավոր ֆայլերի հավաքածուի մեջ պարունակում է եզակի ֆայլի ամբողջական բարդ անվանումը։
-
-Возвращает строку содержащую полное составное имя уникального файла в каталоге временных файлов операционной системы.
-
+Վերադարձվող արժեքը միշտ վերջանում է `vbNullChar` նիշով։
 
 ## Շարահյուսություն
 
-```vb
-Util.GetFullNameOfTempFile
+``` vb
+Function Util.GetFullNameOfTmpFile() As String
+```
+
+## Օրինակ
+
+``` vb
+' ֆայլի անունը որոշվել է եղազկիորեն՝  "C:\Users\USERNAME\AppData\Local\Temp\AS-BANK\As8007.tmp" & vbNullChar
+Debug.Print Util.GetFullNameOfTmpFile()
 ```
