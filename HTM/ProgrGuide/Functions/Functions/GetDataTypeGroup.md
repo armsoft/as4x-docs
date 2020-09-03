@@ -3,47 +3,32 @@ layout: page
 title: "GetDataTypeGroup ֆունկցիա"
 ---
     
-## GetDataTypeGroup ֆունկցիա
+# GetDataTypeGroup ֆունկցիա
 
-Վերադարձնում է նշված տվյալների պահոցի խումբը։
-
-Возвращает группу заданного типа данных.
-
+Վերադարձնում է [համակարգային տիպի](../../types.md) պահոցի խումբը։
 
 ## Շարահյուսություն
 
-```vb
-GetDataTypeGroup (sDataType)
+``` vb
+Function GetDataTypeGroup(ByVal sAsType As String) As DataTypeGroup
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sDataType | обязательное строковое выражение, оределяющее внутенный тип данных. |
-
-
+| sAsType | [Համակարգային տիպը](../../types.md) |
 
 ## Նկատառումներ
 
-Օրինակ, եթե sDataType-ը հավասար է `NP`-ին , `N`,-ին `SUMMA`-ին կամ `SUMMAP`-ին, ապա վերադարձվող արժեքը հավասար կլինի `Numeric`-ին, քանի որ նշանակված տվյալների տիպերը պատկանում են `Numeric` խմբին։ sDataType-ի  `BOOLEAN`-ին հավասար լինելու դեպքում վերադարձվող արժեքը կլինի `Logical`-ը և այլն։ շ
-
-Например, если sDataType равно `NP` , `N`, `SUMMA` или `SUMMAP`, то возвращаемое значение будет равно `Numeric`, поскольку заданные типы данных принадлежат группе `Numeric`. При sDataType равное `BOOLEAN`, возвращаемое значение будет `Logical` и т.д.
-
-
-Տվյալների ներքին տիպերի խմբեր
-
-        
-| Տվյալի տիպ  | Խումբ |
+| Համակարգային տիպ | Խումբ |
 |--|--|
-| `NP`, `N`, `SUMMA`, `SUMMAP` | `Numeric` |
-| `NUMPAIR` | `NumericPair` |
-| `C`, `CH`, `FOLDER`, `FULLTREE`, `TREE`, `AMACC` | `Charset` |
-| `BOOLEAN` | `Logical` |
-| `DATE`, `DATELONG`, `DATEREP` | `DateType` |
-| `TIME`, `TIMELONG` | `TimeType` |
-| `PATH`, `FILE` | `PathType` |
-
+| NP, N, SUMMA, SUMMAP | `DataTypeGroup.Numeric` |
+| NUMPAIR | `DataTypeGroup.NumericPair` |
+| C, CH, FOLDER, FULLTREE, TREE, AMACC | `DataTypeGroup.Charset` |
+| BOOLEAN | `DataTypeGroup.Logical` |
+| DATE, DATELONG, DATEREP | `DataTypeGroup.DateType` |
+| TIME, TIMELONG | `DataTypeGroup.TimeType` |
+| PATH, FILE | `DataTypeGroup.PathType` |
 
 [Տես նաև](../../functions.html)
