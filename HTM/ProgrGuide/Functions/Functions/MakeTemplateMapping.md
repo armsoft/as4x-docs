@@ -3,28 +3,30 @@ layout: page
 title: "MakeTemplateMapping մեթոդ"
 ---
     
-## MakeTemplateMapping մեթոդ
+# MakeTemplateMapping մեթոդ
 
-Ստեղծում կամ թարմացնում է փաստաթղթի տպելու ձևի ձևաչափի ցուցադրումը։
-
-Создает или обновляет отображение шаблона формы печати документа.
+Ստեղծում կամ թարմացնում է տպելու ձևանմուշի ակտիվացման բանաձևը և տպվող խմբերը տրված փաստաթղթի տիպի համար։
 
 ## Շարահյուսություն
 
 ```vb
 MakeTemplateMapping templateName, templateType, docType, accessExp, dataGroups
+Sub MakeTemplateMapping(ByVal sTemplateName As String, _
+                        ByVal sTemplateType As String, _
+                        ByVal docType As String, _
+                        ByVal accessExp As String, _
+               Optional ByVal DataGroups As String = "")
 ```
 
 Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| templateName | Ձևանմուշի անվանումը։ строковое выражение, определяющее имя шаблона |
-| templateType | [Տպելու ձևի ձևանմուշ](../../TemplateTypes.html): строковое выражение, определяющее 	[тип шаблона печати](../../TemplateTypes.html) |
-| docType | Փաստաթղթի տիպը։ строковое выражение, определяющее тип документа |
-| accessExp | Փաստաթղթի տպելու ձևի ձևանմուշի ակտիվացման բանաձև։ строковое выражение, определяющее формулу активации шаблона печати документа |
-| dataGroups | Սահմանում է DataGroup ցանկը, որոնցից էլ կախված է ձևանմուշը։ ноебязательное строковое выражение, определяющее список DataGroup, от которых зависит шаблон |
-
+| sTemplateName | Տպվող ձևանմուշի կոդ։ |
+| sTemplateType | Տպվող ձևանմուշի տիպ։ |
+| docType | Փաստաթղթի տիպը։ |
+| accessExp | Փաստաթղթի տպելու ձևանմուշի ակտիվացման բանաձև։ |
+| dataGroups | Տպման ժամանակ հաշվարկվող խմբերը։ |
 
 ## Նկատառումներ 
 
