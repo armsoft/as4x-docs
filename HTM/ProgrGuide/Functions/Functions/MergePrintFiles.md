@@ -3,29 +3,28 @@ layout: page
 title: "MergePrintFiles մեթոդ"
 ---
 
-## MergePrintFiles մեթոդ
-
+# MergePrintFiles մեթոդ
 
 Երկու տպելու ֆայլեր միավորում է մեկի մեջ։ 
-Объединяет два файла печати в один.
 
 ## Շարահյուսություն
 
-```vb
-MergePrintFiles sTargetFile, sSourceFile, sTemplateType, bInsertBreak
+``` vb
+Sub MergePrintFiles(ByVal sTargetFile As String, _
+                    ByVal sSourceFile As String, _
+                    ByVal sTemplateType As String, _
+                    ByVal bInsertBreak As Boolean)
 ```
-Բաղադրիչներն են՝
 
+Բաղադրիչներն են՝
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| sTargetFile | Նպատակային ֆայլի ուղին/ճանապարհը, որին կավելանա պահանջվող ֆայլը։ строковое выражение, определяющее путь целевого файла к которому будет добавлен исходный файл |
-| sSourceFile | պահանջվող ֆայլի ուղին/ճանապարհը, որը կավելանա նպատակայինի մջ։ строковое выражение, определяющее путь исходного файла который будет добавлен в целевой |
-| sTemplateType | [Տպելու ձևի ձևանմուշի տիպ](../../TemplateTypes.html)։ строковое выражение, определяющее 	[тип шаблонов печати](../../TemplateTypes.html) |
-| bInsertBreak | Երկու ֆայլերի բովանդակությանն միջև սահմանում է break-ի նշան։ логическое выражение, определяющее признак добавления break-а между содежимимы двух файлов |
-
+| sTargetFile | Առաջին ֆայլի ճանապարհը, որին կավելանա երկրորդ ֆայլը։ |
+| sSourceFile | Երկրորդ ֆայլի ճանապարհը, որը կավելանա առաջինի վերջում։ |
+| sTemplateType | [Տպելու ձևանմուշի տիպ](../../TemplateTypes.html)։ |
+| bInsertBreak | Երկու ֆայլերի պարունակությունների միջև սահմանում է break-ի նշան։ |
 
 ## Նկատառումներ
 
 [Տես նաև](../../functions.html)
-
