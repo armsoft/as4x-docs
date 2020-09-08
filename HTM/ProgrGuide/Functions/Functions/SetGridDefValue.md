@@ -1,31 +1,35 @@
 ---
 layout: page
-title: "SetGridDefValue մեթոդ"
+title: "SetGridDefValue ֆունկցիա"
 ---
 
-## SetGridDefValue մեթոդ
+# SetGridDefValue ֆունկցիա
 
-
-Լռությամբ սահմանում է արժեքներ ընթացիկ փաստաթղթի աղյուսակի սյունակների համար։
-Задает значения по умoлчанию колонкам заданных грид-таблиц текущего документа.
+Փաստաթղթի աղյուսակների նշված սյունակների մեջ լրացնում է լռությամբ արժեքները։
 
 ## Շարահյուսություն
 
-```vb
-SetGridDefValue(docCurrent, dicGrid)
+``` vb
+Sub SetGridDefValue(ByVal docCurrent As AsDoc, ByVal dicGrid As Dictionary)
 ```
 
 Բաղադրիչներն են՝
 
-
 | Պարամետր | Նկարագրություն |
 |--|--|
-| docCurrent | Ընթացիկ փաստաթղթի հղում։ Обязательная переменная, ссылающаяся на текущий документ. </p> |
-| dicGrid | Dictionary տիպի արտահայտություն, որի բանալիներն են համարվում փաստաթղթի աղյուսակների անունները։ Обязательное выражение типа Dictionary, ключами которого являются имена грид-таблиц документа. |
+| docCurrent | Փաստաթղթի հղում։ |
+| dicGrid | Dictionary-ի մեջ լռացված աղյուսակները և դրա սյունակները։ Բանալիներն են փաստաթղթի աղյուսակների անունները։ Արժեքներն են սյունակների ցանկը բացակով տարանջատված։ |
 
+## Օրինակ
 
+``` vb
+Set dicGrid = New Dictionary
+With dicGrid
+    .Add("SUBSUMS", "SUMMA NOCRGSUM BCID OPERTYPE")
+End With
+SetGridDefValue(Doc, dicGrid)
+```
 
 ## Նկատառումներ
-
 
 [Տես նաև](../../functions.html)
