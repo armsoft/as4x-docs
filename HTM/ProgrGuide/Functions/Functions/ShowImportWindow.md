@@ -13,8 +13,8 @@ title: "ShowImportWindow ֆունկցիա"
 
 ``` vb
 Sub Util.ShowImportWindow(Optional ByVal sDocList As String, _
-                            Optional ByVal sTreeList As String, _
-                            Optional ByVal sParamList As String)
+                          Optional ByVal sTreeList As String, _
+                          Optional ByVal sParamList As String)
 ```
 
 Բաղադրիչներն են՝
