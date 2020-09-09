@@ -1,29 +1,25 @@
 ---
 layout: page
-title: "ShowTemplateFileUsingDefaultApp մեթոդ"
+title: "ShowTemplateFileUsingDefaultApp ֆունկցիա"
 ---
 
-## ShowTemplateFileUsingDefaultApp մեթոդ
+# ShowTemplateFileUsingDefaultApp ֆունկցիա
 
-Ցույց է տալիս ձևանմուշի լրացված ֆայլը։
-Показывает заполненный файл шаблона.
-
+Ցույց է տալիս ֆայլը էկրանին։  
+Նախատեսված է լրացված տպվող ձևանմուշները էկրանին բերելու համար։
 
 ## Շարահյուսություն
 
-```vb
-ShowTemplateFileUsingDefaultApp(fileName)
+``` vb
+Sub ShowTemplateFileUsingDefaultApp(ByVal fileName As String)
 ```
 
 Բաղադրիչներն են՝
-
 
 | Պարամետր | Նկարագրություն |
 |--|--|
 | fileName | Ձևանմուշի ֆայլի անվանում։ нобязательное строковое выражение, определяющее имя файла шаблона. |
 
-
 ## Նկատառումներ
-
 
 [Տես նաև](../../functions.html)
