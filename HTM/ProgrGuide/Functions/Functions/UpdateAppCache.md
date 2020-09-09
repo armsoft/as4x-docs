@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "UpdateAppCache մեթոդ"
+title: "UpdateAppCache ֆունկցիա"
 ---
     
-# UpdateAppCache մեթոդ
+# UpdateAppCache ֆունկցիա
 
 Թարմացնում է քեշավորված տվյալները կիրառոթյունների սերվիսում։
 
