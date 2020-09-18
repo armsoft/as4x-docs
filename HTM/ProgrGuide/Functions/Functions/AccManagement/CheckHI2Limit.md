@@ -16,9 +16,9 @@ title: "CheckHI2Limit ֆունկցիա"
 
 ``` vb
 Function Util.CheckHI2Limit(ByVal TypeAcc As String, _
-                       ByVal ObjectISN As Long, _
-                       ByVal GLObjectISN As Long, _
-              Optional ByVal Increment As Currency = 0) As Boolean
+                            ByVal ObjectISN As Long, _
+                            ByVal GLObjectISN As Long, _
+                   Optional ByVal Increment As Currency = 0) As Boolean
 ```
 
 Բաղադրիչներն են՝
