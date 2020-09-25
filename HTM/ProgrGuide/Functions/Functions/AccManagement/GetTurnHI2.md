@@ -13,7 +13,8 @@ title: "GetTurnHI2 ֆունկցիա"
 Sub GetTurnHI2(ByVal Accounting As String, _
                ByVal Isn As Long, _
                ByVal IsnGl As Long, _
-               ByVal StartDate As Date, ByVal EndDate As Date, _
+               ByVal StartDate As Date, _
+               ByVal EndDate As Date, _
       Optional ByRef DbTurn, _
       Optional ByRef DbTurnAMD, _
       Optional ByRef CrTurn, _
