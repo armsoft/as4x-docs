@@ -12,11 +12,11 @@ title: "LastHI2OpDate ֆունկցիա"
 ## Շարահյուսություն
 
 ``` vb
-Public Function LastHI2OpDate(ByVal AccCode, _
+Public Function LastHI2OpDate(ByVal AccCode As Variant, _
                      Optional ByVal Isn As Long = -1, _
                      Optional ByVal IsnGl As Long = -1, _
                      Optional ByVal UpToDate As Variant, _
-                     Optional ByVal Op As String)
+                     Optional ByVal Op As String) As Variant
 ```
 
 Բաղադրիչներն են՝
@@ -42,6 +42,6 @@ Function LASTDAY()
 ReDim arr(1)
     arr(0) = "01"
     arr(1) = "02"
-    LASTDAY = LastHI2OpDate(arr, ds("fISN"))
+    LASTDAY = LastHI2OpDate(arr, DS("fISN"))
 End Function
 ```
