@@ -40,7 +40,7 @@ Sub Util.SetRem(ByVal TypeAcc As String, _
 
 ## Օրինակ
 
-Ստորև բերված է [Action](../../../ScriptProcs/Action.html) համակարգային իրադարձության մեջ `SetRem` պրոցեդուրայի օգտագործումը։ 
+Ստորև բերված է [Action](../../../ScriptProcs/Action.md) համակարգային իրադարձության մեջ `SetRem` պրոցեդուրայի օգտագործումը։ 
 
 ``` vb
 Call Util.SetRem(Doc("Accounting"), Doc("ACC"), Doc("SUMMA"), _
