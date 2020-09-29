@@ -11,11 +11,11 @@ title: "GetRem ֆունկցիա"
 
 ## Շարահյուսություն
 
-```vb
+``` vb
 Function GetRem(ByVal Accounting As String, _
                 ByVal Isn As Long, _
        Optional ByVal RemDate = "", _
-       Optional AMDRem As Variant) As Currency
+       Optional ByRef AMDRem As Variant) As Currency
 ```
 
 Բաղադրիչներն են՝
@@ -36,6 +36,6 @@ Function GetRem(ByVal Accounting As String, _
 
 Ստորև բերված է `GetRem` ֆունկցիայի օգտագործումը, որտեղ curRem և DramRem ստանում են դրամին և արտարժույթին համապատասխանող օբյեկտի մնացորդները։
 
-```vb
+``` vb
 curRem = GetRem("01", Doc.ISN, Param("EndDate"), DramRem)
 ```
