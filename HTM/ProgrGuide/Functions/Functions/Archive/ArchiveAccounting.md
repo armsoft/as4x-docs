@@ -3,7 +3,7 @@ layout: page
 title: "ArchiveAccounting ֆունկցիա"
 ---
 
-# ArchiveAccounting ֆունկցիա
+# Util.ArchiveAccounting ֆունկցիա
 
 Արխիվացնում է տվյալները [HI](../../../Database/Hi.html)  աղյուսակից, տեղափոխելով արխիվային պահոց։
 
