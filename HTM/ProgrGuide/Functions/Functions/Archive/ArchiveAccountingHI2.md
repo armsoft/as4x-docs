@@ -1,19 +1,16 @@
 ---
 layout: page
-title: "ArchiveAccountingHI2 մեթոդ"
+title: "ArchiveAccountingHI2 ֆունկցիա"
 ---
 
-## ArchiveAccountingHI2 մեթոդ
+# Util.ArchiveAccountingHI2 ֆունկցիա
 
-Արխիվացնում է [HI2 աղյուսակները](../../../Database/Hi2.html) նշված հաշվառման համար։
-
-Делает архивацию [таблицы HI2](../../../Database/Hi2.html) для данного учета.
-
+Արխիվացնում է տվյալները [HI2](../../../Database/Hi2.html)  աղյուսակից, տեղափոխելով արխիվային պահոց։
 
 ## Շարահյուսություն
 
-```vb
-Util.ArchiveAccountingHI2(Acc, ArchiveDate)
+``` vb
+Sub Util.ArchiveAccountingHi2(ByVal Acc As String, ByVal ArchiveDate As Date)
 ```
 
 Բաղադրիչներն են՝
@@ -21,9 +18,8 @@ Util.ArchiveAccountingHI2(Acc, ArchiveDate)
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| Acc | Հաշվառման կոդ։ строковое выражение, определяющее код учета. |
-| ArchiveDate | Սահմանում է ամսաթիվ, մինչև որը ներառյալ կատարվում է արխիվացումը։ выражение типа Date, определяющее дату до которого включительно происходит архивация. |
-
+| Acc | Հաշվառման կոդ։ |
+| ArchiveDate | Արխիվացման ամսաթիվ, մինչև որը ներառյալ կատարվում է արխիվացումը։ |
 
 ## Նկատառումներ
 
