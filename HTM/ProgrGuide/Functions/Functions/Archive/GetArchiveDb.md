@@ -3,17 +3,14 @@ layout: page
 title: "GetArchiveDB ֆունկցիա"
 ---
 
-## GetArchiveDB ֆունկցիա
+# Util.GetArchiveDB ֆունկցիա
 
-Վերադարձնում է տվյալների արխիվային պահոցի անվանում արժեքը։
-
-Возвращает значение имя архивной базы данных.
-
+Վերադարձնում է տվյալների արխիվային պահոցի անվանումը։
 
 ## Շարահյուսություն
 
-```vb
-Util.GetArchiveDB
+``` vb
+Function Util.GetArchiveDB() As String
 ```
 
 ## Նկատառումներ
