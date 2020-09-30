@@ -17,7 +17,7 @@ title: "AsQuery/ExecuteScalar"
 ## Շարահյուսություն
 
 ```vb
-vVariable = object.ExecuteScalar([RSType], [RSLockType], [RSOption], [QueryTimeout])
+vVariable = object.ExecuteScalar([QueryTimeout], [ConnectionType])
 ```
 
 Բաղադրիչներն են՝
