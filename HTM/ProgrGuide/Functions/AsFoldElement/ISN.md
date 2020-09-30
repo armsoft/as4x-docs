@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/ISN"
+title: "AsFoldElement/ISN"
 ---
 
 

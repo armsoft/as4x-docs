@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/Com"
+title: "AsFoldElement/Com"
 ---
 
 

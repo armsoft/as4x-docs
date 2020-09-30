@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/ECom"
+title: "AsFoldElement/ECom"
 ---
 
 
