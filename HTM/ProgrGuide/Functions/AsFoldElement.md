@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement"
+title: "AsFoldElement"
 ---
 
 # Թղթապանակի տարրի օբյեկտ

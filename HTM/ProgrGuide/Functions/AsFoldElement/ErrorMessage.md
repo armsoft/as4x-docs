@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/ErrorMessage"
+title: "AsFoldElement/ErrorMessage"
 ---
 
 

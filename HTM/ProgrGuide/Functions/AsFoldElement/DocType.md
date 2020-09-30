@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/DocType"
+title: "AsFoldElement/DocType"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/Status"
+title: "AsFoldElement/Status"
 ---
 
 
