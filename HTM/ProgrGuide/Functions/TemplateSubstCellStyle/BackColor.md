@@ -3,16 +3,13 @@ layout: page
 title: "TemplateSubstCellStyle/BackColor"
 ---
 
-## BackColor հատկություն
+# BackColor հատկություն
 
+[Տես նաև](../TemplateSubstCellStyle.md) [Օրինակ](../../Examples/E_TemplateSubstCellStyle.md) [Կիրառվում է](../TemplateSubstCellStyle.md)
 
-[См. также](../TemplateSubstCellStyle.md) [Օրինակ](../../Examples/E_TemplateSubstCellStyle.md) [Применяется к](../TemplateSubstCellStyle.md)
+Վերադարձնում կամ նշանակում է վանդակի ֆոնի գույնը։
 
-
-Վերադարձնում կամ նշանակում է վանդակի տոնային գույնը։
-
-Возвращает или устанавливает фоновый цвет ячейки.
-
+Գույնի կոդը սկսվում է `#` նշանով և տրվում է [RGB](../../RGBColorCodes.html) գույնի տասնվեցական ձևաչափով։
 
 ## Շարահյուսություն
 
@@ -24,6 +21,5 @@ object.BackColor[= value]
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| object | [TemplateSubstCellStyle](../TemplateSubstCellStyle.md) տիպի օբյեկտի օրինակի հղում։  строковое выражение, являющееся ссылкой на экземпляр объекта типа [TemplateSubstCellStyle](../TemplateSubstCellStyle.html). |
-| value | Վանդակի տոնային գույն, որը սկսվում է `#` նշանից և ներկայացված է  [RGB](../../RGBColorCodes.html) գունային մոդելի երեք զույգ տասնվեցական համակարգի տեսքով։ строковое выражение, определяющее фоновый цвет ячейки, которое начинается с символа <strong>#</strong> и представляется в виде трех пар цифер шестнадцатеричной системы цветовой модели [RGB](../../RGBColorCodes.html). |
-
+| object | Վանդակի ձևաչափի օբյեկտ։ |
+| value | նոր արժեք։ |
