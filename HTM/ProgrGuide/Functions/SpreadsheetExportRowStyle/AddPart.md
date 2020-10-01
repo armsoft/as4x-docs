@@ -12,9 +12,9 @@ title: "SpreadsheetExportRowStyle/AddPart"
 
 ## Շարահյուսություն
 
-`` vb
+``` vb
 object.AddPart(start, type, [exportColumnIndex], [exportAsBold], [isFormatted], [trimBeforeExport], [useForWidth])
-``
+```
 
 Բաղադրիչներն են՝
 
