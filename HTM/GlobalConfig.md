@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Global Config.as"
 author: "sts"
 ---
