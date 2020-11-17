@@ -24,7 +24,6 @@ Common {
     Authentication = sAuthentication;
     UseWindowsDefaultPrinter = nUseWindowsDefaultPrinter;
     UseTestB2B = nUseTestB2B;
-    ConfigurationService = sConfigurationService;
 
     Config {
         Name = sConfigName1;
@@ -36,7 +35,6 @@ Common {
         Context = sContext1;
         StorePrnSet = sStorePrinterSetting1;
         ReadOnly = sReadonly1;
-        Service = sService1;
     };
     '.....
     Config {
@@ -49,7 +47,6 @@ Common {
         Context = sContextN;
         StorePrnSet = sStorePrinterSettingN;
         ReadOnly = sReadonlyN;
-        Service = sServiceN;
     };
 };
 ```
@@ -68,13 +65,11 @@ Common {
 | sContext | Ցույց է տալիս, թե տվյալների պահոցը, որ ծրագրինն է՝ ՀԾ-Բանկ (`ASBANK`), ՀԾ-Ձեռնարկություն (`ASENTERPRISE`), ՀԾ-Աշխատավարձ (`ASWAGES`), հին ՀԾ-Վաճառքների կառավարում (`ASMOBILETRADE`)։ <br/> ScriptEditor-ը օգտագործում է պարամետրը, որ որոշի թե `BaseFolder`-ի սկրիպտերում, որ ֆունկցիաներն են առաջարկվելու (IntelliSense)։ |
 | sStorePrinterSetting | Տպիչի կարգավորումների պահպանման տեղը Windows գրանցամատյանում։ 1 արժեքի դեպքում պահպանում է `HKEY_CURRENT_USER`-ում, 0 արժեքի դեպքում՝ `HKEY_LOCAL_MACHINE`-ում։ Լռությամբ արժեքը 0։ |
 | sReadOnly | Սահմանում է տվյալների պահոցի հետ աշխատանքի ռեժիմը։ 1 արժեքի դեպքում տվյալների պահոցի հետ միացումը իրականացվում է «միայն կարդալու» ռեժիմով, 0 արժեքի դեպքում «փոփոխելու» ռեժիմով։ Լռությամբ արժեքը 0։ «Միայն կարդալու» ռեժիմում համակարգ մուտք գործելու համար  անհրաժեշտություն չկա օգտագործողների «համաձայեցում» կատարելու անհրաժեշտություն։ Այն հարմար է կրկնօրինակված տվյալների պահոցի հետ աշխատելուց։ |
-| sService | Տվյալների բազայի սերվիսի web հասցեն։ |
 | nLanguage | Սահմանում է համակարգի մեկնարկի լեզուն։ Հնարավոր արժեքներն են՝ 1-հայերեն, 3-անգլերեն։ Լռությամբ արժեքը 1։ AS-4X ծրագրի մուտքից հետո լեզում որոշվում է օգտագործողի կարգավորումներից։ |
 | sDescription | `Common` բաժնի նկարագրություն։ |
 | sAuthentication | Օգտագործողի նույնականացման եղանակ։ `Windows` արժեքի դեպքում SQL Server-ի հետ կապը հաստատվում է Windows նույնականացմամբ։ Այլ դեպքերում SQL Server-ի նույնականացմամբ։ Համակարգի բոլոր օգտագործողները պետք է աշխատեն մեկ ընդհանուր նույնականացման եղանակով։ |
 | nUseWindowsDefaultPrinter | Սահմանում է տպիչ սարքի հետ աշխատելու կարգավիճակը։ 0 արժեքի դեպքում՝ տպիչ սարք, որի միջոցով անհրաժեշտ է տպել, հնարավոր է ընտրել ծրագրի կարգավորումներից, իսկ մնացած արժեքների դեպքում օգտագործվում է windows default տպիչ սարքը։ Լռությամբ արժեքը 0։ |
 | nUseTestB2B | Տեստային b2b սերվերի օգտագործման հայտանիշ։ 1 արժեքի դեպքում տրվում է տեստային սերվերը։ 0 արժեքի դեպքում՝ իրական սերվերը։ Լռությամբ արժեքը 0։ |
-| sConfigurationService | Կոնֆիգուրացիոն սերվիսի web հասցեն։ |
 
 
 # BaseFolder բաժին 
