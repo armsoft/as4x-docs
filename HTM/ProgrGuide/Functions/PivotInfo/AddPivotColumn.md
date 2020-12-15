@@ -5,19 +5,14 @@ title: "Pivotinfo/AddPivotColumn"
     
 # AddPivotColumn մեթոդ
 
-
 [Տես նաև](../PivotInfo.md) Օրինակ [Կիրառվում է](../PivotInfo.md)
 
-
-Փոխակերպված սյունակը ավելացնում է Excel-ի մեջ։
-
-Добавляет транспонированную колонку в Excel.
-
+Ավելացնում է սյունակը փոխակերպվողներին։
 
 ## Շարահյուսություն
 
 ```vb
-call object.AddPivotColumn(columnName)
+object.AddPivotColumn(columnName)
 ```
 
 Բաղադրիչներն են
@@ -25,5 +20,5 @@ call object.AddPivotColumn(columnName)
 
 | Պարամետր | Նկարագրություն |
 |--|--|
-| object | `PivotInfo` օբյեկտի հղում։ строковое выражение, определяющее переменную, ссылающуюся на экземпляр объекта типа <strong>PivotInfo</strong></em>. |
-| columnName | Սյունակի անվանում, որը հարկավոր է փոխարկել։ строковое выражение, определяющее идентификатор колонки, которую нужно транспонировать. |
+| object | `PivotInfo` օբյեկտ։ |
+| columnName | Սյունակի անվանում, որը հարկավոր է փոխարկել։ |
