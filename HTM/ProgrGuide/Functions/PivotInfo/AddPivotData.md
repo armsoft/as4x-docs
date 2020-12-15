@@ -14,7 +14,7 @@ title: "Pivotinfo/AddPivotData"
 ## Շարահյուսություն
 
 ```vb
-call object.AddPivotData(columnName, [caption], [function])
+object.AddPivotData(columnName, [caption], [function])
 ```
 
 Բաղադրիչներն են՝
