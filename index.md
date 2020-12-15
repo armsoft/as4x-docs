@@ -3,6 +3,10 @@ layout: home
 title: "AS-4X ծրագրավորողի ձեռնարկ"
 ---
 
+## Կարևոր փոփոխություններ
+* [Նոր ODBC driver-ի անցման փոփոխությունների ուղեցույց](HTM/ProgrGuide/Obzor/OdbcDriver.md)
+* [AS-8X անցման համար փոփոխություններ](HTM/ProgrGuide/Obzor/as8x.md)
+
 ## Ձեռնարկը կազմված է հետևյալ բաժիններից
 
 * [AS-4X հարթակի կարճ նկարագրություն](HTM/ProgrGuide/Obzor/vvedenie.html)  

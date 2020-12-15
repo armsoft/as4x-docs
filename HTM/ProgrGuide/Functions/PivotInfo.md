@@ -1,28 +1,22 @@
 ---
 layout: page
-title: "Pivotinfo օբյեկտ "
+title: "Pivotinfo օբյեկտ"
 ---
 
-# Excel ֆայլում Pivot գործողության պարամետրերի օբյեկտ 
+# Excel ֆայլում Pivot գործողության պարամետրերի օբյեկտ
 
+Օբյեկտի ստեղծումը կատարվում է [CreatePivotInfo](Functions/InterfaceManagment/CreatePivotInfo.md) ֆունկցիայով։ 
 
-Օբյեկտի ստեղծումը պայմանավորված է [CreatePivotInfo](Functions/InterfaceManagment/CreatePivotInfo.md) ֆունկցիայով։ 
-Создание объекта транспонирования данных обеспечивается через функцию [CreatePivotInfo.](Functions/InterfaceManagment/CreatePivotInfo.html)</td>
-    
-
+Այս օբյեկտը օգտագործվում Excel-ի [PivotTable](https://docs.microsoft.com/en-us/office/vba/api/excel.pivottable) օբյեկտի կառուցման համար։
 
 | Հատկություն | Նկարագրություն |
 |--|--|
-| [PivotColumns](PivotInfo/PivotColumns.md) | Վերադարձնում է փոխակերպված սյունակները։ Возвращает транспонированные колонки. |
-| [PivotData](PivotInfo/PivotData.md) | Վերադարձնում է փոխակերպված տվյալները։ Возвращает транспонированные данные. |
-| [PivotRows](PivotInfo/PivotRows.md) | Վերադարձնում է փոխակերպված տողերը։ Возвращает транспонированные строки. |
-
-
-
-
+| [PivotColumns](PivotInfo/PivotColumns.md) | Վերադարձնում է փոխակերպվող սյունակները։ |
+| [PivotData](PivotInfo/PivotData.md) | Վերադարձնում է փոխակերպվող տվյալները։ |
+| [PivotRows](PivotInfo/PivotRows.md) | Վերադարձնում է փոխակերպվող տողերը։ |
 
 | Մեթոդներ | Նկարագրություն |
 |--|--|
-| [AddPivotColumn](PivotInfo/AddPivotColumn.md) | Փոխակերպում է նշված սյունակը։ Транспонирует заданную колонку. |
-| [AddPivotData](PivotInfo/AddPivotData.md) | Փոխակերպում է նշված սյունակի տվյալները։  |
-| [AddPivotRow](PivotInfo/AddPivotRow.md) | Փոխակերպում է նշված սյունակի տողերը։ Транспонирует строки заданной колонки. |
+| [AddPivotColumn](PivotInfo/AddPivotColumn.md) | Ավելացնում է սյունակը փոխակերպվողներին։ |
+| [AddPivotData](PivotInfo/AddPivotData.md) | Ավելացնում է փոխակերպվող տվյալներ։ |
+| [AddPivotRow](PivotInfo/AddPivotRow.md) | Ավելացնում է սյունակի տողերը փոխակերպվողներին։ |

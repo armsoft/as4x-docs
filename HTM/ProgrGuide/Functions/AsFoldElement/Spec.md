@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "AsFolderElement/Spec"
+title: "AsFoldElement/Spec"
 ---
 
 
