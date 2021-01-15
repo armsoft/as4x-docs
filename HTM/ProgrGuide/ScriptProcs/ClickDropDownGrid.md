@@ -7,7 +7,7 @@ title: "ClickDropDownGrid իրադարձություն"
 
 [Տես նաև](../scriptstproced.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 
-ClickDropDownGrid իրադարձությունը առաջանում է փաստաթղթի աղյուսակի հետևյալ տիպի սյունակների ցուցակի բացման ժամանակ՝ [Tree()](../Types/Tree.md), [FullTree()](../Types/FULLTREE.md), [Folder()](../Types/Folder.md)։
+ClickDropDownGrid իրադարձությունը առաջանում է փաստաթղթի աղյուսակի հետևյալ տիպի սյունակների ցուցակի բացման ժամանակ՝ [Tree()](../Types/Tree.md), [FullTree()](../Types/FULLTREE.md), [Folder()](../Types/Folder.md), [CH()](../Types/Ch.md), [File](../Types/File.md) կամ [CH()](../Types/Ch.md)։
 
 Այն նախատեսված է հիմնական ցուցակի բացման փոխարեն այլ ցուցակի կամ ֆիլտրված ցուցակի ցուցադրման համար։
 
