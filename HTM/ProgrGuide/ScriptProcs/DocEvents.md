@@ -11,6 +11,7 @@ title: "Doc իրադարձություններ"
 * [AfterCreate](AfterCreate.md)
 * [AfterLoad](AfterLoad.md)
 * [AfterProcess](AfterProcess.md)
+* [AfterSigned](AfterSigned.md)
 * [BeforeExport](BeforeExport.md) 
 * [BeforeCommit](BeforeCommit.md)
 * [BeforeCopy](BeforeCopy.md)
