@@ -19,7 +19,7 @@ Function CreateDynamicView(ByVal DataDesc As AsDataDesc) As AsView
 |--|--|
 | DataDesc | Դինամիկ տվյալների աղբյուր նկարագրության օբյեկտ։ |
 
-## Նկատառումնր
+## Նկատառումներ
 
 [Տես նաև](../../constructors.html)
 
