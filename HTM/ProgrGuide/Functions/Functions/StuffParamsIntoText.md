@@ -11,7 +11,7 @@ title: "StuffParamsIntoText ֆունկցիա"
 
 ``` vb
 Function StuffParamsIntoText(ByVal strText As String, _
-                                   ParamArray strArrParams() As Variant) As String
+                             ParamArray strArrParams() As Variant) As String
 ```
 
 Բաղադրիչներն են՝
