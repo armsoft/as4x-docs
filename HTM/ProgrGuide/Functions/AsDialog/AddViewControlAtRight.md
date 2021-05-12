@@ -23,7 +23,7 @@ object.AddViewControlAtRight(rekvName, existingRekvName, caption, eCaption, view
 |--|--|
 | object | Երկխոսության պատուհանի հղում։ |
 | rekvName | Դաշտի ներքին համար։ |
-| existingRekvName  | Այն դաշտի ներքին անունը, որի աջ կողմից ավելանոլու է նորը։ |
+| existingRekvName  | Այն դաշտի ներքին անունը, որի աջ կողմից ավելանալու է նորը։ |
 | caption| Դաշտի անվանում։  |
 | eCaption | Դաշտի օտար լեզվով անվանում։ |
 | viewCode | Դիտելու ձևի ներքին անուն ։ |
