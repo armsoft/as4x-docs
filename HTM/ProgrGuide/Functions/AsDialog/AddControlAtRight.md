@@ -23,7 +23,7 @@ object.AddControlAtRight(RekvName, ExistingRekvName, TypeRek[AttribRekv], [Value
 |--|--|
 | object | Երկխոսության պատուհանի հղում։ |
 | RekvName |Դաշտի ներքին անուն։ |
-| ExistingRekvName | Այն դաշտի ներքին անունը, որի աջ կողմից ավելանոլու է նորը։ |
+| ExistingRekvName | Այն դաշտի ներքին անունը, որի աջ կողմից ավելանալու է նորը։ |
 | TypeRekv | [Դաշտի տիպը](../../types.html)։ |
 | AttribRekv | Դաշտի [հատկանիշները](Attribute.html "Attribute"): Կարող են նշվել մի քանիսը։ |
 | ValueRekv | Դաշտի նախնական արժեքը։ |
