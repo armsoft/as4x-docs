@@ -6,7 +6,7 @@ title: "AsDialog"
 
 
 
-# Երկխոսության պատուհան Объект диалог 
+# Երկխոսության պատուհան
 
 Այս օբյեկտի ստեղծումը կատարվում է հետևյալ ֆունկցիայի միջոցով՝ [CreateDialog](Functions/InterfaceManagment/CreateDialog.html)։
 
@@ -48,6 +48,7 @@ title: "AsDialog"
 |[AddMultiFilterControlAtRight](AsDialog/AddMultiFilterControlAtRight.md) | Երկխոսության պատուհանում ավելացնում է նշված դաշտի աջից նոր դաշտ, հետևյալ տիպերի՝ դիտելու ձև կամ  ծառ-տեղեկատու [մի քանի տողորի ընտրության](AsModalBrowser/MultiSelect.md) հնարավորությամբ։|
 |[AddMultiSelectFolderControl](AsDialog/AddMultiSelectFolderControl.md) |Երկխոսության պատուհանում ավելացնում է նոր դաշտ թղթապանակ տիպի, մի քանի տող ընտրելու հնարավորությամբ։|
 |[AddMultiSelectTreeControl](AsDialog/AddMultiSelectTreeControl.md) | Երկխոսության պատուհանում ավելացնում է ծառ տեսակի դաշտ, մի քանի տող ընտրելու հնարավորությամբ։|
+|[AddMultiSelectTreeControlAtRight](AsDialog/AddMultiSelectTreeControlAtRight.md) | Երկխոսության պատուհանում նշված դաշտի աջից ավելացնում է ծառ տեսակի դաշտ, մի քանի հանգույց ընտրելու հնարավորությամբ։|
 |[AddMultiSelectViewControl](AsDialog/AddMultiSelectViewControl.md) |Երկխոսության պատուհանում ավելացնում է դիտելու ձև տիպի դաշտ, մի քանի տող ընտրելու հնարավորությամբ։|
 |[AddPage](AsDialog/AddPage.md) |Երկխոսության պատուհանում ավելացնում է էջ։|
 |[AddRadioButtons](AsDialog/AddRadioButtons.md) | Երկխոսության պատուհանում ավելացնում է տեսակավորող ռադիոկոճակների խումբ։|
