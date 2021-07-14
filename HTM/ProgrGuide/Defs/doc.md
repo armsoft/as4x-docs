@@ -38,8 +38,8 @@ DOCUMENT {
     Accounting = nAccountingCode;
     ContrSupport = bContrSupport;
     AccessFolder = sAccessFolder;
-    StoreInTree = nStoreInTree
-    CopyAsRepeatable = nCopyMode
+    StoreInTree = nStoreInTree;
+    CopyAsRepeatable = nCopyMode;
     DisableAttachmentSizeCheck = nDisableAttachsizeCheck;
 
     'Page ...
