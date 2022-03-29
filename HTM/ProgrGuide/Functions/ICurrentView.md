@@ -26,7 +26,6 @@ tags: CurrentView
 | [RowCount](ICurrentView/RowCount.md) | Վերադարձնում է տողերի քանակը ընթացիկ թղթապանակում։  |
 | [Selected](ICurrentView/Selected.md) | Վերադարձնում կամ նշանակում է նշորդի ցույց տված տողի ընտրված լինելը։ |
 | [SelectedCount](ICurrentView/SelectedCount.md) |Վերադարձնում է ընտրված տողերի քանակը։ |
-| [Updated](ICurrentView/Updated.md) | Վերադարձնում կամ նշանակում է ընթացիկ թղթապանակի թարմացված լինելը։ |
 | [Value](ICurrentView/Value.md) | Ընթացիկ թղթապանակում վերադարձնում է ընթացիկ տողի նշված վանդակի արժեքը, միայն հավերժական սյուների համար։ |
 | [ViewCode](ICurrentView/ViewCode.md) | Վերադարձնում է հիմքային դիտելու ձևի ներքին անունը կամ խմբի անունը։ |
 
