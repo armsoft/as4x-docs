@@ -357,7 +357,6 @@ title: Contents
     - [Свойство Selected](HTM/ProgrGuide/Functions/ICurrentView/Selected.html)
     - [Свойство SelectedCount](HTM/ProgrGuide/Functions/ICurrentView/SelectedCount.html)
     - [Метод Update](HTM/ProgrGuide/Functions/ICurrentView/Update.html)
-    - [Свойство Updated](HTM/ProgrGuide/Functions/ICurrentView/Updated.html)
     - [Свойство Value](HTM/ProgrGuide/Functions/ICurrentView/Value.html)
     - [Свойство ViewCode](HTM/ProgrGuide/Functions/ICurrentView/ViewCode.html)
   - [Объект дерево](HTM/ProgrGuide/Functions/Astree.html)
