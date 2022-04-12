@@ -7,6 +7,8 @@ title: "Doc իրադարձություններ"
 
 Իրադարձությունների մշակիչները պետք է գտնվեն [փաստաթղթի նկարագրության](../Defs/doc.md) սկրիպտային բաժնում։ 
 
+Համակարգային իրադարձությունների առաջացման հաջորդականությունը բերված է [այստեղ](Events_Sequence.md)։
+
 * [Action](Action.md)
 * [AfterCreate](AfterCreate.md)
 * [AfterLoad](AfterLoad.md)
@@ -40,5 +42,3 @@ title: "Doc իրադարձություններ"
 * [Valid](Valid.md)
 * [Validate](Validate.md)
 * [When](When.md)
-
-Համակարգային իրադարձությունների առաջացման հաջորդականությունը բերված է [այստեղ](Events_Sequence.md)։
