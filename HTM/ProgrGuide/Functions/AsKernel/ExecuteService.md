@@ -23,7 +23,7 @@ Public Sub ExecuteService(ByVal sUrl As String, _
 * `sHttpVerb` - Հարցման գործողության տեսակը ("POST", "GET", "DELETE"...)։ Արժեք չփոխանցելու դեպքում համարվելու է "POST"-ը։
 * `lRestTimeout` - Հարցման կատարման առավելագույն ժամանակը միլիվայրկյաններով։ Արժեք չփոխանցելու դեպքում համարվելու է 90.000 միլիվրկ-ը (1.5 ր)։
 
-**Օրինակ**
+## Օրինակ
 
 Այս օրինակում ուղարկվում է վարկային հայտի հաստատման/մերժման հարցում 8X սերվիսին API-ի միջոցով, որտեղ API-ը ունի հետևյալ շարահյուսությունը՝
 
@@ -34,7 +34,7 @@ public async Task<ActionResult<ResponseModel<SignResponse>>> Sign(SignRequest re
 }
 ```
 
-Մուտքային պարամետրեր՝
+**Մուտքային պարամետրեր**
 ```c#
 public class SignRequest
 {
@@ -43,7 +43,7 @@ public class SignRequest
 }
 ```
 
-Ելքային պարամետրեր`
+**Ելքային պարամետրեր**
 ```c#
 public class ResponseModel<SignResponse>
 {
@@ -53,6 +53,7 @@ public class ResponseModel<SignResponse>
 }
 ```
 
+**Սկրիպտում կանչ**
 ```as4x
 Public Sub SignLoan()
 Dim dlg As AsDialog 
