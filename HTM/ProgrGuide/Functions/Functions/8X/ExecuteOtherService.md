@@ -1,40 +1,49 @@
 ---
 layout: page
-title: "AsKernel/ExecuteService"
+title: "AsKernel/ExecuteOtherService"
 ---
 
-# ExecuteService մեթոդ
+# ExecuteOtherService մեթոդ
+
+Այս մեթոդը նախատեսված է դեպի այլ սերվիս (8X սերվիս չհանդիսացող) հարցումներ ուղարկելու և պատասխանը ստանալու համար։
+
+## Շարահյուսություն
 
 ```vb
-Public Sub ExecuteService(ByVal sUrl As String, _
-                 Optional ByVal vRequest As Variant = Nothing, _
-                 Optional ByRef vResult As Variant = Nothing, _
-                 Optional ByVal sHttpVerb As String = "POST", _
-                 Optional ByVal lRestTimeout As Long = 90000)
+Sub ExecuteOtherService(ByVal sBaseUrl As String, _
+                        ByVal sUrl As String, _
+               Optional ByVal vRequest As Variant = Nothing, _
+               Optional ByRef vResult As Variant = Nothing, _
+               Optional ByVal sHttpVerb As String = PostHttpVerb, _
+               Optional ByVal lRestTimeout As Long = 90000, _
+               Optional ByVal bAddAuthorization As Boolean = True)
 ```
-
-Այս մեթոդը նախատեսված է դեպի 8X սերվիսին API-ների միջոցով հարցումներ ուղարկելու և պատասխանը ստանալու համար։
 
 **Պարամետրեր**
 
-* `sUrl` - API-ի հասցեն՝ առանց սերվիսի հասցեի։ Օրինակ՝ `"api/LoanApp/RejectAppForm"`:
-* `vRequest` - Հարցման կատարման համար անհրաժեշտ պարամետրերը։
-* `vResult` - Հարցման կատարման արդյունքում ստացվող տվյալները։
-* `sHttpVerb` - Հարցման գործողության տեսակը ("POST", "GET", "DELETE"...)։ Արժեք չփոխանցելու դեպքում համարվելու է "POST"-ը։
-* `lRestTimeout` - Հարցման կատարման առավելագույն ժամանակը միլիվայրկյաններով։ Արժեք չփոխանցելու դեպքում համարվելու է 90.000 միլիվրկ-ը (1.5 ր)։
+* `sBaseUrl` - Սերվիսի հասցեն։ 
+  Օրինակ՝ `"https://localhost:1025/"`:
+* `sUrl` - API-ի հասցեն։ 
+  Օրինակ՝ `"api/LoanApp/RejectAppForm"`:
+* `vRequest` - Հարցման կատարման համար անհրաժեշտ պարամետրերը, որոնք սերիալիզացվելու են JSON։
+* `vResult` - Հարցման կատարման արդյունքում ստացվող տվյալները, որոնք դեսերիալիզացվելու են JSON-ից։
+* `sHttpVerb` - Հարցման գործողության տեսակը ("POST", "GET", "DELETE"...)։ 
+* `lRestTimeout` - Հարցման կատարման առավելագույն ժամանակը միլիվայրկյաններով։ Լռությամբ 1.5 րոպե։
+* `bAddAuthorization` - Ավտորիզիայի միացման հայտանիշ։
 
 ## Օրինակ
 
-Այս օրինակում ուղարկվում է վարկային հայտի հաստատման/մերժման հարցում 8X սերվիսին API-ի միջոցով, որտեղ API-ը ունի հետևյալ շարահյուսությունը՝
+Այս օրինակում ուղարկվում է հաստատման/մերժման հարցում API-ի միջոցով, որտեղ API-ը ունի հետևյալ շարահյուսությունը՝
 
 ```c#
-public async Task<ActionResult<ResponseModel<SignResponse>>> Sign(SignRequest request)
+public async Task<ActionResult<SignResponse>> Sign(SignRequest request)
 {
     //...
 }
 ```
 
 **Մուտքային պարամետրեր**
+
 ```c#
 public class SignRequest
 {
@@ -44,17 +53,18 @@ public class SignRequest
 ```
 
 **Ելքային պարամետրեր**
+
 ```c#
-public class ResponseModel<SignResponse>
+public class SignResponse
 {
     public string Code { get; set; }
     public string Error { get; set; }
-    public SignResponse Value { get; set; }
 }
 ```
 
 **Սկրիպտում կանչ**
-```as4x
+
+```vb
 Public Sub SignLoan()
 Dim dlg As AsDialog 
 Dim dicRequest As Dictionary
@@ -84,15 +94,14 @@ Dim dicResponse As Dictionary
     dicRequest.Add "Answer", dlg("Answer")
 
     ' Ուղարկվում է հարցում դեպի 8X սերվիս՝ օգտագործելով ExecuteService մեթոդը:
-    ' Մեթոդին անհրաժեշտ է փոխանցել API-ի հասցեն, կատարման համար անհրաժեշտ պարամետրերը dictionary-ով, 
+    ' Մեթոդին անհրաժեշտ է փոխանցել սերվիսի հասցեն, API-ի հասցեն, կատարման համար անհրաժեշտ պարամետրերը dictionary-ով, 
     ' կատարման արդյունքների պահպանման համար dictionary և API հարցման գործողության տեսակը:
-	ExecuteService "api/LoanApplications/Sign", dicRequest, dicResponse, "POST"
+	ExecuteOtherService "http://localhost:5000", "api/LoanApplications/Sign", dicRequest, dicResponse, "POST"
 
 	' Եթե կատարման արդյունքում սխալ առաջանալու դեպքում dicResponse-ի Error դաշտը լցվում է սխալի հաղորդագրությամբ:
 	' Այդ դեպքում գեներացնում ենք սխալ կատարման ընթացքում առաջացած սխալի հաղորդագրությամբ:
-	If dicResponse IsNot Nothing AndAlso dicResponse("Error") <> 0 Then
-		RaiseError "Սխալ", dicResponse("Error"), "Error", ""
+	If dicResponse("Error") <> "" Then
+		RaiseError "Սխալ", dicResponse("Error"), "Error", dicResponse("Error")
 	End If
-
 End Sub
 ```
