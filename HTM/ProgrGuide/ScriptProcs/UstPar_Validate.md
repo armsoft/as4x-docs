@@ -16,7 +16,7 @@ Validate իրադարձությունը առաջանում է երկխոսութ
 ``` vb
 Public Sub Validate(ByVal objDialog As AsDialog, _
                     ByRef Cancel As Boolean, _
-                    ByVal RekvName As String)
+                    ByRef RekvName As String)
     ' statements
 End Sub
 ```
