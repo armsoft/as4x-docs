@@ -3,7 +3,7 @@ layout: page
 title: "TemplateSubstitution իրադարձություն"
 ---
 
-# TemplateSubstitution փաստըաթղթի համակարգային իրադարձություն
+# TemplateSubstitution փաստաթղթի համակարգային իրադարձություն
 
 [Տես նաև](TemplateSubstitutionParameters.md) Օրինակ [Կիրառվում է](../Defs/doc.md)
 

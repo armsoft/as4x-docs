@@ -38,55 +38,57 @@ sublinks:
   - { title: "EventArgsDialogValueChanged Class", ref: eventargsdialogvaluechanged-class }
 ---
 
-Տրված է հնարավորություն սահմանել լրացուցիչ մշակիչներ փաստաթղթում և տվյալների աղբյուրում առաջացող որոշ իրադարձությունների համար։
-
-Փաստաթղթի համար հնարավոր է մշակիչ սահմանել հետևյալ իրադարձությունների համար
-* BeforeImport
-* When
-* Valid
-* Validate
-* Action
-* Folders
-* BeforeCommit
-* AfterCreate
-* AfterLoad
-* AfterProcess
-* BeforeCopy
-* BeforeExport
-* ClickDropDown
-* ClickDropDownGrid
-* Delete
-* OnUIDelete
-* Functions
-* GridCellValid
-* GridRowValid
-* GridValid
-* IsHidden
-* LoadGrid
-* Magic
-* Print
-* StoreGrid
-* TemplateSubstitution
-
-Տվյալների աղբյուրի համար հասանելի է
-* Functions
-
-Դիալոգի համար հասանելի է
-* Avtivate
-* ClickDropDown
-* Validate
-* ValueChanged
+Տրված է հնարավորություն սահմանել լրացուցիչ մշակիչներ փաստաթղթում, տվյալների աղբյուրում և դիալոգում առաջացող որոշ իրադարձությունների համար, որոնք աշխատում են հիմնական իրադարձություններից առաջ կամ հետո։
 
 Մշակիչները հնարավոր է սահմանել հիմնական մշակիչին նախորդող(Pre) աշխատող կամ հաջորդող(Post) աշխատող տարբերակով։
 
 Մշակիչները կարող են տեղադրված լինել կամայական մոդուլի մեջ և կամայական անունով։
 
-> Ամեն մի իրադարձության համար հնարավոր է սահմանել միայն մեկ նախորդող և միայն մեկ հաջորդող լրացուցիչ մշակիչ։
+Ամեն մի իրադարձության համար հնարավոր է սահմանել միայն մեկ նախորդող (Pre) և միայն մեկ հաջորդող (Post) լրացուցիչ մշակիչ։
+
+Փաստաթղթի համար հնարավոր է մշակիչ սահմանել հետևյալ իրադարձությունների համար`
+* [BeforeImport](BeforeImport.md)
+* [When](When.md)
+* [Valid](Valid.md)
+* [Validate](Validate.md)
+* [Action](Action.md)
+* [Folders](Folders.md)
+* [BeforeCommit](BeforeCommit.md)
+* [AfterCreate](AfterCreate.md)
+* [AfterLoad](AfterLoad.md)
+* [AfterProcess](AfterProcess.md)
+* [BeforeCopy](BeforeCopy.md)
+* [BeforeExport](BeforeExport.md)
+* [ClickDropDown](ClickDropDown.md)
+* [ClickDropDownGrid](ClickDropDownGrid.md)
+* [Delete](Delete.md)
+* [OnUIDelete](OnUIDelete.md)
+* [Functions](FunctionsDoc.md)
+* [GridCellValid](GridCellValid.md)
+* [GridRowValid](GridRowValid.md)
+* [GridValid](GridValid.md)
+* [IsHidden](IsHidden.md)
+* [LoadGrid](LoadGrid.md)
+* [Magic](Magic.md)
+* [Print](Print.md)
+* [StoreGrid](StoreGrid.md)
+* [TemplateSubstitution](TemplateSubstitution.md)
+
+Տվյալների աղբյուրի համար հասանելի է՝
+* [Functions](FunctionsData.md)
+* [PostValid](PostValid.md)
+
+Դիալոգի համար հասանելի է՝
+* [Activate](UstPar_Activate.md)
+* [ClickDropDown](UstPar_ClickDropDown.md)
+* [Validate](UstPar_Validate.md)
+* [ValueChanged](UstPar_ValueChanged.md)
 
 ## Մշակիչների գրանցում
 
-Մշակիչները միացնելու համար հարկավոր է համակարգում ավելացնել `PUBLIC` մոդուլ `AppExt` անունով, 
-որում առկա է `Init` մեթոդ։
+Նախորդող և հաջորդող մշակիչները միացնելու համար հարկավոր է համակարգում ավելացնել `PUBLIC` հասանելիությամբ մոդուլ `AppExt` անունով, որում առկա է `Init` մեթոդ։
+`Init` մեթոդում սահմանվում են նոր մշակիչները` [ScriptExtension.AddHandler](#scriptextensionaddhandler-մեթոդ) մեթոդի միջոցով։ 
+
 ``` as4x
 MODULE {
 NAME = AppExt;
@@ -102,9 +104,8 @@ End Sub
 };
 };
 ```
-
-`Init` մեթոդում սահմանվում են նոր մշակիչները։  
-Ստորև բերված օրինակում սահմանված է նոր մշակիչ `IMemOrd` փաստաթղթի [Validate](Validate.md) իրադարձության համար։
+ 
+Ստորև բերված օրինակում սահմանված է նոր մշակիչ `IMemOrd` փաստաթղթի [Validate](Validate.md) իրադարձության համար՝ `PostValidate`:
 Այժմ իրադարձության առաջացման ժամանակ կաշխատի նաև `NewMod` մոդուլի `MyValidateHandler` մեթոդը։
 
 ``` vb
@@ -113,7 +114,8 @@ Public Sub Init()
 End Sub
 ```
 
-`NewMod` մոդուլում `MyValidateHandler` մեթոդը պետք է սահմանված լինի հետևյալ սահմանմամբ
+`NewMod` մոդուլում `MyValidateHandler` մեթոդը պետք է սահմանված լինի հետևյալ սահմանմամբ՝
+
 ``` vb
 Public Sub MyValidateHandler(ByVal args As EventArgsDocValidate)
     '
@@ -141,52 +143,52 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 
 |Արժեք|Նկարագրույթուն|
 |:--|:--|
-|`DataPostFunctions`  | Data-ի Functions-ից հետո աշխատելու համար:|
-|`DocPreBeforeImport` | Doc-ի BeforeImport-ից առաջ աշխատելու համար:|
-|`DocPostBeforeImport`| Doc-ի BeforeImport-ից հետո աշխատելու համար:|
-|`DocPreWhen`         | Doc-ի When-ից առաջ աշխատելու համար:|
-|`DocPostWhen`        | Doc-ի When-ից հետո աշխատելու համար:|
-|`DocPreValid`        | Doc-ի Valid-ից առաջ աշխատելու համար:|
-|`DocPostValid`       | Doc-ի Valid-ից հետո աշխատելու համար:|
-|`DocPreValidate`     | Doc-ի Validate-ից առաջ աշխատելու համար:|
-|`DocPostValidate`    | Doc-ի Validate-ից հետո աշխատելու համար:|
-|`DocPreAction`       | Doc-ի Action-ից առաջ աշխատելու համար:|
-|`DocPostAction`      | Doc-ի Action-ից հետո աշխատելու համար:|
-|`DocPreFolders`      | Doc-ի Folders-ից առաջ աշխատելու համար:|
-|`DocPostFolders`     | Doc-ի Folders-ից հետո աշխատելու համար:|
-|`DocPreBeforeCommit` | Doc-ի BeforeCommit-ից առաջ աշխատելու համար:|
-|`DocPostBeforeCommit`| Doc-ի BeforeCommit-ից հետո աշխատելու համար:|
-|`DocPreAfterCreate`  | Doc-ի AfterCreate-ից առաջ աշխատելու համար։|
+|`DataPostFunctions`  | Data-ի Functions-ից հետո աշխատելու համար։|
+|`DialogPostActivate`| Dialog-ի Activate-ից հետո աշխատելու համար։|
+|`DialogPreClickDropDown`| Dialog-ի ClickDropDown-ից առաջ աշխատելու համար։|
+|`DialogPreValueChanged`| Dialog-ի ValueChanged-ից առաջ աշխատելու համար։|
+|`DilaogPostValidate` | Dialog-ի Validate-ից հետո աշխատելու համար։| 
+|`DilaogPreValidate` | Dialog-ի Validate-ից առաջ աշխատելու համար։|
+|`DocPostAction`      | Doc-ի Action-ից հետո աշխատելու համար։|
+|`DocPreAction`       | Doc-ի Action-ից առաջ աշխատելու համար։|
 |`DocPostAfterCreate` | Doc-ի AfterCreate-ից հետո աշխատելու համար։|
+|`DocPreAfterCreate`  | Doc-ի AfterCreate-ից առաջ աշխատելու համար։|
+|`DocPostAfterLoad`   | Doc-ի AfterLoad-ից հետո աշխատելու համար։|
 |`DocPreAfterLoad`    | Doc-ի AfterLoad-ից առաջ աշխատելու համար։|
-|`DocPostAfterԼoad`   | Doc-ի AfterLoad-ից հետո աշխատելու համար։|
 |`DocPostAfterProcess`| Doc-ի AfterProcess-ից հետո աշխատելու համար։|
-|`DocPreBeforeCopy`   | Doc-ի BeforeCopy-ից առաջ աշխատելու համար։|
+|`DocPostBeforeCommit`| Doc-ի BeforeCommit-ից հետո աշխատելու համար։|
+|`DocPreBeforeCommit` | Doc-ի BeforeCommit-ից առաջ աշխատելու համար։|
 |`DocPostBeforeCopy`  | Doc-ի BeforeCopy-ից հետո աշխատելու համար։|
+|`DocPreBeforeCopy`   | Doc-ի BeforeCopy-ից առաջ աշխատելու համար։|
 |`DocPostBeforeExport`| Doc-ի BeforeExport-ից հետո աշխատելու համար։|
+|`DocPostBeforeImport`| Doc-ի BeforeImport-ից հետո աշխատելու համար։|
+|`DocPreBeforeImport` | Doc-ի BeforeImport-ից առաջ աշխատելու համար։|
 |`DocPreClickDropDown`| Doc-ի ClickDropDown-ից առաջ աշխատելու համար։|
 |`DocPreClickDropDownGrid`| Doc-ի ClickDropDownGrid-ից առաջ աշխատելու համար։|
-|`DocPreDelete`         | Doc-ի Delete-ից առաջ աշխատելու համար։|
-|`DocPostDelete`        | Doc-ի Delete-ից հետո աշխատեու համար։|
-|`DocPreOnUIDelete`    | Doc-ի OnUIDelete-ից առաջ աշխատելու համար։|
-|`DocPostFunctions`    | Doc-ի Functions-ից հետո աշխատելու համար։|
-|`DocPreGridCellValid` | Doc-ի GridCellValid-ից առաջ աշխատելու համար։|
+|`DocPostDelete`      | Doc-ի Delete-ից հետո աշխատելու համար։|
+|`DocPreDelete`       | Doc-ի Delete-ից առաջ աշխատելու համար։|
+|`DocPostFolders`     | Doc-ի Folders-ից հետո աշխատելու համար։|
+|`DocPreFolders`      | Doc-ի Folders-ից առաջ աշխատելու համար։|
+|`DocPostFunctions`   | Doc-ի Functions-ից հետո աշխատելու համար։|
 |`DocPostGridCellValid`| Doc-ի GridCellValid-ից հետո աշխատելու համար։|
-|`DocPreGridRowValid`  | Doc-ի GridRowValid-ից առաջ աշխատելուհամար։|
+|`DocPreGridCellValid` | Doc-ի GridCellValid-ից առաջ աշխատելու համար։|
 |`DocPostGridRowValid` | Doc-ի GridRowValid-ից հետո աշխատելու համար։|
-|`DocPreGridValid`     | Doc-ի GridValid-ից առաջ աշխատելու համար։|
+|`DocPreGridRowValid`  | Doc-ի GridRowValid-ից առաջ աշխատելու համար։|
 |`DocPostGridValid`    | Doc-ի GridValid-ից հետո աշխատելու համար։|
+|`DocPreGridValid`     | Doc-ի GridValid-ից առաջ աշխատելու համար։|
 |`DocPostIsHidden`     | Doc-ի IsHidden-ից հետո աշխատելու համար։|
 |`DocPostLoadGrid`     | Doc-ի LoadGrid-ից հետո աշխատելու համար։|
 |`DocPreMagic`         | Doc-ի Magic-ից առաջ աշխատելու համար։|
+|`DocPreOnUIDelete`    | Doc-ի OnUIDelete-ից առաջ աշխատելու համար։|
 |`DocPrePrint`         | Doc-ի Print-ից առաջ աշխատելու համար։|
-|`DocPostStoreGrid`   | Doc-ի StoreGrid-ից հետո աշխատելու համար։|
+|`DocPostStoreGrid`    | Doc-ի StoreGrid-ից հետո աշխատելու համար։|
 |`DocPostTemplateSubstitution`| Doc-ի TemplateSubstitution-ից հետո աշխատելու համար։|
-|`DialogPostActivate`| Dialog-ի Activate-ից հետո աշխատելու համար։|
-|`DialogPreClickDropDown`| Dialog-ի ClickDropDown-ից առաջ աշխատելու համար։|
-|`DilaogPreValidate` | Dialog-ի Validate-ից առաջ աշխատելու համար։|
-|`DilaogPostValidate` | Dialog-ի Validate-ից հետո աշխատելու համար։| 
-|`DialogPreValueChanged`| Dialog-ի ValueChanged-ից առաջ աշխատելու համար։|
+|`DocPostValid`        | Doc-ի Valid-ից հետո աշխատելու համար։|
+|`DocPreValid`        | Doc-ի Valid-ից առաջ աշխատելու համար։|
+|`DocPostValidate`    | Doc-ի Validate-ից հետո աշխատելու համար։|
+|`DocPreValidate`     | Doc-ի Validate-ից առաջ աշխատելու համար։|
+|`DocPostWhen`        | Doc-ի When-ից հետո աշխատելու համար։|
+|`DocPreWhen`         | Doc-ի When-ից առաջ աշխատելու համար։|
 
 Օրինակ՝
 ``` vb
@@ -194,7 +196,6 @@ ScriptExtension.AddHandler(ExtensionEvents.DocPreValidate, "IMemOrd", "NewMod.Me
 ScriptExtension.AddHandler(ExtensionEvents.DocPreValidate, "C1Univer", "NewMod.AgrCustomValidate")
 ScriptExtension.AddHandler(ExtensionEvents.DocPostWhen, "C1Univer", "NewMod.AgrCustomWhen")
 ```
-
 
 ## EventArgs տիպեր
 
@@ -607,7 +608,7 @@ End Sub
 
 ### EventArgsDataFunctions Class
 
-Պարունակում է տվյալներ տվյալների աղբյուրի [Functions](FunctionsData.md) իրադարձության մշակիչին փոխանցելու համար։
+Պարունակում է տվյալներ տվյալների աղբյուրի [Functions](FunctionsData.md) և [PostFunctions] իրադարձությունների մշակիչներին փոխանցելու համար։
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
@@ -622,6 +623,15 @@ Public Sub MyDataPostFunctionsHandler(ByVal args As EventArgsDataFunctions)
     args.CurrentView.RegistrFunction "Ուղարկել նամակ", "NewMod.SendMail"
 End Sub
 ```
+
+### EventArgsDataValid
+
+Պարունակում է տվյալներ տվյալների աղբյուրի ընդլայնման [PostValid](PostValid.md) իրադարձության մշակիչին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`IsValid`| Սահմանում է արդյոք ընթացիկ տողը կընդգրկվի տվյալների աղբյուրի տողերի վերջնական ցուցակում։|
+
 ### EventArgsDialogActivate Class
 
 Պարունակում է տվյալներ դիալոգի [Activate](UstPar_Activate.md) իրադարձության մշակիչին փոխանցելու համար։

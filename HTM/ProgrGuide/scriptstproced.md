@@ -11,6 +11,7 @@ title: "Համակարգային իրադարձություններ"
 
 * [Փաստաթղթի համակարգային իրադարձություններ](ScriptProcs/DocEvents.md)  
 * [Տվյալների աղբյուրի համակարգային իրադարձություններ](ScriptProcs/DataEvents.md)  
+* [Տվյալների աղբյուրի ընդլայնման համակարգային իրադարձություններ](ScriptProcs/DataExtenderEvents.md)
 * [Ծառ-տեղեկատուի համակարգային իրադարձություններ](ScriptProcs/TreeEvents.md)  
 * [Հաշվառման համակարգային իրադարձություններ](ScriptProcs/AccountingEvents.md)  
 * [Երկխոսության պատուհանի համակարգային իրադարձություններ](ScriptProcs/DialogEvents.md)  
