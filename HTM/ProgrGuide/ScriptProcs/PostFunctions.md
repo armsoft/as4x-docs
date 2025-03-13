@@ -22,6 +22,8 @@ End Sub
 ```
 
 Բաղադրիչներն են՝
+
+
 |Պարամետր|Նկարագրություն|
 |--|--|
 |`oEventArgsDataFunctions`| [EventArgsDataFunctions](UserDefinedHandlers.md#eventargsdatafunctions) դասի օբյեկտ, որը պարունակում է տվյալներ ընթացիկ դիտելու ձևի մասին։|
