@@ -144,6 +144,7 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 |Արժեք|Նկարագրույթուն|
 |:--|:--|
 |`DataPostFunctions`  | Data-ի Functions-ից հետո աշխատելու համար։|
+|`DataPostValid `  | Data-ի Valid-ից հետո աշխատելու համար։|
 |`DialogPostActivate`| Dialog-ի Activate-ից հետո աշխատելու համար։|
 |`DialogPreClickDropDown`| Dialog-ի ClickDropDown-ից առաջ աշխատելու համար։|
 |`DialogPreValueChanged`| Dialog-ի ValueChanged-ից առաջ աշխատելու համար։|
@@ -608,14 +609,11 @@ End Sub
 
 ### EventArgsDataFunctions Class
 
-Պարունակում է տվյալներ տվյալների աղբյուրի [Functions](FunctionsData.md) և [PostFunctions] իրադարձությունների մշակիչներին փոխանցելու համար։
+Պարունակում է տվյալներ տվյալների աղբյուրի [Functions](FunctionsData.md) և [PostFunctions](PostFunctions.md) իրադարձությունների մշակիչներին փոխանցելու համար։
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
 |`CurrentView`|Հղում [ընթացիկ դիտելու ձևի](../Functions/ICurrentView.md) վրա։|
-
-Օգտագործվում է հետևյալ իրադարձության համար
-* [DataPostFunctions](#extensionevents-enum)
 
 Մշակիչի օրինակ՝
 ``` vb
