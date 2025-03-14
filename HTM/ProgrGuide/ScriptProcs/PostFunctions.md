@@ -17,6 +17,15 @@ Public Sub PostFunctions(ByVal oEventArgsDataFunctions As EventArgsDataFunctions
 End Sub
 ```
 
+Բաղադրիչներն են՝
+
+
+|Պարամետր|Նկարագրություն|
+|--|--|
+|`oEventArgsDataFunctions`| [EventArgsDataFunctions](UserDefinedHandlers.md#eventargsdatafunctions) դասի օբյեկտ, որը պարունակում է տվյալներ ընթացիկ դիտելու ձևի մասին։|
+
+## Նկատառումներ
+
 Իրադարձությունը մշակելիս մեթոդը հնարավոր է սահմանել կամայական անվանումով՝ պայմանով, որ կընդունի [EventArgsDataFunctions](UserDefinedHandlers.md#eventargsdatafunctions) տիպի պարամետր։
 
 **Օրինակ**
@@ -31,10 +40,5 @@ End Sub
 * [Լրացուցիչ մշակիչների նկարագրություն](UserDefinedHandlers.md),
 * [Լրացուցիչ մշակիչների ավելացում](UserDefinedHandlers.md#մշակիչների-գրանցում):
 
-Բաղադրիչներն են՝
 
-
-|Պարամետր|Նկարագրություն|
-|--|--|
-|`oEventArgsDataFunctions`| [EventArgsDataFunctions](UserDefinedHandlers.md#eventargsdatafunctions) դասի օբյեկտ, որը պարունակում է տվյալներ ընթացիկ դիտելու ձևի մասին։|
 

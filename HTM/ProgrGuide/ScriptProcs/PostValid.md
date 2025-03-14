@@ -17,6 +17,15 @@ Public Sub PostValid(ByVal oEventArgsDataValid As EventArgsDataValid)
 End Sub
 ```
 
+Բաղադրիչներն են՝
+
+
+|Պարամետր|Նկարագրություն|
+|--|--|
+|`oEventArgsDataValid` | [EventArgsDataValid](UserDefinedHandlers.md#eventargsdatavalid) դասի օբյեկտ, որը պարունակում է [Valid](Valid_Data.md) իրադարձության ընթացքում ձևավորված տվյալները: Դասի `IsValid` տրամաբանական տիպի հատկության միջոցով հնարավոր է վերասահմանել, արդյոք ընթացիկ տողը պետք է ընդգրկվի տվյալների աղբյուրի տողերի վերջնական ցուցակում: `False` արժեքի դեպքում տողի համար չի առաջանա [OnEachRow](OnEachRow.md) իրադարձությունը և չեն հաշվարկվի հաշվարկային սյունակները։|
+
+## Նկատառումներ
+
 Իրադարձությունը մշակելիս մեթոդը հնարավոր է սահմանել կամայական անվանումով՝ պայմանով, որ կընդունի [EventArgsDataValid](UserDefinedHandlers.md#eventargsdatavalid) տիպի պարամետր։
 
 **Օրինակ**
@@ -31,10 +40,5 @@ End Sub
 * [Լրացուցիչ մշակիչների նկարագրություն](UserDefinedHandlers.md),
 * [Լրացուցիչ մշակիչների ավելացում](UserDefinedHandlers.md#մշակիչների-գրանցում):
 
-Բաղադրիչներն են՝
 
-
-|Պարամետր|Նկարագրություն|
-|--|--|
-|`oEventArgsDataValid` | [EventArgsDataValid](UserDefinedHandlers.md#eventargsdatavalid) դասի օբյեկտ, որը պարունակում է [Valid](Valid_Data.md) իրադարձության ընթացքում ձևավորված տվյալները: Դասի `IsValid` տրամաբանական տիպի հատկության միջոցով հնարավոր է վերասահմանել, արդյոք ընթացիկ տողը պետք է ընդգրկվի տվյալների աղբյուրի տողերի վերջնական ցուցակում: `False` արժեքի դեպքում տողի համար չի առաջանա [OnEachRow](OnEachRow.md) իրադարձությունը և չեն հաշվարկվի հաշվարկային սյունակները։|
 
