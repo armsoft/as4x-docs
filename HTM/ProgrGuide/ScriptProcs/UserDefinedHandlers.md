@@ -141,7 +141,7 @@ Sub ScriptExtension.AddHandler(ByVal eventType As ExtensionEvents, ByVal instanc
 
 Սահմանում է, այն թույլատրված իրադարձությունների բազմությունը, որոնց վրա հնարավոր է լրացուցիչ մշակիչ միացնել։
 
-|Արժեք|Նկարագրույթուն|
+|Արժեք|Նկարագրություն|
 |:--|:--|
 |`DataPostFunctions`  | Data-ի Functions-ից հետո աշխատելու համար։|
 |`DataPostValid `  | Data-ի Valid-ից հետո աշխատելու համար։|
@@ -686,3 +686,12 @@ End Sub
 
 Օգտագործվում է հետևյալ իրադարձությունների համար
 * [DialogPreValueChanged](#extensionevents-enum)
+
+### EventArgsAccountingOnDelete Class
+
+Պարունակում է տվյալներ հաշվառման [OnDelete](OnDelete.md), [PreOnDelete](AccountingExtenderEvents/PreOnDelete.md), [PostOnDelete](AccountingExtenderEvents/PostOnDelete.md) իրադարձությունների մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+|`Fact`| [Հեռացվող հաշվառման օբյեկտի հղումը](../Functions/Asfact.md):|
+
