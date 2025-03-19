@@ -1,0 +1,92 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach((pre) => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerHTML = `
+          <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span class="copy-text">Copy</span>
+        `;
+  
+        button.addEventListener("click", () => {
+          const code = pre.querySelector("code");
+          if (!code) return;
+  
+          navigator.clipboard.writeText(code.innerText).then(() => {
+            button.classList.add("copied");
+            button.innerHTML = `
+              <span class="checkmark">✅</span>
+              <span class="copy-text">Copied!</span>
+            `;
+  
+            setTimeout(() => {
+              button.innerHTML = `
+                <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span class="copy-text">Copy</span>
+              `;
+              button.classList.remove("copied");
+            }, 2000);
+          });
+        });
+  
+        const wrapper = document.createElement("div");
+        wrapper.className = "code-container";
+        pre.replaceWith(wrapper);
+        wrapper.appendChild(pre);
+        wrapper.appendChild(button);
+      });
+    });
+  </script>
+  
+  <style>
+    .code-container {
+      position: relative;
+    }
+  
+    .copy-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: #f5f5f5;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      padding: 8px 10px;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+  
+    .copy-btn:hover {
+      background: #e0e0e0;
+    }
+  
+    .copy-btn .copy-icon {
+      width: 16px;
+      height: 16px;
+      stroke: #333;
+      transition: stroke 0.2s;
+    }
+  
+    .copy-btn .checkmark {
+      font-size: 16px;
+      color: #4caf50;
+    }
+  
+    .copy-btn .copy-text {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+  
+    .copy-btn.copied .copy-text {
+      color: #4caf50;
+    }
+  
+    .copy-btn.copied .checkmark {
+      color: #4caf50;
+    }
+  </style>
+  
