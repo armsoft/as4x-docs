@@ -396,14 +396,11 @@ End Sub
 
 ### EventArgsDocAfterProcess Class
 
-Պարունակում է տվյալներ փաստաթղթի [AfterProcess](AfterProcess.md) իրադարձության մշակիչին փոխանցելու համար։
+Պարունակում է տվյալներ փաստաթղթի [AfterProcess](AfterProcess.md), [PreAfterProcess](DocExtenderEvents/PreAfterProcess.md), [PostAfterProcess](DocExtenderEvents/PostAfterProcess.md) իրադարձությունների մշակիչներին փոխանցելու համար։
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
 |`Doc`|Իրադարձությունը առաջացնող փաստաթուղթը։|
-
-Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPostAfterProcess](#extensionevents-enum)
 
 ### EventArgsDocBeforeCopy Class
 
@@ -695,3 +692,13 @@ End Sub
 |:--|:--|
 |`Fact`| [Հեռացվող հաշվառման օբյեկտի հղումը](../Functions/Asfact.md):|
 
+### EventArgsDocPostMessage Class
+
+Պարունակում է տվյալներ փաստաթղթի [PrePostMessage](DocExtenderEvents/PrePostMessage.md), [PostPostMessage](DocExtenderEvents/PostPostMessage.md) իրադարձությունների մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+| `Sender` | Ուղարկող փաստաթղթի օբյեկտի հղում։ |
+| `Doc` | Ստացող փաստաթղթի օբյեկտի հղում։ |
+| `Message` | Ստացված հաղորդագրության տեքստ։ |
+| `CheckLevel` | Ստացող փաստաթղթի գրանցման [ստուգման մակարդակ](../Functions/ASDOC/DocCheckLevel.md): |
