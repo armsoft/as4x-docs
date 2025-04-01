@@ -7,8 +7,6 @@ title: "PrePostMessage իրադարձություն"
 
 PrePostMessage իրադարձությունը առաջանում է մի փաստաթղթից մյուսին ծրագրային հաղորդագրություն ([SendMessage](../../Functions/ASDOC/SendMessage.md)) ուղարկելուց` ստացող փաստաթղթի մեջ՝ [PostMessage](../PostMessage.md) իրադարձությունից առաջ։
 
-Ստացող փաստաթուղթը կրկին գրանցվում ([Store](../../Functions/ASDOC/Store.md)) է համակարգում իրադարձության մշակումից հետո՝ ըստ վերադարձվող `iCheckLevel`՝ [փաստաթղթի ստուգման մակարդակի](../../Functions/ASDOC/DocCheckLevel.md)։
-
 ## Շարահյուսություն
 
 ``` vb
@@ -22,6 +20,17 @@ End Sub
 |Պարամետր|Նկարագրություն|
 |--|--|
 |`oEventArgsDocPostMessage`| [EventArgsDocPostMessage](../UserDefinedHandlers.md#eventargsdocpostmessage-class) դասի օբյեկտ, որը պարունակում է տվյալներ ուղարկվող հաղորդագրության, ուղարկող և ստացող փաստաթղթերի մասին։|
+
+**Կարևոր** 
+
+Մի փաստաթղթից մյուսին ծրագրային հաղորդագրություն ուղարկելիս կանչվում են հետևյալ իրադարձությունները նշված հերթականությամբ՝ (**իրադարձությունները կանչվում են դրանց մշակման դեպքում**)
+* PrePostMessage,
+* [PostMessage](../PostMessage.md),
+* [PostPostMessage](PostPostMessage.md):
+
+Նշված իրադարձություններից յուրաքանչյուրի պարամետրերը կանչից հետո փոխանցվում են հաջորդ իրադարձությանը։
+
+Հաղորդագրությունը ստացող փաստաթուղթը վերևում նշված իրադարձությունների մշակման ավարտից հետո գրանցվում է ([Store](../../Functions/ASDOC/Store.md)) համակարգում՝ ըստ նշված իրադարձություններից վերջին կանչվածի [EventArgsDocPostMessage](../UserDefinedHandlers.md#eventargsdocpostmessage-class) պարամետրի `CheckLevel` հատկությունում նշված [ստուգման մակարդակի](../../Functions/ASDOC/DocCheckLevel.md) (`CheckLevel`-ի -1 արժեքի դեպքում գրանցումը տեղի չի ունենում)։ 
 
 ## Նկատառումներ
 
