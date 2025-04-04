@@ -705,7 +705,7 @@ End Sub
 
 ### EventArgsDocOnConfirmDCR Class
 
-Պարունակում է տվյալներ փաստաթղթի `PreOnConfirmDCR`, [OnConfirmDCR](OnConfirmDCR.md), `PostOnConfirmDCR` իրադարձությունների մշակիչներին փոխանցելու համար։
+Պարունակում է տվյալներ փաստաթղթի [PreOnConfirmDCR](DocExtenderEvents/PreOnConfirmDCR.md), [PostOnConfirmDCR](DocExtenderEvents/PostOnConfirmDCR.md) իրադարձությունների մշակիչներին փոխանցելու համար։
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
