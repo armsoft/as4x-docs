@@ -702,3 +702,13 @@ End Sub
 | `Doc` | Հաղորդագրությունը ստացող փաստաթղթի օբյեկտի հղում։ |
 | `Message` | Ստացված հաղորդագրության տեքստ։ |
 | `CheckLevel` | Ստացող փաստաթղթի գրանցման [ստուգման մակարդակ](../Functions/ASDOC/DocCheckLevel.md): |
+
+### EventArgsDocOnConfirmDCR Class
+
+Պարունակում է տվյալներ փաստաթղթի `PreOnConfirmDCR`, [OnConfirmDCR](OnConfirmDCR.md), `PostOnConfirmDCR` իրադարձությունների մշակիչներին փոխանցելու համար։
+
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+| `Doc` | Իրադարձությունը առաջացնող փաստաթուղթը։ |
+| `DCR` | [Փաստաթղթի փոփոխման հայտը](../Functions/DocChangeRequest.md/DCR.md)։ |
+[text](OnConfirmDCR.md)
