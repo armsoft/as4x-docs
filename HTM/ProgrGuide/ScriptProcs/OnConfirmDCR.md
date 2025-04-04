@@ -27,13 +27,13 @@ End Sub
 
 Փաստաթղթի փոփոխման հայտը հաստատելիս կանչվում են հետևյալ իրադարձությունները նշված հերթականությամբ՝  
 * `ChangeRequest`,
-* `PreOnConfirmDCR`,
-* `OnConfirmDCR`,
-* `PostOnConfirmDCR`:
+* [PreOnConfirmDCR](DocExtenderEvents/PreOnConfirmDCR.md),
+* [OnConfirmDCR](OnConfirmDCR.md),
+* [PostOnConfirmDCR](DocExtenderEvents/PostOnConfirmDCR.md):
 
 Իրադարձությունները կանչվում են դրանց մշակման դեպքում և յուրաքանչյուր իրադարձության պարամետրերը կանչից հետո փոխանցվում են հաջորդին։
 
-`PreOnConfirmDCR`, OnConfirmDCR, `PostOnConfirmDCR` իրադարձությունները կանչվում են միայն այն դեպքում, երբ `ChangeRequest` իրադարձությունից ստացված [EventArgsDocOnConfirmDCR](UserDefinedHandlers.md#eventargsdoconconfirmdcr-class) պարամետրի `DCR`.`State` դաշտի արժեքը 3 է։
+[PreOnConfirmDCR](DocExtenderEvents/PreOnConfirmDCR.md), [OnConfirmDCR](OnConfirmDCR.md), [PostOnConfirmDCR](DocExtenderEvents/PostOnConfirmDCR.md) իրադարձությունները կանչվում են միայն այն դեպքում, երբ `ChangeRequest` իրադարձությունից ստացված [EventArgsDocOnConfirmDCR](UserDefinedHandlers.md#eventargsdoconconfirmdcr-class) պարամետրի [DCR.State](../Functions/DocChangeRequest.md/State.md) դաշտի արժեքը 3 է։
 
 ## Նկատառումներ
 

@@ -711,4 +711,3 @@ End Sub
 |:--|:--|
 | `Doc` | Իրադարձությունը առաջացնող փաստաթուղթը։ |
 | `DCR` | [Փաստաթղթի փոփոխման հայտը](../Functions/DocChangeRequest.md/DCR.md)։ |
-[text](OnConfirmDCR.md)
