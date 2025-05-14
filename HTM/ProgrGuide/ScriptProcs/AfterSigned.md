@@ -16,3 +16,9 @@ Public Sub AfterSigned(ByVal args As EventArgsDocAfterSigned)
     ' statements
 End Sub
 ```
+
+Բաղադրիչներն են՝
+
+|Պարամետր|Նկարագրություն|
+|--|--|
+|`oEventArgsDocAfterSigned`| [EventArgsDocAfterSigned](UserDefinedHandlers.md#eventargsdocaftersigned-class) դասի օբյեկտ, որը պարունակում է տվյալներ իրադարձությունը առաջացնող փաստաթղթի և տպվող ձևանմուշի մասին։ |

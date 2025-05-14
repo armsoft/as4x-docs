@@ -10,7 +10,10 @@ title: "Doc իրադարձություններ"
 Իրադարձությունների առաջացման հաջորդականությունը բերված է [այստեղ](Events_Sequence.md)։
 
 * [Action](Action.md)
+* [AfterCommit](AfterCommit.md)
 * [AfterCreate](AfterCreate.md)
+* [AfterDelete](AfterDelete.md)
+* [AfterImport](AfterImport.md)
 * [AfterLoad](AfterLoad.md)
 * [AfterProcess](AfterProcess.md)
 * [AfterSigned](AfterSigned.md)
