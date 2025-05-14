@@ -25,4 +25,4 @@ End Sub
 | Պարամետր | Նկարագրություն |
 |--|--|
 | arrElement | [NestedTransactions](../Functions/ASDOC/NestedTransactions.md) մեթոդին փոխանցված մասիվի տարր: |
-| repView | [NestedTransactions](../Functions/ASDOC/NestedTransactions.md) մեթոդին փոխանցված [տեղեկատու](../Functions/AsRepViewer.md)։ |
+| repView | [NestedTransactions](../Functions/ASDOC/NestedTransactions.md) մեթոդին փոխանցված [տեքստային հաշվետվություն](../Functions/AsRepViewer.md)։ |
