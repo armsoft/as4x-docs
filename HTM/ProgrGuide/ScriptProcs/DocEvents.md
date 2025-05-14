@@ -36,6 +36,7 @@ title: "Doc իրադարձություններ"
 * [NestedTransaction](NestedTransaction.md)
 * [NestedTransactionError](NestedTransactionError.md)
 * [OnAttachmentDelete](OnAttachmentDelete.md)
+* [OnConfirmDCR](OnConfirmDCR.md)
 * [OnScannerRead](OnScannerRead.md)
 * [OnRefuseDoc](OnRefuseDoc.md)
 * [OnUIDelete](OnUIDelete.md)
