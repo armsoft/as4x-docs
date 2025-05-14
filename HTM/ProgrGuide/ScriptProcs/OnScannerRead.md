@@ -12,7 +12,7 @@ OnScannerRead իրադարձությունը առաջանում է փաստաթ�
 ## Շարահյուսություն 
 
 ``` vb
-Public Sub OnScannerRead(scannedBarCode)
+Public Sub OnScannerRead(ByVal scannedBarCode As String)
     ' statements
 End Sub
 ```
