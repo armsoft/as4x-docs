@@ -777,3 +777,12 @@ End Sub
 | `TemplateType` | Տպվող ձևանմուշի [տիպը](../TemplateTypes.md)։ |
 | `TemplateSubstitution` | [TemplateSubstitution](../Functions/TemplateSubstitution.md) տիպի օբյեկտ, որը պարունակում է տպվող ձևանմուշի լրացման արժեքների բազմությունը։ |
 
+### EventArgsUIRequestConfig Class
+ 
+Պարունակում է տվյալներ փաստաթղթի [FillUIRequestConfig](FillUIRequestConfig.md) իրադարձության մշակիչին փոխանցելու համար։
+ 
+|Հատկություն|Նկարագրություն|
+|:--|:--|
+| `Configuration` | **EventArgsUIRequestConfig** դասի օբյեկտ, որտեղ անհրաժեշտ է սահմանել Custom UI Request-ը մշակող մոդուլի և պրոցեդուրայի անունները։ Տե՛ս օգտագործման [օրինակը](FillUIRequestConfig.md#օրինակ)։ |
+ 
+
