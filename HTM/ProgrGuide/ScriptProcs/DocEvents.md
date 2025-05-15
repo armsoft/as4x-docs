@@ -21,6 +21,7 @@ title: "Doc իրադարձություններ"
 * [BeforeCommit](BeforeCommit.md)
 * [BeforeCopy](BeforeCopy.md)
 * [BeforeImport](BeforeImport.md)
+* [ChangeRequest](ChangeRequest.md)
 * [ClickDropDown](ClickDropDown.md)
 * [ClickDropDownGrid](ClickDropDownGrid.md)
 * [DefaultComment](DefaultComment.md)
