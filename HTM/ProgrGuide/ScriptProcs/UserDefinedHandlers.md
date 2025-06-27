@@ -783,6 +783,6 @@ End Sub
  
 |Հատկություն|Նկարագրություն|
 |:--|:--|
-| `Configuration` | **EventArgsUIRequestConfig** դասի օբյեկտ, որտեղ անհրաժեշտ է սահմանել Custom UI Request-ը մշակող մոդուլի և պրոցեդուրայի անունները։ Տե՛ս օգտագործման [օրինակը](FillUIRequestConfig.md#օրինակ)։ |
+| `Configuration` | **CustomUIRequestConfig** դասի օբյեկտ, որտեղ անհրաժեշտ է սահմանել Custom UI Request-ը մշակող մոդուլի և պրոցեդուրայի անունները։ Տե՛ս օգտագործման [օրինակը](FillUIRequestConfig.md#օրինակ)։ |
  
 
