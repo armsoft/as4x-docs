@@ -26,6 +26,7 @@ title: "Doc իրադարձություններ"
 * [ClickDropDownGrid](ClickDropDownGrid.md)
 * [DefaultComment](DefaultComment.md)
 * [Delete](Delete.md)
+* [FillUIRequestConfig](FillUIRequestConfig.md)
 * [Folders](Folders.md)
 * [Functions](FunctionsDoc.md)
 * [GridCellValid](GridCellValid.md)
