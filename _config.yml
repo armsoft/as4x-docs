@@ -1,6 +1,6 @@
 # Config settings
-title: AS-8X API Documentation
-baseurl: "/as8x-docs"
+title: AS-4X API Documentation
+baseurl: "/as4x-docs"
 
 # Search settings
 tipue_search:
