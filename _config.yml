@@ -20,14 +20,3 @@ plugins:
 header_pages:
  - search.html
  - apiIndex.html
-
-versions:
-  - id: bank
-    product: "ՀԾ-Բանկ"
-    versions: ["1.0", "2.0"]
-  - id: enterprise
-    product: "ՀԾ-Ձեռնարկություն"
-    versions: ["3.0", "3.1"]
-  - id: wages
-    product: "ՀԾ-Աշխատավարձ"
-    versions: ["4.0", "4.1"]
