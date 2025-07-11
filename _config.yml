@@ -18,5 +18,7 @@ plugins:
   - jekyll-html-pipeline
 
 header_pages:
- - search.html
- - apiIndex.html
+  - content.md
+  - search.html
+  - apiIndex.html
+  
