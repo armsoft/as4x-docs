@@ -1,6 +1,6 @@
 # Config settings
-title: AS-4X API Documentation
-baseurl: "/as4x-docs"
+title: AS-8X API Documentation
+baseurl: "/as8x-docs"
 
 # Search settings
 tipue_search:
@@ -9,15 +9,6 @@ tipue_search:
   exclude:
     files: [index.md, search.html]
 
-# Build settings
-markdown: kramdown
-
-kramdown:
-  # Enable GitHub Flavored Markdown (fenced code blocks)
-  input: GFM
-  # Enable/Disable auto-generated ID's for headings
-  auto_ids: true
-
 theme: minima
 plugins:
   - jekyll-feed
@@ -25,11 +16,18 @@ plugins:
   - jekyll-optional-front-matter
   - jekyll-relative-links
   - jekyll-html-pipeline
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
 header_pages:
-  - content.md
-  - search.html
-  - apiIndex.html
+ - search.html
+ - apiIndex.html
+
+versions:
+  - id: bank
+    product: "ՀԾ-Բանկ"
+    versions: ["1.0", "2.0"]
+  - id: enterprise
+    product: "ՀԾ-Ձեռնարկություն"
+    versions: ["3.0", "3.1"]
+  - id: wages
+    product: "ՀԾ-Աշխատավարձ"
+    versions: ["4.0", "4.1"]
