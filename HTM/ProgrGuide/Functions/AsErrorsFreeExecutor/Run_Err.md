@@ -12,6 +12,7 @@ title: "AsErrorsFreeExecutor/Run"
 
 Եթե ֆունկցիան հղումային տիպ վերադարձնող է, ապա AsErrorsFreeExecutor-ի [CreateErrorsFreeExecutor](../Functions/CreateErrorsFreeExecutor.html)-ով ստեղծման ժամանակ `bReturnsObject` պարամետրի արժեքը պետք է տալ `True`:
 
+Եթե ֆունկցիան կանչվում է ակտիվ տրանզակցիայում և [AsErrorsFreeExecutor/OnErrorRollBack](OnErrorRollBack.md) հայտանիշի արժեքը **True** է, ապա գեներացվում է սխալ։ 
 
 ## Շարահյուսություն
 
