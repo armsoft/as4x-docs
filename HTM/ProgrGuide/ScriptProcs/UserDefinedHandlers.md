@@ -592,7 +592,7 @@ End Sub
 
 ### EventArgsDocTemplateSubst Class
 
-Պարունակում է տվյալներ փաստաթղթի [TemplateSubstitution](TemplateSubstitution.md) իրադարձության մշակիչին փոխանցելու համար։
+Պարունակում է տվյալներ փաստաթղթի [TemplateSubstitution](TemplateSubstitution.md) և [DocPostTemplateSubstitution](DocExtenderEvents/PostTemplateSubstitution.md) իրադարձությունների մշակիչներին փոխանցելու համար։
 
 |Հատկություն|Նկարագրություն|
 |:--|:--|
@@ -600,9 +600,6 @@ End Sub
 |`DataGroups`| Հաշվարկվող ձևանմուշի սահմանված փաստաթղթի համար միացված տպվող տվյալների խմբերի ([PrintDataGroup](../PrintDataGroup.md)) բազմությունը։ Dictionary-ի մեջ բանալին տվյալների խմբերի կոդն է, իսկ արժեքը Boolean։|
 |`Params`| Ձևանմուշի լրացման պարամետրերը, որոնք հաշվարկվել են [TemplateSubstitutionParameters](TemplateSubstitutionParameters.md) իրադարձության մշակման ժամանակ։|
 |`Result`|Վերադարձնում է [TemplateSubstitution](../Functions/TemplateSubstitution.html) տիպի օբյեկտ։|
-
-Օգտագործվում է հետևյալ իրադարձությունների համար
-* [DocPostTemplateSubstitution](#extensionevents-enum)
 
 ### EventArgsDataFunctions Class
 
@@ -784,5 +781,3 @@ End Sub
 |Հատկություն|Նկարագրություն|
 |:--|:--|
 | `Configuration` | **CustomUIRequestConfig** դասի օբյեկտ, որտեղ անհրաժեշտ է սահմանել Custom UI Request-ը մշակող մոդուլի և պրոցեդուրայի անունները։ Տե՛ս օգտագործման [օրինակը](FillUIRequestConfig.md#օրինակ)։ |
- 
-
