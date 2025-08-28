@@ -3,7 +3,7 @@ layout: page
 title: "AsDoc/DocCheckLevel"
 ---
 
-# DocCheckLevel մեթոդ
+# DocCheckLevel հաստատուններ
     
 | Պարամետր | Նկարագրություն |
 |--|--|
