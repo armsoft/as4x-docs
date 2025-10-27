@@ -7,7 +7,7 @@ title: "FillUIRequestConfig իրադարձություն"
 
 FillUIRequestConfig իրադարձությունը նախատեսված է սերվիսից եկող Custom UI Request-ների մշակման կոնֆիգուրացիան սահմանելու համար։
 
-Տե՛ս օգտագործման ամբողջական [օրինակը](https://armsoft.github.io/as8x-docs/src/server_api/examples/AddCustomUIRequest.html)։
+Տե՛ս օգտագործման ամբողջական [օրինակը](https://armsoft.github.io/as8x-docs/src/server_api/examples/IUIRequestExecutionProgress.html)։
 
 ## Շարահյուսություն
 
